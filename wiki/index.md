@@ -972,21 +972,23 @@ date_updated: 2026-11-16
 
 | Page | Hook |
 |---|---|
-| [[wiki/concepts/seletores-css]] | Universal `*`, tipo, classe `.` e ID `#`; classe para o que se repete, ID único; prefira classe para estilo (BEM/ITCSS) |
+| [[wiki/concepts/seletores-css]] | Qual elemento recebe o estilo: universal `*`, tipo, classe `.`, ID `#` (único, "CPF"), vírgula, descendente, filho `>`, adjacente `+`, atributo; classe para estilo (BEM/ITCSS) x "menos classes" |
 | [[wiki/concepts/especificidade-css]] | Peso (ID, classe, tipo) que decide qual regra vence; ID vence qualquer número de classes; `*` vale zero |
+
 ### Seletores CSS (2026-11-16)
 
 | Page | Hook |
 |---|---|
-| [[wiki/concepts/seletores-css]] | Qual elemento recebe o estilo: tipo, classe, ID, universal, vírgula, descendente, filho `>`, adjacente `+`, atributo; menos classes x BEM |
 | [[wiki/concepts/pseudo-classe-css]] | `:` estado ou posição sem classe extra: hover, focus, checked, disabled, nth-child(even/odd), root; a aula as chama de pseudo-elements |
 | [[wiki/concepts/pseudo-elemento-css]] | `::` parte do elemento ou caixa gerada: first-letter, first-line, before, after, placeholder |
+
 ### Básico de CSS (2026-11-16)
 
 | Page | Hook |
 |---|---|
 | [[wiki/concepts/cascata-css]] | Como o CSS decide entre declarações: externo, incorporado e inline (prioridade crescente segundo a aula); de fato, importância → especificidade → ordem no código |
 | [[wiki/concepts/regra-css]] | `seletor { propriedade: valor; }`; seletor de tag é o mais simples |
+
 ### Box Model — Básico CSS (2026-11-16)
 
 | Page | Hook |
@@ -994,6 +996,7 @@ date_updated: 2026-11-16
 | [[wiki/concepts/html-semantico]] | header, nav, section, article, figure, footer: mesmo visual da div, significado diferente; aula dá SEO como motivo, ganho documentado é acessibilidade (landmarks) |
 | [[wiki/concepts/shorthand-css]] | padding, margin, border, background resumem sub-propriedades; quatro valores em sentido horário a partir do topo; shorthand zera o que omite |
 | [[wiki/concepts/unidades-de-medida-css]] | px, pt, cm absolutas; em, rem, % relativas (elemento, raiz, bloco que contém); relativas para responsividade |
+
 ### Position no CSS (2026-11-16)
 
 | Page | Hook |
@@ -1001,12 +1004,14 @@ date_updated: 2026-11-16
 | [[wiki/concepts/css-position]] | static, relative, absolute, fixed, sticky: de onde contam `top`/`left` e se o elemento fica no fluxo; bloco de contenção = ancestral posicionado; sticky só gruda enquanto o pai está visível |
 | [[wiki/concepts/unidades-de-viewport]] | `vh`/`vw` = 1% da tela; `100vh` corta no celular, use `dvh`/`svh`; `100vw` inclui a barra de rolagem |
 | [[wiki/concepts/menu-fixo]] | Menu visível no scroll (padrão da Apple): `fixed` sai do fluxo e cobre conteúdo, `sticky` gruda no topo; animar com `transform`; WCAG 2.4.11 |
+
 ### Buscadores e Outsourcing (2026-11-16)
 
 | Page | Hook |
 |---|---|
 | [[wiki/concepts/job-board]] | Site onde vagas são publicadas/agregadas; ordem de prioridade do Galego (LinkedIn primeiro) |
 | [[wiki/concepts/empresa-de-outsourcing-remoto]] | Outsourcing que aloca devs em clientes de fora; porta paralela aos job boards (volume x qualidade) |
+
 ### Onde Encontrar Vagas na Gringa (2026-11-16)
 
 | Page | Hook |
@@ -1015,6 +1020,7 @@ date_updated: 2026-11-16
 | [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]] | Intermediária vende suas horas; margem 20–50%, ~35 USD/h, PJ sem direitos; mais fácil, segurança em layoff, degrau para o próximo emprego |
 | [[wiki/concepts/busca-booleana-de-vagas]] | AND/OR/NOT/aspas/parênteses no LinkedIn; `site:`/`intitle:`/`inurl:` no Google; posts de recrutadores; Google for Jobs |
 | [[wiki/concepts/total-compensation]] | Base + bônus + ações + benefícios; só a base cai todo mês, ações por vesting |
+
 ### Big Techs — salários, vagas e aplicação (2026-11-16)
 
 | Page | Hook |
@@ -3569,23 +3575,17 @@ date_updated: 2026-11-16
 
 ## Entities
 
-- [[wiki/entities/w3schools]] — site de tutoriais; o Try CSS Selector destaca o que cada seletor pega; sem relação com o W3C
+- [[wiki/entities/w3schools]] — site de tutoriais de HTML/CSS (sem ligação com o W3C); Try CSS Selector destaca o que cada seletor pega; Násser o indica para valores de propriedades como `background-size`
 - [[wiki/entities/vs-code]] — editor da Microsoft; Emmet nativo e extensão Live Server na aula de básico de CSS
-- [[wiki/entities/w3schools]] — site de tutoriais de HTML/CSS (sem ligação com o W3C); Násser o indica para descobrir valores de propriedades como `background-size`
 - [[wiki/entities/bairesdev]] — outsourcing de maior volume segundo o Galego; "opiniões mistas"
-- [[wiki/entities/x-team]] — outsourcing de "altíssima qualidade"
+- [[wiki/entities/x-team]] — outsourcing de devs de "altíssima qualidade"; exemplo "bem positivo" de porta de entrada internacional
 - [[wiki/entities/toptal]] — rede de talentos remotos citada pelo volume
 - [[wiki/entities/revelo]] — contratação/outsourcing citada pelo volume
 - [[wiki/entities/indeed]] — job board com bastante vaga fora do Brasil
-- [[wiki/entities/glassdoor]] — job board e avaliações/salários
-- [[wiki/entities/wellfound]] — job board de startups (ex-AngelList Talent); poucas vagas, boas
-- [[wiki/entities/x-team]] — outsourcing de devs; exemplo "bem positivo" de porta de entrada internacional
-- [[wiki/entities/wellfound]] — job board de startups de ponta, salário publicado, muitas vagas remotas
-- [[wiki/entities/levels-fyi]] — salários por empresa/nível/local; decomposição da Total Compensation
+- [[wiki/entities/glassdoor]] — job board e avaliações/salários informados por funcionários (exige informar o seu); confere o Levels.fyi
+- [[wiki/entities/wellfound]] — job board de startups de ponta (ex-AngelList Talent); salário publicado, muitas vagas remotas; poucas vagas, boas
+- [[wiki/entities/levels-fyi]] — faixas salariais por empresa, nível e país, com ações e curva de vesting; decomposição da Total Compensation; primeiro passo para avaliar uma Big Tech
 - [[wiki/entities/hacker-news]] — fórum da Y Combinator; post mensal "Who is Hiring?"
-
-- [[wiki/entities/levels-fyi]] — faixas salariais por empresa, nível e país, com ações e curva de vesting; primeiro passo para avaliar uma Big Tech
-- [[wiki/entities/glassdoor]] — avaliações e salários informados por funcionários (exige informar o seu); confere o Levels.fyi
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

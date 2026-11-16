@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 17
+source_count: 20
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft

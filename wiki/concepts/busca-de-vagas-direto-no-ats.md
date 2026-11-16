@@ -4,7 +4,7 @@ title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever","busca booleana"]
 date_created: 2026-10-07
 date_updated: 2026-11-16
-source_count: 3
+source_count: 7
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft

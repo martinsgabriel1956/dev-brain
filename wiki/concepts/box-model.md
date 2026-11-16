@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 2
+source_count: 7
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -17,36 +17,29 @@ Todo elemento renderizado é uma caixa composta por quatro camadas, de dentro pa
 
 Em [[wiki/sources/classes-e-ids-no-css]], o reset `* { margin: 0; padding: 0; box-sizing: border-box }` vem antes de qualquer explicação do box model ("esses conceitos aqui eu vou explicar nas próximas aulas"). O link nasce `display: inline`, "de texto, que não é de caixa"; o `.btn` vira `display: block` para "virar uma caixinha" e aceitar width e height. `[external]` Com `border-box`, width e height incluem padding e borda: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing.
 
-## Key sources
-- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
-- [[wiki/sources/classes-e-ids-no-css]] — reset universal com border-box; inline x block no link de botão
 ## Reset de margin, padding e box-sizing
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o primeiro `style.css` da aula zera `margin` e `padding` e aplica `box-sizing: border-box`; o espaço entre as tags diminui, porque some a margem padrão do navegador. `[external]` Com `border-box`, `width` e `height` passam a incluir padding e border: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing.
 
-## Key sources
-- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
-- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — reset de margin/padding e `box-sizing: border-box`
 ## Tudo é caixa (aula de Básico CSS)
 
 Em [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]], [[wiki/entities/nasser|Násser]] faz do box model a tese do módulo: "tudo é caixa", toda tag "são caixas, são box, são divs". As propriedades de caixa são width, height, padding ("espaçamento interno", do conteúdo até a borda), margin ("a distância entre uma caixa e outra"), border e [[wiki/concepts/border-radius]]. Como a caixa tem quatro lados, padding e margin têm `-top`, `-right`, `-bottom`, `-left`, e o [[wiki/concepts/shorthand-css|shorthand]] segue o sentido horário a partir do topo. Medidas em [[wiki/concepts/unidades-de-medida-css|unidades]] fixas ou relativas. Mesma ideia do "tudo é div" da aula de grids ([[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]).
 
 `[external]` O que a aula não cobre (https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model): (1) **`box-sizing`**: no padrão `content-box`, width e height não incluem padding e border, então padding aumenta a caixa; `border-box` inclui, e é o reset mais comum. (2) **Colapso de margens**: margens verticais de blocos adjacentes se fundem na maior, não se somam. (3) **Inline**: span, a e strong ignoram width e height. Confiança alta.
 
-## Key sources
-- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
-- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tudo é caixa; width, height, padding, margin, border, radius; quatro lados; sem box-sizing
 ## Margin auto e display
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], `margin: 0 auto` zera a margem vertical e divide a horizontal, centralizando uma section de 80%. O autor força `display: block` no link-botão porque o link é inline e ele quer "aplicar sempre as propriedades de box-model" ([[wiki/concepts/display-css]]). `[external]` Elementos inline ignoram width, height e margem vertical; `inline-block` também resolve. A dica de depurar com `border` tem custo: a borda soma ao tamanho da caixa (com o `box-sizing: content-box` padrão); `outline` não soma (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
-## Key sources
-- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
-- [[wiki/sources/principais-propriedades-css-color-background-font]]: margin 0 auto; link forçado a bloco para usar o box model; border como printf
 ## Deslocar a caixa sem mexer no fluxo
 
 Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `position: relative` com `top` desloca a caixa inteira, mas a posição original continua reservada ("imagine" o contorno tracejado). Já `absolute` tira a caixa do fluxo, e o irmão sobe para ocupar o espaço. A margem empurra os vizinhos; `top` e `left` não empurram. Ver [[wiki/concepts/css-position]].
 
 ## Key sources
+
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/classes-e-ids-no-css]] — reset universal com border-box; inline x block no link de botão
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — reset de margin/padding e `box-sizing: border-box`
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tudo é caixa; width, height, padding, margin, border, radius; quatro lados; sem box-sizing
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: margin 0 auto; link forçado a bloco para usar o box model; border como printf
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: relative mantém o espaço da caixa; absolute o libera

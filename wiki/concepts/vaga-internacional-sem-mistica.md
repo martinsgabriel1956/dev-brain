@@ -4,7 +4,7 @@ title: "Vaga Internacional sem Mística"
 aliases: ["empresa gringa não é especial", "perder o medo da vaga fora"]
 date_created: 2026-10-07
 date_updated: 2026-11-16
-source_count: 2
+source_count: 6
 tags: [carreira, vaga-internacional, mercado-global]
 skill: tech-mentor-leadership
 status: draft

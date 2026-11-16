@@ -4,7 +4,7 @@ title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub

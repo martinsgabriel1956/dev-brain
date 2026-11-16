@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-16
-source_count: 29
+source_count: 34
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub

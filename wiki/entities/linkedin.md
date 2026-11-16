@@ -4,7 +4,7 @@ title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
 date_updated: 2026-11-16
-source_count: 7
+source_count: 10
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -28,18 +28,6 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 [[wiki/sources/introducao-mapeando-vagas]] trata o LinkedIn como exemplo de "buscador", uma das três categorias de vaga (com outsourcing e Big Techs), e avisa que Big Techs "muitas vezes" não postam nele. O exemplo de funil começa no LinkedIn: achar a vaga, aplicar e mandar mensagem ao recrutador.
 
-## Key Sources
-
-- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — atraso, volume, fantasmas; uso em paralelo
-- [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — canal principal de contratação de uma consultoria (700+ contratações/ano) e citado por outros CEOs/CTOs entrevistados informalmente pelo autor como principal canal de contratação inclusive para vagas sênior/liderança
-- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — vaga fake de desenvolvedor júnior usada como base do exercício de análise de currículo foi retirada de uma publicação real no LinkedIn
-- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — link "padrão" em portfólio de UI designer
-
-## Key sources (adição 2026-10-08)
-
-- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.
-- [[wiki/sources/introducao-mapeando-vagas]] — buscador; Big Techs muitas vezes fora dele
-
 ## Busca por país e leitura de "Remote"
 
 Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o LinkedIn aparece como ferramenta para filtrar vagas **por país** (Luxemburgo, Holanda, Austrália) com o filtro Remote. A ressalva é que "Remote" pode significar remoto dentro de um país ou bloco: é preciso ler a descrição ([[wiki/concepts/remoto-com-restricao-de-residencia]]). Complementa a crítica de [[wiki/concepts/busca-de-vagas-direto-no-ats]] em vez de contradizê-la.
@@ -50,15 +38,18 @@ Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]
 
 Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de todos", no Brasil e na gringa, onde está "a maioria das oportunidades" e o eixo do curso de carreira do autor. Diverge da crítica acima; ver [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]] e [[wiki/concepts/job-board]].
 
-## Key sources (adição 2026-11-16)
-
-- [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
-
 ## O LinkedIn como "varejão" e a busca por posts
 
 [[wiki/entities/augusto-galego]] chama o LinkedIn de "varejão, que tem tudo", mas lembra que as Big Techs nem sempre publicam lá e que os posts promovidos atrapalham ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]). Duas técnicas: [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] na barra principal com filtros nativos ([[wiki/sources/onde-procurar-vagas-guia-definitivo]]) e busca por **posts** das últimas 24 h para achar o recrutador que publicou a vaga.
 
-## Key sources (adição 2026-11-16)
+## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — atraso, volume, fantasmas; uso em paralelo
+- [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — canal principal de contratação de uma consultoria (700+ contratações/ano) e citado por outros CEOs/CTOs entrevistados informalmente pelo autor como principal canal de contratação inclusive para vagas sênior/liderança
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — vaga fake de desenvolvedor júnior usada como base do exercício de análise de currículo foi retirada de uma publicação real no LinkedIn
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — link "padrão" em portfólio de UI designer
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.
+- [[wiki/sources/introducao-mapeando-vagas]] — buscador; Big Techs muitas vezes fora dele
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

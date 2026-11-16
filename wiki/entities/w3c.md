@@ -4,7 +4,7 @@ title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [padronizacao, web, xml, soap, css]
 skill: tech-mentor-backend
 status: stub

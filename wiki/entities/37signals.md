@@ -4,7 +4,7 @@ title: "37signals"
 aliases: ["thirty seven signals", "basecamp company", "37 signals"]
 date_created: 2026-07-07
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [basecamp, rails, boring-technology, grande-rollback, cloud-exit]
 skill: tech-mentor-backend
 status: stub

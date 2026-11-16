@@ -4,7 +4,7 @@ title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
 date_updated: 2026-11-16
-source_count: 19
+source_count: 23
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -64,6 +64,29 @@ Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], 
 
 [[wiki/sources/introducao-mapeando-vagas]] é a abertura de um módulo de curso sobre onde achar vagas (buscadores, outsourcing, Big Techs), mapear requisitos, acompanhar candidaturas e faixas salariais por país e tipo de empresa, com aula bônus de um "professor Matheus". Autoria inferida pela pasta de transcrições "galego" e pelo catálogo de cursos de carreira; o nome não é dito.
 
+Aulas curtas do mesmo curso pago de carreira (pasta "galego" das transcrições: Introdução - Mapeando Vagas, Onde encontrar vagas?, Buscadores e Outsourcing, Big Techs, Quais países podem fazer sentido?), com um PDF de job boards e outsourcings. Em [[wiki/sources/buscadores-e-outsourcing-galego]] prioriza [[wiki/entities/linkedin]] e, entre as [[wiki/concepts/empresa-de-outsourcing-remoto|outsourcings]], [[wiki/entities/bairesdev]] (volume) e [[wiki/entities/x-team]] (qualidade). Provavelmente o "curso de carreira" / "roadmap de emprego" já citado nesta página; o nome não é dito.
+
+## Conteúdo sobre Candidatura a Vagas Internacionais
+
+Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para empresas de fora ([[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]). Declara ~6 anos de trabalho no Brasil e ~5 para empresas estrangeiras, além de já ter contratado brasileiros para a gringa; menciona canal e cursos de LeetCode/System Design e um curso de carreira (viés comercial possível). Autoria inferida por autorreferência ('Galego Solutions') e pelo tema.
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — lista de erros ao aplicar para vagas na gringa (inglês, storytelling, LeetCode/System Design, pesquisa da empresa); autoria por autorreferência 'Galego'
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — vídeo sobre [[wiki/concepts/contribuidor-de-alto-impacto]] (autoria inferida)
+
+## Aula "Quais países podem fazer sentido?" (módulo Mapeando Vagas)
+
+Aula de um curso de busca de vagas. Avalia países por salário, língua e facilidade de contratação ([[wiki/concepts/criterios-para-escolher-pais-de-vaga]]) e coloca os EUA em primeiro lugar para quem fica no Brasil. Relatos pessoais: morava na Alemanha na gravação; antes trabalhou para uma empresa espanhola e depois para uma de Berlim morando na Itália ([[wiki/concepts/arbitragem-geografica-de-salario]]); já trabalhou para uma empresa australiana que pagava em USD; participou de processos para os Emirados (via outsourcing) e Bangkok. Autoria inferida pela pasta de origem "galego" e pela coerência com relatos anteriores; o nome não é dito.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — critérios por país, "remote" com restrição de residência, visa sponsorship, Portugal/Bálticos como porta de entrada (autoria inferida)
+
+## Workshop Roadmap pro seu próximo emprego: onde encontrar vagas
+
+Aula e PDF do workshop pago de carreira ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki/sources/onde-procurar-vagas-guia-definitivo]]). Organiza a busca em [[wiki/concepts/tres-canais-de-vaga-internacional|três canais]] e recomenda [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional|outsourcing]] para o primeiro emprego fora, que foi o caminho dele. Diz estar morando na Alemanha na gravação (abril de 2025). Autoria inferida pela pasta da transcrição e pelo nome do workshop, que já constava no catálogo de cursos dele.
+
+## Módulo "Mapeando Vagas": aula sobre Big Techs
+
+Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]), pesquisa salário no [[wiki/entities/levels-fyi]] e no [[wiki/entities/glassdoor]], filtra vagas na página de carreiras do Google e resume o [[wiki/concepts/processo-de-entrevista-big-tech]]. Relato pessoal: aplicou para ~10 vagas na Amazon, 9 rejeitaram o currículo e 1 time o chamou, mas ele não passou da segunda etapa ([[wiki/concepts/contratacao-por-time-em-big-tech]]). Autoria inferida pela pasta das transcrições e pelo módulo; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -80,46 +103,9 @@ Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], 
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — autoria confirmada por autorreferência ("cupom galego"); introdução a hash/salt/pepper organizada por modelo de ameaça (online vs. offline), com escada de recomendação até identity providers e passwordless
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — autoria confirmada por "cupom Galego"; SQL Injection explicado do zero com sete camadas de defesa concêntricas, do banco (query parametrizada, prepared statement) à borda (WAF)
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — aula Big Techs (Mapeando Vagas): Levels.fyi, vesting, contratação por time, processo de entrevista; autoria inferida
-
-## Key sources (adição 2026-10-06)
-
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — vídeo sobre estado global/stateless/side effects/reprodutibilidade; divulga o curso de System Design e um patrocinador de cadeira ergonômica.
-
-## Conteúdo sobre Candidatura a Vagas Internacionais
-
-Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para empresas de fora ([[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]). Declara ~6 anos de trabalho no Brasil e ~5 para empresas estrangeiras, além de já ter contratado brasileiros para a gringa; menciona canal e cursos de LeetCode/System Design e um curso de carreira (viés comercial possível). Autoria inferida por autorreferência ('Galego Solutions') e pelo tema.
-- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — lista de erros ao aplicar para vagas na gringa (inglês, storytelling, LeetCode/System Design, pesquisa da empresa); autoria por autorreferência 'Galego'
-
-- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — vídeo sobre [[wiki/concepts/contribuidor-de-alto-impacto]] (autoria inferida)
-
-## Key sources (adição 2026-10-30)
-
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
 - [[wiki/sources/introducao-mapeando-vagas]] — abertura do módulo Mapeando Vagas (autoria inferida pela pasta)
-
-## Aula "Quais países podem fazer sentido?" (módulo Mapeando Vagas)
-
-Aula de um curso de busca de vagas. Avalia países por salário, língua e facilidade de contratação ([[wiki/concepts/criterios-para-escolher-pais-de-vaga]]) e coloca os EUA em primeiro lugar para quem fica no Brasil. Relatos pessoais: morava na Alemanha na gravação; antes trabalhou para uma empresa espanhola e depois para uma de Berlim morando na Itália ([[wiki/concepts/arbitragem-geografica-de-salario]]); já trabalhou para uma empresa australiana que pagava em USD; participou de processos para os Emirados (via outsourcing) e Bangkok. Autoria inferida pela pasta de origem "galego" e pela coerência com relatos anteriores; o nome não é dito.
-
-- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — critérios por país, "remote" com restrição de residência, visa sponsorship, Portugal/Bálticos como porta de entrada (autoria inferida)
-
-## Curso de Carreira: Mapeando Vagas (Autoria Inferida)
-
-Aulas curtas de um curso pago de carreira (pasta "galego" das transcrições: Introdução - Mapeando Vagas, Onde encontrar vagas?, Buscadores e Outsourcing, Big Techs, Quais países podem fazer sentido?), com um PDF de job boards e outsourcings. Em [[wiki/sources/buscadores-e-outsourcing-galego]] prioriza [[wiki/entities/linkedin]] e, entre as [[wiki/concepts/empresa-de-outsourcing-remoto|outsourcings]], [[wiki/entities/bairesdev]] (volume) e [[wiki/entities/x-team]] (qualidade). Provavelmente o "curso de carreira" / "roadmap de emprego" já citado nesta página; o nome não é dito.
-
-## Key sources (adição 2026-11-16)
-
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — onde procurar vaga primeiro (job boards e outsourcing)
-
-## Workshop Roadmap pro seu próximo emprego: onde encontrar vagas
-
-Aula e PDF do workshop pago de carreira ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki/sources/onde-procurar-vagas-guia-definitivo]]). Organiza a busca em [[wiki/concepts/tres-canais-de-vaga-internacional|três canais]] e recomenda [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional|outsourcing]] para o primeiro emprego fora, que foi o caminho dele. Diz estar morando na Alemanha na gravação (abril de 2025). Autoria inferida pela pasta da transcrição e pelo nome do workshop, que já constava no catálogo de cursos dele.
-
-## Key sources (adição 2026-11-16)
-
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] — três canais, Total Compensation, outsourcing PJ (autoria inferida)
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]] — PDF com links e manual de busca booleana (autoria inferida)
-
-## Módulo "Mapeando Vagas": aula sobre Big Techs
-
-Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]), pesquisa salário no [[wiki/entities/levels-fyi]] e no [[wiki/entities/glassdoor]], filtra vagas na página de carreiras do Google e resume o [[wiki/concepts/processo-de-entrevista-big-tech]]. Relato pessoal: aplicou para ~10 vagas na Amazon, 9 rejeitaram o currículo e 1 time o chamou, mas ele não passou da segunda etapa ([[wiki/concepts/contratacao-por-time-em-big-tech]]). Autoria inferida pela pasta das transcrições e pelo módulo; o nome não é dito.

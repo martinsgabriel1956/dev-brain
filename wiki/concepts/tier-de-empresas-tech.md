@@ -4,7 +4,7 @@ title: "Tier de Empresas Tech"
 aliases: ["tier 1 2 3 empresas", "big tech tier", "classificacao empresas tech"]
 date_created: 2026-04-29
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [carreira, mercado, tier, big-tech, startups, compensacao]
 skill: tech-mentor-leadership
 status: stub

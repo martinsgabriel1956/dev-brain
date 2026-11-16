@@ -4,7 +4,7 @@ title: "Modelo Trimodal de Compensação"
 aliases: ["trimodal compensation", "tres tiers salario tech", "trimodal nature"]
 date_created: 2026-04-29
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [compensacao, salario, carreira, mercado, tier, trimodal]
 skill: tech-mentor-leadership
 status: stable

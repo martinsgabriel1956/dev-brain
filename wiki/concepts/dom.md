@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft

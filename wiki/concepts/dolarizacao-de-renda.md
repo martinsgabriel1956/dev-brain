@@ -4,7 +4,7 @@ title: "Dolarização de Renda e Patrimônio"
 aliases: ["dolarizar salário", "renda em dólar", "proteção cambial pessoal"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [financas-pessoais, carreira, dolar, tributacao, pj]
 skill: tech-mentor-leadership
 status: stub

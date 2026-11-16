@@ -4,7 +4,7 @@ title: "Body Shop (Terceirização de Desenvolvimento)"
 aliases: ["body shop de ti", "loja de corpos", "terceirização agressiva"]
 date_created: 2026-08-26
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [mercado-de-trabalho, terceirização, contratação, consultoria]
 skill: tech-mentor-leadership
 status: stub
@@ -41,6 +41,14 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 
 [[wiki/sources/introducao-mapeando-vagas]] vê o outsourcing pelo lado do candidato: empresas que "vão te terceirizar para outras empresas" são "muito comuns para gringa" e uma "porta de entrada muito legal". Não contradiz a crítica de Akita (que fala da qualidade da entrega e do crescimento do júnior), mas muda o peso: para quem quer a primeira vaga fora, a terceirizada pode valer como degrau. Critérios para separar uma boa terceirizada de um body shop ficam em aberto.
 
+## Outsourcing como porta para vaga internacional
+
+[[wiki/concepts/empresa-de-outsourcing-remoto]] cobre o lado do candidato: [[wiki/sources/buscadores-e-outsourcing-galego]] recomenda outsourcings (BairesDev, X-Team, Toptal, Revelo) como porta de entrada para a gringa, com a ressalva de "opiniões mistas" sobre a de maior volume.
+
+## Contraponto: outsourcing como degrau internacional
+
+[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] recomenda outsourcing para o primeiro emprego fora, com ressalvas que conversam com a crítica desta página: margem de 20% a 50% que o dev não vê, PJ sem direitos, e a orientação de pesquisar reclamações e escolher as melhores. Ver [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]].
+
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
@@ -48,19 +56,5 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — alternativa recomendada: sênior interno lidera o projeto novo, terceiro (quando necessário) fica subordinado a ele
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — outsourcing como objeto do estudo do autor (mestrado 2008) sobre isomorfismo institucional: por que empresas terceirizavam mesmo sem ser ideal — [[wiki/concepts/isomorfismo-institucional]]
 - [[wiki/sources/introducao-mapeando-vagas]] — outsourcing elogiado como porta de entrada para vagas internacionais
-
-## Outsourcing como porta para vaga internacional
-
-[[wiki/concepts/empresa-de-outsourcing-remoto]] cobre o lado do candidato: [[wiki/sources/buscadores-e-outsourcing-galego]] recomenda outsourcings (BairesDev, X-Team, Toptal, Revelo) como porta de entrada para a gringa, com a ressalva de "opiniões mistas" sobre a de maior volume.
-
-## Key sources (adição 2026-11-16)
-
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — outsourcing visto pelo candidato
-
-## Contraponto: outsourcing como degrau internacional
-
-[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] recomenda outsourcing para o primeiro emprego fora, com ressalvas que conversam com a crítica desta página: margem de 20% a 50% que o dev não vê, PJ sem direitos, e a orientação de pesquisar reclamações e escolher as melhores. Ver [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]].
-
-## Key sources (adição 2026-11-16)
-
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

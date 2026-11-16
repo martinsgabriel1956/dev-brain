@@ -4,7 +4,7 @@ title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 2
+source_count: 5
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft

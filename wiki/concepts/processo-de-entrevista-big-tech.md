@@ -4,7 +4,7 @@ title: "Processo de entrevista em Big Tech"
 aliases: ["loop de entrevista big tech", "entrevista on-site", "pipeline de contratação big tech"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [carreira, big-tech, entrevista, leetcode, system-design, soft-skills]
 skill: tech-mentor-leadership
 status: stub

@@ -4,7 +4,7 @@ title: "Caçar a empresa, não a vaga"
 aliases: ["target company list","lista de empresas-alvo"]
 date_created: 2026-10-07
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [carreira, busca-de-vagas, estrategia, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub

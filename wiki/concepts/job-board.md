@@ -4,7 +4,7 @@ title: "Job board"
 aliases: ["job boards", "buscador de vagas", "site de vagas", "agregador de vagas"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [carreira, busca-de-vagas, job-board]
 skill: tech-mentor-leadership
 status: stub

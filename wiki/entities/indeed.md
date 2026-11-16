@@ -4,7 +4,7 @@ title: "Indeed"
 aliases: []
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [carreira, busca-de-vagas, job-board, vaga-internacional]
 skill: tech-mentor-leadership
 status: stub
