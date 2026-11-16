@@ -137,3 +137,4 @@ A aula de formas da mesma edição ("vamos dar continuidade"): [[wiki/sources/fo
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botões e links em profundidade: primário x secundário, área clicável, hover
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — cor que informa, aprofundada no módulo de cores
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — o bloco de cor na prática (HSB, hex, RGB)

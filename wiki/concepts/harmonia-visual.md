@@ -4,7 +4,7 @@ title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 13
+source_count: 14
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ A parte da cor tem regras próprias, geométricas: monocromática, complementar,
 
 O recorte da cor tem página própria: [[wiki/concepts/harmonia-de-cores]] (círculo cromático, complementar, análoga, triádica, monocromática). A aula de paleta repete a postura "contra a receita": "tudo que eu dizer aqui são princípios, não são regras" ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). A [[wiki/concepts/regra-60-30-10]] vem do design de interiores "para poder causar um ambiente mais harmônico".
 
+## Fugir da cor pura
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: com saturação e brilho no máximo, "aquela cor pura", Násser "sempre" indica não usar, "porque esse tipo de cor aqui a gente não acha na natureza". É heurística estética, sem dado citado. `[skill: ux-ui-mentor]` Na prática, saturação máxima em áreas grandes cansa e vibra ao lado da complementar. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -85,3 +89,4 @@ O recorte da cor tem página própria: [[wiki/concepts/harmonia-de-cores]] (cír
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — harmonia de cores: análogas, complementares, gradientes da natureza
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores como a parte da cor da harmonia
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — harmonia de cores como princípio, não regra; 60-30-10
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — evitar a cor pura (S e B no máximo) do seletor HSB

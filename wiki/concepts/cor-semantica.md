@@ -4,7 +4,7 @@ title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 7
+source_count: 8
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -61,6 +61,10 @@ A aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-anal
 
 Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]], o amarelo é a cor de destaque da paleta, não warning. `[skill: ux-ui-mentor]` Se o produto também usa amarelo para warning, os dois viram tokens diferentes e o warning vem sempre com ícone e texto. Ver [[wiki/concepts/paleta-de-cores]].
 
+## Do token ao hex
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: a cor vira código em hexadecimal ou RGB, e o HSB fica para compor a paleta. A cor semântica é a camada de cima: `--color-error` aponta para um valor cru (`#…`) que pode mudar sem que o nome mude. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -71,3 +75,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores x convenção semântica
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — cor de base (marca) e de enfoque (destaque), distintas da cor de estado
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo como destaque de marca, não warning
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — de onde vêm os valores crus (HSB, hex, RGB) que os tokens semânticos nomeiam

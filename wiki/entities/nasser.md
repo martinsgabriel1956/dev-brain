@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 36
+source_count: 37
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -51,6 +51,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Harmonia de cores explica os porquês: monocromática para hierarquia de texto, complementar para contraste e guiar, análoga para gradiente, triádica para paleta; arara, céu, Homem-Aranha e capas azul e laranja como prova ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
 - Paleta de cores segue princípios, não regras: contraste, uma cor característica, branco e preto; base + enfoque pela regra 60-30-10; a própria identidade é laranja sobre preto ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]).
 - A paleta "base e enfoque" serve ao contraste e à hierarquia; a cor principal "não necessariamente precisa ser tudo" ([[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]).
+- Cor se compõe em HSB e vai para o código em hex ou RGB; evitar a cor pura do seletor; a conta hex → decimal ensinada uma vez (com F = 16 por engano) ([[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]], autoria inferida).
 
 ## Key Sources
 
@@ -105,3 +106,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia das cores (edição "W7"; autoria confirmada pelo usuário): monocromática, complementar, análoga, triádica; Adobe Color e Color Hunt
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — aula teórica de paleta de cores da edição "W7" (diz o nome: "Násser, como assim?", legenda "Nárcio"): base + enfoque, monocromática, análoga, triádica, 60-30-10, Color Hunt
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — aplicação da paleta de cores no Figma (o nome aparece na objeção do aluno, legenda "Nárcio"): base e destaque, hierarquia por cor, gradiente, 60% branco, ícones em tons pastéis; referência ao [[wiki/entities/quarto-criativo]]
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — aula prática de representação da cor em códigos (autoria inferida: mesmo lote de legendas "W7"; o nome não é dito): HSB, hexadecimal, RGB, modo CSS

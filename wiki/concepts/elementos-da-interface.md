@@ -79,6 +79,10 @@ A edição "W7" trata elementos de composição numa aula prática no Figma: str
 
 Cor é um dos elementos, mas "por ele ser tão importante" ganhou módulo à parte, como a abertura do módulo de elementos anunciava. A abertura do módulo de [[wiki/concepts/teoria-das-cores]] está em [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]].
 
+## Cor em códigos
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o bloco de cor passa à prática no Figma. HSB para compor, hexadecimal e RGB para o código, o modo CSS com alfa; "RGB x CMYK" fica para depois. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -93,3 +97,4 @@ Cor é um dos elementos, mas "por ele ser tão importante" ganhou módulo à par
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula de botões e links (edição "W7")
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição (edição "W7"), aula prática
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — abertura do módulo de teoria das cores (edição "W7")
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — cor em códigos (HSB, hex, RGB, CSS)

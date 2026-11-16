@@ -4,7 +4,7 @@ title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 10
+source_count: 11
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft
@@ -72,6 +72,10 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 O curso de [[wiki/entities/nasser|Násser]] dedica um módulo inteiro à cor: natureza como guia, objetivos (contraste, hierarquia, informação, estilo, categorização, identidade), cor como fenômeno físico e representação em código. Ver [[wiki/concepts/teoria-das-cores]] ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Cor como ponte com o dev
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]], saber hexadecimal e RGB é "muito importante [...] quando a gente for estudar também programação". A paleta se compõe em HSB, mas é entregue em hex ou RGB. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
@@ -85,3 +89,4 @@ O curso de [[wiki/entities/nasser|Násser]] dedica um módulo inteiro à cor: na
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe e papel e caneta antes do design completo
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — módulo de teoria das cores
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia das cores: monocromática, complementar, análoga, triádica
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — HSB, hex e RGB; a cor como código entregue ao dev
