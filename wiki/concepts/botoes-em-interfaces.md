@@ -92,6 +92,9 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], [[wi
 ## Primário e secundário no CSS
 
 Em [[wiki/sources/classes-e-ids-no-css]], o par primário/secundário vira classes: `.btn` (display block, 320 × 56, centralizado, `border-radius: 16px`), `btn-primary` (fundo verde, texto escuro) e `btn-secondary` (transparente, texto branco, borda `2px solid` verde). O botão de checkout, maior e azul, recebe um ID por ser único. `[external]` Os botões são `<a>`; ação sem navegação pede `<button>`.
+## Estados do botão no CSS
+
+Os estados da tabela (hover, focus, disabled) viram [[wiki/concepts/pseudo-classe-css|pseudo-classes]] no código; a aula de seletores lista `:hover`, `:active`, `:focus` e `:disabled` ([[wiki/sources/seletores-e-pseudo-elements-css]]).
 
 ## Key Sources
 
@@ -110,3 +113,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], o par primário/secundário vira class
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações expressivas aceitas em botões
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — label em maiúsculas com tracking aberto
 - [[wiki/sources/classes-e-ids-no-css]] — `.btn`, `btn-primary` e `btn-secondary` no CSS; checkout por ID
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — hover, active, focus e disabled como pseudo-classes

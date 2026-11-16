@@ -32,8 +32,12 @@ Cada mutação de DOM tem custo real — o navegador pode precisar recalcular es
 ## ID e classe como ganchos
 
 Em [[wiki/sources/classes-e-ids-no-css]], classe e ID são "um gancho" para aplicar estilo e função, usados no CSS e no JavaScript. `[external]` `getElementById` devolve só o primeiro elemento com aquele ID; com IDs duplicados o script age no elemento errado sem erro, que é o "conflito" silencioso da aula: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById.
+## Seletores andam pela árvore
+
+Os [[wiki/concepts/seletores-css|seletores CSS]] descendente (`div p`), filho (`div > p`) e adjacente (`ul + p`) são relações da árvore do DOM: ancestral, pai e irmão anterior ([[wiki/sources/seletores-e-pseudo-elements-css]]). `[external]` A aula ilustra o filho direto com um `<p>` dentro de outro `<p>`, mas o parser fecha o primeiro ao abrir o segundo e os dois viram irmãos: o DOM não é o HTML escrito.
 
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/classes-e-ids-no-css]] — ID único como gancho do JavaScript; duplicado não dá erro
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — combinadores CSS como relações da árvore; `<p>` dentro de `<p>` vira irmão

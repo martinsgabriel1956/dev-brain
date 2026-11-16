@@ -37,6 +37,9 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "
 ## Classes e IDs
 
 Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo (arquivo `.css` ligado por `<link>`) é a forma "mais utilizada" das três, porque escala o estilo e mantém organização e consistência. A aula apresenta os [[wiki/concepts/seletores-css|seletores]] universal, de tipo, de classe (`.`) e de ID (`#`). A diferença de peso entre eles é a [[wiki/concepts/especificidade-css]], que a aula não aborda.
+## Seletores e pseudo-classes
+
+Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser defende seletores para criar "a menor quantidade de classes possíveis" e percorre o Try CSS Selector do [[wiki/entities/w3schools]]: classe, ID, vírgula, descendente, filho, adjacente, universal, atributo, e uma lista de estados que ele chama de pseudo-elements. Ver [[wiki/concepts/seletores-css]], [[wiki/concepts/pseudo-classe-css]] e [[wiki/concepts/pseudo-elemento-css]]. A troca de nomes da aula de style guide (hover como pseudo-element) se repete aqui.
 
 ## Key sources
 
@@ -47,3 +50,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo (arquivo `.css` ligado p
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID, CSS externo como padrão, `.btn` com variações
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — seletores para menos classes; lista de pseudo-classes chamada de pseudo-elements

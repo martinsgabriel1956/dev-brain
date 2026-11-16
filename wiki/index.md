@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-15
+date_updated: 2026-11-16
 ---
 
 
@@ -27,6 +27,7 @@ date_updated: 2026-11-15
 | Página | TL;DR |
 |---|---|
 | [[wiki/sources/classes-e-ids-no-css]] | Aula 02 de Básico CSS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): CSS externo como padrão; [[wiki/concepts/seletores-css\|classe]] para vários elementos (`.`), ID para um só (`#`, "o seu CPF"); reset `*` com border-box; hierarquia em escala de cinza por tag; `.btn` com `btn-primary` verde e `btn-secondary` com borda; ID `btn-checkout`; ID duplicado não dá erro. Tensão: [[wiki/concepts/especificidade-css\|especificidade]] do ID |
+| [[wiki/sources/seletores-e-pseudo-elements-css]] | Aula 05 "Básico CSS" da pasta FrontPush (de [[wiki/entities/nasser\|Násser]], inferido): seletores para criar "a menor quantidade de classes possíveis"; tour pelo Try CSS Selector do [[wiki/entities/w3schools]] (classe, ID, vírgula, descendente, filho, adjacente, universal, atributo para formulários); "pseudo-elements" que são quase todos [[wiki/concepts/pseudo-classe-css\|pseudo-classes]] (`:checked` do menu hambúrguer, `:focus`, `:hover`, `:nth-child`, `:root`) |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -963,6 +964,13 @@ date_updated: 2026-11-15
 |---|---|
 | [[wiki/concepts/seletores-css]] | Universal `*`, tipo, classe `.` e ID `#`; classe para o que se repete, ID único; prefira classe para estilo (BEM/ITCSS) |
 | [[wiki/concepts/especificidade-css]] | Peso (ID, classe, tipo) que decide qual regra vence; ID vence qualquer número de classes; `*` vale zero |
+### Seletores CSS (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/seletores-css]] | Qual elemento recebe o estilo: tipo, classe, ID, universal, vírgula, descendente, filho `>`, adjacente `+`, atributo; menos classes x BEM |
+| [[wiki/concepts/pseudo-classe-css]] | `:` estado ou posição sem classe extra: hover, focus, checked, disabled, nth-child(even/odd), root; a aula as chama de pseudo-elements |
+| [[wiki/concepts/pseudo-elemento-css]] | `::` parte do elemento ou caixa gerada: first-letter, first-line, before, after, placeholder |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
@@ -3495,6 +3503,7 @@ date_updated: 2026-11-15
 
 ## Entities
 
+- [[wiki/entities/w3schools]] — site de tutoriais; o Try CSS Selector destaca o que cada seletor pega; sem relação com o W3C
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

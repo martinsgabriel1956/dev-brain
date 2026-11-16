@@ -137,6 +137,9 @@ Na aula de alinhamento ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), o 
 ## Módulo Básico CSS
 
 Em [[wiki/sources/classes-e-ids-no-css]], aula 02 do módulo "Básico CSS" (slide com a marca do FrontPUSH): classes e IDs. O verde do `btn-primary` e do `btn-secondary` é "o verde que eu utilizo nos meus projetos"; pela legenda ("5f36a", "5fe360") é provavelmente o `#5FE36A` dos botões do site (inferência). A aula 01 do módulo não foi ingerida.
+## Básico CSS: seletores
+
+A aula 05 da pasta "FrontPush" sai do design e entra no código: slides "Básico CSS" (logo "FE") sobre [[wiki/concepts/seletores-css]] e o que a aula chama de pseudo-elements, demonstrados no [[wiki/entities/w3schools]] ([[wiki/sources/seletores-e-pseudo-elements-css]]).
 
 ## Key Sources
 
@@ -180,3 +183,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], aula 02 do módulo "Básico CSS" (slid
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — botões do site em maiúsculas com letter-spacing
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — site do autor à esquerda, cards curtos centralizados
 - [[wiki/sources/classes-e-ids-no-css]] — aula 02 do módulo Básico CSS; verde dos projetos nos botões
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05: seletores e pseudo-classes ("Básico CSS")

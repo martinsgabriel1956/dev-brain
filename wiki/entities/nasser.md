@@ -59,6 +59,10 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Texto alinhado à esquerda é o coringa; justificado nunca; parágrafos de 4 a 8 linhas separados por um line-height ([[wiki/sources/alinhamento-e-espacamento-de-texto]]).
 - Classe para o que se repete, ID para o que é único, "como se fosse o seu CPF"; classes de botão primário e secundário no verde dos seus projetos ([[wiki/sources/classes-e-ids-no-css]]).
 
+## Seletores e o menu hambúrguer
+
+Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quantidade de classes possíveis", diz que `:hover` é o efeito que mais usa e cita um vídeo no YouTube em que faz um menu hambúrguer animado com `:checked`. Chama a lista inteira de pseudo-elements e o W3Schools de "artigo no W3C". Autoria inferida pelas falas "Násser, mas espera aí".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -124,3 +128,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height
 - [[wiki/sources/classes-e-ids-no-css]] — aula 02 de Básico CSS (diz o próprio nome: "O que significa isso, Násser?"): classe x ID (CPF), `.btn` com primário e secundário, ID de checkout
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05 (autoria inferida): seletores, pseudo-classes chamadas de pseudo-elements, hack do menu hambúrguer

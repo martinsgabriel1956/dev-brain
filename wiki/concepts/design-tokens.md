@@ -3,8 +3,8 @@ type: concept
 title: "Design tokens"
 aliases: ["token de design", "tokens de design", "variáveis de design", "labels de design", "nomenclatura de estilos"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, design-system, design-tokens, css, sass, nomenclatura, dark-mode, handoff]
 skill: ux-ui-mentor
 status: stub
@@ -45,6 +45,11 @@ $orange-light: #ffd77a;
 
 `[skill: ux-ui-mentor]` Figma Variables (com modos light e dark) define os tokens no próprio Figma. Tokens Studio exporta um `tokens.json` e o Style Dictionary gera CSS, SCSS, JS e plataformas nativas a partir dele. `[external]` O formato está em padronização pelo W3C Design Tokens Community Group (https://www.designtokens.org/).
 
+## `:root` na aula de seletores
+
+Em [[wiki/sources/seletores-e-pseudo-elements-css]], "o root é quando a gente está definindo variáveis". `[external]` `:root` é a pseudo-classe que casa com `<html>`; as custom properties declaradas ali valem na página toda, por isso é o lugar costumeiro dos tokens. Ver [[wiki/concepts/pseudo-classe-css]].
+
 ## Key Sources
 
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]: labels `card-hover`, `$orange`, orange dark/light; hexadecimais no Sass; grupos de estilo no Figma
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — `:root` como lugar das variáveis CSS
