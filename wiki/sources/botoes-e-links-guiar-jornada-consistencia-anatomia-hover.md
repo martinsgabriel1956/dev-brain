@@ -3,7 +3,7 @@ type: source
 title: "Botões e links (edição \"W7\"): guiar a jornada, consistência, anatomia e hover"
 aliases: ["aula teórica de botões W7", "botões e links W7", "UX em botões", "anatomia dos botões"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, botoes, links, hierarquia-visual, consistencia, area-clicavel, acessibilidade, hover, motion, sombra]
 skill: ux-ui-mentor
@@ -119,3 +119,4 @@ Aula teórica (cerca de 16 min) que abre o bloco de [[wiki/concepts/botoes-em-in
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — o mesmo radius em botões, cards e ícones
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — a escala geométrica de espaçamento
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — a aula seguinte: as seis formas de botão
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — a mesma sombra da cor do elemento aplicada aos planetinhas dos elementos de composição
