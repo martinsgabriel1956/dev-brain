@@ -95,3 +95,7 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 ## Ver também
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: grids (parte 1); grid como esqueleto, Bootstrap e oito pontos, layouts responsivos
+
+## Ver também
+
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: a teoria por trás das 12 colunas de 72 + gutter 32 e do big nudge de 8; grid por dispositivo e breakpoints

@@ -114,6 +114,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]], o grid organiza os elementos com "consistência de distância" e dá "uma sensação mais clean". No wireframe, o conteúdo alinhado às colunas responde à pergunta da distância: "é uma coluna". Ver [[wiki/concepts/grid-de-colunas]].
 
+## Consistência por hábito numérico
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempre quando eu penso em algum valor, eu já penso nesses valores aqui [...] e aí eu criei consistência no meu design". Nada de 53 ou 55 px; os valores saem do [[wiki/concepts/grid-de-8-pontos]], e o alinhamento sai do [[wiki/concepts/grid-de-colunas]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -142,3 +146,4 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — consistência como objetivo do style guide, no Figma e na documentação
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — estrutura repetida nas seções da Apple
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como alinhamento e "consistência de distância"
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — valores sempre da regra dos oito pontos; nunca 53 ou 55

@@ -33,6 +33,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], a
 
 Em [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]], o site é o exemplo de boas práticas de [[wiki/concepts/usabilidade]]. O menu é horizontal, no topo, fixo, com todos os produtos, "que é justamente onde você procura" ([[wiki/concepts/lei-de-jakob]]). As seções repetem ilustração, "headline maior", "headline segunda" e link ([[wiki/concepts/consistencia-visual]]). O submenu do iPhone usa ícones que se entendem "por mais que eu não saiba ler" ([[wiki/concepts/icones-em-interfaces]]). "As interfaces da Apple têm notas boas em quesito usabilidade", segundo "diversas declarações" que ele ouviu.
 
+## iMac e resolução
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o iMac de 27" com "tela Retina 5K" ilustra a resolução acompanhando o tamanho da tela; "o mínimo é 2K" nesses monitores. Ver [[wiki/concepts/breakpoint]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
@@ -40,3 +44,4 @@ Em [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emer
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline da Apple citada como referência para montar style guide
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — branding coerente e objetivo de e-commerce
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo, seções repetidas e ícones como padrões de usabilidade
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — iMac de 27 polegadas com Retina 5K como exemplo de resolução x tamanho

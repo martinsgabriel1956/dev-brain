@@ -54,8 +54,23 @@ O padrão citado para colunas por dispositivo é o Bootstrap Grid System ([[wiki
 
 Na abertura do módulo de interfaces web: "você precisa saber e desenhar containers de acordo com o dispositivo", seguindo "padrões [...] de colunas, de grids, de alinhamento", para "quebrar em blocos depois" e servir o mesmo conteúdo em vários dispositivos ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Grids estão na etapa de wireframes do [[wiki/concepts/workflow-de-interface-web]] e no [[wiki/concepts/style-guide]]. `[skill: ux-ui-mentor]` Padrão típico: 4 colunas no mobile, 8 no tablet, 12 no desktop.
 
+## Por dispositivo (aula de grids, parte 2)
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], as quatro variáveis são **width** (coluna), **columns**, **gutter** e **max-width** (de ponta a ponta), "baseado no Bootstrap Grid System":
+
+| | Colunas | Width | Gutter | max-width |
+|---|---|---|---|---|
+| Desktop | 12 | 72–96 | 24–36 | 1200–1440 |
+| Tablet | 6 | 72–96 | 24–36 | 620–720 |
+| Mobile | 4 (6 em paisagem) | 56–72 | 24–36 | 320–396 |
+
+Conta: colunas × width + (colunas − 1) × gutter ≈ max-width (72 × 12 + 24 × 11 = 1.128 ≈ 1.200). O tablet é o desktop "dividido por 2". Ele prefere 4 ou 6 colunas no celular a 3 ou 2. 12 de novo pela divisão: "quando fica oito de um lado, eu sei que sobra quatro do outro". As faixas estão em [[wiki/concepts/breakpoint]].
+
+`[external]` No Bootstrap, a coluna é porcentagem do container e o gutter padrão é 24 px (https://getbootstrap.com/docs/5.3/layout/gutters/); coluna de 72 é convenção de Figma. A skill dá 8 colunas no tablet; a aula, 6.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — containers e colunas por dispositivo; grids no workflow e no style guide
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como esqueleto; 12 colunas no FrontPUSH (7–8 + 4–5; 4 + 8); seis colunas centrais no wireframe; "é uma coluna" de distância
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — width, columns, gutter, max-width por dispositivo (12/6/4); contas na calculadora

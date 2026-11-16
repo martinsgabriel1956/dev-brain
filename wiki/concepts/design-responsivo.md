@@ -38,6 +38,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: o responsivo "mistura o melhor de todos os mundos". Junta o fluido (larguras em porcentagem, seções que encolhem com a tela) e o adaptativo (media query que troca o estilo num [[wiki/concepts/breakpoint]], como 960 px). O fixo serve a uma tela só. Com tantos modelos de aparelho, fazer adaptativo "é praticamente suicídio", e o responsivo é "o queridinho". Mesmo assim, "isso nunca vai invalidar sempre você testar em vários tipos de dispositivos". Ver [[wiki/concepts/layout-fixo-fluido-adaptativo-responsivo]].
 
+## Grid por dispositivo e resolução
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: 12 colunas no desktop, 6 no tablet, 4 (ou 6 em paisagem) no mobile ([[wiki/concepts/grid-de-colunas]]); blocos "na horizontal" que quebram "na vertical" são "a técnica do design fluido". Resolução não é polegada (iMac de 27" com Retina 5K); teto de 1440 para desktop, 1600 para TV. Ver [[wiki/concepts/breakpoint]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -50,3 +54,4 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — grid para o mesmo conteúdo em vários dispositivos; tipografia desktop e mobile no style guide
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "funciona em qualquer dispositivo" no lugar de "responsivo"
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — fixo, fluido, adaptativo e responsivo; breakpoint de 960; testar em vários aparelhos
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — 12/6/4 colunas; blocos horizontais que quebram na vertical; resolução x tamanho; teto 1440

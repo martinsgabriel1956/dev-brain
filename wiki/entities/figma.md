@@ -94,6 +94,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o Figma aparece ao lado do papel como lugar do wireframe: "onde eu posso simplesmente clicar e arrastar e apresentar uma estrutura inicial que seja muito próxima daquilo que eu vou implementar".
 
+## Big Nudge e tamanhos de texto
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: Preferences, Nudge Amount, Big Nudge de 8 ("quando você segura Shift, ele vai dando espaços de oito pontos"); o menu de tamanhos de texto (14, 18, 24, 36, 48) como prova de que a regra dos oito já está na ferramenta.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -124,3 +128,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — color, text e effect styles; edit style, detach; share, set as thumbnail, save local copy
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — Inspect: copiar box-shadow e gradiente; descartar position
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe por "clicar e arrastar"
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — Big Nudge de 8; menu de tamanhos de texto

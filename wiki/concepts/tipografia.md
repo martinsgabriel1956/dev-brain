@@ -66,6 +66,10 @@ O style guide define títulos e corpo (h1, h2, h3, h4, p, span) para desktop e m
 
 Os headings viram text styles (`Heads / H1`, `H2`), com grupos desktop e mobile. No exemplo: Sora 48, 36 e 24, pesos 600, 400, 400 e line-height 110 em todos, "um peso [...] um pouco maior nas fontes maiores". Ele chama 600 de "medium"; no CSS, medium é 500 `[skill: ux-ui-mentor]` ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]). Ver [[wiki/concepts/estilos-no-figma]].
 
+## Tamanhos de texto e a regra dos oito
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: o menu de tamanhos do Figma (14, 18, 24, 36, 48) "é muito próximo da regra dos oito pontos". 36 fica fora (32 + 8 = 40), mas é válido quando nem 32 nem 40 servem. Ver [[wiki/concepts/grid-de-8-pontos]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -79,3 +83,4 @@ Os headings viram text styles (`Heads / H1`, `H2`), com grupos desktop e mobile.
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — tipografia desktop e mobile no style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — h1 a span, desktop x mobile; 48/36/24 no Nubank
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — text styles Heads/H1, H2; Sora 48/36/24, line-height 110; "medium" = 600 (tensão)
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — tamanhos 14/18/24/36/48 perto da regra dos oito; 36 entre 32 e 40

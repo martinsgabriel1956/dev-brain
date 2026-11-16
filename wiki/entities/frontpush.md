@@ -137,3 +137,4 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 (edição "W7"): seis atributos de um bom design
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — aula 2 do módulo de interfaces web: usabilidade
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — 12 colunas (7–8 + 4–5; 4 + 8 no design); quebra no breakpoint; site responsivo
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — blocos horizontais do site que quebram na vertical (design fluido)

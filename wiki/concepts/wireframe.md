@@ -73,6 +73,10 @@ O segredo para saber desenhá-los: "fazer mil vezes e ter uma biblioteca na sua 
 
 Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: "muito do que eu falei em wireframes também se encaixa" nos grids. No wireframe mostrado, o conteúdo pega seis colunas centrais (três sobram de cada lado). A ilustração fica de fora, de propósito, pelo estilo dela. Ver [[wiki/concepts/grid-de-colunas]].
 
+## Grid como base do wireframe
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid é o que dá alinhamento, consistência e organização aos "protótipos de média fidelidade ou até baixa fidelidade" feitos com wireframes. Os plugins de grid são prometidos para as próximas aulas.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -88,3 +92,4 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio tirado de referências; baixa e alta fidelidade do FrontPUSH
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel → wireframe cinza (média fidelidade) → protótipo final; o segredo é fazer mil vezes
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — wireframe com conteúdo nas seis colunas centrais
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — grids para alinhar wireframes de baixa e média fidelidade

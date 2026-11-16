@@ -93,3 +93,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 da edição "W7" (autoria inferida): seis atributos de um bom design; Photoshop, jogos, Uber/iFood/Amazon; KISS no slide
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade (interfaces web, aula 2): três esferas, Caixa, Apple; legenda o transcreve como "nascer" (autoria inferida)
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grids (parte 1) da edição "W7" (autoria inferida): esqueleto em colunas, Bootstrap e oito pontos, fixo/fluido/adaptativo/responsivo
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — aula de grids, parte 2, da edição "W7" (autoria inferida): width, columns, gutter e max-width por dispositivo, breakpoints, resolução, regra dos oito pontos
