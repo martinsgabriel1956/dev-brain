@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 11
+source_count: 12
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -78,6 +78,10 @@ Em plataformas de notícia, "basicamente é texto" e "a tipografia é muito, mui
 
 A hierarquia textual também se faz com tons da mesma matiz: maior contraste destaca, menor fica em segundo plano ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/hierarquia-visual]].
 
+## Tipografia e cores
+
+Aula 06 do módulo de tipografia do FrontPUSH ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]): o objetivo da tipografia é acessibilidade, "tem que ter contraste". A hierarquia textual sai de escala, peso (bold acima da fininha), caixa alta e, com cor, da escala de cinza. A cor também informa ([[wiki/concepts/cor-semantica]]). Para texto de botão que não passa, aumentar peso e escala antes de inverter as cores. Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -94,3 +98,4 @@ A hierarquia textual também se faz com tons da mesma matiz: maior contraste des
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — tamanhos 14/18/24/36/48 perto da regra dos oito; 36 entre 32 e 40
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — sites de notícia: tipografia trabalhada, contraste de cor por nível
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — tons monocromáticos para hierarquia de texto
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — hierarquia textual por escala, peso, caixa alta e cinza; contraste como objetivo

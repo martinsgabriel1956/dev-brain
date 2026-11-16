@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 27
+source_count: 28
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -118,6 +118,10 @@ Na aula prática de cores, o par complementar define os papéis: roxo de base, a
 
 Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]], o [[wiki/concepts/padrao-de-luminosidade]] explica pares ruins: amarelo (89%) e ciano (70%) já são claros, então branco sobre eles quase não se lê; branco sobre laranja passa "dependendo do tamanho da tipografia e do peso". O azul, "já escuro", dá o maior contraste como fundo. No [[wiki/entities/who-can-use]], o verde claro da marca dele com texto branco reprova; com preto, AAA e 10.50:1. "Não basta que ela seja bonita, ela precisa ser acessível." `[external]` WCAG mede luminância relativa (pesos 0,2126 / 0,7152 / 0,0722), não a luma do slide; a ordem dos matizes é a mesma.
 
+## Melhorar o contraste sem trocar a paleta
+
+Na aula de tipografia e cores ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]), Násser dá uma escada para quando a paleta não ajuda: observar a [[wiki/concepts/luminosidade-das-cores|luminosidade das cores]] (amarelo, ciano e verde brigam com o branco), aumentar o peso, aumentar a escala, inverter as cores e, em imagem, escurecer o fundo. Último recurso: baixar saturação ou brilho, "sacrificar a sua paleta" nos CTAs. O verde e o laranja do [[wiki/entities/frontpush]] reprovam com texto branco (verde a 1.65) e passam com preto. Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -149,3 +153,4 @@ Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosida
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — o B do HSB não é luminância; contraste se mede à parte
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — par complementar roxo/amarelo como base e destaque
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — padrão de luminosidade (amarelo e ciano claros, azul escuro); verde claro + branco reprova, preto tira AAA
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escada para melhorar contraste sem trocar a paleta; verde e laranja do FrontPUSH com texto preto

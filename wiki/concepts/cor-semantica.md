@@ -4,7 +4,7 @@ title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -65,6 +65,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: a cor vira código em hexadecimal ou RGB, e o HSB fica para compor a paleta. A cor semântica é a camada de cima: `--color-error` aponta para um valor cru (`#…`) que pode mudar sem que o nome mude. Ver [[wiki/concepts/modelos-de-cor]].
 
+## Em tipografia: cores auxiliares
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser retoma as convenções com o [[wiki/entities/twitter-bootstrap|Bootstrap]] aberto e completa o mapa com o **verde**: "sucesso, deu certo, cadastrado, entregue". Azul é "simplesmente informativo, então é algum link"; vermelho, erro; amarelo, alerta. Recomenda definir "cores auxiliares" para a passagem de informação.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -76,3 +80,4 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: a cor v
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — cor de base (marca) e de enfoque (destaque), distintas da cor de estado
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo como destaque de marca, não warning
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — de onde vêm os valores crus (HSB, hex, RGB) que os tokens semânticos nomeiam
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde = sucesso; cores auxiliares; Bootstrap como referência

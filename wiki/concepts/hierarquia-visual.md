@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 24
+source_count: 25
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -149,6 +149,10 @@ Na paleta da aula prática, a cor de destaque é a complementar da base (amarelo
 
 Na aula de variação de cores, a cor de enfoque vai em botões, títulos e banners; numa interface preta, o laranja "puxa" o olho, ajudado pelo espaço em branco ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/regra-60-30-10]].
 
+## Hierarquia textual pela escala de cinza
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: no texto, a hierarquia vem de escala, peso, caixa alta e cor, e a cor entra como escala de cinza (títulos mais escuros, apoio mais claro). No [[wiki/entities/frontpush]], o título "O que compõe o FrontPUSH" é maior, mais pesado e com mais contraste, e o leitor decide por ele se lê o resto; no [[wiki/entities/google]], o título azul vem antes da descrição. `[skill: ux-ui-mentor]` Cada nível de cinza ainda precisa de 4.5:1 com o fundo.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -180,3 +184,4 @@ Na aula de variação de cores, a cor de enfoque vai em botões, títulos e bann
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo no que importa, branco no resto; escala de cinza na versão monocromática
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — amarelo complementar como cor de destaque
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — cor de enfoque (10%) em botões, títulos e banners
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escala de cinza como hierarquia textual; títulos do FrontPUSH e do Google

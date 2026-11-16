@@ -28,8 +28,13 @@ Volta em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-pat
 
 Volta como a ferramenta de contraste que ele cita "bastante em tipografia" (identificação inferida pela descrição): o verde claro da marca dele com texto branco dá fail; com preto, AAA e 10.50:1 ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ele descreve "regular vision" como quem "não consegue distinguir as três cores primárias"; na ferramenta, Regular Vision (Trichromatic) é a visão típica.
 
+## Na aula de tipografia
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser testa o verde do [[wiki/entities/frontpush]] ("deu feio, está falho") e mostra a lista de condições (Trichromatic, dificuldade com vermelho, Red blind, dificuldade com verde) e as simulações de glaucoma e catarata. Com texto preto, o laranja "passou em todas". O "68%" que ele lê como "quase foi satisfeito" provavelmente é a fatia da população com aquela visão (inferência). Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — checker indicado na aula de acessibilidade, com o Contrast Ratio
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — verde claro + branco reprova, preto AAA; "regular vision" mal descrita
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — teste do verde e do laranja do FrontPUSH; condições de visão

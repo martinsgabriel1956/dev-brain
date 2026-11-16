@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 39
+source_count: 40
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -111,3 +111,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — aula prática de representação da cor em códigos (autoria inferida: mesmo lote de legendas "W7"; o nome não é dito): HSB, hexadecimal, RGB, modo CSS
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — aula prática de cores: paleta complementar, HSB, variações, neutros tingidos
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — variação de cores no HSB, padrão de luminosidade, 60-30-10, Who Can Use (autoria inferida)
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — aula 06 de tipografia: contraste, hierarquia pela escala de cinza, cor como informação, botões invertidos

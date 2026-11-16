@@ -4,7 +4,7 @@ title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 5
+source_count: 6
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -77,6 +77,10 @@ No papel, o botão é "um quadradinho qualquer" que simboliza o call to action; 
 
 Na aula de harmonia das cores, guiar o usuário "para a jornada que ele tem que prosseguir" também se faz com cor: "utilizar as cores complementares como guia, para poder a gente destacar elementos" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/harmonia-de-cores]].
 
+## Texto do botão: inverter quando a cor é clara
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: no [[wiki/entities/frontpush]], o secundário é branco sobre preto e vira azul no hover, mantendo o texto branco porque o azul ainda contrasta. Os botões verde e laranja reprovam com branco e levam texto preto, "apesar de eu achar que ele era mais bonito [...] com o branco". Ele admite que o hover azul com texto branco quebra a consistência. Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -90,3 +94,4 @@ Na aula de harmonia das cores, guiar o usuário "para a jornada que ele tem que 
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — CTA no hero e repetido no fim do portfólio
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — botão como quadradinho no papel, decidido no protótipo final
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementar como guia da jornada
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde e laranja com texto preto; hover azul do secundário

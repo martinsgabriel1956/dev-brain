@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-14
-source_count: 24
+date_updated: 2026-11-15
+source_count: 25
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -64,6 +64,10 @@ Na visão geral dos elementos de Násser, os resultados do Google mostram espaç
 
 Via vermelha ou laranja no Google Maps (ou no Waze) se lê como bloqueio ou engarrafamento: exemplo de [[wiki/concepts/cor-semantica]] na abertura do módulo de cores ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Títulos azuis como hierarquia
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: na busca, o usuário "vai procurar primeiro pelos itens em azul", maiores e com mais contraste; lê o título e só então clica ou lê a descrição. Ver [[wiki/concepts/hierarquia-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -85,6 +89,7 @@ Via vermelha ou laranja no Google Maps (ou no Waze) se lê como bloqueio ou enga
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — resultados separados pelo espaço maior entre eles
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — buscar "pessoas conversando" no Google como exemplo de foto genérica
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — Google Maps: vermelho/laranja = trânsito
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
 
 ## Adição (2026-10-14)
 

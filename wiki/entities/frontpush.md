@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 20
+source_count: 21
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -118,6 +118,10 @@ Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-p
 
 "Toda a estrutura dos meus cursos" usa preto de base e uma só cor, com gradientes "para poder ficar um pouco mais charmoso" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ligação com o FrontPUSH inferida (o site é preto com azul). Ver [[wiki/concepts/paleta-de-cores]].
 
+## Tipografia e cores: botões invertidos
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: o título "O que compõe o FrontPUSH" é o exemplo de hierarquia textual; os botões verde e laranja levam texto preto porque reprovam com branco (verde a 1.65, provável `#5FE36A`); o secundário branco vira azul no hover e mantém o texto branco, o que o autor chama de "até um erro" de consistência.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -154,3 +158,4 @@ Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-p
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu do curso, todos no grid de 12 colunas
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — branding de "boost": foguete, órbitas e planetas
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — preto + uma cor + gradiente (inferido)
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — título como hierarquia; botões verde e laranja com texto preto

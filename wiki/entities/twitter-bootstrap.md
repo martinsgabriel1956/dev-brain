@@ -34,6 +34,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], [[wiki/entities/nasser|Násser]] diz que prefere "o do Bootstrap" ao grid de 8 pontos padrão do Figma, e configura 12 colunas. As medidas dele (colunas fixas de 72, gutter de 36, max-width 1260) não são as do framework. `[external]` No Bootstrap 5, as colunas são fluidas, o gutter é de 1,5rem e o maior container tem 1320 (https://getbootstrap.com/docs/5.3/layout/containers/).
 
+## Cores de alerta como referência
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], o Bootstrap fica aberto como referência de [[wiki/concepts/cor-semantica|cor como informação]]: azul informa, vermelho erro, amarelo alerta, verde sucesso.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -42,3 +46,4 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — Bootstrap Grid System como base do grid de colunas
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — grid de referência das aulas; 4.5 x 5
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — "eu prefiro o do Bootstrap": 12 colunas no Figma
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — cores de alerta como referência de cor semântica
