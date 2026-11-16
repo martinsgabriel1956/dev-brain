@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 76
+source_count: 87
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -144,3 +144,14 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: aula 06 do módulo de front-end: estilo e layout; flexbox e media query
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: aula 07 do módulo de front-end: position; "relative fica no pai, absolute fica no filho"
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aula 08: conclusão; "isso é dever de todo programador" (olhar a documentação)
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: aula 01 do módulo de Flexbox: "Ele serve para layout"; repetição e prática
+- [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: aula 02 do módulo de Flexbox: `display: flex` e filhos diretos; "Ah, Násser" confirma a autoria
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: aula 03 do módulo de Flexbox: flex-direction, flex-wrap, flex-flow; "superguarde essa propriedade"
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: aula 04 do módulo de Flexbox: justify-content, align-items, o "combo" de centralizar e box-sizing
+- [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: aula 05 do módulo de Flexbox: align-content; "na maioria das vezes eu coloco três"
+- [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: aula 06 do módulo de Flexbox: flex-grow; "o grow [...] é aumentar quando está disponível"
+- [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: aula 07 do módulo de Flexbox: flex-basis; diz que o grow "é mais ligado ao padding"
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: aula 08 do módulo de Flexbox: flex-shrink e flex; "é sempre 1, 1, 300"
+- [[wiki/sources/frontpush-order-e-align-self]]: aula 09 do módulo de Flexbox: order e align-self
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, estrutura do layout do YouTube; fundo agora `#0c0c0c`
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, layout-desafio sem código

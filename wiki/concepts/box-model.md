@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 13
+source_count: 17
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -47,6 +47,14 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/entities/nasser|Násser]] repete "tudo são caixinhas" com uma `section.container` de três `div.item` e o conselho "coloca borda na div para poder você enxergar o elemento". `margin` é "espaçamento fora da caixa", `padding` "da parte de dentro", ambos por lado ou em [[wiki/concepts/shorthand-css|shorthand]] no sentido horário. A aula não fala de `box-sizing` nem de colapso de margens. `[external]` Com `content-box`, o padding soma à largura; margens verticais entre irmãos se fundem na maior em vez de somar: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing.
 
+## `margin: 0 auto` (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]], [[wiki/entities/nasser|Násser]] centraliza um container com `max-width: 500px` usando `margin: 0 auto`: "margin 0 em cima e embaixo e automático de um lado e do outro", sem precisar de flexbox no `body`. Só centraliza na horizontal.
+
+## box-sizing "em todos os projetos" (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-justify-content-align-items-box-sizing]], [[wiki/entities/nasser|Násser]] põe `box-sizing: border-box` "em todos os projetos" para "dar prioridade para a caixa e não para o conteúdo". `[external]` O que `border-box` faz é incluir padding e borda na `width`/`height` declaradas; sem `width`, a caixa cresce com o conteúdo nos dois modos (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
+
 ## Key sources
 
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
@@ -61,3 +69,7 @@ Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: borda `2px solid green` mostra a caixa do `header`; "tudo são caixinhas, tudo é div"
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: margin x padding com container e itens; borda para enxergar; sem box-sizing
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: `padding-top` do pai ainda empurra o filho `absolute` sem `top` (static position); com `top: 0`, não
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: box-model como parte do CSS básico, pré-requisito do módulo de Flexbox
+- [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `margin: 0 auto` centraliza o container; itens block ocupam 100% do pai
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` em todo projeto; explicação mistura com o tamanho do conteúdo
+- [[wiki/sources/frontpush-order-e-align-self]]: `[external]` `margin-left: auto` como o "justify-self" que o flexbox não tem

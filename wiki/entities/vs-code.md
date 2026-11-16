@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -51,3 +51,4 @@ Usa ainda Format Document para indentar e Reveal in File Explorer.
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: Emmet `link:css`; autocompletar de caminho com `./`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: Ctrl+D, localizar e substituir, minimapa
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Git Bash no terminal; extensão Nunjucks, Emmet e settings.json
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: pasta "Flexbox aula", index.html + css/style.css e Live Server na prática 1 de flexbox

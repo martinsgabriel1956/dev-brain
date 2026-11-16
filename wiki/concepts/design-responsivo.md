@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 25
+source_count: 32
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -75,6 +75,14 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], antes de 
 
 Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], as viewport units (`vh`, `vw`) existem porque "hoje em dia nós temos vários dispositivos e a gente quer construir interfaces responsivas"; o `body` recebe `100vh`. Posição em porcentagem é "meio que responsivo". `[external]` No celular, `100dvh` em vez de `100vh`. Ver [[wiki/concepts/unidades-de-viewport]].
 
+## O Flexbox como esqueleto responsivo (FrontPUSH)
+
+Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/entities/nasser|Násser]] define o Flexbox como "construir o esqueleto de forma que eu possa colocar o conteúdo e que ele se adapte ao tamanho da tela". `[external]` O Flexbox sozinho dá flexibilidade (grow, shrink, wrap); trocar de layout por tela ainda pede media queries.
+
+## Flex-direction na media query (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]], [[wiki/entities/nasser|Násser]] chama de "princípio do sistema responsivo" trocar `flex-direction: row` por `column` dentro de `@media (max-width: 960px)`; `flex-wrap: wrap` é o outro recurso. Recomenda `max-width`/`min-width`/`max-height`/`min-height` em vez de `width` fixo: com `width: 700`, o container "vai entrar junto com a minha barra de rolagem". `[external]` Desktop-first; o padrão comum hoje é mobile-first com `min-width`.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -102,3 +110,10 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], as viewp
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: "um layout para o desktop e um layout para o mobile [...] você também faz com o CSS"; flexbox + media query como "uma das formas"
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: `max-width: 400px` "é melhor" que `width` para a caixa
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: layout responsivo "utilizando só CSS, [...] apenas recursos da tecnologia nativa que o browser entende"
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: Flexbox como esqueleto que "se adapte ao tamanho da tela"
+- [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `max-width` no container; itens em block acompanham a largura do pai
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: row → column numa media query de 960 px; `max-width` em vez de `width`
+- [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: cards com `flex-basis` fixo + `flex-wrap` que "conseguem variar em vários tamanhos de tela"; `[external]` alternativa em grid com `auto-fit`/`minmax`
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: `flex-shrink: 0` com base de 300 px e telas de 320 px; `[external]` 320 px é a referência de reflow da WCAG
+- [[wiki/sources/frontpush-order-e-align-self]]: `order` para pôr o texto antes da ilustração no mobile (`[external]` melhor: HTML na ordem de leitura)
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: "estrutura ABC [...] vai quebrar em ABC em coluna": media query ou `flex-wrap` + `flex-basis`

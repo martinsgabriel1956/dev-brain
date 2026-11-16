@@ -4,7 +4,7 @@ title: "Listas no HTML (ul, ol, li) e list-style"
 aliases: ["ul", "ol", "li", "lista não ordenada", "lista ordenada", "list-style", "list-style-type"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [html, css, listas, menu, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -24,3 +24,4 @@ status: stub
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: ul x ol, menu com ul/li, list-style none/square
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `li:nth-child(n)` numa `ul` de três itens
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: menu como `ul.nav-menu` > `li.nav-item` > `a.nav-link`

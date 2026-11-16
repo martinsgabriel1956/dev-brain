@@ -4,7 +4,7 @@ title: "HTML semântico (tags semânticas do HTML5)"
 aliases: ["tags semânticas", "semantic HTML", "HTML5 semântico", "elementos semânticos"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [html, html5, semantica, seo, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -38,6 +38,10 @@ Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]],
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] diz que "geralmente a gente usa tags li para semântica de lista", mas põe os `li` direto numa `div`, sem `ul` (inválido). Nos cards, um `h1` por card e um `h4` antes deles quebram a hierarquia de títulos.
 
+## HTML da prática do YouTube (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] diz "sempre utilizando HTML semântico" e usa `header`, `ul`/`li`/`a` e `section`, mas o resto é `div` (`div.nav`, `div.video-side`) e não há `h1`. `[external]` `<nav>`, `<main>`, `<aside>`/`<article>` e um `h1` no título do vídeo fecham a semântica.
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — header, nav, section, article, figure, footer; visual igual à div; motivo dado: Google
@@ -46,3 +50,5 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: div dentro de div x tags semânticas; Google e refatoração
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: menu `header` > `nav` > `ul` > `li`; trocar por `div` "vai contra o HTML semântico"
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: li sem ul; h1 por card
+- [[wiki/sources/frontpush-order-e-align-self]]: ordem do HTML como ordem de leitura; `order` do flexbox só muda o visual `[external]`
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: header/ul/section, mas nav em div e sem h1 `[external]`

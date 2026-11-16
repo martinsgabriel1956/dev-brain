@@ -4,7 +4,7 @@ title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 7
+source_count: 9
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: draft
@@ -88,6 +88,10 @@ O grid é "um guia", não uma régua de precisão: figuras de 88 ou ilustraçõe
 
 `[external]` O Bootstrap 5, que ele cita como origem, usa colunas fluidas e gutter de 24 px; containers até 1320 (https://getbootstrap.com/docs/5.3/layout/containers/).
 
+## Do grid do Figma ao container (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] parte de um grid de 12 colunas de 96 px com gutter de 24 px, "próximo de 1440px", que define a largura do container. (12 × 96 + 11 × 24 = 1416 px; as margens completam os 1440.)
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
@@ -97,3 +101,5 @@ O grid é "um guia", não uma régua de precisão: figuras de 88 ou ilustraçõe
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library, Bootstrap, Material Design; 4/8/12 colunas
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — 72 + 36 = 1260 (o principal), 1216, 1416, 1504, 1548; Center x Stretch; pensar em blocos; grid como guia; equilíbrio do menu
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: o grid do Figma levado ao código como grid system em Sass (hoje CSS Grid faz sem float)
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: 12 colunas de 96 px + gutter 24 px ≈ 1440 px viram o container
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: container de 1.200 ou 1.440 px "de acordo com o grid que você estabeleceu"

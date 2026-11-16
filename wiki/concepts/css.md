@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 18
+source_count: 19
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -65,6 +65,10 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 
 Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]], [[wiki/entities/nasser|Násser]] resume o CSS em três funções, estilização, layout e animação, e diz "por isso que a gente está na versão 3 do CSS". `[external]` Depois do CSS 2.1 a especificação virou módulos com níveis próprios; "CSS3" é rótulo, não versão, e não há CSS4: https://www.w3.org/Style/CSS/specs.en.html.
 
+## Estilo x layout na abertura do módulo de Flexbox
+
+Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/entities/nasser|Násser]] separa de novo as duas funções: "a estilização é literalmente utilização do CSS básico; a parte de Flexbox é construir layout responsivo".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -85,3 +89,4 @@ Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-document
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: CSS modifica "a cor, [...] o posicionamento, [...] o espaçamento, [...] a fonte"; aula de box model
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: as duas funções do CSS: estilização e layout
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: estilo, layout e animação; "versão 3" (CSS é modular desde o 2.1)
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: estilização = CSS básico; layout = Flexbox

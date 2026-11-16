@@ -4,7 +4,7 @@ title: "Alinhamento de Texto"
 aliases: ["text-align", "alinhamento à esquerda", "texto centralizado", "texto justificado", "alinhamento tipográfico"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [ui, ui-design, tipografia, alinhamento, alinhamento-de-texto, legibilidade, css, design-responsivo]
 skill: ux-ui-mentor
 status: stub
@@ -45,3 +45,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], `text-ali
 
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda como padrão, centralizado em cards, direita rara, justificado nunca
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: text-align horizontal; vertical-align só em inline e células
+- [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `text-align: center` para centralizar o texto dos itens na demo de flexbox

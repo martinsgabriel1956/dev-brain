@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 7
+source_count: 10
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -53,6 +53,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Ver [[wiki/concepts/modal]].
 
+## `order` e a ordem do HTML (FrontPUSH, módulo de Flexbox)
+
+Em [[wiki/sources/frontpush-order-e-align-self]], [[wiki/entities/nasser|Násser]] usa `order` para mostrar o texto antes da ilustração no mobile. `[external]` O leitor de tela e o Tab seguem o HTML, não o `order`; o melhor é escrever o HTML na ordem de leitura e reordenar só o visual (WCAG 1.3.2 e 2.4.3: https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html).
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -60,3 +64,6 @@ Ver [[wiki/concepts/modal]].
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: outline e foco; label for sem id
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `list-style: none` faz o Safari/VoiceOver deixar de anunciar a lista; ver [[wiki/concepts/listas-html]]
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: label na busca; texto oculto; lacunas de teclado e foco
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: `order` no slide do Flexbox; muda só a ordem visual `[external]`
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `row-reverse`/`column-reverse` mudam só a ordem visual `[external]`
+- [[wiki/sources/frontpush-order-e-align-self]]: `order` para reordenar texto e ilustração no mobile; a ordem lida continua a do HTML `[external]`

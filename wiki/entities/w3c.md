@@ -4,7 +4,7 @@ title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
 date_updated: 2026-11-16
-source_count: 7
+source_count: 9
 tags: [padronizacao, web, xml, soap, css]
 skill: tech-mentor-backend
 status: stub
@@ -36,3 +36,5 @@ Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], [[wiki/entities/n
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — indicado como referência de CSS; o site com “try it yourself” é o W3Schools
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: "W3C" de novo indicado para estudar HTML, ao lado do [[wiki/entities/mdn-web-docs|MDN]]; provável W3Schools
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: "digitei na W3C mais alguns atributos": de novo, provável W3Schools
+- [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: Násser indica "buscarem mais referências [...] na W3C" sobre flex-basis (pode ser o W3Schools, como em outras aulas)
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: "o próprio W3C fala que é legal definir o flex dessa forma": confirmado na especificação do flexbox

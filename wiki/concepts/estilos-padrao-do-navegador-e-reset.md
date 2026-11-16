@@ -4,7 +4,7 @@ title: "Estilos padrão do navegador e reset CSS"
 aliases: ["user agent stylesheet", "folha de estilo do navegador", "reset CSS", "CSS reset", "normalize", "estilos padrão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [css, reset, user-agent, cascata, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,3 +22,5 @@ Na aula 03 do módulo de front-end do [[wiki/entities/frontpush]] ([[wiki/source
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: links e listas "resetados"; "configuração padrão do HTML"
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `* { color: white }` como "reset dos seletores" (cor é herdada; basta o `body`)
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` "em todos os projetos"
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: reset de margin/padding e "border-size" (é `box-sizing`) em border-box no início do projeto

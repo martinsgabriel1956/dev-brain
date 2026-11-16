@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 22
+date_updated: 2026-11-16
+source_count: 23
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -142,3 +142,4 @@ Na aula 4 do módulo de tipografia ([[wiki/sources/alinhamento-e-espacamento-de-
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito, itálico, tracking, kerning, maiúsculas; estilo falso; justificado
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — método de escolha (mensagem, similares, público, licença) e de combinação (duas typefaces, contraste, consistência)
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — alinhamento (esquerda padrão, justificado nunca) e vão de parágrafo = line-height
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `align-items: baseline` alinha itens de tamanhos de fonte diferentes pela linha de base

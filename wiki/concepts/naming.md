@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-09-30
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -52,6 +52,10 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 
 [[wiki/sources/habitos-ruins-de-programador]] · [[wiki/concepts/testar-proprio-codigo]] · [[wiki/concepts/red-flags-de-design]] (Vague Name, Hard to Pick Name)
 
+## Nomes de classe CSS (FrontPUSH)
+
+Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] chama de boa prática a "árvore de classes" (o filho leva o nome do pai: `nav` → `nav-item` → `nav-link`) e corrige a si mesmo por misturar português e inglês ("isso aqui não é legal"). `[external]` É a ideia do BEM (https://getbem.com/naming/).
+
 ## Key Sources
 
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre naming como um dos dois problemas difíceis
@@ -60,3 +64,4 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — bug do `block` no Sprite; discordância com o guia de estilo de nomes do Go
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — números mágicos e valores hard-coded (URLs, chaves de API) como falta de naming; busca textual ambígua vs. busca por nome de constante
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `double d` vs `valorDescontoPedido`: em método longo, a variável alterada várias vezes longe da declaração pesa na leitura
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: "árvore de classes" (prefixo do pai) e não misturar português com inglês

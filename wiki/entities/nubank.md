@@ -4,7 +4,7 @@ title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
 date_updated: 2026-11-16
-source_count: 18
+source_count: 20
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -112,3 +112,5 @@ Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em vers
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — roxo e branco como paleta neutra + uma cor
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — style guide do Nubank (escalas desktop e mobile)
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: projeto prático do FrontPUSH indicado como o primeiro depois do módulo de HTML e CSS
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: menu responsivo com `space-around` prometido para o projeto do Nubank (módulo de Flexbox do FrontPUSH)
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: citado como o projeto em que Násser já mostrou o menu com hambúrguer e media query

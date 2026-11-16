@@ -14724,3 +14724,135 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Tocadas (19 existentes):** sqlite, sql-injection, post-redirect-get, validacao-de-entrada, relational-vs-nosql, database-index, sql-alem-do-basico, metodos-http, formulario-html, template-engine, array, funcoes-javascript, debugging (concepts); express, nunjucks, mayk-brito, next-level-week, rocketseat, unsplash (entities); Open Questions do [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]. Também index.md e log.md.
 
 **Notas:** (1) **Achado principal:** a busca interpola `req.query.search` no SQL (`LIKE '%${search}%'`), uma SQL injection, enquanto a mesma aula usa placeholders `?` no INSERT e no DELETE. (2) **Outras correções registradas na fonte:** "SQL como banco" (SQL é a linguagem); "relacional porque faz relações" (relação = tabela); `items` em texto fere a 1FN, logo depois da explicação de clientes/estados; POST não esconde nada sem HTTPS; render direto após POST duplica no reload (PRG); sem validação no servidor; caminho do .db relativo ao cwd; SQLite e concorrência (WAL); AUTOINCREMENT opcional; LIKE ignora maiúsculas só em ASCII e não usa índice com `%` inicial; `rem` não muda com a tela; `for...else` do Nunjucks; redirect de 2s x WCAG 2.2.1; estrutura de venda no fim. (3) Com este ingest a NLW #1 fica com os cinco dias na wiki. (4) Data provável 5 de junho de 2020 `[external, não verificado]`.
+
+## [2026-11-16] ingest | FrontPUSH, aula 01 do módulo de Flexbox: introdução
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/01 - Intro Flexbox CSS.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-intro-flexbox-flex-container-flex-item.md`. Parágrafos e 4 subtítulos `##`. Diff palavra a palavra conferido (609 tokens no original; 611 no limpo): só "Flexcontainer e Flexitem" → "flex-container e flex-item". Espaços antes de hífen da legenda ("pré -requisito", "flex -container", "flex -itens", "box -model") colados. Sem inserções entre colchetes. Mantidos literalmente: "construir um algo"; "depois esse e depois a gente vai tentar" (frase truncada; ele aponta para a tela).
+
+**Skill:** tech-mentor-frontend (SKILL.md; nenhum arquivo de referência cobre flexbox básico). Precisões pela especificação do W3C e pela MDN, marcadas `[external]`. A lista de propriedades vem do print do slide enviado pelo usuário junto com a transcrição.
+
+**Criado:** [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/concepts/flex-container-e-flex-item]].
+
+**Tocadas (10 existentes):** flexbox, css, design-responsivo, box-model, pratica-deliberada, layout-fixo-fluido-adaptativo-responsivo, display-css, acessibilidade (concepts); frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria inferida** (Násser; não diz o nome). (2) Abre um módulo novo do FrontPUSH, de Flexbox, que a conclusão do módulo de front-end citava. (3) **Precisões:** Flexbox é unidimensional (o esqueleto 2D costuma ser Grid); Flexbox sozinho não troca layout por tela, isso pede media queries; o slide não traz `gap` nem `inline-flex`; `order` muda só a ordem visual. (4) YouTube citado só como layout a reproduzir; sem página. (5) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 02 do módulo de Flexbox: display flex
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/02 - Display Flex.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-display-flex-flex-container-filhos-diretos.md`. Parágrafos e 6 subtítulos `##`. Diff palavra a palavra conferido (1045 tokens no original, 1046 no limpo): "Nássio"→Násser, "Inácio"→Násser, "alto"→auto (`margin 0 auto`), "Flexcontainer"/"flexitens"→flex-container/flex-itens, "em baixo"→embaixo. Espaços antes de hífen e de ponto da legenda colados ("display -flex", "section .container", "div -item", "solid -white", "display -block .E aí"). Sem inserções entre colchetes. Mantidos literalmente: "tipografias box de texto"; "um div do tipo span"; "width que vai se ajustar"; o "de 600 para 700" (o `max-width` foi declarado como 500).
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pelo W3C e pela MDN, marcadas `[external]`. A frase do slide sobre `display: flex` vem do print enviado pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]. Nenhuma página nova.
+
+**Tocadas (9 existentes):** flexbox, flex-container-e-flex-item, display-css, box-model, design-responsivo, alinhamento-de-texto, unidades-de-medida-css (concepts); frontpush, nasser (entities). Também a fonte da aula 01 (autoria passa de inferida a confirmada), index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** pela pergunta retórica "Ah, Násser, o que é container?". (2) **Correções:** quebrar linha é `flex-wrap` no contêiner, não propriedade dos itens; "todas as tags são elementos de bloco" contradiz a própria lista; `justify-content` horizontal / `align-items` vertical só em `row`; `align-items: center` no `body` não centraliza na vertical sem altura. (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 03 do módulo de Flexbox: flex-direction, flex-wrap e flex-flow
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/03 - Flex-direction & Flex-wrap.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flex-direction-flex-wrap-flex-flow.md`. Parágrafos e 8 subtítulos `##`. Diff palavra a palavra conferido (1213 tokens no original): "raw"→row (5×), "media carry"→media query (4×), "sobreescreva"→sobrescreva, "no wrap"→nowrap (2×), "FlexFlow"→flex-flow (3×). Espaços antes de hífen e de ponto da legenda colados. Sem inserções entre colchetes. Mantidos literalmente: "column, column-normal" (não existe esse valor); "wrap inverso" (é `wrap-reverse`); "sistema wrap"; "tem, quebrou"; "Por que eles estão acontecendo isso?"; "o do media query".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN, marcadas `[external]`. Os três slides (flex-direction, flex-wrap, flex-flow) vêm dos prints enviados pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]. Nenhuma página nova (media query segue dentro de design-responsivo e breakpoint).
+
+**Tocadas (11 existentes):** flexbox, flex-container-e-flex-item, design-responsivo, breakpoint, shorthand-css, layout-fixo-fluido-adaptativo-responsivo, unidades-de-medida-css, acessibilidade, pratica-deliberada (concepts); frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Correções:** media query desktop-first (`max-width`), mobile-first é o padrão comum; `-reverse` muda só a ordem visual; `column` parece `block` mas os itens seguem flex; slide rotula `wrap-inverse` (é `wrap-reverse`); com `nowrap` os itens encolhem até o mínimo antes de transbordar. (2) Resolve o gancho da aula 02 (quebra é `flex-wrap`, no contêiner). (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 04 do módulo de Flexbox: justify-content e align-items
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/04 - Justify-content & Align-items.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-justify-content-align-items-box-sizing.md`. Parágrafos e 6 subtítulos `##`. Diff palavra a palavra conferido (1333 tokens no original): "Nácio"→Násser (3×), "flex-justified-content"→flex justify-content, "flex-director"→flex-direction, "raw"→row (2×), "a linha à esquerda/ao centro/à direita"→alinha (3×), "fios diretos"→filhos diretos, "align-itens"/"a line-itens"→align-items, "que"→quê. Espaços antes de hífen colados. Sem inserções entre colchetes. Mantidos literalmente: "o justify-content por padrão é o flex-direction, start" (lapso); "minimum-height"; "caráter horizontal/vertical"; "da Nubank"; o fim cortado da legenda.
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN, marcadas `[external]`. Os dois slides (justify-content, align-items) vêm dos prints enviados pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]. Nenhuma página nova.
+
+**Tocadas (10 existentes):** flexbox, flex-container-e-flex-item, box-model, estilos-padrao-do-navegador-e-reset, espaco-em-branco, tipografia, pratica-deliberada (concepts); nubank, frontpush, nasser (entities). Também a fonte da aula 03 (errata do `wrap-reverse` registrada), index.md e log.md.
+
+**Notas:** (1) **Errata do autor:** "inverse" → `wrap-reverse` (aula 03). (2) **Correções:** padrão de `align-items` é `stretch` (o slide acerta, a fala erra; o `max-height` escondeu o efeito); horizontal/vertical só em `row`; `box-sizing` inclui padding e borda na largura declarada, não impede a caixa sem `width` de crescer com o conteúdo; `space-evenly`/`gap` para menus. (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 05 do módulo de Flexbox: align-content
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/05 - Align-content.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-align-content-linhas-flex-wrap.md`. Parágrafos e 4 subtítulos `##`. Diff palavra a palavra conferido (817 tokens no original): "align-itens"→align-items (2×), "aliados"→alinhados, "flex-box"→flexbox. Espaços antes de hífen e de ponto da legenda colados. Sem inserções entre colchetes. Mantidos literalmente: "flex-stretch" (o valor é `stretch`); "com maiores itens assim"; "poderem ficarem".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN, marcadas `[external]`. O slide de align-content vem do print enviado pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]. Nenhuma página nova.
+
+**Tocadas (6 existentes):** flexbox, flex-container-e-flex-item, espaco-em-branco, pratica-deliberada (concepts); frontpush, nasser (entities). Também index.md e log.md. Aula estreita (uma propriedade), por isso menos páginas que o alvo de 10.
+
+**Notas:** (1) Fecha as propriedades do flex-container; a aula 06 começa os itens (`flex-grow`). (2) **Correções:** `align-content` move linhas, `align-items` move itens; sem efeito com `nowrap`; valor inicial `normal` (age como `stretch`); `stretch` divide o espaço livre, não dá "100%"; o que segurava os itens na demo era o `max-height` da aula 04. (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 06 do módulo de Flexbox: flex-grow
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/06 - Flex-grow.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flex-grow-crescer-espaco-disponivel.md`. Parágrafos e 5 subtítulos `##`. Diff palavra a palavra conferido (781 tokens no original; os 30 a mais no limpo são palavras coladas pela legenda que foram separadas): "FlexGrow(s)"→flex-grow(s) (19×), "Flexitem(s)/FlexItems"→flex-item(s) (5×), "Flexcontainer"→flex-container (3×), "Flexstart"→flex-start (2×), "FlexBases"→flex-basis, "raw"→row, "non-lock"→Num Lock. Sem inserções entre colchetes. Mantidos literalmente: "ele está com o como stretch"; "Vou ter que deixar 8, volta"; "que facilitaria a gente a saber dela agora"; "todo está com flex-grow 1".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN e pelo W3C, marcadas `[external]`. O slide de flex-grow vem do print enviado pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]], [[wiki/concepts/flex-grow-shrink-basis]] (vai receber as aulas de flex-basis, flex-shrink e flex).
+
+**Tocadas (4 existentes):** flexbox (seção nova e backlink na precisão de `flex: 1`), flex-container-e-flex-item (concepts); frontpush, nasser (entities). Também index.md e log.md. Aula estreita, por isso menos páginas que o alvo.
+
+**Notas:** (1) Começa as propriedades dos flex-items. (2) **Correções:** `flex-grow` reparte a sobra, não multiplica o tamanho ("4 vezes maior" só vale com `flex-basis: 0`; o slide acerta com "espaço extra"); não é prioridade, é proporção; sem sobra (linha cheia) não há o que crescer; a OBS do slide sobre `justify-content` vale quando os itens absorvem toda a sobra. (3) Ele mostra `stretch` como padrão do `align-items` aqui, contra o que disse na aula 04. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 07 do módulo de Flexbox: flex-basis
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/07 - Flex-basis.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flex-basis-tamanho-base-flex-itens.md`. Parágrafos e 6 subtítulos `##`. Diff palavra a palavra conferido (1355 tokens no original): "alto"→auto (2×), "taflex-basis"→"tá flex-basis", "Nasser"→Násser, "Flex Growing"→flex-grow. Espaços antes de hífen e de ponto da legenda colados. Sem inserções entre colchetes. Mantidos literalmente: "por sua volta"; "não está nem para o tamanho"; "um string inteiro"; "na W3C"; a contradição "o 9 e o 10 têm a quantidade de grow diferente" / "exatamente o mesmo".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN, marcadas `[external]`. O slide de flex-basis vem do print enviado pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]. Nenhuma página nova.
+
+**Tocadas (9 existentes):** flex-grow-shrink-basis, flexbox, design-responsivo, css-grid, unidades-de-medida-css, pratica-deliberada (concepts); w3c, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Correções:** `flex-grow` não "é mais ligado ao padding" (reparte o espaço livre); `flex-basis: 0` iguala as larguras pela divisão do espaço, limitada pelo `min-width: auto` (a maior palavra), não por "contas"; base fixa é tamanho inicial, não mínimo (com `wrap` age como mínimo; sem `wrap`, encolhe); cards em flex esticam a última linha, grid com `auto-fit`/`minmax` não. (2) "W3C" pode ser o W3Schools, como em outras aulas do curso. (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 08 do módulo de Flexbox: flex-shrink e flex
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/08 - Flex-shrink & Flex.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flex-shrink-e-flex-shorthand.md`. Parágrafos e 6 subtítulos `##`. Diff palavra a palavra conferido (1532 tokens no original): "flex-sharing"/"flex-linking"/"flex-link"→flex-shrink (16×), "flex-growth"→flex-grow (11×), "regra de Blaze"→regra de basis, "flex-base"→flex-basis, "flex-01-auto"→flex 0 1 auto, "que"→quê. Espaços antes de hífen colados. Sem inserções entre colchetes. Mantidos literalmente: "eles tendam"; "o termo, o tamanho"; "não está nem em deixar"; "flex total"; "a tipa fórmula"; "W3C".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela especificação do W3C, MDN e WCAG, marcadas `[external]`. Os dois slides (flex-shrink, flex) vêm dos prints enviados pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]. Nenhuma página nova.
+
+**Tocadas (8 existentes):** flex-grow-shrink-basis, flexbox, shorthand-css, compatibilidade-entre-navegadores, design-responsivo (concepts); w3c, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) Fecha as propriedades de tamanho dos itens (faltam `order` e `align-self` do slide da aula 01). (2) **Correções:** o shrink "não aparecia" por causa do `flex-wrap: wrap` (linhas montadas pela base, sem déficit), não por o container estar "num tamanho legal"; o encolhimento pesa `flex-shrink × flex-basis` ("4 vezes mais" só com bases iguais); o limite do "conteúdo contínuo" é o `min-width: auto`. (3) **Confirmado:** o W3C recomenda o shorthand `flex`. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 09 do módulo de Flexbox: order e align-self
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/09 - Order & Align-self.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-order-e-align-self.md`. Parágrafos e 3 subtítulos `##`. Diff palavra a palavra conferido (748 tokens nos dois): "aligned-self"→align-self, "stretched"→stretch (2×), "in-height"→min-height. Espaços antes de hífen colados. Sem inserções entre colchetes. Mantidos literalmente: "eu quero que você apareça em segundo"; "o dois virem o quarto"; "as mesmas características de quando a gente está falando sobre flex-item" (lapso: é o align-items); "lá no flex-end"; "minimum-height" (2×); "poderem ficarem".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN e WCAG, marcadas `[external]`. Os dois slides (order, align-self) vêm dos prints enviados pelo usuário.
+
+**Criado:** [[wiki/sources/frontpush-order-e-align-self]]. Nenhuma página nova.
+
+**Tocadas (8 existentes):** flex-container-e-flex-item, flexbox, acessibilidade, design-responsivo, html-semantico, box-model (concepts); frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) Fim da teoria do módulo: todas as propriedades do slide da aula 01 cobertas; a seguir vêm os projetos. (2) **Correções:** `order` muda só a ordem visual, e o caso de uso dele (texto antes no mobile) pede HTML na ordem de leitura (WCAG 1.3.2/2.4.3); não há `justify-self` no flexbox (`margin: auto`); quem segurava o `stretch` era o `max-height`. (3) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 10 do módulo de Flexbox: prática 1 (layout do YouTube, estrutura HTML)
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/10 - Flexbox: Prática 1.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html.md`. Parágrafos e 7 subtítulos `##`. Diff palavra a palavra conferido (1767 tokens nos dois): "nave"→nav (9×, nome de classe), "nossa loop"→nossa logo, "div tab [...] a tab do vídeo"→thumb (2×), "vídeo-main"→video-main, "a um mês"→há um mês. Espaços antes de hífen e de ponto colados ("index .html", "li .nave -item", "section .container"). Sem inserções entre colchetes. Mantidos literalmente: "1440p"; "border-size" (é `box-sizing`); "portanto chamada de nav-menu"; "ficar em também da tela"; "a1a"; "0c, 0c, 0c".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN e BEM, marcadas `[external]`. Sem slide nesta aula.
+
+**Criado:** [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]. Nenhuma página nova.
+
+**Tocadas (11 existentes):** flexbox, grid-de-colunas, html-semantico, naming, estilos-padrao-do-navegador-e-reset, listas-html, css-grid (concepts); vs-code, figma, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) Primeira prática do módulo; só planejamento e HTML, o CSS vem na aula 11. (2) **Correções:** semântica incompleta (`<nav>`, `<main>`, `<aside>`/`<article>`, sem `h1`, `h3` → `h4` sem `h2`); "border-size" é `box-sizing`; `min-height: 100vh` em vez de `height`; a "árvore de classes" é a ideia do BEM; o tema escuro é o Auto Dark Mode do Chrome. (3) Figma inferido (a aula não diz a ferramenta). (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 11 do módulo de Flexbox: prática 2 (desafio)
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/11 - Flexbox: Prática 2.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs.md`. Parágrafos e 4 subtítulos `##`. Diff palavra a palavra conferido (766 tokens no original): "media carry"→media query (3×), "imagem do tab"→thumb, "flex-box"→flexbox (2×). Espaços antes de hífen e de ponto colados ("1 .200"→1.200). Sem inserções entre colchetes. Mantidos literalmente: "inverte sobre produtos e contato"; "Está tô, pessoal"; "melhor responsabilidade" (provável lapso por responsividade); "filhos direto".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Precisões pela MDN, marcadas `[external]`. Sem slide; o layout do desafio não é descrito na fala.
+
+**Criado:** [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]. Nenhuma página nova.
+
+**Tocadas (12 existentes):** flexbox, flex-container-e-flex-item, flex-grow-shrink-basis, design-responsivo, breakpoint, mobile-navegacao, botoes-em-interfaces, grid-de-colunas, pratica-deliberada (concepts); nubank, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Tensão:** a aula 10 prometeu o CSS do layout do YouTube para a aula seguinte; a 11 é outro layout, sem código. (2) "Pensa em linhas" (aula 10) x "pense [...] como em colunas primeiro" (aula 11): mesmo método, falas opostas. (3) **Precisões:** `wrap` + `flex-basis` quebra por espaço e passa por 2 + 1, media query troca de uma vez; menu hambúrguer pede um botão com `aria-expanded`. (4) `date_published` vazio (~2022, inferido).

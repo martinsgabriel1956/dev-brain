@@ -4,7 +4,7 @@ title: "Shorthand CSS (propriedades que resumem outras)"
 aliases: ["propriedade shorthand", "shorthand properties", "propriedade resumo", "TRBL", "top right bottom left"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [css, sintaxe, box-model, padding, margin, border, background]
 skill: tech-mentor-frontend
 status: stub
@@ -29,3 +29,5 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — padding em sentido horário; background engloba background-color; border em três valores
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: margin, background e border-radius
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: `margin: 12px 24px`; `padding` com 1, 2 e 4 valores "no círculo, no sentido horário" = as quatro propriedades separadas
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `flex-flow` como atalho de `flex-direction` + `flex-wrap`; Násser prefere as duas longas
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: `flex` como atalho de grow, shrink e basis; padrão `0 1 auto`; o W3C recomenda usá-lo

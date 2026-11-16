@@ -4,7 +4,7 @@ title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 17
+source_count: 18
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -119,3 +119,4 @@ Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `borde
 - [[wiki/sources/classes-e-ids-no-css]] — `.btn`, `btn-primary` e `btn-secondary` no CSS; checkout por ID
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — hover, active, focus e disabled como pseudo-classes
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: botão do zero: borda, fundo, padding, radius e hover que cresce
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: botões de call to action no menu como variação do desafio de flexbox

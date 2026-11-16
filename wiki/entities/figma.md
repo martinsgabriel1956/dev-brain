@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 45
+source_count: 46
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -201,3 +201,4 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: o design feito no Figma traduzido "para o CSS de maneira plena"
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: eixos X e Y desenhados para explicar o `position: absolute`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: inspeção de estilos; divergência consciente do layout
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: design do layout do YouTube com grid de 12 colunas (96 px, gutter 24) que vira o container (ferramenta inferida)

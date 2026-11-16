@@ -4,7 +4,7 @@ title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 11
+source_count: 17
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -102,6 +102,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] fecha o dia defendendo o descanso: "o cérebro ele vai assimilando as coisas" e "o descanso é importante para você recuperar suas energias e para fazer com que o cérebro consolide alguns conhecimentos". No meio da aula, aconselha anotar em comentários em vez de decorar, fazendo do cérebro "um arquivo de indexação".
 
+## Teoria, prática e repetição no Flexbox (FrontPUSH)
+
+Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/entities/nasser|Násser]] propõe alternar teoria e prática, "porque é a repetição que vai fazer você entender", e refazer os projetos "sem olhar as minhas aulas"; se não der conta, "copia de novo, vai, volta e vai fazer". Contrasta com o CSS básico, que "você vai aprendendo com o tempo".
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
@@ -115,3 +119,9 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: maratona, não 100 metros; prática diária
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: descanso consolida; não decorar
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aprender CSS "botando a mão na massa, já executando algum projeto"; pesquisar antes de perguntar
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: "é a repetição que vai fazer você entender"; refazer sem olhar a aula
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: "faça esse mesmo exercício aqui, mas sem colar de mim, olhando a teoria"
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: "sempre leia a teoria"; propriedades explicadas "em duplas"
+- [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: "sempre troca para coluna e vai vendo o que vai acontecendo"
+- [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: flex-basis: "eu aconselho fortemente a vocês treinarem"
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: layout-desafio "fica para exercício, para vocês treinarem"

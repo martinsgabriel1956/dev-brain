@@ -3,8 +3,8 @@ type: concept
 title: "Navegação Mobile"
 aliases: ["react navigation", "navigation compose", "gorouter flutter", "mobile routing"]
 date_created: 2026-04-24
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [mobile, navegacao, react-navigation, navigation-compose, gorouter, stack, tab]
 skill: tech-mentor-mobile
 status: stable
@@ -84,3 +84,4 @@ Cada tela empilhada na navigation stack não é "de graça" — ela segura estad
 
 - [[wiki/sources/mobile-navegacao]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — vazamento de memória por navigation stack e ciclo de vida mal gerenciados; OOM kill como sintoma final
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: menu web: com poucos itens não precisa de hambúrguer; com muitos, media query troca os links pelo ícone (FrontPUSH)

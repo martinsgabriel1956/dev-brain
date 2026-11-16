@@ -4,7 +4,7 @@ title: "Compatibilidade entre navegadores (Can I use, Baseline)"
 aliases: ["suporte de navegadores", "cross-browser", "Can I use", "caniuse", "browser support"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [frontend, navegador, css, javascript, compatibilidade, baseline]
 skill: tech-mentor-frontend
 status: stub
@@ -27,3 +27,4 @@ O [[wiki/entities/mdn-web-docs|MDN]] traz a tabela de compatibilidade e o selo B
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Can I use, `transform` x `backdrop-filter` no Firefox
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: slide: usar `flex` em vez das propriedades separadas "para melhor consistência entre os browsers" (`0` sem unidade era problema do IE10/11)

@@ -3,8 +3,8 @@ type: concept
 title: "Layout fixo, fluido, adaptativo e responsivo"
 aliases: ["layout fixo", "layout fluido", "layout adaptativo", "fixed vs fluid vs adaptive vs responsive", "adaptive design", "fluid layout"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [ui, ui-design, layout, responsividade, breakpoint, media-query, css]
 skill: ux-ui-mentor
 status: stub
@@ -42,3 +42,5 @@ A aula diz que o adaptativo é "mais otimizado" porque manda "exatamente o estil
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: os quatro tipos, com o iPad da pizzaria, a logo que encolhe e o breakpoint de 960
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: Flexbox como o esqueleto que "se adapte ao tamanho da tela"
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: container com `max-width: 700px` "ajusta"; com `width: 700px`, não

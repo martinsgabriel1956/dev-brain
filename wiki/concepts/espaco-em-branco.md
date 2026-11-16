@@ -3,8 +3,8 @@ type: concept
 title: "Espaço em Branco"
 aliases: ["whitespace", "espaço negativo", "negative space", "respiro", "micro espaço", "macro espaço", "micro e macro espaço"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 11
+date_updated: 2026-11-16
+source_count: 13
 tags: [ui, ui-design, layout, espaco-em-branco, simplicidade, hierarquia-visual, espacamento, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: draft
@@ -83,3 +83,5 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o vão entre parágrafos
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — espaço em branco para o olho focar no destaque laranja
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — container do NYT e parágrafos como pausa
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — vão de parágrafo = line-height; espaço grande separa o texto
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `space-around` deixa "um espacinho" nas pontas; `space-between` cola os itens nos cantos
+- [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: `space-around`/`space-between` de novo, agora entre linhas (`align-content`)

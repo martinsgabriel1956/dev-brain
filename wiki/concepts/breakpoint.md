@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -90,3 +90,5 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: max-width 900px, desktop-first
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: min-width 1700 e max-height 760; Device Toolbar
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `@media screen and (max-width: 960px)` com `flex-direction: column`; "somente quando a tela [...] for menor ou igual a 960 pixels" (desktop-first)
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `@media (max-width: 960px)` troca `flex-direction` para `column` (desktop-first); 720 px demora mais para quebrar
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: media query para "sumir com os itens" do menu e trocar por hambúrguer quando há muitos links

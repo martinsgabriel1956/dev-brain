@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 53
+source_count: 64
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -179,6 +179,50 @@ Em [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: relati
 
 Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]], [[wiki/entities/nasser|Násser]] fecha o módulo (que chama aqui de "módulo de CSS") com a ordem estilo → layout → animações, o dever de olhar a documentação, a comunidade do curso para dúvidas e o projeto do [[wiki/entities/nubank]] como próximo passo. A página da conclusão lista as oito aulas em ordem. Módulos citados: flexbox, grid layout, Sass (grid system a partir do grid do Figma) e keyframes.
 
+## Módulo de Flexbox: aula 01, introdução
+
+Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: módulo "um pouco intermediário", com HTML e CSS como pré-requisito; primeiro as propriedades do flex-container e dos flex-itens, depois projetos em dificuldade crescente (um deles "meio que fazer o design do YouTube").
+
+## Módulo de Flexbox: aula 02, display flex
+
+Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `display: flex` num `section.container` centralizado com `margin: 0 auto`; os filhos diretos viram flex-itens e ficam lado a lado; com 12 itens, transbordam, gancho para as próximas propriedades.
+
+## Módulo de Flexbox: aula 03, flex-direction, flex-wrap e flex-flow
+
+Em [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `row` → `column` numa media query de 960 px como princípio do responsivo; `flex-wrap: wrap` resolve os itens que transbordavam na aula 02; `flex-flow` como atalho pouco usado.
+
+## Módulo de Flexbox: aula 04, justify-content e align-items
+
+Em [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: errata do `wrap-reverse` da aula 03; `justify-content` e `align-items` com seus valores; "o combo desses três" para centralizar no `body`; parêntese sobre `box-sizing: border-box`.
+
+## Módulo de Flexbox: aula 05, align-content
+
+Em [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: `align-content` com 12 itens e `flex-wrap`; fecha as propriedades do flex-container. Próxima aula: `flex-grow`.
+
+## Módulo de Flexbox: aula 06, flex-grow
+
+Em [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: primeira propriedade dos flex-items; com 12 itens em `wrap`, fatores 1, 2 e 4 mostram a diferença.
+
+## Módulo de Flexbox: aula 07, flex-basis
+
+Em [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: `flex-basis` em `auto`, `0` e valor fixo, combinado com os grows 1, 2 e 4 da aula 06; base fixa com `wrap` como forma de controlar cards em várias telas.
+
+## Módulo de Flexbox: aula 08, flex-shrink e flex
+
+Em [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: `flex-shrink` quase invisível nas demos; o atalho `flex` e a fórmula `1 1 300px` de Násser.
+
+## Módulo de Flexbox: aula 09, order e align-self
+
+Em [[wiki/sources/frontpush-order-e-align-self]]: as duas últimas propriedades dos itens; a próxima parte do módulo é prática.
+
+## Módulo de Flexbox: aula 10, prática 1 (layout do YouTube)
+
+Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: primeira prática; grid do design, caixas desenhadas sobre o layout e HTML do menu e dos vídeos. O CSS fica para a próxima aula.
+
+## Módulo de Flexbox: aula 11, prática 2 (desafio)
+
+Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: um segundo layout, mais difícil que o do YouTube, deixado como exercício, com dicas de estrutura (container, três flex-itens, flex dentro de flex) e de menu (CTA, hambúrguer com media query, como no projeto do Nubank). O CSS prometido para o layout do YouTube não aparece aqui.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -234,3 +278,14 @@ Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-document
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: aula 06 do módulo de front-end: estilo e layout
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: aula 07 do módulo de front-end: position; bolinhas, "nzinho" e selo do site
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aula 08: conclusão do módulo; índice das oito aulas
+- [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: aula 01 do módulo de Flexbox: introdução
+- [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: aula 02 do módulo de Flexbox: display flex
+- [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: aula 03 do módulo de Flexbox: flex-direction, flex-wrap, flex-flow
+- [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: aula 04 do módulo de Flexbox: justify-content, align-items
+- [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: aula 05 do módulo de Flexbox: align-content
+- [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: aula 06 do módulo de Flexbox: flex-grow
+- [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: aula 07 do módulo de Flexbox: flex-basis
+- [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: aula 08 do módulo de Flexbox: flex-shrink e flex
+- [[wiki/sources/frontpush-order-e-align-self]]: aula 09 do módulo de Flexbox: order e align-self
+- [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, HTML do layout do YouTube
+- [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, desafio
