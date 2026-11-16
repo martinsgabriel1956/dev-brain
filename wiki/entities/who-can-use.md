@@ -3,8 +3,8 @@ type: entity
 title: "Who Can Use"
 aliases: ["whocanuse", "whocanuse.com", "WhoCanUse"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ferramenta, acessibilidade, contraste, wcag, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -20,6 +20,11 @@ Ferramenta web de [[wiki/concepts/contraste]]: recebe a cor do texto e a cor do 
 
 Compara duas cores sólidas. Sobre foto, o fundo varia ponto a ponto; meça no pior ponto atrás do texto. Ver [[wiki/concepts/texto-sobre-imagem]].
 
+## Na aula de acessibilidade
+
+Volta em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] ao lado do Contrast Ratio, os dois já citados na seção de tipografia: "uma lista de doenças, talvez visuais", para saber se a interface atende "todo e qualquer pessoa". Ver [[wiki/concepts/wcag]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — checker indicado na aula de acessibilidade, com o Contrast Ratio

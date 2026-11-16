@@ -3,8 +3,8 @@ type: concept
 title: "Texto alternativo (alt text)"
 aliases: ["alt text", "atributo alt", "alt", "texto alternativo de imagem", "descrição de imagem"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [acessibilidade, a11y, alt-text, imagens, ilustracoes, html, leitor-de-tela, wcag]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,11 @@ O "sempre" precisa de uma ressalva:
 - [[wiki/concepts/ilustracoes-em-interfaces]]: ilustração de onboarding que só preenche a tela tende a ser decorativa.
 - [[wiki/concepts/contraste]]: o outro critério de acessibilidade visto nas aulas.
 
+## Textos invisíveis e text-to-speech
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], o slide diz: "Coloque textos e descrições em imagens: 'textos invisíveis'". Isso "ajuda quem tem deficiência visual a utilizar os recursos text-to-speech" dos celulares. É uma das quatro recomendações de [[wiki/concepts/acessibilidade]]; o critério correspondente é o 1.1.1 do [[wiki/concepts/wcag]] (nível A). A aula não faz a ressalva da imagem decorativa (`alt=""`) vista acima.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — "sempre coloque um texto alternativo"
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — "textos invisíveis" para o text-to-speech

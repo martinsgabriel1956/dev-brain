@@ -3,8 +3,8 @@ type: concept
 title: "Lei de Jakob"
 aliases: ["Jakob's Law", "jakobs law", "lei de jakob nielsen"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ux, ui, design, leis-de-ux, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: stub
@@ -32,8 +32,13 @@ A aula [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] defende a mesma id
 
 A aula de ícones da edição "W7" aplica a ideia a ícones: "sempre procurar colocar ícones de senso comum" e "não mudar drasticamente" ([[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]]).
 
+## Aprender de novo custa
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: "se você projetar algo totalmente novo, o usuário vai ter que gastar tempo para poder aprender como é que utiliza a sua interface". Patterns já testados poupam isso. Ver [[wiki/concepts/padroes-de-interface]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — menu embaixo em website fere o padrão aprendido
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones de senso comum, "não mudar drasticamente"
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — interface totalmente nova obriga o usuário a reaprender

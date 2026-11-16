@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 30
+date_updated: 2026-11-15
+source_count: 31
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -36,6 +36,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Botões guiam o usuário na jornada; o mesmo botão em toda a interface, primário e secundário, área clicável de 44 px ([[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]).
 - A forma do botão segue o que se quer comunicar; arredondado é o coringa, circular aproxima, reto dá seriedade ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 - Sombra de botão suave, embaixo e não em volta: blur igual ou o dobro do offset, cor da marca a no máximo 40%, spread negativo até cobrir 80% do elemento ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
+- Nós não somos o usuário: contraste no mínimo AA, textos invisíveis em imagens, KISS e patterns consagrados como acessibilidade ([[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]).
 
 ## Key Sources
 
@@ -69,3 +70,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links da edição "W7" (autoria confirmada pelo usuário): guiar a jornada, consistência, primário e secundário, área clicável de 44 px, hover
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — aula teórica de formas de botões da edição "W7" (autoria confirmada pelo usuário): reto, arredondado (o coringa que ele usa), circular, chanfrado, diagonal, hexagonal
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — aula prática de botões da edição "W7" (autoria inferida): padding, gradiente da marca, contraste do texto, Smooth Shadow, sombra "curinga" com spread negativo
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade do módulo de interfaces web do FrontPUSH (logo "W7"; autoria inferida): WCAG, contraste A/AA/AAA, textos invisíveis, KISS, patterns e guidelines
