@@ -3,8 +3,8 @@ type: concept
 title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub
@@ -48,7 +48,12 @@ O valor `rgb(252 189 56)` vem da cor de hover do slide da aula teórica. O CSS �
 
 `[skill: ux-ui-mentor]` A sombra vira token (`shadow-sm`, `shadow-md`, `shadow-lg`, cada uma com finalidade clara), com o tipo `shadow` (offsetX, offsetY, blur, spread, color) no formato de design tokens. No dark mode as sombras somem: a elevação passa para superfícies mais claras ou bordas sutis. Hover precisa de par em focus e active. `[external]` Animar `box-shadow` repinta a cada frame; para hover frequente, animar a `opacity` de um pseudo-elemento que já tem a sombra é mais barato.
 
+## Documentar a sombra
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: "para o desenvolvedor é muito complicado dizer quais são as sombras do CSS". O Inspect do [[wiki/entities/figma]] entrega o `box-shadow` pronto, com as quatro camadas de drop shadow, o RGBA e as opacidades; basta copiar para o [[wiki/concepts/style-guide]]. Ver [[wiki/concepts/handoff-design-dev]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: sombra de hover da cor do botão; valores do slide
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — copiar o box-shadow de quatro camadas do Inspect para o style guide

@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -101,6 +101,10 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: botão primário preenchido e secundário "vazio", sem background, criam hierarquia entre ações. Na [[wiki/entities/apple]], links em branco e texto em cinza; no [[wiki/entities/sketch]], o link "tem a hierarquia visual maior do corpo de texto". Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Documentação discreta
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], o código colado na prancha do [[wiki/concepts/style-guide]] fica "um pouco mais brando", "para poder dar essa hierarquia": o componente aparece, a especificação fica em segundo plano (leitura provável da fala).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -120,3 +124,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: bo
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 16 / 32 / 128 como níveis de hierarquia
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — destaque por cor nas ilustrações aponta onde está o motion
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botão primário x secundário; link branco x texto cinza (Apple)
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — código do style guide mais brando para dar hierarquia

@@ -3,7 +3,7 @@ type: source
 title: "Botões na prática no Figma (edição \"W7\"): padding, gradiente, contraste e sombras suaves"
 aliases: ["aula prática de botões W7", "botões no Figma", "smooth shadow", "sombra de botão", "receita de drop shadow"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, figma, botoes, padding, gradiente, contraste, sombra, drop-shadow, hover, design-system]
 skill: ux-ui-mentor
@@ -111,3 +111,4 @@ A aula prática (cerca de 10 min) que [[wiki/sources/botoes-e-links-guiar-jornad
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: as seis formas de botão
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]: medir distâncias no Figma (Alt, nudge de 8)
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: cor de branding desconectada do estilo para mudar a opacidade
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o style guide prometido: copiar o box-shadow do Inspect e documentar os estados

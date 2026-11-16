@@ -3,8 +3,8 @@ type: concept
 title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -44,9 +44,14 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]], o 
 
 A aula prática constrói o hover como uma [[wiki/concepts/sombra-em-interfaces|sombra]] suave na cor da marca e manda "deixar isso muito bem claro no meu style guide" ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). "A grande questão do momento é saber aplicar o efeito hover e como a gente exporta depois isso para o CSS."
 
+## Três estados por módulo
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: todo módulo ganha "o modo normal, [...] o modo hover, quando você passa o mouse, e [...] o modo clicável", no card, nos ícones e nos inputs, e o style guide diz o que muda de um para o outro. `[skill: ux-ui-mentor]` Faltam focus e disabled; hover não existe no toque. Ver [[wiki/concepts/maquina-de-estados-ui]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — feedback listado sob acessibilidade (slide)
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — hover: crescer, sombra da cor do botão, opacidade
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover como sombra suave na cor da marca, documentado no style guide
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — normal, hover e clicável para card, ícone e input
