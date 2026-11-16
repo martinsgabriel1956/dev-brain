@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 24
+source_count: 25
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -130,6 +130,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 A paleta montada na aula prática (base, destaque, neutros e variações) é "o primeiro passo" do style guide, para "aplicar estilos de maneira ordenada e organizada de forma a priorizar a consistência na ferramenta do Figma" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]].
 
+## Consistência tipográfica
+
+"Já vi muitas interfaces que [...] não têm consistência": o mesmo nível de hierarquia com tamanhos diferentes. A [[wiki/concepts/escala-tipografica]] fixa um tamanho por nível ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -163,3 +167,4 @@ A paleta montada na aula prática (base, destaque, neutros e variações) é "o 
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição fecham com consistência
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — a mesma paleta no card, nos ícones e no layout
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — paleta como primeiro passo do style guide
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica: um tamanho por nível de hierarquia

@@ -1,0 +1,35 @@
+---
+type: concept
+title: "Webfonts"
+aliases: ["fontes web", "carregar fonte no CSS", "font-family", "@import de fonte", "link de fonte", "font-weight", "@font-face"]
+date_created: 2026-11-15
+date_updated: 2026-11-15
+source_count: 1
+tags: [frontend, css, tipografia, google-fonts, performance, font-family, font-weight]
+skill: ux-ui-mentor
+status: stub
+---
+
+# Webfonts
+
+Como uma fonte escolhida no design chega ao site. Na aula de abertura de [[wiki/concepts/tipografia]], o último bloco do módulo é "tipografia CSS": "como a gente literalmente aplica lá no CSS quais são as propriedades", "como é que eu vinculo" uma fonte como a Lato ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
+## O fluxo da aula
+
+1. No [[wiki/entities/google-fonts]], escolher a família e os estilos: "light, que é a mais fininha", normal, bold. Cada peso marcado é um arquivo a mais para baixar.
+2. Vincular no HTML com `<link>` ou no CSS com `@import`. "Eu já adianto que é esse link aqui, deixa mais performático o seu site."
+3. Aplicar com `font-family` e as outras propriedades de texto. Ver [[wiki/concepts/css]].
+
+## Por que `<link>` ganha
+
+`[external]` Um `@import` dentro de uma folha de estilo só é descoberto quando essa folha termina de baixar, e encadeia as requisições. O `<link>` no `<head>`, com `<link rel="preconnect">` para fonts.gstatic.com, começa antes. `font-display: swap` mostra o texto com a fonte de reserva enquanto a webfont carrega (https://web.dev/articles/font-best-practices).
+
+## Pesos e pilha de fontes
+
+- `[external]` Em `font-weight`, 400 é `normal` e 700 é `bold`; 300 costuma ser light e 900 black (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight). Por isso o "Open Sans Bold 400" lido no WhatFont é contraditório.
+- A pilha "Open Sans, Arial, Helvetica, Sans Serif" vista na aula é a lista de reserva: se a primeira não carregar, o navegador tenta a seguinte, até a genérica `sans-serif`.
+- `[skill: ux-ui-mentor]` Em design system a família vira token (`fontFamily.display`, `fontFamily.body`, `fontFamily.mono`) ao lado de `fontWeight` 400/500/600/700.
+
+## Key Sources
+
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: Google Fonts, pesos, `<link>` x `@import`, `font-family`

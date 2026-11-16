@@ -32,9 +32,14 @@ Volta como a ferramenta de contraste que ele cita "bastante em tipografia" (iden
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser testa o verde do [[wiki/entities/frontpush]] ("deu feio, está falho") e mostra a lista de condições (Trichromatic, dificuldade com vermelho, Red blind, dificuldade com verde) e as simulações de glaucoma e catarata. Com texto preto, o laranja "passou em todas". O "68%" que ele lê como "quase foi satisfeito" provavelmente é a fatia da população com aquela visão (inferência). Ver [[wiki/concepts/razao-de-contraste]].
 
+## Site de contraste no Notion (inferido)
+
+Na abertura do módulo de tipografia, [[wiki/entities/nasser|Násser]] mostra "um outro site que eu deixei aqui no Notion, que é muito importante também para poder a gente entender um pouco sobre contraste", sem dizer o nome. Como a aula de imagens situa o Who Can Use na seção de tipografia do Notion, é provavelmente ele ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — checker indicado na aula de acessibilidade, com o Contrast Ratio
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — verde claro + branco reprova, preto AAA; "regular vision" mal descrita
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — teste do verde e do laranja do FrontPUSH; condições de visão
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — provável "site de contraste" no Notion (inferido)

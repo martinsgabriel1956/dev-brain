@@ -3,8 +3,8 @@ type: concept
 title: "Elementos da Interface"
 aliases: ["elementos de interface", "elementos da UI", "UI elements"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 11
+date_updated: 2026-11-15
+source_count: 12
 tags: [ui, ui-design, design, elementos-da-interface, tipografia, cor, icones, botoes]
 skill: ux-ui-mentor
 status: stub
@@ -83,6 +83,10 @@ Cor é um dos elementos, mas "por ele ser tão importante" ganhou módulo à par
 
 Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o bloco de cor passa à prática no Figma. HSB para compor, hexadecimal e RGB para o código, o modo CSS com alfa; "RGB x CMYK" fica para depois. Ver [[wiki/concepts/modelos-de-cor]].
 
+## Tipografia em módulo próprio
+
+"Assim como a gente fez com cores", a tipografia é um elemento da interface que ganhou módulo próprio por ser importante e vasta. A abertura percorre variáveis, classificações e CSS ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]). Ver [[wiki/concepts/tipografia]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -98,3 +102,4 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o bloco
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição (edição "W7"), aula prática
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — abertura do módulo de teoria das cores (edição "W7")
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — cor em códigos (HSB, hex, RGB, CSS)
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7")

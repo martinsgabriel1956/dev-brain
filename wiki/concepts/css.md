@@ -22,8 +22,13 @@ Por ser código com tags, um [[wiki/concepts/formato-svg|SVG]] inline pode ter o
 
 A aba inspect do [[wiki/entities/figma]] dá o CSS do elemento. background, box-shadow e border-radius servem; width, height, top e left dependem da arquitetura (flexbox, position). Os nomes do style guide seguem o CSS (`card-hover`), e a paleta vai para variáveis Sass ou CSS ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). `[external]` A aula chama hover de pseudo-element; `:hover` é pseudo-classe (https://developer.mozilla.org/en-US/docs/Web/CSS/:hover).
 
+## Tipografia no CSS
+
+O módulo de tipografia do curso de UI fecha com as propriedades de texto no CSS: `font-family`, pesos (light, normal, bold), e o vínculo da fonte com `<link>` (preferido, "mais performático") ou `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]). Ver [[wiki/concepts/webfonts]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — SVG é código com tags, então o CSS manipula seus caminhos (base do motion)
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — CSS do inspect; nomes iguais ao CSS; hover é pseudo-classe
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: font-family, pesos, `<link>` x `@import`

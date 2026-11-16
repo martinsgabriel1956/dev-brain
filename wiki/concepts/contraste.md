@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 28
+source_count: 29
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -122,6 +122,10 @@ Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosida
 
 Na aula de tipografia e cores ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]), Násser dá uma escada para quando a paleta não ajuda: observar a [[wiki/concepts/luminosidade-das-cores|luminosidade das cores]] (amarelo, ciano e verde brigam com o branco), aumentar o peso, aumentar a escala, inverter as cores e, em imagem, escurecer o fundo. Último recurso: baixar saturação ou brilho, "sacrificar a sua paleta" nos CTAs. O verde e o laranja do [[wiki/entities/frontpush]] reprovam com texto branco (verde a 1.65) e passam com preto. Ver [[wiki/concepts/razao-de-contraste]].
 
+## Contraste como objetivo da tipografia
+
+Na abertura do módulo de [[wiki/concepts/tipografia]], saber "criar hierarquia e contraste" é parte do que torna o texto acessível, e a cor no texto entra como "contraste maior, com contraste menor" para hierarquizar. O site de contraste deixado no Notion é, provavelmente, o [[wiki/entities/who-can-use]] ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -154,3 +158,4 @@ Na aula de tipografia e cores ([[wiki/sources/tipografia-e-cores-contraste-hiera
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — par complementar roxo/amarelo como base e destaque
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — padrão de luminosidade (amarelo e ciano claros, azul escuro); verde claro + branco reprova, preto tira AAA
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escada para melhorar contraste sem trocar a paleta; verde e laranja do FrontPUSH com texto preto
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: hierarquia e contraste para acessibilidade; cor no texto

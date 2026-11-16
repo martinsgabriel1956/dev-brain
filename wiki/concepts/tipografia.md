@@ -4,10 +4,10 @@ title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 12
+source_count: 13
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
-status: stub
+status: draft
 ---
 
 # Tipografia
@@ -82,6 +82,16 @@ A hierarquia textual também se faz com tons da mesma matiz: maior contraste des
 
 Aula 06 do módulo de tipografia do FrontPUSH ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]): o objetivo da tipografia é acessibilidade, "tem que ter contraste". A hierarquia textual sai de escala, peso (bold acima da fininha), caixa alta e, com cor, da escala de cinza. A cor também informa ([[wiki/concepts/cor-semantica]]). Para texto de botão que não passa, aumentar peso e escala antes de inverter as cores. Ver [[wiki/concepts/razao-de-contraste]].
 
+## Panorama do módulo (aula de abertura "W7")
+
+A aula de abertura do módulo ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]) define tipografia como "a maneira correta e melhor possível da gente dispor o texto para o usuário"; o slide traz a etimologia (grego *typos*, "forma", e *graphein*, "escrita"). O roteiro:
+
+- **Variáveis tipográficas:** [[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-de-linha|largura de texto]]; alinhamento (esquerda ou centro na web, justificado raro), [[wiki/concepts/kerning-e-tracking|tracking e kerning]]; negrito, itálico, versalete e maiúscula; cores; identidade.
+- **[[wiki/concepts/classificacao-tipografica|Classificações]]:** serifadas, sem serifas, serifas grossas, script, blackletter, display.
+- **Tipografia no CSS:** [[wiki/entities/google-fonts]] e Adobe Fonts, `<link>` em vez de `@import`, `font-family`. Ver [[wiki/concepts/webfonts]].
+
+Ferramenta: a extensão WhatFont, que mostra família, peso, tamanho e altura de linha de qualquer texto. Slide: maiúsculas passam "imponente, grandioso, elegante, épico, sóbrio"; minúsculas, "amigável, próximo, simpático, descontraído, jovem". O módulo também alimenta identidade visual e guia de estilo.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -99,3 +109,4 @@ Aula 06 do módulo de tipografia do FrontPUSH ([[wiki/sources/tipografia-e-cores
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — sites de notícia: tipografia trabalhada, contraste de cor por nível
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — tons monocromáticos para hierarquia de texto
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — hierarquia textual por escala, peso, caixa alta e cinza; contraste como objetivo
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo (edição "W7"): definição, variáveis, classificações, CSS

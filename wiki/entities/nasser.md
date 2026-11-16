@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 40
+source_count: 41
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Cor se compõe em HSB e vai para o código em hex ou RGB; evitar a cor pura do seletor; a conta hex → decimal ensinada uma vez (com F = 16 por engano) ([[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]], autoria inferida).
 - Paleta nasce de referências (Dribbble, conta-gotas); HSB no primeiro quadrante; escurecer = brilho para baixo e saturação para cima; neutros levam a matiz da base ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
 - Variação de cores: tom mais claro = mais brilho e menos saturação, mais escuro = menos brilho e mais saturação; cada matiz tem luminosidade própria (amarelo claro, azul escuro); "não basta que ela seja bonita, ela precisa ser acessível" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
+- Tipografia é dispor o texto da melhor forma, porque "a maioria da web é texto"; escala consistente, entrelinha confortável, linha curta; `<link>` do Google Fonts em vez de `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
 ## Key Sources
 
@@ -112,3 +113,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — aula prática de cores: paleta complementar, HSB, variações, neutros tingidos
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — variação de cores no HSB, padrão de luminosidade, 60-30-10, Who Can Use (autoria inferida)
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — aula 06 de tipografia: contraste, hierarquia pela escala de cinza, cor como informação, botões invertidos
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7"): definição, WhatFont, variáveis, classificações, Google Fonts e CSS; o aluno imaginário diz "Ah, Násser"

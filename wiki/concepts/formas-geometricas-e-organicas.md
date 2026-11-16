@@ -3,8 +3,8 @@ type: concept
 title: "Formas Geométricas e Orgânicas"
 aliases: ["formas em UI", "geométrico vs orgânico", "forma geométrica", "forma orgânica", "psicologia das formas", "border-radius e personalidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 9
+date_updated: 2026-11-15
+source_count: 10
 tags: [ui, ui-design, formas, geometrico, organico, branding, border-radius, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -75,6 +75,10 @@ A aula de botões "W7" aplica o eixo a seis formas de botão ([[wiki/concepts/fo
 
 Retângulos arredondados só com stroke, elipses e círculos concêntricos compõem o fundo; formas geométricas reforçam "a precisão, a exatidão que eu quero passar" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
 
+## Formas na tipografia
+
+A abertura do módulo de tipografia retoma a aula de formas: a tipografia "vai além disso a texto, ela passa muito mais informações", "como a gente viu lá em formas". O slide aplica a mesma lógica ao caixa da letra: maiúsculas "imponente, sóbrio"; minúsculas "amigável, próximo" ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]). Ver [[wiki/concepts/classificacao-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -86,3 +90,4 @@ Retângulos arredondados só com stroke, elipses e círculos concêntricos comp�
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — versão "W7" da aula: Dropbox, Madero, Coco Bambu, arquitetura, Nubank, C6 Bank
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — formas aplicadas a botões; geométrico puro afasta
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — retângulos e elipses em stroke como fundo; precisão e exatidão
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia passa informação como as formas; maiúsculas x minúsculas

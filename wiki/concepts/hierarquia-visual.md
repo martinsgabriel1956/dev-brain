@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 25
+source_count: 26
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -153,6 +153,10 @@ Na aula de variação de cores, a cor de enfoque vai em botões, títulos e bann
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: no texto, a hierarquia vem de escala, peso, caixa alta e cor, e a cor entra como escala de cinza (títulos mais escuros, apoio mais claro). No [[wiki/entities/frontpush]], o título "O que compõe o FrontPUSH" é maior, mais pesado e com mais contraste, e o leitor decide por ele se lê o resto; no [[wiki/entities/google]], o título azul vem antes da descrição. `[skill: ux-ui-mentor]` Cada nível de cinza ainda precisa de 4.5:1 com o fundo.
 
+## Escala tipográfica consistente
+
+Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes a textos "da mesma hierarquia" e destaques de cor que não batem com o tamanho. A [[wiki/concepts/escala-tipografica]] resolve isso; negrito, itálico, maiúscula e cor completam as ferramentas de hierarquia textual ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -185,3 +189,4 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — amarelo complementar como cor de destaque
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — cor de enfoque (10%) em botões, títulos e banners
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escala de cinza como hierarquia textual; títulos do FrontPUSH e do Google
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica inconsistente quebra a hierarquia

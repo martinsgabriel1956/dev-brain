@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-15
-source_count: 25
+source_count: 26
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -68,6 +68,10 @@ Via vermelha ou laranja no Google Maps (ou no Waze) se lê como bloqueio ou enga
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: na busca, o usuário "vai procurar primeiro pelos itens em azul", maiores e com mais contraste; lê o título e só então clica ou lê a descrição. Ver [[wiki/concepts/hierarquia-visual]].
 
+## Google Fonts e Chrome na aula de tipografia
+
+Na abertura do módulo de tipografia, o Google aparece como interface que é "a maior parte texto", o Chrome como navegador da extensão WhatFont, e o [[wiki/entities/google-fonts]] como principal referência para baixar fontes ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -90,6 +94,7 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — buscar "pessoas conversando" no Google como exemplo de foto genérica
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — Google Maps: vermelho/laranja = trânsito
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — Google como interface de texto; Google Fonts; WhatFont no Chrome
 
 ## Adição (2026-10-14)
 
