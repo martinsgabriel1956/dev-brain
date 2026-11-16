@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -18,7 +18,12 @@ Linguagem **declarativa** que separa estilo de conteúdo: regras visuais aplicad
 
 Por ser código com tags, um [[wiki/concepts/formato-svg|SVG]] inline pode ter os caminhos estilizados e animados pelo CSS; para [[wiki/entities/nasser|Násser]], é daí que "a magia do Motion surgiu" ([[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]]). `[external]` Via `<img>` ou `background-image` o CSS da página não alcança os caminhos.
 
+## CSS a partir do Figma
+
+A aba inspect do [[wiki/entities/figma]] dá o CSS do elemento. background, box-shadow e border-radius servem; width, height, top e left dependem da arquitetura (flexbox, position). Os nomes do style guide seguem o CSS (`card-hover`), e a paleta vai para variáveis Sass ou CSS ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). `[external]` A aula chama hover de pseudo-element; `:hover` é pseudo-classe (https://developer.mozilla.org/en-US/docs/Web/CSS/:hover).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — SVG é código com tags, então o CSS manipula seus caminhos (base do motion)
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — CSS do inspect; nomes iguais ao CSS; hover é pseudo-classe

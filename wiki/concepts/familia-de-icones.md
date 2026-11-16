@@ -3,8 +3,8 @@ type: concept
 title: "Família de ícones"
 aliases: ["icon family", "icon set", "pacote de ícones", "biblioteca de ícones", "classificação de ícones", "ícone de linha", "ícone preenchido", "outline vs filled"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 6
+date_updated: 2026-11-15
+source_count: 7
 tags: [ui, ui-design, icones, consistencia, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -49,6 +49,10 @@ Na edição "W7" ([[wiki/sources/icones-comunicacao-senso-comum-dicas-consistenc
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]], as "duas famílias" aparecem em uso: ícones próprios, mais trabalhados e com preenchimento laranja, para os módulos; [[wiki/entities/feather-icons]] para os ícones pequenos. No meio da demo, a regra de estilo: "se for usar ícones de linhas, utilize só ícones de linhas". O arquivo do Piqo ([[wiki/entities/iconly]]) mostra a família como conjunto de estilos: bold, bulk, light, light outline, broken, two-tone.
 
+## No style guide
+
+O style guide declara a família ([[wiki/entities/feather-icons]], no caso dele) ou deixa os ícones próprios para download e export pelo dev. No style guide do Nubank, uma família de exemplo ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — família, linha x preenchido, Iconly x Feather, Creator Push x FrontPUSH
@@ -57,3 +61,4 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — logos de terceiros redesenhados para caber na família; Eva Icons, Flaticon, Noun Project
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — "no máximo duas, com muita consciência"; Feather, Eva e Basicons gratuitos
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — duas famílias em uso (próprios + Feather); só linha ou só preenchido; estilos do Iconly
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — família declarada no style guide; ícones próprios para download

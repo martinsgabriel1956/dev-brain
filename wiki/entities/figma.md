@@ -78,6 +78,10 @@ Em [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow
 
 Pesquisa, wireframes e protótipo final de UI, os três passos do [[wiki/concepts/workflow-de-interface-web]] cobertos no módulo, acontecem no Figma (o logo aparece ao lado deles no slide); a biblioteca de wireframes do Notion é copiada para o Figma dos alunos ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
+## Style guide: share, grupos de estilo e inspect
+
+Share por link para os alunos copiarem e receberem as atualizações; grupos de estilo pré-definidos (texto, cor, sombra); aba inspect com o CSS do elemento selecionado "sem ser um grupo" ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -104,3 +108,4 @@ Pesquisa, wireframes e protótipo final de UI, os três passos do [[wiki/concept
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — comunidade, plugins de ícones, Ctrl D, Ctrl G, constraints
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — botão de 56 px, bring to front, plugin Smooth Shadow, edit style no Pegasus
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — três primeiros passos do workflow; biblioteca de wireframes copiada para o Figma
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — share por link, grupos de estilo, aba inspect

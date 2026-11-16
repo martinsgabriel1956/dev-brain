@@ -94,6 +94,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "e
 
 O [[wiki/concepts/style-guide]] é "meio que um guia para poder ter consistência no meu design, seguindo todas aquelas regras que a gente já conversou nos módulos anteriores" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
+## Consistência documentada: o style guide
+
+O [[wiki/concepts/style-guide]] leva a consistência para o código: o dev põe os hexadecimais da paleta "no Sass ou então em variáveis no CSS". No Figma, grupos de estilo pré-definidos (texto, cor, sombra) "elevam a consistência no design em outro level". Ver [[wiki/concepts/design-tokens]] ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -117,3 +121,4 @@ O [[wiki/concepts/style-guide]] é "meio que um guia para poder ter consistênci
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones próprios como exercício de consistência; mesma estrutura e escala
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo botão em toda a interface: altura, padding e radius iguais
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — style guide como guia de consistência
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — paleta no Sass/variáveis CSS; grupos de estilo no Figma

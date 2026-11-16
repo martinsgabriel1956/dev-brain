@@ -3,8 +3,8 @@ type: concept
 title: "Colaboração em Times"
 aliases: ["trabalho em equipe", "team work", "colaboração técnica"]
 date_created: 2026-05-19
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [soft-skills, colaboração, times, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -37,7 +37,12 @@ A colaboração efetiva neutraliza o ego técnico e converte divergência em apr
 - [[wiki/concepts/comunicacao-tecnica]] — colaboração sem comunicação clara é impossível
 - [[wiki/concepts/autonomia-responsabilidade]] — autonomia e colaboração são complementares, não opostos
 
+## Design e dev
+
+Na aula de [[wiki/concepts/style-guide]], comunicação e colaboração são "as soft skills mais importantes". Designer e dev "um não sabe muito do mundo do outro"; a saída é fazer perguntas e se colocar no papel do dev ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/potencial-programador-atitude-mindset]] — ser "team player" como 3º traço de potencial; construir software é atividade social e silos trazem mais problema que benefício (ver [[wiki/concepts/mentalidade-de-dar-primeiro]] e [[wiki/concepts/efeito-multiplicador]])
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — comunicação e colaboração entre design e dev no style guide

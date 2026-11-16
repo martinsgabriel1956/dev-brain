@@ -3,8 +3,8 @@ type: concept
 title: "Interface como Máquina de Estados"
 aliases: ["UI state machine", "estados de componente", "componente como máquina de estados"]
 date_created: 2026-07-21
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ux, design, frontend, estado, state-machine]
 skill: tech-mentor-frontend
 status: draft
@@ -45,7 +45,12 @@ Não exige desenhar um diagrama de estados formal para todo componente simples �
 - [[wiki/concepts/caminho-feliz]] — máquinas de estado mal mapeadas tendem a só cobrir o caminho feliz, deixando erro e loading como afterthought.
 - [[wiki/concepts/finite-state-machine]] — esta página é uma aplicação específica (UI/frontend) do conceito geral de FSM, cuja definição formal e outros exemplos de domínio (Game Design) vivem na página geral.
 
+## Estados no style guide
+
+Na aula de [[wiki/concepts/style-guide]], os estados aparecem por componente: card (normal, hover, selecionado em roxo) e input (hover, focus, sucesso, erro, warning). O style guide é onde esse mapeamento chega ao dev, com o CSS de cada estado ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — mencionada como fonte geral de FSM, para contraste entre a aplicação de UI e a aplicação de Game Design (Pac-Man)
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de card e input documentados no style guide

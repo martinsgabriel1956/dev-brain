@@ -63,6 +63,10 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 Na abertura do módulo de interfaces web, um projeto do Nubank é "o case do nosso curso": wireframes de baixa fidelidade por dobra (o [[wiki/concepts/pagemap]]) e um [[wiki/concepts/style-guide]] editável ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
+## Projeto prático do curso de UI
+
+Projeto isolado do curso de [[wiki/entities/nasser|Násser]]: wireframes e depois o style guide, com tipografia 48, 36, 24 (desktop x mobile) e uma família de ícones ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 
@@ -76,3 +80,4 @@ Na abertura do módulo de interfaces web, um projeto do Nubank é "o case do nos
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — site como exemplo de formas: geométrico, bordas arredondadas, fotos de pessoas
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões e links totalmente circulares para aproximar
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — case do curso: pagemap por dobras e style guide
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — style guide do projeto prático: tipografia 48/36/24, família de ícones

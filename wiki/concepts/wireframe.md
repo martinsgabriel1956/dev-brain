@@ -33,6 +33,10 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 
 Na abertura do módulo de interfaces web, wireframes são "protótipos de baixa fidelidade que nos permitem melhorar muitas coisas e projetar de maneira simples", a segunda etapa do [[wiki/concepts/workflow-de-interface-web]] ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Vêm depois do [[wiki/concepts/pagemap]]: primeiro o flow de dobras, depois o wireframe que cabe em cada uma. Uma biblioteca de wireframes no Notion, para copiar para o [[wiki/entities/figma]], vai crescer para ampliar o [[wiki/concepts/repertorio]] dos alunos. A aula contrasta com a definição anterior ("alta ou média fidelidade"): os wireframes do case [[wiki/entities/nubank]] "partiram" de versões de baixa fidelidade.
 
+## Antes do style guide
+
+Na aula de [[wiki/concepts/style-guide]], wireframe é uma das três etapas (pesquisa, wireframe, grids) que levam ao protótipo final, onde entram o style guide e as cores. O arquivo de wireframes foi compartilhado por link com os alunos: exemplo de documento que evolui sem esperar ficar perfeito ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -41,3 +45,4 @@ Na abertura do módulo de interfaces web, wireframes são "protótipos de baixa 
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — blobs (plugin Blobs) como bolhas na composição de wireframes
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes isométricos com gradiente linear embaixo e sombra
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — abertura do módulo de interfaces web: baixa fidelidade, depois do pagemap; biblioteca no Notion
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — pesquisa, wireframe e grids antes do style guide; arquivo compartilhado por link
