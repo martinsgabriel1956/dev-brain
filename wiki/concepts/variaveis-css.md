@@ -4,7 +4,7 @@ title: "Variáveis CSS (custom properties)"
 aliases: ["custom properties", "variáveis no CSS", "var()", ":root", "CSS variables"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [frontend, css, variaveis-css, design-tokens, cores]
 skill: tech-mentor-frontend
 status: stub
@@ -27,8 +27,13 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], as variáveis do Proffy ficam em `:root` com "dois tracinhos" e são lidas com `var(--color-background)`. Trocar o valor de `--color-primary-darker` por "um super vermelho" muda o documento inteiro: "fica fácil de eu alterar as cores".
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a variável `--color-secundary` (com U) foi corrigida para `--color-secondary`; quem digitou com U fica sem a cor, porque `var()` com nome inexistente não acha valor. Os botões e cards usam `--color-primary-lighter`, `--color-secondary-dark`, `--color-box-base` e `--color-line-in-white`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: `--title-color` e `--primary-color` em `:root`
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador; ver [[wiki/concepts/pre-processador-css]]
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy em :root
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: o erro secundary/secondary

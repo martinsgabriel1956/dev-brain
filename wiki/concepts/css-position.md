@@ -4,7 +4,7 @@ title: "Position no CSS (static, relative, absolute, fixed, sticky)"
 aliases: ["position", "CSS position", "position absolute", "position relative", "position fixed", "position sticky", "position static", "posicionamento CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, frontend, position, layout, containing-block, sticky]
 skill: tech-mentor-frontend
 status: draft
@@ -61,6 +61,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Apresenta o `z-index` como o eixo z: x é horizontal, y é vertical e z é "a profundidade". Retoma as folhas de papel do dia 1. `z-index: -1` manda o pseudo-elemento para trás do conteúdo.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `position: absolute` é "uma folha de papel nova em cima da folha de papel antiga" e fica "absoluto na página inteira" até o pai receber `position: relative`. Usado na linha de foco do input e, no desktop, no formulário de busca com `bottom: -28px` sobre a borda do header.
+
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores com dois quadrados, menu fixed e menu sticky
@@ -68,3 +72,4 @@ Apresenta o `z-index` como o eixo z: x é horizontal, y é vertical e z é "a pr
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `relative` no pai e `absolute` + `top/left: 0` no `::after`, "adiantando" a aula de position
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: sistema de coordenadas; "relative fica no pai, absolute fica no filho"; body chamado de relative
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: fixed no modal e no `::after`; z-index como profundidade
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: absolute com pai relative

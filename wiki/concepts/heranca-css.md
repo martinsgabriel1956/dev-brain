@@ -4,7 +4,7 @@ title: "Herança no CSS"
 aliases: ["herança", "inheritance", "CSS inheritance", "inherit", "propriedade herdada"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [css, heranca, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,11 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Duas exceções aparecem na mesma aula. O `button` não fica vermelho ("tem uma força diferente") e não pega a Poppins do body ("nem cor, nem fonte"), o que obriga a regra `body, input, button, textarea`. O motivo é a folha do navegador, que dá cor e fonte próprias aos controles de formulário (ver [[wiki/concepts/estilos-padrao-do-navegador-e-reset]]). `[skill: tech-mentor-frontend]` O reset usual põe `font: inherit` em `button, input, select, textarea`.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], duas falas tratam como herança o que não é: a imagem centralizada pelo `text-align` (ela é inline) e a hero image que "vai herdar a largura do pai" com `width: 100%` (porcentagem calculada contra o bloco que contém).
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: cor do body propagada aos filhos; filho com regra própria vence; botão que não herda cor nem fonte
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: text-align e width 100% não são herança

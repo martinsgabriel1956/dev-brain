@@ -4,7 +4,7 @@ title: "Alinhamento de Texto"
 aliases: ["text-align", "alinhamento à esquerda", "texto centralizado", "texto justificado", "alinhamento tipográfico"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [ui, ui-design, tipografia, alinhamento, alinhamento-de-texto, legibilidade, css, design-responsivo]
 skill: ux-ui-mentor
 status: stub
@@ -41,8 +41,13 @@ Centralizar parágrafos longos por estética: cada linha começa num ponto difer
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], `text-align` faz o "ajuste horizontal" e `vertical-align` o vertical. `[external]` `vertical-align` só age em elementos inline, inline-block e células de tabela; centralizar um bloco na vertical pede flexbox ou grid (https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align).
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `text-align: center` no `.logo-container` centraliza também a imagem, o que Mayk explica como herança de propriedades de texto. O motivo é outro: `img` é inline e fica na linha de texto, e `text-align` alinha o conteúdo inline. `text-align: initial` desfaz o center no desktop.
+
 ## Key Sources
 
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda como padrão, centralizado em cards, direita rara, justificado nunca
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: text-align horizontal; vertical-align só em inline e células
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `text-align: center` para centralizar o texto dos itens na demo de flexbox
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: text-align na img (inline, não herança)

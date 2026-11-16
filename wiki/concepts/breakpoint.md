@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -82,6 +82,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] testa no Toggle Device Toolbar do DevTools (4K, laptop 1440, tablet, rotação) e cria duas regras novas: `@media (min-width: 1700px)` com o fundo em 40vw, achado olhando a tela "na hora que ele vai encostar", e `@media (max-height: 760px)` com `background-position-y: 200px`. É a primeira media query por altura da wiki. "Fizemos uma regra para altura e regras para largura."
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os breakpoints do Proffy são 700 px (raiz 62,5% e página study no desktop) e 1100 px (landing em grid), todos com `min-width`. No Device Toolbar, a 1099 px nada muda e a 1100 px, "Puf!", o layout alarga.
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — definição, media query abaixo de 960 px, quebra na landing page do FrontPUSH
@@ -92,3 +96,4 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `@media screen and (max-width: 960px)` com `flex-direction: column`; "somente quando a tela [...] for menor ou igual a 960 pixels" (desktop-first)
 - [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `@media (max-width: 960px)` troca `flex-direction` para `column` (desktop-first); 720 px demora mais para quebrar
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: media query para "sumir com os itens" do menu e trocar por hambúrguer quando há muitos links
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: 700 e 1100 px com min-width

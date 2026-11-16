@@ -4,7 +4,7 @@ title: "Diego Fernandes"
 aliases: ["Diego", "Diego Fernandes Rocketseat"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [pessoa, educador, rocketseat, nodejs, react, react-native, typescript]
 skill: lang-dynamic
 status: stub
@@ -28,6 +28,10 @@ No dia 5 ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-dep
 
 Comparação com a trilha de Mayk: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]), o avatar e o nome de Diego são o exemplo do card de professor do Proffy: [[wiki/entities/mayk-brito|Mayk]] copia o link da imagem do perfil do GitHub e usa `alt="Diego Fernandes"`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: dia 1, API REST, TypeScript, React e React Native
@@ -35,3 +39,4 @@ Comparação com a trilha de Mayk: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-c
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: dia 3: front-end React
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: dia 4: app React Native
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: dia 5: upload, validação, GitHub, deploy
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: exemplo no card de professor do Proffy

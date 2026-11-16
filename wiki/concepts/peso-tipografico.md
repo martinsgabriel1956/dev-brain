@@ -4,7 +4,7 @@ title: "Peso tipográfico"
 aliases: ["font-weight", "negrito", "bold", "itálico", "estilo falso", "faux bold"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [ui, ui-design, tipografia, font-weight, negrito, italico, contraste, css]
 skill: ux-ui-mentor
 status: stub
@@ -36,9 +36,14 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], com só r
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `font-weight` vai de 100 ("mais leves") a 700 ("mais fortes como bold"); o Proffy usa 500. *Weight* é "no inglês, peso".
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `h2` da landing vem em bold pelo navegador e Mayk o leva a 500. No botão do card, o layout pede 600, mas o Archivo foi importado só em 400 e 700; sem o arquivo, o navegador usa o peso mais próximo ou sintetiza.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; font-weight no Inspect; estilo falso
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: 500 sem efeito, 700 negrito, com só regular e bold carregados
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `font-weight: bold` para "um peso tipográfico maior"
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: font-weight 100 a 700
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: 500 no h2; 600 não importado

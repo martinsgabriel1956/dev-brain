@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 47
+source_count: 48
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -158,6 +158,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] abre o layout do Proffy no Figma (é preciso login para ver as cores), usa +/- para zoom e espaço para arrastar, e copia as cores para variáveis CSS. O painel de CSS do Figma "são só sugestões".
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] compara a página com o layout de Thiago (1440 × 820) e mede os espaços do grid (86 e 87 px), mas avisa: "não precisa dessa minúcia toda".
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -207,3 +211,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: inspeção de estilos; divergência consciente do layout
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: design do layout do YouTube com grid de 12 colunas (96 px, gutter 24) que vira o container (ferramenta inferida)
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy copiadas do Figma
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: medir o layout e não exagerar na minúcia

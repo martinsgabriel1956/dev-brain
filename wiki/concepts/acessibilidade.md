@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 12
+source_count: 13
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -61,6 +61,10 @@ Em [[wiki/sources/frontpush-order-e-align-self]], [[wiki/entities/nasser|Násser
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], "no React Native nós não temos nenhum componente que ele tem um valor semântico [...] a gente não precisa de significado". No mobile, a semântica vai em `accessibilityRole`, `accessibilityLabel` e `accessibilityState`, que os itens de coleta não têm.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `label` "vai ajudar muito a acessibilidade", e tirar o outline "não é uma prática muito, muito adequada". O substituto (linha com `:focus-within::after`) cobre só o input; os select ficam sem indicador para quem navega com Tab. Ver [[wiki/concepts/indicador-de-foco]].
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -73,3 +77,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fieldset certo; li clicável inacessível
 - [[wiki/sources/frontpush-order-e-align-self]]: `order` para reordenar texto e ilustração no mobile; a ordem lida continua a do HTML `[external]`
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN sem semântica não é RN sem acessibilidade
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label, outline e foco no select

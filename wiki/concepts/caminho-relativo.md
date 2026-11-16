@@ -4,7 +4,7 @@ title: "Caminho relativo de arquivos (HTML x CSS)"
 aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [frontend, html, css, caminho-relativo, arquivos]
 skill: tech-mentor-frontend
 status: stub
@@ -31,8 +31,13 @@ Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `href="style.css"` funciona no `index.html` da raiz, mas copiado para `page/page.html` o navegador procura `page/style.css`. Com uma barra na frente, `/style.css` parte da raiz do servidor (`127.0.0.1:5500/`). "Por causa de uma barra eu poderia estar dias descobrindo o porquê". Inferência do agente: aberto por dois cliques (`file://`), o mesmo `/` apontaria para a raiz do disco.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], mover `style.css` para `styles/` quebra o estilo: "ele não vai achar porque agora não está nesse local". Os links passam a `/styles/main.css` e `/styles/partials/page-landing.css`, e Mayk avisa que "muitos erros que eu vejo os alunos cometendo" são arquivos fora da pasta `partials`.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `CSS/style.css`, `./` e `../` no `<link>`
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style.css sem barra x com barra
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/partials e o erro comum dos alunos

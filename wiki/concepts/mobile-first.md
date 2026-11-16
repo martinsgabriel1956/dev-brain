@@ -4,7 +4,7 @@ title: "Mobile first"
 aliases: ["mobile-first", "mobile first CSS", "primeiro o mobile"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [css, responsivo, mobile-first, media-query, breakpoint, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,11 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Na NLW #1, a página do Ecoleta foi desktop first, com `max-width: 900px` ([[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]); ver [[wiki/concepts/breakpoint]].
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o mobile first sai do discurso: os estilos base são do celular e as telas grandes entram com `@media (min-width: 700px)` e `(min-width: 1100px)`. Isso responde à pergunta aberta do dia 1. A única regra em `max-width` (699 px) é o `:root`, posta ali para corrigir a ordem da cascata.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: mobile first anunciado para o Proffy, com rem e porcentagem como unidades
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: min-width de 700 e 1100 px

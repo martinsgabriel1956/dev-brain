@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -80,6 +80,10 @@ Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], seletor é o "identificador" do estilo fora da tag: de tag (`h1`), de classe ("eu coloco um pontinho") e de id ("o hashtag"); `h1, span, a` agrupa. O id "não pode se repetir" no documento.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `.teacher-item p` pegava também o `p` do footer; `.teacher-item > p` ("eu coloco uma setinha assim") pega só o primeiro nível. Mayk prefere `.teacher-item` a `article` porque outro `article` na página "poderia ter algum problema".
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -89,3 +93,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], seletor é o "i
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: tag, classe e ID; trocar tags por div quebra o seletor de tag
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: filho direto x descendente, `+`, `*`, atributo e vírgula na prática
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: tag, classe, id e agrupamento
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: seletor de filho direto (>)

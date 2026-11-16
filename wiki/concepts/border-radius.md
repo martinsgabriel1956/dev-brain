@@ -4,7 +4,7 @@ title: "Border Radius"
 aliases: ["radius", "raio de borda", "cantos arredondados", "arredondamento", "8-radius"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao, css]
 skill: ux-ui-mentor
 status: stub
@@ -59,6 +59,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Na aula de box model do curso ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]): um valor (`50px`) arredonda os quatro cantos; quatro valores (`0px 10px 0px 50px`) um por canto; `50%` vira elipse quando width ≠ height e "uma circunferência bonitinha" com 300 × 300 px. `[external]` Os quatro valores começam no canto superior esquerdo e giram no sentido horário ([[wiki/concepts/shorthand-css]]); a porcentagem é relativa às dimensões da própria caixa (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius).
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] mostra o `border-radius` com fundo vermelho e 2rem; com vários valores, os cantos seguem uma ordem "parecid[a] aqui com o margin padding". O avatar do card vira círculo com `border-radius: 50%`, mas só "quando essa imagem é um quadrado perfeito" (8rem × 8rem).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — arredondado vs. reto muda a mensagem
@@ -70,3 +74,4 @@ Na aula de box model do curso ([[wiki/sources/box-model-tudo-e-caixa-tags-semant
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — radius varia com o tamanho do card; documentar tamanho e radius juntos (38 px)
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — sintaxe no CSS: um valor, quatro cantos, 50% para elipse/círculo
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: 4 px para "chanfrar" e 50% para "uma circunferência" num botão (arredonda, não chanfra; 50% num retângulo dá elipse)
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: botões, cantos e avatar em 50%

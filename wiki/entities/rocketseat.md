@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 17
+source_count: 18
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Na NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), o layout é de Thiago, "nosso colaborador aqui da Rocketseat"; o suporte da semana fica num canal do Discord com a equipe e os alunos.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]), [[wiki/entities/mayk-brito|Mayk]] cita Camila, "nossa professora de inglês aqui na Rocketseat" (a transcrição dizia "Rocket City"), que o ajudou a achar o erro de grafia `secundary`.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -71,3 +75,4 @@ Na NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-prof
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Expo Common Issues; vídeo de emuladores
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: DigitalOcean na casa; vídeos de deploy
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Proffy, layout de Thiago, Discord da semana
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Camila, professora de inglês

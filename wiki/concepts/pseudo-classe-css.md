@@ -4,7 +4,7 @@ title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -42,6 +42,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] percebe que `transition: 400ms` sem propriedade anima "tudo que aceita a transição" (o botão piscou no reload) e passa a escrever `transition: background-color 400ms`. "Não são todas as propriedades CSS que aceitam transição."
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `:hover` muda o fundo dos botões com `transition` e a opacidade do link de voltar; `:focus-within` no `.input-block` reage ao foco do input que está dentro dele (ver [[wiki/concepts/indicador-de-foco]]).
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
@@ -51,3 +55,4 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `li:nth-child(1)`, `first-child`, `last-child`, pares e ímpares; dúvida "do li ou dele?" (é o `li` que é primeiro filho do pai)
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: `.item:nth-child(1)` para dar `margin-top` só à primeira caixa
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `button:hover` (chamado de "pseudo-element" na aula) com `transform: scale` e `transition`
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: hover nos botões; focus-within

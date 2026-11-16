@@ -4,7 +4,7 @@ title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -24,11 +24,16 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: o repositório `nlw-01` com `server/`, `web/` e `mobile/`, a remoção dos `.git` aninhados, o `git push origin master` e o conselho de um README com imagens para o portfólio. Desde então, o padrão é `main` e o HTTPS exige token.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] mostra como pegar o link do avatar de um perfil (botão direito, Copy Image Link) para usar no `src` do card de professor do Proffy.
+
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado como ferramenta a aprender junto com a IA
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — limites técnicos da API de busca de código (indexação, teto de resultados) relevantes para a descoberta de secrets vazadas
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: link do avatar para o card
 
 ## Key sources (adição 2026-10-30)
 

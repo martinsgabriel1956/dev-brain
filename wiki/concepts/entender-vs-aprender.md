@@ -4,7 +4,7 @@ title: "Entender vs. Aprender"
 aliases: ["entender vs aprender", "compreensão vs habilidade", "ilusão de fluência", "illusion of knowing"]
 date_created: 2026-06-05
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [aprendizado, pratica, metacognicao, ead, aprendizado-passivo]
 skill: tech-mentor-leadership
 status: stable
@@ -53,6 +53,10 @@ O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, á
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] diz isso com todas as letras: "a aula não é feita para te ensinar. [...] É feita para você entender." Aprender é "hora, bunda, cadeira": refazer sozinho depois, porque se você só copiar correndo, "amanhã você vai ter esquecido muitas coisas".
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]]: "na minha aula você está entendendo as coisas. Aprender, de fato, é você com o tempo e prática"; "se você deixar o tempo passar e você não estiver praticando, você vai estar desaprendendo".
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
@@ -60,6 +64,7 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 - [[wiki/sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — entender a explicação da IA ≠ saber fazer; [[wiki/concepts/active-recall]] e desafios sem resposta expõem a ilusão de fluência
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: "a aula não é feita para te ensinar"
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: entender na aula, aprender com tempo e prática
 
 ## Key sources (adição 2026-10-30)
 

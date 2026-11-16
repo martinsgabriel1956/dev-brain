@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -24,8 +24,13 @@ Na aula de layout do [[wiki/entities/frontpush]] ([[wiki/sources/frontpush-layou
 
 `[skill: tech-mentor-frontend]` `transform` e `opacity` animam no compositor, sem recalcular layout; animar `width`, `top` ou `margin` força reflow a cada quadro. Respeite `@media (prefers-reduced-motion: reduce)` desligando ou encurtando o movimento. Ver [[wiki/concepts/mobile-animacoes-performaticas]] e [[wiki/concepts/acessibilidade]].
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `transition: background 0.2s` nos botões ("um segundo é muito, eu quero só aquele detalhezinho") e `transition: opacity 0.2s` no link de voltar, que no hover vai a 0.6 e "parece que ele tá tipo dando uma respirada". `transition` é shorthand de `transition-duration` e outras.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: bolinhas animadas por `top`/`left` (layout a cada quadro); `transform: translate()` faria o mesmo no compositor
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: `@keyframes` anunciado como "módulo de animação" para micro-interações
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: transition de background e opacity

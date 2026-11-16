@@ -4,7 +4,7 @@ title: "Altura de linha (line-height)"
 aliases: ["line-height", "entrelinha", "leading", "altura da linha", "espaçamento entre linhas"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [ui, ui-design, tipografia, line-height, legibilidade, leiturabilidade, acessibilidade, css]
 skill: ux-ui-mentor
 status: stub
@@ -55,6 +55,10 @@ A caixa de texto inclui o espaço do line-height, então o Alt do [[wiki/entitie
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], `line-height` é "aquela propriedade que a gente vê em UI" para melhorar "a leitura, a legibilidade". A aula a descreve como "espaçamento de uma letra da outra, que é a altura da linha": a primeira metade descreve `letter-spacing` ([[wiki/concepts/tracking]]); a segunda é a correta.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: "diferente da altura somente height, que é a altura da caixa, line height é a altura da linha do texto". O Proffy usa `line-height` em rem (4.6rem no título, 2.8rem no texto do card); para ver o efeito, Mayk exagera para 8rem.
+
 ## Key Sources
 
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]]: definição, faixas por escala, cálculo da razão com o WhatFont
@@ -62,3 +66,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], `line-hei
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]: line-height engana a medição de distâncias
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]: vão de 4 a 8 px entre título e descrição
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: line-height descrito como espaço entre letras (confusão com letter-spacing)
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: line-height x height

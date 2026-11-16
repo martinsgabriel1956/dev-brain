@@ -4,7 +4,7 @@ title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -28,8 +28,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `api.get('points', { params: { city, uf, items } })` vira `items[]=1&items[]=2`, e o filtro do back-end só funciona porque o `qs` do Express 4 o converte em array.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o formulário sem `action` envia para a própria página; por ser `get` por padrão, os campos aparecem na URL: "ele adicionou isso daqui".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: req.query no Express; GET x POST no formulário do Ecoleta
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: filtros e paginação; repetição vira array
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: arrays em query string por acaso compatíveis
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: form sem action manda os campos na URL

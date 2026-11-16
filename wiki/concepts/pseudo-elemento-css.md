@@ -4,7 +4,7 @@ title: "Pseudo-elemento CSS"
 aliases: ["pseudo-elemento", "pseudo-element", "pseudo-elements", "::before", "::after", "::first-letter", "::first-line", "::placeholder"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [css, frontend, seletores-css, pseudo-elemento]
 skill: tech-mentor-frontend
 status: stub
@@ -30,9 +30,14 @@ Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `body::after` com `content: ""` e `position: fixed` para desenhar a faixa cinza de fundo da página de resultados: "o elemento que o CSS está criando não existe na página". Como vem por último, fica por cima de tudo, e `z-index: -1` o manda para trás. Ver [[wiki/concepts/css-position]].
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `.input-block:focus-within::after` cria a linha de foco do campo: `content: ''` obrigatório, `width: calc(100% - 3.2rem)`, `height: 2px`, `position: absolute; bottom: 0; left: 1.6rem`. Mayk diz que "o CSS vai criar um elemento HTML"; é um pseudo-elemento, fora do DOM. No DevTools, ele aparece e some conforme o foco.
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — first-letter e first-line; o termo usado para tudo
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: `::after` com content e ícone de busca
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `::before`/`::after` como "duas divs"; setinha do FrontPUSH; `::first-letter`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `body::after` como faixa de fundo
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: linha de foco com ::after e calc()

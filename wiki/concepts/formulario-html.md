@@ -4,7 +4,7 @@ title: "Formulário HTML (form, fieldset, label, input, select)"
 aliases: ["form", "formulário", "fieldset", "legend", "label", "input", "select", "option", "input hidden", "button submit"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [html, formulario-html, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o formulário do Ecoleta em React: `htmlFor`, `type="email"`, selects controlados, `onSubmit` no `form` ("pode ser submitado clicando no botão ou apertando o Enter") e `event.preventDefault()`.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o filtro do Proffy é `form#search-teachers` sem `action` (fica para o back-end), com `label`, `select` (`option` com `value`, a primeira `disabled`), `input type="time"` (antes testado como `number` com `min`/`max` e como `text`) e `button type="submit"`, que "vai pegar o form e enviar". O `name` é o que o back-end recebe. Tensão: a aula diz que o `for` do label procura o `name`; ele procura o `id`, e funciona porque os dois são iguais.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: cadastro do Ecoleta, fieldset, name, number, disabled, hidden
@@ -54,3 +58,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: required, hidden de itens, action; label for sem id de novo
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: method post, action /savepoint, name → req.body
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: formulário em React com onSubmit e preventDefault
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: filtros do Proffy; for liga ao id

@@ -4,7 +4,7 @@ title: "display no CSS (block x inline)"
 aliases: ["display", "display block", "display inline", "elemento de bloco", "elemento inline", "inline-block"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [frontend, css, display, layout, box-model]
 skill: tech-mentor-frontend
 status: stub
@@ -48,6 +48,10 @@ Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]], [[wiki
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], display é "a exibição do elemento". block (`div`, `h1`, `p`) ocupa "toda a linha" e inline (`a`, `span`, `strong`) fica ao lado; são "regras fora da caixa". flex e grid são "regras para dentro da caixa". `inline-block` fica para depois.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `label` vem inline (visto na aba Computed do DevTools), e `margin-top` no `span` só funciona com `display: block`: "quando ele é inline ele não aceita". `display: initial` devolve o preço à linha no desktop.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: bloco como padrão, span e link inline, link forçado a bloco no botão
@@ -58,3 +62,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], display é "a e
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: `display: flex` como primeira propriedade do flex-container
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: aula 02: inline, block, inline-block e flex; "todas as tags são elementos de bloco" (deslize)
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: block, inline, flex
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label inline; margin-top em inline

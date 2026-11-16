@@ -4,7 +4,7 @@ title: "HTML semântico (tags semânticas do HTML5)"
 aliases: ["tags semânticas", "semantic HTML", "HTML5 semântico", "elementos semânticos"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [html, html5, semantica, seo, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] diz "sempre utilizando HTML semântico" e usa `header`, `ul`/`li`/`a` e `section`, mas o resto é `div` (`div.nav`, `div.video-side`) e não há `h1`. `[external]` `<nav>`, `<main>`, `<aside>`/`<article>` e um `h1` no título do vídeo fecham a semântica.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a página study usa `header`, `main` ("o conteúdo principal da página") e `article` ("um tipo de conteúdo que vai se repetir aqui várias vezes"), cada um com `header`, `p` e `footer`. O título do header vai em `strong`, que "já vem com o bold".
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — header, nav, section, article, figure, footer; visual igual à div; motivo dado: Google
@@ -55,3 +59,4 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fieldset/legend no React; li clicável
 - [[wiki/sources/frontpush-order-e-align-self]]: ordem do HTML como ordem de leitura; `order` do flexbox só muda o visual `[external]`
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: header/ul/section, mas nav em div e sem h1 `[external]`
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: header, main, article, strong

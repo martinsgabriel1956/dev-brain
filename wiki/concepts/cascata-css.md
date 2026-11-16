@@ -4,7 +4,7 @@ title: "Cascata do CSS (prioridade entre estilos)"
 aliases: ["cascade", "cascata CSS", "prioridade do CSS", "estilo inline", "estilo incorporado", "CSS externo", "formas de aplicar CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [css, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -50,6 +50,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], de novo a cascata vira o caminho descendente: `#page-landing h1` "tem uma força maior, porque ele tem uma força de cascata", e "não importa o posicionamento na página". Repete a contradição da NLW #1 com a definição acima: o caso é de especificidade, e a ordem no arquivo decide no empate. Também confunde [[wiki/concepts/heranca-css|herança]] com força.
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `:root { font-size: 62.5% }` dentro da media query aparece riscado no DevTools porque um `:root` sem condição, de mesma especificidade, vinha depois e "sobrescreve o outro que não deveria". Media query não dá força; a ordem decide. Mayk resolve pondo o outro root em `max-width: 699px`.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — externo, incorporado e inline; "quanto mais para baixo, maior a prioridade"; demo em que o externo vence o incorporado
@@ -59,3 +63,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], de novo a casca
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: ordem dos links e sobrescrita
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: sem cascata no React Native
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: "força de cascata" (contradição com a definição)
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: media query não dá força, a ordem decide

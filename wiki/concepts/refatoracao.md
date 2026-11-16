@@ -4,7 +4,7 @@ title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -113,6 +113,10 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] abre o dia com uma refatoração para iniciantes: refatorar é "refazer algumas coisas do nosso código para torná-lo um pouquinho mais fácil de dar manutenção depois", e "faz parte da vida do dev". O `main.css` crescido vira três arquivos (`main`, `home`, `responsive`) e a página continua igual: "as coisas ainda estão funcionando igual".
 
+## Na NLW #2, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] reorganiza o CSS do Proffy em `styles/main.css` e `styles/partials/page-landing.css` ("a gente chama isso de refatorar") e diz que o HTML pode mudar "quantas vezes forem necessárias, até que você atinja o layout que você deseja".
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -127,6 +131,7 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — melhoria contínua: melhorar código próprio e alheio quando houver janela; refatoração como uma das bases de resolver problemas ([[wiki/concepts/resolver-problemas-como-habilidade-central]])
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — evoluir o simples seria mais fácil do que cortar o inflado (sem dados)
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: CSS dividido em três arquivos sem mudar o resultado
+- [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/ e partials/
 
 ## Key sources (adição 2026-10-07)
 
