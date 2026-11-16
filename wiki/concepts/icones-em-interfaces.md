@@ -3,8 +3,8 @@ type: concept
 title: "Ícones em interfaces"
 aliases: ["ícone", "ícones", "iconografia", "icon", "icons", "ícones de sistema", "system icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, elementos-da-interface, icones, iconografia, carga-cognitiva, padroes-de-interface, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ Na aula teórica da edição "W7" ([[wiki/sources/icones-comunicacao-senso-comum
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: plugins da comunidade do [[wiki/entities/figma]] (Feather, Bootstrap Icons, Material Design Icons, Iconify); ícones próprios para os módulos do site, cada um dizendo o que o módulo trata (computador + smartphone = interface web responsiva; átomo = React; colunas mescladas = grid x Flexbox; presente = bônus); e o ícone dentro de círculo, card ou quadrado para equilibrar proporções diferentes, com [[wiki/concepts/constraints-no-figma|constraints]] para não deformar.
 
+## Ícones em tons pastéis
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: ícone preenchido ("sempre dá certo com itens preenchidos") com a seta em roxo, o círculo em pastel bem claro e o stroke em amarelo, tudo da [[wiki/concepts/paleta-de-cores|paleta]]. Para aumentar, usar o Scale do [[wiki/entities/figma]], que aumenta o stroke junto; o Move mantém a espessura.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — aula teórica de ícones: definição, patterns, objeto x ação, Material Design, identidade visual, famílias
@@ -79,3 +83,4 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — ícone de app (telefone) vetorizado à mão com Pen Tool e Bend Tool
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — aula teórica "W7": pistas visuais, senso comum, clareza, legibilidade, alinhamento em cards, personalidade, no máximo duas famílias
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — aula prática "W7": plugins, ícones próprios dos módulos, ícone dentro de círculo, constraints
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — ícone preenchido roxo sobre pastel com stroke amarelo; Scale x Move

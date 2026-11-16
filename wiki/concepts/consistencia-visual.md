@@ -3,8 +3,8 @@ type: concept
 title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 20
+date_updated: 2026-11-15
+source_count: 21
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -90,6 +90,10 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "escolheu um botão para sua interface, utilize o mesmo botão do mesmo jeito". Altura, padding e [[wiki/concepts/border-radius]] iguais; só a largura varia com o texto. Primário e secundário, nunca "cinco tipos de botão". Exemplos: [[wiki/entities/sketch]] e [[wiki/entities/frontpush]]. Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## A paleta aplicada
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: a mesma paleta (roxo de base, amarelo de destaque, neutros) vai do card aos ícones e ao layout do site, e será a base do style guide. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -112,3 +116,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "e
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones: uma família, no máximo duas com papéis distintos
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones próprios como exercício de consistência; mesma estrutura e escala
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo botão em toda a interface: altura, padding e radius iguais
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — a mesma paleta no card, nos ícones e no layout

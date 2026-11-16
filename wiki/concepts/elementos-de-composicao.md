@@ -3,8 +3,8 @@ type: concept
 title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -40,7 +40,12 @@ Elementos de fundo que "servem para dar ambiência": deixam o usuário mais imer
 
 Descritos em uma frase: trazem "pontos de atenção" e deixam a interface "um pouco mais elegante" ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Gradiente atrás do texto
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: um elemento de composição amarelo atrás de texto branco tira o contraste ("você está dificultando a vida do usuário"). A correção é um gradiente linear: o amarelo vira "um detalhezinho, um entalhe" que some antes do texto. Ver [[wiki/concepts/contraste]] e [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — definição em uma frase na visão geral
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — elemento amarelo atrás do texto corrigido com gradiente linear

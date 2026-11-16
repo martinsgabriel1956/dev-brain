@@ -13997,3 +13997,15 @@ O usuário confirmou que [[wiki/sources/botoes-e-links-guiar-jornada-consistenci
 ## [2026-11-13] update | Autoria confirmada: formas de botões (edição "W7")
 
 O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
+
+## [2026-11-15] ingest | Aplicando a paleta de cores: base e destaque, hierarquia, gradiente e ícones
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/master-pkg-t-1745369174000.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones.md` (sem tradução). Diff palavra a palavra conferido (1635 tokens no original, 1644 na limpa; a diferença vem só dos atalhos separados em tokens); só correções de ASR: "Nárcio"→Násser (objeção do aluno, padrão "Ah, Násser"); "escada de cinza"→"escala de cinza" (ele diz "escala de cinza" antes); "quarto criativo"→Quarto Criativo (nome próprio); "Ctrl -G", "Ctrl -Shift -G", "Ctrl -Z"→Ctrl+G, Ctrl+Shift+G, Ctrl+Z; hífens soltos juntados ("deixá -la"); "60 %"→60%. Sem inserções entre colchetes. Mantidos literalmente: "é Nasher" (fim da primeira frase, sentido incerto), "módulo de base e enfoque" (provável "modelo"), "cinza um pouco mais curinho" (escurinho ou clarinho?), "alguma artesia", "porque ela está muito pouca", "ele não está pegando de jeito", "seguindo eles". Subtítulos `##` por bloco.
+
+**Skill:** ux-ui-mentor (SKILL.md; `references/cor.md` (tokens em três camadas, contraste 4.5:1, nunca só cor)). Mesma escolha das aulas anteriores do módulo.
+
+**Criado:** [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]; conceito [[wiki/concepts/paleta-de-cores]]; entidade [[wiki/entities/quarto-criativo]].
+
+**Tocadas (9 existentes):** contraste, hierarquia-visual, consistencia-visual, icones-em-interfaces, elementos-de-composicao, wireframe, cor-semantica (concepts, todas com seção nova); figma (seção nova), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
+
+**Notas:** (1) **A aula anterior**, em que a paleta foi construída, não está na wiki; a nova página de paleta fica como stub até ela chegar. (2) **Branco sobre amarelo** admitido na própria aula; o gradiente ameniza, mas não resolve onde o texto cruza o amarelo (`[skill]` 4.5:1). (3) **"60% branca"** lembra a regra 60-30-10 `[external]`, não citada. (4) **Amarelo de marca x amarelo de warning** ([[wiki/concepts/cor-semantica]]): tokens separados `[skill]`. (5) **Move x Scale** confere com o Figma; o atalho K não é dito. (6) **Autoria**: Násser, pelo nome na objeção do aluno (legenda "Nárcio"). (7) `source_file` usa o caminho real deste repo (`/home/nemomartins/Documentos/new/dev-study/raw/...`); as páginas anteriores do módulo usam `/home/gabriel-martins/Documentos/dev-brain/raw/...`. Quarto Criativo não verificado fora da aula. `date_published` vazio.
