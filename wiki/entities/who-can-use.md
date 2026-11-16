@@ -24,7 +24,12 @@ Compara duas cores sólidas. Sobre foto, o fundo varia ponto a ponto; meça no p
 
 Volta em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] ao lado do Contrast Ratio, os dois já citados na seção de tipografia: "uma lista de doenças, talvez visuais", para saber se a interface atende "todo e qualquer pessoa". Ver [[wiki/concepts/wcag]].
 
+## Na aula de variação de cores
+
+Volta como a ferramenta de contraste que ele cita "bastante em tipografia" (identificação inferida pela descrição): o verde claro da marca dele com texto branco dá fail; com preto, AAA e 10.50:1 ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ele descreve "regular vision" como quem "não consegue distinguir as três cores primárias"; na ferramenta, Regular Vision (Trichromatic) é a visão típica.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — checker indicado na aula de acessibilidade, com o Contrast Ratio
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — verde claro + branco reprova, preto AAA; "regular vision" mal descrita

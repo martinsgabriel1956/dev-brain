@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-14
-source_count: 10
+date_updated: 2026-11-15
+source_count: 11
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -40,6 +40,10 @@ Na aula de espaçamento e linhas, o Facebook é o exemplo de interface densa: fe
 
 Na aula de paleta de Násser, Facebook (azul) e WhatsApp (verde) são exemplos de cor de base que "define o branding da marca" ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). Ver [[wiki/concepts/identidade-visual]].
 
+## Preto com um pingo de azul
+
+Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalmente sem saturação, ele tem um pingo de azul naquele preto, assim como um branco" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/variacao-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
@@ -52,3 +56,4 @@ Na aula de paleta de Násser, Facebook (azul) e WhatsApp (verde) são exemplos d
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — Facebook em japonês, navegável pelos ícones
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — Facebook denso organizado com cards e linhas
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — Facebook azul e WhatsApp verde como cor de branding
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — preto e branco do Facebook tingidos de azul

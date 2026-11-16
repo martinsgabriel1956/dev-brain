@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 26
+source_count: 27
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -114,6 +114,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 Na aula prática de cores, o par complementar define os papéis: roxo de base, amarelo de destaque, porque "o amarelo se destaca muito bem no roxo" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]]. `[skill: ux-ui-mentor]` Amarelo pastel com texto branco ou sobre branco costuma falhar o 4.5:1; a aula não mede.
 
+## Contraste e luminosidade do matiz
+
+Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]], o [[wiki/concepts/padrao-de-luminosidade]] explica pares ruins: amarelo (89%) e ciano (70%) já são claros, então branco sobre eles quase não se lê; branco sobre laranja passa "dependendo do tamanho da tipografia e do peso". O azul, "já escuro", dá o maior contraste como fundo. No [[wiki/entities/who-can-use]], o verde claro da marca dele com texto branco reprova; com preto, AAA e 10.50:1. "Não basta que ela seja bonita, ela precisa ser acessível." `[external]` WCAG mede luminância relativa (pesos 0,2126 / 0,7152 / 0,0722), não a luma do slide; a ordem dos matizes é a mesma.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -144,3 +148,4 @@ Na aula prática de cores, o par complementar define os papéis: roxo de base, a
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — objetivo de contraste da paleta; branco sobre amarelo amenizado com gradiente
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — o B do HSB não é luminância; contraste se mede à parte
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — par complementar roxo/amarelo como base e destaque
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — padrão de luminosidade (amarelo e ciano claros, azul escuro); verde claro + branco reprova, preto tira AAA

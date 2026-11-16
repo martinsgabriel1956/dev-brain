@@ -3,8 +3,8 @@ type: entity
 title: "Stripe"
 aliases: []
 date_created: 2026-10-07
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [organizacao, pagamentos, cultura]
 skill: tech-mentor-leadership
 status: draft
@@ -18,8 +18,13 @@ Empresa de pagamentos; missão de impulsionar o crescimento econômico. Citada p
 
 Em aula de UI, o site da Stripe aparece como exemplo de [[wiki/concepts/consistencia-visual]]: subtópicos de mesma hierarquia com mesmo espaçamento, tamanho, cor de título, estrutura de corpo e link, e ícones da mesma família ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Exceção às regras de cor
+
+Na aula de variação de cores, a base da Stripe "talvez seja o azul, mas só que é um azul em gradiente": foge da regra de cor de base, "e cabe a nós aceitar isso" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
+
 ## Key Sources
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]]
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — provedor de cartão no exemplo de Strategy com Adapter, com o SDK isolado atrás de um adaptador
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — site como exemplo de consistência visual
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — azul em gradiente como exceção às regras de paleta

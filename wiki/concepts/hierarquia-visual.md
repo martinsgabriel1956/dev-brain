@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 23
+source_count: 24
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -145,6 +145,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 Na paleta da aula prática, a cor de destaque é a complementar da base (amarelo sobre roxo), reservada para o que precisa chamar atenção ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]].
 
+## Cor de enfoque na regra 60-30-10
+
+Na aula de variação de cores, a cor de enfoque vai em botões, títulos e banners; numa interface preta, o laranja "puxa" o olho, ajudado pelo espaço em branco ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/regra-60-30-10]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -175,3 +179,4 @@ Na paleta da aula prática, a cor de destaque é a complementar da base (amarelo
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — variação monocromática no texto como hierarquia
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo no que importa, branco no resto; escala de cinza na versão monocromática
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — amarelo complementar como cor de destaque
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — cor de enfoque (10%) em botões, títulos e banners

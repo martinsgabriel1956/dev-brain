@@ -4,7 +4,7 @@ title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 5
+source_count: 6
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -60,6 +60,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Na aula de usabilidade, "uso de confirmações visuais e textuais sempre" entra nas boas práticas ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). As duas juntas seguem a regra de nunca depender só da cor ([[wiki/concepts/cor-semantica]]). Ver [[wiki/concepts/usabilidade]].
 
+## Hover pela variação de cor
+
+O grande propósito da [[wiki/concepts/variacao-de-cores]] é a mudança de estado: no hover, o botão "vai ficar ou mais escuro ou mais claro", mantendo a harmonização do site ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). `[skill: ux-ui-mentor]` Vira token semântico (`color-brand-hover`), não hex solto no componente.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -70,3 +74,4 @@ Na aula de usabilidade, "uso de confirmações visuais e textuais sempre" entra 
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — normal, hover e clicável para card, ícone e input
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — feedback e confirmação visual na receita KISS de acessibilidade
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — "confirmações visuais e textuais sempre"
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — hover como variação mais escura ou mais clara da cor do botão

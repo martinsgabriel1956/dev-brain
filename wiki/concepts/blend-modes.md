@@ -55,8 +55,13 @@ Os wallpapers feitos com blend modes são uma das camadas de ambiência do Front
 
 Na aula prática de cores, o overlay da cor de base sobre o branco e o preto tinge os neutros; no preto, a saturação sobe demais e ele baixa a opacidade para 50% e 10% ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/neutros-tingidos]]. `[external]` Sobre FFFFFF puro o overlay não muda nada (https://www.w3.org/TR/compositing-1/#blendingoverlay); funciona porque o branco de partida é F1/F2.
 
+## Luminosity para ler o brilho das cores
+
+Na aula de variação de cores, uma barra com o ciclo cromático muda de pass-through para luminosity e vira escala de cinza: o brilho de cada matiz fica visível (amarelo 89%, azul 11%) ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/padrao-de-luminosidade]]. `[external]` No modo luminosity, a camada cede só a luminosidade e mantém matiz e saturação do que está embaixo; sobre fundo neutro, sobra o cinza.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — máscara com gradiente radial, color dodge e lighten para tirar o fundo preto, wallpapers do FrontPUSH
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — as outras camadas da ambiência do FrontPUSH
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — overlay da cor de base sobre branco e preto
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity revela o brilho de cada matiz
