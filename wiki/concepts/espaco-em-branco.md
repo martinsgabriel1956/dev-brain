@@ -66,6 +66,10 @@ Na interface preta com destaque laranja, Násser diz aplicar "um princípio de d
 
 O [[wiki/entities/new-york-times]] limita a coluna com um container, para o texto não ir "de ponta a ponta", e quebra a notícia em parágrafos, "também de pausa", em vez de "texto corridão" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). Ver [[wiki/concepts/largura-do-texto]].
 
+## Espaço entre parágrafos
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o vão entre parágrafos tem o tamanho do line-height, "o clássico enter"; maior que isso começa a separar o conteúdo, assim como uma linha divisória. Sem vão nenhum, o texto fica "pesado, cansativo". Ver [[wiki/concepts/espacamento-entre-paragrafos]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — espaço em branco como ferramenta de simplicidade
@@ -78,3 +82,4 @@ O [[wiki/entities/new-york-times]] limita a coluna com um container, para o text
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática no Figma: vãos de 16, 32 e 128 medidos com Alt
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — espaço em branco para o olho focar no destaque laranja
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — container do NYT e parágrafos como pausa
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — vão de parágrafo = line-height; espaço grande separa o texto

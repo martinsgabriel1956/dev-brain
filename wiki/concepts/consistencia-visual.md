@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 27
+source_count: 28
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -142,6 +142,10 @@ A [[wiki/concepts/escala-tipografica]] existe para consistência, "aquele princ�
 
 Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: "selecionou essas duas typefaces, siga utilizando sempre essas duas", uma para título e outra para corpo. O assunto volta no guia de estilo. Ver [[wiki/concepts/combinacao-de-fontes]].
 
+## Mesmo vão de parágrafo
+
+"Uma vez que você colocou o espaçamento aqui, utilize ele em todo o seu site quando tem texto" ([[wiki/sources/alinhamento-e-espacamento-de-texto]]). O vão entre parágrafos, do tamanho do line-height, entra na lista de coisas que se repetem iguais. Ver [[wiki/concepts/espacamento-entre-paragrafos]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -178,3 +182,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica: um tamanho por nível de hierarquia
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala tipográfica como consistência
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — as mesmas duas typefaces no projeto todo
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — mesmo vão de parágrafo em todo o site

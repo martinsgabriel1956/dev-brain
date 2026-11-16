@@ -41,8 +41,13 @@ Densidade não é [[wiki/concepts/sobrecarga-de-informacao|sobrecarga]]. Um feed
 
 No [[wiki/concepts/wireframe]], o texto "muito carregado" se resolve em tópicos, não em mais espaço: "fica mais fácil de entender, você deixa mais tranquilo para o usuário ler" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). `[skill: ux-ui-mentor]` É a mesma lógica do F-pattern: texto denso é lido pelo começo das linhas.
 
+## Texto corrido pesa
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], texto "totalmente corrido" fica "muito pesado, fica cansado de ler". A saída é quebrar em parágrafos de 4 a 8 linhas com vão do tamanho do line-height; no G1, site denso, o vão é um pouco maior. Ver [[wiki/concepts/espacamento-entre-paragrafos]].
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — espaço vs. meio: Facebook e G1 densos com cards e linhas; site simples com espaços grandes
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática da aula de espaço vs. meio no Figma (wireframe pouco denso, vãos de até 128)
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — texto carregado em tópicos (benefícios do Nubank)
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — parágrafos de 4 a 8 linhas aliviam texto corrido

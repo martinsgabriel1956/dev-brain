@@ -58,6 +58,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 "Se você deixar uma escala justamente muito grande, uma tela muito pequena, fica muito ruim" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). A [[wiki/concepts/largura-do-texto]] também depende da tela: em telas largas, um container segura a coluna, como no NYT.
 
+## Texto à esquerda
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], um dos porquês do [[wiki/concepts/alinhamento-de-texto|alinhamento à esquerda]] é a responsividade: "em todos os dispositivos móveis" a borda esquerda fica fixa e a direita é que se move, então o texto não muda de ponto de partida.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -75,3 +79,4 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Center (max-width) para reduzir breakpoints; blocos que já viram classe e flexbox
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escalas tipográficas desktop e mobile
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — escala grande em tela pequena; container limita a largura
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda fica fixa entre telas; texto à esquerda facilita a responsividade

@@ -3,7 +3,7 @@ type: source
 title: "Elementos da interface: espaçamento e linhas (organização, espaço vs. meio, sistema de espaçamento, padding)"
 aliases: ["aula espaçamento e linhas", "espaço vs. meio", "escala linear vs. geométrica", "sistema de espaçamento aula"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, espacamento, linhas, espaco-em-branco, densidade-de-informacao, escala-de-espacamento, padding, consistencia, hierarquia-visual, lei-da-proximidade, figma]
 skill: ux-ui-mentor
@@ -102,3 +102,4 @@ Primeira aula de aprofundamento depois de [[wiki/sources/elementos-da-interface-
 ## Ver também
 
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — seção seguinte da mesma edição "W7" (imagens e ilustrações)
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — a regra de espaço e linhas aplicada ao vão entre parágrafos

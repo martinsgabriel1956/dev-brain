@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 34
+source_count: 35
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -146,6 +146,10 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 
 Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: a aba Inspect mostra o [[wiki/concepts/css]] do texto (`letter-spacing` em `em`, `font-family`, `font-style`, `font-weight`); trocar para Medium vira `font-weight: 500`. O Figma só lista os pesos que a fonte tem (a Mukta vai de extra light a extra bold), o que evita o "estilo falso" ([[wiki/concepts/peso-tipografico]]). A opção "case" põe o texto em [[wiki/concepts/texto-em-maiusculas|maiúsculas]].
 
+## Justificado na prática
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o autor tenta mostrar no Figma o espaçamento irregular do texto justificado e admite que "não deu para perceber muito". Ver [[wiki/concepts/alinhamento-de-texto]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -189,3 +193,4 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: a ab
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height em % aumenta a caixa do texto
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — espelho do Google Fonts; demonstração da monoespaçada
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — Inspect para letter-spacing e font-weight; pesos reais da fonte
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — demonstração do justificado

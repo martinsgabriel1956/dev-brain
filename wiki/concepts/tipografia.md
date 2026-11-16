@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 18
+source_count: 19
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -114,6 +114,10 @@ A aula que fecha a parte de tipografia ([[wiki/sources/escolhendo-e-combinando-t
 
 `[external]` A regra "corpo sempre sem serifa" é princípio da aula: em telas de alta resolução não há diferença consistente de legibilidade (https://www.nngroup.com/articles/serif-vs-sans-serif-fonts-hd-screens/).
 
+## Alinhamento e espaçamento de parágrafo
+
+Na aula 4 do módulo de tipografia ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), alinhamento e espaçamento entram como "variáveis tipográficas" ao lado de altura de linha e largura de texto (aula 3, ainda fora da wiki). Esquerda é o padrão, centralizado só em títulos e cards curtos, justificado nunca: ver [[wiki/concepts/alinhamento-de-texto]]. Parágrafos de 4 a 8 linhas, separados por um vão do tamanho do line-height: ver [[wiki/concepts/espacamento-entre-paragrafos]]. O line-height vira unidade de espaçamento, não só de entrelinha.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -137,3 +141,4 @@ A aula que fecha a parte de tipografia ([[wiki/sources/escolhendo-e-combinando-t
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações tipográficas; sem serifa no corpo, decorativas no título; Google Fonts e Adobe Fonts
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito, itálico, tracking, kerning, maiúsculas; estilo falso; justificado
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — método de escolha (mensagem, similares, público, licença) e de combinação (duas typefaces, contraste, consistência)
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — alinhamento (esquerda padrão, justificado nunca) e vão de parágrafo = line-height

@@ -30,6 +30,10 @@ O módulo de tipografia do curso de UI fecha com as propriedades de texto no CSS
 
 Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o Inspect do [[wiki/entities/figma]] traduz o design em `letter-spacing` ([[wiki/concepts/tracking]]), `font-family`, `font-style` e `font-weight` ([[wiki/concepts/peso-tipografico]]). Peso usado no CSS sem ter sido carregado do Google Fonts ou Adobe Fonts vira estilo "falso".
 
+## Alinhamento padrão
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "o padrão do CSS": as tags de texto e de título já vêm assim. `[external]` Mais precisamente, o valor inicial de `text-align` é `start`, que segue a direção do idioma: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align. Ver [[wiki/concepts/alinhamento-de-texto]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -37,3 +41,4 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o In
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — CSS do inspect; nomes iguais ao CSS; hover é pseudo-classe
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: font-family, pesos, `<link>` x `@import`
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)

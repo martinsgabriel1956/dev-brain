@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 46
+source_count: 47
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -56,6 +56,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Variação de cores: tom mais claro = mais brilho e menos saturação, mais escuro = menos brilho e mais saturação; cada matiz tem luminosidade própria (amarelo claro, azul escuro); "não basta que ela seja bonita, ela precisa ser acessível" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
 - Tipografia é dispor o texto da melhor forma, porque "a maioria da web é texto"; escala consistente, entrelinha confortável, linha curta; `<link>` do Google Fonts em vez de `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 - Fonte se escolhe por pesquisa (mensagem, similares, público, licença) e se combina em duas typefaces com contraste; no próprio site usa Ubuntu + Mukta ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]).
+- Texto alinhado à esquerda é o coringa; justificado nunca; parágrafos de 4 a 8 linhas separados por um line-height ([[wiki/sources/alinhamento-e-espacamento-de-texto]]).
 
 ## Key Sources
 
@@ -120,3 +121,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 de classificações tipográficas (autoria inferida pela pasta FrontPush): serifa, sem serifa, script, blackletter, monoespaçada, display; Google Fonts e Adobe Fonts
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — aula 05 do módulo de tipografia da edição "W7" (autoria inferida pelo logo W7 e pela pasta FrontPush): negrito, itálico, tracking, kerning e maiúsculas
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height

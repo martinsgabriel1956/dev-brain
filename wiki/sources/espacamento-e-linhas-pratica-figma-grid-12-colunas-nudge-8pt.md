@@ -111,3 +111,6 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 ## Ver também
 
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — a aula de tipografia prometida: line-height é a caixa que circunda o texto
+
+## Ver também
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — line-height vira unidade do vão entre parágrafos
