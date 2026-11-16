@@ -3,8 +3,8 @@ type: concept
 title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 35
+date_updated: 2026-11-16
+source_count: 36
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -146,6 +146,10 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 "Uma vez que você colocou o espaçamento aqui, utilize ele em todo o seu site quando tem texto" ([[wiki/sources/alinhamento-e-espacamento-de-texto]]). O vão entre parágrafos, do tamanho do line-height, entra na lista de coisas que se repetem iguais. Ver [[wiki/concepts/espacamento-entre-paragrafos]].
 
+## Classe como consistência
+
+Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo mantém "a organização e a consistência", e a classe replica o estilo em todo botão copiado: mudar a cor num lugar muda "para todos".
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -183,3 +187,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala tipográfica como consistência
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — as mesmas duas typefaces no projeto todo
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — mesmo vão de parágrafo em todo o site
+- [[wiki/sources/classes-e-ids-no-css]] — a classe aplica o mesmo estilo a todos os botões

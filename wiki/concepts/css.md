@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -34,6 +34,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o In
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "o padrão do CSS": as tags de texto e de título já vêm assim. `[external]` Mais precisamente, o valor inicial de `text-align` é `start`, que segue a direção do idioma: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align. Ver [[wiki/concepts/alinhamento-de-texto]].
 
+## Classes e IDs
+
+Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo (arquivo `.css` ligado por `<link>`) é a forma "mais utilizada" das três, porque escala o estilo e mantém organização e consistência. A aula apresenta os [[wiki/concepts/seletores-css|seletores]] universal, de tipo, de classe (`.`) e de ID (`#`). A diferença de peso entre eles é a [[wiki/concepts/especificidade-css]], que a aula não aborda.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -42,3 +46,4 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: font-family, pesos, `<link>` x `@import`
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)
+- [[wiki/sources/classes-e-ids-no-css]] — classe x ID, CSS externo como padrão, `.btn` com variações

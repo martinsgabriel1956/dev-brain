@@ -3,8 +3,8 @@ type: concept
 title: "DRY (Don't Repeat Yourself)"
 aliases: ["dry principle", "não se repita", "duplicação de código"]
 date_created: 2026-08-18
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [dry, code-smells, duplicacao, abstracao, under-engineering, yagni]
 skill: tech-mentor-backend
 status: stub
@@ -41,7 +41,12 @@ Extrair uma função auxiliar central (ex.: um helper de request HTTP que valida
 
 [[wiki/concepts/code-smells]] · [[wiki/concepts/yagni]] · [[wiki/concepts/naming]] · [[wiki/concepts/refatoracao]]
 
+## DRY no CSS: classes
+
+Em [[wiki/sources/classes-e-ids-no-css]], a classe é o DRY do CSS: um estilo escrito uma vez vale para todo elemento que a recebe, e a mudança se propaga ("ele aplicou justamente para todos"). O CSS externo leva a mesma ideia ao nível do arquivo ("menos retrabalho").
+
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — exemplo de reuso via classe compartilhada num monolito, contrastado com a dificuldade equivalente em microsserviços
+- [[wiki/sources/classes-e-ids-no-css]] — classe CSS como estilo escrito uma vez

@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 62
+date_updated: 2026-11-16
+source_count: 63
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -57,6 +57,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Tipografia é dispor o texto da melhor forma, porque "a maioria da web é texto"; escala consistente, entrelinha confortável, linha curta; `<link>` do Google Fonts em vez de `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 - Fonte se escolhe por pesquisa (mensagem, similares, público, licença) e se combina em duas typefaces com contraste; no próprio site usa Ubuntu + Mukta ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]).
 - Texto alinhado à esquerda é o coringa; justificado nunca; parágrafos de 4 a 8 linhas separados por um line-height ([[wiki/sources/alinhamento-e-espacamento-de-texto]]).
+- Classe para o que se repete, ID para o que é único, "como se fosse o seu CPF"; classes de botão primário e secundário no verde dos seus projetos ([[wiki/sources/classes-e-ids-no-css]]).
 
 ## Key Sources
 
@@ -122,3 +123,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — aula 05 do módulo de tipografia da edição "W7" (autoria inferida pelo logo W7 e pela pasta FrontPush): negrito, itálico, tracking, kerning e maiúsculas
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height
+- [[wiki/sources/classes-e-ids-no-css]] — aula 02 de Básico CSS (diz o próprio nome: "O que significa isso, Násser?"): classe x ID (CPF), `.btn` com primário e secundário, ID de checkout
