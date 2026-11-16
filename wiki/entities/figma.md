@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 28
+source_count: 29
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -122,6 +122,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o fill abre a "caixinha de diálogo" de cor, "muito comum em toda e qualquer ferramenta de prototipagem". Mostra os modos Hex, RGB, CSS (RGB + alfa) e HSB; trocar de modo converte a mesma cor (`8FFF00` → 143, 255, 0). Ver [[wiki/concepts/modelos-de-cor]].
 
+## Cores na prática
+
+Seletor em [[wiki/concepts/modelo-de-cor-hsb|modo HSB]], conta-gotas sobre um print, overlay e opacidade para tingir neutros, e a paleta como base dos estilos do Figma ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -159,3 +163,4 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o fill 
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — aula prática de códigos de cor prometida
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — Ctrl+G / Ctrl+Shift+G; Move mantém o stroke, Scale aumenta proporcional
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — seletor de cor e modos Hex, RGB, CSS e HSB (autoria inferida)
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — HSB, conta-gotas, overlay para neutros

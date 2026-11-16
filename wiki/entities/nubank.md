@@ -83,6 +83,10 @@ O curso tem "um módulo específico só para a gente desenvolver o Nubank". Na a
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser cita de passagem um projeto no Nubank (frase confusa na legenda: "qual projeto custo eu coloquei aqui no Nubank") e promete mostrá-lo "com mais detalhes quando a gente [...] desenvolver esse projeto" no curso.
 
+## Paleta: roxo e branco
+
+Exemplo de paleta neutra + uma cor: "o Nubank é roxo e branco e as suas variações". O curso tem um projeto do Nubank que trabalha só com neutros e uma cor ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 
@@ -101,3 +105,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — projeto Nubank anunciado como case do style guide
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — wireframe com benefícios em tópicos; módulo próprio no curso
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — projeto de estudo do curso, detalhes prometidos
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — roxo e branco como paleta neutra + uma cor

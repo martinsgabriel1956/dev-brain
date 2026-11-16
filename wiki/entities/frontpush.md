@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 19
+source_count: 20
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -114,6 +114,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]), o branding do site é "boost", "um empurrão na sua carreira"; daí o foguete e as órbitas com planetas que aparecem nas aulas. A edição FrontPUSH descreve o mesmo fundo como eclipse.
 
+## Preto e uma cor
+
+"Toda a estrutura dos meus cursos" usa preto de base e uma só cor, com gradientes "para poder ficar um pouco mais charmoso" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ligação com o FrontPUSH inferida (o site é preto com azul). Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -149,3 +153,4 @@ Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-p
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Notion com os links de grids
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu do curso, todos no grid de 12 colunas
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — branding de "boost": foguete, órbitas e planetas
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — preto + uma cor + gradiente (inferido)

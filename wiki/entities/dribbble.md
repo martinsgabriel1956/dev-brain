@@ -39,6 +39,10 @@ Uma das fontes de referência de [[wiki/entities/nasser|Násser]], com Pinterest
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], exemplo (com o [[wiki/entities/dropbox]]) de como a disposição muda entre telas maiores e menores.
 
+## Busca de cores
+
+Na aula prática de cores de [[wiki/entities/nasser|Násser]] ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]): "a maior rede social de design do mundo" ("se não me engano"). Fluxo: *Like this shot* / *Save shot*, print, conta-gotas no [[wiki/entities/figma]]; ou "barra colors", que hoje cai em shots filtrados pelo hexadecimal (com filtros de Figma, downloads e fotos). Sem login, a página "fica travando". Ver [[wiki/concepts/repertorio]].
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
@@ -46,3 +50,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "principais portfólios" de UI designer, com o Behance
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — fonte de referências no processo de wireframes
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — exemplo de layout responsivo
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — busca de referências por hexadecimal

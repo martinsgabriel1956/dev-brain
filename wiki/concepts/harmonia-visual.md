@@ -4,7 +4,7 @@ title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 14
+source_count: 15
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -74,6 +74,10 @@ O recorte da cor tem página própria: [[wiki/concepts/harmonia-de-cores]] (cír
 
 Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: com saturação e brilho no máximo, "aquela cor pura", Násser "sempre" indica não usar, "porque esse tipo de cor aqui a gente não acha na natureza". É heurística estética, sem dado citado. `[skill: ux-ui-mentor]` Na prática, saturação máxima em áreas grandes cansa e vibra ao lado da complementar. Ver [[wiki/concepts/modelos-de-cor]].
 
+## Neutros com a cor de base
+
+Dar aos neutros "um pouco da cor de base" (overlay, ou branco na matiz 247 com saturação 4) "faz com que a nossa interface seja mais harmônica" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/neutros-tingidos]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -90,3 +94,4 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: com sat
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores como a parte da cor da harmonia
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — harmonia de cores como princípio, não regra; 60-30-10
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — evitar a cor pura (S e B no máximo) do seletor HSB
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — neutros tingidos com a matiz da base

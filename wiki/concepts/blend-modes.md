@@ -3,8 +3,8 @@ type: concept
 title: "Blend modes (modos de mesclagem)"
 aliases: ["blend mode", "modos de mesclagem", "modo de mesclagem", "mix-blend-mode", "background-blend-mode", "color dodge", "lighten", "screen", "multiply", "overlay", "difference"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui-design, imagens, figma, composicao-de-imagens, blend-modes, css, gradiente]
 skill: ux-ui-mentor
 status: stub
@@ -51,7 +51,12 @@ Cor neutra é a que deixa o fundo como está. Por isso o preto "desaparece" nos 
 
 Os wallpapers feitos com blend modes são uma das camadas de ambiência do FrontPUSH; a aula de [[wiki/concepts/elementos-de-composicao]] mostra as outras (layer blur, preenchimento radial, estrelas) ([[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]).
 
+## Overlay para tingir neutros
+
+Na aula prática de cores, o overlay da cor de base sobre o branco e o preto tinge os neutros; no preto, a saturação sobe demais e ele baixa a opacidade para 50% e 10% ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/neutros-tingidos]]. `[external]` Sobre FFFFFF puro o overlay não muda nada (https://www.w3.org/TR/compositing-1/#blendingoverlay); funciona porque o branco de partida é F1/F2.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — máscara com gradiente radial, color dodge e lighten para tirar o fundo preto, wallpapers do FrontPUSH
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — as outras camadas da ambiência do FrontPUSH
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — overlay da cor de base sobre branco e preto

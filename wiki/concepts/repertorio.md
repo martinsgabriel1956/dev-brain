@@ -55,6 +55,10 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 
 No design de interfaces, saber "qual wireframe colocar, em qual flow de pagemap você vai encaixar" "vai muito do estudo e do grande repertório que você tem"; por isso uma biblioteca de wireframes é atualizada para que o repertório "na cabeça de vocês" fique "o maior possível" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Ver [[wiki/concepts/pagemap]].
 
+## Repertório de cores
+
+Na aula prática de cores de [[wiki/entities/nasser|Násser]], o bloqueio criativo se resolve com "uma biblioteca de boas referências": shot salvo no [[wiki/entities/dribbble]], print, conta-gotas no Figma, busca por hexadecimal e perfis profissionais no Instagram. A referência é ponto de partida, "não necessariamente use os mesmos tons" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
@@ -63,3 +67,4 @@ No design de interfaces, saber "qual wireframe colocar, em qual flow de pagemap 
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — repertório próximo ao foco de especialidade cria brechas de oportunidade para abraçar granadas ([[wiki/concepts/abracar-granadas]])
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — usar um modelo real existente (SaaS, marketplace) como substituto de repertório para gerar requisitos do zero, ver [[wiki/concepts/aprender-com-foco-no-problema]]
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — repertório de wireframes para encaixar no pagemap
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — do shot do Dribbble ao hexadecimal

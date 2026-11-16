@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 22
+source_count: 23
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -141,6 +141,10 @@ Na aula de harmonia das cores, a variação monocromática (mais claro e mais es
 
 Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: num card roxo, o que importa (perfil, nome) vai na cor de destaque, amarela, e o resto em branco. Numa interface monocromática, a mesma hierarquia sairia de um branco mais forte e um cinza mais claro, com variações grandes o bastante para se notar. No [[wiki/entities/quarto-criativo]], a hierarquia do texto usa um tom pastel. Ver [[wiki/concepts/paleta-de-cores]].
 
+## Cor de destaque complementar
+
+Na paleta da aula prática, a cor de destaque é a complementar da base (amarelo sobre roxo), reservada para o que precisa chamar atenção ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -170,3 +174,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — cor como peso de hierarquia (Apple, sites de notícia)
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — variação monocromática no texto como hierarquia
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo no que importa, branco no resto; escala de cinza na versão monocromática
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — amarelo complementar como cor de destaque

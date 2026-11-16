@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 25
+source_count: 26
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -110,6 +110,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] ensina o B do HSB (0 = preto, máximo = cor "estourada"). `[skill: ux-ui-mentor]` B e L não medem o brilho percebido: amarelo e azul com o mesmo B têm luminâncias diferentes. O contraste WCAG se calcula pela luminância relativa, então a conferência continua sendo numa ferramenta como [[wiki/entities/who-can-use]]. Ver [[wiki/concepts/modelos-de-cor]].
 
+## Contraste entre base e destaque
+
+Na aula prática de cores, o par complementar define os papéis: roxo de base, amarelo de destaque, porque "o amarelo se destaca muito bem no roxo" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]]. `[skill: ux-ui-mentor]` Amarelo pastel com texto branco ou sobre branco costuma falhar o 4.5:1; a aula não mede.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -139,3 +143,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — contraste como função da paleta: enfoque complementar, claro x escuro
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — objetivo de contraste da paleta; branco sobre amarelo amenizado com gradiente
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — o B do HSB não é luminância; contraste se mede à parte
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — par complementar roxo/amarelo como base e destaque
