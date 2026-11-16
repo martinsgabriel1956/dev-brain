@@ -3,8 +3,8 @@ type: entity
 title: "Material Design"
 aliases: ["Material", "Material Design 2", "Material Design 3", "M2", "M3"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [design-system, google, diretrizes, imagens, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -35,3 +35,4 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 - [[wiki/sources/icones-parte-2-hierarquia-tamanho-simetria-grid-constraints]] — 24×24, área útil 20×20, margem (conferido no M3)
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — documentação recomendada; ícones "bem retinhos"
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin Material Design Icons no Figma
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline do Google citada como referência para montar style guide

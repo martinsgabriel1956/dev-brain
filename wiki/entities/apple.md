@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -29,3 +29,4 @@ Citada como usuária de botão de bordas circulares, "para poder trazer mais par
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline da Apple citada como referência para montar style guide

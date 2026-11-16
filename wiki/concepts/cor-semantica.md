@@ -3,8 +3,8 @@ type: concept
 title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ Cor usada para dizer algo, não para enfeitar: o usuário lê o estado ou o tipo
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: nos ícones do site do autor, "tudo que é laranja está remetendo ao curso de UI Design", "uma seleção que o seu cérebro faz até pela cor". É convenção de marca, não de estado; vale a mesma regra de nunca depender só da cor.
 
+## Nomes de cor no style guide
+
+Os grupos de cor mostram nomes por papel e por valor: primary, secondary, brand color, auxiliary color; white, black, neutral e gray colors para hierarquia textual. `Primary / Orange-1` mistura os dois; `[skill: ux-ui-mentor]` separar primitivo (`orange-500`) de semântico (`brand-primary`) deixa trocar a cor sem renomear ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — laranja = curso de UI Design nos ícones do site
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — grupos de cor por papel (primary, brand, neutral) e por valor (orange-1)

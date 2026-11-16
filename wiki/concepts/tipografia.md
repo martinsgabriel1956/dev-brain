@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 O botão usa texto de 16, "meio que esquematizado"; os padrões de tamanho de texto ficam para a seção de tipografia e para o style guide ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). A escolha entre texto branco e preto no botão também é adiada para tipografia.
 
+## Estilos de texto
+
+Os headings viram text styles (`Heads / H1`, `H2`), com grupos desktop e mobile. No exemplo: Sora 48, 36 e 24, pesos 600, 400, 400 e line-height 110 em todos, "um peso [...] um pouco maior nas fontes maiores". Ele chama 600 de "medium"; no CSS, medium é 500 `[skill: ux-ui-mentor]` ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]). Ver [[wiki/concepts/estilos-no-figma]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -64,3 +68,4 @@ O botão usa texto de 16, "meio que esquematizado"; os padrões de tamanho de te
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — texto de 16 no botão; padrões de tamanho adiados para tipografia
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — text styles Heads/H1, H2; Sora 48/36/24, line-height 110; "medium" = 600 (tensão)

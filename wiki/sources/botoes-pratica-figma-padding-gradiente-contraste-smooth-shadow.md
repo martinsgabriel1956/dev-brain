@@ -3,7 +3,7 @@ type: source
 title: "Botões na prática no Figma (edição \"W7\"): padding, gradiente, contraste e sombras suaves"
 aliases: ["aula prática de botões W7", "botões no Figma", "smooth shadow", "sombra de botão", "receita de drop shadow"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, figma, botoes, padding, gradiente, contraste, sombra, drop-shadow, hover, design-system]
 skill: ux-ui-mentor
@@ -93,7 +93,7 @@ A aula prática (cerca de 10 min) que [[wiki/sources/botoes-e-links-guiar-jornad
 - **Smooth Shadow:** `[external]` provavelmente o plugin de Philipp Brumm, que empilha camadas de `box-shadow` com opacidade decrescente (https://shadows.brumm.af/). Não confirmado na aula; confiança média.
 - **"Em soma eu deixo assim"**, **"as sombras atacando"**, **"um belo grau do que você aplica"**: mantidos literais. Talvez "em suma", "destacando", "graph"; ambíguos.
 - **"Na cor 111"**: lido como `#111111` (cinza escuro, como ele diz). Confiança média.
-- **"Vai ter uma sessão só para a gente trabalhar com sombras"** e o style guide para download: prometidos, ainda não ingeridos.
+- **"Vai ter uma sessão só para a gente trabalhar com sombras"**: prometida, ainda não ingerida. O style guide foi entregue em [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]].
 - **Post das "regrinhas" de drop shadow** (Instagram): não consultado.
 - `date_published` vazio.
 
@@ -111,3 +111,4 @@ A aula prática (cerca de 10 min) que [[wiki/sources/botoes-e-links-guiar-jornad
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: as seis formas de botão
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]: medir distâncias no Figma (Alt, nudge de 8)
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: cor de branding desconectada do estilo para mudar a opacidade
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: a aula prática de style guide (parte 1): estilos de cor, texto e efeito
