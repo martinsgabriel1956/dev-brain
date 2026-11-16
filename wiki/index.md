@@ -26,6 +26,7 @@ date_updated: 2026-11-15
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/buscadores-e-outsourcing-galego]] | Aula curta do curso de carreira de [[wiki/entities/augusto-galego]] (inferido): onde procurar vaga primeiro. [[wiki/concepts/job-board\|Job boards]]: [[wiki/entities/linkedin]] (o melhor, Brasil e gringa), [[wiki/entities/lever]] com busca booleana, [[wiki/entities/indeed]], [[wiki/entities/glassdoor]], [[wiki/entities/wellfound]]. [[wiki/concepts/empresa-de-outsourcing-remoto\|Outsourcing]]: [[wiki/entities/bairesdev]] (volume, opiniões mistas), [[wiki/entities/x-team]] e Cake (qualidade), [[wiki/entities/toptal]] e [[wiki/entities/revelo]] |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -955,6 +956,13 @@ date_updated: 2026-11-15
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Buscadores e Outsourcing (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/job-board]] | Site onde vagas são publicadas/agregadas; ordem de prioridade do Galego (LinkedIn primeiro) |
+| [[wiki/concepts/empresa-de-outsourcing-remoto]] | Outsourcing que aloca devs em clientes de fora; porta paralela aos job boards (volume x qualidade) |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
@@ -3487,6 +3495,13 @@ date_updated: 2026-11-15
 
 ## Entities
 
+- [[wiki/entities/bairesdev]] — outsourcing de maior volume segundo o Galego; "opiniões mistas"
+- [[wiki/entities/x-team]] — outsourcing de "altíssima qualidade"
+- [[wiki/entities/toptal]] — rede de talentos remotos citada pelo volume
+- [[wiki/entities/revelo]] — contratação/outsourcing citada pelo volume
+- [[wiki/entities/indeed]] — job board com bastante vaga fora do Brasil
+- [[wiki/entities/glassdoor]] — job board e avaliações/salários
+- [[wiki/entities/wellfound]] — job board de startups (ex-AngelList Talent); poucas vagas, boas
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile
@@ -3985,6 +4000,7 @@ date_updated: 2026-11-15
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]] | LinkedIn é o melhor job board (Galego) x último recurso para vaga internacional (hunting no ATS); provavelmente medem volume x chance |
 | [[wiki/questions/ordem-retry-circuit-breaker]] | Resolvida: não há ordem universal. O retry por fora não é erro (é o padrão do Resilience4j), e a escolha muda o que o breaker mede |
 | [[wiki/questions/generalista-ou-especialista-na-era-da-ia]] | Generalista vence (Vale) × especialista vence (Balta) × júnior especializa mais rápido — provável conciliação via T-shaped |
 | [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]] | FDE: "cargo que mais cresceu" vs. <1.000 vagas nos EUA — crescimento sobre base pequena? |

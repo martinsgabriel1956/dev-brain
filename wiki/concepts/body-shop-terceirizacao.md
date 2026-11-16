@@ -3,8 +3,8 @@ type: concept
 title: "Body Shop (Terceirização de Desenvolvimento)"
 aliases: ["body shop de ti", "loja de corpos", "terceirização agressiva"]
 date_created: 2026-08-26
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [mercado-de-trabalho, terceirização, contratação, consultoria]
 skill: tech-mentor-leadership
 status: stub
@@ -43,3 +43,11 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 - [[wiki/sources/consultoria-e-uma-boa-opcao-de-carreira]] — relato de caso pessoal de subcontratação em cadeia (não volume, mas camadas de revenda de horas)
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — alternativa recomendada: sênior interno lidera o projeto novo, terceiro (quando necessário) fica subordinado a ele
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — outsourcing como objeto do estudo do autor (mestrado 2008) sobre isomorfismo institucional: por que empresas terceirizavam mesmo sem ser ideal — [[wiki/concepts/isomorfismo-institucional]]
+
+## Outsourcing como porta para vaga internacional
+
+[[wiki/concepts/empresa-de-outsourcing-remoto]] cobre o lado do candidato: [[wiki/sources/buscadores-e-outsourcing-galego]] recomenda outsourcings (BairesDev, X-Team, Toptal, Revelo) como porta de entrada para a gringa, com a ressalva de "opiniões mistas" sobre a de maior volume.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — outsourcing visto pelo candidato

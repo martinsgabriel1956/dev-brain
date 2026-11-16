@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Busca de vagas direto no ATS"
-aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever"]
+aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever","busca booleana"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -26,3 +26,11 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+
+## Mesma técnica como "busca booleana"
+
+[[wiki/sources/buscadores-e-outsourcing-galego]] chama de "busca booleana" o método para achar vagas no [[wiki/entities/lever]] fora do Brasil (a aula de busca booleana do curso não está na wiki). Ver também [[wiki/concepts/job-board]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]]

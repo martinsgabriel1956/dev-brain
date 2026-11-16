@@ -14419,3 +14419,15 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Também:** linhas duplicadas do index.md fundidas numa por página; source_count recalculado (fontes distintas citadas) nas 50 páginas tocadas.
 
 **Contradições registradas nas páginas fundidas:** valores de breakpoint (aula <576/720/960/1200 x Bootstrap 5 576/768/992/1200/1400); line-height do corpo (aula 140–160% x skill 1.5–1.6); medida de linha (aula 60–90 caracteres x skill 45–75 x WCAG máx. 80); corpo mínimo (aula 14 px x skill 16 px); complementares em RYB x RGB/HSL; número de classificações tipográficas (6 x 7); page map "não é" x "equivale a" sitemap; aula que chama tracking de "kerning".
+
+## [2026-11-16] ingest | Buscadores e Outsourcing (curso de vagas, Augusto Galego)
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/transcricoes/galego/Buscadores e Outsourcing.pt.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/buscadores-e-outsourcing-galego.md` (sem tradução). Diff palavra a palavra conferido (436 tokens no original, 437 na limpa); só correções de ASR: "ByresDev"→BairesDev (2×); "Xteam"→X-Team (vira 2 tokens); caixa: WellFound→Wellfound, TopTal→Toptal, "Highlight"→highlight. Sem inserções entre colchetes. Mantidos literalmente: "com clientes... Super impressionante do Brasil" (provável "de fora do Brasil"), "Cake" (empresa não identificada), "diversos outsourcing". Subtítulos `##` Job boards e Empresas de outsourcing.
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/career-progression.md`, trecho de benchmarking salarial com Glassdoor/LinkedIn; a skill não tem referência específica de busca de vagas).
+
+**Criado:** [[wiki/sources/buscadores-e-outsourcing-galego]]; conceitos [[wiki/concepts/job-board]] e [[wiki/concepts/empresa-de-outsourcing-remoto]]; entidades [[wiki/entities/bairesdev]], [[wiki/entities/x-team]], [[wiki/entities/toptal]], [[wiki/entities/revelo]], [[wiki/entities/indeed]], [[wiki/entities/glassdoor]], [[wiki/entities/wellfound]]; questão [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]].
+
+**Tocadas (7 existentes):** linkedin, lever, augusto-galego (entities); busca-de-vagas-direto-no-ats (+ alias "busca booleana"), applicant-tracking-system, body-shop-terceirizacao, vaga-internacional-sem-mistica (concepts). Também index.md e log.md.
+
+**Notas:** (1) **Contradição:** "LinkedIn é o melhor de todos" x [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] ("último lugar onde a vaga chega"); registrada em questão. (2) **Lever** é ATS, não job board; o uso via busca booleana bate com `site:` + `OR`. (3) **Autoria inferida** (Augusto Galego): pasta "galego" e tema do curso de carreira; o nome não é dito. (4) Aulas irmãs da pasta (Introdução - Mapeando Vagas, Onde encontrar vagas?, Big Techs, Quais países podem fazer sentido?), a aula de busca booleana e o PDF citado não estão na wiki. (5) Quase todos os claims são impressões pessoais ("ouço", "acredito"); confiança baixa. Sem página própria: Cake (identidade incerta). `date_published` vazio.

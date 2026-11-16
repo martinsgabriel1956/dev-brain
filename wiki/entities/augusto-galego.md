@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 17
+date_updated: 2026-11-16
+source_count: 18
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -90,3 +90,11 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
+
+## Curso de Carreira: Mapeando Vagas (Autoria Inferida)
+
+Aulas curtas de um curso pago de carreira (pasta "galego" das transcrições: Introdução - Mapeando Vagas, Onde encontrar vagas?, Buscadores e Outsourcing, Big Techs, Quais países podem fazer sentido?), com um PDF de job boards e outsourcings. Em [[wiki/sources/buscadores-e-outsourcing-galego]] prioriza [[wiki/entities/linkedin]] e, entre as [[wiki/concepts/empresa-de-outsourcing-remoto|outsourcings]], [[wiki/entities/bairesdev]] (volume) e [[wiki/entities/x-team]] (qualidade). Provavelmente o "curso de carreira" / "roadmap de emprego" já citado nesta página; o nome não é dito.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — onde procurar vaga primeiro (job boards e outsourcing)

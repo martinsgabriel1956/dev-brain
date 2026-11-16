@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-11-15
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -34,3 +34,11 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.
+
+## Principal job board segundo Augusto Galego
+
+Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de todos", no Brasil e na gringa, onde está "a maioria das oportunidades" e o eixo do curso de carreira do autor. Diverge da crítica acima; ver [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]] e [[wiki/concepts/job-board]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
