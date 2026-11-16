@@ -4,7 +4,7 @@ title: "Modelos de cor"
 aliases: ["Modelos de cor (HSB, RGB, hexadecimal, CSS)", "modelo de cor", "color model", "color models", "representação de cores em código", "representação da cor", "HSB", "HSV", "HSL", "RGB", "RGBA", "CMYK", "hexadecimal", "hex color", "cor hexadecimal", "canal alfa"]
 date_created: 2026-11-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [ui, ui-design, cor, modelos-de-cor, hsb, rgb, cmyk, hexadecimal, css, figma, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -55,8 +55,13 @@ Brilho (B) ou lightness (L) alto não garante legibilidade. O [[wiki/concepts/co
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o valor de `color` pode ser escrito por nome (`red`, `green`, `purple`), em hexadecimal ou em RGBA. Ver [[wiki/concepts/regra-css]].
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], quatro jeitos de escrever cor no CSS: hexadecimal, HSL, RGB e nome por extenso (`red`, `white`, `black`); o seletor de cor do VS Code converte entre os três primeiros.
+
 ## Key Sources
 
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — slide com HSB, hexadecimal e RGB x CMYK; prática prometida no Figma
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — HSB para compor, hex e RGB para o código, modo CSS com alfa; a conta `8F` → 143
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — nome, hex ou RGBA como valores de `color`
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: hex, HSL, RGB e nome

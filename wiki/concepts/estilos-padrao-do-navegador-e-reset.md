@@ -4,7 +4,7 @@ title: "Estilos padrão do navegador e reset CSS"
 aliases: ["user agent stylesheet", "folha de estilo do navegador", "reset CSS", "CSS reset", "normalize", "estilos padrão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [css, reset, user-agent, cascata, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -18,9 +18,14 @@ Na aula 03 do módulo de front-end do [[wiki/entities/frontpush]] ([[wiki/source
 
 `[external]` Os padrões vêm do navegador, não do HTML, e mudam um pouco entre navegadores, o que motivou o normalize.css (padronizar em vez de zerar): https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#user-agent_stylesheets. Por terem a menor prioridade na [[wiki/concepts/cascata-css]], qualquer regra do autor os sobrescreve. `[skill: tech-mentor-frontend]` Na arquitetura ITCSS, o reset fica na camada Generic, antes de elementos e componentes. Ver [[wiki/concepts/compatibilidade-entre-navegadores]].
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o reset é `* { margin: 0; padding: 0; box-sizing: border-box }`. No DevTools, o `margin: 8px` do *user agent* no body aparece riscado, e o `h1` mostra o estilo que o navegador já define. O `button` não herda cor nem fonte do body, por isso a Poppins vai em `body, input, button, textarea`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: links e listas "resetados"; "configuração padrão do HTML"
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `* { color: white }` como "reset dos seletores" (cor é herdada; basta o `body`)
 - [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` "em todos os projetos"
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: reset de margin/padding e "border-size" (é `box-sizing`) em border-box no início do projeto
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: reset com box-sizing; margin 8px do body; botão sem herança

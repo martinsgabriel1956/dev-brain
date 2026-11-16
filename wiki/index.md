@@ -26,6 +26,7 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]] | Dia 1 da [[wiki/entities/next-level-week\|NLW]] do Proffy (#2, inferido) com [[wiki/entities/mayk-brito\|Mayk Brito]]: mesmo roteiro do dia 1 da NLW #1 (algoritmo, cliente-servidor, HTTP/URL, VS Code, Live Server) e esqueleto da página inicial; fundamentos de CSS: [[wiki/concepts/especificidade-css\|id > classe > tag]], pais e filhos ([[wiki/concepts/heranca-css\|herança]]), `/style.css` a partir da raiz, variáveis do Figma, px/%/rem/em com root 60%, [[wiki/concepts/mobile-first]], box model com `box-sizing`, block/inline/flex, Poppins; imprecisões: "força de cascata" = especificidade, herança tratada como força, rem "flexível" ao dispositivo, px num 4K, 60% ≠ 10 px, "Universal Resource Location" |
 | [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]] | Aula 11 do módulo de Flexbox do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): prática 2, layout-desafio sem código; menu com CTA e hambúrguer por media query (como no Nubank); container no grid, três flex-itens que quebram "ABC em coluna" (media query ou `flex-wrap` + `flex-basis`); flex dentro de flex com filhos diretos |
 | [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]] | Aula 10 do módulo de Flexbox do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): prática 1, página de vídeo no estilo do YouTube "utilizando apenas Flexbox"; grid de 12 × 96 px + gutter 24 (~1440 px) vira o container; caixas desenhadas sobre o design antes do código; HTML com header, lista de links e `section.container`; "árvore de classes" (BEM sem o nome) |
 | [[wiki/sources/frontpush-order-e-align-self]] | Aula 09 do módulo de Flexbox do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): `order` (padrão 0 = ordem do HTML) para pôr o texto antes da ilustração no mobile, mas muda só o visual (leitor de tela e Tab seguem o HTML); `align-self` sobrescreve o `align-items` para um item; fim da teoria, antes dos projetos |
@@ -996,6 +997,13 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### NLW #2 — dia 1 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/heranca-css]] | Propriedades de texto passam do pai ao filho; valor herdado não tem especificidade, então qualquer regra no filho vence; controles de formulário não herdam fonte e cor (`font: inherit`) |
+| [[wiki/concepts/mobile-first]] | Base para a tela pequena e `@media (min-width)` para crescer; o oposto é desktop first com `max-width`; unidades relativas ajudam mas não são o conceito |
 
 ### FrontPUSH: layout CSS (2026-11-16)
 

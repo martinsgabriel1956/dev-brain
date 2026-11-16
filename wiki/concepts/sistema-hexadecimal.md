@@ -4,7 +4,7 @@ title: "Sistema hexadecimal (base 16)"
 aliases: ["hexadecimal", "base 16", "hex", "notação hexadecimal", "notação posicional"]
 date_created: 2026-11-14
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [cs-fundamentals, sistema-hexadecimal, base-16, notacao-posicional, representacao, cor, rgb]
 skill: ux-ui-mentor
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] acrescenta dois dígitos de alfa à cor hexadecimal (`#RRGGBBAA`) no fundo do modal: "vai de zero até F", `ff` é a cor cheia e `00` "neutraliza a cor".
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o hexadecimal é apresentado como "um jeito de você definir cor", sem a conta: "só isso que você precisa saber". Os valores vêm do Figma.
+
 ## Key Sources
 
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: por que 16 algarismos, notação posicional e a conversão de `8F` (com o erro F = 16)
@@ -54,3 +58,4 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: extensão Color Highlight pinta `#FFF` de branco no editor
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `#0f0f0f` (quase preto), `#FFF`, `#EEE`, `#000`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `#RRGGBBAA` com alfa no fundo do modal
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: hexadecimal sem a conta

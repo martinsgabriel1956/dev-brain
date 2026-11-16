@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 16
+source_count: 17
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -48,6 +48,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], Diego conta que a Rocketseat usa a DigitalOcean para serviços com poucos usuários e indica os vídeos de deploy (Heroku, DigitalOcean) do canal.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Na NLW do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), o layout é de Thiago, "nosso colaborador aqui da Rocketseat"; o suporte da semana fica num canal do Discord com a equipe e os alunos.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: dia 3: React no conteúdo gratuito
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Expo Common Issues; vídeo de emuladores
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: DigitalOcean na casa; vídeos de deploy
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Proffy, layout de Thiago, Discord da semana

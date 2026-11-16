@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 32
+source_count: 33
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -83,6 +83,10 @@ Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/ent
 
 Em [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]], [[wiki/entities/nasser|Násser]] chama de "princípio do sistema responsivo" trocar `flex-direction: row` por `column` dentro de `@media (max-width: 960px)`; `flex-wrap: wrap` é o outro recurso. Recomenda `max-width`/`min-width`/`max-height`/`min-height` em vez de `width` fixo: com `width: 700`, o container "vai entrar junto com a minha barra de rolagem". `[external]` Desktop-first; o padrão comum hoje é mobile-first com `min-width`.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], responsividade é "não importa o tamanho do meu dispositivo, esse site vai ficar bonito nele". O Proffy será [[wiki/concepts/mobile-first]], com `rem` e porcentagem; o container usa `width: 90vw; max-width: 700px`.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -117,3 +121,4 @@ Em [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]], [[wiki/entitie
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: `flex-shrink: 0` com base de 300 px e telas de 320 px; `[external]` 320 px é a referência de reflow da WCAG
 - [[wiki/sources/frontpush-order-e-align-self]]: `order` para pôr o texto antes da ilustração no mobile (`[external]` melhor: HTML na ordem de leitura)
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: "estrutura ABC [...] vai quebrar em ABC em coluna": media query ou `flex-wrap` + `flex-basis`
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: definição e mobile first no Proffy

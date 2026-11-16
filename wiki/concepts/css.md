@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 20
+source_count: 21
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -71,6 +71,10 @@ Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/ent
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], as propriedades CSS sobrevivem no React Native como objetos JS (`StyleSheet.create`), em camelCase e sem `px`, traduzidas pelo Yoga para o nativo.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], três lugares para o CSS: atributo `style` (rejeitado: "imagina um HTML tudo cheio dessas tags style"), tag `<style>` no head e arquivo externo por `<link rel="stylesheet">`, o escolhido. A regra é seletor, chaves e "chave, dois pontos, valor, ponto e vírgula".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -93,3 +97,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: estilo, layout e animação; "versão 3" (CSS é modular desde o 2.1)
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: estilização = CSS básico; layout = Flexbox
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: CSS-em-JS do React Native
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style, <style> e <link>

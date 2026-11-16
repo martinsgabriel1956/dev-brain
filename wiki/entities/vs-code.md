@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -49,6 +49,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Ctrl+D, *Add Cursors to Line Ends* (Shift+Alt+I) e Shift+Ctrl+→ para gerar os `data.append(...)` em lote ("umas 46 hotkeys").
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] esconde status bar e minimap, instala o tema dito "launch base" e o Live Server, e mostra o Emmet (`!` + Enter, `img` + Enter com `src` e `alt`), o word wrap com Alt+Z, Ctrl+/ para comentar, a documentação ao passar o mouse e o seletor de cor que troca hexadecimal, RGB e HSL. Para os atalhos de cada sistema: Ctrl+Shift+P → Keyboard Shortcuts. A pasta tem de ser aberta por Open Folder, senão "Open with Live Server" não aparece.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -64,3 +68,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Emmet em JSX, FiraCode
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: pasta "Flexbox aula", index.html + css/style.css e Live Server na prática 1 de flexbox
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: multicursor para gerar código repetitivo
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Emmet, Live Server, Alt+Z, Ctrl+/, color picker

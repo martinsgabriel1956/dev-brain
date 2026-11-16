@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -76,6 +76,10 @@ Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki
 
 Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]], [[wiki/entities/nasser|Násser]] mostra na prática: `section > p` (filho direto, "não é neto, ele não é tataraneto") x `section p` (qualquer nível); `p + span` (só o `span` logo depois de um `p`); `*` para "generalizar, aplicar tudo e depois só [...] fazer tratamentos pequenos" com classes; `input[type="text"]`; `h1, h2, h3` como forma "mais compressa" de repetir a regra. Selecionar no CSS "é muito similar ou deveras igual" ao JavaScript (`querySelector` usa os mesmos seletores). O irmão geral `~` continua de fora.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], seletor é o "identificador" do estilo fora da tag: de tag (`h1`), de classe ("eu coloco um pontinho") e de id ("o hashtag"); `h1, span, a` agrupa. O id "não pode se repetir" no documento.
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -84,3 +88,4 @@ Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: irmão adjacente `+`; vírgula em input e select
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: tag, classe e ID; trocar tags por div quebra o seletor de tag
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: filho direto x descendente, `+`, `*`, atributo e vírgula na prática
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: tag, classe, id e agrupamento

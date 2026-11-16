@@ -3,8 +3,8 @@ type: concept
 title: "Texto alternativo (alt text)"
 aliases: ["alt text", "atributo alt", "alt", "texto alternativo de imagem", "descrição de imagem"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [acessibilidade, a11y, alt-text, imagens, ilustracoes, html, leitor-de-tela, wcag]
 skill: ux-ui-mentor
 status: stub
@@ -33,7 +33,12 @@ O "sempre" precisa de uma ressalva:
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], o slide diz: "Coloque textos e descrições em imagens: 'textos invisíveis'". Isso "ajuda quem tem deficiência visual a utilizar os recursos text-to-speech" dos celulares. É uma das quatro recomendações de [[wiki/concepts/acessibilidade]]; o critério correspondente é o 1.1.1 do [[wiki/concepts/wcag]] (nível A). A aula não faz a ressalva da imagem decorativa (`alt=""`) vista acima.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o `alt` é "uma alternativa ao source que não existe": com o `src` quebrado aparece "maçã". E serve a leitores de tela: "já que ele não está conseguindo enxergar uma maçã, ele vai ler maçã". O logo do Proffy fica com `alt="logo"`.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — "sempre coloque um texto alternativo"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — "textos invisíveis" para o text-to-speech
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: alt como alternativa e para leitor de tela

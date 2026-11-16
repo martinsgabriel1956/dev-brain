@@ -4,7 +4,7 @@ title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -73,6 +73,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] mostra condicional e repetição em JavaScript: `if (notaFinal < 5)` reprovado, `else` aprovado ("tem que retornar um boolean"); `for (let i = 0; i < 10; i++)` explicado passo a passo até "10 é menor que 10, queridão, aí não é"; e `for (const state of states)`, "para cada estado de estados".
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a ordem muda o resultado: escovar os dentes antes do café deixa o café "com um gosto meio de pasta de dente"; depois, "deixa os dentes limpos".
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
@@ -81,3 +85,4 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — algoritmo como 'lógica pura' e a linguagem como mera ferramenta de tradução; ver [[wiki/concepts/algoritmo]]
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: lógica como ordem dos passos; sintaxe
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: if/else, for clássico e for...of
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: a ordem dos passos muda o resultado

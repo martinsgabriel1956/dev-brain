@@ -4,7 +4,7 @@ title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -83,6 +83,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] pede "por favor, instale" o Live Server por dois motivos: sobe um "servidorzinho", porque "tem alguns recursos que só funcionam quando são rodados em servidor" (diferente de abrir o HTML com dois cliques), e faz *auto reloading* a cada Ctrl+S. `[external]` Exemplos do que falha em `file://`: módulos ES e `fetch` de arquivos locais (https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy#file_origins).
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o Live Server "criou um servidor pra gente" em `127.0.0.1:5500` e atualiza a página ao salvar. A regra de [[wiki/entities/mayk-brito|Mayk]]: "Nunca mais eu vou dar dois cliques nesse arquivo para abrir ele". Antes disso, ele ensina o hard reload (Ctrl+Shift+R) para fugir do cache.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
@@ -91,3 +95,4 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: Live Server e arquivo não salvo
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Live Server: servidor local e auto reloading
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: Open With Live Server cria "um servidorzinho com essa página"
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Live Server e hard reload

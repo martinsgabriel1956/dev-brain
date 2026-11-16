@@ -4,7 +4,7 @@ title: "Inglês para Desenvolvedores"
 aliases: ["inglês como pré-requisito de carreira", "sem inglês não tem mercado global"]
 date_created: 2026-09-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [carreira, ingles, mercado-global, remoto-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -33,10 +33,15 @@ O inglês é o habilitador direto da forma mais citada de [[wiki/concepts/dolari
 - [[wiki/concepts/dolarizacao-de-renda]] — o resultado financeiro que o inglês habilita
 - [[wiki/concepts/networking-de-carreira]] — redes profissionais internacionais como consequência de operar em inglês
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] lembra que a documentação que aparece no editor vem em inglês e que "a maior parte das coisas que nós vamos encontrar de primeiríssima mão [...] estará em inglês"; usa o Google Tradutor ao vivo para *reload* e *display*.
+
 ## Key Sources
 
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — contrapeso: inglês perfeito não é exigido, mas precisa ser OK para conversar sobre software ([[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]])
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: documentação de primeira mão em inglês
 
 ## Língua local vs. inglês por país (adição 2026-11-16)
 

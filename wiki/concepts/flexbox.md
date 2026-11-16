@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -89,6 +89,10 @@ Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]], [[wik
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], "todos os elementos são display flex por natureza" no React Native, via Yoga. Diferença: o eixo padrão é coluna, não linha.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `display: flex` no body muda o "fluxo padrão do HTML" e põe os filhos lado a lado; `align-items: center` e `justify-content: center` "só funcionam quando tem o display flex" (ou grid). Com `height: 100vh` em `html, body`, o `#container` fica no centro da tela.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -110,3 +114,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: prática 1: planejar as caixas sobre o design do YouTube
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: prática 2: desafio; três colunas que quebram; flex dentro de flex
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN: tudo é flex, eixo padrão coluna
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: centralizar o container no body

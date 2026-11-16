@@ -4,7 +4,7 @@ title: "Variáveis CSS (custom properties)"
 aliases: ["custom properties", "variáveis no CSS", "var()", ":root", "CSS variables"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [frontend, css, variaveis-css, design-tokens, cores]
 skill: tech-mentor-frontend
 status: stub
@@ -23,7 +23,12 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 - `var()` aceita um valor reserva: `var(--primary-color, green)` `[external]` (https://developer.mozilla.org/en-US/docs/Web/CSS/var).
 - Diferente das variáveis de Sass, existem no navegador: mudar `--primary-color` num `.dark` troca o tema sem recompilar `[skill: tech-mentor-frontend]`.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], as variáveis do Proffy ficam em `:root` com "dois tracinhos" e são lidas com `var(--color-background)`. Trocar o valor de `--color-primary-darker` por "um super vermelho" muda o documento inteiro: "fica fácil de eu alterar as cores".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: `--title-color` e `--primary-color` em `:root`
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador; ver [[wiki/concepts/pre-processador-css]]
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy em :root

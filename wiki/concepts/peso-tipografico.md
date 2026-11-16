@@ -4,7 +4,7 @@ title: "Peso tipográfico"
 aliases: ["font-weight", "negrito", "bold", "itálico", "estilo falso", "faux bold"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [ui, ui-design, tipografia, font-weight, negrito, italico, contraste, css]
 skill: ux-ui-mentor
 status: stub
@@ -32,8 +32,13 @@ No Google Fonts ou no Adobe Fonts só vêm os pesos selecionados. Se o CSS pede 
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], com só regular e bold carregados do [[wiki/entities/google-fonts]], `font-weight: 500` "não mudou ainda" e 700 ficou negrito. É o lado do código do estilo falso: o navegador cai no peso carregado mais próximo (500 → 400) `[external]` (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#fallback_weights).
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `font-weight` vai de 100 ("mais leves") a 700 ("mais fortes como bold"); o Proffy usa 500. *Weight* é "no inglês, peso".
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; font-weight no Inspect; estilo falso
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: 500 sem efeito, 700 negrito, com só regular e bold carregados
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `font-weight: bold` para "um peso tipográfico maior"
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: font-weight 100 a 700

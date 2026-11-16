@@ -4,7 +4,7 @@ title: "display no CSS (block x inline)"
 aliases: ["display", "display block", "display inline", "elemento de bloco", "elemento inline", "inline-block"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [frontend, css, display, layout, box-model]
 skill: tech-mentor-frontend
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]], [[wiki/entities/nasser|Násser]] recapitula `inline` (span, link), `block` ("a grande maioria e esmagadoras das outras tags") e `inline-block`, e chega a `display: flex`. Diz também que "todas as tags são elementos de bloco", o que contradiz a própria lista.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], display é "a exibição do elemento". block (`div`, `h1`, `p`) ocupa "toda a linha" e inline (`a`, `span`, `strong`) fica ao lado; são "regras fora da caixa". flex e grid são "regras para dentro da caixa". `inline-block` fica para depois.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: bloco como padrão, span e link inline, link forçado a bloco no botão
@@ -53,3 +57,4 @@ Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]], [[wiki
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: label block para margem vertical; none no modal; grid
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: `display: flex` como primeira propriedade do flex-container
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: aula 02: inline, block, inline-block e flex; "todas as tags são elementos de bloco" (deslize)
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: block, inline, flex

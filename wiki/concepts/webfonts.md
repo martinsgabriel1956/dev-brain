@@ -4,7 +4,7 @@ title: "Webfonts"
 aliases: ["fontes web", "carregar fonte no CSS", "font-family", "@import de fonte", "link de fonte", "font-weight", "@font-face"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [frontend, css, tipografia, google-fonts, performance, font-family, font-weight]
 skill: ux-ui-mentor
 status: stub
@@ -38,8 +38,13 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], o mesmo f
 
 Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] copia o `<link>` do embed do Google Fonts (Roboto 300 e 700) e junta a Ubuntu 700 no mesmo link para evitar "duas chamadas lá no servidor do Google". Um link errado (`family=Roboto` onde devia ser Ubuntu) fez os títulos caírem na fonte de reserva. `-webkit-font-smoothing: antialiased` no body; `[external]` só faz efeito no macOS (https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth).
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins vem por `<link>` do Google Fonts, mas "não é ainda o suficiente": falta a regra `font` no CSS, aplicada também a `input`, `button` e `textarea`.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: Google Fonts, pesos, `<link>` x `@import`, `font-family`
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: link no index, font-family no H1; download family só para instalar
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: um `<link>` para duas famílias; smoothing
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: link não basta, falta a regra

@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 17
+source_count: 18
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -55,6 +55,10 @@ Em [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]], [[wiki
 
 Em [[wiki/sources/frontpush-justify-content-align-items-box-sizing]], [[wiki/entities/nasser|Násser]] põe `box-sizing: border-box` "em todos os projetos" para "dar prioridade para a caixa e não para o conteúdo". `[external]` O que `border-box` faz é incluir padding e borda na `width`/`height` declaradas; sem `width`, a caixa cresce com o conteúdo nos dois modos (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: "todo e qualquer elemento HTML, quando trabalhado com o CSS, ele está sendo uma caixa". [[wiki/entities/mayk-brito|Mayk]] mostra a caixa com `border: 1px solid red`, padding e margin em sentido horário, `width: 300px` que gera rolagem e o box model no DevTools. Explica `box-sizing`: o padrão `content-box` soma o padding por fora; com `border-box`, uma caixa de 100 px com 50 px de padding continua com 100 px.
+
 ## Key sources
 
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
@@ -73,3 +77,4 @@ Em [[wiki/sources/frontpush-justify-content-align-items-box-sizing]], [[wiki/ent
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: `margin: 0 auto` centraliza o container; itens block ocupam 100% do pai
 - [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` em todo projeto; explicação mistura com o tamanho do conteúdo
 - [[wiki/sources/frontpush-order-e-align-self]]: `[external]` `margin-left: auto` como o "justify-self" que o flexbox não tem
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: caixa, shorthand horário, box-sizing com exemplo

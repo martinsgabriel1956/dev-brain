@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -49,6 +49,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o Expo Google Fonts (`@expo-google-fonts/roboto` e `/ubuntu`, `useFonts`) carrega Roboto 400/500 e Ubuntu 700 no app. Para Diego, "pergunta para qualquer desenvolvedor o trabalho que dá" fazer isso à mão.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins entra por um `<link>` do Google Fonts colado antes de fechar o head, e a regra `font: 500 1.6rem Poppins` vai em `body, input, button, textarea`, porque o botão não herda a fonte do body.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -58,3 +62,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: Roboto e Ubuntu na NLW #1
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Roboto e Ubuntu no Ecoleta web
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Expo Google Fonts no app
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Poppins no Proffy

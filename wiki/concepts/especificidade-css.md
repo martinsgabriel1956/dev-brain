@@ -4,7 +4,7 @@ title: "Especificidade no CSS"
 aliases: ["especificidade", "CSS specificity", "specificity"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [css, cascata, seletores, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -34,8 +34,13 @@ O universal `*` vale (0,0,0). Por isso o reset `* { margin: 0 }` perde para qual
 
 Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], `a { background-color: red }` perde para `.nav-link { background-color: #FFF }` no link com a classe, e tirar a classe devolve o estilo de `a`. [[wiki/entities/nasser|Násser]] resume: "a classe está em uma hierarquia maior que o seletor". É especificidade (0,1,0 contra 0,0,1), embora a classe também seja seletor e a aula não use o termo.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] ensina a ordem certa ("o seletor de hashtag é o seletor mais forte", depois classe, depois tag) e mostra `#page-landing` vencendo `.body h1`. Mas chama de "força de cascata" o que é soma de especificidade: `.body #page-landing` (1,1,0) vence `#page-landing` (1,0,0). E o `h1 { color: green }` que vence o vermelho do body não ganha por força, e sim porque o valor do pai era só herdado (ver [[wiki/concepts/heranca-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/classes-e-ids-no-css]]: estilo por ID sem tratar de especificidade (tensão registrada na fonte)
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: classe vence seletor de tag ("hierarquia maior")
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `*` como base, classes e IDs "com importâncias diferentes" por cima; o universal tem especificidade zero
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: id > classe > tag; "força de cascata" é especificidade

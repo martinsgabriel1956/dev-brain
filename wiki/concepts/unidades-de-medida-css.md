@@ -4,7 +4,7 @@ title: "Unidades de medida no CSS (px, pt, em, rem, cm, %)"
 aliases: ["unidades CSS", "medidas relativas", "medidas absolutas", "px rem em", "CSS units"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [css, unidades, responsividade, rem, em, porcentagem]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/entities/nasser|Násser]] prefere `px` entre as fixas ("a gente está em uma tela bem mais próxima"), mostra `pt` e polegadas (`in`) e explica `%` como "do pai". `[external]` `1in` = 96 px CSS, valor fixo, não polegada física; `height` em `%` só funciona com pai de altura definida, e `padding`/`margin` em `%` usam a largura do bloco que contém: https://developer.mozilla.org/en-US/docs/Web/CSS/percentage.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: 100% = 16 px = 1 rem por padrão. `%` é relativo ao pai, `rem` ao `:root` e `em` ao pai ("0.2 de 3 de 100 de 50"); `px` é fixo. O Proffy parte de `:root { font-size: 60% }` e texto em `1.6rem` (15,36 px; o truque de 10 px é 62,5%). Tensões: `rem` não acompanha a tela, e sim a fonte do root e a preferência do usuário; e o px do CSS não é o pixel físico, então 16 px num 4K não é "um pontinho".
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — lista do slide; fixas x relativas; % e rem para responsividade
@@ -40,3 +44,4 @@ Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: item em block ocupa "100% do elemento do pai" por padrão
 - [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `max-width`, `min-width`, `max-height` e `min-height` como "boa prática"
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: `flex-basis` aceita %, em, px (slide)
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: %, rem, em, px; root 60%

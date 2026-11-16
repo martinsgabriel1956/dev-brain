@@ -4,7 +4,7 @@ title: "head do HTML e metadados (meta charset, viewport, title)"
 aliases: ["head", "<head>", "tags meta", "meta charset", "meta viewport", "metadados HTML", "title"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [html, head, meta, utf-8, viewport, responsivo, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,11 @@ O `<head>` guarda dados sobre a página, não conteúdo visível; o conteúdo va
 
 `[external]` Outras coisas comuns no `head`: `<link>` para CSS e fontes ([[wiki/concepts/css]]), `<meta name="description">` (pode virar o snippet do buscador) e `<script defer>`.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], "todo o conteúdo visível na página deverá vir na tag body" e o head guarda "configurações do meu documento": `lang="pt-BR"`, `meta charset`, `meta viewport` e `title`. [[wiki/entities/mayk-brito|Mayk]] mostra que texto no head aparece e que um HTML sem head e body funciona, mas "está mal escrito".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: head como cabeçalho de metadados; charset, viewport e title
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: head x body, lang, charset, viewport, title

@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 46
+source_count: 47
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -154,6 +154,10 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o autor tenta mostrar no
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] copia cores, fontes e espaçamentos do painel de inspeção do Figma para o CSS dos cards, menos o posicionamento, "uma parada muito absoluta". Diverge do layout de propósito no modal de busca (um campo só, botão ao lado): "espero que me perdoem especialmente quem construiu layout".
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] abre o layout do Proffy no Figma (é preciso login para ver as cores), usa +/- para zoom e espaço para arrastar, e copia as cores para variáveis CSS. O painel de CSS do Figma "são só sugestões".
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -202,3 +206,4 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: eixos X e Y desenhados para explicar o `position: absolute`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: inspeção de estilos; divergência consciente do layout
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: design do layout do YouTube com grid de 12 colunas (96 px, gutter 24) que vira o container (ferramenta inferida)
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy copiadas do Figma

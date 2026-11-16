@@ -1,11 +1,11 @@
 ---
 type: entity
 title: "Next Level Week (NLW)"
-aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta"]
+aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta", "NLW #2", "Proffy"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
-tags: [evento, educacao, rocketseat, frontend, ecoleta]
+source_count: 11
+tags: [evento, educacao, rocketseat, frontend, ecoleta, proffy]
 skill: tech-mentor-frontend
 status: stub
 ---
@@ -46,6 +46,10 @@ No dia 5 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/
 
 Comparação das duas trilhas: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Outra edição tem como projeto o **Proffy**, "nossa plataforma de estudos online", na "versão 1.0": quem dá aula preenche nome, foto, WhatsApp, biografia, matéria e horários; quem estuda busca a matéria e vê os professores disponíveis. A semana coincide com o "dia 6, que é o dia dos profissionais da educação", e o layout é de Thiago, da Rocketseat ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]). A transcrição só diz "NLW"; a numeração #2 e a data (agosto de 2020) são inferidas `[external, não verificado]`. O dia 1, com [[wiki/entities/mayk-brito|Mayk]], termina com o esqueleto da página inicial e manda o feedback para a "comunidade exclusiva do NLW", onde também rolam os desafios.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: dia 1, apresentação do Ecoleta e página inicial em HTML e CSS ([[wiki/entities/mayk-brito]])
@@ -58,3 +62,4 @@ Comparação das duas trilhas: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-compa
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: dia 3 da trilha de Diego: front-end web em React
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: dia 4 da trilha de Diego: app mobile
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: dia 5 da trilha de Diego: fechamento
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: apresentação do Proffy e página inicial em HTML e CSS

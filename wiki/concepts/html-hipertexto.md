@@ -4,7 +4,7 @@ title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
@@ -39,6 +39,10 @@ Para [[wiki/entities/nasser|Násser]] ([[wiki/sources/frontpush-configurando-o-a
 
 Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], [[wiki/entities/nasser|Násser]] lê a sigla: "é uma linguagem, só que é uma linguagem de marcação", e marcação são "labels, ou seja, etiquetas" para "marcar o conteúdo". O HTML "é responsável pelo conteúdo das páginas web"; o estilo vem do [[wiki/concepts/css]]. Uma tag "abre e fecha", e as tags podem ficar "uma dentro das outras" (use tabulação para enxergar o aninhamento). `<html>` engloba tudo, `<head>` traz os [[wiki/concepts/head-html-metadados|metadados]] e `<body>` o conteúdo. Uma tag inventada (`<tiririca>`) "ele não conhece". `[external]` Tag abre com `<` (a aula diz "sinal de maior"); tag desconhecida vira `HTMLUnknownElement` inline, e tags próprias válidas são custom elements com hífen: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements.
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], "HTML não é programação, HTML é uma linguagem de marcação de hipertexto". Hipertexto é "um texto com mais força": começou na tag `a`, com links que levam a outra página, e depois ganhou imagens e vídeos.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -49,3 +53,4 @@ Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]],
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: sigla, doctype, head/body, href, alt, comentários
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o navegador entende HTML, CSS e JavaScript; só um editor basta
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: marcação como etiquetas; tags, aninhamento, html/head/body; tag inventada
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: hipertexto como texto com mais força

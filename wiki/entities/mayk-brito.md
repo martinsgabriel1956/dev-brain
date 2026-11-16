@@ -4,7 +4,7 @@ title: "Mayk Brito"
 aliases: ["Mayk", "Maykão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [pessoa, educador, rocketseat, frontend, html, css, javascript]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,10 @@ A NLW #1 teve outra trilha, com [[wiki/entities/diego-fernandes|Diego Fernandes]
 
 Comparação com a trilha de Diego: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Conduz o dia 1 da NLW do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), que abre com "Mayk Brito na área" (a transcrição automática dizia "Mike Brito"). Repete o roteiro conceitual do dia 1 da NLW #1, com as mesmas analogias (garçom e cozinheiro, corpo humano, rotina matinal), e gasta a segunda metade em fundamentos de CSS: força dos seletores, pais e filhos, `rem` x `em`, box model, `box-sizing`, display. Diz ter "muita dificuldade de digitação" e por isso cola o código: "ainda assim é possível ser um bom desenvolvedor, mesmo tendo dificuldades, igual eu".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: NLW #1, dia 1, página inicial do Ecoleta em HTML e CSS
@@ -44,3 +48,4 @@ Comparação com a trilha de Diego: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: dia 4: back-end; caixinha mágica; Launchbase
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: dia 5: banco de dados; Launchbase
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: a outra trilha da NLW #1; "full MVC" nos dois sentidos
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2 (Proffy), dia 1: HTML e CSS, especificidade, unidades, box model

@@ -3,8 +3,8 @@ type: concept
 title: "Charset"
 aliases: ["character set", "conjunto de caracteres", "mapeamento de caracteres"]
 date_created: 2026-06-10
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [charset, encoding, strings, unicode, ascii, cs-fundamentals, iso-8859-1]
 skill: cs-fundamentals
 status: stable
@@ -44,8 +44,13 @@ O [[unicode]] define um espaço de mais de 1 milhão de codepoints. Alguns codep
 - [[utf-8]] — encoding para o charset Unicode
 - [[string]] — toda string é definida por um charset + encoding + tamanho
 
+## Na NLW #2, dia 1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `meta charset="UTF-8"` é uma "configuração do documento como um todo", o "tipo de texto que nós vamos usar"; "não é nada que você precisa se preocupar agora".
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação prática do encoding UTF-8 sobre o charset Unicode
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — ISO-8859-1 como exemplo de charset regional que também é encoding
+- [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: meta charset UTF-8
