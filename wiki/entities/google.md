@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-15
-source_count: 27
+date_updated: 2026-11-16
+source_count: 28
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -76,6 +76,10 @@ Na abertura do módulo de tipografia, o Google aparece como interface que é "a 
 
 O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] como fonte gratuita de fontes, espelhada no Figma.
 
+## Tags semânticas e busca
+
+Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], o motivo dado para usar [[wiki/concepts/html-semantico|tags semânticas]] é que elas "facilita[m] a vida do Google quando você coloca o seu site na internet" ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -110,3 +114,4 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — home como macro espaço (foco); resultados de busca agrupados só com espaçamento e recuo, sem bordas de card
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tags semânticas como ajuda ao buscador

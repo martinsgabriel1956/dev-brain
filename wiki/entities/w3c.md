@@ -3,9 +3,9 @@ type: entity
 title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
-date_updated: 2026-11-15
-source_count: 3
-tags: [padronizacao, web, xml, soap]
+date_updated: 2026-11-16
+source_count: 4
+tags: [padronizacao, web, xml, soap, css]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -18,6 +18,10 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 
 `[external]` Publica, pela WAI, o [[wiki/concepts/wcag]], a referência de [[wiki/concepts/acessibilidade]] da aula [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]. A aula não cita o W3C.
 
+## W3C ou W3Schools?
+
+Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], [[wiki/entities/nasser|Násser]] indica "o W3C, que é o órgão que [...] regulamenta tudo que é da internet web" para consultar propriedades CSS, com exemplos e "try it yourself" ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]). `[external]` "Try it Yourself" é o editor do W3Schools (https://www.w3schools.com/css/css_background.asp), site independente do W3C; o W3C publica as especificações (https://www.w3.org/Style/CSS/). Confiança alta de que o site mostrado é o W3Schools.
+
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
@@ -25,3 +29,4 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — aceleração do HTML5/CSS3 (oficiais em 2014) após o fim do Flash
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — publica o WCAG (`[external]`)
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — indicado como referência de CSS; o site com “try it yourself” é o W3Schools

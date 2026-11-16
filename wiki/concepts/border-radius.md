@@ -3,9 +3,9 @@ type: concept
 title: "Border Radius"
 aliases: ["radius", "raio de borda", "cantos arredondados", "arredondamento", "8-radius"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 7
-tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao]
+date_updated: 2026-11-16
+source_count: 8
+tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao, css]
 skill: ux-ui-mentor
 status: stub
 ---
@@ -55,6 +55,10 @@ O botão da aula prática usa `border-radius` de 16, o mesmo valor do slide da a
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: "o border-radius varia de acordo com o tamanho do card". O mesmo valor num card pequeno o deforma, e num card muito grande "perde a identidade dele ter esse arredondadinho". Por isso o [[wiki/concepts/style-guide]] documenta cada tamanho de card junto com o seu radius (38 px no card da aula). `[external]` Em CSS, `border-radius` em porcentagem é relativo à largura e à altura e vira elipse em retângulos; o "relativo" da aula é um valor por tamanho, que `[skill: ux-ui-mentor]` cabe em tokens como `radius-sm`, `radius-md`, `radius-lg`.
 
+## Sintaxe: um, quatro valores e 50%
+
+Na aula de box model do curso ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]): um valor (`50px`) arredonda os quatro cantos; quatro valores (`0px 10px 0px 50px`) um por canto; `50%` vira elipse quando width ≠ height e "uma circunferência bonitinha" com 300 × 300 px. `[external]` Os quatro valores começam no canto superior esquerdo e giram no sentido horário ([[wiki/concepts/shorthand-css]]); a porcentagem é relativa às dimensões da própria caixa (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — arredondado vs. reto muda a mensagem
@@ -64,3 +68,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — reto, arredondado e circular nos botões; Nubank totalmente circular
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — radius 16 aplicado no botão do Figma
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — radius varia com o tamanho do card; documentar tamanho e radius juntos (38 px)
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — sintaxe no CSS: um valor, quatro cantos, 50% para elipse/círculo

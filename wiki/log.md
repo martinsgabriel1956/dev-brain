@@ -14419,3 +14419,15 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Também:** linhas duplicadas do index.md fundidas numa por página; source_count recalculado (fontes distintas citadas) nas 50 páginas tocadas.
 
 **Contradições registradas nas páginas fundidas:** valores de breakpoint (aula <576/720/960/1200 x Bootstrap 5 576/768/992/1200/1400); line-height do corpo (aula 140–160% x skill 1.5–1.6); medida de linha (aula 60–90 caracteres x skill 45–75 x WCAG máx. 80); corpo mínimo (aula 14 px x skill 16 px); complementares em RYB x RGB/HSL; número de classificações tipográficas (6 x 7); page map "não é" x "equivale a" sitemap; aula que chama tracking de "kerning".
+
+## [2026-11-16] ingest | Box Model: tudo é caixa (aula 03 do módulo Básico CSS, FrontPUSH)
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/transcricoes/FrontPush/03 - Box Model.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border.md` (sem tradução). Diff palavra a palavra conferido (hífens soltos normalizados); só correções de ASR: "nave"→nav; "range"→rem (2×; o slide lista em e rem e ele diz "essas duas aqui são medidas relativas"); "lorem ipso"→lorem ipsum (2×); "Nácia"→Násser; "youbody"→body; "que"→"quê" (3×, acento interrogativo); hífens soltos colados ("margin -top"→margin-top, "border -5px -solid -red"→border 5px solid red). Sem inserções entre colchetes. Mantidos literalmente: "nada na esquerda" (é a direita no shorthand), "border-width é 5 pixels, color red" (legenda pula ~20 s), "o W3C" (site mostrado é o W3Schools), "esse link aqui", "a responsividade", "background normal", "tag background", "2A2020". Subtítulos `##`: Tags semânticas, Tudo é caixa, Padding na prática, Margin, Border e border-radius. Slide anexado pelo usuário (Básico CSS / Box-model: propriedades, lados, border-width/style/color, estilos none–groove, unidades px/pt/em/rem/cm/%, diagrama de duas caixas).
+
+**Skill:** tech-mentor-frontend (SKILL.md, índice; tema básico demais para as references avançadas — usada para unidades relativas e MDN como referência).
+
+**Criado:** [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]; conceitos [[wiki/concepts/html-semantico]], [[wiki/concepts/shorthand-css]], [[wiki/concepts/unidades-de-medida-css]].
+
+**Tocadas (10 existentes):** box-model, css, border-radius, design-responsivo, html-hipertexto, acessibilidade (concepts); frontpush, nasser, w3c, google (entities). Também index.md e log.md.
+
+**Notas:** (1) **"W3C" com "try it yourself"** é o W3Schools, sem vínculo com o W3C `[external]`. (2) **SEO como motivo** das tags semânticas: o ganho documentado é acessibilidade (landmarks) `[external]`. (3) **Faltam** `box-sizing`, colapso de margens e comportamento inline `[external]`. (4) **Autoria inferida** (Násser): "Nácia" na pergunta retórica, pasta FrontPush, logo no slide. (5) Primeira aula do módulo de código; aulas 01 e 02 (o que é CSS, vínculo, tags) não ingeridas. `date_published` vazio.

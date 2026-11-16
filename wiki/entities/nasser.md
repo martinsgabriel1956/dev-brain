@@ -3,9 +3,9 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 62
-tags: [pessoa, instrutor, ui-design, design, curso]
+date_updated: 2026-11-16
+source_count: 63
+tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
 ---
@@ -57,6 +57,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Tipografia é dispor o texto da melhor forma, porque "a maioria da web é texto"; escala consistente, entrelinha confortável, linha curta; `<link>` do Google Fonts em vez de `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 - Fonte se escolhe por pesquisa (mensagem, similares, público, licença) e se combina em duas typefaces com contraste; no próprio site usa Ubuntu + Mukta ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]).
 - Texto alinhado à esquerda é o coringa; justificado nunca; parágrafos de 4 a 8 linhas separados por um line-height ([[wiki/sources/alinhamento-e-espacamento-de-texto]]).
+- "Tudo é caixa": toda tag aceita width, height, padding, margin, border e radius; tags semânticas mudam o significado, não o visual; padding em sentido horário; consultar propriedades no "W3C" (W3Schools) ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 
 ## Key Sources
 
@@ -122,3 +123,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — aula 05 do módulo de tipografia da edição "W7" (autoria inferida pelo logo W7 e pela pasta FrontPush): negrito, itálico, tracking, kerning e maiúsculas
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS (autoria inferida: “Nácia” na legenda, pasta FrontPush): tudo é caixa, tags semânticas, padding, margin, border, radius

@@ -26,6 +26,7 @@ date_updated: 2026-11-15
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] | Aula 03 do módulo "Básico CSS" do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/html-semantico\|tags semânticas]] mudam o significado, não o visual (motivo dado: Google); "tudo é caixa" ([[wiki/concepts/box-model]]); [[wiki/concepts/unidades-de-medida-css\|unidades]] fixas x relativas; padding, margin e border com [[wiki/concepts/shorthand-css\|shorthand]] em sentido horário; [[wiki/concepts/border-radius]] 50% = elipse/círculo; "W3C" com "try it yourself" (W3Schools) |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -955,6 +956,14 @@ date_updated: 2026-11-15
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Box Model — Básico CSS (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/html-semantico]] | header, nav, section, article, figure, footer: mesmo visual da div, significado diferente; aula dá SEO como motivo, ganho documentado é acessibilidade (landmarks) |
+| [[wiki/concepts/shorthand-css]] | padding, margin, border, background resumem sub-propriedades; quatro valores em sentido horário a partir do topo; shorthand zera o que omite |
+| [[wiki/concepts/unidades-de-medida-css]] | px, pt, cm absolutas; em, rem, % relativas (elemento, raiz, bloco que contém); relativas para responsividade |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
