@@ -3,8 +3,8 @@ type: concept
 title: "Ilustração isométrica"
 aliases: ["isometria", "isométrico", "formas isométricas", "isometric", "perspectiva isométrica", "dimetria 2:1"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ui, ui-design, ilustracoes, isometria, figma, plugins, perspectiva]
 skill: ux-ui-mentor
 status: stub
@@ -27,8 +27,13 @@ Ilustração em perspectiva paralela: o objeto aparece "em 3D" sem ponto de fuga
 
 `[external]` Girar um quadrado 45° e achatar a altura para 50% gera a projeção 2:1 (arestas a cerca de 26,57°), comum em jogos e em pixel art, tecnicamente dimétrica. A isométrica "verdadeira" (arestas a 30°) pede a altura a cerca de 57,7% (tan 30°). Plugins de skew descrevem o isométrico como skew de ±30° nas faces laterais (https://www.samolevsky.com/blogs/figma-plugins/skew-objects). Na interface, o que importa é usar o mesmo ângulo em todas as peças ([[wiki/concepts/consistencia-visual]]).
 
+## Perspectiva nos wireframes Hero
+
+Imagens em perspectiva dão "um quê de profissionalismo um pouco maior"; "dar essa noção 3D em um ambiente 2D é sempre muito interessante, o nível de UI, o nível de telas bonitas aumenta". O autor diz que "usei e abusei isso aqui no meu site" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). Ver [[wiki/concepts/secao-hero]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — plugins de isometria prometidos
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — método 45° + 50%, dois plugins "isometric" e "skill-depth"
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes do autor com isometria, gradiente linear e sombra; "skill-that"
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — perspectiva nos wireframes Hero: "quê de profissionalismo"

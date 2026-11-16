@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -34,9 +34,14 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]], a grade densa do curso vira cards com um ícone por módulo, "uma redução cognitiva"; e o ícone mostra só o objeto ("só o chapéuzinho") "para poder reduzir o máximo a carga cognitiva".
 
+## Parágrafo em tópicos
+
+"Se o parágrafo está muito grande, procure deixar o parágrafo em tópicos": as vantagens do cartão do [[wiki/entities/nubank]] viram três itens curtos, porque "se você colocar só texto e estiver muito carregado na interface é capaz que ele não leia" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key sources
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — simplicidade: apresentar a informação aos poucos
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — ícones simples e patterns aprendidos reduzem a carga cognitiva
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — ícone por módulo como "redução cognitiva"; só o objeto
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — parágrafo longo vira tópicos para o usuário de fato ler

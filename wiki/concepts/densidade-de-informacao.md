@@ -3,8 +3,8 @@ type: concept
 title: "Densidade de Informação"
 aliases: ["espaço vs. meio", "espaço versus meio", "information density", "densidade", "compacto vs. confortável"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, layout, espacamento, densidade-de-informacao, espaco-em-branco, cards, linhas]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ Densidade não é [[wiki/concepts/sobrecarga-de-informacao|sobrecarga]]. Um feed
 - [[wiki/concepts/escala-de-espacamento]] — a mesma escala, aplicada com valores menores ou maiores conforme o modo.
 - [[wiki/concepts/hierarquia-visual]] — em telas densas, o espaço sozinho não cria hierarquia; cards e linhas ajudam.
 
+## Texto carregado vira tópicos
+
+No [[wiki/concepts/wireframe]], o texto "muito carregado" se resolve em tópicos, não em mais espaço: "fica mais fácil de entender, você deixa mais tranquilo para o usuário ler" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). `[skill: ux-ui-mentor]` É a mesma lógica do F-pattern: texto denso é lido pelo começo das linhas.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — espaço vs. meio: Facebook e G1 densos com cards e linhas; site simples com espaços grandes
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática da aula de espaço vs. meio no Figma (wireframe pouco denso, vãos de até 128)
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — texto carregado em tópicos (benefícios do Nubank)

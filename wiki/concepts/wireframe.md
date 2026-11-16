@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,10 @@ Na aula de ilustrações, "o wireframe hero" é "aquela primeira seção do seu 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], um wireframe da futura seção de interface web é desalinhado de propósito e refeito no grid de 12 colunas com a escala 16/32/128.
 
+## Na prática: catálogo de seções e o Frankenstein
+
+A primeira aula prática de wireframes do [[wiki/entities/frontpush|FrontPUSH]] mostra um catálogo de modelos de seção, quase todos de [[wiki/concepts/secao-hero|hero]]: app, headline + ilustração, perspectiva, texto em tópicos, desktop, depoimentos e cadastro. A tese é montar a página como um "Frankenstein" desses modelos, guiado pelo [[wiki/concepts/page-map]] e por uma [[wiki/concepts/biblioteca-de-wireframes]] ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). Os modelos já usam perspectiva e ilustração, e ele anuncia os wireframes "de baixa fidelidade" do [[wiki/entities/nubank]] e a passagem do protótipo do FrontPUSH "para o protótipo de alta fidelidade".
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -36,3 +40,4 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — wireframe desalinhado e refeito no grid de 12 colunas
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — blobs (plugin Blobs) como bolhas na composição de wireframes
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes isométricos com gradiente linear embaixo e sombra
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes de seção (Hero), PageMap e o Frankenstein

@@ -3,8 +3,8 @@ type: concept
 title: "Ilustrações em interfaces"
 aliases: ["ilustração em UI", "ilustrações", "illustration", "ilustração vetorial", "família de ilustrações"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, elementos-da-interface, ilustracoes, svg, onboarding, consistencia, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -67,6 +67,10 @@ Na prática "W7", as ilustrações do site do autor saem de plugins: Blobs para 
 
 Quando a forma não sai de retângulos e booleanas, traça-se: Pen Tool nos pontos onde reto vira curvo, Bend Tool para arredondar, alças para refinar. "É paciência, é a grande realidade" ([[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]]; ver [[wiki/concepts/vetorizacao-com-pen-tool]]).
 
+## O coringa: headline + ilustração
+
+Um wireframe de headline com uma imagem "em concordância com o texto destacado", explicando um processo, é "um coringa que dá para aplicar em muita coisa", no [[wiki/concepts/secao-hero|hero]] ou em qualquer outra seção ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — aula de ilustrações: SVG, mascotes, consistência, cor da marca
@@ -77,3 +81,4 @@ Quando a forma não sai de retângulos e booleanas, traça-se: Pen Tool nos pont
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — prática da edição "W7": plugins Blobs, isométricos, ondas e "skill-depth"
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — ilustração é um conjunto de formas: editar trechos do unDraw ou construir a sua (mockup de iPhone)
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — traçar a forma sobre uma imagem com Pen Tool e Bend Tool
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — headline + ilustração como modelo coringa de seção
