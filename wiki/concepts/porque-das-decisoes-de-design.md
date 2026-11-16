@@ -3,8 +3,8 @@ type: concept
 title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -56,6 +56,10 @@ Na parte 2 da aula de formas, Násser explica cada radius dos próprios projetos
 
 Na visão geral dos elementos, o porquê vira critério de boa interface: **propósito**. "Eu deixei esse link azul aqui porque é legal" não serve; tudo "tem que comunicar ou interagir de alguma forma, não está ali à toa" ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Classificar para justificar a fonte
+
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], entender as [[wiki/concepts/classificacao-tipografica|classificações tipográficas]] serve para "entender o porquê que a gente escolheu uma, porquê que a gente escolheu a outra".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -63,3 +67,4 @@ Na visão geral dos elementos, o porquê vira critério de boa interface: **prop
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — frase de Victor Berriel; não levar ao pé da letra
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — explica cada radius dos próprios projetos
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — propósito como primeiro critério de boa interface
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificação tipográfica como base para justificar a fonte

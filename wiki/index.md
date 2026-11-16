@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] | Aula 07 do módulo de UI Design do [[wiki/entities/frontpush\|FrontPUSH]] (autoria de [[wiki/entities/nasser\|Násser]] inferida): [[wiki/concepts/classificacao-tipografica\|classificações tipográficas]]; serifada (Times New Roman, [[wiki/entities/new-york-times\|NYT]] como exceção) e sem serifa (Helvetica, Arial; corpo de texto) dominam a web; serifada grossa, script, blackletter e display só em título, anúncio e botão ([[wiki/concepts/legibilidade-tipografica\|legibilidade]]); monoespaçada para código; [[wiki/entities/google-fonts]] espelhado no Figma e filtros do [[wiki/entities/adobe-fonts]] |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -952,7 +953,7 @@ date_updated: 2026-11-13
 | [[wiki/concepts/formas-geometricas-e-organicas]] | Geométrica (quadrado, círculo; precisão, exatidão, racionalidade) vs. orgânica (à mão, foto; impressão, emoção, realidade); arredondar suaviza; vale a predominância |
 | [[wiki/concepts/border-radius]] | Raio dos cantos como escala de proximidade: 0 (arquitetura), 3–4 px, 8 px (meio-termo FrontPUSH), pill (amigável); um valor para botões, cards e ícones; token semântico |
 | [[wiki/concepts/harmonia-visual]] | Forma, tipografia, cor e ilustração passando a mesma mensagem; lida pela predominância, não por um elemento isolado |
-| [[wiki/concepts/tipografia]] | Fonte também comunica: arredondada (Poppins) para amigável, Saira como meio-termo, serifa para arquitetura |
+| [[wiki/concepts/tipografia]] | Fonte também comunica: arredondada (Poppins) para amigável, Saira como meio-termo, serifa para arquitetura; classificações e regra título x corpo |
 | [[wiki/concepts/imagens-em-interfaces]] | Imagem chama atenção, vende o produto, expressa a marca, informa e conta histórias; fotografia é construída; alta resolução e peso baixo |
 | [[wiki/concepts/banco-de-imagens]] | Unsplash, Free Food Pictures, Freepik; sempre conferir a licença (comercial, livre, pessoal); licença livre não é ausência de direito autoral |
 | [[wiki/concepts/otimizacao-de-imagens]] | Uma imagem por tamanho de tela (export 2x/1x/0,5x, `srcset`/`<picture>`) + compressão (TinyImage); formato certo primeiro |
@@ -972,6 +973,8 @@ date_updated: 2026-11-13
 | [[wiki/concepts/constraints-no-figma]] | Como a camada reage quando o frame muda de tamanho: top/left (padrão), left & right, center, scale; evita que o ícone deforme |
 | [[wiki/concepts/botoes-em-interfaces]] | Botões guiam a jornada; primário preenchido x secundário vazio; mesma altura, padding e radius, largura pelo texto; label curto; cor de contraste; hover |
 | [[wiki/concepts/formas-de-botoes]] | Seis formas de botão e o que comunicam: reto, arredondado, circular (pill), chanfrado, diagonal, hexagonal; botão como contraste à predominância; `clip-path` corta foco e sombra |
+| [[wiki/concepts/classificacao-tipografica]] | Serifada, sem serifa, serifada grossa, script, blackletter, monoespaçada e display; as duas primeiras dominam a web; Garamond é garalde no Vox-ATypI |
+| [[wiki/concepts/legibilidade-tipografica]] | Sem serifa no corpo, classificações expressivas só em título, anúncio e botão; legibilidade (caractere) x leiturabilidade (bloco) |
 | [[wiki/concepts/area-clicavel]] | Área que responde ao toque; dedo é menos preciso que mouse; 44 px na aula, 44 pt Apple, 48 dp Material, 24 px WCAG 2.2 AA |
 | [[wiki/concepts/grid-de-icones]] | Formas-guia no frame do ícone (área útil 20×20 em 24, quadrado, círculo, X); Material keylines; travado no Figma para consistência |
 | [[wiki/concepts/centralizacao-optica]] | Centralizar pelo olho, não pelas coordenadas: triângulo do play e círculo ímpar parecem tortos |
@@ -3401,6 +3404,8 @@ date_updated: 2026-11-13
 
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile
 - [[wiki/entities/sketch]] — ferramenta de design para Mac; site como exemplo de CTAs ("See pricing", "tente de graça") e de botões consistentes
+- [[wiki/entities/google-fonts]] — catálogo gratuito de fontes do Google, espelhado no Figma sem instalar; script aparece como handwriting
+- [[wiki/entities/adobe-fonts]] — catálogo de fontes da Adobe; filtros por classificação (Slab Serif, Script, Blackletter, Mono, Hand, Decorative) e característica
 - [[wiki/entities/nasser]] — instrutor do curso de UI Design do FrontPUSH (aulas 1 e 2, patterns, princípios do design); legendas o transcreviam como "Nácia"
 - [[wiki/entities/frontpush]] — curso "sobre fazer sites" de Násser, com módulo de UI Design; landing page preta com azul só no CTA, paleta de três cores consistente
 - [[wiki/entities/unsplash]] — banco de imagens de uso livre (licença própria, sem atribuição obrigatória), favorito de Násser; plugin no Figma
@@ -3520,7 +3525,7 @@ date_updated: 2026-11-13
 | [[wiki/entities/rock-pro]] | Harness online de aprendizado do Ronald Hulk; demo de RAG híbrida |
 | [[wiki/entities/the-iron-cage-revisited-paper]] | Artigo de DiMaggio e Powell (1983) que define isomorfismo institucional — coercitivo, normativo, mimético |
 | [[wiki/entities/moni-naor]] | Propôs o teste de Turing para web em 1996 — origem do CAPTCHA |
-| [[wiki/entities/new-york-times]] | Arquivo digitalizado via reCAPTCHA |
+| [[wiki/entities/new-york-times]] | Arquivo digitalizado via reCAPTCHA; exceção de serifa em site de leitura no curso de UI |
 | [[wiki/entities/bill-gates]] | Citação atribuída sobre a pessoa preguiçosa para trabalho difícil (atribuição não verificada) |
 | [[wiki/entities/cal-newport]] | Autor de *Deep Work*, referência para trabalho profundo |
 | [[wiki/entities/cloudflare]] | CDN/segurança; criadora do Turnstile |

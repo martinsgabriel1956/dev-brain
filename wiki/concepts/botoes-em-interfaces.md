@@ -3,8 +3,8 @@ type: concept
 title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -49,9 +49,14 @@ Primeiro vem o [[wiki/concepts/objetivo-da-interface|objetivo]], depois o botão
 
 A forma do botão comunica: retangular (seriedade), arredondado (amigável, "coringa"), circular (cativante, aproxima), chanfrado (futurista), diagonal (movimento) e hexagonal (gamificado). Catálogo em [[wiki/concepts/formas-de-botoes]] ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Fonte do botão
+
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], botões entram junto com títulos e anúncios na lista de lugares onde serifadas grossas, script, blackletter e display são aceitas: texto curto, feito para passar emoção. `[skill: ux-ui-mentor]` Texto curto não dispensa legibilidade: o label do botão precisa ser lido de relance, então a fonte expressiva no botão pede teste de contraste e tamanho.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — "link é diferente de botão"
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — botão preenchido acima do vazio
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — formas: reto, arredondado, circular, chanfrado, diagonal, hexagonal
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações expressivas aceitas em botões

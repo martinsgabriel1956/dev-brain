@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -50,6 +50,10 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Classificações: serifa, sem serifa e o resto
+
+A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]) abre pelas [[wiki/concepts/classificacao-tipografica|classificações]]. Serifada (clássica, elegante, Times New Roman) e sem serifa (neutra, moderna, Helvetica e Arial) dominam a web; a sem serifa é a indicada "principalmente para corpo de texto". Serifadas grossas, script, blackletter e display ficam em títulos, anúncios e botões, por [[wiki/concepts/legibilidade-tipografica|legibilidade]]; a monoespaçada serve a código. Script é classificação própria, o que fecha a ressalva `[external]` da seção "Serifa, sem serifa e letra de mão". Aqui serifa em site de leitura é "incomum" (exceção: [[wiki/entities/new-york-times]]), enquanto a aula de formas chamava serifadas de "fontes de leitura": tensão registrada na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +63,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações tipográficas; sem serifa no corpo, decorativas no título; Google Fonts e Adobe Fonts
