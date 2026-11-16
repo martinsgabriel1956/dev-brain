@@ -34,6 +34,10 @@ O grid serve para "o mesmo conteúdo estar disposto em vários dispositivos gara
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser elogia o site de [[wiki/entities/jonas-miller]] por escrever "funciona em qualquer dispositivo" em vez de "design responsivo", porque muita gente não sabe o que a palavra quer dizer. `[skill: ux-ui-mentor]` É o princípio "claro" de UX writing: a palavra do ofício vira a do cliente.
 
+## Fixo, fluido, adaptativo, responsivo
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: o responsivo "mistura o melhor de todos os mundos". Junta o fluido (larguras em porcentagem, seções que encolhem com a tela) e o adaptativo (media query que troca o estilo num [[wiki/concepts/breakpoint]], como 960 px). O fixo serve a uma tela só. Com tantos modelos de aparelho, fazer adaptativo "é praticamente suicídio", e o responsivo é "o queridinho". Mesmo assim, "isso nunca vai invalidar sempre você testar em vários tipos de dispositivos". Ver [[wiki/concepts/layout-fixo-fluido-adaptativo-responsivo]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -45,3 +49,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mouse x dedo; botões não encolhem no mobile
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — grid para o mesmo conteúdo em vários dispositivos; tipografia desktop e mobile no style guide
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "funciona em qualquer dispositivo" no lugar de "responsivo"
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — fixo, fluido, adaptativo e responsivo; breakpoint de 960; testar em vários aparelhos

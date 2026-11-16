@@ -102,6 +102,10 @@ A aula 04 da pasta do curso (edição "W7") resume os [[wiki/concepts/atributos-
 
 Depois do módulo de UI Design vem o de **interfaces web**, onde "a gente vai começar a projetar de verdade" a partir de "três pilares", o primeiro deles o de pesquisa. A aula 2 é sobre [[wiki/concepts/usabilidade]] ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]); a 3 promete acessibilidade.
 
+## Grid de 12 colunas e breakpoint
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: a seção principal da landing page segue "12 colunas imaginárias", com um bloco de 7–8 colunas e outro de 4–5. No design, 4 + 8. No modo de responsividade, a estrutura "quebrou justamente naquele [[wiki/concepts/breakpoint|breakpoint]]". O site é responsivo: tem seções fluidas e estilos por resolução ([[wiki/concepts/layout-fixo-fluido-adaptativo-responsivo]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -132,3 +136,4 @@ Depois do módulo de UI Design vem o de **interfaces web**, onde "a gente vai co
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — esboço de baixa fidelidade → landing page, pulando o wireframe cinza
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 (edição "W7"): seis atributos de um bom design
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — aula 2 do módulo de interfaces web: usabilidade
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — 12 colunas (7–8 + 4–5; 4 + 8 no design); quebra no breakpoint; site responsivo

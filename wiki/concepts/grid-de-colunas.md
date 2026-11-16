@@ -37,6 +37,12 @@ O gutter de 32 da aula corresponde à linha "wide" da skill. Os valores de colun
 
 `[skill: ux-ui-mentor]` No código, o equivalente direto é `display: grid; grid-template-columns: repeat(12, 1fr); gap: 32px;` dentro de um container com max-width e `margin-inline: auto`.
 
+## Grid como esqueleto
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: grids "criam a estrutura básica, o esqueleto para o seu design", colunas onde os elementos são colocados e alinhados. Servem ao designer (alinhamento, "consistência de distância") e ao dev (resoluções, [[wiki/concepts/breakpoint|breakpoints]]). Na landing page do [[wiki/entities/frontpush]], 12 colunas imaginárias se dividem em 7–8 + 4–5 no site e 4 + 8 no design. No wireframe, o conteúdo pega as seis colunas centrais e sobram três de cada lado. A coluna vira unidade de distância: "quanto que tem de distância de um elemento para o outro? Ah, é uma coluna."
+
+O padrão citado para colunas por dispositivo é o Bootstrap Grid System ([[wiki/entities/twitter-bootstrap]]). `[external]` 12 colunas e seis faixas de breakpoint no Bootstrap 5 (https://getbootstrap.com/docs/5.3/layout/grid/).
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/consistencia-visual]] — o grid é o mesmo em todas as telas, o que dá ritmo e alinhamento.
@@ -52,3 +58,4 @@ Na abertura do módulo de interfaces web: "você precisa saber e desenhar contai
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — containers e colunas por dispositivo; grids no workflow e no style guide
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como esqueleto; 12 colunas no FrontPUSH (7–8 + 4–5; 4 + 8); seis colunas centrais no wireframe; "é uma coluna" de distância

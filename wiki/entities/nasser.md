@@ -46,6 +46,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Processo de wireframes: requisitos → page map → referências → papel → wireframe cinza de média fidelidade → protótipo final com style guide; o segredo é "fazer mil vezes e ter uma biblioteca na sua mente" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 - Bom design se confirma no outro, não em quem desenhou: útil, fácil aprendizado, memorável, eficaz, desejável, prazeroso; a interface é ruim no começo e melhora com teste e treino ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]).
 - Usabilidade é alcançar o objetivo "facilmente"; se ninguém nota, ela existe; o caminho é seguir padrões e "não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
+- Grid é o esqueleto do design e o caminho para a responsividade; Bootstrap e oito pontos se complementam; responsivo = fluido + adaptativo, e é preciso testar em vários aparelhos ([[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]).
 
 ## Key Sources
 
@@ -91,3 +92,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — aula teórica de wireframes, parte 3, da edição "W7" (autoria inferida): passo a passo, fidelidade, escala de cinza, "fazer mil vezes"
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 da edição "W7" (autoria inferida): seis atributos de um bom design; Photoshop, jogos, Uber/iFood/Amazon; KISS no slide
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade (interfaces web, aula 2): três esferas, Caixa, Apple; legenda o transcreve como "nascer" (autoria inferida)
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grids (parte 1) da edição "W7" (autoria inferida): esqueleto em colunas, Bootstrap e oito pontos, fixo/fluido/adaptativo/responsivo

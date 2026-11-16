@@ -48,9 +48,14 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 
 A "regra dos 8pt" é o primeiro item a considerar quando o esboço no papel vira [[wiki/concepts/wireframe]]: o papel quase não liga para espaçamento, o wireframe de média fidelidade já liga ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 
+## Um dos dois padrões
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]], a "regra de oito pontos" e o grid do Bootstrap são "os dois mais utilizados" e "meio que se complementam". A regra é "utilizada demais em sistemas de apps, tanto o Android como o iOS". `[external]` O Material Design fixa 8 dp com sub-grade de 4 dp (https://m2.material.io/design/layout/spacing-methods.html). As HIG da Apple não fixam uma grade de 8 pt. Confiança média para o iOS.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — escala geométrica preferida à linear de passo 8
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — big nudge de 8 no Figma; colunas e gutter múltiplos de 8
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — espaçamento de 8pt entra no wireframe, não no esboço
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — um dos dois padrões mais usados, ao lado do Bootstrap; Android e iOS

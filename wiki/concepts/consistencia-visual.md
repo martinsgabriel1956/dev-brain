@@ -110,6 +110,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 "Mesma coisa, olha só, mesma coisa": no site da [[wiki/entities/apple]], todas as seções repetem a mesma estrutura, e isso conta a favor da [[wiki/concepts/usabilidade]] ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
 
+## Grid como consistência
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]], o grid organiza os elementos com "consistência de distância" e dá "uma sensação mais clean". No wireframe, o conteúdo alinhado às colunas responde à pergunta da distância: "é uma coluna". Ver [[wiki/concepts/grid-de-colunas]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -137,3 +141,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — estilos de cor, texto e efeito como ferramenta de consistência
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — consistência como objetivo do style guide, no Figma e na documentação
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — estrutura repetida nas seções da Apple
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como alinhamento e "consistência de distância"

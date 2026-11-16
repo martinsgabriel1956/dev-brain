@@ -69,6 +69,10 @@ Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-se
 
 O segredo para saber desenhá-los: "fazer mil vezes e ter uma biblioteca na sua mente". Um wireframe novo é a montagem de estruturas já conhecidas. Násser admite ter pulado o wireframe cinza no [[wiki/entities/frontpush]].
 
+## Wireframe no grid
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: "muito do que eu falei em wireframes também se encaixa" nos grids. No wireframe mostrado, o conteúdo pega seis colunas centrais (três sobram de cada lado). A ilustração fica de fora, de propósito, pelo estilo dela. Ver [[wiki/concepts/grid-de-colunas]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -83,3 +87,4 @@ O segredo para saber desenhá-los: "fazer mil vezes e ter uma biblioteca na sua 
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes de seção (Hero), PageMap e o Frankenstein
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio tirado de referências; baixa e alta fidelidade do FrontPUSH
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel → wireframe cinza (média fidelidade) → protótipo final; o segredo é fazer mil vezes
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — wireframe com conteúdo nas seis colunas centrais
