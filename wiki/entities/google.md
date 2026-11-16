@@ -82,6 +82,9 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], as ta
 ## Tags semânticas e busca
 
 Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], o motivo dado para usar [[wiki/concepts/html-semantico|tags semânticas]] é que elas "facilita[m] a vida do Google quando você coloca o seu site na internet" ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+## Salário de júnior em São Paulo
+
+Em [[wiki/sources/introducao-mapeando-vagas]], o que o Google paga a um desenvolvedor júnior em São Paulo é o exemplo de faixa "totalmente separada" da média salarial local ([[wiki/concepts/modelo-trimodal-compensacao]]).
 
 ## Key Sources
 
@@ -119,3 +122,4 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tags semânticas como ajuda ao buscador
+- [[wiki/sources/introducao-mapeando-vagas]] — salário de júnior do Google em SP acima da média local

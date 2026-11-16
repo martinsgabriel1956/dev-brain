@@ -3,8 +3,8 @@ type: concept
 title: "Caçar a empresa, não a vaga"
 aliases: ["target company list","lista de empresas-alvo"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [carreira, busca-de-vagas, estrategia, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -20,7 +20,12 @@ Inversão de método proposta em [[wiki/sources/novos-cargos-ia-e-hunting-de-vag
 - Fonte de listas: [[wiki/entities/y-combinator]] (página de companies).
 - Combinar com [[wiki/concepts/networking-de-carreira]] (recruiters no LinkedIn).
 
+## Big Techs: ir ao site, não ao buscador
+
+[[wiki/sources/introducao-mapeando-vagas]] aplica a ideia às Big Techs: como muitas não postam no LinkedIn, "você vai aprender a encontrar direto no site dos Big Techs as vagas". As vagas encontradas alimentam o [[wiki/concepts/mapeamento-de-requisitos-de-vagas]] e o [[wiki/concepts/acompanhamento-de-candidaturas]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — depois de escolher a empresa, pesquisá-la 15 min antes da entrevista ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])
+- [[wiki/sources/introducao-mapeando-vagas]] — vagas de Big Tech direto no site; board de candidaturas

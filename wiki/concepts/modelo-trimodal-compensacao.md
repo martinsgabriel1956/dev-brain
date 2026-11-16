@@ -3,8 +3,8 @@ type: concept
 title: "Modelo Trimodal de Compensação"
 aliases: ["trimodal compensation", "tres tiers salario tech", "trimodal nature"]
 date_created: 2026-04-29
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [compensacao, salario, carreira, mercado, tier, trimodal]
 skill: tech-mentor-leadership
 status: stable
@@ -40,7 +40,12 @@ O modelo trimodal explica a variação por *tier de empresa*, mas [[wiki/sources
 - [[tier-de-empresas-tech]] — como identificar o tier de uma empresa
 - [[wiki/concepts/ciclo-de-mercado-tech]] — o mecanismo de oferta/demanda por trás do prêmio de stacks de nicho
 
+## Big Tech vs. média salarial de júnior em São Paulo
+
+Na abertura do módulo Mapeando Vagas ([[wiki/sources/introducao-mapeando-vagas]]), a média salarial de um júnior em São Paulo aparece como "infinitamente mais baixa" que o que o [[wiki/entities/google]] paga a um júnior na mesma cidade, e as empresas que concorrem com Big Techs têm faixas "totalmente invisíveis" que não aparecem nas médias. É a tese do Tier 3 em versão brasileira, sem números.
+
 ## Key Sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/introducao-mapeando-vagas]] — júnior em SP: média do mercado vs. Google; faixas "invisíveis" dos concorrentes de Big Tech

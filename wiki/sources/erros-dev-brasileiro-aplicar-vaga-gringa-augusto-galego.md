@@ -3,7 +3,7 @@ type: source
 title: "Erros de Devs Brasileiros ao Aplicar para Vagas na Gringa (Augusto Galego)"
 aliases: ["erros ao aplicar para gringa", "entrevista para empresa estrangeira"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
+date_updated: 2026-11-16
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego.md
 source_url: ""
 author: "Augusto Galego (autoria inferida por autorreferência 'Galego' e pelo canal de LeetCode/System Design)"
@@ -60,3 +60,7 @@ status: draft
 ## Notas de ingest
 
 Transcrição com erros de ASR corrigidos (lista no cabeçalho do raw). Patrocínio (escola de investimentos) e divulgação de curso omitidos. [skill: tech-mentor-leadership] `references/exec-communication.md` (storytelling técnico) reforça traduzir impacto técnico em resultado de negócio, o que ecoa a recomendação de contar impacto no cliente e como foi medido; a skill, porém, trata de comunicação executiva, não de entrevista de contratação. A autoria vem da autorreferência ("Galego Solutions") e da menção ao canal de LeetCode/System Design.
+
+## Ver também
+
+- [[wiki/sources/introducao-mapeando-vagas]] — abertura do módulo Mapeando Vagas do curso de carreira (onde achar a vaga, antes da entrevista)

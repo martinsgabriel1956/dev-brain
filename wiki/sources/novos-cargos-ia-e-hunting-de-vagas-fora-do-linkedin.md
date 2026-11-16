@@ -3,7 +3,7 @@ type: source
 title: "Novos cargos pós-IA e hunting de vagas fora do LinkedIn"
 aliases: ["hunting de vagas ATS","vagas na gringa Ashby Greenhouse Lever","novos cargos IA"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
+date_updated: 2026-11-16
 source_count: 1
 tags: [tech-mentor-leadership, tech-mentor-ai, carreira, mercado-de-trabalho, busca-de-vagas, ats, forward-deployed-engineer, agent-engineer, ai-engineer, design-engineer]
 skill: tech-mentor-leadership
@@ -63,3 +63,7 @@ Contexto: a autora trabalha há ~2 anos com clientes americanos. Tudo abaixo é 
 > "Quando você caça a empresa, você sabe onde a vaga vai nascer antes dela existir."
 
 > "Você não é uma pessoa que executa um ticket de uma camada só" (paráfrase do contraste dev genérico × dev que resolve o problema).
+
+## Ver também
+
+- [[wiki/sources/introducao-mapeando-vagas]] — mesma direção: Big Techs buscadas no próprio site, não no LinkedIn

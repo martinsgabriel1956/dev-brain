@@ -3,8 +3,8 @@ type: concept
 title: "Body Shop (Terceirização de Desenvolvimento)"
 aliases: ["body shop de ti", "loja de corpos", "terceirização agressiva"]
 date_created: 2026-08-26
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [mercado-de-trabalho, terceirização, contratação, consultoria]
 skill: tech-mentor-leadership
 status: stub
@@ -37,9 +37,14 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 - [[wiki/concepts/contratacao-barra-alta]] — o oposto do modelo Body Shop: filtro rigoroso guiado por quem entende tecnicamente
 - [[wiki/concepts/cadeia-de-intermediacao-em-consultoria]] — fenômeno próximo mas distinto: aqui o foco é volume de contratação sem coesão; lá é o número de camadas contratuais entre profissional e cliente final, independente de volume
 
+## Contraponto: outsourcing como porta de entrada para a gringa
+
+[[wiki/sources/introducao-mapeando-vagas]] vê o outsourcing pelo lado do candidato: empresas que "vão te terceirizar para outras empresas" são "muito comuns para gringa" e uma "porta de entrada muito legal". Não contradiz a crítica de Akita (que fala da qualidade da entrega e do crescimento do júnior), mas muda o peso: para quem quer a primeira vaga fora, a terceirizada pode valer como degrau. Critérios para separar uma boa terceirizada de um body shop ficam em aberto.
+
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
 - [[wiki/sources/consultoria-e-uma-boa-opcao-de-carreira]] — relato de caso pessoal de subcontratação em cadeia (não volume, mas camadas de revenda de horas)
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — alternativa recomendada: sênior interno lidera o projeto novo, terceiro (quando necessário) fica subordinado a ele
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — outsourcing como objeto do estudo do autor (mestrado 2008) sobre isomorfismo institucional: por que empresas terceirizavam mesmo sem ser ideal — [[wiki/concepts/isomorfismo-institucional]]
+- [[wiki/sources/introducao-mapeando-vagas]] — outsourcing elogiado como porta de entrada para vagas internacionais

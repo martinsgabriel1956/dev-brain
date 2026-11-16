@@ -3,8 +3,8 @@ type: concept
 title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -23,6 +23,11 @@ Em vez de esperar a vaga aparecer no [[wiki/entities/linkedin]], buscar no [[wik
 
 Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 
+## Três categorias de vaga (Mapeando Vagas)
+
+[[wiki/sources/introducao-mapeando-vagas]] divide a busca em buscadores (LinkedIn e outros), outsourcing e Big Techs, e manda buscar as Big Techs direto no site delas porque muitas não postam no LinkedIn. Converge com esta página: a vaga nasce no site/ATS da empresa.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+- [[wiki/sources/introducao-mapeando-vagas]] — Big Techs no próprio site; três categorias de vaga
