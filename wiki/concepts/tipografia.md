@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 10
+source_count: 11
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -74,6 +74,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: o menu
 
 Em plataformas de notícia, "basicamente é texto" e "a tipografia é muito, muito trabalhada": títulos maiores com mais contraste, informação secundária com contraste menor. Com o mesmo peso tipográfico, só a cor separa os níveis ([[wiki/concepts/hierarquia-visual]]; [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Cor no texto: variação monocromática
+
+A hierarquia textual também se faz com tons da mesma matiz: maior contraste destaca, menor fica em segundo plano ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/hierarquia-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -89,3 +93,4 @@ Em plataformas de notícia, "basicamente é texto" e "a tipografia é muito, mui
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — text styles Heads/H1, H2; Sora 48/36/24, line-height 110; "medium" = 600 (tensão)
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — tamanhos 14/18/24/36/48 perto da regra dos oito; 36 entre 32 e 40
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — sites de notícia: tipografia trabalhada, contraste de cor por nível
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — tons monocromáticos para hierarquia de texto

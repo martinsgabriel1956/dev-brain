@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 21
+source_count: 22
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -94,6 +94,10 @@ Na prática de elementos de composição, os planetinhas usam "a cor de contrast
 
 Na abertura do módulo de [[wiki/concepts/teoria-das-cores]], contraste é o primeiro dos seis objetivos da cor. Para mandar algo para segundo plano, "eu diminuo o contraste dela com relação ao background"; para acentuar, aumento. Sites de notícia e a [[wiki/entities/apple]] (mesmo peso tipográfico, branco x cinza) são os exemplos ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]). `[skill: ux-ui-mentor]` O texto secundário de baixo contraste ainda precisa de 4.5:1. Pares complementares dão contraste forte ([[wiki/concepts/harmonia-de-cores]]); a [[wiki/concepts/regra-60-30-10]] reserva o acento para o CTA.
 
+## Contraste entre complementares
+
+Cores complementares (opostas no [[wiki/concepts/circulo-cromatico]]) são "muito utilizadas em paleta de cores" porque "tem entre elas um ótimo contraste", e servem de guia para destacar elementos ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). `[skill: ux-ui-mentor]` É contraste de matiz, não de luminância: texto laranja sobre azul de mesmo brilho pode falhar no WCAG. Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -119,3 +123,4 @@ Na abertura do módulo de [[wiki/concepts/teoria-das-cores]], contraste é o pri
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — contraste é decisão do protótipo final, não do wireframe cinza
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — planetinhas na cor de contraste com sombra da própria cor
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — contraste como objetivo da cor; segundo plano com contraste menor; 60-30-10
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementares: "ótimo contraste" para destacar

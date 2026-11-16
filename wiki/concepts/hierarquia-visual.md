@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 20
+source_count: 21
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -133,6 +133,10 @@ No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma he
 
 Na [[wiki/entities/apple]], dois textos com "exatamente o mesmo peso tipográfico", um branco e outro cinza: "a cor funcionando como um peso de hierarquia visual". Sites de notícia fazem o mesmo: títulos com mais contraste, informação secundária com menos ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]). A [[wiki/concepts/regra-60-30-10]] é a versão em proporção da cor de destaque escassa.
 
+## Hierarquia por variação monocromática
+
+Na aula de harmonia das cores, a variação monocromática (mais claro e mais escuro na mesma matiz) serve "justamente na produção de texto para poder garantir a hierarquia": o de maior contraste destaca, o de menor fica "como uma informação em segundo plano" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -160,3 +164,4 @@ Na [[wiki/entities/apple]], dois textos com "exatamente o mesmo peso tipográfic
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — seções da Apple com headline, subtítulo e link
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — fundo de órbitas e cometas não disputa o ponto focal
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — cor como peso de hierarquia (Apple, sites de notícia)
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — variação monocromática no texto como hierarquia

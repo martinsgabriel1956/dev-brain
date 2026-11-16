@@ -4,7 +4,7 @@ title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 5
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -48,9 +48,14 @@ Descritos em uma frase: trazem "pontos de atenção" e deixam a interface "um po
 
 Em [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]], a versão prática: "um perfume na sua interface", "a cerejinha do bolo". O slide dá cinco funções (apoio na composição de telas, refino no design, background, branding, consistência). Receita no [[wiki/entities/figma]]: formas só com stroke 3 e sem preenchimento; elipses concêntricas (Shift) com cap round e pontilhado 2, 10 (traço, espaço) para órbitas; planetinha na cor de contraste com sombra da própria cor (30%, blur "o dobro", spread −4); cometa = linha com gradiente a 45°, cap round e elipse de 6 px na ponta. Regra: "tem que ser simples", "não pode tirar a atenção do usuário". `[external]` No SVG o pontilhado vira `stroke-dasharray="2 10"` + `stroke-linecap="round"`.
 
+## Gradientes análogos
+
+Cores análogas, "pela transição entre elas ser suave", são "muitíssimo aplicadas para gradientes", um dos recursos de fundo desta página ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). A "variação monocromática" de azul do FrontPUSH ganha definição na mesma aula. Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — definição em uma frase na visão geral
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — branding de elementos de composição no style guide
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — versão prática "W7": stroke, pontilhado 2, 10, planetas com sombra, cometas
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — análogas para gradiente; definição de monocromática

@@ -4,7 +4,7 @@ title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 5
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -49,6 +49,10 @@ Os grupos de cor mostram nomes por papel e por valor: primary, secondary, brand 
 
 A abertura do módulo de cores amplia a tabela ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]): via vermelha ou laranja no Google Maps ou no Waze = bloqueio ou engarrafamento; card verde = sucesso, concluído; vermelho = erro; amarelo = alerta ou lembrete. A cor também **categoriza**: na Globo, verde = esporte, laranja = entretenimento, vermelho = notícias, "meio que virou padrão" (`[external]` g1 vermelho, ge verde, gshow laranja no globo.com). As associações por idade e cultura ficam em [[wiki/concepts/psicologia-das-cores]].
 
+## Semântica × harmonia
+
+A aula de [[wiki/concepts/harmonia-de-cores]] escolhe cores pela posição no círculo; a cor semântica, pela convenção aprendida. Numa paleta complementar azul + laranja, o laranja de destaque fica perto do amarelo/âmbar de warning: o acento da marca pode ser lido como alerta (inferência, não dita na aula) ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -56,3 +60,4 @@ A abertura do módulo de cores amplia a tabela ([[wiki/sources/teoria-das-cores-
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — grupos de cor por papel (primary, brand, neutral) e por valor (orange-1)
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — cor adequada na lista de boas práticas de usabilidade
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — trânsito no mapa, card verde/vermelho/amarelo, categorias da Globo
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores x convenção semântica

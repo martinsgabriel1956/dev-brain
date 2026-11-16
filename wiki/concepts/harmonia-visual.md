@@ -4,7 +4,7 @@ title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 11
+source_count: 12
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -62,6 +62,10 @@ Branding é "a ideia que eu quero passar, a sensação que eu quero transmitir".
 
 No campo da cor, a harmonia vem de análogas, complementares e gradientes suaves, que o autor tira da natureza (céu, pássaro, arara). Ver [[wiki/concepts/harmonia-de-cores]] ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Harmonia de cores
+
+A parte da cor tem regras próprias, geométricas: monocromática, complementar, análoga e triádica no círculo cromático. Ver [[wiki/concepts/harmonia-de-cores]]. A aula mantém o tom: cor "é muito subjetiva", segue princípios "mas tem inúmeras, muitas variações" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -75,3 +79,4 @@ No campo da cor, a harmonia vem de análogas, complementares e gradientes suaves
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — ver [[wiki/concepts/equilibrio-visual]]: peso e posição, ao lado de cor e forma
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — branding de boost → foguete → órbitas; confete x universo
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — harmonia de cores: análogas, complementares, gradientes da natureza
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores como a parte da cor da harmonia

@@ -4,7 +4,7 @@ title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 5
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -73,6 +73,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 No papel, o botão é "um quadradinho qualquer" que simboliza o call to action; o tamanho "dá para você se preocupar também em wireframes", e cada decisão de botão e comportamento fecha no protótipo final ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]). Ver [[wiki/concepts/fidelidade-de-prototipo]].
 
+## Guiar pela cor complementar
+
+Na aula de harmonia das cores, guiar o usuário "para a jornada que ele tem que prosseguir" também se faz com cor: "utilizar as cores complementares como guia, para poder a gente destacar elementos" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -85,3 +89,4 @@ No papel, o botão é "um quadradinho qualquer" que simboliza o call to action; 
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — primary button no wireframe de cadastro; "quero me inscrever"
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — CTA no hero e repetido no fim do portfólio
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — botão como quadradinho no papel, decidido no protótipo final
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementar como guia da jornada

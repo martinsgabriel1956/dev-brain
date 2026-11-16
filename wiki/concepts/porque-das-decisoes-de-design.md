@@ -4,7 +4,7 @@ title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -64,6 +64,10 @@ No [[wiki/concepts/pagemap]], cada dobra é definida "estabelecendo o porquê, s
 
 Na busca de referências para wireframes: "sempre tem um porquê por trás que a gente vai analisando e descobrindo". Empresas grandes como [[wiki/entities/dropbox]] e Slack têm time de UX e não decidem "com base em achismo"; a pergunta é "por que ele colocou nessa ordem" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 
+## O porquê das cores
+
+A aula de harmonia das cores responde às perguntas de uma aula anterior ("os porquês da natureza"): a arara azul e amarela (complementares), o céu do rosa ao azul (análogas), o Homem-Aranha e o Superman (tríade), as capas de filme azul e laranja (complementares). "Será que é coincidência?" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -73,3 +77,4 @@ Na busca de referências para wireframes: "sempre tem um porquê por trás que a
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — propósito como primeiro critério de boa interface
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — o porquê de cada dobra e de cada cor
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — perguntar por que as seções estão naquela ordem
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — arara, céu, super-heróis e cinema explicados pela harmonia

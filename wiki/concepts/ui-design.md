@@ -4,7 +4,7 @@ title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft
@@ -84,3 +84,4 @@ O curso de [[wiki/entities/nasser|Násser]] dedica um módulo inteiro à cor: na
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — workflow pesquisa → wireframes → protótipo final
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe e papel e caneta antes do design completo
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — módulo de teoria das cores
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia das cores: monocromática, complementar, análoga, triádica
