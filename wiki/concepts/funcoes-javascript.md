@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -57,6 +57,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], `require(
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], funções `async` que retornam promessas, `return db` dentro do `then` para encadear, `module.exports = async function (db, {...})` e `convertHoursToMinutes`, testada antes no console do navegador. A arrow function aparece no `then` e no `map`.
 
+## Funções no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: "um bloco que retorna sempre um valor", "na grande maioria das linguagens"; parâmetros com padrão (`$total: 12`) como no JS; concatenação de strings com `+`, "muito parecido com o JavaScript". Ver [[wiki/concepts/funcoes-sass]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -68,3 +72,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], funções `async` 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: caixinha mágica; função anônima no forEach
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: arrow function, return, getSubject
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: async function, return no then
+- [[wiki/sources/frontpush-funcoes-sass]]: paralelo com funções do Sass

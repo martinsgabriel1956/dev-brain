@@ -4,7 +4,7 @@ title: "Prefixo de fornecedor (vendor prefix)"
 aliases: ["vendor prefix", "prefixos CSS", "-webkit-", "-moz-", "-ms-", "-o-", "Autoprefixer"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [css, compatibilidade, navegador, vendor-prefix, autoprefixer, postcss]
 skill: tech-mentor-frontend
 status: stub
@@ -28,7 +28,12 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wi
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o primeiro Watch Sass do [[wiki/entities/live-sass-compiler]] já gera CSS "com os traços webkit, com o traço ms, para poder melhorar a compatibilidade com browsers antigos", sem configuração: é o Autoprefixer embutido da extensão.
 
+## Mixin de prefixo (FrontPUSH, Sass aula 06)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], "a facilidade de adicionar aqueles prefixos, traço webkit, traço moz" é listada como uso de mixin. Era o padrão antes do Autoprefixer; hoje fica com a ferramenta.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Can I use com `transform`; `-webkit-` gerado no CSS compilado
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: `-webkit-` e `-ms-` gerados pelo Live Sass Compiler
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin para prefixos (prática antiga)

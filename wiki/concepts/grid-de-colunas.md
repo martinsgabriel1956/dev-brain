@@ -4,7 +4,7 @@ title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 10
+source_count: 13
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: draft
@@ -92,6 +92,18 @@ O grid é "um guia", não uma régua de precisão: figuras de 88 ou ilustraçõe
 
 Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] parte de um grid de 12 colunas de 96 px com gutter de 24 px, "próximo de 1440px", que define a largura do container. (12 × 96 + 11 × 24 = 1416 px; as margens completam os 1440.)
 
+## Classes de grid geradas por loop (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]]: 12 colunas de 96 px e gutter de 24; 2 colunas = 216 px, 5 = 576, 7 = 816. Fazer `.grid1`…`.grid12` à mão "eu tenho que sempre vir aqui e modificar na mão"; o `@for` gera as doze. A fórmula com gutter é `$i * 96px + ($i - 1) * 24px` (12 colunas = 1416 px). Com grid, o código fica "bem mais fiel ao layout projetado" do que com `flex-grow` "no olho". `[skill: tech-mentor-frontend]` Hoje, `grid-template-columns: repeat(12, 1fr)` + `grid-column: span N` faz o mesmo de forma fluida ([[wiki/concepts/css-grid]]).
+
+## Grid fluido em % (FrontPUSH, Sass aula 09)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: o grid de 1416 px precisa "dar uma apertadinha" em notebooks de 1366, então as colunas viram %: `grid($col, $total: 12)` = `$col / $total * 100%` (5 → 41,67%). Sem gutter. Com o gutter do curso, 5 colunas = 576 / 1416 = 40,68%; 3 = 23,73%; 7 = 57,63%.
+
+## Do Figma para um grid system (FrontPUSH, Sass aula 10)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid de 12 × 96 + 24 (1416 px) vira uma biblioteca de classes "muitíssimo parecida com o Grid System do próprio Bootstrap", com largura em % e container de `max-width` fixo que fica fluido abaixo dele. Ver [[wiki/concepts/grid-system]]. No código, a variável do container está em 1200, não em 1416.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
@@ -104,3 +116,6 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: 12 colunas de 96 px + gutter 24 px ≈ 1440 px viram o container
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: container de 1.200 ou 1.440 px "de acordo com o grid que você estabeleceu"
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: container de 1.440 px; a malha 5 × 5 sai do menor card, não de um grid de 12 colunas
+- [[wiki/sources/frontpush-for-while-each-sass]]: classes `.grid-N` geradas por `@for`; 96 + 24
+- [[wiki/sources/frontpush-funcoes-sass]]: função `grid()` em %; valores com e sem gutter
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid de 1416 virando grid system de classes

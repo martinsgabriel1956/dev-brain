@@ -4,7 +4,7 @@ title: "Pipeline de Assets (minificação e concatenação)"
 aliases: ['asset pipeline', 'minify', 'bundling']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [build, minificacao, webpack, performance, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -18,7 +18,12 @@ Cadeia que leva fontes legíveis (Sass, CoffeeScript, vários arquivos) a poucos
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o [[wiki/entities/scout-app]] alterna entre expandido (desenvolvimento) e `compressed` (produção), que "tira os enters, as quebras de linha, os espaços" e deixa o arquivo "bem menor, melhorando o tempo de requisição". O mesmo compilador gera um `.map` (source map) para ligar o CSS ao `.scss`. `[skill: tech-mentor-frontend]` Com bundler, o Sass vira uma etapa do build e a minificação fica com Lightning CSS ou esbuild; o servidor ainda comprime com gzip/brotli.
 
+## Um CSS só (FrontPUSH, Sass aula 03)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]]: dividir em vários `.scss` e compilar para um só é "a maneira mais otimizada [...] porque tem menos arquivos para carregar"; vincular vários CSS "prejudica a otimização", com "vários requests". É a concatenação desta página. `[skill: tech-mentor-frontend]` Com HTTP/2, o ganho de juntar tudo diminuiu; hoje se divide por página ou rota.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Sass `compressed` e `.map`
+- [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: concatenação por `@import`

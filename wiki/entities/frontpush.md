@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 67
+source_count: 75
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -231,6 +231,38 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: o qu
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: [[wiki/entities/live-sass-compiler]] no VS Code (o jeito do curso) e [[wiki/entities/scout-app]] como alternativa; linha de comando evitada; modos expandido e `compressed`.
 
+## Módulo de CSS Sass: aula 03, @import
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]]: primeiro dos "fundamentos do Sass"; `@import` por categoria, "a ordem importa", `colors.scss` → `_colors.scss`.
+
+## Módulo de CSS Sass: aula 04, variáveis
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: `$variável`; consistência a partir do style guide do Nubank; botão com sombra do Smooth Shadow numa variável em `_shadows.scss`.
+
+## Módulo de CSS Sass: aula 05, nesting
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: aninhamento de tags (menu), `&` para `:hover`, `.active` e `::before`, aninhamento de propriedades.
+
+## Módulo de CSS Sass: aula 06, @mixin e @content
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]]: sintaxe com argumento padrão e `@content`; mixin `responsive` (960) e depois `responsive-tablet`/`responsive-mobile` (960/720) para a tipografia.
+
+## Módulo de CSS Sass: aula 07, @if e @else
+
+Em [[wiki/sources/frontpush-if-else-sass]]: tema light/dark por `$layout`; erro de variável indefinida; mixins de tipografia e layout do projeto Nubank.
+
+## Módulo de CSS Sass: aula 08, @for, @while e @each
+
+Em [[wiki/sources/frontpush-for-while-each-sass]]: `@for` para classes de grid, interpolação `#{}`, `@while` dentro de `@function`, `@each` em lista e mapa; o sistema de grids completo fica para as aulas práticas.
+
+## Módulo de CSS Sass: aula 09, funções
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: `@function grid($col, $total: 12)` em %, funções de cor (`transparentize` é a favorita), `pow` e `invert` da documentação, operadores.
+
+## Módulo de CSS Sass: aula 10, grid system (parte 1)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: primeira aula prática. Por que um grid system de classes (precisão contra o Flexbox), container de `max-width` por causa dos monitores 21:9, mixin `responsive` e o começo do `.container`. A biblioteca será anexada.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -300,3 +332,11 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: [[wi
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: sessão de mentoria: prática com CSS Grid e `grid-template-areas`
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de CSS Sass
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de CSS Sass
+- [[wiki/sources/frontpush-import-e-partials-sass]]: aula 03 do módulo de CSS Sass
+- [[wiki/sources/frontpush-variaveis-sass]]: aula 04 do módulo de CSS Sass
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: aula 05 do módulo de CSS Sass
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: aula 06 do módulo de CSS Sass
+- [[wiki/sources/frontpush-if-else-sass]]: aula 07 do módulo de CSS Sass
+- [[wiki/sources/frontpush-for-while-each-sass]]: aula 08 do módulo de CSS Sass
+- [[wiki/sources/frontpush-funcoes-sass]]: aula 09 do módulo de CSS Sass
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: aula 10 do módulo de CSS Sass

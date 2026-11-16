@@ -4,7 +4,7 @@ title: "display no CSS (block x inline)"
 aliases: ["display", "display block", "display inline", "elemento de bloco", "elemento inline", "inline-block"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [frontend, css, display, layout, box-model]
 skill: tech-mentor-frontend
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], display é "a e
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `label` vem inline (visto na aba Computed do DevTools), e `margin-top` no `span` só funciona com `display: block`: "quando ele é inline ele não aceita". `display: initial` devolve o preço à linha no desktop.
 
+## inline-block no botão (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], o link vira botão com `display: inline-block` "para poder virar o elemento de caixa": padding e margin verticais passam a ocupar espaço.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: bloco como padrão, span e link inline, link forçado a bloco no botão
@@ -64,3 +68,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `la
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: block, inline, flex
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label inline; margin-top em inline
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `display: grid` sem template empilha os itens "como se tivesse em display block"
+- [[wiki/sources/frontpush-variaveis-sass]]: link como botão com inline-block

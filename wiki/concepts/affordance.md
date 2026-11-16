@@ -4,7 +4,7 @@ title: "Affordance"
 aliases: ["affordance em ux", "affordance visual", "signifiers"]
 date_created: 2026-07-21
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [ui, ux, design, frontend, affordance]
 skill: tech-mentor-frontend
 status: draft
@@ -69,6 +69,10 @@ O botão em diagonal "dá a sensação de direção, de vai", e costuma vir com 
 
 Na aula de seletores ([[wiki/sources/seletores-e-pseudo-elements-css]]), `:hover` é "de disparado [...] o efeito que eu mais utilizo" e `:focus` estiliza o campo "pronto para poder receber um texto". Ver [[wiki/concepts/pseudo-classe-css]].
 
+## Sombra no hover como sinal de clique (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: no hover, o botão "cresça um box-shadow, indicando que isso é um elemento clicável, para poder melhorar a experiência do usuário".
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -78,3 +82,4 @@ Na aula de seletores ([[wiki/sources/seletores-e-pseudo-elements-css]]), `:hover
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — hover como resposta que indica clicável; link branco x texto cinza
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botão diagonal + seta sinaliza direção
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — `:hover` e `:focus` como pseudo-classes
+- [[wiki/sources/frontpush-variaveis-sass]]: box-shadow no hover como sinal de clique

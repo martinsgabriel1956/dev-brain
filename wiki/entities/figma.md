@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 49
+source_count: 51
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -166,6 +166,14 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o layout tem um estado vazio ("Nenhum professor encontrado com a sua pesquisa") e uma versão 2.0 com página de sucesso do cadastro, que vira desafio.
 
+## Smooth Shadow → variável Sass
+
+Em [[wiki/sources/frontpush-variaveis-sass]], a sombra do botão é feita com o plugin Smooth Shadow e o CSS copiado do Inspect para uma variável do Sass; para mudar, ajusta-se no Figma e recopia-se.
+
+## Variações prontas antes do Sass
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: as versões clara e escura das cores saem do Figma e viram variáveis do Sass, em vez de `darken`/`lighten`; o bloco vermelho de 30% no layout do Nubank aparece como RGBA no Inspect.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -217,3 +225,5 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o layout tem um es
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy copiadas do Figma
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: medir o layout e não exagerar na minúcia
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: estado vazio e versão 2.0
+- [[wiki/sources/frontpush-variaveis-sass]]: Smooth Shadow e Inspect → variável Sass
+- [[wiki/sources/frontpush-funcoes-sass]]: variações de cor no Figma, não no Sass

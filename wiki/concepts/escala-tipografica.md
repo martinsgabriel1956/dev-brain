@@ -4,7 +4,7 @@ title: "Escala tipográfica"
 aliases: ["escala de texto", "escala de fontes", "escala de tamanho de fonte", "type scale", "tamanho de fonte", "font-size", "modular scale", "escala modular", "escala do Figma"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 7
 tags: [ui, ui-design, tipografia, escala-tipografica, font-size, hierarquia-visual, consistencia, design-tokens, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -53,8 +53,28 @@ As duas divergem no piso: a aula aceita corpo a partir de 14 px (e cita o corpo 
 
 Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], [[wiki/entities/nasser|Násser]] chama `h1`–`h6` de "meio que [...] uma escala tipográfica" (`h1` o maior, `h6` o menor). `[external]` Os níveis marcam a hierarquia do documento; o tamanho vem da folha padrão do navegador e se ajusta no CSS. O MDN pede para não escolher o nível pelo tamanho: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#usage_notes. A escala desta página se aplica com `font-size`, independente da tag.
 
+## Escala em variáveis (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: os tamanhos de H1–H3 e B1–B3 do style guide "são todos padronizados", então "eu consigo estabelecer isso mais facilmente por meio de variáveis".
+
+## Escala por breakpoint (FrontPUSH, Sass aula 06)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], "adeque o tamanho da tipografia ao tamanho da tela [...] um básico de UI Design alinhado à responsividade": `h1` 72/48/36 px e corpo 24/18/16 px. `[external]` Alternativa contínua: `font-size: clamp(2.25rem, 1.5rem + 3vw, 4.5rem)`, em `rem` para respeitar a fonte do usuário.
+
+## Escala num mixin com @if (FrontPUSH, projeto Nubank)
+
+Em [[wiki/sources/frontpush-if-else-sass]]: dois mixins (`typeface-1` para títulos em Sora, `typeface-2` para texto em Source Sans Pro) recebem tamanho `h1`–`h5` e dispositivo, e definem `font-size` e `line-height`. "Basta eu modificar alguma coisa aqui que automaticamente toda a minha estrutura textual vai ser modificada." `[skill: tech-mentor-frontend]` Um mapa de tokens faria o mesmo sem a cadeia de `@if`.
+
+## Razão áurea numa função (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]], o exemplo da documentação: `scale-below($value, $base, $ratio: 1.618)` divide pela razão áurea até ficar abaixo da base; `scale-below(20px, 16px)` = 12.36px. Uma escala modular calculada pelo compilador.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: escala = tamanho; inconsistência como erro comum; WhatFont
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]: 14–21 px, tamanho vs. espaço, até 6 variações, escala do Figma + 8pt
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: h1–h6 chamados de escala tipográfica (são hierarquia, não tamanho)
+- [[wiki/sources/frontpush-variaveis-sass]]: H1–H3 e B1–B3 em variáveis
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: Sass aula 06: tamanhos por breakpoint × `clamp()`
+- [[wiki/sources/frontpush-if-else-sass]]: escala h1–h5 × desktop/mobile num mixin
+- [[wiki/sources/frontpush-for-while-each-sass]]: razão 1.618 numa `@function`

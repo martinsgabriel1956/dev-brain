@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `transit
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `transform` é o exemplo de prefixos: `-ms-` no IE 9, `-webkit-` no Safari antigo, `-moz-` no Firefox antigo; 98% de suporte com prefixo e 96% sem. Ver [[wiki/concepts/prefixo-de-fornecedor]].
 
+## Sombra suave no hover (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: `transition` de 0.5 s "para que essa transição seja suave" no `box-shadow` do hover. A legenda não diz se ficou na regra base; se ficou só no `:hover`, a volta é seca.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -44,3 +48,4 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `tra
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: transition de background e opacity
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: transition sem propriedade; translateY
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: suporte e prefixos de `transform`
+- [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: transition no box-shadow

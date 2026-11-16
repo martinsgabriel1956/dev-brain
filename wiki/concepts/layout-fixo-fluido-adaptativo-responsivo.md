@@ -4,7 +4,7 @@ title: "Layout fixo, fluido, adaptativo e responsivo"
 aliases: ["layout fixo", "layout fluido", "layout adaptativo", "fixed vs fluid vs adaptive vs responsive", "adaptive design", "fluid layout"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [ui, ui-design, layout, responsividade, breakpoint, media-query, css]
 skill: ux-ui-mentor
 status: stub
@@ -39,8 +39,18 @@ A aula diz que o adaptativo é "mais otimizado" porque manda "exatamente o estil
 - [[wiki/concepts/breakpoint]]: o ponto onde o adaptativo troca de estilo.
 - [[wiki/concepts/design-responsivo]]: o histórico e as práticas do responsivo.
 
+## "Uma sanfona" (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: "o caráter ser responsivo precisa ser adaptável e ele precisa ser fluido"; o layout foi desenhado para 1920 × 1080, mas há telas de 1366, então o grid usa % para "ir cabendo antes de quebrar para a versão mobile".
+
+## Máximo fixo, depois fluido (FrontPUSH, Sass aula 10)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: "eu utilizo os containers com tamanho máximo fixo e depois ele se torna fluido", porque em monitores 21:9 um layout totalmente fluido "iria esticar em toda a tela". As colunas em % fazem o conjunto "apertar" até o breakpoint, onde empilham.
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: os quatro tipos, com o iPad da pizzaria, a logo que encolhe e o breakpoint de 960
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: Flexbox como o esqueleto que "se adapte ao tamanho da tela"
 - [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: container com `max-width: 700px` "ajusta"; com `width: 700px`, não
+- [[wiki/sources/frontpush-funcoes-sass]]: grid fluido em % antes do breakpoint mobile
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: container de máximo fixo + colunas fluidas

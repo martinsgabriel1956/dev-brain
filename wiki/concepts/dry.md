@@ -4,7 +4,7 @@ title: "DRY (Don't Repeat Yourself)"
 aliases: ["dry principle", "não se repita", "duplicação de código"]
 date_created: 2026-08-18
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [dry, code-smells, duplicacao, abstracao, under-engineering, yagni]
 skill: tech-mentor-backend
 status: stub
@@ -53,6 +53,10 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `include` e `extends`/`block` do [[wiki/entities/nunjucks]] para não repetir o cabeçalho, o `head` e o `body` em cada página: "E se fossem cem? E se fossem mil páginas?" Ver [[wiki/concepts/template-engine]].
 
+## Mixins como DRY no CSS (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]]: "um trecho de código que eu posso personalizar ou então pré-definir para poder utilizar em vários outros projetos", com "aproveitamento de código" no slide. O próprio exemplo repete dois mixins quase iguais (`responsive-tablet`/`-mobile`), que um parâmetro resolveria ([[wiki/concepts/mixin-sass]]).
+
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
@@ -60,3 +64,4 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 - [[wiki/sources/classes-e-ids-no-css]] — classe CSS como estilo escrito uma vez
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: copiar o fetch é grotesco; extrair função
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: partials e layout no Nunjucks
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: mixins do Sass como reaproveitamento

@@ -4,7 +4,7 @@ title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
 date_updated: 2026-11-16
-source_count: 21
+source_count: 28
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -95,6 +95,34 @@ Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em vers
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o projeto do Nubank é "uma ótima vitrine" do uso do Sass para produtividade.
 
+## Style guide e roxo no Sass
+
+Em [[wiki/sources/frontpush-variaveis-sass]], o style guide do projeto Nubank é o exemplo de consistência, e o roxo dele vira variável no botão da demo. A fonte do guia estava como Montserrat; é Sora.
+
+## & com pseudo-elementos
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "no próprio site da Nubank, eu utilizo o Sass dessa forma", com `&::before`/`&::after` nos links.
+
+## Mixin de responsividade
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]]: o mixin de responsividade com `@content` "eu já implementei no projeto do Nubank".
+
+## Mixins de tipografia e layout
+
+Em [[wiki/sources/frontpush-if-else-sass]]: `typeface-1` (Sora) e `typeface-2` (Source Sans Pro) com tamanho `h1`–`h5` e dispositivo; mixin de layout com `xl`/`l`/`m`/`s`/`xs` (1440/1140/960/540). Detalhados "na aula do Nubank", ainda não ingerida.
+
+## Grid de colunas no layout
+
+Em [[wiki/sources/frontpush-for-while-each-sass]]: o layout do projeto Nubank no Figma, com blocos vermelhos de 5 e 7 colunas (576 e 816 px), ilustra o grid de 12 × 96 px + gutter 24.
+
+## Layout de 1920 e grid de 1416
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: o layout do projeto foi desenhado para 1920 × 1080; o grid de 12 colunas soma 1416 px; o bloco de 5 colunas (576 px) ilustra a função `grid()` em %.
+
+## Flexbox "no olho"
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o projeto foi layoutado com Flexbox (`flex-grow` 2 e 1, ajustado no olho); o mixin `responsive` com `xl`–`xs` também vem dele.
+
 ## Key Sources
 
 
@@ -119,3 +147,10 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o pr
 - [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: menu responsivo com `space-around` prometido para o projeto do Nubank (módulo de Flexbox do FrontPUSH)
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: citado como o projeto em que Násser já mostrou o menu com hambúrguer e media query
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Sass no projeto do Nubank (FrontPUSH)
+- [[wiki/sources/frontpush-variaveis-sass]]: style guide e roxo usados na aula de variáveis do Sass
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: `&` com pseudo-elementos nos links (Sass)
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin de responsividade no projeto (Sass)
+- [[wiki/sources/frontpush-if-else-sass]]: mixins de tipografia e de breakpoints com `@if`
+- [[wiki/sources/frontpush-for-while-each-sass]]: grid de colunas do layout (Sass, aula de loops)
+- [[wiki/sources/frontpush-funcoes-sass]]: layout 1920, grid 1416, função `grid()`
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: layout por flex-grow; mixin `responsive`

@@ -4,7 +4,7 @@ title: "Critical Rendering Path"
 aliases: ["pipeline de renderização do browser", "caminho crítico de renderização", "URL para pixel"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [browser, rendering-pipeline, critical-rendering-path, performance, dom, cssom]
 skill: tech-mentor-frontend
 status: draft
@@ -39,6 +39,11 @@ Cada otimização ataca uma etapa específica do pipeline:
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `<script>` no começo do body falha porque o HTML é lido "linha a linha" e o elemento ainda não existe; no head, `defer` resolve para scripts externos. Ver [[wiki/concepts/carregamento-de-scripts]].
 
+## CSS num arquivo só (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]], o Sass junta os arquivos num `style.css`. `[skill: tech-mentor-frontend]` Como CSS bloqueia a renderização, o que pesa é o tamanho do CSS necessário para a primeira tela e evitar `@import` nativo (download em série), não só o número de arquivos. Ver [[wiki/concepts/import-e-partials-sass]].
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: script no começo do body x defer
+- [[wiki/sources/frontpush-import-e-partials-sass]]: Sass: um CSS só × CSS crítico

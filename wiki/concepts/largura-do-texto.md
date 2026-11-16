@@ -3,8 +3,8 @@ type: concept
 title: "Largura do texto (medida de linha)"
 aliases: ["largura de linha", "largura de texto", "line length", "medida de linha", "comprimento de linha", "caracteres por linha", "measure"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [ui, ui-design, tipografia, largura-do-texto, largura-de-linha, medida-de-linha, legibilidade, leiturabilidade, acessibilidade, css]
 skill: ux-ui-mentor
 status: stub
@@ -43,7 +43,12 @@ Em tela larga, a largura vem do container, não da tela: ver [[wiki/concepts/des
 
 `[external]` A Wikipedia mudou depois: a skin Vector 2022, padrão na versão em inglês desde janeiro de 2023, limita a largura do conteúdo (https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements). A aula de abertura é de 2020.
 
+## max-width do container (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o container de largura máxima existe por causa dos monitores 21:9. O mesmo teto evita linhas de texto longas demais.
+
 ## Key Sources
 
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]]: 60–90 caracteres, 9–15 palavras; Globo, Wikipedia e NYT
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: contar palavras por linha; Wikipedia x Globo
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: container com `max-width` também limita a linha

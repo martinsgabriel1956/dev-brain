@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 24
+source_count: 25
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -107,6 +107,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `legen
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], `display: flex`, `justify-content: center` e `align-items: center` no `body` "para todo e qualquer elemento ele sempre fique centralizado", o combo da aula 04 do módulo de Flexbox.
 
+## Revisão no grid system (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `display: flex` faz dos filhos diretos flex-items, e `flex-grow` divide o espaço por proporção. Para o curso, isso se aproxima do layout, mas não reproduz larguras exatas de colunas; daí o grid system de classes.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -133,3 +137,4 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], `dis
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: flex é "unidimensional"; layout com linhas e colunas mescladas em flex vira "flexbox dentro do flexbox [...] uma salada"
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: space-between; itens flex blockificados
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: combo de centralização no primeiro `.scss`
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: flexbox como contraexemplo de precisão

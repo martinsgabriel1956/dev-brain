@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 34
+source_count: 36
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -87,6 +87,14 @@ Em [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], responsividade é "não importa o tamanho do meu dispositivo, esse site vai ficar bonito nele". O Proffy será [[wiki/concepts/mobile-first]], com `rem` e porcentagem; o container usa `width: 90vw; max-width: 700px`.
 
+## Mixin de responsividade (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], a tipografia encolhe com a tela: `h1` 72 → 48 → 36 px e parágrafo 24 → 18 → 16 px, em 960 e 720 px. Em vez de uma media query no fim do arquivo ("fica um pouco desconexo"), um mixin com `@content` põe o ajuste dentro da regra do próprio elemento ([[wiki/concepts/mixin-sass]]). `[external]` `clamp()` faz a mesma escala de forma contínua.
+
+## Grid system em % (FrontPUSH, Sass aula 10)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: "ele se torna fluido em determinada resolução para poder apertar, e você define o breakpoint para poder ele quebrar um embaixo do outro". Uma das formas de responsividade, ao lado de Flexbox e Grid Layout.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -123,3 +131,5 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], responsividade 
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: "estrutura ABC [...] vai quebrar em ABC em coluna": media query ou `flex-wrap` + `flex-basis`
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: definição e mobile first no Proffy
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: só o `grid-template-areas` muda dentro da media query, de 5 × 5 para 4 × 4
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin `responsive` com `@content`; tipografia por breakpoint
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system fluido + breakpoint de empilhamento

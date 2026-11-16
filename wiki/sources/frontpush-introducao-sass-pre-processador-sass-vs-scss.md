@@ -77,6 +77,7 @@ Aula 01 do módulo de CSS Sass do [[wiki/entities/frontpush|FrontPUSH]], com [[w
 ## Concepts
 
 - [[wiki/concepts/pre-processador-css]]
+- [[wiki/concepts/mixin-sass]]
 - [[wiki/concepts/prefixo-de-fornecedor]]
 - [[wiki/concepts/aninhamento-css]]
 - [[wiki/concepts/compatibilidade-entre-navegadores]]

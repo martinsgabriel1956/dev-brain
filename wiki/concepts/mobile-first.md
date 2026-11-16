@@ -4,7 +4,7 @@ title: "Mobile first"
 aliases: ["mobile-first", "mobile first CSS", "primeiro o mobile"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [css, responsivo, mobile-first, media-query, breakpoint, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -26,8 +26,13 @@ Na NLW #1, a página do Ecoleta foi desktop first, com `max-width: 900px` ([[wik
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o mobile first sai do discurso: os estilos base são do celular e as telas grandes entram com `@media (min-width: 700px)` e `(min-width: 1100px)`. Isso responde à pergunta aberta do dia 1. A única regra em `max-width` (699 px) é o `:root`, posta ali para corrigir a ordem da cascata.
 
+## Desktop-first também no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], o mixin de responsividade usa `max-width` (960 e 720): "aqui fora eu aplico para desktop, e aqui dentro eu aplico para dispositivos tablets ou mobile". Continua o padrão desktop-first do curso.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: mobile first anunciado para o Proffy, com rem e porcentagem como unidades
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: min-width de 700 e 1100 px
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: contraexemplo desktop-first, `max-width: 960px`
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin `responsive` em `max-width` (desktop-first)

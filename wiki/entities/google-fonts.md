@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 11
+source_count: 12
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -61,6 +61,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os bo
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], legends e botões do formulário de dar aulas usam `font: 700 ... Archivo`.
 
+## Sora e Source Sans Pro (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-if-else-sass]], as fontes do projeto Nubank: Sora para títulos e Source Sans Pro para texto (inferência: as duas estão no Google Fonts).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -74,3 +78,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], legends 
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Archivo 400 e 700
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: Roboto
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Archivo nos legends
+- [[wiki/sources/frontpush-if-else-sass]]: Sora e Source Sans Pro do projeto Nubank

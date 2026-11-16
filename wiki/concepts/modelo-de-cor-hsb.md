@@ -3,8 +3,8 @@ type: concept
 title: "Modelo de cor HSB"
 aliases: ["HSB", "HSV", "hue saturation brightness", "matiz saturação brilho", "modo HSB", "primeiro quadrante"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [ui, ui-design, cor, hsb, figma, paleta-de-cores]
 skill: ux-ui-mentor
 status: stub
@@ -28,6 +28,16 @@ Descreve a cor por **matiz** (H, a volta do círculo), **saturação** (S, de ci
 
 `[skill: ux-ui-mentor]` Para código, a skill indica HSL (escala mudando só L) ou OKLCH, que é perceptualmente uniforme: no HSB e no HSL, amarelo e roxo com o mesmo brilho não parecem igualmente claros.
 
+## Matiz trocada por descuido (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], dois roxos parecidos com matiz 277 e 286 no HSB: "é variação de cor" quando a matiz fica; mudá-la é outra cor.
+
+## adjust-hue no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue` gira a matiz em graus ("60 deg") no círculo cromático, a mesma operação do H do HSB. Hoje, `color.adjust($c, $hue: 60deg)`.
+
 ## Key Sources
 
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — modo HSB, primeiro quadrante, não topar S nem B
+- [[wiki/sources/frontpush-variaveis-sass]]: roxos de matiz 277 × 286
+- [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue` em graus

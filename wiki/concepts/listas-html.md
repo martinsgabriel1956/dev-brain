@@ -4,7 +4,7 @@ title: "Listas no HTML (ul, ol, li) e list-style"
 aliases: ["ul", "ol", "li", "lista não ordenada", "lista ordenada", "list-style", "list-style-type"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [html, css, listas, menu, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,9 +22,14 @@ status: stub
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], `ul.items-grid > li` gerado com `items.map(item => <li key={item.id}>...)`.
 
+## Menu como lista aninhada no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `ul.list` > `li` > `a` é a estrutura do menu, estilizada com `list-style: none` e aninhamento no SCSS.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: ul x ol, menu com ul/li, list-style none/square
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `li:nth-child(n)` numa `ul` de três itens
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: ul/li gerados por map com key
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: menu como `ul.nav-menu` > `li.nav-item` > `a.nav-link`
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: menu `ul > li > a` no Sass

@@ -4,7 +4,7 @@ title: "Design tokens"
 aliases: ["token de design", "tokens de design", "variáveis de design", "labels de design", "nomenclatura de estilos"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [ui, design-system, design-tokens, css, sass, nomenclatura, dark-mode, handoff]
 skill: ux-ui-mentor
 status: stub
@@ -49,7 +49,17 @@ $orange-light: #ffd77a;
 
 Em [[wiki/sources/seletores-e-pseudo-elements-css]], "o root é quando a gente está definindo variáveis". `[external]` `:root` é a pseudo-classe que casa com `<html>`; as custom properties declaradas ali valem na página toda, por isso é o lugar costumeiro dos tokens. Ver [[wiki/concepts/pseudo-classe-css]].
 
+## Do style guide para `$variáveis` (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], [[wiki/entities/nasser|Násser]] liga o [[wiki/concepts/style-guide]] do projeto Nubank às variáveis do Sass: cores primárias, secundárias, auxiliares, escala de cinza e gradientes, tipografia (H1–H3, B1–B3) e sombras viram variáveis, para "maior fidelidade quando passar o layout para a codificação". Ainda sem o nome "token". Ver [[wiki/concepts/variaveis-sass]].
+
+## Tokens escolhidos por @if (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-if-else-sass]], cores do tema e tamanhos tipográficos são escolhidos por parâmetro (`$layout`, tamanho, dispositivo) dentro de `@if`. `[skill: tech-mentor-frontend]` É um sistema de tokens; em forma de mapa, ele se exporta melhor (JSON, custom properties).
+
 ## Key Sources
 
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]: labels `card-hover`, `$orange`, orange dark/light; hexadecimais no Sass; grupos de estilo no Figma
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — `:root` como lugar das variáveis CSS
+- [[wiki/sources/frontpush-variaveis-sass]]: style guide → variáveis do Sass
+- [[wiki/sources/frontpush-if-else-sass]]: tema e escala por parâmetro, sem o nome "token"

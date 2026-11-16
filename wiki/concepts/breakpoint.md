@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 10
+source_count: 13
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -86,6 +86,18 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os breakpoints do Proffy são 700 px (raiz 62,5% e página study no desktop) e 1100 px (landing em grid), todos com `min-width`. No Device Toolbar, a 1099 px nada muda e a 1100 px, "Puf!", o layout alarga.
 
+## 960 e 720 num mixin (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], os breakpoints do curso (960 para tablet, 720 para mobile, ambos `max-width`) viram mixins `responsive-tablet` e `responsive-mobile`. `[skill: tech-mentor-frontend]` Melhor um mapa `$bps` e um mixin parametrizado; abaixo de 720 as duas regras valem, e vence a que vem por último.
+
+## Escala xl–xs do projeto Nubank (FrontPUSH)
+
+Em [[wiki/sources/frontpush-if-else-sass]]: `xl` acima de 1440, `l` 1140–1440, `m` 960–1140, `s` abaixo de 960, `xs` abaixo de 540, escolhidos por `@if` num mixin de layout com `@content`.
+
+## Mixin responsive do projeto Nubank (FrontPUSH, Sass aula 10)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `xl` > 1440, `l` 1140–1440, `m` 960–1140, `s` < 960, `xs` < 540, "boas divisões com base no próprio sistema de grids do Bootstrap", mas "na maioria das vezes, eu simplesmente aplico de 960 pixels para baixo". `[external]` 540/720/960/1140 são as larguras de container do Bootstrap 4; os breakpoints dele são 576/768/992/1200.
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — definição, media query abaixo de 960 px, quebra na landing page do FrontPUSH
@@ -98,3 +110,6 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os br
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: media query para "sumir com os itens" do menu e trocar por hambúrguer quando há muitos links
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: 700 e 1100 px com min-width
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `max-width: 960px` (desktop-first, mesmo valor da aula de flex-direction) troca o `grid-template-areas`
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: 960/720 como mixins `responsive-tablet`/`-mobile`
+- [[wiki/sources/frontpush-if-else-sass]]: escala xl/l/m/s/xs (1440/1140/960/540)
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: escala xl–xs; 540/960/1140 são containers do Bootstrap 4

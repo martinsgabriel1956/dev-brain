@@ -3,8 +3,8 @@ type: entity
 title: "Twitter Bootstrap"
 aliases: ['Bootstrap']
 date_created: 2026-10-14
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [css, framework-css, twitter, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -38,6 +38,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], o Bootstrap fica aberto como referência de [[wiki/concepts/cor-semantica|cor como informação]]: azul informa, vermelho erro, amarelo alerta, verde sucesso.
 
+## Modelo do grid do FrontPUSH
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid system de [[wiki/entities/nasser|Násser]] é "muitíssimo parecido com o Grid System do próprio Bootstrap", que ele chama de "uma das, se não a maior framework CSS"; os breakpoints dele (540/960/1140) vêm das larguras de container do Bootstrap 4.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -47,3 +51,4 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — grid de referência das aulas; 4.5 x 5
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — "eu prefiro o do Bootstrap": 12 colunas no Figma
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — cores de alerta como referência de cor semântica
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: modelo do grid system do FrontPUSH

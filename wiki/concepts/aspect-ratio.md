@@ -4,7 +4,7 @@ title: "Aspect ratio (proporção da imagem)"
 aliases: ["aspect ratio", "proporção", "proporção de aspecto", "relação de aspecto", "não distorcer imagens"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [ui, ui-design, imagens, aspect-ratio, figma, css, core-web-vitals]
 skill: ux-ui-mentor
 status: stub
@@ -40,6 +40,10 @@ Na parte 4, as diretrizes do [[wiki/entities/material-design]] são citadas com 
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], a proporção aparece no código: a section de 80% × 500 px não é quadrada e a foto é, então `background-size: cover` corta parte do passarinho e `contain` deixa sobra (e repete, até `no-repeat`). Ver [[wiki/concepts/background-css]].
 
+## Monitores 21:9 (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: monitores ultrawide (21:9) "fogem do tamanho widescreen, que é o tamanho padrão, 16 por 9", e um layout 100% fluido "iria esticar em toda a tela". Daí o container com `max-width`.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — "não distorça as imagens"; crop automático do Figma
@@ -47,3 +51,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], a propor�
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — proporções citadas do Material Design
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": não esticar uma 1920×1080 para caber num banner; o Figma mantém a proporção e centraliza
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: cover corta, contain deixa sobra numa caixa não quadrada
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: 21:9 × 16:9 como motivo do `max-width`

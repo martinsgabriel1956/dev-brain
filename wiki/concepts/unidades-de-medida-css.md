@@ -4,7 +4,7 @@ title: "Unidades de medida no CSS (px, pt, em, rem, cm, %)"
 aliases: ["unidades CSS", "medidas relativas", "medidas absolutas", "px rem em", "CSS units"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [css, unidades, responsividade, rem, em, porcentagem]
 skill: tech-mentor-frontend
 status: stub
@@ -40,6 +40,14 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: 100% = 16 px = 
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a landing começa com `:root { font-size: 40% }` (6,4 px de base, pequeno demais) e, acima de 700 px, passa a `62.5%`, "1rem equivale a 10 pixels", o que só vale com o padrão de 16 px do navegador. `fr` é "uma unidade de medida [...] chamada de frações". No desktop, px para gaps e paddings, "uma coisa mais fixa mesmo".
 
+## px na tipografia responsiva (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]], os tamanhos responsivos estão todos em `px` (72, 48, 36). `[skill: tech-mentor-frontend]` Em `rem`, o texto acompanha o tamanho de fonte que o usuário escolheu no navegador, coisa que `px` ignora.
+
+## % calculada pelo Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-funcoes-sass]], `($col / $total) * 100%` devolve `%` porque o Sass carrega unidades nas contas: `0.25 * 100%` = `25%`. `[skill: tech-mentor-frontend]` No CSS puro, `calc(3 / 12 * 100%)` faz o mesmo.
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — lista do slide; fixas x relativas; % e rem para responsividade
@@ -50,3 +58,5 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a lan
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: `flex-basis` aceita %, em, px (slide)
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: %, rem, em, px; root 60%
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: root 40% e 62,5%; fr; px no desktop
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: tipografia em px; rem respeita a preferência do usuário
+- [[wiki/sources/frontpush-funcoes-sass]]: % calculada com unidade no Sass

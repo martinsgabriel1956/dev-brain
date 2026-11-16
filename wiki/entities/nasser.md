@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 90
+source_count: 98
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -73,6 +73,38 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], usa 
 ## Ferramentas de Sass
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: prefere o Live Sass Compiler, "uma das minhas [...] extensões do VS Code que eu não consigo viver sem", e ensina o Scout-App porque alguns alunos não conseguiram rodar a extensão.
+
+## @import e nomes em português
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]] (autoria inferida): organiza o Sass em arquivos por categoria e corrige a si mesmo por misturar `gray` com `branco`/`preto`: "não é legal".
+
+## Design → código pelas variáveis
+
+Em [[wiki/sources/frontpush-variaveis-sass]] (autoria inferida), junta UI e CSS: consistência do style guide, sombra na cor do elemento, e variáveis para "maior fidelidade quando passar o layout para a codificação".
+
+## Nesting no dia a dia
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]] (autoria inferida): aninha "demais" para menus e links com `&::before`/`&::after`; o aninhamento de propriedades "não utilizo muito".
+
+## Responsividade por mixin
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]] (autoria inferida): o ajuste de cada breakpoint fica dentro da regra do elemento, via `@include`; separar no fim do arquivo "fica um pouco desconexo".
+
+## @if nos mixins do Nubank
+
+Em [[wiki/sources/frontpush-if-else-sass]] (autoria inferida): a tipografia e os breakpoints do projeto Nubank saem de mixins com `@if`, "de um poder inimaginável" quando combinados.
+
+## Documentação e grid
+
+Em [[wiki/sources/frontpush-for-while-each-sass]] (diz o nome): "indico vocês demais a sempre estarem verificando a documentação do próprio Sass"; prefere classes de grid ao `flex-grow` "no olho".
+
+## transparentize e grid fluido
+
+Em [[wiki/sources/frontpush-funcoes-sass]] (autoria inferida): "o que eu mais utilizo, de fato, é o transparentize"; o grid "como se fosse uma sanfona".
+
+## Grid system próprio
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]] (diz o nome): usa um grid system "muitíssimo parecido" com o do Bootstrap em vez de `flex-grow` "no olho"; quase sempre só o breakpoint de 960 px, "que é os que eu tenho menos dor de cabeça".
 
 ## Key Sources
 
@@ -166,3 +198,11 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: pref
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria (inferido): prática com CSS Grid; fundos `#070707`/`#090909`/`#0B0B0B`
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de CSS Sass; diz o próprio nome
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de CSS Sass; diz o nome
+- [[wiki/sources/frontpush-import-e-partials-sass]]: aula 03 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-variaveis-sass]]: aula 04 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: aula 05 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: aula 06 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-if-else-sass]]: aula 07 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-for-while-each-sass]]: aula 08 do módulo de CSS Sass
+- [[wiki/sources/frontpush-funcoes-sass]]: aula 09 do módulo de CSS Sass (inferido)
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: aula 10 do módulo de CSS Sass

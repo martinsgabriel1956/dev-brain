@@ -4,7 +4,7 @@ title: "flex-grow, flex-shrink e flex-basis"
 aliases: ["flex-grow", "flex-shrink", "flex-basis", "fator de crescimento", "fator de encolhimento", "tamanho base flex", "espaço livre flex"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [frontend, css, flexbox, flex-item, layout]
 skill: tech-mentor-frontend
 status: stub
@@ -31,9 +31,19 @@ Em [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]], [[wiki/entitie
 
 Em [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]], [[wiki/entities/nasser|Násser]] mostra que o `flex-shrink` (padrão 1) quase não aparece: com 1, 5, 6 ou 10, "a gente não enxerga nada"; `0` mantém a base ("esse 300 pixels forever"). `[external]` O motivo é o `flex-wrap: wrap` da demo: as linhas se formam pelo tamanho base, então não falta espaço para encolher; com `nowrap` o efeito aparece. E o encolhimento pesa `flex-shrink × flex-basis`, não só o fator. Depois apresenta `flex` (grow, shrink, basis; padrão `0 1 auto`; `flex: 1` = `1 1 0`) e a fórmula que mais usa: `flex: 1 1 300px`.
 
+## flex-grow "no olho" (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]]: para reproduzir um bloco de 5 colunas do layout, com flexbox "a gente precisa estar utilizando o flex grow, e aí a gente vai verificando no olho [...] não é uma divisão muito exata". O argumento a favor de classes de grid.
+
+## flex-grow 2 e 1 no projeto Nubank (FrontPUSH)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: os blocos do Nubank receberam `flex-grow` 2 e 1, conferidos "no olho mesmo"; "ele se aproxima, mas não tem a exatidão e precisão" de colunas de grid. `[skill: tech-mentor-frontend]` `flex-basis` em % (ou `flex: 0 0 41.66%`) teria dado a mesma precisão sem sair do flexbox.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: flex-grow só age com espaço livre; demo 1, 2, 4
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: aula 07: flex-basis auto, 0 e fixo; base fixa + wrap como "mínimo" dos cards
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: aula 08: flex-shrink (só aparece sem wrap) e o shorthand flex; "sempre 1, 1, 300"
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: prática 2: `flex-wrap` + `flex-basis` como alternativa à media query para quebrar três colunas
+- [[wiki/sources/frontpush-for-while-each-sass]]: "no olho" × classes de grid
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: flex-grow 2/1 "no olho" × grid

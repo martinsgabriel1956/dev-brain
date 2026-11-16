@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 12
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -92,6 +92,14 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o seleto
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `h1 span` "formate apenas o span que esteja dentro das tags h1"; depois o mesmo em SCSS, com o `span` dentro do bloco do `h1` ([[wiki/concepts/aninhamento-css]]).
 
+## Span dentro do h1, de novo (FrontPUSH, Sass aula 03)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]]: "eu quero estilizar apenas o span dentro do h1", escrito aninhado no SCSS e compilado para o seletor descendente.
+
+## Espaço ou colado (FrontPUSH, Sass aula 05)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "a questão ou não de ter o espaço é importantíssimo no CSS". `a .active` = elemento com `.active` dentro de um `a`; `a.active` = o próprio `a` com a classe. No SCSS, o aninhamento põe o espaço, e o `&` cola ([[wiki/concepts/aninhamento-css]]).
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -104,3 +112,5 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `h1 
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: seletor de filho direto (>)
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: irmão adjacente (+)
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: `h1 span` e o equivalente aninhado
+- [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: descendente gerado por aninhamento
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `a .active` × `a.active`; `&`

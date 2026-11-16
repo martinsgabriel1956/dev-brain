@@ -4,7 +4,7 @@ title: "Live Sass Compiler (extensão do VS Code)"
 aliases: ["Live Sass Compiler", "Watch Sass", "glenn2223.live-sass", "ritwickdey.live-sass"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [ferramenta, vs-code, extensao, sass, scss, compilador]
 skill: tech-mentor-frontend
 status: stub
@@ -25,8 +25,13 @@ Extensão do [[wiki/entities/vs-code]] que compila `.scss`/`.sass` para CSS ao s
 - `[external]` A versão de Ritwick Dey foi arquivada em 10/03/2022 e aponta para o fork mantido por Glenn Marks (`glenn2223.live-sass`) (https://github.com/ritwickdey/vscode-live-sass-compiler, https://github.com/glenn2223/vscode-live-sass-compiler).
 - O prefixo automático vem do Autoprefixer embutido, configurável em `liveSassCompile.settings.autoprefix` ([[wiki/concepts/prefixo-de-fornecedor]]). Confiança média sobre o padrão.
 
+## Partials na prática
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]], o Watch Sass gerou `colors.css` e `colors.css.map` para o arquivo de cores até ele virar `_colors.scss`: partials não viram CSS próprio.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: citada na aula de ambiente
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: CSS gerado com `-webkit-`
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: instalação, Watch Sass, `.map`, prefixos
+- [[wiki/sources/frontpush-import-e-partials-sass]]: gera CSS para todo `.scss` que não é partial

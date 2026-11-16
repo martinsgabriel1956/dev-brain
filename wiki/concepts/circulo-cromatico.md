@@ -3,8 +3,8 @@ type: concept
 title: "Círculo cromático"
 aliases: ["roda de cores", "color wheel", "disco cromático", "círculo de cores", "RYB", "círculo de Itten"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, ui-design, cor, circulo-cromatico, harmonia-de-cores, ryb, rgb, hsl]
 skill: ux-ui-mentor
 status: stub
@@ -31,6 +31,11 @@ O azul ↔ laranja da aula é o par do RYB. Num seletor de cor HSL, somar 180° 
 
 No Adobe Color, aproximar os pontos do centro dá "tons mais pastéis"; afastar satura e deixa as cores "mais presentes, mais puras". Arrastar os pontos estreita ou abre o "feixe" das análogas.
 
+## Girar a matiz no código (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue($cor, 60deg)` move a cor 60° no círculo; `complement` dá a oposta (180°).
+
 ## Key Sources
 
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — base de todas as harmonias da aula
+- [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue` e `complement` no Sass

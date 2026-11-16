@@ -4,7 +4,7 @@ title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -50,6 +50,14 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `:hov
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "estados" entram na lista de vantagens do Sass; `[external]` no SCSS, `&:hover` dentro do bloco do botão gera `.botao:hover`.
 
+## :hover com variável (FrontPUSH, Sass aula 04)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], o `:hover` do `.link` recebe `box-shadow: $box-shadow-purple`. O realce deveria valer também em `:focus-visible`, para teclado.
+
+## &:hover (FrontPUSH, Sass aula 05)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o hover do link aninhado precisa de `&:hover`; sem o `&`, o Sass gera `a :hover` (com espaço), que mira os descendentes do `a`. Para o link da página atual, `.active`; `[external]` melhor junto com `aria-current="page"`.
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
@@ -61,3 +69,5 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "est
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `button:hover` (chamado de "pseudo-element" na aula) com `transform: scale` e `transition`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: hover nos botões; focus-within
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: estados como vantagem
+- [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: hover com sombra em variável
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `&:hover`

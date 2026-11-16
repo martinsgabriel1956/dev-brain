@@ -3,8 +3,8 @@ type: concept
 title: "Combinação de fontes"
 aliases: ["font pairing", "combinar fontes", "combinações tipográficas", "par tipográfico"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, ui-design, tipografia, fonte, font-pairing, consistencia, contraste]
 skill: ux-ui-mentor
 status: stub
@@ -40,6 +40,11 @@ Ubuntu + Mukta são duas sem serifa. O contraste vem do desenho: a Ubuntu é "ar
 
 `[skill: ux-ui-mentor]` Duas famílias viram dois tokens (`fontFamily.display`, `fontFamily.body`); trocar o par vira mudança de um lugar só.
 
+## Sora + Source Sans Pro no código (FrontPUSH)
+
+Em [[wiki/sources/frontpush-if-else-sass]], a dupla do projeto Nubank vira dois mixins: `typeface-1` (Sora, títulos) e `typeface-2` (Source Sans Pro, corpo).
+
 ## Key Sources
 
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: duas typefaces, contraste, título característico, corpo sem serifa, oito pares
+- [[wiki/sources/frontpush-if-else-sass]]: Sora + Source Sans Pro como mixins do Sass

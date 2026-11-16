@@ -4,7 +4,7 @@ title: "Componentização"
 aliases: ["componentes", "component-based UI", "componente React"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [frontend, react, componentes, reuso, organizacao]
 skill: tech-mentor-frontend
 status: stub
@@ -22,8 +22,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o mesmo modelo se aplica no mobile: uma pasta por tela (`pages/Home`, `Points`, `Detail`) com estilos no mesmo arquivo.
 
+## Arquivos Sass como "componentes" (FrontPUSH)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]], separar cores, tipografia, layout e botões em partials "utiliza mais ou menos o conceito de componentes" no CSS. Ver [[wiki/concepts/import-e-partials-sass]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: botão reutilizável, diagrama de comentários
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Header reutilizável; uma pasta por página
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: telas como componentes no RN
+- [[wiki/sources/frontpush-import-e-partials-sass]]: partials do Sass por categoria

@@ -3,8 +3,8 @@ type: concept
 title: "Ícones em interfaces"
 aliases: ["ícone", "ícones", "iconografia", "icon", "icons", "ícones de sistema", "system icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [ui, ui-design, elementos-da-interface, icones, iconografia, carga-cognitiva, padroes-de-interface, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -82,6 +82,10 @@ Na aula de paleta, ícones em tons pastéis são o exemplo de por que a [[wiki/c
 
 Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: ícone preenchido ("sempre dá certo com itens preenchidos") com a seta em roxo, o círculo em pastel bem claro e o stroke em amarelo, tudo da [[wiki/concepts/paleta-de-cores|paleta]]. Para aumentar, usar o Scale do [[wiki/entities/figma]], que aumenta o stroke junto; o Move mantém a espessura.
 
+## Fonte de ícones gerada por @each (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]], o mapa `$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f")` gera `.icon-eye::before { content: "\f112" }` etc. `[skill: tech-mentor-frontend]` Fonte de ícones é técnica antiga: o leitor de tela pode ler o caractere, e o ícone some se a fonte falhar; SVG com `aria-hidden` é o padrão atual.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — aula teórica de ícones: definição, patterns, objeto x ação, Material Design, identidade visual, famílias
@@ -94,3 +98,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — submenu do iPhone; ícones entendidos sem ler
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — ícones em tons pastéis como exemplo de variação de cor
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — ícone preenchido roxo sobre pastel com stroke amarelo; Scale x Move
+- [[wiki/sources/frontpush-for-while-each-sass]]: mapa de ícones de fonte gerado por `@each`

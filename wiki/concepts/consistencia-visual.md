@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 36
+source_count: 37
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -150,6 +150,10 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo mantém "a organização e a consistência", e a classe replica o estilo em todo botão copiado: mudar a cor num lugar muda "para todos".
 
+## Consistência no código (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: "uma das coisas mais fundamentais no design é ter consistência [...] a mesma cor é aplicada ao longo do meu projeto". O contraexemplo é mexer na matiz por esquecimento (roxo em 277 e 286 no HSB). Fugir da paleta "é meio que um pecado no design". A defesa no código são as [[wiki/concepts/variaveis-sass|variáveis]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -188,3 +192,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo mantém "a organização
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — as mesmas duas typefaces no projeto todo
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — mesmo vão de parágrafo em todo o site
 - [[wiki/sources/classes-e-ids-no-css]] — a classe aplica o mesmo estilo a todos os botões
+- [[wiki/sources/frontpush-variaveis-sass]]: variáveis como garantia de consistência

@@ -3,8 +3,8 @@ type: concept
 title: "Variação de cores"
 aliases: ["Variação tonal de cor", "variação tonal de cor", "variação tonal", "tints and shades", "tint", "shade", "tons mais claros e mais escuros", "escala de cor", "color scale", "rampa de cor", "variação no HSB"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-16
+source_count: 5
 tags: [ui, ui-design, cor, paleta, paleta-de-cores, hsb, saturacao, brilho, matiz, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -61,8 +61,18 @@ Sombras não devem ser pretas: sobre fundo colorido, a sombra é a mesma cor mai
 
 `[skill: ux-ui-mentor]` Escala de primitivos (50–950, ou `purple-100…900`) separada de tokens semânticos (`color-brand-hover`, `color-surface`). Em **OKLCH**, mudar só o L dá passos de brilho perceptualmente iguais entre matizes, o que a receita em HSB não garante e o que resolve no espaço de cor o que a aula faz girando matiz.
 
+## Na aula de variáveis do Sass
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: "esse aqui está na mesma matiz, é variação de cor, mas aqui eu estou modificando a matiz". Variáveis evitam que a cor "derive" pelo projeto.
+
+## Variações no Figma × no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: `darken`/`lighten` existem, mas "eu não preciso muito disso, porque, quando eu faço a variação de cores aqui no Figma, a gente já faz a versão mais escura, a versão mais clara, então eu passo como variável no próprio Sass". `[external]` `darken(x, 50%)` tira 50 pontos absolutos de luminosidade; `color.scale` é proporcional.
+
 ## Key Sources
 
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — usos, regra brilho x saturação, girar o Hue, ferramenta geradora, sombra na cor do fundo
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — números da receita (base B78), neutros em passos de 3, conferência com ferramenta
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — sombra de hover na cor do botão
+- [[wiki/sources/frontpush-variaveis-sass]]: variação × matiz diferente
+- [[wiki/sources/frontpush-funcoes-sass]]: variações vêm do Figma; `darken`/`lighten` quase não usados

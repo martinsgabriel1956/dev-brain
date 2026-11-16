@@ -4,7 +4,7 @@ title: "Pseudo-elemento CSS"
 aliases: ["pseudo-elemento", "pseudo-element", "pseudo-elements", "::before", "::after", "::first-letter", "::first-line", "::placeholder"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [css, frontend, seletores-css, pseudo-elemento]
 skill: tech-mentor-frontend
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], a linha 
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "facilidades com pseudo-elemento e estados" é uma das vantagens do Sass listadas por [[wiki/entities/nasser|Násser]], sem demonstração nesta aula. `[external]` No SCSS, `&::before` dentro do bloco do elemento gera `elemento::before` (https://sass-lang.com/documentation/style-rules/parent-selector/).
 
+## &::before nos links (FrontPUSH, Sass aula 05)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], [[wiki/entities/nasser|Násser]] diz usar `::before`/`::after` "demais" em links para criar efeitos, aninhados com `&` (como no projeto Nubank). O `content: ""` é o que faz o pseudo-elemento existir.
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — first-letter e first-line; o termo usado para tudo
@@ -51,3 +55,4 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "fac
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: linha de foco com ::after e calc()
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: linha de foco estendida ao textarea
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: pseudo-elementos como vantagem
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `&::before` com `content` vazio

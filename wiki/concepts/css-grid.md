@@ -4,7 +4,7 @@ title: "CSS Grid"
 aliases: ["grid", "display: grid", "grid layout", "grid-template-columns", "grid-template-areas", "grid-area"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [css, layout, grid, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -40,6 +40,14 @@ Em [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]], o layout é tratado
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], no desktop o `.schedule-item` (dia da semana, das, até) vira grid `2fr 1fr 1fr` com `column-gap: 1.6rem`.
 
+## Grid system por classes × CSS Grid (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]], o "sistema de grids" do curso é feito de classes `.grid-N` com largura em px geradas por `@for`. `[skill: tech-mentor-frontend]` O equivalente nativo é `repeat(12, 1fr)` com `gap` e `grid-column: span N`, sem conta de gutter e fluido.
+
+## Grid system sem Grid Layout (FrontPUSH, Sass aula 10)
+
+Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o grid system é feito "nem flexbox, nem grid layout", com largura em %. `[skill: tech-mentor-frontend]` É o modelo pré-Grid (floats do Bootstrap 3); `repeat(12, 1fr)` + `gap` + `grid-column: span N` faz o mesmo com gutter exato.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: grid de três colunas com `fr` e `gap`; uma coluna no mobile
@@ -48,3 +56,5 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], no deskt
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: template-areas, grid-area, fr, self-alignment
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria: `grid-template-areas` desenhado como "mesclar e centralizar" no Excel, `grid-area` por item, `grid-gap`; nova matriz numa media query
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: schedule-item em 2fr 1fr 1fr
+- [[wiki/sources/frontpush-for-while-each-sass]]: sistema de classes × `grid-column: span`
+- [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system de % sem Grid Layout

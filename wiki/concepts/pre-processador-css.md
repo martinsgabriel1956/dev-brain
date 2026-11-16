@@ -4,7 +4,7 @@ title: "Pré-processador CSS (Sass)"
 aliases: ["Sass", "SCSS", "pré-processador", "preprocessor CSS", "Live Sass Compiler", "mixin", "Less", "Dart Sass"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 12
 tags: [css, sass, scss, pre-processador, frontend, build]
 skill: tech-mentor-frontend
 status: draft
@@ -30,6 +30,34 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wi
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], duas formas: a extensão [[wiki/entities/live-sass-compiler]] no [[wiki/entities/vs-code]] (a do curso, botão "Watch Sass") e o [[wiki/entities/scout-app]], gráfico e multiplataforma. A linha de comando ficou de fora por pedir mais conhecimento de terminal. `[external]` Hoje a CLI do Dart Sass (`npm install -D sass`, `sass --watch scss:css --style=compressed`) é o caminho portátil; o Scout-App e a extensão original usavam LibSass, descontinuado.
 
+## @import e partials (FrontPUSH, aula 03)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]], primeiro "fundamento do Sass": `@import` para juntar arquivos por categoria num CSS só, e partials (`_colors.scss`) para não gerar um CSS por arquivo. `[external]` `@import` está deprecado desde o Dart Sass 1.80; o substituto é `@use`/`@forward`. Ver [[wiki/concepts/import-e-partials-sass]].
+
+## Variáveis (FrontPUSH, aula 04)
+
+Em [[wiki/sources/frontpush-variaveis-sass]]: `$nome: valor`, "como se fosse em PHP", para cores, tipografia e propriedades inteiras, em nome da consistência do style guide. Ver [[wiki/concepts/variaveis-sass]].
+
+## Nesting (FrontPUSH, aula 05)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: aninhamento de tags, `&` para colar (`:hover`, `.active`, `::before`) e aninhamento de propriedades. Ver [[wiki/concepts/aninhamento-css]].
+
+## @mixin e @content (FrontPUSH, aula 06)
+
+Em [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin como "função" com argumento padrão e `@content`; aplicação principal é um mixin de responsividade chamado dentro do próprio seletor. Ver [[wiki/concepts/mixin-sass]].
+
+## @if e @else (FrontPUSH, aula 07)
+
+Em [[wiki/sources/frontpush-if-else-sass]]: estruturas condicionais na compilação, para tema light/dark por variável e para os mixins de tipografia e layout do projeto Nubank. Ver [[wiki/concepts/if-else-sass]].
+
+## @for, @while e @each (FrontPUSH, aula 08)
+
+Em [[wiki/sources/frontpush-for-while-each-sass]]: loops para gerar classes (`.grid-1`…`.grid-12`), interpolação `#{}` e a distinção, agora dita certo, entre `@function` (retorna valor) e `@mixin` (inclui código). Ver [[wiki/concepts/loops-sass]].
+
+## @function e @return (FrontPUSH, aula 09)
+
+Em [[wiki/sources/frontpush-funcoes-sass]]: funções que devolvem valor (`grid($col, $total: 12)` em %), funções de cor prontas e operadores. Ver [[wiki/concepts/funcoes-sass]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador, `if/else`, Live Sass Compiler
@@ -37,3 +65,10 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], duas
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: grid system com float em Sass, "seguindo o grid que a gente desenha no Figma"
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de Sass: o que é, vantagens, prefixos, Sass vs SCSS
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de Sass: Live Sass Compiler, Scout-App, `compressed`
+- [[wiki/sources/frontpush-import-e-partials-sass]]: aula 03: `@import`, ordem e partials
+- [[wiki/sources/frontpush-variaveis-sass]]: aula 04: variáveis
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: aula 05: nesting
+- [[wiki/sources/frontpush-mixin-e-content-sass]]: aula 06: @mixin e @content
+- [[wiki/sources/frontpush-if-else-sass]]: aula 07: @if/@else
+- [[wiki/sources/frontpush-for-while-each-sass]]: aula 08: loops e interpolação
+- [[wiki/sources/frontpush-funcoes-sass]]: aula 09: funções

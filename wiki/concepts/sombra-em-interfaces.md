@@ -4,7 +4,7 @@ title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub
@@ -68,6 +68,10 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]]: `text-sha
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o `box-shadow` de várias camadas usado no arquivo todo é o exemplo de variável: muda num lugar só. Vale também para custom properties ([[wiki/concepts/variaveis-css]]).
 
+## Sombra de hover numa variável Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], a sombra do botão sai do Smooth Shadow no Figma na cor do botão ("deixa as minhas sombras mais realistas"), com camadas, alpha e blur; o CSS do Inspect vai para a variável `box-shadow purple` em `_shadows.scss` e entra no `:hover`. Para suavizar, muda no Figma, recopia e substitui só a variável. `[skill: tech-mentor-frontend]` Animar um `box-shadow` com várias camadas repinta a cada quadro; o mais barato é a sombra num `::after` com `opacity` animada.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
@@ -77,3 +81,4 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o `b
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — copiar o box-shadow de quatro camadas do Inspect para o style guide
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: text-shadow no texto, box-shadow na caixa
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: box-shadow de várias camadas numa variável
+- [[wiki/sources/frontpush-variaveis-sass]]: sombra Smooth Shadow numa variável, aplicada no hover

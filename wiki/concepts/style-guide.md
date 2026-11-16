@@ -4,7 +4,7 @@ title: "Style guide (guia de estilo)"
 aliases: ["guia de estilo", "styleguide", "style-guide", "guia de estilos", "UI kit", "guia visual", "style guide de UI", "guia de estilo de interface", "style guide de interface", "mapa de design"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, style-guide, design-system, consistencia, cor, tipografia, figma, documentacao, handoff, design-tokens, css, prototipagem]
 skill: ux-ui-mentor
 status: stub
@@ -99,6 +99,10 @@ Community do Figma (design systems, wireframes, UI Kits) e guidelines de [[wiki/
 
 O style guide descarta o `position` do Figma, mas a aula de CSS do curso ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]) mostra que menu fixo e sticky são decisões de interface. Cabe anotar esse comportamento no guia ("menu gruda no topo"). Ver [[wiki/concepts/menu-fixo]].
 
+## Style guide como fonte das variáveis (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-variaveis-sass]], o style guide do projeto Nubank é a origem das `$variáveis`: "está tudo documentado, as determinadas cores com seus hexadecimais". Um erro no próprio guia: a fonte aparecia como Montserrat, mas é Sora.
+
 ## Key Sources
 
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — definição, momento no workflow e conteúdo do style guide do Nubank
@@ -109,3 +113,4 @@ O style guide descarta o `position` do Figma, mas a aula de CSS do curso ([[wiki
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover a documentar "muito bem claro no meu style guide"; tamanhos de texto; style guide para download prometido
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — seção de style guide para ícones próprios prometida
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: menu fixed/sticky como comportamento a documentar
+- [[wiki/sources/frontpush-variaveis-sass]]: style guide → variáveis do Sass; fonte errada no guia

@@ -4,7 +4,7 @@ title: "Especificidade no CSS"
 aliases: ["especificidade", "CSS specificity", "specificity"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, cascata, seletores, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], um `margin-top: 0` riscado no DevTools perde para um seletor mais longo ("uma profundidade de cascata muito mais forte"). `!important` resolve, mas Mayk o desaconselha: "você fica por tempos procurando por que não está aplicando algum CSS". Ele copia o seletor específico e o restringe a `#schedule-items`. `!important` não é especificidade maior: é outra etapa da cascata.
 
+## Aninhamento soma especificidade (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o slide diz que o nesting "pode emendar n cascatas". `[skill: tech-mentor-frontend]` Cada nível entra no seletor final: `.list li a:hover` = (0,2,2), contra (0,2,0) de um `.list__link:hover`. Quanto mais fundo, mais difícil sobrescrever depois; regra comum: até três níveis.
+
 ## Key Sources
 
 - [[wiki/sources/classes-e-ids-no-css]]: estilo por ID sem tratar de especificidade (tensão registrada na fonte)
@@ -49,3 +53,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], um `marg
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `*` como base, classes e IDs "com importâncias diferentes" por cima; o universal tem especificidade zero
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: id > classe > tag; "força de cascata" é especificidade
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: !important e a alternativa por seletor
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: especificidade de seletores aninhados

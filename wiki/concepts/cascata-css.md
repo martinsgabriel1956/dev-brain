@@ -4,7 +4,7 @@ title: "Cascata do CSS (prioridade entre estilos)"
 aliases: ["cascade", "cascata CSS", "prioridade do CSS", "estilo inline", "estilo incorporado", "CSS externo", "formas de aplicar CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [css, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -58,6 +58,14 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `:r
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], a mesma confusão: "profundidade de cascata" para o que é especificidade. `!important` é apresentado como "a força maior de tudo", o que é a etapa de importância da cascata, acima da especificidade.
 
+## "O CSS lê linha a linha" (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-import-e-partials-sass]], [[wiki/entities/nasser|Násser]] justifica "a ordem importa" no `@import` com "o CSS lê linha a linha". São coisas diferentes: no Sass, usar um mixin antes de importá-lo é **erro de compilação**; na cascata, a ordem só desempata declarações de mesma origem e especificidade, e nunca dá erro. Ver [[wiki/concepts/import-e-partials-sass]].
+
+## "Efeito cascata" = aninhamento? (FrontPUSH, Sass aula 05)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o nesting é "a criação do efeito cascata do CSS com mais facilidade", e o slide diz "pode emendar n cascatas". O que se emenda são seletores descendentes; a cascata é outra coisa (quem vence entre declarações). Terceira ocorrência dessa troca de termos no curso.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — externo, incorporado e inline; "quanto mais para baixo, maior a prioridade"; demo em que o externo vence o incorporado
@@ -69,3 +77,5 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], a mesma 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: "força de cascata" (contradição com a definição)
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: media query não dá força, a ordem decide
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: "profundidade de cascata" e !important
+- [[wiki/sources/frontpush-import-e-partials-sass]]: "o CSS lê linha a linha" × ordem de compilação do Sass
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "efeito cascata" usado para seletor descendente

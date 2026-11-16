@@ -4,7 +4,7 @@ title: "Menu fixo (fixed e sticky header)"
 aliases: ["menu fixo no topo", "sticky header", "fixed header", "header fixo", "navbar fixa", "menu grudado"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [ui, ux, css, navegacao, menu, position, sticky, padroes-de-interface]
 skill: tech-mentor-frontend
 status: stub
@@ -28,7 +28,12 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], o autor 
 - `sticky` para de funcionar se um ancestral tiver `overflow: hidden`/`auto`, e só gruda enquanto o pai está visível (https://developer.mozilla.org/en-US/docs/Web/CSS/position).
 - WCAG 2.2, critério 2.4.11 (Focus Not Obscured): o cabeçalho fixo não pode esconder o elemento focado pelo teclado (https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html).
 
+## Estrutura do menu no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: menu → itens → links, "sempre um debaixo do outro, um dentro do outro", e uma classe `.active` no link da página atual, "até mesmo em um próprio menu responsivo".
+
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: fixed para menus, demonstração do sticky numa `nav`, truque do menu mobile
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]: menu fixo da Apple como padrão de usabilidade
+- [[wiki/sources/frontpush-nesting-aninhamento-sass]]: estrutura e `.active` do menu no Sass
