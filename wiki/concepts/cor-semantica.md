@@ -3,8 +3,8 @@ type: concept
 title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-14
+source_count: 3
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ Cor usada para dizer algo, não para enfeitar: o usuário lê o estado ou o tipo
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: nos ícones do site do autor, "tudo que é laranja está remetendo ao curso de UI Design", "uma seleção que o seu cérebro faz até pela cor". É convenção de marca, não de estado; vale a mesma regra de nunca depender só da cor.
 
+## Cor como informação no mapa e no card
+
+A abertura do módulo de cores amplia a tabela ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]): via vermelha ou laranja no Google Maps ou no Waze = bloqueio ou engarrafamento; card verde = sucesso, concluído; vermelho = erro; amarelo = alerta ou lembrete. A cor também **categoriza**: na Globo, verde = esporte, laranja = entretenimento, vermelho = notícias, "meio que virou padrão" (`[external]` g1 vermelho, ge verde, gshow laranja no globo.com). As associações por idade e cultura ficam em [[wiki/concepts/psicologia-das-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — laranja = curso de UI Design nos ícones do site
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — trânsito no mapa, card verde/vermelho/amarelo, categorias da Globo

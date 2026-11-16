@@ -3,8 +3,8 @@ type: concept
 title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-14
+source_count: 18
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o 
 
 No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder causar um contraste maior" com as fotos de comida e de pessoas ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]). Ver [[wiki/concepts/formas-de-botoes]].
 
+## Contraste como objetivo da cor
+
+Na abertura do módulo de [[wiki/concepts/teoria-das-cores]], contraste é o primeiro dos seis objetivos da cor. Para mandar algo para segundo plano, "eu diminuo o contraste dela com relação ao background"; para acentuar, aumento. Sites de notícia e a [[wiki/entities/apple]] (mesmo peso tipográfico, branco x cinza) são os exemplos ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]). `[skill: ux-ui-mentor]` O texto secundário de baixo contraste ainda precisa de 4.5:1. Pares complementares dão contraste forte ([[wiki/concepts/harmonia-de-cores]]); a [[wiki/concepts/regra-60-30-10]] reserva o acento para o CTA.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -89,3 +93,4 @@ No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder cau
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — retângulo preto a 20% de opacidade atrás do título branco; editor de imagem do Figma (exposição, contraste)
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — fundo do botão na cor de contraste da paleta; o "ímã"
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões retos como contraste no Madero
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — contraste como objetivo da cor; segundo plano com contraste menor; 60-30-10

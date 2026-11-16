@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-13
-source_count: 22
+date_updated: 2026-11-14
+source_count: 23
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -70,6 +70,10 @@ Em [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-too
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: comunidade → "icons" para achar arquivos e plugins (Feather, Bootstrap Icons, Material Design Icons, Iconify); duplicar o arquivo do Piqo; círculos com Ctrl D, Shift e opacidade; cor de branding desconectada do estilo para mudar a opacidade; ícone do plugin chega como frame, e [[wiki/concepts/constraints-no-figma|constraints]] (top/left, center) evitam que ele deforme ao esticar o frame.
 
+## Cores em código
+
+A abertura do módulo de cores promete uma aula prática para representar cores em código no Figma (HSB, hexadecimal, RGB x CMYK), base para compor paleta e variar cores ([[wiki/concepts/modelos-de-cor]]; [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -94,3 +98,4 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — Pen Tool, Bend Tool e alças para vetorizar ícone de telefone
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — plugin do Feather Icons prometido para a aula prática de ícones
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — comunidade, plugins de ícones, Ctrl D, Ctrl G, constraints
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — aula prática de códigos de cor prometida
