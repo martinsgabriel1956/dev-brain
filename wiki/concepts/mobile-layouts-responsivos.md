@@ -3,8 +3,8 @@ type: concept
 title: "Layouts Responsivos — Mobile"
 aliases: ["mobile flexbox", "safe area mobile", "WindowSizeClass android", "responsive layout mobile"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [mobile, layouts, flexbox, safe-area, WindowSizeClass, responsive]
 skill: tech-mentor-mobile
 status: stable
@@ -71,6 +71,11 @@ LayoutBuilder(
 - [[wiki/concepts/mobile-design-system]] — tokens de espaçamento como base para layouts
 - [[wiki/concepts/mobile-performance-listas]] — listas em grids responsivos
 
+## Suprimir no mobile (visão de design)
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], no mobile "tem alguns elementos que são suprimidos": o formulário da home vira um botão. É a contraparte de design dos layouts nativos acima; ver [[wiki/concepts/design-responsivo]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-layouts-responsivos]]
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — elementos suprimidos no mobile (formulário vira botão)

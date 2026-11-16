@@ -3,8 +3,8 @@ type: concept
 title: "Grid de 8 Pontos"
 aliases: ["8pt grid", "8-point grid", "grid de oito pontos", "escala de espaçamento", "spacing scale"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ui, ui-design, layout, espacamento, grid, consistencia, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -44,8 +44,13 @@ O grid de 8 da aula de whitespace é, na prática, uma escala **linear** (passo 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], o grid vira atalho: big nudge de 8 no [[wiki/entities/figma]] faz cada Shift + seta andar 8, e os vãos da aula (16, 32, 128) saem de dois, quatro e dezesseis toques. As colunas de 72 e o gutter de 32 do [[wiki/concepts/grid-de-colunas]] também são múltiplos de 8.
 
+## Material de apoio
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] o autor indica um artigo sobre grids de oito pontos "para vocês compreenderem como é que se dá este processo", ao lado do [[wiki/entities/material-design]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — escala geométrica preferida à linear de passo 8
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — big nudge de 8 no Figma; colunas e gutter múltiplos de 8
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — artigo de 8 pontos no Notion do curso

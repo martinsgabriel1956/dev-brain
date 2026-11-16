@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -58,6 +58,10 @@ Em [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-sc
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o site tem objetivos "primordiais e específicos". Para o aluno, "grade do curso"; para o dono, "inscreva-se", que leva a um formulário (nome, e-mail, telefone). Os dois botões têm o mesmo padding e radius, larguras diferentes. O azul de contraste se repete em labels, ícones e botões. Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Notion como material de apoio
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: "sempre o Notion funcionando como material de apoio", com os links de cada aula. Um módulo vai tratar grid e flexbox no código.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -77,3 +81,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — gradiente azul como única cor de destaque nas ilustrações do site
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones em cards "como eu fiz no curso do FrontPUSH"
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — "grade do curso" + "inscreva-se"; azul como ímã
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Notion com os links de grids

@@ -3,8 +3,8 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,11 @@ O gutter de 32 da aula corresponde à linha "wide" da skill. Os valores de colun
 - [[wiki/concepts/grid-de-icones]] — o mesmo princípio de "réguas", em escala de ícone.
 - [[wiki/concepts/design-responsivo]] — o número de colunas cai em telas menores.
 
+## Padrões prontos e calculadora
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], a Grid System Library traz grids de iOS, Android e Bootstrap (de 6 a 12 colunas, até mobile com duas) e uma calculadora: largura 1.440, 12 colunas, gutter de 32 e margem viram a largura da coluna, "não chutando valores". Os padrões dela não são os da aula: "você desenha e vê qual o melhor padrão para você". 4, 8 e 12 colunas são "esses números que a gente está sempre circundando"; ver [[wiki/concepts/breakpoint]].
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library, Bootstrap, Material Design; 4/8/12 colunas

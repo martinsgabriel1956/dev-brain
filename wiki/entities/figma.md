@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-14
-source_count: 23
+date_updated: 2026-11-15
+source_count: 24
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -74,6 +74,10 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 Em [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Ctrl D ou Ctrl C/Ctrl V para duplicar; botão direito → bring to front; medições automáticas com linhas ao arrastar; plugin Smooth Shadow (layers, alpha, offset, blur, color); duplo clique e "edit style" para ler o estilo de sombra de um arquivo da Community ([[wiki/entities/pegasus-design-system]]). A aula mede o padding à mão; `[external]` o Auto Layout manteria o padding fixo com a largura seguindo o texto.
 
+## Grid System Library
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: kit gratuito de grids de iOS, Android e Bootstrap com versão para Figma (doação opcional de US$ 4).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -99,3 +103,4 @@ Em [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — plugin do Feather Icons prometido para a aula prática de ícones
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — comunidade, plugins de ícones, Ctrl D, Ctrl G, constraints
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — botão de 56 px, bring to front, plugin Smooth Shadow, edit style no Pegasus
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library para Figma
