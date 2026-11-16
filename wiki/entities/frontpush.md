@@ -74,6 +74,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: terceira aula do módulo de interfaces web, na parte de pesquisa e prototipagem inicial, logo depois de usabilidade (ainda não ingerida). O slide traz o logo "W7". Os links (WCAG, Contrast Ratio, Who Can Use, UI Kits e guidelines) ficam no Notion/"Master File" do curso. Ver [[wiki/concepts/acessibilidade]].
 
+## Wireframes: o sketchbook
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o tópico de wireframes abre o módulo de interface web, "um dos tópicos mais importantes". O brinde do curso é um sketchbook para os rabiscos de interface. O exemplo de wireframe da aula é uma página de vendas de curso online.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -97,3 +101,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — aula prática de style guide do módulo de interface web
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — módulo de Interfaces Web, aula 16: style guide e documentação para o dev
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula 03 do módulo de interfaces web: acessibilidade
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframes no módulo de interface web; brinde sketchbook

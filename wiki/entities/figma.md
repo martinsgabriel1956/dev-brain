@@ -90,6 +90,10 @@ Na aula prática de [[wiki/concepts/style-guide]], color, text e effect styles c
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o Inspect dá width, height e o CSS de `box-shadow` e gradiente, e "com relação ao estilo em si, o Figma acerta muito"; o posicionamento gerado "não condiz muito com a realidade" e é descartado (flexbox e grid no código). Padding ajustado na aba Design. `[external]` Com Auto Layout, o CSS gerado sai em flexbox. Ver [[wiki/concepts/handoff-design-dev]].
 
+## Wireframes no Figma
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o Figma aparece ao lado do papel como lugar do wireframe: "onde eu posso simplesmente clicar e arrastar e apresentar uma estrutura inicial que seja muito próxima daquilo que eu vou implementar".
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -119,3 +123,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — share por link, grupos de estilo, aba inspect
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — color, text e effect styles; edit style, detach; share, set as thumbnail, save local copy
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — Inspect: copiar box-shadow e gradiente; descartar position
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe por "clicar e arrastar"

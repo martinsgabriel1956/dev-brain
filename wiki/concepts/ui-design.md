@@ -64,6 +64,10 @@ Roteiro de [[wiki/sources/como-aprender-ui]]: escolher uma ferramenta de prototi
 
 O módulo de interfaces web aplica os elementos e princípios num processo: pesquisa, [[wiki/concepts/wireframe|wireframes]] e protótipo final de UI com [[wiki/concepts/style-guide]] ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Ver [[wiki/concepts/workflow-de-interface-web]].
 
+## Wireframe como design barato e rápido
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], a interface começa em papel e caneta e passa ao [[wiki/concepts/wireframe]] antes do design completo, para que as correções aconteçam na prototipagem e não "direto no software".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
@@ -74,3 +78,4 @@ O módulo de interfaces web aplica os elementos e princípios num processo: pesq
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — espaço em branco, micro e macro espaço, grid de 8 pontos
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — formas geométricas e orgânicas, predominância e harmonia
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — workflow pesquisa → wireframes → protótipo final
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe e papel e caneta antes do design completo

@@ -64,6 +64,10 @@ Na edição "W7" da aula de ícones ([[wiki/sources/icones-comunicacao-senso-com
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: "use e abuse de patterns UI e patterns UX que já estejam bem estabelecidos no mercado". São "soluções experimentadas e testadas" que reduzem a [[wiki/concepts/carga-cognitiva]]. Para UI, há "bibliotecas de componentes que fornecem soluções comprovadas, ou seja, UI Kits e Guidelines", como as de [[wiki/entities/google]], [[wiki/entities/microsoft]] e [[wiki/entities/apple]], feitas por times de UX e UI que já testaram tudo. "Não estou dizendo que é uma regra, mas é uma boa recomendação"; "não estou freando a sua criatividade". Ver [[wiki/concepts/acessibilidade]].
 
+## Biblioteca de wireframes na cabeça
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o sketchbook do curso serve para "desenvolver [...] uma biblioteca de wireframes, de seções na sua cabeça", que melhora com o treino. É um repertório de padrões de seção, no mesmo espírito dos patterns.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -74,3 +78,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — Facebook em japonês como prova de pattern
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — senso comum de ícones; engrenagem mais forte que chave de boca; Viena
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — patterns, UI Kits e guidelines das big techs como recomendação de acessibilidade
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — biblioteca de wireframes e seções no sketchbook
