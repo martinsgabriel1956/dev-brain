@@ -5,7 +5,7 @@ aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
 source_count: 2
-tags: [html, web, hipertexto, historia]
+tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
 ---
@@ -20,9 +20,13 @@ Em [[wiki/sources/classes-e-ids-no-css]], os elementos HTML recebem `class` (vá
 ## Estrutura básica do HTML5
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o Emmet do [[wiki/entities/vs-code]] gera a estrutura do HTML5: `<html>` engloba tudo, `<head>` é o cabeçalho com as tags meta e o `<title>` (texto da aba), `<body>` recebe o conteúdo. HTML puro dá uma página "extremamente arcaica"; o [[wiki/concepts/css]] entra para personalizar. O atributo `style` inline continua existindo e é a forma de maior prioridade na [[wiki/concepts/cascata-css]].
+## Antes do HTML5, tudo era div
+
+Segundo a aula de box model do [[wiki/entities/frontpush|FrontPUSH]], antes do HTML5 "basicamente todo o site era composto por divs", além das tags "desde a fundação do HTML" (link, parágrafo, título, body, head). section, article e as demais [[wiki/concepts/html-semantico|tags semânticas]] vieram com o HTML5 ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/classes-e-ids-no-css]] — atributos class e id
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — estrutura do HTML5, `<head>`, `<title>`, `style` inline
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — antes do HTML5, interfaces feitas de divs; tags semânticas vieram com o HTML5

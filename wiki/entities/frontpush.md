@@ -5,7 +5,7 @@ aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
 source_count: 40
-tags: [curso, frontend, ui-design, landing-page]
+tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
 ---
@@ -143,6 +143,7 @@ A aula 05 da pasta "FrontPush" sai do design e entra no código: slides "Básico
 ## Módulo de CSS
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a primeira aula do módulo de CSS, de "nivelamento": o que é CSS, a regra `elemento { propriedade: valor; }` e as três formas de aplicar (externo, incorporado, inline). O curso também tem um curso de motion, para onde vão as propriedades de animação. O `background-color` preto do exemplo é "o meu preto, sempre utilizo nas minhas interfaces".
+O curso também tem um módulo de código, "Básico CSS" (slide com o logo do FrontPUSH). A aula 03, de [[wiki/concepts/box-model]], segue aulas sobre o que é o CSS, como vinculá-lo e como funcionam as tags (não ingeridas). Tese: "tudo é caixa"; demonstração de padding, margin, border e border-radius numa `section` com lorem ipsum ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 
 ## Key Sources
 
@@ -188,3 +189,4 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a pri
 - [[wiki/sources/classes-e-ids-no-css]] — aula 02 do módulo Básico CSS; verde dos projetos nos botões
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05: seletores e pseudo-classes ("Básico CSS")
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — módulo de CSS, aula 1
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS: box model, tags semânticas, unidades

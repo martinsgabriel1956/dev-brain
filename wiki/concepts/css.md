@@ -5,7 +5,7 @@ aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
 source_count: 7
-tags: [css, frontend, web, historia]
+tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
 ---
@@ -43,6 +43,9 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser defende seletores p
 ## O básico: três famílias e três formas de aplicar
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS é "Cascading Style Sheets, ou seja, folhas de estilo", e "o poder está na junção" com o HTML. O autor divide as propriedades em estilo, layout e motion. A [[wiki/concepts/regra-css|regra]] é `elemento { propriedade: valor; }`, aplicada por arquivo externo (`<link>`, a forma mais usada), `<style>` no `<head>` ou atributo `style`, com prioridade resolvida pela [[wiki/concepts/cascata-css]]. `[external]` A aula o chama de linguagem de "marcação"; o MDN o classifica como linguagem de folha de estilo: https://developer.mozilla.org/en-US/docs/Web/CSS.
+## Box model e propriedades resumo
+
+O módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]] ensina que "tudo é caixa" ([[wiki/concepts/box-model]]) e que muitas propriedades resumem outras: `padding`, `margin`, `border` e `background` ([[wiki/concepts/shorthand-css]]). Para consultar a ordem dos valores, o autor indica o "W3C" com "try it yourself" (na verdade o W3Schools, ver [[wiki/entities/w3c]]). Unidades em [[wiki/concepts/unidades-de-medida-css]] ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 
 ## Key sources
 
@@ -55,3 +58,4 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID, CSS externo como padrão, `.btn` com variações
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — seletores para menos classes; lista de pseudo-classes chamada de pseudo-elements
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — três famílias (estilo, layout, motion); regra; externo, incorporado e inline
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — box model, shorthand (TRBL), unidades, W3Schools como referência

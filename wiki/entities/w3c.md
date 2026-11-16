@@ -5,7 +5,7 @@ aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
 date_updated: 2026-11-16
 source_count: 4
-tags: [padronizacao, web, xml, soap]
+tags: [padronizacao, web, xml, soap, css]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -21,6 +21,9 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 ## Confundido com o W3Schools
 
 Em [[wiki/sources/seletores-e-pseudo-elements-css]], o autor chama o Try CSS Selector de "um artigo no W3C"; a página é do [[wiki/entities/w3schools]], que não tem relação com o consórcio `[external]`.
+## W3C ou W3Schools?
+
+Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], [[wiki/entities/nasser|Násser]] indica "o W3C, que é o órgão que [...] regulamenta tudo que é da internet web" para consultar propriedades CSS, com exemplos e "try it yourself" ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]). `[external]` "Try it Yourself" é o editor do W3Schools (https://www.w3schools.com/css/css_background.asp), site independente do W3C; o W3C publica as especificações (https://www.w3.org/Style/CSS/). Confiança alta de que o site mostrado é o W3Schools.
 
 ## Key Sources
 
@@ -30,3 +33,4 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], o autor chama o Try CSS Sel
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — aceleração do HTML5/CSS3 (oficiais em 2014) após o fim do Flash
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — publica o WCAG (`[external]`)
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — citado por engano no lugar do W3Schools
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — indicado como referência de CSS; o site com “try it yourself” é o W3Schools

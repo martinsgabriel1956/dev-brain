@@ -5,7 +5,7 @@ aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
 source_count: 17
-tags: [css, responsivo, mobile, historia]
+tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
 ---
@@ -65,6 +65,9 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], um dos porquês do [[wik
 ## Propriedades de layout no CSS
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS tem uma família de propriedades de layout, que "constrói o esqueleto do nosso site" e o faz responsivo, "se adapte a qualquer tipo de tela". O módulo de CSS do [[wiki/entities/frontpush]] cobre essa família e a de estilo.
+## Unidades relativas
+
+Na aula de box model ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]), porcentagem e rem são "medidas relativas que ajudam na construção do nosso layout a responsividade", contra o pixel fixo. Ver [[wiki/concepts/unidades-de-medida-css]].
 
 ## Key sources
 
@@ -85,3 +88,4 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — escala grande em tela pequena; container limita a largura
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda fica fixa entre telas; texto à esquerda facilita a responsividade
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — layout como família de propriedades do CSS que dá a responsividade
+- [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — % e rem como medidas relativas para a responsividade
