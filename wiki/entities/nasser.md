@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 29
+date_updated: 2026-11-15
+source_count: 30
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -35,6 +35,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - O espaço depende do meio: conteúdo denso pede menos espaço e mais linhas e cards; prefere escala de espaçamento geométrica à linear; padding deixa o card limpo ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]).
 - Botões guiam o usuário na jornada; o mesmo botão em toda a interface, primário e secundário, área clicável de 44 px ([[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]).
 - A forma do botão segue o que se quer comunicar; arredondado é o coringa, circular aproxima, reto dá seriedade ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
+- Texto alinhado à esquerda é o coringa; justificado nunca; parágrafos de 4 a 8 linhas separados por um line-height ([[wiki/sources/alinhamento-e-espacamento-de-texto]]).
 
 ## Key Sources
 
@@ -67,3 +68,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — aula prática de ícones da edição "W7" (autoria confirmada pelo usuário): plugins, ícones próprios, ícone em círculo, constraints
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links da edição "W7" (autoria confirmada pelo usuário): guiar a jornada, consistência, primário e secundário, área clicável de 44 px, hover
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — aula teórica de formas de botões da edição "W7" (autoria confirmada pelo usuário): reto, arredondado (o coringa que ele usa), circular, chanfrado, diagonal, hexagonal
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height

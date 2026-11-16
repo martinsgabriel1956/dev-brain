@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -18,7 +18,12 @@ Linguagem **declarativa** que separa estilo de conteúdo: regras visuais aplicad
 
 Por ser código com tags, um [[wiki/concepts/formato-svg|SVG]] inline pode ter os caminhos estilizados e animados pelo CSS; para [[wiki/entities/nasser|Násser]], é daí que "a magia do Motion surgiu" ([[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]]). `[external]` Via `<img>` ou `background-image` o CSS da página não alcança os caminhos.
 
+## Alinhamento padrão
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "o padrão do CSS": as tags de texto e de título já vêm assim. `[external]` Mais precisamente, o valor inicial de `text-align` é `start`, que segue a direção do idioma: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align. Ver [[wiki/concepts/alinhamento-de-texto]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — SVG é código com tags, então o CSS manipula seus caminhos (base do motion)
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)

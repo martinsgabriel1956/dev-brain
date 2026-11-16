@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -50,6 +50,10 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Alinhamento e espaçamento de parágrafo
+
+Na aula 4 do módulo de tipografia ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), alinhamento e espaçamento entram como "variáveis tipográficas" ao lado de altura de linha e largura de texto (aula 3, ainda fora da wiki). Esquerda é o padrão, centralizado só em títulos e cards curtos, justificado nunca: ver [[wiki/concepts/alinhamento-de-texto]]. Parágrafos de 4 a 8 linhas, separados por um vão do tamanho do line-height: ver [[wiki/concepts/espacamento-entre-paragrafos]]. O line-height vira unidade de espaçamento, não só de entrelinha.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +63,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — alinhamento (esquerda padrão, justificado nunca) e vão de parágrafo = line-height

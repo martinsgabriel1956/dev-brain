@@ -3,8 +3,8 @@ type: concept
 title: "Espaço em Branco"
 aliases: ["whitespace", "espaço negativo", "negative space", "respiro", "micro espaço", "macro espaço", "micro e macro espaço"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, layout, espaco-em-branco, simplicidade, hierarquia-visual, espacamento, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: draft
@@ -58,6 +58,10 @@ Espaço é o recurso padrão para separar. A linha aparece quando é preciso "um
 
 Na aula de espaçamento e linhas, o espaço dentro do elemento é o **padding** do CSS. Num card, afastar o conteúdo da borda deixa o design "mais clean"; o autor faz isso em todos os cards do site dele. A mesma aula diz que o tamanho do espaço depende do meio: conteúdo simples aceita espaços grandes, conteúdo denso pede espaços menores com linhas e cards ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]). Ver [[wiki/concepts/densidade-de-informacao]] e [[wiki/concepts/escala-de-espacamento]].
 
+## Espaço entre parágrafos
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o vão entre parágrafos tem o tamanho do line-height, "o clássico enter"; maior que isso começa a separar o conteúdo, assim como uma linha divisória. Sem vão nenhum, o texto fica "pesado, cansativo". Ver [[wiki/concepts/espacamento-entre-paragrafos]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — espaço em branco como ferramenta de simplicidade
@@ -68,3 +72,4 @@ Na aula de espaçamento e linhas, o espaço dentro do elemento é o **padding** 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — linha como reforço quando o espaço não basta
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — padding no card; tamanho do espaço depende do meio
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática no Figma: vãos de 16, 32 e 128 medidos com Alt
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — vão de parágrafo = line-height; espaço grande separa o texto

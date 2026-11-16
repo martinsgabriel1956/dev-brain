@@ -3,8 +3,8 @@ type: concept
 title: "Eixo Visual"
 aliases: ["eixo", "eixo de alinhamento", "eixo de reforço", "eixo de movimento", "eixo de continuidade", "visual axis"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, layout, alinhamento, grid, hierarquia-visual]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,11 @@ A relação entre os eixos (iguais ou não) é o que [[wiki/concepts/simetria-vi
 
 `[skill: ux-ui-mentor]` Infinite scroll, consequência do eixo de continuidade, serve a feeds exploratórios mas impede bookmarking e esconde o rodapé.
 
+## Eixo do texto
+
+Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhamento de texto é "literalmente aquele eixo onde o texto está alinhado". O eixo à esquerda é o padrão porque a borda esquerda fica fixa em qualquer largura de tela; centralizado fica para títulos e cards. Ver [[wiki/concepts/alinhamento-de-texto]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
+- [[wiki/sources/alinhamento-e-espacamento-de-texto]] — alinhamento de texto como eixo; esquerda como padrão
