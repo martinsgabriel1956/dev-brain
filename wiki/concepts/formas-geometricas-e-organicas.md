@@ -3,8 +3,8 @@ type: concept
 title: "Formas Geométricas e Orgânicas"
 aliases: ["formas em UI", "geométrico vs orgânico", "forma geométrica", "forma orgânica", "psicologia das formas", "border-radius e personalidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, formas, geometrico, organico, branding, border-radius, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -71,6 +71,10 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 A aula de botões "W7" aplica o eixo a seis formas de botão ([[wiki/concepts/formas-de-botoes]]) e reforça que "um site totalmente geométrico [...] fica muito longe da pessoa": precisa de "um tempero" orgânico ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]). `[external]` A preferência por curvas tem base experimental: Bar e Neta (2006), *Psychological Science* (https://doi.org/10.1111/j.1467-9280.2006.01759.x).
 
+## Da forma para a fonte
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a pergunta da aula de formas ("qual é a mensagem?") "se aplica demais à tipografia". O restaurante italiano é orgânico (o chefe faz a pizza na hora, "não é linha de produção como o McDonald's") e por isso tende à serifada. Ver [[wiki/concepts/classificacao-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -81,3 +85,4 @@ A aula de botões "W7" aplica o eixo a seis formas de botão ([[wiki/concepts/fo
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — retângulo e círculo como formas dominantes
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — versão "W7" da aula: Dropbox, Madero, Coco Bambu, arquitetura, Nubank, C6 Bank
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — formas aplicadas a botões; geométrico puro afasta
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — a predominância orgânica leva o restaurante italiano à serifa

@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -50,6 +50,12 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Escolher e combinar
+
+A aula que fecha a parte de tipografia ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]) dá o método. **Escolher:** pesquisa com quatro perguntas (qual a mensagem, o que empresas similares usam, qual o público, pago ou gratuito; ver [[wiki/concepts/licenca-de-fontes]]). Placa de pare pede sem serifa; restaurante italiano, "orgânico", tende à serifada; público mais velho pede escala e contraste maiores. **Combinar** ([[wiki/concepts/combinacao-de-fontes]]): duas typefaces, contraste visível, título "mais temático", corpo sem serifa com família ampla de pesos, consistência. O site do autor usa Ubuntu + Mukta, todos os pares sugeridos vêm do [[wiki/entities/google-fonts]], e a pesquisa por tema passa pela [[wiki/concepts/classificacao-tipografica]] (country → serifas grossas, festa alemã → blackletter).
+
+`[external]` A regra "corpo sempre sem serifa" é princípio da aula: em telas de alta resolução não há diferença consistente de legibilidade (https://www.nngroup.com/articles/serif-vs-sans-serif-fonts-hd-screens/).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +65,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — método de escolha (mensagem, similares, público, licença) e de combinação (duas typefaces, contraste, consistência)

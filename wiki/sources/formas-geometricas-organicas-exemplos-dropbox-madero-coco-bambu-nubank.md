@@ -110,3 +110,4 @@ Aula do módulo de [[wiki/concepts/elementos-da-interface]] da edição com o lo
 ## Ver também
 
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — continuação aplicada a botões; Madero e arquitetura de novo
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — aula de escolha e combinação de fontes; restaurante italiano "orgânico" → serifada

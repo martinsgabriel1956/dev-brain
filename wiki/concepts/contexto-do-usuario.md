@@ -3,8 +3,8 @@ type: concept
 title: "Contexto do Usuário no Design"
 aliases: ["perfil do usuário", "preferências e comportamento do usuário", "cultura no design", "design para idosos", "público-alvo da interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ux, ui-design, usuario, cultura, acessibilidade, idosos, design-inclusivo]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ O [[wiki/entities/creatorpush]], de proposta "mais baixo nível", ganha formas m
 
 Num app em japonês ou chinês, "uma boa ilustração ou uma boa imagem" dá ao usuário ocidental a ideia mínima do que fazer; na biometria, uma animação antes da foto do rosto explica a etapa ([[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]]).
 
+## Público e tipografia
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], "qual o público?" é uma das quatro perguntas de escolha de fonte. Público mais velho pode ter mais problema de visão: "a escala tem que ser um pouco maior, o contraste tem que ser maior", e a seleção de typefaces fica mais "ríspida". O autor lembra que também usa óculos, mesmo sendo novo.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -61,3 +65,4 @@ Num app em japonês ou chinês, "uma boa ilustração ou uma boa imagem" dá ao 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — loja de bebês: pais querem algo seguro
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — Creator Push mais redondo; arquitetura mais reta
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — imagem como guia em app de idioma desconhecido e na biometria
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — público mais velho pede escala e contraste maiores

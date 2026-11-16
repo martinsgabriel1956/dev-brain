@@ -3,8 +3,8 @@ type: concept
 title: "Mood Board"
 aliases: ["moodboard", "painel de referências", "painel semântico", "referências visuais"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, design, pesquisa, referencias, criatividade]
 skill: ux-ui-mentor
 status: stub
@@ -26,6 +26,11 @@ A fonte promete explicar o método de pesquisa em aula futura; ainda não ingeri
 - [[wiki/concepts/mito-do-genio-mozart]] — criatividade como produto de treino, não dom.
 - [[wiki/concepts/ui-design]] — o mood board alimenta escolhas de cor, tipografia e forma.
 
+## Pesquisa de fontes por referência
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a escolha de fonte parte de pesquisar o que outros fazem: buscar "restaurante italiano" e cardápios no Google, "casamento convites", "convite espacial", "festa country". É a mesma lógica do repertório: ver como os outros aplicam antes de escolher. O autor promete posts com seus pares "para a gente ter como biblioteca".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — pesquisar referências antes de escolher fonte
