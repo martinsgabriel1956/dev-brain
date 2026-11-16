@@ -76,6 +76,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "
 
 A [[wiki/concepts/biblioteca-de-wireframes]] é um repertório de "padrões de serviço de produto": hero, depoimentos, cadastro. A página se monta juntando-os, e "não existe esse negócio de bloqueio criativo" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## Sites do mesmo tipo, mesmo esqueleto
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], os portfólios de [[wiki/entities/jonas-miller]] e [[wiki/entities/fabio-freire]] "estão na mesma linha, têm mais ou menos o mesmo page map". Násser parte desse esqueleto comum e só acrescenta o que o caso dele pede. Ver [[wiki/concepts/page-map]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -89,3 +93,4 @@ A [[wiki/concepts/biblioteca-de-wireframes]] é um repertório de "padrões de s
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — biblioteca de wireframes e seções no sketchbook
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — patterns por tipo de página (cadastro, venda, pricing) como base do page map
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — seções prontas (hero, depoimentos, cadastro) como padrões a combinar
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólios de freelancer convergem no mesmo page map

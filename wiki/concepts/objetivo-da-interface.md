@@ -63,6 +63,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], "
 
 Cada modelo de seção tem sua situação: app, desktop, depoimentos, lista de espera. O [[wiki/concepts/secao-hero|hero]] serve para "dar a primeira informação do que o seu site faz" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## O objetivo de um portfólio freelancer
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], o objetivo do portfólio de [[wiki/entities/jonas-miller]] "é que você entre no site dele, conheça o trabalho dele e solicite alguma proposta". Por isso o CTA aparece no hero e de novo no fim, onde é "o objetivo principal do seu site". O menu fixo de quatro itens serve para "deixar os objetivos muito bem claros".
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -73,3 +77,4 @@ Cada modelo de seção tem sua situação: app, desktop, depoimentos, lista de e
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — levantamento de requisitos e objetivos principais no wireframe
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — o objetivo como pergunta do briefing e base do page map
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — cada modelo de wireframe tem a sua situação de uso
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólio freelancer: o objetivo é o pedido de proposta, no hero e no fim

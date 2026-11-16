@@ -59,6 +59,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o
 
 A primeira aula prática de wireframes do [[wiki/entities/frontpush|FrontPUSH]] mostra um catálogo de modelos de seção, quase todos de [[wiki/concepts/secao-hero|hero]]: app, headline + ilustração, perspectiva, texto em tópicos, desktop, depoimentos e cadastro. A tese é montar a página como um "Frankenstein" desses modelos, guiado pelo [[wiki/concepts/page-map]] e por uma [[wiki/concepts/biblioteca-de-wireframes]] ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). Os modelos já usam perspectiva e ilustração, e ele anuncia os wireframes "de baixa fidelidade" do [[wiki/entities/nubank]] e a passagem do protótipo do FrontPUSH "para o protótipo de alta fidelidade".
 
+## Page map por referências
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], [[wiki/entities/nasser|Násser]] explica de onde veio o [[wiki/concepts/page-map]] do wireframe do portfólio dele: hero (headline objetiva e direta, parágrafo, ilustrações e branding, botões com call to action), processo, workflow, cases, CTA final e quem sou eu, tirados de sites de referência ([[wiki/entities/jonas-miller]], [[wiki/entities/fabio-freire]]). Ele mostra também os protótipos de baixa e de alta fidelidade do próprio site e do [[wiki/entities/frontpush]]: "sempre começa assim".
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -71,3 +75,4 @@ A primeira aula prática de wireframes do [[wiki/entities/frontpush|FrontPUSH]] 
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — aula dedicada: definição, uso com cliente, foco, page map, papel e caneta
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — pt.2 da série: briefing, objetivo, page map, leitura em F e em Z
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes de seção (Hero), PageMap e o Frankenstein
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio tirado de referências; baixa e alta fidelidade do FrontPUSH

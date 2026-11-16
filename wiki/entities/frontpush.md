@@ -86,6 +86,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], N
 
 A página de vendas é "um Frankenstein" dos modelos de wireframe, "feita na correria". O protótipo já previa animação, botões "quero me inscrever", vídeo de apresentação (não feito) e ilustrações de como "o curso de wire, o curso de front, o curso de motion" se conectam, antes da alta fidelidade ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## Nasceu da página pessoal
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]]: o FrontPUSH saiu do redesign do site pessoal de Násser; "a princípio ia ser uma página minha", e ele não sabia se usaria o nome FrontPUSH ou a própria marca. A baixa fidelidade já tinha o processo (design de interface web; web, backend e front-end; animações e tecnologias), os projetos dos cursos e os planos de venda. Depois vieram a grade de três minicursos, preview de aulas (não implementado), bônus exclusivos, inscrição e o cadeado da garantia de sete dias. "Às vezes é só pontinho do iceberg, tem muito processo de pesquisa e de prototipagem por trás."
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -112,3 +116,4 @@ A página de vendas é "um Frankenstein" dos modelos de wireframe, "feita na cor
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframes no módulo de interface web; brinde sketchbook
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — CTA repetido como pattern; page map seguido de patterns
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — página de vendas como Frankenstein de wireframes; protótipo inicial
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — nasceu do redesign do site pessoal; protótipos de baixa e alta fidelidade

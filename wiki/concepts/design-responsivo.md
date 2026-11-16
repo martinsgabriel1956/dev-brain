@@ -30,6 +30,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a
 
 O grid serve para "o mesmo conteúdo estar disposto em vários dispositivos garantindo a acessibilidade e o consumo do conteúdo da melhor forma possível" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). O [[wiki/concepts/style-guide]] documenta tipografia separada para desktop e mobile. Ver [[wiki/concepts/grid-de-colunas]].
 
+## Dizer responsivo sem a palavra
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser elogia o site de [[wiki/entities/jonas-miller]] por escrever "funciona em qualquer dispositivo" em vez de "design responsivo", porque muita gente não sabe o que a palavra quer dizer. `[skill: ux-ui-mentor]` É o princípio "claro" de UX writing: a palavra do ofício vira a do cliente.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -40,3 +44,4 @@ O grid serve para "o mesmo conteúdo estar disposto em vários dispositivos gara
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": exportar tamanhos diferentes e carregar por media query; mobile, tablet e desktop
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mouse x dedo; botões não encolhem no mobile
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — grid para o mesmo conteúdo em vários dispositivos; tipografia desktop e mobile no style guide
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "funciona em qualquer dispositivo" no lugar de "responsivo"

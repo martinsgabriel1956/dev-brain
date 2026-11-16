@@ -79,6 +79,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 O curso tem "um módulo específico só para a gente desenvolver o Nubank". Na aula 08, o wireframe do Nubank troca um parágrafo por tópicos ("resolvo tudo pelo app", "100% gratuito", "não tem taxas"); os wireframes de baixa fidelidade ficam para a aula seguinte ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## Projeto de estudo no FrontPUSH
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser cita de passagem um projeto no Nubank (frase confusa na legenda: "qual projeto custo eu coloquei aqui no Nubank") e promete mostrá-lo "com mais detalhes quando a gente [...] desenvolver esse projeto" no curso.
+
 ## Key Sources
 
 
@@ -96,3 +100,4 @@ O curso tem "um módulo específico só para a gente desenvolver o Nubank". Na a
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — arquivo de estudo no Figma: link no Notion, fonte Sora, headings 48/36/24
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — projeto Nubank anunciado como case do style guide
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — wireframe com benefícios em tópicos; módulo próprio no curso
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — projeto de estudo do curso, detalhes prometidos

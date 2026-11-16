@@ -65,6 +65,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 No catálogo de wireframes Hero, a variante de cadastro leva um primary button ao lado do campo, para "cadastrar ou simplesmente informar"; o protótipo do FrontPUSH já tinha "os botões de quero me inscrever" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## CTA no começo e no fim da página
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], o hero leva "botões com call to action" e a página fecha com a mesma chamada ("solicitar proposta", "get in touch"), porque ela "é o objetivo principal do seu site". Ver [[wiki/concepts/page-map]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -75,3 +79,4 @@ No catálogo de wireframes Hero, a variante de cadastro leva um primary button a
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados normal e hover e a transição no style guide
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — documentar o padding (48 px) em vez da largura fixa
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — primary button no wireframe de cadastro; "quero me inscrever"
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — CTA no hero e repetido no fim do portfólio
