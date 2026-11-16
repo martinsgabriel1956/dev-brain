@@ -25,8 +25,13 @@ Empresa de tecnologia (iPhone, Mac). Nas aulas de UI, o site é referência: emp
 
 Citada como usuária de botão de bordas circulares, "para poder trazer mais para perto" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Branding e objetivo
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], a Apple é o exemplo de [[wiki/concepts/branding]]: produtos premium, clean, "referência no mercado", e uma pegada que se repete em produto, serviço e site ("um conversa com o outro"). É também exemplo de [[wiki/concepts/objetivo-da-interface|objetivo]]: "mostrar os seus produtos e fazer com que você compre", com a sacolinha de e-commerce.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline da Apple citada como referência para montar style guide
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — branding coerente e objetivo de e-commerce

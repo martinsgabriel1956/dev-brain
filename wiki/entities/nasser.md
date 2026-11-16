@@ -40,6 +40,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - O style guide é o mapa que traduz o design para o CSS: documentar sempre gradiente, camadas de sombra, cor e radius por tamanho; descartar o position do Figma; três estados por módulo ([[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]).
 - Nós não somos o usuário: contraste no mínimo AA, textos invisíveis em imagens, KISS e patterns consagrados como acessibilidade ([[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]).
 - Wireframe é design barato e rápido: preto e branco, estrutura antes do visual, corrigir na prototipagem e não no software; page map das dobras antes; começa em papel e caneta ([[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]]).
+- Antes do wireframe, o briefing: marca, branding, diferencial, carro-chefe e o objetivo da interface; o page map sai de patterns pesquisados ([[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]).
 
 ## Key Sources
 
@@ -79,3 +80,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — aula 16 do módulo de Interfaces Web (autoria inferida): o que documentar para o dev, radius proporcional, position contra flexbox e grid, normal/hover/clicável
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade do módulo de interfaces web do FrontPUSH (logo "W7"; autoria inferida): WCAG, contraste A/AA/AAA, textos invisíveis, KISS, patterns e guidelines
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframes, parte 1: o que é, uso, foco, page map, papel e caneta
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — aula 2 de wireframes da edição "W7" (autoria inferida): briefing, objetivo, page map, leitura em F e em Z

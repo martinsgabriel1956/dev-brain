@@ -51,6 +51,10 @@ Na abertura do módulo de interfaces web, wireframes são "protótipos de baixa 
 
 Na aula de [[wiki/concepts/style-guide]], wireframe é uma das três etapas (pesquisa, wireframe, grids) que levam ao protótipo final, onde entram o style guide e as cores. O arquivo de wireframes foi compartilhado por link com os alunos: exemplo de documento que evolui sem esperar ficar perfeito ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Antes do wireframe: briefing e page map
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o wireframe é a última etapa de uma sequência: [[wiki/concepts/briefing]] (marca, diferencial, carro-chefe, objetivo), depois flow, site map e [[wiki/concepts/page-map]], e só então os "wireframes que condizem com esse page map". O page map de portfólio começa pelo hero: headline "objetiva e direta" e um parágrafo mais detalhado abaixo. Os padrões de leitura em F e em Z entram como boa prática ao projetar ([[wiki/concepts/hierarquia-visual]]).
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -61,3 +65,4 @@ Na aula de [[wiki/concepts/style-guide]], wireframe é uma das três etapas (pes
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — abertura do módulo de interfaces web: baixa fidelidade, depois do pagemap; biblioteca no Notion
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — pesquisa, wireframe e grids antes do style guide; arquivo compartilhado por link
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — aula dedicada: definição, uso com cliente, foco, page map, papel e caneta
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — pt.2 da série: briefing, objetivo, page map, leitura em F e em Z

@@ -68,6 +68,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o sketchbook do curso serve para "desenvolver [...] uma biblioteca de wireframes, de seções na sua cabeça", que melhora com o treino. É um repertório de padrões de seção, no mesmo espírito dos patterns.
 
+## Patterns por tipo de página
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "acredite, tem padrões, existem padrões" para cada tipo de página. Página de cadastro pede nome e e-mail; página de venda repete o CTA "em várias partes da página" (o [[wiki/entities/frontpush]] mostra "quero me inscrever" três vezes); pricing tem planos em escada (standard ou prata, depois gold). Os patterns se acham por "observação e pesquisa" em sites como o [[wiki/entities/ui-movement]] e viram o [[wiki/concepts/page-map]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -79,3 +83,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — senso comum de ícones; engrenagem mais forte que chave de boca; Viena
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — patterns, UI Kits e guidelines das big techs como recomendação de acessibilidade
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — biblioteca de wireframes e seções no sketchbook
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — patterns por tipo de página (cadastro, venda, pricing) como base do page map

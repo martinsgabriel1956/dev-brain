@@ -1,0 +1,38 @@
+---
+type: concept
+title: "Briefing"
+aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
+date_created: 2026-11-15
+date_updated: 2026-11-15
+source_count: 1
+tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
+skill: ux-ui-mentor
+status: stub
+---
+
+# Briefing
+
+Conversa no começo do projeto para "extrair do cliente o que ele quer, o que ele precisa da melhor forma possível". As perguntas valem "para mim ou para o cliente, ou os dois". [[wiki/entities/nasser|Násser]] o chama de "clássico levantamento de requisitos", útil "tanto para o back-end, tanto para o front-end, como para protótipos de UI" ([[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]).
+
+## Perguntas-chave da aula
+
+| Pergunta | Para quê |
+|---|---|
+| Qual é a sua marca? Qual é o seu [[wiki/concepts/branding]]? | A "pegada" que o produto passa em tudo |
+| Qual é o diferencial do produto ou serviço? | O que destacar |
+| Qual é o carro-chefe? Por quê? Quais as vantagens? | O que os clientes querem e por quê |
+| Qual é o principal [[wiki/concepts/objetivo-da-interface\|objetivo da interface]]? | O que o usuário deve fazer (cadastro, compra, contato) |
+
+O cliente "muito provavelmente [...] não sabe exatamente como mostrar isso da melhor forma"; o designer traduz as respostas com UX e heurísticas. As respostas alimentam o flow, o site map, o [[wiki/concepts/page-map]] e depois o [[wiki/concepts/wireframe]].
+
+`[skill: ux-ui-mentor]` O briefing da aula equivale à entrevista com stakeholders: ouve o negócio, não o usuário final. A skill (`references/pesquisa.md`) separa as duas coisas; o que o cliente diz sobre os usuários é hipótese a validar com pesquisa, não fato.
+
+## Relação com outros conceitos
+
+- [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]]: o briefing é o levantamento de requisitos do design.
+- [[wiki/concepts/soft-skills]]: a comunicação é "a soft skills que você mais tem que ter desenvolvido nesse processo".
+- [[wiki/concepts/ux-design]]: o designer acrescenta valor ao que o cliente pede.
+
+## Key Sources
+
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]

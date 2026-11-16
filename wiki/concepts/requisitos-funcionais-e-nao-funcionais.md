@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-11-03
-source_count: 11
+date_updated: 2026-11-15
+source_count: 12
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -49,6 +49,10 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] trata o levantamento de requisitos como proteção contra o excesso: em essência, é entender o negócio. Em empresa consolidada, ele ajuda a saber o que é ou não necessário. Em negócio novo, a validação do produto pesa mais ([[wiki/concepts/abordagem-evolutiva]]).
 
+## Briefing: o levantamento de requisitos do design
+
+[[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] chama o [[wiki/concepts/briefing]] de "clássico levantamento de requisitos", útil "tanto para o back-end, tanto para o front-end, como para protótipos de UI". As perguntas mudam (marca, diferencial, carro-chefe, objetivo da interface), mas a regra é a mesma desta página: perguntar antes de construir.
+
 ## Key Sources
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
@@ -60,6 +64,7 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Requisitos arquiteturais como critério de adoção de padrão
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — levantamento de requisitos como proteção contra over-engineering
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — briefing como levantamento de requisitos para UI
 
 ## Key sources (adição 2026-10-07)
 

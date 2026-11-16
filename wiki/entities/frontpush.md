@@ -78,6 +78,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o tópico de wireframes abre o módulo de interface web, "um dos tópicos mais importantes". O brinde do curso é um sketchbook para os rabiscos de interface. O exemplo de wireframe da aula é uma página de vendas de curso online.
 
+## CTA repetido e page map
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], Násser mostra o próprio site como caso de pattern de página de venda: "inscreva-se", "quero me inscrever" repetido, apresentação e detalhes do produto. "Eu simplesmente segui isso no page map e montei o meu estilo." O objetivo é o clique em "inscrever-se". Ver [[wiki/concepts/page-map]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -102,3 +106,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — módulo de Interfaces Web, aula 16: style guide e documentação para o dev
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula 03 do módulo de interfaces web: acessibilidade
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframes no módulo de interface web; brinde sketchbook
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — CTA repetido como pattern; page map seguido de patterns

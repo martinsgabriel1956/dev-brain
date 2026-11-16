@@ -113,6 +113,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], Násser mostra a própria interface: um texto branco, outro em escala de cinza, para criar hierarquia de texto sem "uma palette de cor pobre". Ver [[wiki/concepts/contraste]].
 
+## F e Z na aula de wireframes
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], Násser apresenta os dois padrões como "boas práticas de leitura" para projetar wireframes. **F** para "conteúdo mais pesado", como portais de notícia (G1): "lê um pouquinho, desce, lê um pouquinho, desce", e volta para cima para reler. **Z** para "conteúdo que exige um pouco mais de atenção": "eu crio pontos de atenção de forma que a sua leitura seja em Z", com headline, ilustração e CTA puxando o olho "pelo contraste e pelo tamanho". O critério da aula (atenção) difere do desta página (quantidade de texto), mas os dois apontam para landing pages no Z. `[external]` A Nielsen Norman Group trata o F como sintoma de texto mal formatado, não como layout a imitar (https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -135,3 +139,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — três tons de branco/preto como estilos para hierarquia textual
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — código do style guide mais brando para dar hierarquia
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — texto branco x cinza como hierarquia de texto
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — F para conteúdo pesado, Z para pontos de atenção (contraste e tamanho)

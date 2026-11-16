@@ -3,8 +3,8 @@ type: entity
 title: "Dribbble"
 aliases: ["dribble", "dribbble.com"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [dribbble, design, referências, inspiração]
 skill: tech-mentor-frontend
 status: stub
@@ -23,6 +23,11 @@ Buscar por componente/layout específico com filtro "web":
 
 O objetivo é pegar **referências de layout e composição**, não copiar. Ver o que profissionais de design resolveram para o mesmo problema.
 
+## Outras fontes de inspiração
+
+No módulo de UI do [[wiki/entities/frontpush]], Násser usa o [[wiki/entities/ui-movement]] com o mesmo fim: estudar como landing pages e pricing são estruturados ([[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]).
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — UI Movement como fonte de inspiração parecida

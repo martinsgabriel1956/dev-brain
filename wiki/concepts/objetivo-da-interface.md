@@ -55,6 +55,10 @@ Na aula de formas, a pergunta-guia é "o que você está querendo passar?": prec
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o wireframe em preto e branco existe para discutir "o conteúdo, é o grosso, são o levantamento de requisitos, são os objetivos principais". O exemplo é uma página de vendas de curso cujo objetivo é a chamada para cadastro. O [[wiki/concepts/page-map]] monta a jornada "em acordo com os objetivos" (slide).
 
+## A pergunta central do briefing
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], "qual é o principal objetivo da sua interface?" é a pergunta que o [[wiki/concepts/briefing]] não pode pular: "o que você quer que o usuário faça". Portfólio quer que o visitante mande "uma mensagem, uma proposta"; página de venda quer "a inscrição" (e-mail, telefone); a [[wiki/entities/apple]] quer a compra ("tem aqui a sacolinha, então é um e-commerce"). O objetivo vem antes de tudo: "para que você construa o flow, o site map, o page map, a interface, os wireframes com base nisso" ([[wiki/concepts/page-map]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -63,3 +67,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — "o que você está querendo comunicar?" como pergunta de partida para escolher formas
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — forma do botão escolhida pelo que se quer comunicar
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — levantamento de requisitos e objetivos principais no wireframe
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — o objetivo como pergunta do briefing e base do page map

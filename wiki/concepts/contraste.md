@@ -78,6 +78,10 @@ No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder cau
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], contraste é a primeira recomendação de [[wiki/concepts/acessibilidade]]: "saber distinguir elementos dos outros", garantir legibilidade, e "bem aplicado, ele até guia [...] o usuário pela sua jornada". Há três notas: A mínima, AA média e AAA alta. Násser mira "no mínimo" em AA e reserva AAA para interfaces de governo de massa, como a do auxílio emergencial. Checkers: Contrast Ratio e [[wiki/entities/who-can-use]]. `[external]` No [[wiki/concepts/wcag]], contraste só tem critérios AA (1.4.3) e AAA (1.4.6); não existe nota A de contraste.
 
+## Contraste e tamanho puxam a leitura em Z
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "pelo contraste e pelo tamanho, eu tendo a olhar aquilo que é maior". Na leitura em Z, headline, ilustração e CTA viram pontos de atenção por contraste ([[wiki/concepts/hierarquia-visual]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -99,3 +103,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões retos como contraste no Madero
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — branco ou preto no gradiente laranja; preto obrigatório no amarelo
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade: contraste guia a jornada; A/AA/AAA; AA no mínimo, AAA para governo
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — contraste e tamanho como pontos de atenção na leitura em Z
