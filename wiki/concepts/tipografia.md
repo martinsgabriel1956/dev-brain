@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 15
+source_count: 16
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -100,6 +100,10 @@ Na aula de escala ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-e
 
 A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-texto]]) trata as duas propriedades que deixam o texto "mais confortável ao ler": [[wiki/concepts/altura-de-linha]] (140% a 160% no corpo, 90% a 120% nos títulos; "quanto menor o texto, maior a altura de linha") e [[wiki/concepts/largura-do-texto]] (60 a 90 caracteres, 9 a 15 palavras por linha). Ela também fecha a pendência acima: line-height é "a caixa que circunda o texto".
 
+## Classificações: serifa, sem serifa e o resto
+
+A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]) abre pelas [[wiki/concepts/classificacao-tipografica|classificações]]. Serifada (clássica, elegante, Times New Roman) e sem serifa (neutra, moderna, Helvetica e Arial) dominam a web; a sem serifa é a indicada "principalmente para corpo de texto". Serifadas grossas, script, blackletter e display ficam em títulos, anúncios e botões, por [[wiki/concepts/legibilidade-tipografica|legibilidade]]; a monoespaçada serve a código. Script é classificação própria, o que fecha a ressalva `[external]` da seção "Serifa, sem serifa e letra de mão". Aqui serifa em site de leitura é "incomum" (exceção: [[wiki/entities/new-york-times]]), enquanto a aula de formas chamava serifadas de "fontes de leitura": tensão registrada na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -120,3 +124,4 @@ A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo (edição "W7"): definição, variáveis, classificações, CSS
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala, 14–21 px, maiúsculas x minúsculas, h1–h6, escala do Figma + 8pt
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — altura de linha e largura do texto; primeira aula do módulo de tipografia na wiki
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações tipográficas; sem serifa no corpo, decorativas no título; Google Fonts e Adobe Fonts

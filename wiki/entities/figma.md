@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 32
+source_count: 33
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -138,6 +138,10 @@ Násser recomenda "a escala do próprio Figma" para fontes: começa em 9 e cresc
 
 Em [[wiki/sources/altura-de-linha-e-largura-do-texto]], alterar o line-height no Figma faz a caixa do texto crescer; o valor é dado em porcentagem (140% equivale a `line-height: 1.4` no CSS). Ver [[wiki/concepts/altura-de-linha]].
 
+## Google Fonts embutido
+
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], o Figma "espelha de forma automática" o [[wiki/entities/google-fonts]]: fonte nova aparece sem baixar nem instalar. A demonstração da monoespaçada (fileira de "i" contra "Monospaced") também roda no Figma. `[external]` No Linux o Figma não usa fontes locais (https://help.figma.com/hc/articles/360039956894).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -179,3 +183,4 @@ Em [[wiki/sources/altura-de-linha-e-largura-do-texto]], alterar o line-height no
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity no tipo de layer; prática de variação prometida
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala de fonte do Figma
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height em % aumenta a caixa do texto
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — espelho do Google Fonts; demonstração da monoespaçada

@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 43
+source_count: 44
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -116,3 +116,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7"): definição, WhatFont, variáveis, classificações, Google Fonts e CSS; o aluno imaginário diz "Ah, Násser"
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — aula de escala e tamanho (tipografia W7); escala 14–96 (autoria inferida)
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — aula 03 do módulo de tipografia (autoria confirmada pelo usuário): altura de linha 140–160% no corpo, largura 60–90 caracteres, WhatFont, Wikipedia x NYT
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 de classificações tipográficas (autoria inferida pela pasta FrontPush): serifa, sem serifa, script, blackletter, monoespaçada, display; Google Fonts e Adobe Fonts

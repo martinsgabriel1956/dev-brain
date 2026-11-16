@@ -110,3 +110,4 @@ Aula do módulo de [[wiki/concepts/elementos-da-interface]] da edição com o lo
 ## Ver também
 
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — continuação aplicada a botões; Madero e arquitetura de novo
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — a aula de classificações trata script como categoria própria, separada da serifa

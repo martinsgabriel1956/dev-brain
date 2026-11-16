@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 22
+source_count: 23
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -164,3 +164,4 @@ A transcrição de [[wiki/sources/altura-de-linha-e-largura-do-texto]] está na 
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — preto + uma cor + gradiente (inferido)
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — título como hierarquia; botões verde e laranja com texto preto
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — aula 03 de tipografia; altura de linha e largura do texto
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 do módulo: classificações tipográficas

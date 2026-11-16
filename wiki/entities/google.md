@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-15
-source_count: 26
+source_count: 27
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -72,6 +72,10 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 Na abertura do módulo de tipografia, o Google aparece como interface que é "a maior parte texto", o Chrome como navegador da extensão WhatFont, e o [[wiki/entities/google-fonts]] como principal referência para baixar fontes ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
+## Google Fonts
+
+O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] como fonte gratuita de fontes, espelhada no Figma.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -95,6 +99,7 @@ Na abertura do módulo de tipografia, o Google aparece como interface que é "a 
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — Google Maps: vermelho/laranja = trânsito
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — Google como interface de texto; Google Fonts; WhatFont no Chrome
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — Google Fonts como catálogo gratuito espelhado no Figma
 
 ## Adição (2026-10-14)
 

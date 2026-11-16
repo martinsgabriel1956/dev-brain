@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 28
+source_count: 29
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -165,6 +165,10 @@ Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes
 
 Títulos e corpo não diferem só no tamanho: o título leva line-height menor ("110, 100%"; slide 90% a 120%) e o corpo, maior (140% a 160%). Título com 140% fica "estranho" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). Ver [[wiki/concepts/altura-de-linha]].
 
+## Fonte de título x fonte de corpo
+
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], a classificação tipográfica divide papéis: script, blackletter, display e serifadas grossas vão para títulos, anúncios e botões, onde "passam o sentimento"; o corpo fica em sem serifa. No convite de casamento, o nome dos noivos em script e o endereço em sem serifa. Ver [[wiki/concepts/legibilidade-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -200,3 +204,4 @@ Títulos e corpo não diferem só no tamanho: o título leva line-height menor (
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica inconsistente quebra a hierarquia
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — o maior se enxerga primeiro; peso e cor no NYT
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height menor no título, maior no corpo
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — fonte expressiva no título, sem serifa no corpo

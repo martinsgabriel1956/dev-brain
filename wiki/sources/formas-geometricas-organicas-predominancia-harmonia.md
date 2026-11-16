@@ -124,3 +124,7 @@ Aula do módulo "elementos da interface" do [[wiki/entities/frontpush|FrontPUSH]
 ## Outra versão da aula
 
 Há uma versão da mesma aula na edição "W7" do curso, com outros exemplos (Dropbox, Madero, Coco Bambu, arquitetura, Nubank, C6 Bank): [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]].
+
+## Ver também
+
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula de classificações: sem serifa indicada para corpo, serifa em site de leitura "incomum"

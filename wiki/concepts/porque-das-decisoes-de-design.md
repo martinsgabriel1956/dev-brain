@@ -4,7 +4,7 @@ title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -72,6 +72,10 @@ A aula de harmonia das cores responde às perguntas de uma aula anterior ("os po
 
 A aula de tipografia mostra como tirar o porquê de um site de referência: o [[wiki/entities/whatfont]] dá o line-height em px, e dividir pelo tamanho da fonte revela a razão (64 / 56 = 1.14 no título, 28 / 20 = 1,4 no corpo) ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). As faixas da aula (corpo 140–160%, títulos 90–120%) ficam perto da tabela acima; ver [[wiki/concepts/altura-de-linha]].
 
+## Classificar para justificar a fonte
+
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], entender as [[wiki/concepts/classificacao-tipografica|classificações tipográficas]] serve para "entender o porquê que a gente escolheu uma, porquê que a gente escolheu a outra".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -83,3 +87,4 @@ A aula de tipografia mostra como tirar o porquê de um site de referência: o [[
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — perguntar por que as seções estão naquela ordem
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — arara, céu, super-heróis e cinema explicados pela harmonia
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — dividir line-height pelo tamanho da fonte para entender a escolha
+- [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificação tipográfica como base para justificar a fonte
