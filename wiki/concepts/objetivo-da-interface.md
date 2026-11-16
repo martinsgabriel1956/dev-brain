@@ -3,8 +3,8 @@ type: concept
 title: "Objetivo da Interface"
 aliases: ["qual o objetivo da UI", "o que faz uma boa UI", "boa UI depende do objetivo"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ui-design, ux, design, conversao, cta]
 skill: ux-ui-mentor
 status: stub
@@ -51,6 +51,10 @@ Na aula de formas, a pergunta-guia é "o que você está querendo passar?": prec
 
 "Qual a ideia que a interface está querendo passar" decide a forma do botão: o segredo está na predominância "daquilo que é o seu produto ou serviço" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Objetivo da interface vs. necessidade do usuário
+
+A aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] põe "útil" como primeiro [[wiki/concepts/atributos-de-bom-design|atributo de um bom design]]: o produto faz algo que o usuário realmente precisa. São perguntas complementares: o objetivo é o que a interface quer que o usuário faça (comprar, cadastrar); a utilidade é se aquilo resolve uma necessidade dele.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -58,3 +62,4 @@ Na aula de formas, a pergunta-guia é "o que você está querendo passar?": prec
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — o que se quer comunicar define forma, tipo e cor
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — "o que você está querendo comunicar?" como pergunta de partida para escolher formas
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — forma do botão escolhida pelo que se quer comunicar
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "útil" como necessidade do usuário, complementar ao objetivo

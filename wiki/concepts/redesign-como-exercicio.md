@@ -3,8 +3,8 @@ type: concept
 title: "Redesign como Exercício"
 aliases: ["redesign de estudo", "propor melhorias em interfaces", "redesign não solicitado", "unsolicited redesign"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, design, aprendizado, portfolio, redesign]
 skill: ux-ui-mentor
 status: stub
@@ -35,6 +35,11 @@ Inferência: sem acesso a dados e pesquisa da empresa, o redesign externo mostra
 - [[wiki/concepts/pratica-deliberada]] — exercício no limite da competência, com feedback.
 - [[wiki/concepts/ui-design]]
 
+## Treino, treino, treino
+
+[[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] reforça o mesmo espírito: "provavelmente a sua interface sempre vai ser ruim no começo, mas você não pode deixar de aprimorar"; o caminho é testar, refazer, "treino, treino, treino".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — interface ruim no começo; aprimorar por treino

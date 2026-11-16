@@ -3,8 +3,8 @@ type: concept
 title: "Design Persuasivo"
 aliases: ["persuasive design", "persuasive design patterns", "padrões persuasivos", "nudge"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ux, design, design-persuasivo, vieses-cognitivos, gamificacao, etica]
 skill: ux-ui-mentor
 status: stub
@@ -26,6 +26,11 @@ Na aula [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] aparece um caso s
 - [[wiki/concepts/comunicacao-persuasiva]] — persuasão aplicada a argumentos e pessoas, não a interfaces.
 - [[wiki/concepts/hierarquia-visual]] — persuasão por atenção.
 
+## Desejável: jogos que instigam a voltar
+
+Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], "desejável" é um dos [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]], e o exemplo é a plataforma de jogos que joga "com esse desejo de você sempre entrar, ter um desafio novo". A aula elogia sem ressalva. `[skill: ux-ui-mentor]` Gamificação funciona quando o comportamento incentivado tem valor real e a recompensa é percebida como justa; falha quando disfarça produto ruim (efeito de superjustificação) ou quando cria competição onde o usuário não quer competir.
+
 ## Key Sources
 
 - [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]]
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "desejável" via mecânicas de jogo, sem a ressalva ética

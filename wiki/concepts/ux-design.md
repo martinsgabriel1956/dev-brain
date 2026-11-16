@@ -3,8 +3,8 @@ type: concept
 title: "UX Design"
 aliases: ["user experience", "experiência do usuário", "UX", "UX designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ux, ux-design, design, produto, pesquisa]
 skill: ux-ui-mentor
 status: draft
@@ -45,7 +45,12 @@ Em [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]], um e-commerce falha p
 - [[wiki/concepts/design-como-interacao]]: experiência sentida no uso, não só na primeira impressão.
 - [[wiki/concepts/user-stories]]: outro jeito de pôr a necessidade do usuário no centro da decisão.
 
+## Projetar para o outro
+
+"Você que é designer, você não projeta para você" ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]). Quem cria o workflow e a jornada conhece tudo e tende a achar a interface fácil e eficaz; os [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]] (útil, fácil aprendizado, memorável, eficaz, desejável, prazeroso) só se confirmam conversando com pessoas e testando. `[external]` Desejável e prazeroso correspondem ao que Preece, Rogers e Sharp chamam de metas de experiência do usuário, separadas das metas de usabilidade.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — UI e UX alinhados; jornada de e-commerce
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — projetar para o outro; seis atributos de um bom design
