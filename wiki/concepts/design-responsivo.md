@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [css, responsivo, mobile, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -26,6 +26,10 @@ Exportar a mesma imagem em várias escalas (2x/1x desktop, 0,5x/0,3x mobile) e d
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a precisão que eu tenho no mouse é muito maior do que a que eu tenho com o meu dedo". O botão não pode encolher na tela pequena; na [[wiki/entities/apple]], eles mantêm o tamanho. Ver [[wiki/concepts/area-clicavel]].
 
+## Grid por dispositivo e resolução
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: 12 colunas no desktop, 6 no tablet, 4 (ou 6 em paisagem) no mobile ([[wiki/concepts/grid-de-colunas]]); blocos "na horizontal" que quebram "na vertical" são "a técnica do design fluido". Resolução não é polegada (iMac de 27" com Retina 5K); teto de 1440 para desktop, 1600 para TV. Ver [[wiki/concepts/breakpoint]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -35,3 +39,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — grid de 12 colunas para desktop; ver [[wiki/concepts/grid-de-colunas]] para colunas por breakpoint
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": exportar tamanhos diferentes e carregar por media query; mobile, tablet e desktop
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mouse x dedo; botões não encolhem no mobile
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — 12/6/4 colunas; blocos horizontais que quebram na vertical; resolução x tamanho; teto 1440

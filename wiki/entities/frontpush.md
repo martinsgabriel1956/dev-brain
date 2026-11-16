@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -77,3 +77,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — gradiente azul como única cor de destaque nas ilustrações do site
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones em cards "como eu fiz no curso do FrontPUSH"
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — "grade do curso" + "inscreva-se"; azul como ímã
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — blocos horizontais do site que quebram na vertical (design fluido)

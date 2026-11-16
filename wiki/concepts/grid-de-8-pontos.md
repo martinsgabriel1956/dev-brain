@@ -3,8 +3,8 @@ type: concept
 title: "Grid de 8 Pontos"
 aliases: ["8pt grid", "8-point grid", "grid de oito pontos", "escala de espaçamento", "spacing scale"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ui, ui-design, layout, espacamento, grid, consistencia, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -44,8 +44,15 @@ O grid de 8 da aula de whitespace é, na prática, uma escala **linear** (passo 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], o grid vira atalho: big nudge de 8 no [[wiki/entities/figma]] faz cada Shift + seta andar 8, e os vãos da aula (16, 32, 128) saem de dois, quatro e dezesseis toques. As colunas de 72 e o gutter de 32 do [[wiki/concepts/grid-de-colunas]] também são múltiplos de 8.
 
+## A regra dos oito pontos (aula de grids, parte 2)
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid de 8 é um dos dois sistemas de grid (o outro é o de colunas), associado a Android e iOS. O slide traz duas linhas: 8, 16, 24, 32, 40, 48, 56, 64 (com 12, 18, 36, 52 entre eles) e 72, 88, 96, 104, 112, 120, 136, 144, 288. Os mesmos valores servem a espaçamento, tipografia (14, 18, 24, 36, 48 do menu do Figma, "muito próximo"), largura de coluna (72 → 96) e tamanho de objeto. A consistência vem do hábito: "quando eu chuto algum valor é algum desses", nunca 53 ou 55.
+
+`[external]` O Material 3 mede espaçamento em incrementos de 4 dp (https://m3.material.io/foundations/layout/understanding-layout/spacing), o que bate com o sub-grid de 4 e explica 12, 36 e 52; 18 e 14 continuam fora.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — escala geométrica preferida à linear de passo 8
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — big nudge de 8 no Figma; colunas e gutter múltiplos de 8
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — regra dos oito pontos em grids, espaçamento e tipografia; 72 a 288

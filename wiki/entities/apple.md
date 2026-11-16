@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -25,7 +25,12 @@ Empresa de tecnologia (iPhone, Mac). Nas aulas de UI, o site é referência: emp
 
 Citada como usuária de botão de bordas circulares, "para poder trazer mais para perto" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## iMac e resolução
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o iMac de 27" com "tela Retina 5K" ilustra a resolução acompanhando o tamanho da tela; "o mínimo é 2K" nesses monitores. Ver [[wiki/concepts/breakpoint]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — iMac de 27 polegadas com Retina 5K como exemplo de resolução x tamanho

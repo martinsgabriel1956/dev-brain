@@ -3,8 +3,8 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,21 @@ O gutter de 32 da aula corresponde à linha "wide" da skill. Os valores de colun
 - [[wiki/concepts/grid-de-icones]] — o mesmo princípio de "réguas", em escala de ícone.
 - [[wiki/concepts/design-responsivo]] — o número de colunas cai em telas menores.
 
+## Por dispositivo (aula de grids, parte 2)
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], as quatro variáveis são **width** (coluna), **columns**, **gutter** e **max-width** (de ponta a ponta), "baseado no Bootstrap Grid System":
+
+| | Colunas | Width | Gutter | max-width |
+|---|---|---|---|---|
+| Desktop | 12 | 72–96 | 24–36 | 1200–1440 |
+| Tablet | 6 | 72–96 | 24–36 | 620–720 |
+| Mobile | 4 (6 em paisagem) | 56–72 | 24–36 | 320–396 |
+
+Conta: colunas × width + (colunas − 1) × gutter ≈ max-width (72 × 12 + 24 × 11 = 1.128 ≈ 1.200). O tablet é o desktop "dividido por 2". Ele prefere 4 ou 6 colunas no celular a 3 ou 2. 12 de novo pela divisão: "quando fica oito de um lado, eu sei que sobra quatro do outro". As faixas estão em [[wiki/concepts/breakpoint]].
+
+`[external]` No Bootstrap, a coluna é porcentagem do container e o gutter padrão é 24 px (https://getbootstrap.com/docs/5.3/layout/gutters/); coluna de 72 é convenção de Figma. A skill dá 8 colunas no tablet; a aula, 6.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — width, columns, gutter, max-width por dispositivo (12/6/4); contas na calculadora

@@ -3,8 +3,8 @@ type: concept
 title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 20
+date_updated: 2026-11-15
+source_count: 21
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -90,6 +90,10 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "escolheu um botão para sua interface, utilize o mesmo botão do mesmo jeito". Altura, padding e [[wiki/concepts/border-radius]] iguais; só a largura varia com o texto. Primário e secundário, nunca "cinco tipos de botão". Exemplos: [[wiki/entities/sketch]] e [[wiki/entities/frontpush]]. Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Consistência por hábito numérico
+
+Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempre quando eu penso em algum valor, eu já penso nesses valores aqui [...] e aí eu criei consistência no meu design". Nada de 53 ou 55 px; os valores saem do [[wiki/concepts/grid-de-8-pontos]], e o alinhamento sai do [[wiki/concepts/grid-de-colunas]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -112,3 +116,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "e
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones: uma família, no máximo duas com papéis distintos
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones próprios como exercício de consistência; mesma estrutura e escala
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo botão em toda a interface: altura, padding e radius iguais
+- [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — valores sempre da regra dos oito pontos; nunca 53 ou 55
