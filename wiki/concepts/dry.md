@@ -4,7 +4,7 @@ title: "DRY (Don't Repeat Yourself)"
 aliases: ["dry principle", "não se repita", "duplicação de código"]
 date_created: 2026-08-18
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [dry, code-smells, duplicacao, abstracao, under-engineering, yagni]
 skill: tech-mentor-backend
 status: stub
@@ -45,8 +45,18 @@ Extrair uma função auxiliar central (ex.: um helper de request HTTP que valida
 
 Em [[wiki/sources/classes-e-ids-no-css]], a classe é o DRY do CSS: um estilo escrito uma vez vale para todo elemento que a recebe, e a mudança se propaga ("ele aplicou justamente para todos"). O CSS externo leva a mesma ideia ao nível do arquivo ("menos retrabalho").
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] copia o bloco do fetch de estados para o de cidades e admite: "isso aqui é grotesco"; "conforme você for crescendo na programação, você vai aprender a não fazer essa cópia", com "uma funcionalidade que vai reaproveitar esse código". Também avisa que Ctrl+C/Ctrl+V "às vezes dá bastante bug".
+
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `include` e `extends`/`block` do [[wiki/entities/nunjucks]] para não repetir o cabeçalho, o `head` e o `body` em cada página: "E se fossem cem? E se fossem mil páginas?" Ver [[wiki/concepts/template-engine]].
+
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — exemplo de reuso via classe compartilhada num monolito, contrastado com a dificuldade equivalente em microsserviços
 - [[wiki/sources/classes-e-ids-no-css]] — classe CSS como estilo escrito uma vez
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: copiar o fetch é grotesco; extrair função
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: partials e layout no Nunjucks

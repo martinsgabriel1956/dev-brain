@@ -93,6 +93,7 @@ Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em vers
 
 ## Key Sources
 
+
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — relato de que, ao virar banco, a liberdade de ferramentas/inovação tende a diminuir (afirmação do autor, não verificada); palestras sobre Datomic em 2015/2016
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/iso-27001-dicionario-programador]] — certificação ISO 27001 e "modo rua" como controle de acesso contextual

@@ -3,8 +3,8 @@ type: concept
 title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
-date_updated: 2026-07-22
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
@@ -80,7 +80,12 @@ Em Go, `rune` é um alias para `int32` — representa um codepoint [[unicode]] c
 
 [[wiki/sources/algoritmo-decode-utf8-com-tdd]] implementa, na prática, o processo inverso da indexação por byte descrita acima: dado um slice de bytes, reconstrói a runa completa usando [[bitwise-operations|AND, OR e left shift]] — a mesma lógica que o Go executa internamente ao converter bytes em caracteres UTF-8.
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: em JavaScript, string se escreve com aspas duplas, simples ou crase; a crase permite interpolação com `${}` (`` `<p>${i}</p>` ``). Uma string solta no código "não serve pra nada" sem ir para uma variável ou função.
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação do algoritmo de decode bytes → runa
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: três tipos de aspas; template string

@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-11-16
+source_count: 12
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -94,6 +94,10 @@ Além de extrair linhas de tabela, a mesma injeção pode ser usada para ler e, 
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] agrupa SQL Injection e XSS sob a mesma pergunta de teste — "meu sistema está confiando demais em mim?" — e descreve a prática mínima de tentar inserir queries e scripts maliciosos diretamente dentro de requisições reais contra o próprio sistema, como parte de um checklist de segurança conduzido com apoio (não substituição) de um agente de IA.
 
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], a pesquisa por cidade do Ecoleta interpola `req.query.search` direto na query: `WHERE city LIKE '%${search}%'`, uma SQL injection clássica em material para iniciantes. A mesma aula usa placeholders `?` no INSERT e no DELETE, que seriam a correção também aqui: `db.all('... LIKE ?', [`%${search}%`])`.
+
 ## Key Sources
 
 - [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
@@ -107,3 +111,4 @@ Além de extrair linhas de tabela, a mesma injeção pode ser usada para ler e, 
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — citado como par de XSS na mesma frente de treino prático de exploração ([[wiki/concepts/dvwa]]/bug bounty), embora a fonte foque em XSS
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — organiza as defesas em sete camadas concêntricas (query parametrizada → prepared statement → menor privilégio → nativo do backend → ORM/query builder → validação de input → WAF), com recomendação de corrigir primeiro a nível de código/backend ao encontrar SQLi em produção
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — exploração automatizada com SQLMap: taxonomia de técnicas (blind/error/UNION-based), leitura/escrita de arquivo no servidor via `LOAD_FILE`/`INTO OUTFILE`, `--level`/`--risk` para reduzir falso negativo, injeção via POST/cookie e bypass de WAF com tampers
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: LIKE com interpolação na busca do Ecoleta

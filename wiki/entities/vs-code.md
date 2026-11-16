@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 8
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -16,13 +16,38 @@ Editor de código da Microsoft.
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], é o editor da demonstração do [[wiki/entities/frontpush|FrontPUSH]] (a aula que configura o editor e os plugins é [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]). Dois recursos aparecem: o Emmet, "plugin nativo" que gera a estrutura do HTML5 e a tag `<link>` por abreviação (`[external]` https://code.visualstudio.com/docs/editor/emmet), e a extensão Live Server, que sobe um servidor local e atualiza o navegador a cada Ctrl+S. Ver [[wiki/concepts/setup-live-reload-debug-testes]].
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] instala o VS Code, um tema ("Launch Base Theme", nome dito assim) e o Live Server, que abre a página em 127.0.0.1:5500 e recarrega a cada Ctrl+S. O Emmet completa tags, gera a estrutura com `!` e expande `#page-home` em `<div id="page-home">`; o hover sobre um seletor mostra o HTML que ele atinge.
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa mais abreviações do Emmet: `.field` cria uma `div` com a classe, `*2` multiplica, `label+input` cria irmãos e `mr` vira `margin-right`. A linha guia de indentação mostra onde uma tag fecha, para não apagar só a abertura. Ctrl+/ comenta a linha.
+
 ## Extensões da aula de ambiente do FrontPUSH
 
 Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], a aula que configura o editor do curso, [[wiki/entities/nasser|Násser]] recomenda instalar o VS Code por último (depois de Git, Node e Yarn) e lista as extensões: vscode-icons (estética), Thunder Client (testar API, no lugar do Postman), Prettier - Code formatter (formata ao salvar), Live Server ("muitíssimo importante"), Live Sass Compiler ([[wiki/concepts/pre-processador-css]]), HTML Snippets, Color Highlight, Material Theme e One Dark Theme. O tema dele é Community Material Theme, Ocean High Contrast. O Git Bash entra como terminal padrão ([[wiki/concepts/shell-terminal]]).
 
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa Ctrl+D para editar a próxima ocorrência ao mesmo tempo, o localizar e substituir (Ctrl+F) para renomear `page-create-point` → `page-search-results` e desliga o minimapa na revisão final.
+
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] configura o Git Bash como "Select Default Shell" do terminal integrado (Ctrl+crase abre e fecha). Para o [[wiki/entities/nunjucks]], instala a extensão Nunjucks Template e mexe no `settings.json`:
+- `files.associations` com `*.html` lido como `njk`;
+- `emmet.includeLanguages` com `njk` lido como `html`, para devolver o Emmet;
+- a extensão vscode-icons, para os ícones.
+
+Usa ainda Format Document para indentar e Reveal in File Explorer.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: tema, Live Server, Emmet e hover de seletor
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: Emmet `.classe`, `*2`, `+`, `mr`; linha guia de tag
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Git → Node → Yarn → VS Code; lista de extensões; Git Bash como terminal
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: pasta "HTML básico", New File `index.html`, Emmet `html` + opção 5 (`html:5`)
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: Emmet `link:css`; autocompletar de caminho com `./`
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: Ctrl+D, localizar e substituir, minimapa
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Git Bash no terminal; extensão Nunjucks, Emmet e settings.json

@@ -3,8 +3,8 @@ type: concept
 title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
-date_updated: 2026-11-10
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -33,8 +33,13 @@ rota → [[wiki/concepts/middleware]] → controller → service → banco → r
 
 [[wiki/concepts/debug-de-requisicao-http]]: a aba Network do DevTools mostra URL, método, headers, payload, status e response.
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] apresenta `req` e `res` nas rotas do [[wiki/entities/express]]: "Req é uma requisição. Requisição é um pedido. Res é uma resposta." A resposta vem com `res.send`, `res.sendFile` e `res.render`. "Lembra que tudo é dado, gente."
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — anatomia completa do clique até a resposta
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: req/res no Express
 
 ## Key sources (adição 2026-10-06)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -46,9 +46,14 @@ No CSR puro não há esse passo; no SSR, depois que o HTML chega pronto, o JavaS
 - [[wiki/concepts/cache]] — como evitar recomputar o mesmo HTML repetidamente
 - [[wiki/concepts/hydration]] — o que acontece depois que o HTML do SSR chega ao navegador
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] monta renderização no servidor com o [[wiki/entities/nunjucks]]: `res.render` passa o HTML "pelo motor" e devolve "o HTML puro" com os dados do servidor. Chama a arquitetura de "full MVC" e "full stack". Ver [[wiki/concepts/template-engine]].
+
 ## Key Sources
 
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: SSR com Nunjucks; "full MVC"
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — origem histórica: templates no servidor (PHP/ASP) vs. SPAs que movem o estado ao cliente

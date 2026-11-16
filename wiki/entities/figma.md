@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 44
+source_count: 45
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -150,6 +150,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: a ab
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o autor tenta mostrar no Figma o espaçamento irregular do texto justificado e admite que "não deu para perceber muito". Ver [[wiki/concepts/alinhamento-de-texto]].
 
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] copia cores, fontes e espaçamentos do painel de inspeção do Figma para o CSS dos cards, menos o posicionamento, "uma parada muito absoluta". Diverge do layout de propósito no modal de busca (um campo só, botão ao lado): "espero que me perdoem especialmente quem construiu layout".
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -196,3 +200,4 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o autor tenta mostrar no
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — demonstração do justificado
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: o design feito no Figma traduzido "para o CSS de maneira plena"
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: eixos X e Y desenhados para explicar o `position: absolute`
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: inspeção de estilos; divergência consciente do layout

@@ -3,8 +3,8 @@ type: concept
 title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -61,6 +61,11 @@ Já expressões booleanas com `||` (`a = a || [1, 2, 3]`) reagem a **qualquer** 
 - [[wiki/concepts/sistema-de-tipos]] — tipagem fraca é sobre *conversão implícita entre tipos*, um eixo distinto (mas relacionado) de tipagem estática vs. dinâmica
 - [[wiki/concepts/pitfalls-de-linguagem]] — `typeof null`, `==` vs `===` e coerção implícita já documentados ali como armadilhas gerais; esta página aprofunda o mecanismo tipo a tipo
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] percorre string, number, boolean e undefined (variável sem valor, propriedade inexistente, função sem `return`). Mostra a coerção do `+`: `1 + 12` dá 13, `"1" + 12` dá `"112"`, porque "já que eu não consigo fazer soma de string com número [...] eu vou concatenar".
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coerção string + number; undefined

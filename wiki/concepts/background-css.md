@@ -4,7 +4,7 @@ title: "Background no CSS (background-image, size, repeat, position)"
 aliases: ["background", "background-image", "background-size", "background-repeat", "background-position", "background-color", "cover x contain", "imagem de fundo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [frontend, css, background, background-image, background-size, imagem]
 skill: tech-mentor-frontend
 status: stub
@@ -33,7 +33,12 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/en
 
 A escolha entre cover e contain é o mesmo dilema do [[wiki/concepts/aspect-ratio]]: cortar ou deixar sobra, nunca distorcer. `[external]` Para `<img>` o equivalente é `object-fit: cover | contain` (https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit).
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `background: url("../assets/home-background.svg") no-repeat` (sem `no-repeat` o fundo "vai querer ficar repetindo"), `height: 100vh` para a imagem não sair cortada e `background-position: 35vw bottom`, que vira `background-position-x: 70vw` abaixo de 900 px. Ele escreve `background-url` por engano e corrige no ícone: "não era não, era image".
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: img x background, cover x contain, no-repeat, position, altura fixa
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: fundo SVG, no-repeat, 100vh, position em vw
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `background-color: #0f0f0f` no `body` ("eu gosto de fundo dark"); `pink`, `green` para enxergar caixas

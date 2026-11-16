@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -39,8 +39,24 @@ Acessibilidade cognitiva (progressive disclosure, chunking, linguagem simples) "
 
 `[external]` A aula de box model do [[wiki/entities/frontpush|FrontPUSH]] recomenda [[wiki/concepts/html-semantico|tags semânticas]] só pelo Google; o ganho mais documentado é de acessibilidade: header, nav, main e footer viram landmarks para leitores de tela (https://developer.mozilla.org/en-US/docs/Glossary/Semantics) ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] tira o `outline` dos inputs mas avisa: "o importante é você colocar algum efeito visual para o cara saber que ele está no campo. Por isso que o Outline vem por padrão". `[external]` O `<label for>` da aula aponta para o `name`, não para o `id`, e o rótulo fica desassociado do campo (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label). Ver [[wiki/concepts/formulario-html]].
+
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] põe um `label` no campo de busca em vez de só o texto do layout, porque esse texto "não consegue ser lido pelos leitores". Esconde o texto "Fechar" com `font-size: 0.01px` para o leitor ainda achar o link. A fonte registra o que falta:
+- itens clicáveis feitos de `li`, sem teclado;
+- o modal sem foco nem Esc;
+- texto escondido de jeito frágil;
+- `h1` por card.
+
+Ver [[wiki/concepts/modal]].
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tags semânticas (motivo dado: SEO; ganho documentado: landmarks)
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: outline e foco; label for sem id
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `list-style: none` faz o Safari/VoiceOver deixar de anunciar a lista; ver [[wiki/concepts/listas-html]]
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: label na busca; texto oculto; lacunas de teclado e foco

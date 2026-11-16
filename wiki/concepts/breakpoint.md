@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -74,9 +74,19 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/concepts/grid-de-colunas]]: colunas, gutter e margem mudam por breakpoint.
 - [[wiki/concepts/mobile-layouts-responsivos]]: o equivalente nativo (WindowSizeClass, size classes).
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa um único breakpoint desktop-first, `@media (max-width: 900px)`: "de 0 até 900 pixels aplica-se regras específicas". Abaixo dele, a imagem de fundo sai para o lado, o conteúdo centraliza e o link do header desce. Depende da `meta viewport`. `[skill: tech-mentor-frontend]` mobile-first com `min-width` é o padrão recomendado.
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] testa no Toggle Device Toolbar do DevTools (4K, laptop 1440, tablet, rotação) e cria duas regras novas: `@media (min-width: 1700px)` com o fundo em 40vw, achado olhando a tela "na hora que ele vai encostar", e `@media (max-height: 760px)` com `background-position-y: 200px`. É a primeira media query por altura da wiki. "Fizemos uma regra para altura e regras para largura."
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — definição, media query abaixo de 960 px, quebra na landing page do FrontPUSH
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — faixas small/medium/large/extra-large; resolução x tamanho; teto de 1440, 1600 para TV
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — breakpoints do Material Design, iOS e Bootstrap; 4, 8 e 12 colunas
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: max-width 900px, desktop-first
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: min-width 1700 e max-height 760; Device Toolbar
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `@media screen and (max-width: 960px)` com `flex-direction: column`; "somente quando a tela [...] for menor ou igual a 960 pixels" (desktop-first)

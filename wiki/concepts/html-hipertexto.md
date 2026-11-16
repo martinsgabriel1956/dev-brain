@@ -4,7 +4,7 @@ title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
@@ -27,6 +27,10 @@ Segundo a aula de box model do [[wiki/entities/frontpush|FrontPUSH]], antes do H
 
 Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `section` em vez de `div` "para poder ficar um pouco mais interessante na questão da semântica", e o menu é `nav` com `ul`/`li` ("lista não ordenada, só com pontinhos"). `[external]` `section` e `nav` são elementos do HTML5 que leitores de tela anunciam como regiões: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] lê a sigla: hypertext são "links na página", markup é "um jeito de marcar textos", e é "uma linguagem de marcação de texto, não é uma linguagem de programação". `<!DOCTYPE html>` curto identifica o HTML5; sem `head` e `body` o Live Server avisa que "live reload não é possível". `href` "é um atributo da tag a" e não funciona no `h1`; `alt` na `img` é alternativa e acessibilidade; `<!-- -->` não aparece na página.
+
 ## O navegador entende três coisas
 
 Para [[wiki/entities/nasser|Násser]] ([[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]), "todo o navegador, ele entende três coisas, HTML, CSS e JavaScript", por isso só um editor basta para começar. HTML é "uma linguagem de marcação". As diferenças de interpretação entre navegadores ficam em [[wiki/concepts/compatibilidade-entre-navegadores]].
@@ -42,5 +46,6 @@ Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]],
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — estrutura do HTML5, `<head>`, `<title>`, `style` inline
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — antes do HTML5, interfaces feitas de divs; tags semânticas vieram com o HTML5
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: `section` e `nav` por semântica
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: sigla, doctype, head/body, href, alt, comentários
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o navegador entende HTML, CSS e JavaScript; só um editor basta
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: marcação como etiquetas; tags, aninhamento, html/head/body; tag inventada

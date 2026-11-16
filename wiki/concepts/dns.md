@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-10-14
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -37,6 +37,10 @@ Confusão comum: os dois "decidem para onde a requisição vai", mas em camadas 
 
 Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]], um post citado por [[wiki/entities/michel-leonardo]] mostrou Doom rodando sobre DNS, inspiração para [[wiki/concepts/icmp-tunneling]]: protocolos "auxiliares" podem ser reaproveitados como transporte (post não verificado).
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica, sem dizer "DNS", que youtube.com é convertido em um endereço IP, e menciona comprar um domínio (ecoleta.com.br) apontando para o IP do servidor.
+
 ## Key sources
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — wildcard A + defesa contra DNS rebinding
 - [[wiki/sources/dns]]
@@ -45,6 +49,7 @@ Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leona
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular
 - [[wiki/sources/email-address]] — registros MX como aplicação de DNS ao roteamento de e-mail (SMTP)
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → número, domínio próprio
 
 ## Key Sources
 

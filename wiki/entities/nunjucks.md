@@ -1,0 +1,39 @@
+---
+type: entity
+title: "Nunjucks"
+aliases: ["nunjucks", "njk", "Nunjucks templates"]
+date_created: 2026-11-16
+date_updated: 2026-11-16
+source_count: 2
+tags: [nodejs, template-engine, html, mozilla, javascript]
+skill: lang-dynamic
+status: stub
+---
+
+# Nunjucks
+
+[[wiki/concepts/template-engine|Template engine]] para JavaScript, da Mozilla, inspirado no Jinja2. A sintaxe:
+- `{{ variável }}` com filtros (`| upper`, `| safe`).
+- `{% if %}`, `{% for %}`, `{% set %}`, `{% include %}` e herança com `{% extends %}` e `{% block %}`.
+- Comentários em `{# #}`.
+
+`nunjucks.configure(pasta, { express: app })` liga o Nunjucks ao [[wiki/entities/express]] para o `res.render`. O `autoescape` vem ligado por padrão, então `{{ }}` escapa HTML `[external]` (https://mozilla.github.io/nunjucks/api.html#configure).
+
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] instala o Nunjucks ("vamos fazer o HTML com esteroides") e o configura com `noCache: true` para não servir versões velhas durante o desenvolvimento. Usa quatro recursos:
+- **Variáveis:** `{{ title }}`.
+- **Partials:** `include` para o cabeçalho e o modal.
+- **Layout:** `layout.html` com `extends` e os blocos `styles`, `title`, `content`, `modal` e `scripts`.
+- **`set`:** `{% set pageId = "page-home" %}` para o id de cada página.
+
+No VS Code, a extensão Nunjucks Template exige `files.associations` e `emmet.includeLanguages`. A transcrição automática grafou o nome de mais de dez jeitos (Nandux, Nandex, Nunchucks...).
+
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `{% for place in places %}` para os cards, `{% if total > 0 %}...{% else %}` para "Nenhum local encontrado" e `{% if saved %}` com `include` do partial `point-created.html`. `[external]` O `for` do Nunjucks aceita `{% else %}` para lista vazia (https://mozilla.github.io/nunjucks/templating.html#for).
+
+## Key sources
+
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: configure, render, variáveis, include, extends/block e set no Ecoleta
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: for, if/else, include condicional

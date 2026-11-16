@@ -3,8 +3,8 @@ type: concept
 title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -49,9 +49,19 @@ No Windows, `netstat -n` lista conexões ativas (colunas: `Proto`, `Local Addres
 - [[wiki/concepts/load-balancer]] — um load balancer L4 roteia exatamente por `IP:porta`, sem inspecionar o conteúdo da aplicação.
 - [[wiki/entities/iana]] — autoridade que administra as faixas de porta globalmente.
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica com exemplos:
+- **5500:** a porta aberta pelo Live Server.
+- **3000:** a do servidor Express; a 3001 não responde.
+- **80:** "escondidinha" em youtube.com; a 81 fica carregando.
+
+"Temos inúmeras portas para entrar no servidor." `[external]` Para HTTPS, a porta padrão é a 443.
+
 ## Key sources
 
 - [[wiki/sources/portas-de-rede-como-funcionam]]
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: 5500, 3000, 80; 443 para HTTPS
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — 80/22/443 e 3000/5000/8080 como convenções arbitrárias

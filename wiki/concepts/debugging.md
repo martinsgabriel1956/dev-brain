@@ -3,8 +3,8 @@ type: concept
 title: "Debugging"
 aliases: ["depuração", "encontrar bugs"]
 date_created: 2026-07-09
-date_updated: 2026-10-14
-source_count: 5
+date_updated: 2026-11-16
+source_count: 7
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stub
@@ -30,12 +30,27 @@ Em vez de depurar via `console.log` + reiniciar servidor manualmente, [[wiki/con
 
 [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] propõe um limite prático: depois de ~2 h ([[wiki/concepts/ciclo-de-2-horas]]) sem sucesso, levar o que se investigou a alguém com uma [[wiki/concepts/pergunta-bem-formulada]] — o "erro exato + o que já tentei" é justamente o produto do processo de depuração.
 
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] corrige bugs ao vivo:
+- **Cidades acumuladas** ("um erro de lógica").
+- **`querySelectorAll` no lugar de `querySelector`**, achado pela mensagem do console de que `addEventListener` não é uma função.
+- **Um `href` vazio** que recarregava a página.
+
+Usa `console.log` em cada passo do algoritmo: "Console log tira todas as dúvidas da gente". Lembra que "a gente sempre tem bugs em nossas aplicações é normal".
+
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] rastreia o dado com `console.log` nas duas pontas: no navegador, com "Preserve log" para não perder no reload, e no terminal, para o servidor. Também simula um erro de propósito (`INSERT INT`) para testar o `res.send("Erro no cadastro")`, e usa a aba Network para ver as requisições.
+
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — setup de debugger integrado a live reload e testes via Node.js `--inspect` + VS Code `launch.json`
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — limite de tempo e como transformar a investigação em pergunta
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — aplicação a APIs: conferir as peças da requisição no DevTools em vez de tentar de novo (ver [[wiki/concepts/debug-de-requisicao-http]])
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: três bugs ao vivo; console.log como sonda
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: console.log nas duas pontas; erro simulado; Network
 
 ## Key sources (adição 2026-10-14)
 

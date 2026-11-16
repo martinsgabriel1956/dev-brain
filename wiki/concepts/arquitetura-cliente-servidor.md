@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-11-16
+source_count: 4
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -34,7 +34,17 @@ Andar de mãos dadas com o básico de rede: o que é IP, o que é DNS, por que a
 - [[wiki/concepts/sessoes-http-cookies]] — mecanismo concreto de manter estado entre requisições cliente-servidor
 - [[wiki/concepts/aprender-com-foco-no-problema]] — entender a fronteira cliente-servidor é pré-requisito para "caçar problemas" como autenticação e permissões
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica para iniciantes com um restaurante: você pede ao garçom, ele leva ao cozinheiro e volta com a comida. "Cliente é você"; "tudo que for do garçom pra lá" é o servidor, que responde mesmo que seja "não tenho". Front-end é o que pede e mostra; back-end, o que devolve (o arquivo do download está "lá no back-end").
+
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] retoma o restaurante do dia 1, agora com o cozinheiro como back-end: "receber os pedidos do cliente", aplicar "regras de negócio" (no login, validar o CPF e conferir a senha), guardar os dados e "enviar as respostas". O mesmo JavaScript roda nos dois lados.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — o movimento de mercado "cliente-servidor" dos anos 90 (downsizing) como onda de modernização — ver [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]]
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: restaurante, front-end x back-end para iniciantes
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: cozinheiro = back-end; regras de negócio no login

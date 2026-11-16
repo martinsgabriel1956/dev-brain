@@ -3,8 +3,8 @@ type: concept
 title: "URL — Uniform Resource Locator"
 aliases: ["url", "uniform resource locator", "endereço web", "localizador de recurso"]
 date_created: 2026-10-09
-date_updated: 2026-10-09
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [uri, url, http, redes, networking]
 skill: tech-mentor-networking
 status: draft
@@ -25,5 +25,10 @@ status: draft
 
 URL = *onde/como*; [[wiki/concepts/urn|URN]] = *nome persistente*.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] chama a URL de "o endereço da web" e mostra que clicar num vídeo do YouTube acrescenta "mais propriedades" a ela: "o pedido mudou", "logo as respostas também mudaram". Ele expande a sigla como "Universal Resource Location"; o correto é Uniform Resource Locator `[external]` (https://datatracker.ietf.org/doc/html/rfc3986).
+
 ## Key sources
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — URL como URI com localização; uso coloquial vs. técnico
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: URL como endereço; sigla dita errada

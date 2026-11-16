@@ -3,8 +3,8 @@ type: concept
 title: "Endereço IP (IPv4 / IPv6)"
 aliases: ["IP", "endereço IP", "IPv4", "IPv6", "IP address"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [rede, endereco-ip, ipv4, ipv6, tcp-ip, cs-fundamentals]
 skill: tech-mentor-networking
 status: stub
@@ -33,5 +33,10 @@ Como o espaço é finito e já existem ~bilhões de dispositivos conectados, os 
 
 Versão 6, criada para resolver o esgotamento. Novo formato: 128 bits (2¹²⁸ endereços), 8 grupos de 4 hexadecimais separados por `:` (ex.: `2001:db8::ff00:42:8329`). Adoção **gradual** por provedores de nuvem e de internet — hoje há **coexistência (dual-stack)** com IPv4, e "endereço IP" no dia a dia ainda quase sempre significa IPv4. `[skill: tech-mentor-networking — references/ipv6-network-observability.md]`
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: nomes como youtube.com são "convertidos para números depois, e esses números nós chamamos de endereço de IP", endereços únicos que mostram onde está o servidor. `localhost` e `127.0.0.1` são a própria máquina. Ver [[wiki/concepts/dns]].
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — IP como sequência que identifica dispositivo; IPv4 (4 octetos, ~4,3 bi) vs IPv6; coexistência
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → IP; localhost/127.0.0.1

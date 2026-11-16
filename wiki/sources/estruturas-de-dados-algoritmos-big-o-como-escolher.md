@@ -10,7 +10,7 @@ skill: cs-fundamentals
 status: stable
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/estruturas-de-dados-algoritmos-big-o-como-escolher.md
 source_url: ""
-author: "desconhecido (canal parceiro da Rocket City)"
+author: "desconhecido (canal parceiro da Rocketseat)"
 date_published: ""
 date_ingested: 2026-07-10
 ---

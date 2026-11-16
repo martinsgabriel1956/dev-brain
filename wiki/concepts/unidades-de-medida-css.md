@@ -4,7 +4,7 @@ title: "Unidades de medida no CSS (px, pt, em, rem, cm, %)"
 aliases: ["unidades CSS", "medidas relativas", "medidas absolutas", "px rem em", "CSS units"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [css, unidades, responsividade, rem, em, porcentagem]
 skill: tech-mentor-frontend
 status: stub
@@ -24,6 +24,10 @@ O slide de box model do [[wiki/entities/frontpush|FrontPUSH]] lista px, pt, em, 
 - `px`, `pt`, `cm`: absolutas; pt e cm fazem sentido em impressão.
 - Não citadas na aula: `vw`/`vh`, `ch` (largura de linha em caracteres) e `clamp()` para tamanhos fluidos.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] contrasta `%` ("faz um cálculo de 90% do tamanho da página") com `px` ("900 sempre será 900", "pixel nunca é flexível") e usa `vh` ("a altura está dividida em 100 bloquinhos") e `vw` na posição do fundo.
+
 ## px, pt, polegadas e % do pai (módulo de front-end do FrontPUSH)
 
 Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/entities/nasser|Násser]] prefere `px` entre as fixas ("a gente está em uma tela bem mais próxima"), mostra `pt` e polegadas (`in`) e explica `%` como "do pai". `[external]` `1in` = 96 px CSS, valor fixo, não polegada física; `height` em `%` só funciona com pai de altura definida, e `padding`/`margin` em `%` usam a largura do bloco que contém: https://developer.mozilla.org/en-US/docs/Web/CSS/percentage.
@@ -31,4 +35,5 @@ Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — lista do slide; fixas x relativas; % e rem para responsividade
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: % x px, vh e vw
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: px preferido; pt e polegadas; `%` do pai; `vw`/`vh`

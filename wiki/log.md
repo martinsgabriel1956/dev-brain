@@ -238,7 +238,7 @@
 - `wiki/concepts/aprendizado-continuo.md`
 - `wiki/concepts/adaptabilidade.md`
 - `wiki/concepts/inteligencia-emocional.md`
-- `wiki/entities/eduarda-rocket-city.md`
+- `wiki/entities/eduarda-rocketseat.md`
 
 **Páginas atualizadas:**
 - `wiki/concepts/comunicacao-tecnica.md` — +1 fonte (página já existia de ingest anterior); backlink adicionado
@@ -1929,6 +1929,7 @@ Entities:
 
 **Notas:** Transcrição em português (sem necessidade de tradução) — arquivo criado em `raw/sistemas-de-arquivos-explicados.md` com um bloco publicitário sobre um curso de investimentos (AVP) omitido por não ser conteúdo técnico, sinalizado explicitamente no raw. Vídeo é um panorama enumerativo (nenhuma fonte primária, sem autor/canal/data identificáveis na transcrição) — tratado como fonte de referência factual sobre limites técnicos de cada sistema de arquivos, não como opinião a triangular. Sem contradições com o restante da wiki: a tabela comparativa que já existia em [[wiki/concepts/sistema-de-arquivos]] (ext4/NTFS/APFS/ZFS/Btrfs) foi mantida e enriquecida, não substituída — Btrfs continua sem página própria por não ser coberto por esta fonte. Questões abertas registradas na fonte: cobertura ausente de Btrfs em profundidade, F2FS e ReFS (sucessor do NTFS para Windows Server), e se a proteção por checksum do ZFS é exclusiva dele ou compartilhada por outros sistemas copy-on-write como o Btrfs.
 
+
 ---
 
 ## [2026-07-09] ingest | Fundamentos de Software Importam Mais que Nunca na Era da IA
@@ -3197,6 +3198,7 @@ Entities:
 **Skill carregada:** `tech-mentor-testing` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — tópico central é TDD/watch-mode/regressão, mapeado em `references/test-patterns.md` e `references/test-tooling.md` no índice da skill.
 
 **Autoria:** atribuída por inferência a [[wiki/entities/filipe-deschamps]] — evidência interna forte: "Felipinho de Champs de 2014", experiência no [[wiki/entities/pagar-me]], e demonstração prática usando o TabNews (projeto do próprio autor) como codebase — mesmo padrão de pistas já usado para inferir autoria em [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]].
+
 
 **Páginas criadas:**
 - `wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo.md`
@@ -4550,7 +4552,7 @@ Entities:
 **Páginas criadas:**
 - `raw/system-design-entrevista-cinema-draw-io.md`
 - `wiki/sources/system-design-entrevista-cinema-draw-io.md` — 8 key claims com evidência
-- `wiki/entities/joao-rocket-city.md` — novo, status stub (apresentador do canal Rocket City, mesmo canal de [[wiki/entities/eduarda-rocket-city]] já na wiki)
+- `wiki/entities/joao-rocketseat.md` — novo, status stub (apresentador do canal Rocket City, mesmo canal de [[wiki/entities/eduarda-rocketseat]] já na wiki)
 
 **Páginas atualizadas:**
 - `wiki/concepts/entrevista-system-design.md` — nova seção "O Framework Executado ao Vivo, com Erros Preservados"; `source_count` 4 → 5
@@ -4562,8 +4564,8 @@ Entities:
 - `wiki/concepts/modelagem-de-dados.md` — nova seção "Critério Prático para Escolher SQL vs. NoSQL: Existe Relação?"; nova linha em Key Sources; `source_count` 3 → 4
 - `wiki/concepts/estimativas-back-of-envelope.md` — nova linha em Key Sources; `source_count` 4 → 5
 - `wiki/concepts/niveis-de-senioridade-system-design.md` — nova linha em Key Sources; `source_count` 1 → 2
-- `wiki/entities/eduarda-rocket-city.md` — nova seção "Ver também" linkando o novo apresentador do mesmo canal
-- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`joao-rocket-city`)
+- `wiki/entities/eduarda-rocketseat.md` — nova seção "Ver também" linkando o novo apresentador do mesmo canal
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`joao-rocketseat`)
 
 **Notas:** O achado mais interessante desta ingestão não é uma claim numérica, é um **exemplo negativo auto-reconhecido**: o desenho do vídeo reserva um assento gravando `seatmapId`+`seatId` no Redis com TTL de 15 minutos, mas não faz check-and-reserve atômico contra a API externa de seatmap antes de expor o assento como disponível — gerando exatamente o tipo de conflito de concorrência que [[wiki/concepts/distributed-lock]] (caso Uber, `SET NX EX`) resolve, só que sem a solução. O autor reconhece isso na própria fala ("eu concordo que não é a melhor forma") em vez de apresentar como decisão consciente — isso vira um contraponto didático direto ao caso Uber já documentado (positivo: lock atômico evita o conflito; negativo: ausência do lock gera o conflito). Também conecta de forma independente com [[wiki/concepts/niveis-de-senioridade-system-design]]: o apresentador, por conta própria, evita aprofundar BOE/escalabilidade no rascunho por julgar isso pergunta de senioridade mais alta — confirmação da mesma gradação já documentada a partir de outro canal/fonte. Nenhuma contradição encontrada com conteúdo já existente na wiki.
 
@@ -4990,10 +4992,10 @@ Entities:
 - `wiki/concepts/vibe-coding.md` — nova seção "Autopentest Como Contraexemplo Deliberado ao Vibe Coding"; nova linha em Key Sources; `source_count` 10 → 11
 - `wiki/concepts/token-maxing.md` — nova seção "Escopo Pequeno Como Antídoto Prático (Não Só Corporativo)"; nova linha em Key Sources; `source_count` 4 → 5
 - `wiki/entities/claude-code.md` — nova seção "Uso como 'Professor' em Autopentest, Não Como Executor Autônomo"; nova linha em Key Sources; `source_count` 10 → 11
-- `wiki/entities/eduarda-rocket-city.md` — nova seção "Possível Vlog de Construção do Pulsar (Autoria Inferida, Não Confirmada)"; nova linha em Fontes no Wiki; `source_count` 1 → 2
+- `wiki/entities/eduarda-rocketseat.md` — nova seção "Possível Vlog de Construção do Pulsar (Autoria Inferida, Não Confirmada)"; nova linha em Fontes no Wiki; `source_count` 1 → 2
 - `wiki/index.md` — nova linha em Sources; nova linha em Entities (`pulsar-saas`)
 
-**Notas:** Fonte de alta confiança para o relato de processo (é a própria autora narrando sua prática), mas com identidade da autora não confirmada — a hipótese de que seja [[wiki/entities/eduarda-rocket-city]] (mesma comunidade Rocket City, mesmo perfil de criadora de conteúdo técnico com projeto prático em vlog) foi registrada explicitamente como inferência não verificada, propagada nos dois lados do link (fonte, entidade Eduarda, entidade Pulsar), seguindo o mesmo padrão de cautela já usado para a autoria de [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]. Esta fonte tem forte sobreposição temática com [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] (mesmas vulnerabilidades: IDOR, confiar no frontend, rate limiting), mas ângulo complementar e sem contradição: aquela é uma aula técnica sobre os ataques, esta é um relato de processo sobre como usar um agente de IA para descobri-los metodicamente no próprio produto, com ênfase especial em disciplina de prompt e escopo — o achado mais reutilizável da fonte para a wiki é justamente o método de seis passos para prompt de segurança, que não tinha equivalente documentado em [[wiki/concepts/prompt-engineering]] antes desta ingestão.
+**Notas:** Fonte de alta confiança para o relato de processo (é a própria autora narrando sua prática), mas com identidade da autora não confirmada — a hipótese de que seja [[wiki/entities/eduarda-rocketseat]] (mesma comunidade Rocket City, mesmo perfil de criadora de conteúdo técnico com projeto prático em vlog) foi registrada explicitamente como inferência não verificada, propagada nos dois lados do link (fonte, entidade Eduarda, entidade Pulsar), seguindo o mesmo padrão de cautela já usado para a autoria de [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]. Esta fonte tem forte sobreposição temática com [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] (mesmas vulnerabilidades: IDOR, confiar no frontend, rate limiting), mas ângulo complementar e sem contradição: aquela é uma aula técnica sobre os ataques, esta é um relato de processo sobre como usar um agente de IA para descobri-los metodicamente no próprio produto, com ênfase especial em disciplina de prompt e escopo — o achado mais reutilizável da fonte para a wiki é justamente o método de seis passos para prompt de segurança, que não tinha equivalente documentado em [[wiki/concepts/prompt-engineering]] antes desta ingestão.
 
 ---
 
@@ -7287,6 +7289,7 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/recursao]] (já draft, 3 fontes) e adiciona os dois traces didáticos completos (fatorial e Fibonacci) que a página ainda não tinha em detalhe. (2) **Imprecisão da fonte sinalizada, não corrigida silenciosamente** — a conclusão da fonte de que "recursão é mais lenta" generaliza um caso exponencial (Fibonacci sem memoização) para toda recursão, ignorando que fatorial recursivo é O(n), a mesma complexidade da versão iterativa. Registrado explicitamente em `wiki/concepts/recursao.md` e `wiki/concepts/programacao-dinamica.md` com link de volta à fonte, em vez de apagar a imprecisão do Open Questions da fonte. (3) **Escopo do ingest menor que a faixa de 10-15 páginas sugerida no CLAUDE.md** — o conteúdo é uma introdução didática que já converge quase inteiramente com `wiki/concepts/recursao.md` (existente, draft, 3 fontes prévias); os quatro conceitos tocados (recursão, programação dinâmica, Big O, pilha) cobrem genuinamente tudo que a fonte introduz de novo. Preferi 4 conexões reais e verificadas a esticar para conceitos sem relação direta (ex.: `divisao-de-tarefas-em-partes-menores`, que é sobre decomposição de tarefas de carreira, domínio diferente, apesar do nome parecido). (4) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal.
 
+
 ---
 
 ## [2026-08-18] ingest | Sistema de Mentoria em Golang: Monolito Modular Construído em Live (Lucas Badico)
@@ -8647,6 +8650,7 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — a fonte é estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]], já ingerida; detalha o que lá era só mencionado (Stub como ponto de controle) com as variações Responder/Saboteur e o padrão Entity Chain Snipping. (2) **Risco de fidelidade da fonte**: por indisponibilidade do site original, recomenda-se reingerir/comparar se o site voltar ao ar, especialmente as citações diretas. (3) O par "observation point"/"indirect output" do eixo controle-observação segue sem verbete de glossário isolado ingerido (mesma lacuna já registrada na fonte-mãe de Test Double).
 
+
 ## [2026-08-31] ingest | xUnit (xUnitPatterns.com — Gerard Meszaros)
 
 **Fonte:** [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário curto do site xUnitPatterns.com (http://xunitpatterns.com/xUnit.html), coletado via `curl` direto (HTML pequeno, sem necessidade de proxy de leitura), traduzido para português e salvo em `raw/xunit-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado em `raw/sut-xunitpatterns.md` e `raw/unit-test-xunitpatterns.md`.
@@ -8686,6 +8690,7 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]] e [[wiki/sources/doc-xunitpatterns]], já ingeridas; formaliza pela primeira vez que SUT é um **papel relativo ao teste** (não propriedade fixa do código) e introduz três siglas irmãs nunca antes documentadas na wiki: **CUT** (class under test), **MUT** (method(s) under test) e **AUT** (application under test) — **OUT** (object under test) já era citado implicitamente em `test-doubles.md` mas sem a sigla nomeada. (2) **OUT não tem entrada própria no índice de Glossário do site** — só aparece dentro do próprio verbete de SUT; tratado como sigla irmã de mesmo peso, sem fonte primária isolada dedicada. (3) Restam sem fonte primária isolada: "observation point", "indirect output", "direct input", "fixture teardown" (mesma lacuna já registrada em ingests anteriores do mesmo glossário).
 
+
 ## [2026-08-31] ingest | Unit Test (xUnitPatterns.com — Gerard Meszaros)
 
 **Fonte:** [[wiki/sources/unit-test-xunitpatterns]] — tradução em `raw/unit-test-xunitpatterns.md` da página `unit test` (verbete de glossário) do catálogo xUnitPatterns.com. Site acessado com sucesso via `curl` direto (mesma abordagem já usada na ingestão de SUT — `WebFetch` do harness falha com `ECONNREFUSED` no IP do host, mas `curl` responde normalmente).
@@ -8704,6 +8709,7 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources, logo após `sut-xunitpatterns`
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte elaborativa em relação a [[wiki/sources/sut-xunitpatterns]] (o par SUT/unit test se define mutuamente: unit test é "SUT pequeno"). (2) **Achado inédito**: "developer test" e "programmer test" como sinônimos de unit test em eXtreme Programming, nunca antes documentados em [[wiki/concepts/extreme-programming]]. (3) **Lacuna aberta**: "customer test" segue sem verbete de glossário isolado próprio — conhecido só por contraste dentro deste verbete e do de SUT; candidato natural para próxima ingestão do mesmo cluster xUnitPatterns.com, junto de "acceptance test" e "user story".
+
 
 ## [2026-08-31] ingest | Test (xUnitPatterns.com — Gerard Meszaros)
 
@@ -12274,6 +12280,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) os tempos do ciclo (10–15 + 5–10 + 30–70 min) somam 45–95 min, não 120 — as 2 h parecem teto; heurística sem evidência. (2) Tensão leve com [[wiki/concepts/debugar-antes-de-perguntar]]: aquela fonte defende resistir a perguntar (aprendizado), esta impõe teto de tempo (prazo) — complementares, sem contradição factual. (3) A fonte cobre só o lado de quem pergunta; papel do sênior/segurança psicológica não tratados. (4) Nenhuma entidade nova criada (ChatGPT/OpenAI e Java só como exemplos).
 
+
 ---
 
 ## [2026-09-29] ingest | Pilares do Desenvolvimento com IA: Harness, Contrato de Revisão e Waves
@@ -12302,6 +12309,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) sem amostra/variância: 90% vs. 50% (Haiku) e 100/100 (Opus) vêm de uma única skill (migração de banco), verbalmente. (2) Alegação de portabilidade entre Claude Code/Codex/OpenCode não demonstrada — só Haiku e Opus testados. (3) Tensão leve com [[wiki/concepts/skills-agente]] ("skill que atrapalha", sem medição): esta fonte oferece o método de medição. (4) O stub [[wiki/concepts/evals-llm]] ganhou fonte relacionada mas continua stub (duplica [[wiki/concepts/llm-evals-testing]]; candidato a lint). (5) Nome da skill do autor ("query optimizer") incerto pela transcrição.
 
+
 ---
 
 ## [2026-09-29] ingest | A Gaiola de Ferro Revisitada: Isomorfismo Institucional, Ondas de Modernização e a Corrida por IA
@@ -12315,6 +12323,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/hype-de-ia]], [[wiki/concepts/ai-washing]], [[wiki/concepts/fomo-tecnologico]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/modernizacao-de-mainframe]], [[wiki/concepts/mainframe]], [[wiki/concepts/arquitetura-cliente-servidor]], [[wiki/concepts/microsservicos]], [[wiki/concepts/body-shop-terceirizacao]], [[wiki/concepts/cloud-como-modelo-de-consumo]], [[wiki/concepts/decisao-terceirizada]], [[wiki/concepts/profecia-autorrealizavel-corrida-da-ia]], [[wiki/concepts/eficacia-vs-eficiencia]], [[wiki/entities/ibm]] — Key sources + bump de `source_count`/`date_updated` (corpo ampliado nas 7 primeiras e em modernizacao-de-mainframe/mainframe).
 
 **Notas:** (1) sem dados quantitativos: custos do cliente-servidor e a contrafactual de 1991 são relato/retórica. (2) A fonte reduz o artigo original a uma taxonomia de adoção tecnológica; o original trata de estruturação de campos organizacionais [external: https://doi.org/10.2307/2095101 — referência bibliográfica não verificada online nesta sessão]. (3) "Mimetismo é racional" convive com [[wiki/concepts/cargo-cult-tecnologico]] (que trata a cópia como erro de contexto) — complementares, não contraditórios. (4) Nenhuma entidade criada para os autores (só o paper); "SISCO MB-10000" e Windows NT/Novell/Clipper/Visual Basic são menções laterais sem página.
+
 
 ---
 
@@ -12330,6 +12339,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) sem números: K, pesos e métricas de retrieval não são dados; a fonte não nomeia BM25 nem RRF (associados via skill). (2) "120/150/200 milhões de tokens" provavelmente é "mil" (erro de transcrição). (3) Trecho de "memória semântica" ambíguo. (4) Reranking não é mencionado no vídeo. (5) Os stubs [[wiki/concepts/bm25]] e [[wiki/concepts/reranking]] seguem stubs (só ganharam fonte relacionada).
 
+
 ---
 
 ## [2026-09-30] ingest | Dicas de Claude Code da Documentação: Worktrees, Paralelismo, Rotinas, Sessões Remotas, Fork e Output Estruturado
@@ -12343,6 +12353,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (13):** [[wiki/concepts/paralelismo-de-tarefas-ia]] (stub→draft), [[wiki/concepts/computer-use]] (stub→draft), [[wiki/concepts/worktree-paralelismo]], [[wiki/concepts/subagentes]], [[wiki/concepts/gerenciamento-de-sessoes-claude-code]], [[wiki/concepts/rewind-checkpoints-claude-code]], [[wiki/concepts/harness]], [[wiki/concepts/loop-engineering]], [[wiki/entities/claude-code]], [[wiki/entities/anthropic]], [[wiki/entities/codex-openai]], [[wiki/entities/opencode]], [[wiki/entities/cursor]] — Key sources + bump de `source_count`/`date_updated`, com seção nova em cada.
 
 **Notas:** (1) Nenhum nome de comando/flag (`--worktree`, `/loop`, `/fork`, `/code/routines`, Agents View, Agent Teams, Remote Control) foi verificado na documentação atual; vêm da fala do autor. (2) "Custo 2x" do paralelismo é estimativa qualitativa; ver benchmark de campo em [[wiki/concepts/subagentes]]. (3) Sem contradições com a wiki; complementa [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] e [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], que já cobriam worktree/subagentes. (4) Trecho de patrocínio (gateway de pagamentos) ignorado, sem página. (5) Artigo "Effective harnesses for long-running agents" tem título inferido; candidato a ingest futuro.
+
 
 ---
 
@@ -12372,6 +12383,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Tudo é experiência anedótica do autor, que se declara "tendência, não certeza"; nenhuma afirmação de mercado (ex.: grandes empresas contratam sênior de fora) foi verificada. (2) Os "subníveis" são modelo pessoal do autor, não padrão; não comparados em profundidade com `engineering-levels-ladder.md`. (3) Sem contradições com a wiki; complementa [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] (lá: ser essencial; aqui: fazer e mostrar). (4) Trecho final de divulgação do curso "Dev que Resolve" ignorado, sem página.
 
+
 ---
 
 ## [2026-09-30] ingest | Versionamento de Prompts: Reprodutibilidade, Metadados, Versionamento Semântico e Rollback Instantâneo
@@ -12385,6 +12397,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (14):** [[wiki/concepts/prompt-engineering]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/evals-llm]], [[wiki/concepts/llmops]], [[wiki/concepts/system-prompt-arquitetura]], [[wiki/concepts/hyperparameters-llm]], [[wiki/concepts/agente-ia]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/concepts/drift-detection]], [[wiki/concepts/ci-cd]], [[wiki/concepts/feature-flag]], [[wiki/concepts/api-versioning]], [[wiki/entities/openrouter]], [[wiki/entities/google]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Reprodutibilidade é parcial: a fonte não trata seed nem snapshot de modelo, e o provedor pode mudar o modelo sob o mesmo ID. (2) Versionar ≠ melhorar (ressalva do próprio autor); golden dataset/regressão só descritos, sem demo, por isso os dois conceitos são stubs. (3) Sem critério objetivo para major vs. minor. (4) Repositório e vídeos citados não foram acessados; nada verificado no código. (5) Sem contradições com a wiki; concretiza [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] (versionamento com gate em CI/CD) e [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] (evals por mudança de prompt). (6) Pedido de curtida/inscrição ignorado.
+
 
 ---
 
@@ -12414,6 +12427,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Conteúdo é material de pentest/hacking ofensivo (dual-use), consistente com fontes já presentes na wiki do mesmo autor e do mesmo gênero ([[wiki/sources/sql-injection-guia-completo-solucoes-galego]], [[wiki/sources/xss-cross-site-scripting-luiz-viana]], [[wiki/sources/pentest-redteam]]); tratado como educacional/defensivo, sem alvo real nomeado. (2) A afirmação de que `INTO OUTFILE` pode levar a RCE é citada na fonte mas não demonstrada ao vivo — registrada como claim não verificada em [[wiki/concepts/load-file-into-outfile-mysql]]. (3) Nomes exatos de flags do SQLMap (`--list-tampers`, sintaxe de `--technique`, uso de `*` em `--headers`) não foram cruzados com a documentação oficial nesta sessão — plausíveis, mas não triangulados. (4) Sem contradições com a wiki; complementa [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] (que cobre defesa em 7 camadas) com o lado ofensivo/exploração. (5) Laboratório do vídeo não identificado por nome/plataforma (só citado como "link na descrição", ausente da transcrição colada).
 
+
 ---
 
 ## [2026-09-30] ingest | ICMP Browser: navegando na internet via ping em Go (Michel Leonardo)
@@ -12427,6 +12441,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (11):** [[wiki/entities/michel-leonardo]], [[wiki/concepts/dns]], [[wiki/concepts/tunelamento]], [[wiki/concepts/vpn]], [[wiki/concepts/reverse-proxy]], [[wiki/concepts/proxy-pattern]], [[wiki/concepts/tcp-three-way-handshake]], [[wiki/concepts/go-stdlib]], [[wiki/concepts/http-vs-https]], [[wiki/concepts/array]], [[wiki/concepts/ddos-syn-flood]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) MTU do áudio ("10000") corrigido por conhecimento externo, sinalizado. (2) O vídeo mistura comportamento IPv4/IPv6 na fragmentação (em IPv6 só a origem fragmenta; [external], não verificado). (3) Segurança do "proxy" é inferência: canal ICMP sem cifra/autenticação. (4) Código do projeto (na descrição), vídeo anterior (codec ICMP) e post do Doom via DNS não acessados. (5) Sem contradições com a wiki; o conceito de proxy foi desambiguado de [[wiki/concepts/proxy-pattern]]. (6) Patrocínio JetBrains e pedidos de engajamento tratados como publicidade/ignorados.
+
 
 ---
 
@@ -12442,6 +12457,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradições com a wiki; reforça [[wiki/sources/ddd-strategic]] e a definição já existente de bounded context. (2) Os seis conceitos novos são stubs: a fonte só nomeia os padrões de integração; definições adicionais vêm da skill e estão marcadas. (3) Tensão não resolvida na fonte: várias classes por contexto podem mapear a mesma tabela, o que mantém acoplamento de dados (inferência; ver [[wiki/concepts/database-per-service]]). (4) Artigo exato de Fowler que originou a imagem Vendas/Suporte não verificado; Evans (2003) não consultado. (5) Vídeos 1–3 e 5 da série não estão na wiki. (6) Pedidos de like/inscrição ignorados.
 
+
 ---
 
 ## [2026-09-30] ingest | Comunicação Assíncrona — Arquiteturas Distribuídas (Bernardo Lobato)
@@ -12455,6 +12471,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/concepts/processamento-assincrono]] (stub → draft), [[wiki/concepts/mensageria]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/acoplamento]], [[wiki/concepts/temporal-coupling]], [[wiki/concepts/microsservicos]], [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]], [[wiki/concepts/observabilidade]], [[wiki/concepts/distributed-tracing]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/buffer]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/kafka]], [[wiki/entities/rabbitmq]], [[wiki/entities/bernardo-lobato]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Sem contradições com a wiki; reforça [[wiki/concepts/temporal-coupling]] e a tabela síncrono/assíncrono da skill. (2) Ressalvas adicionadas: "acoplamento fraco" vale no eixo temporal (o contrato da mensagem continua acoplando); "como se nada tivesse acontecido" omite duplicatas/reprocessamento (exige consumidor idempotente); o vídeo não cita outbox/dual write. (3) A afirmação de que brokers não garantem entrega "por padrão" é genérica e não foi verificada por broker. (4) Cinco conceitos novos são stubs/draft: a fonte só os apresenta em alto nível; definições extras vêm da skill e estão marcadas. (5) Vídeos prometidos sobre comunicação síncrona e mensageria não estão na wiki. (6) Pedidos de like/inscrição tratados como engajamento, sem valor técnico.
+
 
 ---
 
@@ -12820,6 +12837,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição; reforça [[wiki/concepts/sensores-vs-guias]] e dá a atribuição (Böckeler) e o princípio de Hashimoto, ausentes antes. (2) Atribuições, de-para e DeepSeek Harness são relato do áudio `[external, não verificado]`; "half loops" do ASR lido como "(Ralph?) loops", incerto. (3) "Harness importa mais que o modelo" é afirmação sem medição. (4) Anúncio patrocinado e pedidos de interação ignorados. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
 
+
 ---
 
 ## [2026-10-07] ingest | Novos cargos pós-IA e hunting de vagas fora do LinkedIn
@@ -12876,6 +12894,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição direta; tensão com [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]] registrada em [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]]. (2) Afirmações sobre reclamar, lista de tarefas e "criar é fácil, manter é difícil" são opinião do autor, sem dados `[external não verificado]`. (3) Novos itens `draft`; `source_count` das tocadas +1.
 
+
 ---
 
 ## [2026-10-07] ingest | Engenharia de contexto na prática: Write, Select, Compress, Isolate (Felipe Fagundes)
@@ -12889,6 +12908,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/concepts/context-engineering-harness]], [[wiki/concepts/context-compaction]], [[wiki/concepts/subagentes]], [[wiki/concepts/agent-memory-tres-camadas]], [[wiki/concepts/janela-de-contexto]], [[wiki/concepts/degradacao-de-contexto]], [[wiki/concepts/memoria-de-longo-prazo-ia]], [[wiki/concepts/tool-use-agents]], [[wiki/concepts/memory-rot]], [[wiki/concepts/separacao-de-contextos]], [[wiki/concepts/capital-de-tokens]], [[wiki/concepts/harness]], [[wiki/concepts/evals-llm]], [[wiki/entities/langchain]], [[wiki/entities/claude-code]], [[wiki/entities/codex-openai]].
 
 **Notas:** (1) Sem contradição com a wiki; reforça subagentes/compactação e adiciona o método (medir → Write/Select/Compress/Isolate). (2) Números (8.339 → 2.426, ~−71%) vêm de demo fictícia do autor, sem avaliação de qualidade `[external não verificado]`. (3) "Superfície probabilística" é termo informal do autor. (4) API `store.put` atribuída a LangChain não verificada. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
+
 
 ---
 
@@ -12904,6 +12924,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Tensão leve: "decorar a resolução" vs. "memorize o padrão, não o problema" (registrada na fonte). (2) Volta do LeetCode/System Design presencial nas Big Techs é afirmação do autor `[external não verificado]`. (3) Autoria inferida por autorreferência ("Galego"). (4) Novos itens `draft`; `source_count` das tocadas +1.
 
+
 ---
 
 ## [2026-10-07] ingest | O desafio simples de System Design que reprova seniores: sistema de notificação (Ana)
@@ -12917,6 +12938,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** notification-system, entrevista-system-design, kafka, filas-e-workers, fila, idempotencia, mobile-push-notifications, requisitos-funcionais-e-nao-funcionais, high-level-design, reconciliacao, finops, facade-pattern, rate-limiting, pensar-em-voz-alta-na-entrevista, niveis-de-senioridade-system-design, dlq (todas em `wiki/concepts/`).
 
 **Notas:** (1) Sem contradição; a skill sugere SQS FIFO/Standard por prioridade, o vídeo tópicos Kafka — mesma ideia, tecnologia distinta. (2) Faixa de custo SMS (10–500×; 5–25 mil/dia) `[external não verificado]`. (3) Autoria só "Ana"; sem entidade criada. (4) Novos itens `draft`.
+
 
 ---
 
@@ -13212,6 +13234,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição direta; estende [[wiki/concepts/matriz-risco-dificuldade-review-ia]] (transição) com o regime pleno da Anthropic e dá página própria ao [[wiki/concepts/review-md]], antes só uma seção em claude-md. (2) Números da Anthropic (30 mil/dia, 90%, 65%→78%, reverts −40%) vêm de relato oral de segunda mão; "200.500" e o dado de 5+ rodadas estão ilegíveis. (3) Os três papers (Microsoft, ETH Zurique, 67.774 PRs) não foram verificados; contagem de tarefas abertas/fechadas do benchmark é ambígua. (4) "Reversibilidade como metade do segredo" é inferência do apresentador. (5) Camada 4 (segurança) só citada de passagem. (6) Novos itens `draft`/`stub`.
 
+
 ---
 
 ## [2026-10-30] ingest | Upload e Download de Arquivos Gigantes — Presigned URL, Multipart e CDN (Tier S, vídeo 5)
@@ -13434,6 +13457,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** MDN (SSE unidirecional, reconexão com `retry:`/`id:`, limite de 6 conexões sem HTTP/2 e cerca de 100 com HTTP/2), RFC 6455 (HTTP Upgrade, `101`, canal bidirecional), guia de streaming da OpenAI (SSE e modo WebSocket) e API Gateway WebSocket APIs (integração com Lambda). (2) **Correções da fonte:** SSE não é "não nativo do HTTP" (a API é do padrão HTML e o transporte é HTTP comum); "sem handshake" quer dizer sem upgrade de protocolo; WebSocket em serverless é viável com camada gerenciada; SSE atrás de proxy pode exigir desligar o buffer. (3) **Tensão com a wiki:** a regra "WebSocket exige LB L4, nunca L7" de [[wiki/sources/updates-tempo-real-polling-sse-websocket]] é relativizada pela skill (proxy nginx L7 com `Upgrade`); a ressalva foi posta em [[wiki/concepts/websocket-vs-polling]] sem apagar a afirmação original. (4) **Tensão interna:** a fonte descarta combinar SSE com outro canal, mas o próprio exemplo do ChatGPT é requisição de ida com SSE de volta. (5) **Limites da conferência:** a página de referência de streaming da OpenAI deu 403 e foi usado o guia; a interface web do ChatGPT não foi conferida; o envio de `Last-Event-ID` não aparece na página da MDN lida. (6) **Lacunas da fonte:** long polling, escala horizontal e o limite de conexões do SSE.
 
+
 ---
 
 ## [2026-11-10] ingest | Claude Code: tudo que você precisa saber sobre o harness, comandos, contexto e automação
@@ -13448,6 +13472,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** documentação oficial do Claude Code (permission-modes, cli-reference, commands, checkpointing, model-config, memory, skills, mcp, worktrees, common-workflows, headless, interactive-mode, best-practices), lida por um subagente. Esses textos não foram ingeridos e aparecem como `[external]`. (2) **Correções da fonte:** `Ctrl+O` não é descrito como exibição de raciocínio; Deep Research, Design e Dataviz não estão entre as skills empacotadas; `/worktree` é flag; `/todos` não aparece; `ultracode` não é nível de esforço; o padrão é `medium` nos modelos 5.x; `-p` é não interativo, não background; worktree não é clone. (3) **Tensões com a wiki:** `/go` (em [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] e [[wiki/concepts/loop-engineering]]) deve ser `/goal`, com ressalva posta só na primeira; rule "sempre global" em [[wiki/concepts/rules-agente]] contra rules com `paths`; compactação "~200k" em [[wiki/entities/claude-code]] contra gatilho configurável. (4) **Não conferido:** "mais caro o token" em xhigh; as quatro superfícies; os "80%" do `/clear`. (5) **Em aberto:** identidade da skill "NP Spec Driven" e o "quadro 35". (6) **Sem página própria:** Antigravity, Kimi Code, Asaas, Notion.
 
+
 ---
 
 ## [2026-11-10] fix | Comando `/go` corrigido para `/goal`
@@ -13457,6 +13482,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Alteradas:** gerenciamento-de-sessoes-claude-code, agent-containment, loop-engineering, harness (concepts); pedro-nauke, codex-openai, claude-code (entities); 20-melhores-praticas-claude-code-segundo-anthropic, loop-engineering-padroes-loop-deterministico-agentico (sources); index.md.
 
 **Notas:** (1) `raw/` não foi alterado e continua com `/go`; as duas páginas de fonte ganharam nota de correção. (2) `/go` ficou como alias de busca em gerenciamento-de-sessoes-claude-code. (3) Entradas antigas deste log não foram reescritas. (4) A afirmação de Pedro Nauke de que "a maioria dos harnesses" tem o comando só foi conferida para Claude Code e Codex; Hermes não foi conferido. (5) A entrada do `/goal` na tabela da CLI do Codex só foi lida em resumo; a descrição literal vem da página do app desktop.
+
 
 ---
 
@@ -13472,6 +13498,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** Prisma (relation queries, query optimization), TanStack Query (important defaults), TypeORM (eager and lazy relations), guia do Hibernate, MDN (lazy loading), Chrome Lighthouse (third-party facades), preços do CockroachDB e devpleno.com, lidos por um subagente. (2) **Correções da fonte:** "1 décimo" só vale no melhor caso; a demonstração chamada de eager é N+1 entre front-end e backend; a recarga vem de nova montagem com dado stale, não de re-render; "em JavaScript não dá" não vale para o TypeORM. (3) **Tensão com a wiki:** "ORMs lazy-load relacionamentos por padrão" em [[wiki/concepts/n-plus-one]] recebeu ressalva sem apagar a afirmação. (4) **Não conferido:** os 5% a 10% de uso do free tier; custo de RU por leitura e escrita; default de `@OneToOne` no trecho lido do Hibernate; dono do canal no YouTube (página truncada). (5) **Limite temporal:** o vídeo não tem data, e a oferta do CockroachDB mudou em setembro de 2026. (6) **Sem página própria:** Prisma, tRPC, T3 App, Zod, GitHub Copilot, YouTube.
 
+
 ---
 
 ## [2026-11-10] ingest | Dynamic Workflows sem Claude Code: engenharia reversa e implementação em LangGraph
@@ -13485,6 +13512,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** dynamic-workflow, padroes-de-workflow-dinamico, langgraph, grafo-como-abstracao-de-agentes, planner-executor-critic, harness, subagentes, degradacao-de-contexto, determinismo-vs-probabilismo-em-ia, camada-de-aplicacao-vs-modelo, modalidades-de-paralelismo-claude-code (concepts); ronald-hulk, claude-code, openrouter (entities); dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk (sources). Também index.md e log.md. `anthropic`, `langsmith`, `opencode`, `codex-openai` e `rock-pro` receberam só link de saída, para não passar de 15.
 
 **Notas:** (1) **Conferido em fontes externas** por um subagente, sem ingestão: docs de workflows e model-config do Claude Code, anúncio e artigo da Anthropic, Building Effective Agents, docs do LangGraph, OpenRouter, Context Rot, Lost in the Middle, carta de Buffett de 1992. (2) **Correções da fonte:** esforço alto não é exigido; workflows também rodam em sessões cloud, `-p` e Agent SDK. (3) **Não encontrado:** a comparação com skills e subagentes atribuída a um engenheiro da Anthropic; X não pôde ser pesquisado. (4) **Sem declaração explícita:** restrição a modelos Anthropic. (5) **Data inferida:** o vídeo fala em "semana passada", e o anúncio é de 28/05/2026, logo foi gravado por volta de junho de 2026; `date_published` ficou vazio. (6) **Não conferível:** código do autor (repositório fechado), qualidade do relatório, custo por execução. (7) **Tensão com a wiki:** verificação como "tarefa fácil" contra o peso dado ao verificador em [[wiki/concepts/planner-executor-critic]]. (8) **Resolvido em parte:** a ressalva sobre "workflows dinâmicos" em [[wiki/concepts/modalidades-de-paralelismo-claude-code]]. (9) **Sem página própria:** Qwen 3.7 Max, ChatGPT, Claus.
+
 
 ---
 
@@ -13513,6 +13541,7 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** cpu-profiling, teste-de-carga, flame-graph, event-loop-performance-js, opentelemetry, observabilidade, gerenciamento-de-memoria, standard-library-e-ecossistema, decisao-tecnica-embasada-em-metricas, graceful-shutdown (concepts); erick-wendel, lodash, opentelemetry (entities); cpu-profiling-nodejs-inspector-autocannon-erick-wendel, 5-dicas-performance-javascript (sources). Também index.md e log.md. `imutabilidade`, `tree-shaking` e `performance-methods` receberam só link de saída, para não passar de 15.
 
 **Notas:** (1) **Conferido em fontes externas:** documentação do `node:inspector` (fluxo `Profiler.enable`/`start`/`stop` e gravação em `.cpuprofile`), README do autocannon (padrão de 10 conexões por 10 s), documentação de sinais do Node.js, benchmarks públicos de `cloneDeep` contra `structuredClone` (resultados divergentes). (2) **Correções da fonte:** o Ctrl+C manda SIGINT, que não está na lista falada (SIGTERM e SIGQUIT); remover o `cloneDeep` só é seguro se ninguém mutar os dados; "duplicar a capacidade" subestima o caso (cerca de 5,5 vezes) e não vale como promessa geral. (3) **Não conferido:** a contribuição do autor ao `node:inspector/promises` (PR não encontrado); o visualizador web usado (CPUpro é inferência pela menção a "Discover"); o repositório do exemplo, sem URL na transcrição. (4) **Inconsistência interna:** a rota `no-issue`, já otimizada, aparece com "mais de 8.000", abaixo dos 11.000 da rota `issue` alterada. (5) **Data inferida:** o vídeo usa Node.js 22; `date_published` ficou vazio. (6) **Sem página própria:** autocannon (coberto por [[wiki/concepts/teste-de-carga]]), V8, Chrome DevTools, VS Code, Higlobe, JavaScript Expert. (7) **Identidade:** reforça a atribuição de conteúdo Node.js/performance a [[wiki/entities/erick-wendel]]; a dúvida com [[wiki/entities/eric-lenda]] continua aberta.
+
 
 ---
 
@@ -13743,6 +13772,7 @@ Usuário confirmou que o site "Humans" (3×, `00:04:22`, `00:06:51`, `00:08:46`)
 **Tocadas (13 existentes):** icones-em-interfaces, familia-de-icones, hierarquia-visual, simetria-visual, formato-svg, consistencia-visual, contraste, espaco-em-branco (concepts); material-design, figma, frontpush, nasser (entities); icones-parte-1-conceito-comunicacao-identidade-visual-familias (source: pendência dos grids fechada). Também index.md e log.md.
 
 **Notas:** (1) **Material Design conferido no M3** pelo navegador (https://m3.material.io/styles/icons/designing-icons): 24dp, live area 20dp + 2dp de padding, tamanhos 20/24/40/48, keylines (quadrado 18, círculo 20, retângulos 16×20/20×16), stroke 2dp; a página do M2 segue sem texto. (2) **Círculo de 18 dele x keyline de 20**: escolha deliberada de mais respiro, não contradição. (3) **"Tamanho não importa" x tamanhos ópticos**: SVG escala, mas o stroke escala junto (inferência). (4) **Triângulo do Figma "com dois pixels vazios"** não verificado; o fenômeno (centroide a 1/3 da base) é conhecido. (5) **Preenchido = amigável (parte 1) x preenchido = destaque (parte 2)**: conciliados (estilo da família x meio de hierarquia). (6) **Font Awesome**: home atual mostra Solid/Regular/Light/Thin; os botões "Start for Free"/"Get More with Pro" não estão mais lá. (7) Parte 3 (ícones do FrontPUSH) anunciada. Sem página própria: Notion. `date_published` vazio.
+
 
 ## [2026-11-13] ingest | Elementos da interface: ícones, parte 3 (os ícones do FrontPUSH, formas geométricas e referências)
 
@@ -14528,6 +14558,41 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Páginas criadas em dois branches, fundidas numa só (cada afirmação com sua fonte):** [[wiki/concepts/seletores-css]] (os quatro básicos de [[wiki/sources/classes-e-ids-no-css]] + combinadores de [[wiki/sources/seletores-e-pseudo-elements-css]]; divergência registrada: "crie classe quando o estilo se repete" x "a menor quantidade de classes possíveis"), [[wiki/entities/w3schools]], [[wiki/entities/wellfound]], [[wiki/entities/x-team]], [[wiki/entities/glassdoor]], [[wiki/entities/levels-fyi]]. Linhas duplicadas dessas páginas no index.md fundidas numa só.
 
 **Também:** blocos "Key sources" repetidos fundidos num só em box-model, body-shop-terceirizacao, lever, linkedin e augusto-galego (nesta, as duas seções do curso Mapeando Vagas viraram uma); source_count recalculado (fontes distintas citadas) nas 26 páginas tocadas cuja contagem divergia. Nenhum link quebrado novo (os existentes já estavam na main).
+
+## [2026-11-16] ingest | NLW #1, dia 1: introdução à programação web, HTML e CSS na página inicial do Ecoleta
+
+**Fonte:** transcrição colada no chat (PT-BR, timestamps em segundos fracionados), limpa com a skill **text-cleaner** em `raw/nlw-1-dia-1-programacao-web-html-css-ecoleta.md` (sem tradução). O texto foi extraído verbatim do log da sessão e montado por script (parágrafos por segmento, só a primeira letra de cada parágrafo capitalizada). Diff palavra a palavra conferido (20.916 tokens no original, 20.908 na limpa): as únicas diferenças são as correções abaixo; os trechos que a legenda repete por sobreposição foram mantidos. Correções de ASR: Maikão/Maicão→Maykão (14×); Mike/Maicon/Michael→Mayk (8×); "Rocket City"→Rocketseat; "code.ualstudio.com"→code.visualstudio.com; "ad"→Edge (4×); "meu C2"→meu C: (2×), "C2.nlw"→C:\nlw; "Emmet Ab abbreviation"→Emmet Abbreviation; "Emmett"/"emet"→Emmet (3×); "é um image que está fazendo"→Emmet; "tios"→tis, "tio,"→til (2×); "TF8"→UTF-8; "HF"→href; "fontes(.)google.com"→fonts.google.com (2×); "Primaric Color"→primary color; "black and gold color"→background color; "tight color"→title color; "PageMan"→page main (3×); "Spam"→span (4×); "viu port with [...] o it é largura"→viewport width / width; "no bota"→no bottom (2×); "page trahome"→page traço home; "127, 01 2.5500"→127.0.0.1:5500; "Puxou de bola?"→Show de bola?; "cadastro um ponto de coleta"→cadastre (2×); "e viu o page source, ou viu o código"→View Page Source / ver; "e coleta"/"e-coleta"/"ecoleta"→Ecoleta (6×); classe "head"→red (9×, no trecho 48:50–50:35, onde ele digita `.red`). Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "Launch Base Theme"; "dentro desse AWA"; "asterisco page traço home" e "asterisco 3, 2, 2 1, 5, 3" (provável "hashtag"/#); "left dele seja de 50 pixels" (provável 50%); "flex zoom" (provável "flex 1"); "flex growth"; "por grudado lá no bottom"; "esse eu coleta e coleta aqui"; "pesquizar" (erro de digitação dele, lido em voz alta); "Universal Resource Location" (fala dele). Subtítulos `##` (17) por bloco temático.
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-css-architecture.md`: reset `box-sizing: border-box` na camada Generic do ITCSS, mobile-first com `min-width` x a media query `max-width` da aula). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]; conceitos [[wiki/concepts/flexbox]], [[wiki/concepts/variaveis-css]]; entidades [[wiki/entities/mayk-brito]], [[wiki/entities/next-level-week]] (com o Ecoleta).
+
+**Tocadas (27 existentes):** css, html-hipertexto, html-semantico, box-model, display-css, background-css, seletores-css, cascata-css, pseudo-classe-css, pseudo-elemento-css, css-position, shorthand-css, unidades-de-medida-css, webfonts, sistema-hexadecimal, formato-svg, breakpoint, setup-live-reload-debug-testes, arquitetura-cliente-servidor, url, http-vs-https, algoritmo, logica-de-programacao, pratica-deliberada (concepts); google-fonts, vs-code, rocketseat (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria inferida** (Mayk Brito): chamado de "Mayk"/"Maykão" na aula; o sobrenome não aparece. Data provável junho de 2020 (semana do meio ambiente, NLW #1) `[external, não verificado]`; `date_published` vazio. (2) **Contradição com [[wiki/concepts/cascata-css]]:** a aula diz que o seletor descendente "é uma forma de cascata, por isso Cascading Style Sheet"; as aulas do FrontPUSH (corretas) tratam a cascata como prioridade entre declarações. Registrado nas duas páginas. (3) **Outras imprecisões** marcadas na fonte: sigla "Universal Resource Location"; `-webkit-font-smoothing` só age no macOS; `flex: 1` ≠ só flex-grow; `left: 50px` + `translateX(-50%)` não centraliza. (4) "Rocket City" corrigido para Rocketseat aqui por ser a NLW; as entidades eduarda-rocket-city e joao-rocket-city, de outros ingests, mantêm a grafia e talvez também sejam Rocketseat (não verificado). (5) Sem página própria: Thiago (designer do Ecoleta), Emmet e Live Server (cobertos em vs-code), Chrome, Edge, Notion.
+
+## [2026-11-16] lint | "Rocket City" corrigido para Rocketseat
+
+**Contexto:** o usuário confirmou que "Rocket City" é erro das legendas automáticas; o nome certo é Rocketseat. A wiki tinha tratado "Rocket City" como um canal do YouTube à parte.
+
+**Renomeadas:** `entities/eduarda-rocket-city` → [[wiki/entities/eduarda-rocketseat]] e `entities/joao-rocket-city` → [[wiki/entities/joao-rocketseat]]; o nome antigo ficou como alias. Os links para as duas páginas foram atualizados em toda a wiki, inclusive nas entradas antigas deste log (só o caminho do link; o texto histórico das entradas antigas continua dizendo "Rocket City").
+
+**Texto corrigido:** soft-skills-carreira-tecnologia-eduarda, system-design-entrevista-cinema-draw-io, pensamento-estruturado-resolucao-de-problemas ("Faculdade Rocketseat"), estruturas-de-dados-algoritmos-big-o-como-escolher e estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore ("canal parceiro da Rocketseat"), testes-de-seguranca-pentest-com-claude-code-pulsar-saas (sources); eduarda-rocketseat, joao-rocketseat, pulsar-saas, pedro-duarte (entities); index.md. [[wiki/entities/rocketseat]] ganhou o alias "Rocket City", uma seção sobre o canal e a Faculdade com links para Eduarda, João e as cinco fontes, e source_count 9.
+
+**Não alterado:** `raw/` (invariante). Seis arquivos ainda dizem "Rocket City" na transcrição: soft-skills-carreira-tecnologia-eduarda, testes-de-seguranca-pentest-com-claude-code-pulsar-saas, estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore, pensamento-estruturado-resolucao-de-problemas, design-first-vs-code-first-referencias e system-design-entrevista-cinema-draw-io. Fica valendo a grafia da wiki.
+
+## [2026-11-16] ingest | NLW #1, dia 2: media queries, formulário de cadastro e introdução ao JavaScript no Ecoleta
+
+**Fonte:** transcrição colada no chat (PT-BR), limpa com a skill **text-cleaner** em `raw/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta.md` (sem tradução), pelo mesmo script do dia 1 (texto verbatim do log da sessão, parágrafos por segmento, 22 subtítulos `##`). Diff palavra a palavra conferido (24.296 tokens no original, 24.280 na limpa): só as correções abaixo; repetições da legenda por sobreposição mantidas. Correções de ASR: Maicão/Maikão/Marcão/Maimacão→Maykão (12×); Mike/Maicon/Michael→Mayk (11×); "refuteração"→refatoração; "arroba midi"→arroba mídia; "regra, média, max"→mídia; "Create point.html"/"createPoint.html"→create-point.html; "tá spam"→span; "emet"/"emity"→Emmet (5×); "com o coleto"→Ecoleta; "fio de grupo"→field group; "fio de sete"/"fio de 7"→fieldset (3×); "moss, appearance"→moz; "retornar to"→true (2×); "noto final"→nota final; "CuriousElectorAll"→querySelectorAll; "Key Reselector"→querySelector; "populate o fs"→populateUFs (3×); "fselectinnerhtml"→ufSelect.innerHTML; "ufselect"/"fselect"→ufSelect (2×); "ufvalue"/"fvalue"→ufValue (3×); "Array Function"→arrow function; "CAT"→catch (3×); "get seed"→getCities; "acri"→Acre; "o F"→o UF (10×, o name do select); "den"→then (6×); "FET"→fetch (10×). Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "largura de 90 pixels" (3×, provável 90%); "background, roubaram"; "Colocar uma setaves"; "Vou mudar pau aqui"; "A gente coleta / O meu tá pretinho"; "arriscado" (riscado no editor); "460 de altura" (talvez 760); "manuviado"; "run forest" (texto que ele digita).
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-browser-apis-core.md`, seção Fetch API Avançada: `AbortSignal.timeout`, retry com backoff, AbortController). Domínio secundário lang-dynamic (beabá de JavaScript) registrado em `tags`.
+
+**Criado:** [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]; conceitos [[wiki/concepts/formulario-html]], [[wiki/concepts/fetch-api]], [[wiki/concepts/promise-javascript]], [[wiki/concepts/json]], [[wiki/concepts/funcoes-javascript]], [[wiki/concepts/event-listener-javascript]], [[wiki/concepts/var-let-const]]; entidades [[wiki/entities/ibge]], [[wiki/entities/codepen]].
+
+**Tocadas (20 existentes):** box-model, breakpoint, seletores-css, pseudo-classe-css, refatoracao, dom, array, string, tipos-primitivos-javascript, logica-de-programacao, html-semantico, acessibilidade, formato-svg, dry, cascata-css, flexbox, pratica-deliberada (concepts); vs-code, mayk-brito, next-level-week (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria inferida** (Mayk Brito), como no dia 1; data provável 2 de junho de 2020 `[external, não verificado]`. (2) **Correções registradas:** `<label for>` aponta para `id`, não `name` (o label da aula fica desassociado); var/let/const não são "tanto faz"; `fetch` sem `catch` nem `res.ok`; `innerHTML +=` com dados de API (XSS em potencial, rebuild a cada iteração); as cidades se acumulam ao trocar de estado (inferência do código); `selectedIndex` vai de 1 a 27, não de 0 a 26; prefixos de `appearance` são legado. (3) **Box-sizing:** o dia 2 aplica o reset `* { box-sizing: border-box }` que a nota de skill do dia 1 apontava como ausente; registrado em box-model. (4) Primeira media query por altura na wiki (breakpoint). (5) Sem página própria: Edge, Chrome, Firefox, extensão JSON Formatter. `date_published` vazio.
+
 ## [2026-11-16] ingest | FrontPUSH, aula 01 do módulo de front-end: configurando o ambiente (Git, Node.js, Yarn, VS Code e extensões)
 
 **Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/01 - Configurando o ambiente.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes.md`. Texto extraído do SRT por script (timestamps e números removidos, "bem -vindos" → "bem-vindos", "GitHub .com" → "GitHub.com"), parágrafos e 15 subtítulos `##`; nas quebras de parágrafo no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (3.685 tokens no original, 3.692 na limpa): só as correções abaixo; a frase repetida pela legenda ("modifica alguma coisa no nosso site") foi mantida. Correções de ASR: Nasser→Násser; "brand"→branch; "canIuse"→Can I use (2×); "frontpush"→FrontPUSH; "tunder client"→Thunder Client (5×); "PrettierCodeFormatter"→Prettier - Code formatter; "importante ao Live Server"→é o Live Server; "SAS"→Sass (8×, inclusive Live Sass Compiler); "SaaS"→Sass; "HTML Snips"→HTML Snippets; "Color Light"→Color Highlight; "one dark theme"→One Dark Theme (2×); "community material theme, ocean high contrast"→Community Material Theme, Ocean High Contrast; "na URL das vezes"→na maioria das vezes. Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "caiu no GitHub do Yuri"; "o GitHub já foi muito utilizado porque ele tinha melhores planos gratuitos" (provável GitLab); "quase que não sai"; "e o que é browser, do browser"; "então são voltados à programação"; "não mais é isso"; "VSCode".
@@ -14624,3 +14689,38 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 
 **Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) O módulo aberto na aula 01 como "de front-end" é chamado aqui de "módulo de CSS". (3) **Correções:** "versão 3 do CSS" (o CSS é modular desde o 2.1; não há CSS4); grid system com float é legado frente ao CSS Grid; centralizar com flexbox/grid é alinhamento, não posicionamento. (4) Módulos citados e ainda fora da wiki: flexbox, grid layout, Sass, keyframes, projeto do Nubank. (5) `date_published` vazio (~2022, inferido).
 
+## [2026-11-16] ingest | NLW #1, dia 3: itens de coleta, modal de busca e página de resultados no Ecoleta
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/audio.srt` (legenda automática PT-BR, 3.872 blocos), limpa com a skill **text-cleaner** em `raw/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta.md`, sem tradução. Script dos dias 1 e 2 adaptado ao SRT: parágrafos por bloco e 25 subtítulos `##`, alguns cortando o bloco no início da frase; nas quebras sem pontuação foi acrescentado ponto; a partir de 1h a legenda vem sem maiúsculas, e só a letra após `.?!` foi capitalizada. Diff palavra a palavra conferido (19.414 tokens no original, 19.302 na limpa; nenhuma inserção ou remoção, só substituições). Correções de ASR: "Fala deve Mike e Brito"→"Fala, dev, Mayk Brito"; Mike/Michael/Maicon/mic→Mayk e Maicão→Maykão; "cachibir"/"cacual"/"a qual"→Cabixi/Cacoal; "valley"→value; "site nome"→city nome; "iramsgrid"/"irons"→items-grid/items; "list style 9"→none; "spam"→span (3×); "ovidor/movidor" mantidos; "Items to collect"→itemsToCollect; "Handle, Selected Item"→handleSelectedItem; "selected items"→selectedItems (12×); "our add (is) selected"/"a red selected"/"already selected"→alreadySelected; "filter add items"/"filtrate"→filteredItems; "item/Iron ID"→itemId; "iron/item found"→itemFound; "item is different"→itemIsDifferent; "FindIndex"/"find index"→findIndex; "data set"→dataset; "togo"/"To-go"→toggle (o "To-g-g-l-e" soletrado mantido); "Event Target"/"evidence target"→event.target; "Elsie"→else; "arrei"→array; "career/queer selector"→querySelector; "o al"→o All; "ad event listener"→add; "o hf"→href; "model"/"mono form"/"no modo"→modal; "responsabilidade"→responsividade (9×); "fixad"→fixed; "axia decimal"→hexadecimal; "align arregamos 60"→align items center; "background imagine"→image; "xsvg"→x.svg; "border radios"→radius; "rover"→hover; "place holder"→placeholder; "display non"→none; "forme"→form; "mem"→main; "contra o c/v"→control C/V; "collectoria"→Colectoria; "paper site/cider"→Papersider; "o bonto"→o Ubuntu; "height alto"→auto; "tem tem plate columns"→template columns; "piseu do(s) elemento(s)"→pseudoelemento(s); "zindex"/"z index"→z-index; "sintasse"→sintaxe; "fieldset", "JavaScript", nomes de estados e endereço (Rio do Sul, Santa Catarina, Guilherme Gemballa, Jardim América) normalizados. Trechos ambíguos mantidos literais: "e1fac" (provável `#E1FAEC`), "2f b8 b9 não b8 6 e" (provável `#2FB86E`), "Deira 7", "ordem de cadência" (provável cascata), "colocava o height" (provável alt), "green piece", "verguer", "anoro", "um moral", "azinho", "a casa no mundo", "aline, flex, center" (só aline→align), "ovidor/movidor de eventos".
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-modern-css.md`, seções Popover/`<dialog>`, `@starting-style`/`allow-discrete` e layout com subgrid/`object-fit`). Domínio secundário lang-dynamic (métodos de array, igualdade) em `tags`.
+
+**Criado:** [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]; conceitos [[wiki/concepts/css-grid]], [[wiki/concepts/atributos-data-html]], [[wiki/concepts/classlist-javascript]], [[wiki/concepts/igualdade-javascript]], [[wiki/concepts/modal]].
+
+**Tocadas (21 existentes):** flexbox, display-css, array, funcoes-javascript, algoritmo, pseudo-elemento-css, css-position, formulario-html, event-listener-javascript, dom, acessibilidade, html-semantico, sistema-hexadecimal, debugging, cascata-css, var-let-const (concepts); unsplash, figma, vs-code, mayk-brito, next-level-week (entities); Open Questions do [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]] respondidas. Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada:** "Mayk Brito na área" (atualizado em mayk-brito; os dias 1 e 2 seguem marcados como inferidos no frontmatter). (2) **Dia 2 resolvido:** as cidades acumuladas são corrigidas (limpa e desabilita antes do `fetch`); o `label for` sem `id` se repete no modal. (3) **Correções registradas na fonte:** `li` sem `ul`; itens clicáveis sem teclado (checkbox seria o natural); `pointer-events: none` x `currentTarget`/`closest`; `==` x `===` "tanto faz"; `id` numérico é válido em HTML5; modal sem foco/Esc/role e "Fechar" como `<a href="#">` (`<dialog>` resolve); `font-size: 0.01px` x classe visually-hidden; `transition` não anima `display`; placeholder é lido, mas não substitui label; `h1` por card; conversão implícita do array no hidden. (4) Data provável 3 de junho de 2020 `[external, não verificado]`.
+
+## [2026-11-16] ingest | NLW #1, dia 4: back-end com Node.js, Express e Nunjucks no Ecoleta
+
+**Fonte:** transcrição colada no chat (PT-BR, timestamps no formato do dia 2), limpa com a skill **text-cleaner** em `raw/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta.md`, sem tradução, pelo script do dia 3 (26 subtítulos `##`, dois cortando o bloco no início da frase; ponto acrescentado em quebras sem pontuação; maiúscula após `.?!`). Diff palavra a palavra conferido (20.330 tokens no original, 20.310 na limpa; nenhuma inserção ou remoção, só substituições). Repetições da legenda por sobreposição mantidas, e o corte do início ("let's go! [...] dos seus objetivos") não foi preenchido. Correções de ASR: Nandux/Nandex/Nandix/Nandjux/Nandjax/NANDJUX/Nunchucks/none-jux/non-jugs→Nunjucks (59×); Maicão/Maikão/mecão→Maykão e Mike→Mayk; "emet"/"emit"→Emmet; "rec"/"Hack é uma requisição"/"mexer com o get"→req; "node moon"/"Node.moon"/"Node.MOM"/"NodeMom"/"NodeMum"/"Node.Mu"→nodemon ("E Moon significa"→Mon); "pack de jason"/"package de JSON"/"Package JSON"→package.json, "jason"→JSON; "node Underline Modules"/"NodeModules"→node_modules; "npm init-y"→`npm init -y`; "-d"→-D; "dev dependencies"→devDependencies; "dear name"→dirname; "c2.nlw"→C:/nlw; "Review in"→Reveal in; "contra o caso"→control crase; "contra o x"→control X; "Spam"→span; "último add"→último Edge; "o senha barra"→o sem barra; "Page Search Besouro"→page-search-results; "Model eu não uso"→Modal; "max with"→max width; "MLW"→NLW. Trechos ambíguos mantidos literais: "body e grandão d" (provável `bodyId`, dito "body I grandão D"), "nas C2 pontos" (C:), "C file", "versão 17, vamos baixar a 18" (provável 12.17/12.18), "e coleta" (título padrão Ecoleta), "atualizo, Ctrl Rão, D" (sobreposição), "full MVC".
+
+**Skill:** lang-dynamic (SKILL.md; `references/nodejs-platform-2026.md`, linhas LTS, `node --watch`/`--run` e Express 5; `references/nap-frameworks.md`, Express middleware e Express x Fastify). Domínio secundário frontend (template engine, layout) em `tags`.
+
+**Criado:** [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]; entidades [[wiki/entities/express]], [[wiki/entities/nunjucks]]; conceitos [[wiki/concepts/template-engine]], [[wiki/concepts/package-json]].
+
+**Tocadas (20 existentes):** arquitetura-cliente-servidor, endereco-ip, dns, porta-de-rede, metodos-http, requisicao-http, servidor-web-vs-servidor-de-aplicacao, renderizacao-ssr-vs-csr, shell-terminal, sqlite, json, funcoes-javascript, gerenciador-de-pacotes, dry, entender-vs-aprender (concepts); nodejs, vs-code, mayk-brito, next-level-week, rocketseat (entities); Open Questions do [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]. Também index.md e log.md.
+
+**Notas:** (1) **Correções registradas na fonte:** "2 a 6 meses" sem metodologia e seguido de venda do Launchbase; porta 80 x 443 (HTTPS); Live Server é servidor estático; Git Bash não é Linux (WSL); "Git" como lugar remoto (é o GitHub); package-lock deve ir para o repositório; nodemon x `node --watch`; Node 12/Express 4 x Node 24 LTS/Express 5 e ESM; `path.join` x concatenação com `__dirname`; `noCache` só em dev; autoescape do Nunjucks (contraste com o `innerHTML` do dia 2); `return` antes de `res.render`; "full MVC" não é termo usual (é SSR monolítico); `type="url"` só valida no cliente. (2) Mayk acerta que "itens" não tem acento. (3) Data provável 4 de junho de 2020 `[external, não verificado]`.
+
+## [2026-11-16] ingest | NLW #1, dia 5: banco de dados SQLite, cadastro e pesquisa no Ecoleta
+
+**Fonte:** transcrição colada no chat (PT-BR), limpa com a skill **text-cleaner** em `raw/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta.md`, sem tradução, pelo script dos dias 3 e 4 (24 subtítulos `##`, três cortando o bloco no início da frase). Diff palavra a palavra conferido (20.859 tokens no original, 20.835 na limpa; nenhuma inserção ou remoção, só substituições). Repetições por sobreposição da legenda mantidas; o corte do início ("let's go! [...] descobriu na prática") não foi preenchido. Correções de ASR: Maicão/Maikão→Maykão e Mike→Mayk; Nandia/Nandix/Nandjax/non-jokes→Nunjucks; "rec"/"REC"→req; "HackKey"/"HackKiri"/"hack query"/"HackQuery"/"RECQUERY"/"REC CUE"→req.query; "HackBody"/"Hack Body"→req.body; "Kiris Strings"→query strings; "dbjs"/"DBJS"→db.js; ".src.database.db"→./src/database/database.db; "Sursy"→source; "Ctrl-Crasy"→crase; "campo imagine"→image; "address to"→address2; "tavela"→tabela; "uair"→where; "o no-ion"/"notion"→Notion; "puxar um Modo"/"ideia do modem"→modal; "o f"→uf; "igual a parar"→Pará; "Paper Cider/paper sider/paper side"→Papersider; "coletoria"→Colectoria; "Gembala"→Gemballa; "portuguaras"→Potiguaras; "package de JSON"/"package json"→package.json; "node moon"→nodemon; "Tiagão"→Thiagão; "Launch Base"/"LaunchBase"→Launchbase. Trechos ambíguos mantidos literais: "bel figueiredo" (cidade digitada no teste), "INSERT INT" (erro proposital), "Jardimim" (erro de digitação comentado por ele), "pasta databases, database" (autocorreção), "canal da Rocket" (apelido), "SQL como do banco de dados" (sobreposição).
+
+**Skill:** tech-mentor-data (SKILL.md; `references/databases/embedded-databases.md`, SQLite: escrita única, WAL, `busy_timeout`, backup; `references/databases/relational.md`, índices B-tree e `LIKE 'abc%'`). Domínios secundários lang-dynamic (callbacks, Express) e frontend (Nunjucks) em `tags`.
+
+**Criado:** [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]; conceitos [[wiki/concepts/callback-javascript]], [[wiki/concepts/query-string]], [[wiki/concepts/chave-primaria]].
+
+**Tocadas (19 existentes):** sqlite, sql-injection, post-redirect-get, validacao-de-entrada, relational-vs-nosql, database-index, sql-alem-do-basico, metodos-http, formulario-html, template-engine, array, funcoes-javascript, debugging (concepts); express, nunjucks, mayk-brito, next-level-week, rocketseat, unsplash (entities); Open Questions do [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]. Também index.md e log.md.
+
+**Notas:** (1) **Achado principal:** a busca interpola `req.query.search` no SQL (`LIKE '%${search}%'`), uma SQL injection, enquanto a mesma aula usa placeholders `?` no INSERT e no DELETE. (2) **Outras correções registradas na fonte:** "SQL como banco" (SQL é a linguagem); "relacional porque faz relações" (relação = tabela); `items` em texto fere a 1FN, logo depois da explicação de clientes/estados; POST não esconde nada sem HTTPS; render direto após POST duplica no reload (PRG); sem validação no servidor; caminho do .db relativo ao cwd; SQLite e concorrência (WAL); AUTOINCREMENT opcional; LIKE ignora maiúsculas só em ASCII e não usa índice com `%` inicial; `rem` não muda com a tela; `for...else` do Nunjucks; redirect de 2s x WCAG 2.2.1; estrutura de venda no fim. (3) Com este ingest a NLW #1 fica com os cinco dias na wiki. (4) Data provável 5 de junho de 2020 `[external, não verificado]`.

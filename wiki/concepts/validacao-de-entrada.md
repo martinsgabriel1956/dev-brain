@@ -3,8 +3,8 @@ type: concept
 title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -51,6 +51,10 @@ Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) �
 - [[wiki/concepts/sql-injection]] — validação de schema é camada adicional, não substituta, da parametrização de query
 - Ver detalhamento em `references/api-design.md` e `references/cors-security.md` (tech-mentor-backend) para validação na borda (input sanitization, output encoding)
 
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], os valores de `req.body` vão direto para o INSERT, sem validação no servidor. Só valem o `required` e o `type="url"` do navegador, que qualquer requisição feita fora da página ignora.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -58,3 +62,4 @@ Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) �
 - [[wiki/sources/email-address]] — sintaxe formal RFC 5322 de e-mail vs. práticas reais de validação de provedores
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — validação de formato como defesa fraca isolada contra SQLi: comportamento opaco do validador e campos de texto livre não cobertos
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — 'valide, pesquise, entenda a regra de negócio'; preço/estoque negativos como entrada/estado inválido
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: sem validação no servidor no Ecoleta

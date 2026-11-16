@@ -3,6 +3,23 @@ type: index
 date_updated: 2026-11-16
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Wiki Index
 
 ## Sources
@@ -17,6 +34,11 @@ date_updated: 2026-11-16
 | [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]] | Aula 03 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): menu `header` > `nav` > [[wiki/concepts/listas-html\|ul/li]]; HTML "pobre visualmente", CSS como "segundo agente"; `style.css` por `<link>` com [[wiki/concepts/caminho-relativo\|caminho relativo]]; fundo `#0f0f0f`, links e listas [[wiki/concepts/estilos-padrao-do-navegador-e-reset\|resetados]]; "tudo são caixinhas"; [[wiki/concepts/seletores-css\|seletor]] de tag x classe (`.`) x ID (`#`, "dois CPFs"); classe vence tag ([[wiki/concepts/especificidade-css\|especificidade]], sem o termo) |
 | [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]] | Aula 02 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/html-hipertexto\|HTML]] é linguagem de marcação, tags como etiquetas do conteúdo; Emmet `html:5` no [[wiki/entities/vs-code]]; tags de título, seção, texto, `img`, `form`/`input`; [[wiki/concepts/html-semantico]] contra div dentro de div (Google, refatoração); aninhamento, `html`/`head`/`body`, [[wiki/concepts/head-html-metadados\|meta charset, viewport, title]]; erros: h1–h6 como escala tipográfica, UTF-8 ligado ao teclado ABNT2, "sinal de maior" |
 | [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]] | Aula 01 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): só HTML, CSS e JS pedem apenas um editor; ordem [[wiki/concepts/git\|Git]] → [[wiki/entities/nodejs\|Node]] LTS → Yarn → [[wiki/entities/vs-code]]; versionamento (rollback, time), GitHub x GitLab; Can I use e `backdrop-filter` no Firefox ([[wiki/concepts/compatibilidade-entre-navegadores]]); extensões: vscode-icons, Thunder Client, Prettier, Live Server, Live Sass Compiler ([[wiki/concepts/pre-processador-css]]), Color Highlight, temas; Git Bash como terminal; erros: Git for Windows "é um kernel", su = "super user" |
+| [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]] | Dia 5 (último) da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: por que um banco; SQL, tabelas e relacionamento; [[wiki/concepts/sqlite\|SQLite]] com `sqlite3` (CREATE/INSERT com `?`/SELECT/DELETE), [[wiki/concepts/chave-primaria\|chave primária]] AUTOINCREMENT, [[wiki/concepts/callback-javascript\|callbacks]] e `this`; `for`/`if` no Nunjucks; [[wiki/concepts/query-string\|query strings]] → POST com `req.body`; busca com LIKE; imprecisões: [[wiki/concepts/sql-injection\|SQL injection]] na busca, POST "escondido", sem PRG nem validação, items em texto, rem |
+| [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]] | Dia 4 da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: back-end como cozinheiro (regras de negócio, dados); [[wiki/entities/nodejs\|Node.js]] LTS, Git Bash, localhost/IP/portas; `public/` + `src/`; [[wiki/concepts/package-json\|package.json]] e npm; servidor [[wiki/entities/express]] em três linhas, rotas GET, req/res, nodemon, `express.static`; [[wiki/concepts/template-engine\|template engine]] [[wiki/entities/nunjucks]] (variáveis, include, extends/block, set); imprecisões: "2 a 6 meses", porta 80 x 443, Git Bash não é Linux, package-lock opcional, noCache sem condição |
+| [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]] | Dia 3 da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]] (autoria confirmada): bug das cidades corrigido e `required`; itens de coleta em [[wiki/concepts/css-grid\|grid]] com [[wiki/concepts/atributos-data-html\|data-id]], [[wiki/concepts/classlist-javascript\|classList.toggle]] e findIndex/filter/push; [[wiki/concepts/modal]] de busca com position fixed e classe `hide`; página de resultados com cards, `object-fit`, `body::after` + `z-index`; imprecisões: `li` sem `ul`, [[wiki/concepts/igualdade-javascript\|== x ===]] "tanto faz", modal sem foco/Esc |
+| [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]] | Dia 2 da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]] (inferido): [[wiki/concepts/refatoracao\|refatoração]] do CSS em três arquivos; media queries por largura e altura no Device Toolbar; [[wiki/concepts/formulario-html\|formulário]] de cadastro com fieldset, select desabilitado e `box-sizing: border-box`; beabá de JavaScript no [[wiki/entities/codepen]] ([[wiki/concepts/var-let-const\|var/let/const]], tipos, objeto, array, [[wiki/concepts/funcoes-javascript\|funções]], if, for); [[wiki/concepts/fetch-api\|fetch]] + [[wiki/concepts/promise-javascript\|promise]] na API do [[wiki/entities/ibge]] e [[wiki/concepts/event-listener-javascript\|change]] para as cidades; imprecisões: label for sem id, "tanto faz" var/let/const, sem catch |
+| [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]] | Dia 1 da [[wiki/entities/next-level-week\|NLW #1]] da [[wiki/entities/rocketseat]], com [[wiki/entities/mayk-brito\|Mayk Brito]] (inferido), para quem nunca programou: algoritmo, lógica e sintaxe "cruel e destruidora"; cliente-servidor com garçom, HTTP e URL; página inicial do Ecoleta no [[wiki/entities/vs-code]] com Emmet e Live Server: HTML5, Google Fonts, [[wiki/concepts/box-model]], [[wiki/concepts/flexbox]], `margin: 0 auto`, fundo SVG, [[wiki/concepts/variaveis-css\|variáveis CSS]], `:hover`, `::after`, media query de 900 px; imprecisões: "Universal Resource Location", cascata = seletor descendente, `left: 50px` |
 | [[wiki/sources/classes-e-ids-no-css]] | Aula 02 de Básico CSS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): CSS externo como padrão; [[wiki/concepts/seletores-css\|classe]] para vários elementos (`.`), ID para um só (`#`, "o seu CPF"); reset `*` com border-box; hierarquia em escala de cinza por tag; `.btn` com `btn-primary` verde e `btn-secondary` com borda; ID `btn-checkout`; ID duplicado não dá erro. Tensão: [[wiki/concepts/especificidade-css\|especificidade]] do ID |
 | [[wiki/sources/seletores-e-pseudo-elements-css]] | Aula 05 "Básico CSS" da pasta FrontPush (de [[wiki/entities/nasser\|Násser]], inferido): seletores para criar "a menor quantidade de classes possíveis"; tour pelo Try CSS Selector do [[wiki/entities/w3schools]] (classe, ID, vírgula, descendente, filho, adjacente, universal, atributo para formulários); "pseudo-elements" que são quase todos [[wiki/concepts/pseudo-classe-css\|pseudo-classes]] (`:checked` do menu hambúrguer, `:focus`, `:hover`, `:nth-child`, `:root`) |
 | [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] | Aula 1 do módulo de [[wiki/concepts/css\|CSS]] do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): CSS = folhas de estilo, "o poder está na junção" com o HTML; propriedades de estilo, layout e motion; [[wiki/concepts/regra-css\|regra]] `elemento { propriedade: valor; }`; externo (`<link>`, o mais usado), incorporado (`<style>`) e inline (`style`), com prioridade pela [[wiki/concepts/cascata-css\|cascata]]; demo no [[wiki/entities/vs-code]] com Emmet e Live Server |
@@ -567,7 +589,7 @@ date_updated: 2026-11-16
 | [[wiki/sources/papinho-tech-solo-comunidade]] | Comunidade técnica como ciclo de recebimento e retribuição — quem foi ajudado por um meetup/palestra deve retribuir ajudando outra pessoa; caso de interiorização de tecnologia em São José do Alegre (MG) com o Instituto Aaron Schwartz; preguiça de sair de casa, não falta de eventos, é o maior obstáculo à participação |
 | [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] | Alucinação de LLM é fenômeno mensurável (94% humano vs 58% LLM em benchmark citado; melhor modelo errou 48%); paper da OpenAI aponta causa raiz — treinamento recompensa palpite em vez de reconhecer incerteza, precisão nunca chega a 100%; caso Air Canada como precedente de risco jurídico; 205 mil pacotes de código alucinados num corpus de 576 mil gerações; RAG e LLM-as-judge (faithfulness) reduzem mas não eliminam o problema |
 | [[wiki/sources/devsecops-origem-cultura-manifesto]] | Origem do DevSecOps: cunhado pela Gartner em 2012, três anos após Patrick Debois formalizar o DevOps (2009, inspirado pela palestra da Flickr na Velocity); Manifesto DevSecOps propõe atacar o próprio produto como um invasor externo faria em vez de confiar só em scanners; shift-left testing mapeado por fase do ciclo (planejamento → build → deploy → operação); segurança como cultura de pessoas, não só ferramental |
-| [[wiki/sources/system-design-entrevista-cinema-draw-io]] | Rocket City (João): entrevista de system design simulada ao vivo no draw.io para "reserva de ingressos de cinema" — follow-up questions, load balancer, MySQL vs. não-relacional, APIs externas de seatmap/pagamento, Redis com TTL como reserva de 15 min; autor expõe abertamente um bug de consistência não resolvido no próprio desenho |
+| [[wiki/sources/system-design-entrevista-cinema-draw-io]] | Rocketseat (João): entrevista de system design simulada ao vivo no draw.io para "reserva de ingressos de cinema" — follow-up questions, load balancer, MySQL vs. não-relacional, APIs externas de seatmap/pagamento, Redis com TTL como reserva de 15 min; autor expõe abertamente um bug de consistência não resolvido no próprio desenho |
 | [[wiki/sources/injecao-sql-aula-modulo-seguranca]] | Aula prática (Express + `pg`, sem ORM) de SQL Injection ao vivo: bypass via `' OR '1'='1'` em query string e via `1 OR 1=1` em parâmetro de rota, retornando todos os usuários; correção via placeholders parametrizados (`$1`/`$2`); camada extra de validação de schema com Celebrate + Joi rejeitando o ataque antes da query rodar |
 | [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] | Lucas Montano (atribuição provável) reage ao Claude Tag (Claude no Slack) da Anthropic e à tese de Andrej Karpathy de "terceira reformulação da interface de LLM" (site → app → agente autônomo assíncrono organizacional); memória multiplayer por canal, modo ambient proativo; contraponto de Gergely Orosz — o breakthrough é integração confiável com sistemas internos, não a interface; Anthropic ultrapassa OpenAI no gasto em cartão corporativo em abril; alerta de vendor lock-in de memória organizacional |
 | [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] | Estudo de caso fictício "Super Roupas": 4 sistemas de fornecedor sem visibilidade unificada de status/atraso; solução "vendida" de microfrontends parciais unifica a experiência (sintoma errado, 3+ meses, alto atrito entre times); solução enxuta é dashboard read-only + BFF agregador (causa raiz, <2 meses, time de 4); eixo sênior (produto) vs. staff (vertical) e reflexão sobre "escalável para quê" |
@@ -958,6 +980,7 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
 ### FrontPUSH: layout CSS (2026-11-16)
 
 | Page | Hook |
@@ -983,6 +1006,52 @@ date_updated: 2026-11-16
 |---|---|
 | [[wiki/concepts/compatibilidade-entre-navegadores]] | Navegadores interpretam e adotam recursos em tempos diferentes: Can I use, Baseline (newly x widely available), browserslist, `@supports`; `backdrop-filter` no Firefox até a v103 |
 | [[wiki/concepts/pre-processador-css]] | Sass compila para CSS e soma recursos de programação (`if/else`, mixins); nesting, custom properties e `if()` nativos tiram parte do motivo |
+
+### NLW #1 — dia 5 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/callback-javascript]] | Função passada para ser chamada depois; error-first `(err, result)`; referência x execução; `this` x arrow; promises/async resolvem o aninhamento |
+| [[wiki/concepts/query-string]] | `?chave=valor&...` na URL; form GET; `req.query`/`URLSearchParams`; não para dado sensível |
+| [[wiki/concepts/chave-primaria]] | Identificador único e não nulo da linha; natural x substituta; `INTEGER PRIMARY KEY` x `AUTOINCREMENT` no SQLite |
+
+### NLW #1 — dia 4 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/entities/express]] | Framework HTTP do Node: `express()`, rotas `get/post`, `use` + `express.static`, `listen`; Express 5 é o atual; skill prefere Fastify em projeto novo |
+| [[wiki/entities/nunjucks]] | Template engine da Mozilla (estilo Jinja2): `{{ }}`, `{% include/extends/block/set %}`, autoescape ligado |
+| [[wiki/concepts/template-engine]] | Template + dados → HTML no servidor; variáveis, laços, partials, herança de layout, escape |
+| [[wiki/concepts/package-json]] | Manifesto Node: scripts, dependencies x devDependencies; package-lock vai pro repositório, node_modules não |
+
+### NLW #1 — dia 3 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/css-grid]] | `display: grid` em linhas e colunas; `grid-template-columns` em px ou `fr`; `gap`; `repeat(auto-fill, minmax())` responsivo |
+| [[wiki/concepts/atributos-data-html]] | `data-*` guarda dados no HTML; `dataset.id` no JS (string, camelCase); seletor `[data-id]` |
+| [[wiki/concepts/classlist-javascript]] | `add`, `remove`, `toggle`, `contains`; o CSS define o visual, o JS troca a classe |
+| [[wiki/concepts/igualdade-javascript]] | `==` converte tipos, `===` não; use `===`; `=` atribui |
+| [[wiki/concepts/modal]] | Janela sobre a página; foco, Esc, `inert`, `role=dialog`; `<dialog>` + `showModal()` em vez de div caseira |
+
+### NLW #1 — dia 2 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/formulario-html]] | form, fieldset + legend, label, input (text, number, hidden), select + option, disabled, button submit; o `name` leva o valor, o `for` do label casa com o `id` |
+| [[wiki/concepts/fetch-api]] | `fetch(url)` devolve promise de Response; `res.json()` é outra promise; só rejeita em falha de rede, checar `res.ok`; timeout com `AbortSignal.timeout` |
+| [[wiki/concepts/promise-javascript]] | Valor que vai chegar: pending, fulfilled, rejected; `then` encadeia, `catch` trata erro; `async/await` é açúcar |
+| [[wiki/concepts/json]] | Texto com sintaxe de objeto/array JS e chaves entre aspas; formato padrão de APIs; `JSON.parse`, `res.json()` |
+| [[wiki/concepts/funcoes-javascript]] | Registrar x executar, parâmetro x argumento, `return`, anônima, arrow function, passagem por referência como callback |
+| [[wiki/concepts/event-listener-javascript]] | `addEventListener(tipo, fn)`; `event.target`; `change` no select; `selectedIndex` |
+| [[wiki/concepts/var-let-const]] | var (função, hoisting), let (bloco), const (bloco, sem reatribuição mas mutável); não é "tanto faz" |
+
+### NLW #1 — dia 1 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/flexbox]] | `display: flex` no pai: `justify-content` no eixo principal, `align-items` no cruzado, `flex-direction: column` troca o eixo, `flex: 1` ocupa a sobra (é grow + shrink + basis 0%) |
+| [[wiki/concepts/variaveis-css]] | Custom properties `--nome` em `:root`, lidas com `var()`; mudar num lugar muda em todos; existem no navegador, ao contrário das de Sass |
 
 ### Classes e IDs no CSS (2026-11-16)
 
@@ -3592,6 +3661,10 @@ date_updated: 2026-11-16
 ## Entities
 
 - [[wiki/entities/mdn-web-docs]] — documentação de referência de HTML, CSS e JS da Mozilla (com Open Web Docs); tabela de compatibilidade e selo Baseline; Násser a indica como "MDN da Firefox"
+- [[wiki/entities/ibge]] — API aberta de localidades (estados e municípios) usada no formulário do Ecoleta
+- [[wiki/entities/codepen]] — editor online de HTML/CSS/JS com prévia automática; ambiente do beabá de JavaScript da NLW #1
+- [[wiki/entities/mayk-brito]] — educador da Rocketseat; dia 1 da NLW #1 (Ecoleta), autoria inferida
+- [[wiki/entities/next-level-week]] — semana de aulas gratuitas da Rocketseat; NLW #1 constrói o Ecoleta, marketplace de pontos de coleta
 - [[wiki/entities/w3schools]] — site de tutoriais de HTML/CSS (sem ligação com o W3C); Try CSS Selector destaca o que cada seletor pega; Násser o indica para valores de propriedades como `background-size`
 - [[wiki/entities/vs-code]] — editor da Microsoft; Emmet nativo e extensão Live Server na aula de básico de CSS
 - [[wiki/entities/bairesdev]] — outsourcing de maior volume segundo o Galego; "opiniões mistas"
@@ -3864,8 +3937,8 @@ date_updated: 2026-11-16
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
 | [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |
 | [[wiki/entities/randy-nelson]] | Ex-Pixar, hoje Apple — educador; autor da palestra sobre as três características (profundidade, abrangência, comunicação) de um candidato excepcional |
-| [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
-| [[wiki/entities/joao-rocket-city]] | Engenheiro de software pra gringa (3 anos), apresentador de série semanal de system design no canal Rocket City |
+| [[wiki/entities/eduarda-rocketseat]] | Engenheira de software internacional, criadora de conteúdo no canal da Rocketseat |
+| [[wiki/entities/joao-rocketseat]] | Engenheiro de software pra gringa (3 anos), apresentador de série semanal de system design no canal da Rocketseat |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken; benchmark interno de cybersegurança sem guardrails resultou em zero-day explorado e ataque real via credencial vazada; alvo (segundo caso citado de memória) de ataque de destilação atribuído à Alibaba com ~25 mil contas falsas |
 | [[wiki/entities/alibaba]] | Gigante chinesa de e-commerce/cloud e desenvolvedora de modelos (linha Qwen) — citada como responsável por um ataque de destilação em massa contra a OpenAI (~25 mil contas falsas, número não confirmado com fonte primária) |
 | [[wiki/entities/hugging-face]] | Hub de modelos, datasets e benchmarks de IA — alvo de um ataque real via credencial de servidor vazada e publicamente indexada, explorado por um agente de IA autônomo |

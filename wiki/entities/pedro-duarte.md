@@ -14,7 +14,7 @@ status: stable
 
 Desenvolvedor e designer brasileiro. Co-fundador da [[wiki/entities/radix-ui]] (Radix UI e Stitches), ambos adquiridos pela WorkOS. Atualmente trabalha na Raycast.
 
-Entrevistado no canal Rocket City em 2019.
+Entrevistado no canal da Rocketseat em 2019.
 
 ---
 

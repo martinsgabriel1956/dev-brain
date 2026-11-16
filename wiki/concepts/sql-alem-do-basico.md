@@ -3,8 +3,8 @@ type: concept
 title: "SQL Além do Básico"
 aliases: ["sql avançado portfolio", "joins agregações subqueries", "domínio SQL"]
 date_created: 2026-04-25
-date_updated: 2026-09-28
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [sql, postgresql, mysql, portfolio, backend, banco-de-dados]
 skill: tech-mentor-leadership
 status: stub
@@ -65,6 +65,10 @@ Esta página documenta o teto (JOINs, agregações, subqueries, full-text search
 - [[wiki/concepts/orm]] — ORM esconde SQL até você bater num caso de borda; dominar SQL é o que resolve esse caso
 - [[wiki/concepts/full-text-search]] — saber implementar busca por relevância com `MATCH AGAINST`/`tsvector` (em vez de `LIKE`) é outro sinal concreto de domínio de SQL além do CRUD
 
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] mostra o básico de que esta página parte: `CREATE TABLE IF NOT EXISTS`, `INSERT INTO ... VALUES (?)`, `SELECT * / SELECT name`, `DELETE ... WHERE id = ?` e `WHERE city LIKE '%...%'`. Avisos dele: "o último carinha aqui não tem vírgula", e sem `WHERE` o DELETE "ia deletar tudo da tabela".
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
@@ -72,3 +76,4 @@ Esta página documenta o teto (JOINs, agregações, subqueries, full-text search
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/full-text-search-mysql-postgresql]] — Full-Text Search como demonstração prática de ir além do CRUD básico
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — o piso mínimo (DML de SQL ANSI) antes do teto documentado nesta página; SQL como teoria de conjuntos aplicada
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: o CRUD mínimo em SQLite

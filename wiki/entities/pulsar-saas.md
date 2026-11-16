@@ -24,7 +24,7 @@ A autora, sem background em segurança, conduziu um autopentest do Pulsar usando
 
 ## Autoria (não confirmada)
 
-O vídeo-fonte não identifica a autora nominalmente. Há forte coincidência de padrão com [[wiki/entities/eduarda-rocket-city]] — engenheira já documentada na wiki como criadora de conteúdo técnico, e o vídeo menciona ter feito um curso de segurança da Rocket City via parceria. Tratado como inferência razoável, não como fato confirmado.
+O vídeo-fonte não identifica a autora nominalmente. Há forte coincidência de padrão com [[wiki/entities/eduarda-rocketseat]] — engenheira já documentada na wiki como criadora de conteúdo técnico, e o vídeo menciona ter feito um curso de segurança da Rocketseat via parceria. Tratado como inferência razoável, não como fato confirmado.
 
 ## Key Sources
 

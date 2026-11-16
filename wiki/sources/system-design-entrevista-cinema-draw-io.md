@@ -6,7 +6,7 @@ date_created: 2026-07-30
 date_updated: 2026-07-30
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/system-design-entrevista-cinema-draw-io.md
 source_url: ""
-author: "João (Rocket City)"
+author: "João (Rocketseat)"
 date_published: ""
 date_ingested: 2026-07-30
 source_count: 0
@@ -19,7 +19,7 @@ status: stable
 
 ## TL;DR
 
-Primeiro vídeo de uma série semanal do canal Rocket City, apresentado por João (3 anos trabalhando "pra gringa"). Diferente de outras fontes de system design já na wiki, que listam dicas ou descrevem o pipeline de entrevista em abstrato, esta é uma **demonstração ao vivo no draw.io**: o apresentador simula responder ao prompt "fazer um sistema de reserva de ingressos de cinema" desenhando a arquitetura passo a passo — client → load balancer → web server → MySQL (busca de filmes) → API externa de seatmap → API externa de pagamentos → Redis (reserva temporária de 15 minutos). O valor central da fonte não é o desenho em si (o autor mesmo o chama de "rascunho", "não é production ready"), mas o **processo**: como levantar requisitos via follow-up questions, como justificar cada peça, e principalmente uma auto-crítica explícita e rara nas fontes já ingeridas — o autor expõe um bug de consistência não resolvido no seu próprio desenho (assento aparece disponível via API externa mas já está reservado no Redis interno) e o discute em voz alta em vez de escondê-lo, ilustrando na prática a recomendação (já presente em [[wiki/concepts/entrevista-system-design]]) de que comunicação do raciocínio vale mais que a solução perfeita.
+Primeiro vídeo de uma série semanal do canal da Rocketseat, apresentado por João (3 anos trabalhando "pra gringa"). Diferente de outras fontes de system design já na wiki, que listam dicas ou descrevem o pipeline de entrevista em abstrato, esta é uma **demonstração ao vivo no draw.io**: o apresentador simula responder ao prompt "fazer um sistema de reserva de ingressos de cinema" desenhando a arquitetura passo a passo — client → load balancer → web server → MySQL (busca de filmes) → API externa de seatmap → API externa de pagamentos → Redis (reserva temporária de 15 minutos). O valor central da fonte não é o desenho em si (o autor mesmo o chama de "rascunho", "não é production ready"), mas o **processo**: como levantar requisitos via follow-up questions, como justificar cada peça, e principalmente uma auto-crítica explícita e rara nas fontes já ingeridas — o autor expõe um bug de consistência não resolvido no seu próprio desenho (assento aparece disponível via API externa mas já está reservado no Redis interno) e o discute em voz alta em vez de escondê-lo, ilustrando na prática a recomendação (já presente em [[wiki/concepts/entrevista-system-design]]) de que comunicação do raciocínio vale mais que a solução perfeita.
 
 ## Key Claims
 
@@ -36,7 +36,7 @@ Primeiro vídeo de uma série semanal do canal Rocket City, apresentado por Joã
 
 ## Entities
 
-[[wiki/entities/joao-rocket-city]]
+[[wiki/entities/joao-rocketseat]]
 
 ## Concepts
 
@@ -50,7 +50,7 @@ Esta fonte complementa, em vez de repetir, as demais fontes de entrevista de sys
 
 - **Skill `tech-mentor-system-design` carregada por analogia**: path local `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/` existe nesta máquina (diferente do path `/home/nemomartins/...` do CLAUDE.md) — `references/system-design.md` (framework de 4 etapas: clarify requirements, BOE, HLD, deep dive) usado para calibrar nomenclatura e confirmar que o fluxo demonstrado no vídeo é uma instância prática desse mesmo framework.
 - **Correção arquitetural não resolvida pelo autor**: o vídeo não chega a propor uma solução para o bug de consistência seatmap/Redis (ex.: reservar atomicamente no Redis *antes* de expor o assento como disponível, ou o seatmap consultar o Redis como fonte adicional de verdade) — fica em aberto se a wiki deve registrar a correção como conteúdo `[external]` inferido ou deixar como está, já que a própria fonte trata isso como erro conhecido e não como recomendação.
-- **"Rocket City" como canal**: já existe [[wiki/entities/eduarda-rocket-city]] na wiki como criadora de conteúdo do mesmo canal — este vídeo confirma que o canal tem múltiplos apresentadores. Criada entidade separada [[wiki/entities/joao-rocket-city]] para o apresentador João, sem fundir com Eduarda.
+- **"Rocketseat" como canal**: já existe [[wiki/entities/eduarda-rocketseat]] na wiki como criadora de conteúdo do mesmo canal — este vídeo confirma que o canal tem múltiplos apresentadores. Criada entidade separada [[wiki/entities/joao-rocketseat]] para o apresentador João, sem fundir com Eduarda.
 
 ## Raw Quotes
 

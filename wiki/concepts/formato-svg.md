@@ -3,8 +3,8 @@ type: concept
 title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
-date_updated: 2026-11-13
-source_count: 12
+date_updated: 2026-11-16
+source_count: 14
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -54,6 +54,14 @@ Na edição "W7", [[wiki/entities/nasser|Násser]] mostra que os ícones animado
 
 Na aula teórica de ícones "W7" ([[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]]), o SVG é metade da legibilidade (a outra é a simplicidade): o ícone "pode ser colocado em vários tamanhos e resoluções diferentes" sem perder resolução.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa SVG para fundo e ícones do Ecoleta: o arquivo "é todo escrito em formato de texto" e "se adapta a telas de diversos tamanhos".
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] edita o SVG à mão para colorir um ícone: a seta de voltar herda preto porque o `stroke` é `currentColor`, e ele cola o `stroke` verde do `log-in.svg`.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -68,3 +76,5 @@ Na aula teórica de ícones "W7" ([[wiki/sources/icones-comunicacao-senso-comum-
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — vetorizar ícone de telefone com Pen Tool e Bend Tool e exportar em SVG
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícone legível = simples + SVG
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — Feather exporta SVG ("sempre isso é muito bom"); ícone do módulo "propriedade do SVG"
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: fundo e ícones do Ecoleta
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: stroke currentColor trocado à mão

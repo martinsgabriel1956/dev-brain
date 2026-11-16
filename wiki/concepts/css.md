@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 17
+source_count: 18
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -53,6 +53,10 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], primeira 
 
 Na aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], `position` é "um CSS básico que muita gente não sabe": `static` (padrão), `relative`, `absolute`, `fixed` e `sticky`, este "antes só [...] com o JavaScript" ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). Ver [[wiki/concepts/css-position]] e [[wiki/concepts/unidades-de-viewport]].
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] apresenta o CSS como "a beleza", "o estilo" do corpo cujo cérebro é o JavaScript, primeiro num `<style>` no head e depois em `styles/main.css`: "é melhor que cada arquivo esteja no seu lugar". Sintaxe de regra: seletor, chaves, propriedade e valor com ponto e vírgula; uma aspa faltando e "não aparece nada". Ver [[wiki/concepts/flexbox]] e [[wiki/concepts/variaveis-css]].
+
 ## Pré-processador e suporte dos navegadores
 
 Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o CSS é "uma linguagem de estilo, [...] de layout", sem recursos de programação como `if/else`; o Sass acrescenta isso ([[wiki/concepts/pre-processador-css]]). Os navegadores interpretam o CSS de jeitos um pouco diferentes e demoram a adotar recursos novos; o Can I use mostra o suporte ([[wiki/concepts/compatibilidade-entre-navegadores]]).
@@ -75,6 +79,7 @@ Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-document
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — box model, shorthand (TRBL), unidades, W3Schools como referência
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: primeiras propriedades: color, background, display, font, texto; border como printf
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores de `position`; `100vh` no body
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: página do Ecoleta: `<style>` → arquivo externo, sintaxe, variáveis e flexbox
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass e Can I use na aula de ambiente
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: o HTML sozinho "é pobre visualmente"; CSS como "segundo agente"; `style.css` por `<link>`
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: CSS modifica "a cor, [...] o posicionamento, [...] o espaçamento, [...] a fonte"; aula de box model

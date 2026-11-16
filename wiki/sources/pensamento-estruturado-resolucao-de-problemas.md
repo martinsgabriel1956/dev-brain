@@ -6,7 +6,7 @@ date_created: 2026-05-01
 date_updated: 2026-05-01
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/pensamento-estruturado-resolucao-de-problemas.md
 source_url: null
-author: Desconhecido (canal brasileiro, Faculdade Rocket City)
+author: Desconhecido (canal brasileiro, Faculdade Rocketseat)
 date_published: null
 date_ingested: 2026-05-01
 tags: [pensamento-estruturado, resolucao-de-problemas, carreira, debugging, ia]

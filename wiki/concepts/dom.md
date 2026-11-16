@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -36,10 +36,20 @@ Em [[wiki/sources/classes-e-ids-no-css]], classe e ID são "um gancho" para apli
 
 Os [[wiki/concepts/seletores-css|seletores CSS]] descendente (`div p`), filho (`div > p`) e adjacente (`ul + p`) são relações da árvore do DOM: ancestral, pai e irmão anterior ([[wiki/sources/seletores-e-pseudo-elements-css]]). `[external]` A aula ilustra o filho direto com um `<p>` dentro de outro `<p>`, mas o parser fecha o primeiro ao abrir o segundo e os dois viram irmãos: o DOM não é o HTML escrito.
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] apresenta `document` como "um formato que a gente chama de objeto", com propriedades e funcionalidades (`write`). Usa `document.querySelector("select[name=uf]")` e `querySelectorAll("input")` (uma NodeList) com a sintaxe de seletor do CSS, e `innerHTML +=` para inserir options. `document.write` no console apaga a página inteira.
+
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] esbarra em um bug clássico: `querySelectorAll` devolve uma NodeList, e "não consigo colocar numa lista o add event listener [...] ele funciona num elemento". Também tira o `querySelector` de dentro da função, para não buscar o elemento "toda hora". Ver [[wiki/concepts/classlist-javascript]] e [[wiki/concepts/atributos-data-html]].
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/classes-e-ids-no-css]] — ID único como gancho do JavaScript; duplicado não dá erro
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — combinadores CSS como relações da árvore; `<p>` dentro de `<p>` vira irmão
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: document como objeto; querySelector; innerHTML
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: classe e ID como etiquetas para o JavaScript "puxar e manipular esses elementos"
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: selecionar no CSS "é muito similar ou deveras igual" ao JavaScript (`querySelector`); pseudo-elements não estão no DOM
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: querySelectorAll x querySelector; cache do elemento

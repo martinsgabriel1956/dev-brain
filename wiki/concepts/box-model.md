@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 11
+source_count: 13
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -35,6 +35,14 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], `margin: 
 
 Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `position: relative` com `top` desloca a caixa inteira, mas a posição original continua reservada ("imagine" o contorno tracejado). Já `absolute` tira a caixa do fluxo, e o irmão sobe para ocupar o espaço. A margem empurra os vizinhos; `top` e `left` não empurram. Ver [[wiki/concepts/css-position]].
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: toda caixa tem largura, altura, padding, border, margin, cor e fundo, e "pode ter uma caixa dentro de outra caixa". Centraliza o conteúdo com `width: 90%; max-width: 1100px; margin: 0 auto` e zera os espaços do navegador com `* { margin: 0; padding: 0 }`. `[skill: tech-mentor-frontend]` o reset usual hoje é `box-sizing: border-box`, ausente na aula.
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] mostra que, com o padrão `content-box`, o `padding: 64px` do formulário soma à largura: "ele tende a aumentar o tamanho da sua caixa". Com `box-sizing: border-box` a largura vai até a borda e o padding fica dentro, porque "uma caixa ela é medida nas suas bordas" (a caixa de papelão com uma garrafinha). Ele aplica `border-box` a `*` no `main.css`, "como se eu estivesse resetando o comportamento padrão do CSS", o reset que a skill recomendava no dia 1.
+
 ## Margin fora, padding dentro (módulo de front-end do FrontPUSH)
 
 Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/entities/nasser|Násser]] repete "tudo são caixinhas" com uma `section.container` de três `div.item` e o conselho "coloca borda na div para poder você enxergar o elemento". `margin` é "espaçamento fora da caixa", `padding` "da parte de dentro", ambos por lado ou em [[wiki/concepts/shorthand-css|shorthand]] no sentido horário. A aula não fala de `box-sizing` nem de colapso de margens. `[external]` Com `content-box`, o padding soma à largura; margens verticais entre irmãos se fundem na maior em vez de somar: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing.
@@ -47,6 +55,8 @@ Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]], [[wiki/
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tudo é caixa; width, height, padding, margin, border, radius; quatro lados; sem box-sizing
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: margin 0 auto; link forçado a bloco para usar o box model; border como printf
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: relative mantém o espaço da caixa; absolute o libera
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: margin auto, max-width e reset com `*`
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: content-box x border-box; reset global
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: "todas essas tags aqui são caixas" (section, header, footer, nav, div); "tudo no final são caixinhas"
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: borda `2px solid green` mostra a caixa do `header`; "tudo são caixinhas, tudo é div"
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: margin x padding com container e itens; borda para enxergar; sem box-sizing

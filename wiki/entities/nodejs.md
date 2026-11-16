@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,13 @@ Instalador do site (Windows, Mac), Homebrew (`brew install node`, que instala o 
 
 Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] explica o Node como o jeito de rodar JavaScript "fora do ambiente do browser" e de instalar pacotes como o [[wiki/entities/react]]; para HTML, CSS e JavaScript puros não é preciso. Recomenda a versão LTS, "mais estável", contra a mais atual, que "pode conter bugs". `[external]` LTS = *Long Term Support*; as versões pares do Node viram LTS e recebem correções por cerca de 30 meses: https://nodejs.org/en/about/previous-releases.
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] apresenta o Node como quem entende JavaScript fora do navegador: "o meu computador vai precisar do Node.js", que "usa o motor de JavaScript do Chrome".
+- **Instalação:** baixa a LTS ("mais estável") e não a Current. A versão mostrada é a 12.18.
+- **No terminal:** testa com `node -v` e entra no REPL com `node` (sai com `.exit`).
+- **No Ecoleta:** roda `node src/server.js` e depois o nodemon. `[skill: lang-dynamic]` Hoje a LTS de produção é o 24, e `node --watch` substitui o nodemon. Ver [[wiki/entities/express]].
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -29,3 +36,4 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: JavaScript fora do navegador; versão LTS
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: LTS 12.18, REPL, node src/server.js, nodemon

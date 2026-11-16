@@ -3,8 +3,8 @@ type: concept
 title: "Database Index"
 aliases: ["índice de banco de dados", "índice composto", "índice parcial"]
 date_created: 2026-04-22
-date_updated: 2026-11-10
-source_count: 11
+date_updated: 2026-11-16
+source_count: 12
 tags: [banco-de-dados, performance, postgresql, index, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -73,6 +73,10 @@ Nem todo índice é B-tree. `GIN` (Generalized Inverted Index) é o tipo de índ
 
 Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de extrato) não é uma estrutura estática: qualquer `INSERT`/estorno que muda esses campos obriga o índice a se atualizar junto com a tabela. Isso reforça o "índice tem custo" já registrado acima — a pergunta de qual índice criar vem do padrão de acesso real (qual tela precisa responder rápido), não de indexar toda coluna por padrão. Ver [[wiki/concepts/buffer-pool]] para o porquê de o banco buscar páginas, não linhas isoladas — a mesma razão pela qual índices reduzem custo de leitura ao reduzir páginas tocadas. Ver [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]].
 
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], a busca do Ecoleta usa `LIKE '%termo%'`. Com curinga no início, nenhum índice B-tree ajuda e o banco percorre a tabela inteira, o que é irrelevante com três registros e caro com milhões. `[skill: tech-mentor-data]` O B-tree só serve `LIKE 'abc%'`; para texto livre, use full-text search (FTS5 no SQLite).
+
 ## Key Sources
 
 - [[wiki/sources/banco-de-dados]]
@@ -86,6 +90,7 @@ Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de ex
 - [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual de B-tree se reordenando a cada inserção e busca resolvida em O(log n); índice hash (match exato, O(1), sem range) e índice espacial como tipos adicionais
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — índice como solução mais barata para lentidão por consulta pesada, antes de cogitar quebrar a aplicação em serviços.
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: LIKE com curinga inicial não usa índice
 
 ## Key sources (adição 2026-11-10)
 

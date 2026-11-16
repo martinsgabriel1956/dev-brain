@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -41,9 +41,14 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/entities/nasser|Násser]] contrasta "download family" (zip para instalar) com "select style" + `<link>` para o site. `[external]` São botões da interface antiga; hoje o fluxo é "Get font" → "Get embed code".
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] escolhe Roboto 300/700 para o texto e Ubuntu 700 para os títulos, copiando o `<link>` e a regra `font-family` sugerida. Fonte de nome único dispensa aspas.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]: catálogo gratuito espelhado no Figma; script como handwriting
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: origem dos oito pares; Mukta como exemplo de família ampla e gratuita
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: download family x select style + link; font-family no H1
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: Roboto e Ubuntu na NLW #1

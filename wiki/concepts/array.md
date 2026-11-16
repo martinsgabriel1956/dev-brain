@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-09-30
-source_count: 9
+date_updated: 2026-11-16
+source_count: 12
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -64,6 +64,23 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 
 [[wiki/concepts/remontagem-de-pacotes-fora-de-ordem]]: array pré-alocado com o total de pedaços, indexado pela sequência ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]).
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica array (vetor) para iniciantes como "uma coleção de dados", uma caixa de bolinhas, que pode misturar strings, number e objeto; acesso por posição a partir de 0 ("a posição que vai de 0 até o número 3, apesar de ter 4 elementos"). A resposta de estados do IBGE é um array de 27 objetos.
+
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] guarda os itens de coleta selecionados em `let selectedItems = []`, com três métodos:
+- **`findIndex`:** recebe uma função que devolve verdadeiro ou falso e retorna o índice ou `-1` ("não existe nenhum item na lista").
+- **`filter`:** monta "um novo array" só com os itens para os quais a função devolve `true`.
+- **`push`:** adiciona no fim.
+
+O array vai para um `input hidden` e vira o texto `4,6,2`.
+
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] passa um array de valores para os placeholders `?` do INSERT e recebe de volta `rows`, sempre um array, mesmo com um registro. `rows.length` dá o total de pontos. Lembra que o array JavaScript aceita vírgula no fim, "o que eu não posso ter é no SQL".
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -75,3 +92,6 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — array como primeira estrutura da lista essencial; base de [[wiki/concepts/two-pointer|two pointer]] e [[wiki/concepts/sliding-window|sliding window]]
 - [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — arrays e listas como pré-requisito declarado para os algoritmos de ordenação; Quicksort particiona o array em subarrays a cada chamada
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — array para reordenar pacotes
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coleção de dados, índice a partir de 0
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: findIndex, filter e push na seleção de itens
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: values do INSERT, rows e length

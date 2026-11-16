@@ -10,7 +10,7 @@ skill: cs-fundamentals
 status: stable
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore.md
 source_url: ""
-author: "desconhecido (canal parceiro da Rocket City)"
+author: "desconhecido (canal parceiro da Rocketseat)"
 date_published: ""
 date_ingested: 2026-06-01
 ---

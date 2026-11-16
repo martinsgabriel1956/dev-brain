@@ -3,8 +3,8 @@ type: concept
 title: "Entender vs. Aprender"
 aliases: ["entender vs aprender", "compreensão vs habilidade", "ilusão de fluência", "illusion of knowing"]
 date_created: 2026-06-05
-date_updated: 2026-10-30
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [aprendizado, pratica, metacognicao, ead, aprendizado-passivo]
 skill: tech-mentor-leadership
 status: stable
@@ -49,12 +49,17 @@ O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, á
 
 [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] aplica a distinção à IA: deixar o assistente fazer a tarefa e depois responder a um questionário sobre ela é como ler o resumo de um livro — você entende e acerta as perguntas, mas não aprende. Anedota do autor: lembra até hoje de *A Hora da Estrela*, que leu, e não lembrava que *Helena* existia, da qual leu só o resumo.
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] diz isso com todas as letras: "a aula não é feita para te ensinar. [...] É feita para você entender." Aprender é "hora, bunda, cadeira": refazer sozinho depois, porque se você só copiar correndo, "amanhã você vai ter esquecido muitas coisas".
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
 - [[wiki/sources/akita-como-aprender-programacao]]
 - [[wiki/sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — entender a explicação da IA ≠ saber fazer; [[wiki/concepts/active-recall]] e desafios sem resposta expõem a ilusão de fluência
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: "a aula não é feita para te ensinar"
 
 ## Key sources (adição 2026-10-30)
 

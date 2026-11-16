@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmo"
 aliases: ["algorithm", "propriedades do algoritmo"]
 date_created: 2026-10-09
-date_updated: 2026-10-09
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [algoritmo, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -34,6 +34,16 @@ Receita de bolo: ingredientes (entrada) → passos (misturar, bater, 180 °C por
 - Custo medido por [[wiki/concepts/big-o]]; catálogo em [[wiki/concepts/algoritmos-e-estruturas-de-dados]].
 - Uso popular ("o algoritmo do TikTok") = [[wiki/concepts/sistema-de-recomendacao]].
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: algoritmo "tem mais a ver com o passo a passo das coisas que você está fazendo", não com "aquele log de 10" da escola. Exemplo: acordar, lavar o rosto, escovar os dentes, tomar café.
+
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] escreve o passo a passo da seleção de itens em comentários antes de codar: verificar se está selecionado, tirar se estiver, adicionar se não estiver, atualizar o campo escondido. "Isso aqui chama-se algoritmo de programação." No fim: "primeiro foi uma ideia lógica pensada, escrita, e depois a gente só veio colocando em código".
+
 ## Key sources
 
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — definição, quatro propriedades, receita de bolo
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: rotina da manhã como algoritmo
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: algoritmo em comentários antes do código

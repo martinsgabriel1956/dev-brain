@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-11-03
-source_count: 12
+date_updated: 2026-11-16
+source_count: 13
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -109,6 +109,10 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] afirma que alterar e refatorar código simples para algo maior é muito mais fácil do que cortar partes de algo inflado. Não apresenta dados. Ver [[wiki/concepts/abordagem-evolutiva]].
 
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] abre o dia com uma refatoração para iniciantes: refatorar é "refazer algumas coisas do nosso código para torná-lo um pouquinho mais fácil de dar manutenção depois", e "faz parte da vida do dev". O `main.css` crescido vira três arquivos (`main`, `home`, `responsive`) e a página continua igual: "as coisas ainda estão funcionando igual".
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -122,6 +126,7 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings" (mesma proveniência host≠autor): Extract Method como refatoração de comportamento, técnica recomendada para eliminar Test Code Duplication
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — melhoria contínua: melhorar código próprio e alheio quando houver janela; refatoração como uma das bases de resolver problemas ([[wiki/concepts/resolver-problemas-como-habilidade-central]])
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — evoluir o simples seria mais fácil do que cortar o inflado (sem dados)
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: CSS dividido em três arquivos sem mudar o resultado
 
 ## Key sources (adição 2026-10-07)
 

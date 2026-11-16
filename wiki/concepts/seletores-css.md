@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -60,6 +60,14 @@ As duas aulas puxam para lados diferentes:
 
 `[external]` Especificidade: ID > classe/atributo/pseudo-classe > tipo/pseudo-elemento; o universal e os combinadores não somam: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa seletor de tag, de classe ("pontinho é a referência para uma classe"), de id (`#page-home`), descendente (`#page-home header a span`, conferido pelo hover do VS Code), universal `*` ("um atalho para todos"), agrupado `h1, h2, h3...` e `:root`. Class "eu posso repeti-lo em diversos elementos"; id "não pode ser repetido".
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa o combinador de irmão adjacente: `.field-group .field + .field` pega só o campo "que vier seguido de um field", para dar `margin-left` ao segundo. Também agrupa com vírgula (`form input, form select`) para dividir regras.
+
 ## Tag, classe e ID no módulo de front-end do FrontPUSH
 
 Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki/entities/nasser|Násser]] mostra os "seletores padrões": de tag (`header`, `nav`), de classe (`.nav`, `.nav-link`) e de ID (`#nav-menu`). Trocar `header` e `nav` por `div` faz o CSS "perder a referência", e é aí "que vem a class e o id". A classe serve também ao JavaScript, "para poder eu elencar ali e puxar e manipular esses elementos". Mesma divisão de [[wiki/sources/classes-e-ids-no-css]], com outra demonstração.
@@ -72,5 +80,7 @@ Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — tour pelo W3Schools: classe, ID, vírgula, descendente, filho, adjacente, universal, atributo
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: seis tipos de seletor no Ecoleta
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: irmão adjacente `+`; vírgula em input e select
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: tag, classe e ID; trocar tags por div quebra o seletor de tag
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: filho direto x descendente, `+`, `*`, atributo e vírgula na prática

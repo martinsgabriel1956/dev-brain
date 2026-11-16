@@ -1,0 +1,49 @@
+---
+type: concept
+title: "Funções em JavaScript"
+aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
+date_created: 2026-11-16
+date_updated: 2026-11-16
+source_count: 4
+tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
+skill: tech-mentor-frontend
+status: stub
+---
+
+# Funções em JavaScript
+
+Bloco de código com nome (ou anônimo) que recebe parâmetros e pode devolver um valor com `return`; sem `return`, devolve `undefined`. Em JavaScript funções são valores: podem ser guardadas em variáveis, passadas como argumento (*callback*) e retornadas. A *arrow function* (`(x) => x * 2`) é a forma curta, com `this` léxico. Ver [[wiki/concepts/logica-de-programacao]].
+
+## Na NLW #1
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]:
+
+- **Para que serve:** "atalhos pra executar um monte de código", "reuso de código". Registrar (`function sayMyName(name) {...}`) é diferente de executar (`sayMyName("Douglas")`).
+- **Argumento:** entra como pela "boca de um funil" e vira uma variável dentro da função; "todos esses valores que a gente vai passando dentro de função chama-se argumento ou parâmetro".
+- **Anônima e arrow:** `function (res) {...}` dentro do `then` e a versão curta `res => res.json()`: um parâmetro dispensa parênteses, uma expressão dispensa `return` e chaves.
+- **Por referência:** `addEventListener("change", getCities)` sem parênteses, porque "se eu abrir e fechar ela aqui, eu estou falando para executar ela imediatamente". Ver [[wiki/concepts/event-listener-javascript]].
+- **Métodos:** função dentro de objeto (`pessoa.correr()`); sem `return`, `document.write(pessoa.correr())` escreve "undefined".
+
+## Precisões
+
+- Parâmetro é o nome na declaração; argumento é o valor passado na chamada. A aula usa os dois como sinônimos.
+- Arrow functions não têm `this` próprio nem `arguments`; não servem como método que depende de `this` `[external]` (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+
+## Na NLW #1, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] passa uma função anônima para `findIndex` e `filter` e mostra a forma curta, `item => item == itemId`, sem chaves nem `return`. Depois volta à versão explícita: "eu acho legal para a gente que está começando deixar ele de uma maneira muito mais explícita". Para o ouvidor de clique, registra `handleSelectedItem` por referência.
+
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] conta a analogia da irmã: a função é "uma caixinha mágica" que recebe um argumento e "vai contra-argumentar te devolvendo alguma resposta". Lembra que a arrow function com dois parâmetros precisa de parênteses (`(req, res) =>`), e recomenda `return res.render(...)`.
+
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] define método ("função, quando [...] ela reside dentro de um objeto a gente dá o nome método") e mostra `new` com constructor ou classe. Diferencia passar uma função por referência (`afterInsertData`) de executá-la (`afterInsertData()`). Explica que com `this` "nós não usamos a arrow function". Ver [[wiki/concepts/callback-javascript]].
+
+## Key sources
+
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
+- [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: callback de findIndex/filter; arrow enxuta x explícita
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: caixinha mágica; arrow com dois parâmetros
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: método, new, referência x execução, this

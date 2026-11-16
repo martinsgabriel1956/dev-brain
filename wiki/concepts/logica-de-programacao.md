@@ -3,8 +3,8 @@ type: concept
 title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
-date_updated: 2026-10-09
-source_count: 4
+date_updated: 2026-11-16
+source_count: 6
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -65,9 +65,19 @@ Quanto mais próxima da máquina, maior a especificidade exigida. Python não ex
 - O resultado final é [[traducao-logica-para-codigo]]
 - [[repertorio]] é o acúmulo que torna a lógica rápida e intuitiva
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] separa lógica de algoritmo: lógica é "a maneira de pensar as coisas". Os mesmos passos em outra ordem (café antes de escovar os dentes) dão "resultados diferentes". A terceira peça é a sintaxe, "cruel e destruidora".
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] mostra condicional e repetição em JavaScript: `if (notaFinal < 5)` reprovado, `else` aprovado ("tem que retornar um boolean"); `for (let i = 0; i < 10; i++)` explicado passo a passo até "10 é menor que 10, queridão, aí não é"; e `for (const state of states)`, "para cada estado de estados".
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — os 5 pilares; programação = descrição inambígua; DSA como parte pequena do todo
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — estágio 1 da progressão incremental; fundamento inegociável antes de OOP e design patterns
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — algoritmo como 'lógica pura' e a linguagem como mera ferramenta de tradução; ver [[wiki/concepts/algoritmo]]
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: lógica como ordem dos passos; sintaxe
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: if/else, for clássico e for...of

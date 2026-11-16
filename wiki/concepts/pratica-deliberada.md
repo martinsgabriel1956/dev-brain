@@ -4,7 +4,7 @@ title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -94,6 +94,14 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 
 O segredo de saber desenhar wireframes é "fazer mil vezes e ter uma biblioteca na sua mente" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]). Násser mostra um wireframe montado com estruturas que já tinha na cabeça e diz que pulou o wireframe cinza no FrontPUSH "por eu fazer isso muitas vezes": a repetição encurta o processo.
 
+## Na NLW #1 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] fecha o primeiro dia da NLW contra a pressa: "uma das coisas que não dá certo para quem quer entrar no mundo da programação é a ansiedade e a pressa de conseguir resultados rápidos". Pede prática diária, "tijolinho por tijolinho", numa "maratona" e não numa "corrida de 100 metros", e aceita quem levou mais de um dia: "todo mundo tem o seu tempo".
+
+## Na NLW #1, dia 2 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] fecha o dia defendendo o descanso: "o cérebro ele vai assimilando as coisas" e "o descanso é importante para você recuperar suas energias e para fazer com que o cérebro consolide alguns conhecimentos". No meio da aula, aconselha anotar em comentários em vez de decorar, fazendo do cérebro "um arquivo de indexação".
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
@@ -104,4 +112,6 @@ O segredo de saber desenhar wireframes é "fazer mil vezes e ter uma biblioteca 
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — analogia do goleador: método não substitui prática contínua
 - [[wiki/sources/como-aprender-ui]] — criatividade em UI como músculo; copiar só como ponto de partida, seguido do porquê
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — "fazer mil vezes" como segredo dos wireframes
+- [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: maratona, não 100 metros; prática diária
+- [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: descanso consolida; não decorar
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aprender CSS "botando a mão na massa, já executando algum projeto"; pesquisar antes de perguntar

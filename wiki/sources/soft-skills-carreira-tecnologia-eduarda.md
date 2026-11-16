@@ -18,7 +18,7 @@ status: stable
 # Soft Skills que Realmente Fazem Diferença na Carreira em Tecnologia
 
 **Autora:** Eduarda (engenheira de software internacional)
-**Canal:** Rocket City
+**Canal:** Rocketseat
 **Formato:** Transcrição de vídeo
 
 ## TL;DR
@@ -70,7 +70,7 @@ Desenvolver soft skills não apenas melhora o indivíduo — muda como o time in
 
 ## Entidades
 
-- [[wiki/entities/eduarda-rocket-city]]
+- [[wiki/entities/eduarda-rocketseat]]
 
 ## Conceitos
 

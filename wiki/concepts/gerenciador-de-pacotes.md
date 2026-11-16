@@ -4,7 +4,7 @@ title: "Gerenciador de Pacotes (CPAN, Bundler, npm, Bower)"
 aliases: ['package manager', 'npm']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [dependencias, npm, build, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -20,8 +20,13 @@ Hoje o npm vem junto com o [[wiki/entities/nodejs]]; Yarn e pnpm são as alterna
 
 Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] pede para instalar o Yarn ("yarn for windows") além do npm que vem com o [[wiki/entities/nodejs]]: no React vai aparecer `npm install alguma coisa` ou `yarn add alguma coisa`. `[external]` O Yarn 2+ se ativa pelo Corepack (`corepack enable`); o instalador de Windows é do Yarn 1 (Classic): https://yarnpkg.com/getting-started/install.
 
+## Na NLW #1, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: npm é o "Node Package Manager", o "gerenciador de dependências do Node". `npm init -y`, `npm install express` e `npm install nodemon -D` criam o `node_modules` e o `package-lock.json`. Ver [[wiki/concepts/package-json]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Yarn ao lado do npm; `npm install` x `yarn add`
+- [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init, install, -D

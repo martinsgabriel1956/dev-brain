@@ -3,8 +3,8 @@ type: concept
 title: "Relacional vs NoSQL"
 aliases: ["sql vs nosql", "relational vs document", "escolha de banco"]
 date_created: 2026-04-22
-date_updated: 2026-10-05
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [banco-de-dados, nosql, postgresql, system-design, trade-offs]
 skill: tech-mentor-system-design
 status: stable
@@ -78,6 +78,10 @@ Provas de concurso usam a sigla **SGBDR** (com o "R" de relacional) para diferen
 
 Critério do Código Fonte TV: relacional resolve produtos variáveis, mas pode virar "lutar contra a estrutura" (esquema por tipo novo); documento ajuda se a estrutura varia de fato — [[wiki/concepts/dado-semiestruturado]].
 
+## Na NLW #1, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica o modelo relacional com tabelas ("pense em tabelas ali do Excel") e um relacionamento entre clientes e estados, em que um número aponta para a outra tabela. Diz que é relacional "porque ele faz relações". `[external]` O termo vem de "relação" como sinônimo de tabela (https://en.wikipedia.org/wiki/Relational_model). A coluna `items` em texto do Ecoleta contraria a normalização que ele acabou de explicar.
+
 ## Key Sources
 
 
@@ -88,3 +92,4 @@ Critério do Código Fonte TV: relacional resolve produtos variáveis, mas pode 
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — guia direto por cenário cobrindo também Oracle, SQL Server e SQLite
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — terminologia formal SGBDR vs. SGBD NoSQL cobrada em concurso
+- [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: clientes/estados; "relacional porque faz relações" (impreciso)
