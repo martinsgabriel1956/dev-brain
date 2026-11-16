@@ -31,8 +31,13 @@ No módulo de UI do [[wiki/entities/frontpush]], Násser usa o [[wiki/entities/u
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser cita Dribbble e Behance como "os principais portfólios, se é que eu posso dizer assim, de um UI designer". Os dois aparecem nos links dos sites de [[wiki/entities/jonas-miller]] e [[wiki/entities/fabio-freire]].
 
+## Referências para wireframes
+
+Uma das fontes de referência de [[wiki/entities/nasser|Násser]], com Pinterest, [[wiki/entities/ui-movement]] e guidelines ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — UI Movement como fonte de inspiração parecida
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "principais portfólios" de UI designer, com o Behance
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — fonte de referências no processo de wireframes

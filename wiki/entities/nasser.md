@@ -43,6 +43,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Antes do wireframe, o briefing: marca, branding, diferencial, carro-chefe e o objetivo da interface; o page map sai de patterns pesquisados ([[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]).
 - A página se monta como um "Frankenstein" de modelos de seção guiado pelo [[wiki/concepts/page-map|PageMap]]; bloqueio criativo é falta de processo de pesquisa e referência; parágrafo longo vira tópicos ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 - Interface nasce de referências: salvar sites de quem faz boas interfaces, comparar o [[wiki/concepts/page-map]] e acrescentar só o que o caso pede; processo explicado dá autoridade ([[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]]).
+- Processo de wireframes: requisitos → page map → referências → papel → wireframe cinza de média fidelidade → protótipo final com style guide; o segredo é "fazer mil vezes e ter uma biblioteca na sua mente" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 
 ## Key Sources
 
@@ -85,3 +86,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — aula 2 de wireframes da edição "W7" (autoria inferida): briefing, objetivo, page map, leitura em F e em Z
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — aula 08 do FrontPUSH, primeira prática de wireframes (autoria inferida): catálogo Hero, texto em tópicos, Frankenstein, PageMap
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio por referências; o FrontPUSH nasceu do site pessoal
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — aula teórica de wireframes, parte 3, da edição "W7" (autoria inferida): passo a passo, fidelidade, escala de cinza, "fazer mil vezes"

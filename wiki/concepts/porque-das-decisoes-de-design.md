@@ -60,6 +60,10 @@ Na visão geral dos elementos, o porquê vira critério de boa interface: **prop
 
 No [[wiki/concepts/pagemap]], cada dobra é definida "estabelecendo o porquê, sempre puxando para essa ideia de ser algo proposital"; no [[wiki/concepts/style-guide]], fica registrado "por que eu escolho essas cores" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
+## Referências de quem tem processo
+
+Na busca de referências para wireframes: "sempre tem um porquê por trás que a gente vai analisando e descobrindo". Empresas grandes como [[wiki/entities/dropbox]] e Slack têm time de UX e não decidem "com base em achismo"; a pergunta é "por que ele colocou nessa ordem" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -68,3 +72,4 @@ No [[wiki/concepts/pagemap]], cada dobra é definida "estabelecendo o porquê, s
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — explica cada radius dos próprios projetos
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — propósito como primeiro critério de boa interface
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — o porquê de cada dobra e de cada cor
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — perguntar por que as seções estão naquela ordem

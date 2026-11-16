@@ -82,6 +82,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "pelo contraste e pelo tamanho, eu tendo a olhar aquilo que é maior". Na leitura em Z, headline, ilustração e CTA viram pontos de atenção por contraste ([[wiki/concepts/hierarquia-visual]]).
 
+## Contraste fica para o protótipo final
+
+No processo de wireframes, o "contraste bem colocado entre as cores" é decisão do protótipo final, com o [[wiki/concepts/style-guide]]; o [[wiki/concepts/wireframe]] fica em escala de cinza para continuar fácil de mudar ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -104,3 +108,4 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — branco ou preto no gradiente laranja; preto obrigatório no amarelo
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade: contraste guia a jornada; A/AA/AAA; AA no mínimo, AAA para governo
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — contraste e tamanho como pontos de atenção na leitura em Z
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — contraste é decisão do protótipo final, não do wireframe cinza

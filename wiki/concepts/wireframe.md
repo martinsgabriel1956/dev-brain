@@ -63,6 +63,12 @@ A primeira aula prática de wireframes do [[wiki/entities/frontpush|FrontPUSH]] 
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], [[wiki/entities/nasser|Násser]] explica de onde veio o [[wiki/concepts/page-map]] do wireframe do portfólio dele: hero (headline objetiva e direta, parágrafo, ilustrações e branding, botões com call to action), processo, workflow, cases, CTA final e quem sou eu, tirados de sites de referência ([[wiki/entities/jonas-miller]], [[wiki/entities/fabio-freire]]). Ele mostra também os protótipos de baixa e de alta fidelidade do próprio site e do [[wiki/entities/frontpush]]: "sempre começa assim".
 
+## No processo: média fidelidade em escala de cinza
+
+Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]], o wireframe é o quinto de seis passos (requisitos → [[wiki/concepts/page-map]] → referências → esboço no papel → wireframe → protótipo final com o [[wiki/concepts/style-guide]]). São "telas semi-prontas em escala de cinza", de **média fidelidade** ([[wiki/concepts/fidelidade-de-prototipo]]): já consideram espaçamentos, funcionalidades, conteúdo, jornada e proporções, mas continuam fáceis de modificar, "por isso que é tudo cinza". Cor, contraste e branding ficam para o protótipo final. Os wireframes com cor das aulas anteriores eram demonstrações, não esse passo.
+
+O segredo para saber desenhá-los: "fazer mil vezes e ter uma biblioteca na sua mente". Um wireframe novo é a montagem de estruturas já conhecidas. Násser admite ter pulado o wireframe cinza no [[wiki/entities/frontpush]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -76,3 +82,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — pt.2 da série: briefing, objetivo, page map, leitura em F e em Z
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes de seção (Hero), PageMap e o Frankenstein
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio tirado de referências; baixa e alta fidelidade do FrontPUSH
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel → wireframe cinza (média fidelidade) → protótipo final; o segredo é fazer mil vezes

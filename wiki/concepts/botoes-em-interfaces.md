@@ -69,6 +69,10 @@ No catálogo de wireframes Hero, a variante de cadastro leva um primary button a
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], o hero leva "botões com call to action" e a página fecha com a mesma chamada ("solicitar proposta", "get in touch"), porque ela "é o objetivo principal do seu site". Ver [[wiki/concepts/page-map]].
 
+## No esboço e no wireframe
+
+No papel, o botão é "um quadradinho qualquer" que simboliza o call to action; o tamanho "dá para você se preocupar também em wireframes", e cada decisão de botão e comportamento fecha no protótipo final ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]). Ver [[wiki/concepts/fidelidade-de-prototipo]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -80,3 +84,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — documentar o padding (48 px) em vez da largura fixa
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — primary button no wireframe de cadastro; "quero me inscrever"
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — CTA no hero e repetido no fim do portfólio
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — botão como quadradinho no papel, decidido no protótipo final

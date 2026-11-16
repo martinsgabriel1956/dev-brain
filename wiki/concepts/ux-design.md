@@ -53,9 +53,14 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o cliente "muito provavelmente [...] não sabe exatamente como mostrar" o diferencial do produto; o designer usa "UX", "as heurísticas" e o que estudou para "agregar mais valor" ao que ouviu no [[wiki/concepts/briefing]]. "Todo o processo de design tem um processo de pesquisa por trás."
 
+## Discussões que acontecem no wireframe
+
+Para Násser, "muito da discussão, do conteúdo, do flow" se dá no [[wiki/concepts/wireframe]]: funcionalidades ligadas a acessibilidade e usabilidade, conteúdo, jornada e a forma de dispor o conteúdo, por exemplo em tópicos, que é "mais palatável para o usuário" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — UI e UX alinhados; jornada de e-commerce
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — escutar o cliente; page map como jornada do usuário
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — UX como tradução do briefing; design sempre com pesquisa por trás
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — conteúdo, flow e jornada se discutem no wireframe
