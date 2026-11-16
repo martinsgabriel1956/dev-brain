@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 41
+source_count: 42
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -114,3 +114,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — variação de cores no HSB, padrão de luminosidade, 60-30-10, Who Can Use (autoria inferida)
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — aula 06 de tipografia: contraste, hierarquia pela escala de cinza, cor como informação, botões invertidos
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7"): definição, WhatFont, variáveis, classificações, Google Fonts e CSS; o aluno imaginário diz "Ah, Násser"
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — aula de escala e tamanho (tipografia W7); escala 14–96 (autoria inferida)

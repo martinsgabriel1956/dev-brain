@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 30
+source_count: 31
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -130,6 +130,10 @@ Seletor em [[wiki/concepts/modelo-de-cor-hsb|modo HSB]], conta-gotas sobre um pr
 
 Na aula de variação de cores, o tipo de layer luminosity transforma o espectro em escala de cinza e mostra o [[wiki/concepts/padrao-de-luminosidade]]; a prática de variação no Figma fica para a aula seguinte ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
 
+## Escala de tamanhos de fonte
+
+Násser recomenda "a escala do próprio Figma" para fontes: começa em 9 e cresce em passos maiores no topo (96 → 144 → 288) ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Lista exata não verificada.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -169,3 +173,4 @@ Na aula de variação de cores, o tipo de layer luminosity transforma o espectro
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — seletor de cor e modos Hex, RGB, CSS e HSB (autoria inferida)
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — HSB, conta-gotas, overlay para neutros
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity no tipo de layer; prática de variação prometida
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala de fonte do Figma

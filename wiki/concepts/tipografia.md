@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 13
+source_count: 14
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -92,6 +92,10 @@ A aula de abertura do módulo ([[wiki/sources/tipografia-introducao-variaveis-cl
 
 Ferramenta: a extensão WhatFont, que mostra família, peso, tamanho e altura de linha de qualquer texto. Slide: maiúsculas passam "imponente, grandioso, elegante, épico, sóbrio"; minúsculas, "amigável, próximo, simpático, descontraído, jovem". O módulo também alimenta identidade visual e guia de estilo.
 
+## Escala e tamanho
+
+Na aula de escala ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]): seguir uma [[wiki/concepts/escala-tipografica|escala]] por consistência; primeira preocupação é [[wiki/concepts/legibilidade-e-leiturabilidade|legibilidade e leiturabilidade]]; corpo de 14 a 21 px como regra geral, ajustado por tamanho versus espaço (NYT com 14 px, Framer com 32 px no corpo). Até 6 variações (h1–h6), ele usa 4. O slide esquecido da aula anterior: a placa "PARE" serifada "não combina"; maiúsculas passam imponência e elegância, minúsculas são amigáveis; em um par de fontes, a de maiúsculas tem hierarquia maior. Etimologia: *týpos* (forma) + *graphein* (escrita).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -110,3 +114,4 @@ Ferramenta: a extensão WhatFont, que mostra família, peso, tamanho e altura de
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — tons monocromáticos para hierarquia de texto
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — hierarquia textual por escala, peso, caixa alta e cinza; contraste como objetivo
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo (edição "W7"): definição, variáveis, classificações, CSS
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala, 14–21 px, maiúsculas x minúsculas, h1–h6, escala do Figma + 8pt

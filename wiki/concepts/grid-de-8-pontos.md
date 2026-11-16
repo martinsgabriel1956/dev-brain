@@ -66,6 +66,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 O Layout Grid do [[wiki/entities/figma]] já nasce como um grid de quadradinhos de 8 pontos. Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], ele troca esse padrão pelo [[wiki/concepts/grid-de-colunas]] de 12 e deixa o 8 para os valores: gutter de 24, 32 ou 36 ("a regra dos oito pontos") e figura de 88 ("seguindo a regra dos 8pt"). O 36 é múltiplo de 4, não de 8.
 
+## Na tipografia
+
+Na aula de escala, Násser combina a escala do Figma com "a regra dos 8pt": 14, 16, 18, 24, 36, 48, 52, 64, 72, 84, 96 ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). 14, 18, 36 e 52 não são múltiplos de 8; aqui a regra é inspiração, não restrição. Ver [[wiki/concepts/escala-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -76,3 +80,4 @@ O Layout Grid do [[wiki/entities/figma]] já nasce como um grid de quadradinhos 
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — regra dos oito pontos em grids, espaçamento e tipografia; 72 a 288
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — artigo de 8 pontos no Notion do curso
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — grid de 8 como padrão do Figma, trocado pelo de 12 colunas; 88 e gutter 36 "pela regra dos 8pt"
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — regra dos 8pt aplicada (frouxamente) aos tamanhos de fonte

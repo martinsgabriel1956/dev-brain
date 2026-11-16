@@ -87,6 +87,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 Exemplo de paleta neutra + uma cor: "o Nubank é roxo e branco e as suas variações". O curso tem um projeto do Nubank que trabalha só com neutros e uma cor ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/paleta-de-cores]].
 
+## Style guide do curso
+
+Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em versão desktop e mobile ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
+
 ## Key Sources
 
 
@@ -106,3 +110,4 @@ Exemplo de paleta neutra + uma cor: "o Nubank é roxo e branco e as suas variaç
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — wireframe com benefícios em tópicos; módulo próprio no curso
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — projeto de estudo do curso, detalhes prometidos
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — roxo e branco como paleta neutra + uma cor
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — style guide do Nubank (escalas desktop e mobile)

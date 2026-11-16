@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 26
+source_count: 27
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -157,6 +157,10 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes a textos "da mesma hierarquia" e destaques de cor que não batem com o tamanho. A [[wiki/concepts/escala-tipografica]] resolve isso; negrito, itálico, maiúscula e cor completam as ferramentas de hierarquia textual ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
+## Hierarquia textual: o maior primeiro
+
+"Aquilo que é maior você enxerga primeiro": a manchete da Globo sobre Maradona, maior e alinhada à esquerda, porque o leitor ocidental lê da esquerda para a direita ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). O NYT mostra a outra via: título de 16 px quase do tamanho do corpo, separado por cor mais escura e peso 700 contra 400. Ver [[wiki/concepts/escala-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -190,3 +194,4 @@ Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — cor de enfoque (10%) em botões, títulos e banners
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escala de cinza como hierarquia textual; títulos do FrontPUSH e do Google
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica inconsistente quebra a hierarquia
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — o maior se enxerga primeiro; peso e cor no NYT

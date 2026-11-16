@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 29
+source_count: 30
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -126,6 +126,10 @@ Na aula de tipografia e cores ([[wiki/sources/tipografia-e-cores-contraste-hiera
 
 Na abertura do módulo de [[wiki/concepts/tipografia]], saber "criar hierarquia e contraste" é parte do que torna o texto acessível, e a cor no texto entra como "contraste maior, com contraste menor" para hierarquizar. O site de contraste deixado no Notion é, provavelmente, o [[wiki/entities/who-can-use]] ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
+## Contraste de tamanho
+
+Contraste visual na tipografia é "definir tamanhos que têm diferenças significativas": 144 e 160 lado a lado mal se distinguem, por isso a escala do Figma salta de 144 para 288 ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Ver [[wiki/concepts/escala-tipografica]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -159,3 +163,4 @@ Na abertura do módulo de [[wiki/concepts/tipografia]], saber "criar hierarquia 
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — padrão de luminosidade (amarelo e ciano claros, azul escuro); verde claro + branco reprova, preto tira AAA
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escada para melhorar contraste sem trocar a paleta; verde e laranja do FrontPUSH com texto preto
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: hierarquia e contraste para acessibilidade; cor no texto
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — diferenças significativas entre tamanhos de fonte

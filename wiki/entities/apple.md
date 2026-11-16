@@ -4,7 +4,7 @@ title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 5
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -41,6 +41,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o iMac
 
 Na abertura do módulo de cores: o azul como informação de link ("a plataforma da Apple, geralmente sempre vai te trazer informações sobre o link") e textos com o mesmo peso tipográfico separados só pela cor, branco x cinza ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Tipografia da página do iPhone
+
+Medida com WhatFont: SF Pro Display, peso 600, título de 80 px e corpo de 28; "foge a regra" porque tem pouca informação e é bem seccionada ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
@@ -50,3 +54,4 @@ Na abertura do módulo de cores: o azul como informação de link ("a plataforma
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo, seções repetidas e ícones como padrões de usabilidade
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — iMac de 27 polegadas com Retina 5K como exemplo de resolução x tamanho
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — azul de link; branco x cinza com o mesmo peso tipográfico
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — SF Pro Display 600, 80/28 px

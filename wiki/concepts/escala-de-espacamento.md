@@ -4,7 +4,7 @@ title: "Escala de Espaçamento"
 aliases: ["sistema de espaçamento", "spacing system", "escala linear", "escala geométrica", "spacing tokens"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [ui, ui-design, layout, espacamento, escala-de-espacamento, consistencia, design-tokens, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: stub
@@ -55,6 +55,10 @@ Na aula prática, o padding lateral do botão é 64 de cada lado e depois 96; "n
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], a escala vira regra geral: os mesmos valores (8 a 64, depois 72 a 288) valem para espaçamento, tipografia, colunas e tamanhos. Ele repete a defesa da geométrica ("variação pequena em tamanhos pequenos"), mas ilustra com 8, 16, 24... 64, que é linear. Ver [[wiki/concepts/grid-de-8-pontos]].
 
+## Irmã tipográfica
+
+A mesma lógica vale para fonte: a [[wiki/concepts/escala-tipografica]] da aula é escolhida à mão, com passos maiores no topo ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — sistema fixo ou por porcentagem; linear x geométrica; preferência pela geométrica
@@ -63,3 +67,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], a esca
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — padding de botão tirado da escala (2, 4, 8, 16, 32, 64)
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — padding de botão 64 e 96; "não é uma regra"
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — a mesma escala para espaço, texto, colunas e objetos; geométrica na fala, linear no slide
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala tipográfica como equivalente para fontes

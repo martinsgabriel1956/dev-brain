@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 25
+source_count: 26
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -134,6 +134,10 @@ A paleta montada na aula prática (base, destaque, neutros e variações) é "o 
 
 "Já vi muitas interfaces que [...] não têm consistência": o mesmo nível de hierarquia com tamanhos diferentes. A [[wiki/concepts/escala-tipografica]] fixa um tamanho por nível ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
+## Consistência tipográfica
+
+A [[wiki/concepts/escala-tipografica]] existe para consistência, "aquele princípio do design" que "sempre" volta; até 6 tamanhos, na prática 4 ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -168,3 +172,4 @@ A paleta montada na aula prática (base, destaque, neutros e variações) é "o 
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — a mesma paleta no card, nos ícones e no layout
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — paleta como primeiro passo do style guide
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica: um tamanho por nível de hierarquia
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala tipográfica como consistência

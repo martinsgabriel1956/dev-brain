@@ -50,6 +50,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], a escolha do grid é de responsividade. Ele usa grid centralizado com max-width (1260) em vez de esticado, porque o esticado pede "uma série de breakpoints maior". E desenha em blocos: "eu já vou desenhando a minha interface interpretando como é que vai ser a caixinha, como é que vai ser a responsividade". Blocos iguais viram uma classe com flex-basis; pares viram flexbox dentro de flexbox. Ilustração deslocada para preencher a tela "é algo que você tem que se atentar depois que você voltar para o mobile".
 
+## Escala de fonte por tela
+
+"Tamanho versus espaço": o Framer cai de 106/32 px para 45/23 px em tela menor; o style guide do [[wiki/entities/nubank]] em produção define h1–h3 em versão desktop e mobile ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Ver [[wiki/concepts/escala-tipografica]]. `[skill: ux-ui-mentor]` `clamp()` faz isso sem breakpoints.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -65,3 +69,4 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — 12/6/4 colunas; blocos horizontais que quebram na vertical; resolução x tamanho; teto 1440
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — empilhar no tablet, suprimir no mobile; responsivo x adaptativo
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Center (max-width) para reduzir breakpoints; blocos que já viram classe e flexbox
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escalas tipográficas desktop e mobile

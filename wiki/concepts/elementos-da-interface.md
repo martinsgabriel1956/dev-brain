@@ -4,7 +4,7 @@ title: "Elementos da Interface"
 aliases: ["elementos de interface", "elementos da UI", "UI elements"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 12
+source_count: 13
 tags: [ui, ui-design, design, elementos-da-interface, tipografia, cor, icones, botoes]
 skill: ux-ui-mentor
 status: stub
@@ -87,6 +87,10 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o bloco
 
 "Assim como a gente fez com cores", a tipografia é um elemento da interface que ganhou módulo próprio por ser importante e vasta. A abertura percorre variáveis, classificações e CSS ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]). Ver [[wiki/concepts/tipografia]].
 
+## Tipografia: escala e tamanho
+
+O módulo de tipografia prometido chega com a aula de escala e tamanho ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]): [[wiki/concepts/escala-tipografica]], [[wiki/concepts/legibilidade-e-leiturabilidade]], hierarquia textual.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -103,3 +107,4 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: o bloco
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — abertura do módulo de teoria das cores (edição "W7")
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — cor em códigos (HSB, hex, RGB, CSS)
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7")
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — tipografia: escala e tamanho
