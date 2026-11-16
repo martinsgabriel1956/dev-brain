@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 O botão usa texto de 16, "meio que esquematizado"; os padrões de tamanho de texto ficam para a seção de tipografia e para o style guide ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). A escolha entre texto branco e preto no botão também é adiada para tipografia.
 
+## Tipografia no style guide
+
+O [[wiki/concepts/style-guide]] traz "tipografia no desktop, tipografia no mobile, para poder garantir acessibilidade e legibilidade" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -64,3 +68,4 @@ O botão usa texto de 16, "meio que esquematizado"; os padrões de tamanho de te
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — texto de 16 no botão; padrões de tamanho adiados para tipografia
+- [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — tipografia desktop e mobile no style guide
