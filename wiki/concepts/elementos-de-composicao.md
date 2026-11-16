@@ -3,8 +3,8 @@ type: concept
 title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-14
+source_count: 3
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -40,7 +40,12 @@ Elementos de fundo que "servem para dar ambiência": deixam o usuário mais imer
 
 Descritos em uma frase: trazem "pontos de atenção" e deixam a interface "um pouco mais elegante" ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Gradientes análogos
+
+Cores análogas, "pela transição entre elas ser suave", são "muitíssimo aplicadas para gradientes", um dos recursos de fundo desta página ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). A "variação monocromática" de azul do FrontPUSH ganha definição na mesma aula. Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — definição em uma frase na visão geral
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — análogas para gradiente; definição de monocromática

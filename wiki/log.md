@@ -13997,3 +13997,19 @@ O usuário confirmou que [[wiki/sources/botoes-e-links-guiar-jornada-consistenci
 ## [2026-11-13] update | Autoria confirmada: formas de botões (edição "W7")
 
 O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
+
+## [2026-11-14] ingest | Harmonia das cores: monocromática, complementar, análoga e triádica
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/master-pkg-t-1745369180000.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/harmonia-das-cores-monocromatica-complementar-analoga-triadica.md` (sem tradução). Diff palavra a palavra conferido (1333 tokens no original, 1334 na limpa); só duas correções de ASR: "Coloradobe"→"Color Adobe" (a ferramenta Adobe Color) e "matiza"→matiz. Ajustes de grafia: hífens soltos juntados ("Spider -Man", "Homem -Aranha", "Super -Homem"), "super heróis"→super-heróis, "color hunt"→Color Hunt, "Arara"→arara. Sem inserções entre colchetes. Mantidos literalmente: "variações legais da gente se ver", "dividir complementar" / "dividir e complementar" (provável rótulo PT-BR do *split complementary*), "da oposto complementar central", "está o quadrado", "Se eu digitar é Super-Homem". Lacunas na legenda: ~4 s (06:22 → 06:26), ~4 s (08:36 → 08:40), ~9 s (08:58 → 09:07). Subtítulos `##` por harmonia + exemplos + ferramentas. O slide anexado pelo usuário (logo "W7", quatro harmonias com círculos) confirma a estrutura.
+
+**Skill:** ux-ui-mentor (SKILL.md; `references/cor.md` (HSL × OKLCH, primitivos → semânticos)). Mesma escolha das aulas anteriores do curso.
+
+**Criado:** [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]; conceitos [[wiki/concepts/harmonia-de-cores]], [[wiki/concepts/circulo-cromatico]], [[wiki/concepts/paleta-de-cores]]; entidades [[wiki/entities/adobe-color]] e [[wiki/entities/color-hunt]].
+
+**Tocadas (11 existentes):** harmonia-visual, hierarquia-visual, contraste, cor-semantica, tipografia, botoes-em-interfaces, elementos-de-composicao, porque-das-decisoes-de-design (concepts, seção nova), ui-design (Key Sources); spider-man-projeto-nasser (seção nova), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
+
+**Notas:** (1) **Azul ↔ laranja é RYB**: em HSL/RGB o oposto do azul é o amarelo `[external]`; o Adobe Color usa o círculo de Itten. (2) **"Rosa e azul vizinhos"** só se o rosa puxar para o magenta; mantido como dito. (3) **Homem-Aranha "triádico"**: roupa vermelha e azul, amarelo só no título. (4) **Capas azul e laranja**: `[external]` a explicação do cinema é a pele no laranja e o teal como complemento. (5) **"Não basta tirar brilho"** casa com HSL × OKLCH `[skill]`. (6) **Autoria inferida** (Násser): logo "W7", estilo, Homem-Aranha recorrente; o nome não é dito. A "primeira aula" de cores (arara, céu, "site dos bichos") e a ferramenta "de um clique" ficam como lacunas. Sem página própria: Superman, Google Imagens. `date_published` vazio.
+
+## [2026-11-14] update | Autoria confirmada: harmonia das cores (edição "W7")
+
+O usuário confirmou que [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a ideia recorrente e a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.

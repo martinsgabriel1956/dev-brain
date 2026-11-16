@@ -3,8 +3,8 @@ type: concept
 title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-14
+source_count: 8
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft
@@ -69,3 +69,4 @@ Roteiro de [[wiki/sources/como-aprender-ui]]: escolher uma ferramenta de prototi
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição, fatores, melhores práticas e elementos
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — espaço em branco, micro e macro espaço, grid de 8 pontos
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — formas geométricas e orgânicas, predominância e harmonia
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia das cores: monocromática, complementar, análoga, triádica

@@ -3,8 +3,8 @@ type: entity
 title: "Spider-Man (projeto do Násser)"
 aliases: ["Spider-Man", "projeto Spider-Man"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-14
+source_count: 5
 tags: [projeto, ui-design, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -28,9 +28,14 @@ Aqui a ambiência vem de uma textura alinhada à identidade visual e de fotograf
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], o autor cita o "novo jogo do Homem-Aranha" (o jogo, não este projeto) como exemplo de botão chanfrado ou hexagonal, de caráter futurista. Combina com os elementos inclinados e o raio de 3–4 px do projeto (inferência).
 
+## O personagem como exemplo de tríade
+
+Na aula de harmonia das cores, o Homem-Aranha (o personagem, não este projeto) é exemplo de tríade: azul, amarelo e vermelho; o título do Amazing Spider-Man em amarelo ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — textura como elemento de composição
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — imagem do Homem-Aranha usada na demo do TinyImage (inferência)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — jogo do Homem-Aranha com botões chanfrados/hexagonais
+- [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — Homem-Aranha como tríade (o personagem)
