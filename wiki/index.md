@@ -26,6 +26,7 @@ date_updated: 2026-11-15
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] | Aula 1 do módulo de [[wiki/concepts/css\|CSS]] do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): CSS = folhas de estilo, "o poder está na junção" com o HTML; propriedades de estilo, layout e motion; [[wiki/concepts/regra-css\|regra]] `elemento { propriedade: valor; }`; externo (`<link>`, o mais usado), incorporado (`<style>`) e inline (`style`), com prioridade pela [[wiki/concepts/cascata-css\|cascata]]; demo no [[wiki/entities/vs-code]] com Emmet e Live Server |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -955,6 +956,13 @@ date_updated: 2026-11-15
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Básico de CSS (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/cascata-css]] | Como o CSS decide entre declarações: externo, incorporado e inline (prioridade crescente segundo a aula); de fato, importância → especificidade → ordem no código |
+| [[wiki/concepts/regra-css]] | `seletor { propriedade: valor; }`; seletor de tag é o mais simples |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
@@ -3487,6 +3495,7 @@ date_updated: 2026-11-15
 
 ## Entities
 
+- [[wiki/entities/vs-code]] — editor da Microsoft; Emmet nativo e extensão Live Server na aula de básico de CSS
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

@@ -3,8 +3,8 @@ type: concept
 title: "Servidor Web vs. Servidor de Aplicação"
 aliases: ['web server vs application server']
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [web, backend, servidor, infra]
 skill: tech-mentor-frontend
 status: draft
@@ -18,6 +18,11 @@ status: draft
 
 O servidor mais simples mapeia URL → caminho de arquivo sem checagem, o que é problema de segurança (acesso a arquivos não públicos). Origem: [[wiki/concepts/cgi-common-gateway-interface]]; ver [[wiki/entities/apache-http-server]], [[wiki/concepts/porta-de-rede]], [[wiki/concepts/historia-do-front-end]].
 
+## index.html como página inicial
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], `index.html` é "um padrão da internet": o browser identifica o arquivo como a primeira página do site. `[external]` Quem resolve isso é o servidor web, que serve o documento padrão do diretório quando a URL não nomeia arquivo (no Apache, `DirectoryIndex`): https://httpd.apache.org/docs/2.4/mod/mod_dir.html.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — `index.html` como documento padrão (escolha do servidor, não do browser)

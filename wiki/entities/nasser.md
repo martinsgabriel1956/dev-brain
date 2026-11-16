@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 62
+date_updated: 2026-11-16
+source_count: 63
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -122,3 +122,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — aula 05 do módulo de tipografia da edição "W7" (autoria inferida pelo logo W7 e pela pasta FrontPush): negrito, itálico, tracking, kerning e maiúsculas
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — aula 1 do módulo de CSS (autoria inferida: pasta FrontPush, logo do FrontPUSH, "o meu preto"): o que é CSS, regra, externo/incorporado/inline

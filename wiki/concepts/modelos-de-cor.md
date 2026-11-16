@@ -3,8 +3,8 @@ type: concept
 title: "Modelos de cor"
 aliases: ["Modelos de cor (HSB, RGB, hexadecimal, CSS)", "modelo de cor", "color model", "color models", "representação de cores em código", "representação da cor", "HSB", "HSV", "HSL", "RGB", "RGBA", "CMYK", "hexadecimal", "hex color", "cor hexadecimal", "canal alfa"]
 date_created: 2026-11-14
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [ui, ui-design, cor, modelos-de-cor, hsb, rgb, cmyk, hexadecimal, css, figma, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -51,7 +51,12 @@ Luz (aditivo, tela) contra tinta (subtrativo, impressão). Explica por que "bran
 
 Brilho (B) ou lightness (L) alto não garante legibilidade. O [[wiki/concepts/contraste]] se mede pela luminância relativa (WCAG), não pelo número do seletor.
 
+## Nome, hex ou RGBA no CSS
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o valor de `color` pode ser escrito por nome (`red`, `green`, `purple`), em hexadecimal ou em RGBA. Ver [[wiki/concepts/regra-css]].
+
 ## Key Sources
 
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — slide com HSB, hexadecimal e RGB x CMYK; prática prometida no Figma
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — HSB para compor, hex e RGB para o código, modo CSS com alfa; a conta `8F` → 143
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — nome, hex ou RGBA como valores de `color`

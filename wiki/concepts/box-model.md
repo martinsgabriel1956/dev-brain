@@ -3,8 +3,8 @@ type: concept
 title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [browser, css, box-model, layout]
 skill: tech-mentor-frontend
 status: draft
@@ -13,5 +13,10 @@ status: draft
 
 Todo elemento renderizado é uma caixa composta por quatro camadas, de dentro para fora: **content**, **padding**, **border** e **margin**. Durante a etapa de [[wiki/concepts/reflow-layout|layout]], o browser calcula o tamanho final de cada caixa considerando essas camadas e o fluxo do documento — unidades relativas (`%`, `auto`) viram valores absolutos em pixels nesse momento.
 
+## Reset de margin, padding e box-sizing
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o primeiro `style.css` da aula zera `margin` e `padding` e aplica `box-sizing: border-box`; o espaço entre as tags diminui, porque some a margem padrão do navegador. `[external]` Com `border-box`, `width` e `height` passam a incluir padding e border: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — reset de margin/padding e `box-sizing: border-box`

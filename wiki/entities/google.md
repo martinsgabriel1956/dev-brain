@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-15
-source_count: 27
+date_updated: 2026-11-16
+source_count: 28
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -76,6 +76,10 @@ Na abertura do módulo de tipografia, o Google aparece como interface que é "a 
 
 O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] como fonte gratuita de fontes, espelhada no Figma.
 
+## Tags meta e visibilidade
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], as tags meta do `<head>` "melhoram até a visibilidade do seu site pelo Google". `[external]` O Google ignora `meta keywords`; a `meta description` pode virar o snippet: https://developers.google.com/search/docs/appearance/snippet.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -100,6 +104,7 @@ O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificac
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — Google como interface de texto; Google Fonts; WhatFont no Chrome
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — Google Fonts como catálogo gratuito espelhado no Figma
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — tags meta e visibilidade no Google
 
 ## Adição (2026-10-14)
 
