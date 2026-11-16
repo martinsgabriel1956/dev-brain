@@ -4,7 +4,7 @@ title: "Ícones em interfaces"
 aliases: ["ícone", "ícones", "iconografia", "icon", "icons", "ícones de sistema", "system icons"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, elementos-da-interface, icones, iconografia, carga-cognitiva, padroes-de-interface, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -74,6 +74,10 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 No submenu do iPhone no site da [[wiki/entities/apple]]: "por mais que eu não saiba ler, eu sei que esse aqui é um celular". Dois aparelhos lado a lado sugerem comparar. "Os ícones transmitem muito e também ajudam no quesito usabilidade" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
 
+## Tons pastéis
+
+Na aula de paleta, ícones em tons pastéis são o exemplo de por que a [[wiki/concepts/paleta-de-cores]] precisa de variação: "a gente precisa dar conta dessa variação e entender como se dá essa variação" ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). `[skill: ux-ui-mentor]` Ícone que informa precisa de 3:1 contra o fundo; pastel sobre branco costuma falhar, então o pastel vai no fundo do círculo e o traço em tom escuro da mesma matiz.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — aula teórica de ícones: definição, patterns, objeto x ação, Material Design, identidade visual, famílias
@@ -84,3 +88,4 @@ No submenu do iPhone no site da [[wiki/entities/apple]]: "por mais que eu não s
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — aula teórica "W7": pistas visuais, senso comum, clareza, legibilidade, alinhamento em cards, personalidade, no máximo duas famílias
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — aula prática "W7": plugins, ícones próprios dos módulos, ícone dentro de círculo, constraints
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — submenu do iPhone; ícones entendidos sem ler
+- [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — ícones em tons pastéis como exemplo de variação de cor

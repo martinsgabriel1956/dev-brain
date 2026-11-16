@@ -4,7 +4,7 @@ title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 5
+source_count: 6
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -53,6 +53,10 @@ A abertura do módulo de cores amplia a tabela ([[wiki/sources/teoria-das-cores-
 
 A aula de [[wiki/concepts/harmonia-de-cores]] escolhe cores pela posição no círculo; a cor semântica, pela convenção aprendida. Numa paleta complementar azul + laranja, o laranja de destaque fica perto do amarelo/âmbar de warning: o acento da marca pode ser lido como alerta (inferência, não dita na aula) ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
 
+## Cor de marca x cor de estado
+
+A aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]) trata a cor de base como branding (Facebook azul, WhatsApp verde) e a de enfoque como destaque (o verde da [[wiki/entities/rocketseat]]). Quando a cor de enfoque coincide com uma convenção semântica (verde = sucesso), as leituras se misturam; tokens separados (`--color-accent` x `--color-feedback-success`) evitam o conflito no código. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -61,3 +65,4 @@ A aula de [[wiki/concepts/harmonia-de-cores]] escolhe cores pela posição no c�
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — cor adequada na lista de boas práticas de usabilidade
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — trânsito no mapa, card verde/vermelho/amarelo, categorias da Globo
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores x convenção semântica
+- [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — cor de base (marca) e de enfoque (destaque), distintas da cor de estado

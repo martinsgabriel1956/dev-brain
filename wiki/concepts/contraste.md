@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 22
+source_count: 23
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -98,6 +98,10 @@ Na abertura do módulo de [[wiki/concepts/teoria-das-cores]], contraste é o pri
 
 Cores complementares (opostas no [[wiki/concepts/circulo-cromatico]]) são "muito utilizadas em paleta de cores" porque "tem entre elas um ótimo contraste", e servem de guia para destacar elementos ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). `[skill: ux-ui-mentor]` É contraste de matiz, não de luminância: texto laranja sobre azul de mesmo brilho pode falhar no WCAG. Ver [[wiki/concepts/harmonia-de-cores]].
 
+## Contraste dentro da paleta
+
+Na aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]), garantir contraste é a primeira função da [[wiki/concepts/paleta-de-cores]], "para poder guiar o usuário". Cada tipo resolve de um jeito: a base + enfoque usa uma cor complementar como destaque; a monocromática, "tons mais claros e tons mais escuros" e neutros; a análoga, uma cor escura e outra clara (azul escuro + turquesa claro). `[skill: ux-ui-mentor]` Esquema harmônico não garante WCAG: duas complementares de mesma luminosidade podem falhar 4.5:1. Ver [[wiki/concepts/harmonia-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -124,3 +128,4 @@ Cores complementares (opostas no [[wiki/concepts/circulo-cromatico]]) são "muit
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — planetinhas na cor de contraste com sombra da própria cor
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — contraste como objetivo da cor; segundo plano com contraste menor; 60-30-10
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementares: "ótimo contraste" para destacar
+- [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — contraste como função da paleta: enfoque complementar, claro x escuro
