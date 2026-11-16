@@ -63,6 +63,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 
 Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quantidade de classes possíveis", diz que `:hover` é o efeito que mais usa e cita um vídeo no YouTube em que faz um menu hambúrguer animado com `:checked`. Chama a lista inteira de pseudo-elements e o W3Schools de "artigo no W3C". Autoria inferida pelas falas "Násser, mas espera aí".
 - "Tudo é caixa": toda tag aceita width, height, padding, margin, border e radius; tags semânticas mudam o significado, não o visual; padding em sentido horário; consultar propriedades no "W3C" (W3Schools) ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+- Aprender CSS pelas principais propriedades e fuçar o resto ("comece mesmo sabendo poucas"); `border` vermelho como printf do layout ([[wiki/sources/principais-propriedades-css-color-background-font]]).
 
 ## Key Sources
 
@@ -132,3 +133,4 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05 (autoria inferida): seletores, pseudo-classes chamadas de pseudo-elements, hack do menu hambúrguer
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — aula 1 do módulo de CSS (autoria inferida: pasta FrontPush, logo do FrontPUSH, "o meu preto"): o que é CSS, regra, externo/incorporado/inline
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS (autoria inferida: “Nácia” na legenda, pasta FrontPush): tudo é caixa, tags semânticas, padding, margin, border, radius
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: aula 04 de Básico CSS (autoria inferida: pasta FrontPush; nome não dito)

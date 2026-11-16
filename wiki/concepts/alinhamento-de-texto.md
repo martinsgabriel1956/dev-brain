@@ -3,8 +3,8 @@ type: concept
 title: "Alinhamento de Texto"
 aliases: ["text-align", "alinhamento à esquerda", "texto centralizado", "texto justificado", "alinhamento tipográfico"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, ui-design, tipografia, alinhamento, alinhamento-de-texto, legibilidade, css, design-responsivo]
 skill: ux-ui-mentor
 status: stub
@@ -37,6 +37,11 @@ A borda esquerda dá ao olho um ponto fixo para voltar a cada linha. A aula soma
 
 Centralizar parágrafos longos por estética: cada linha começa num ponto diferente e o olho perde a volta. Centralizado é para poucas linhas.
 
+## text-align e vertical-align
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], `text-align` faz o "ajuste horizontal" e `vertical-align` o vertical. `[external]` `vertical-align` só age em elementos inline, inline-block e células de tabela; centralizar um bloco na vertical pede flexbox ou grid (https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align).
+
 ## Key Sources
 
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda como padrão, centralizado em cards, direita rara, justificado nunca
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: text-align horizontal; vertical-align só em inline e células

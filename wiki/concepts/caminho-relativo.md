@@ -1,0 +1,28 @@
+---
+type: concept
+title: "Caminho relativo de arquivos (HTML x CSS)"
+aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
+date_created: 2026-11-16
+date_updated: 2026-11-16
+source_count: 1
+tags: [frontend, html, css, caminho-relativo, arquivos]
+skill: tech-mentor-frontend
+status: stub
+---
+
+# Caminho relativo de arquivos
+
+Um caminho relativo parte da pasta do arquivo que o escreve. `imagens/bird1.jpg` entra numa pasta vizinha; `../imagens/bird1.jpg` sobe um nível antes.
+
+## HTML e CSS partem de lugares diferentes
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/entities/nasser|Násser]] mostra a mesma imagem chamada de dois lugares:
+
+- **No `<img src>`** o caminho parte do `index.html`. Como ele está na raiz, ao lado da pasta de imagens, "eu posso ir direto".
+- **No `background-image: url()`** o caminho parte do `style.css`, que está numa subpasta. Então "eu tenho que voltar para essa página principal para depois entrar a imagem", com "ponto, ponto", isto é, `../`.
+
+`[external]` A regra: `url()` dentro de uma folha de estilo é resolvida a partir da URL da folha, não da página que a carrega (https://developer.mozilla.org/en-US/docs/Web/CSS/url_value). Um caminho que começa com `/` parte da raiz do site e não depende de onde o arquivo está.
+
+## Key Sources
+
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`

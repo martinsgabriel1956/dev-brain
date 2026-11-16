@@ -68,6 +68,9 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS
 ## Unidades relativas
 
 Na aula de box model ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]), porcentagem e rem são "medidas relativas que ajudam na construção do nosso layout a responsividade", contra o pixel fixo. Ver [[wiki/concepts/unidades-de-medida-css]].
+## Porcentagem como primeiro passo
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], antes de media queries: imagem com `width: 100%` do pai e section de 80% com `margin: 0 auto` "meio que já se torna responsivo"; "porcentagem é muito importante para [...] elementos responsivos". `[external]` Para imagem, `max-width: 100%` evita ampliar além do tamanho natural.
 
 ## Key sources
 
@@ -89,3 +92,4 @@ Na aula de box model ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padd
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda fica fixa entre telas; texto à esquerda facilita a responsividade
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — layout como família de propriedades do CSS que dá a responsividade
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — % e rem como medidas relativas para a responsividade
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: width em %, margin 0 auto; porcentagem como base do responsivo

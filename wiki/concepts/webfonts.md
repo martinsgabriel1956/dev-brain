@@ -3,8 +3,8 @@ type: concept
 title: "Webfonts"
 aliases: ["fontes web", "carregar fonte no CSS", "font-family", "@import de fonte", "link de fonte", "font-weight", "@font-face"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [frontend, css, tipografia, google-fonts, performance, font-family, font-weight]
 skill: ux-ui-mentor
 status: stub
@@ -30,6 +30,11 @@ Como uma fonte escolhida no design chega ao site. Na aula de abertura de [[wiki/
 - A pilha "Open Sans, Arial, Helvetica, Sans Serif" vista na aula é a lista de reserva: se a primeira não carregar, o navegador tenta a seguinte, até a genérica `sans-serif`.
 - `[skill: ux-ui-mentor]` Em design system a família vira token (`fontFamily.display`, `fontFamily.body`, `fontFamily.mono`) ao lado de `fontWeight` 400/500/600/700.
 
+## O fluxo no código
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], o mesmo fluxo vira código: "select style" no [[wiki/entities/google-fonts]], marcar regular e bold, colar o `<link>` no index "como se fosse um CSS" e aplicar `font-family` só no H1. "Download family" baixa o zip para instalar no computador, que não é o caminho do site. `[skill: tech-mentor-frontend]` Faltou `font-display` (`swap` ou `optional`) e `preconnect`, que evitam texto invisível e reduzem CLS.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: Google Fonts, pesos, `<link>` x `@import`, `font-family`
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: link no index, font-family no H1; download family só para instalar

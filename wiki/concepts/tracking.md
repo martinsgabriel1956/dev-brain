@@ -3,8 +3,8 @@ type: concept
 title: "Tracking"
 aliases: ["letter-spacing", "espaçamento entre letras", "entreletra"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [ui, ui-design, tipografia, tracking, letter-spacing, legibilidade, branding, css]
 skill: ux-ui-mentor
 status: stub
@@ -46,8 +46,13 @@ O tracking do [[wiki/entities/figma]] é o `letter-spacing` do [[wiki/concepts/c
 
 `[external]` A WCAG 1.4.12 exige que o conteúdo aguente `letter-spacing` de 0.12em sem quebrar (https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html).
 
+## letter-spacing na aula de CSS
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], `letter-spacing: 5px` afasta as letras; [[wiki/entities/nasser|Násser]] diz que "sempre" costuma aplicar. A mesma aula atribui ao line-height o "espaçamento de uma letra da outra" ([[wiki/concepts/altura-de-linha]]).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: definição; maiúsculas, menus e botões; letter-spacing em em
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: espaçamento entre letras chamado de kerning; logo da Tesla
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: título espaçado do site de arquitetura
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: letter-spacing de 5 px; 'eu sempre costumo estar aplicando'

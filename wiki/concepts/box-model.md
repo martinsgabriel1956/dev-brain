@@ -36,3 +36,10 @@ Em [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tudo é caixa; width, height, padding, margin, border, radius; quatro lados; sem box-sizing
+## Margin auto e display
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], `margin: 0 auto` zera a margem vertical e divide a horizontal, centralizando uma section de 80%. O autor força `display: block` no link-botão porque o link é inline e ele quer "aplicar sempre as propriedades de box-model" ([[wiki/concepts/display-css]]). `[external]` Elementos inline ignoram width, height e margem vertical; `inline-block` também resolve. A dica de depurar com `border` tem custo: a borda soma ao tamanho da caixa (com o `box-sizing: content-box` padrão); `outline` não soma (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
+
+## Key sources
+- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: margin 0 auto; link forçado a bloco para usar o box model; border como printf

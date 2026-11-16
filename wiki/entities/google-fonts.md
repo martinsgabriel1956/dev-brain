@@ -3,8 +3,8 @@ type: entity
 title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -37,8 +37,13 @@ Um `<link>` para o HTML ou um `@import` para o CSS; ele prefere o `<link>`, "mai
 
 Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], todos os oito pares sugeridos estão no Google Fonts ([[wiki/concepts/combinacao-de-fontes]]).
 
+## Na aula de CSS
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/entities/nasser|Násser]] contrasta "download family" (zip para instalar) com "select style" + `<link>` para o site. `[external]` São botões da interface antiga; hoje o fluxo é "Get font" → "Get embed code".
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]: catálogo gratuito espelhado no Figma; script como handwriting
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: origem dos oito pares; Mukta como exemplo de família ampla e gratuita
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: download family x select style + link; font-family no H1

@@ -144,6 +144,7 @@ A aula 05 da pasta "FrontPush" sai do design e entra no código: slides "Básico
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a primeira aula do módulo de CSS, de "nivelamento": o que é CSS, a regra `elemento { propriedade: valor; }` e as três formas de aplicar (externo, incorporado, inline). O curso também tem um curso de motion, para onde vão as propriedades de animação. O `background-color` preto do exemplo é "o meu preto, sempre utilizo nas minhas interfaces".
 O curso também tem um módulo de código, "Básico CSS" (slide com o logo do FrontPUSH). A aula 03, de [[wiki/concepts/box-model]], segue aulas sobre o que é o CSS, como vinculá-lo e como funcionam as tags (não ingeridas). Tese: "tudo é caixa"; demonstração de padding, margin, border e border-radius numa `section` com lorem ipsum ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+O curso tem um módulo "Básico CSS" (pasta "CSS Basics" no VS Code). A aula 04, [[wiki/sources/principais-propriedades-css-color-background-font]], é a primeira aula de código do curso na wiki: color, background, display, fontes do [[wiki/entities/google-fonts]] e propriedades de texto. As aulas 01 a 03 (seletores, id com `#`) não foram ingeridas.
 
 ## Key Sources
 
@@ -190,3 +191,4 @@ O curso também tem um módulo de código, "Básico CSS" (slide com o logo do Fr
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05: seletores e pseudo-classes ("Básico CSS")
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — módulo de CSS, aula 1
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS: box model, tags semânticas, unidades
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: aula 04 do módulo Básico CSS
