@@ -56,6 +56,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], feedback e "confirmação visual" fazem parte da receita de [[wiki/concepts/kiss]] para uma interface acessível, com ícones e uso adequado das cores. Ver [[wiki/concepts/acessibilidade]].
 
+## Confirmações visuais e textuais
+
+Na aula de usabilidade, "uso de confirmações visuais e textuais sempre" entra nas boas práticas ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). As duas juntas seguem a regra de nunca depender só da cor ([[wiki/concepts/cor-semantica]]). Ver [[wiki/concepts/usabilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -65,3 +69,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de input: hover, focus, sucesso, erro, warning
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — normal, hover e clicável para card, ícone e input
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — feedback e confirmação visual na receita KISS de acessibilidade
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — "confirmações visuais e textuais sempre"

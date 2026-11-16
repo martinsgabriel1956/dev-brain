@@ -55,6 +55,10 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], a pergunta de fácil aprendizado é "sua interface tem mais recursos do que deveria?", e o slide fecha com o princípio [[wiki/concepts/kiss|KISS]]. Ver [[wiki/concepts/atributos-de-bom-design]].
 
+## Usabilidade que não se nota
+
+"Se você não conseguir identificar o que é usabilidade em determinada interface, é porque provavelmente ela tem." A regra final da aula: "sempre use o menos possível"; uma interface "muito carregada [...] com muitas funções" não é "necessariamente boa para se utilizar". O programa de gestão em que "usa-se em torno de 20%" das funções volta como argumento ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícone simples para ser legível de longe e em vários tamanhos
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe como desenho com "a maior simplicidade possível"
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "mais recursos do que deveria"; KISS no slide
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade invisível; "use o menos possível"; os 20% de novo

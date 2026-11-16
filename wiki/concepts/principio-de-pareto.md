@@ -3,8 +3,8 @@ type: concept
 title: "Princípio de Pareto"
 aliases: ["regra 80/20", "distribuição de Pareto", "80-20 rule"]
 date_created: 2026-07-04
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [produtividade, priorizacao, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -39,7 +39,12 @@ A maior parte da atividade que gera sensação de produtividade sem resultado re
 
 Uma aula de UI afirma que usuários "só utilizam 20% das funcionalidades" de sistemas cheios de funções, como argumento por [[wiki/concepts/simplicidade-visual|simplicidade]] ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]). `[external]` O número costuma vir do Standish Group (Jim Johnson, XP 2002): 7% das funções usadas sempre e 13% com frequência. Amostra de software customizado e dado muito repetido sem checagem; confiança baixa a média.
 
+## Os "20% das funções" em interfaces
+
+No curso de UI e interfaces web, o número aparece duas vezes, sem fonte: programas de gestão "com N funções" em que "usa-se em torno de 20% das funções implementadas" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). O argumento é que a [[wiki/concepts/usabilidade]] poupa trabalho do dev ao cortar o que ninguém usa. `[external]` O dado costuma ser atribuído ao Standish Group (64% das funcionalidades raramente ou nunca usadas, 2002), de metodologia pouco documentada; confiança baixa como regra geral.
+
 ## Key Sources
 
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — "20% das funcionalidades" como argumento de UI
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — "usa-se em torno de 20% das funções" (sem fonte)

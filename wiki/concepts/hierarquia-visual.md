@@ -121,6 +121,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], N
 
 O [[wiki/concepts/secao-hero|hero]] é "a primeira informação" e "a primeira ilustração" do site e precisa "dar impacto" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
 
+## Headline, segunda headline, link
+
+No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma headline segunda com a hierarquia de texto onde descreve um pouco mais" e um link, repetido em todos os produtos ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -145,3 +149,4 @@ O [[wiki/concepts/secao-hero|hero]] é "a primeira informação" e "a primeira i
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — texto branco x cinza como hierarquia de texto
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — F para conteúdo pesado, Z para pontos de atenção (contraste e tamanho)
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — hero como primeira informação da página
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — seções da Apple com headline, subtítulo e link

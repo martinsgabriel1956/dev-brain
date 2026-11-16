@@ -40,6 +40,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] aplica a ideia dentro de um produto: a Adobe mudou atalhos de teclado do Photoshop que já eram usados, e o usuário teve que reaprender. "Deve ter um bom motivo", mas no critério de aprendizado "pode ter sido um pecado". Aqui a expectativa não vem de outros sites, vem das versões anteriores do mesmo software, mais perto da heurística 4 (consistência e padrões) que da lei de Jakob em sentido estrito.
 
+## Menu da Apple e "não reinventar a roda"
+
+Na aula de usabilidade, o menu da [[wiki/entities/apple]] fica no topo, fixo, "que é justamente onde você procura. Isso aqui é um padrão". Padrões "testados" e "comprovados no mercado" melhoram a [[wiki/concepts/usabilidade]] porque "as empresas já trabalharam para poder instalar esses padrões na sua cabeça" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). É a lei sem o nome, outra vez.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -47,3 +51,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones de senso comum, "não mudar drasticamente"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — interface totalmente nova obriga o usuário a reaprender
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — atalhos do Photoshop: expectativa formada pelo próprio produto
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo da Apple; padrões "instalados na sua cabeça"

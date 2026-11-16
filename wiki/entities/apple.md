@@ -29,9 +29,14 @@ Citada como usuária de botão de bordas circulares, "para poder trazer mais par
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], a Apple é o exemplo de [[wiki/concepts/branding]]: produtos premium, clean, "referência no mercado", e uma pegada que se repete em produto, serviço e site ("um conversa com o outro"). É também exemplo de [[wiki/concepts/objetivo-da-interface|objetivo]]: "mostrar os seus produtos e fazer com que você compre", com a sacolinha de e-commerce.
 
+## Padrões de usabilidade no site
+
+Em [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]], o site é o exemplo de boas práticas de [[wiki/concepts/usabilidade]]. O menu é horizontal, no topo, fixo, com todos os produtos, "que é justamente onde você procura" ([[wiki/concepts/lei-de-jakob]]). As seções repetem ilustração, "headline maior", "headline segunda" e link ([[wiki/concepts/consistencia-visual]]). O submenu do iPhone usa ícones que se entendem "por mais que eu não saiba ler" ([[wiki/concepts/icones-em-interfaces]]). "As interfaces da Apple têm notas boas em quesito usabilidade", segundo "diversas declarações" que ele ouviu.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline da Apple citada como referência para montar style guide
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — branding coerente e objetivo de e-commerce
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo, seções repetidas e ícones como padrões de usabilidade

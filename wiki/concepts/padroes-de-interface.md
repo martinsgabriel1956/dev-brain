@@ -84,6 +84,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], padrões sustentam dois dos [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]]: fácil aprendizado ("conversei isso com vocês sobre os patterns") e memorável ("já tem um padrão que você meio que entende"). O contraexemplo é o Photoshop, que mudou atalhos de teclado já aprendidos e obrigou o usuário a reaprender: o padrão também pode ser interno ao produto.
 
+## Padrões como caminho para a usabilidade
+
+"A usabilidade se dá muito, muito, muito pelo bom uso de boas heurísticas, de patterns, de padrões que já estão bem estabelecidos no mercado." O exemplo é o site da [[wiki/entities/apple]]: menu horizontal fixo no topo, seções sempre com ilustração, headline, subtítulo e link, e ícones no submenu. "As empresas já trabalharam para poder instalar esses padrões na sua cabeça"; "é literalmente não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -99,3 +103,4 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — seções prontas (hero, depoimentos, cadastro) como padrões a combinar
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólios de freelancer convergem no mesmo page map
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — patterns como base de fácil aprendizado e memorabilidade; atalhos do Photoshop
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — padrões e heurísticas como base da usabilidade; "não reinventar a roda"

@@ -61,6 +61,10 @@ Para Násser, "muito da discussão, do conteúdo, do flow" se dá no [[wiki/conc
 
 "Você que é designer, você não projeta para você" ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]). Quem cria o workflow e a jornada conhece tudo e tende a achar a interface fácil e eficaz; os [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]] (útil, fácil aprendizado, memorável, eficaz, desejável, prazeroso) só se confirmam conversando com pessoas e testando. `[external]` Desejável e prazeroso correspondem ao que Preece, Rogers e Sharp chamam de metas de experiência do usuário, separadas das metas de usabilidade.
 
+## Usabilidade como termo de UX
+
+Na aula de usabilidade do módulo de interfaces web, [[wiki/concepts/usabilidade]] é "um termo mais aplicado ao UX Design", "importantíssimo", que "muita gente simplesmente não dá a devida importância". A aula abre o "pilar de pesquisa" do módulo, a base teórica antes da prática ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
@@ -69,3 +73,4 @@ Para Násser, "muito da discussão, do conteúdo, do flow" se dá no [[wiki/conc
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — UX como tradução do briefing; design sempre com pesquisa por trás
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — conteúdo, flow e jornada se discutem no wireframe
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — projetar para o outro; seis atributos de um bom design
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade como termo de UX; abre o pilar de pesquisa do módulo de interfaces web

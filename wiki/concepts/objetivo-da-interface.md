@@ -71,6 +71,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 A aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] põe "útil" como primeiro [[wiki/concepts/atributos-de-bom-design|atributo de um bom design]]: o produto faz algo que o usuário realmente precisa. São perguntas complementares: o objetivo é o que a interface quer que o usuário faça (comprar, cadastrar); a utilidade é se aquilo resolve uma necessidade dele.
 
+## Jornadas sem bifurcação
+
+Na aula de usabilidade, a definição já é sobre objetivo: usabilidade "permite que as pessoas alcancem facilmente os seus objetivos". A boa prática é usar "jornadas com objetivos claros, sem muita bifurcação". Num e-commerce, "muitos links, muitas coisas na jornada" fazem o usuário "se perder" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -83,3 +87,4 @@ A aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — cada modelo de wireframe tem a sua situação de uso
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólio freelancer: o objetivo é o pedido de proposta, no hero e no fim
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "útil" como necessidade do usuário, complementar ao objetivo
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade como alcançar objetivos; jornada de compra sem bifurcação

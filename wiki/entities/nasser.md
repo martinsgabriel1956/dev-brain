@@ -45,6 +45,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Interface nasce de referências: salvar sites de quem faz boas interfaces, comparar o [[wiki/concepts/page-map]] e acrescentar só o que o caso pede; processo explicado dá autoridade ([[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]]).
 - Processo de wireframes: requisitos → page map → referências → papel → wireframe cinza de média fidelidade → protótipo final com style guide; o segredo é "fazer mil vezes e ter uma biblioteca na sua mente" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 - Bom design se confirma no outro, não em quem desenhou: útil, fácil aprendizado, memorável, eficaz, desejável, prazeroso; a interface é ruim no começo e melhora com teste e treino ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]).
+- Usabilidade é alcançar o objetivo "facilmente"; se ninguém nota, ela existe; o caminho é seguir padrões e "não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
 
 ## Key Sources
 
@@ -89,3 +90,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio por referências; o FrontPUSH nasceu do site pessoal
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — aula teórica de wireframes, parte 3, da edição "W7" (autoria inferida): passo a passo, fidelidade, escala de cinza, "fazer mil vezes"
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 da edição "W7" (autoria inferida): seis atributos de um bom design; Photoshop, jogos, Uber/iFood/Amazon; KISS no slide
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade (interfaces web, aula 2): três esferas, Caixa, Apple; legenda o transcreve como "nascer" (autoria inferida)

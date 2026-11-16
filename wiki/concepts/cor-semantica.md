@@ -41,8 +41,13 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 Os grupos de cor mostram nomes por papel e por valor: primary, secondary, brand color, auxiliary color; white, black, neutral e gray colors para hierarquia textual. `Primary / Orange-1` mistura os dois; `[skill: ux-ui-mentor]` separar primitivo (`orange-500`) de semântico (`brand-primary`) deixa trocar a cor sem renomear ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Cor como boa prática de usabilidade
+
+"Uso adequado das cores, que é toda a teoria das cores que a gente conversou lá" aparece na lista de boas práticas de [[wiki/concepts/usabilidade]], ao lado de ícones e confirmações ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — laranja = curso de UI Design nos ícones do site
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — grupos de cor por papel (primary, brand, neutral) e por valor (orange-1)
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — cor adequada na lista de boas práticas de usabilidade
