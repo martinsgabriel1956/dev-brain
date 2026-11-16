@@ -58,6 +58,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid
 
 `[external]` O Material 3 mede espaçamento em incrementos de 4 dp (https://m3.material.io/foundations/layout/understanding-layout/spacing), o que bate com o sub-grid de 4 e explica 12, 36 e 52; 18 e 14 continuam fora.
 
+## Material de apoio
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] o autor indica um artigo sobre grids de oito pontos "para vocês compreenderem como é que se dá este processo", ao lado do [[wiki/entities/material-design]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — espaçamento de 8pt entra no wireframe, não no esboço
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — um dos dois padrões mais usados, ao lado do Bootstrap; Android e iOS
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — regra dos oito pontos em grids, espaçamento e tipografia; 72 a 288
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — artigo de 8 pontos no Notion do curso

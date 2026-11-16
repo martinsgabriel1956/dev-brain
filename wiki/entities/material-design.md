@@ -28,6 +28,10 @@ Na parte 2 ([[wiki/sources/icones-parte-2-hierarquia-tamanho-simetria-grid-const
 
 Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]], Násser indica a documentação e diz que os ícones do Material são "bem mais retos que os meus", sem arredondado na ponta. `[external]` Vale para o estilo Sharp do Material Symbols, que também tem Outlined e Rounded (https://fonts.google.com/icons).
 
+## Layout responsivo
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: breakpoints, 4, 8 e 12 colunas, margens, gutters, o grid fluido ("conforme aumenta a tela também, aumenta o sistema de grids") e regiões de UI para dashboards. Ver [[wiki/concepts/breakpoint]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — diretrizes de imagem recomendadas no fim da aula
@@ -36,3 +40,4 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — documentação recomendada; ícones "bem retinhos"
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin Material Design Icons no Figma
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline do Google citada como referência para montar style guide
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — breakpoints, colunas, grid fluido, regiões de UI

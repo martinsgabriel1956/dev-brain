@@ -22,7 +22,12 @@ Serviço de armazenamento e sincronização de arquivos na nuvem. Na wiki, apare
 
 Na aula de wireframes, a página do Dropbox (com a do Slack) é exemplo de empresa grande que vale observar, porque tem time de UX e "sempre tem um motivo por trás" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 
+## Layout responsivo
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], exemplo de "empresas grandes" para ver a disposição em telas maiores e menores.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — caso principal da aula de formas (edição "W7")
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — exemplo de landing page de empresa com processo de UX
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — exemplo de layout responsivo

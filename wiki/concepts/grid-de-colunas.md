@@ -68,9 +68,14 @@ Conta: colunas × width + (colunas − 1) × gutter ≈ max-width (72 × 12 + 24
 
 `[external]` No Bootstrap, a coluna é porcentagem do container e o gutter padrão é 24 px (https://getbootstrap.com/docs/5.3/layout/gutters/); coluna de 72 é convenção de Figma. A skill dá 8 colunas no tablet; a aula, 6.
 
+## Padrões prontos e calculadora
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], a Grid System Library traz grids de iOS, Android e Bootstrap (de 6 a 12 colunas, até mobile com duas) e uma calculadora: largura 1.440, 12 colunas, gutter de 32 e margem viram a largura da coluna, "não chutando valores". Os padrões dela não são os da aula: "você desenha e vê qual o melhor padrão para você". 4, 8 e 12 colunas são "esses números que a gente está sempre circundando"; ver [[wiki/concepts/breakpoint]].
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — containers e colunas por dispositivo; grids no workflow e no style guide
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como esqueleto; 12 colunas no FrontPUSH (7–8 + 4–5; 4 + 8); seis colunas centrais no wireframe; "é uma coluna" de distância
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — width, columns, gutter, max-width por dispositivo (12/6/4); contas na calculadora
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library, Bootstrap, Material Design; 4/8/12 colunas

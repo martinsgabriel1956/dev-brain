@@ -106,6 +106,10 @@ Depois do módulo de UI Design vem o de **interfaces web**, onde "a gente vai co
 
 Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: a seção principal da landing page segue "12 colunas imaginárias", com um bloco de 7–8 colunas e outro de 4–5. No design, 4 + 8. No modo de responsividade, a estrutura "quebrou justamente naquele [[wiki/concepts/breakpoint|breakpoint]]". O site é responsivo: tem seções fluidas e estilos por resolução ([[wiki/concepts/layout-fixo-fluido-adaptativo-responsivo]]).
 
+## Notion como material de apoio
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: "sempre o Notion funcionando como material de apoio", com os links de cada aula. Um módulo vai tratar grid e flexbox no código.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -138,3 +142,4 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — aula 2 do módulo de interfaces web: usabilidade
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — 12 colunas (7–8 + 4–5; 4 + 8 no design); quebra no breakpoint; site responsivo
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — blocos horizontais do site que quebram na vertical (design fluido)
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Notion com os links de grids

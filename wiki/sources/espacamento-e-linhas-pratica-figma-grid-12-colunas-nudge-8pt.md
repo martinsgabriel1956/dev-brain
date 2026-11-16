@@ -99,3 +99,7 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 ## Ver também
 
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: a teoria por trás das 12 colunas de 72 + gutter 32 e do big nudge de 8; grid por dispositivo e breakpoints
+
+## Ver também
+
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — a Grid System Library calcula a coluna a partir de largura, colunas (12) e gutter (32); Bootstrap como origem de "alguns valores"

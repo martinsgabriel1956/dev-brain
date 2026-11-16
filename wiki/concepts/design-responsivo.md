@@ -42,6 +42,10 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: 12 colunas no desktop, 6 no tablet, 4 (ou 6 em paisagem) no mobile ([[wiki/concepts/grid-de-colunas]]); blocos "na horizontal" que quebram "na vertical" são "a técnica do design fluido". Resolução não é polegada (iMac de 27" com Retina 5K); teto de 1440 para desktop, 1600 para TV. Ver [[wiki/concepts/breakpoint]].
 
+## O horizontal que quebra na vertical
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: "aquele design que é horizontal e a gente sempre projeta ele para ele quebrar na vertical". Duas caixas lado a lado no desktop viram coluna no tablet; no mobile o formulário da home vira "um botãozinho", porque um formulário grande "pode atrapalhar o fluir". Exemplos: [[wiki/entities/dropbox]], [[wiki/entities/dribbble]]. Responsivo e adaptativo são "dois conceitos diferentes"; ver [[wiki/concepts/design-adaptativo]] e [[wiki/concepts/breakpoint]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -55,3 +59,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: 12 col
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — "funciona em qualquer dispositivo" no lugar de "responsivo"
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — fixo, fluido, adaptativo e responsivo; breakpoint de 960; testar em vários aparelhos
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — 12/6/4 colunas; blocos horizontais que quebram na vertical; resolução x tamanho; teto 1440
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — empilhar no tablet, suprimir no mobile; responsivo x adaptativo

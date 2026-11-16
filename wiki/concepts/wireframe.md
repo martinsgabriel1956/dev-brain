@@ -77,6 +77,10 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid é o que dá alinhamento, consistência e organização aos "protótipos de média fidelidade ou até baixa fidelidade" feitos com wireframes. Os plugins de grid são prometidos para as próximas aulas.
 
+## Revisar os wireframes do autor
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] o autor convida: "venham aqui nos meus wireframes, vejam se tem alguma coisa errada, pergunta para mim".
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -93,3 +97,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel → wireframe cinza (média fidelidade) → protótipo final; o segredo é fazer mil vezes
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — wireframe com conteúdo nas seis colunas centrais
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — grids para alinhar wireframes de baixa e média fidelidade
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — convite para revisar os wireframes do curso

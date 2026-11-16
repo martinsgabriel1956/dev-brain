@@ -98,6 +98,10 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: Preferences, Nudge Amount, Big Nudge de 8 ("quando você segura Shift, ele vai dando espaços de oito pontos"); o menu de tamanhos de texto (14, 18, 24, 36, 48) como prova de que a regra dos oito já está na ferramenta.
 
+## Grid System Library
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: kit gratuito de grids de iOS, Android e Bootstrap com versão para Figma (doação opcional de US$ 4).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -129,3 +133,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: Prefer
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — Inspect: copiar box-shadow e gradiente; descartar position
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe por "clicar e arrastar"
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — Big Nudge de 8; menu de tamanhos de texto
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library para Figma

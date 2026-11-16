@@ -26,9 +26,14 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 
 O grid de colunas que [[wiki/entities/nasser|Násser]] usa é "baseado no Bootstrap Grid System" ([[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]): número de colunas por dispositivo para dar responsividade. `[external]` No Bootstrap 5, breakpoints de 576, 768, 992, 1200 e 1400 e containers de 540, 720, 960, 1140 e 1320 (https://getbootstrap.com/docs/5.3/layout/breakpoints/); o slide da aula parece misturar as duas listas. Ver [[wiki/concepts/grid-de-colunas]] e [[wiki/concepts/breakpoint]].
 
+## Sistema de grids
+
+Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]], [[wiki/entities/nasser|Násser]] diz que baseou "alguns valores" das aulas no grid do Bootstrap ("o large, o extra large"), "por ser muito utilizado na web". O Bootstrap 5, comparado ao 4.5, adicionou "mais uma seção" e deixa mudar gutter e coluna. `[external]` Breakpoint `xxl` (≥ 1400 px) e classes `.g-*` de gutter: https://getbootstrap.com/docs/5.0/layout/grid/. A biblioteca Flexbox Grid implementa muitos desses conceitos com classes prontas. Ver [[wiki/concepts/breakpoint]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin Bootstrap Icons no Figma
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — Bootstrap Grid System como padrão de colunas por dispositivo
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — Bootstrap Grid System como base do grid de colunas
+- [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — grid de referência das aulas; 4.5 x 5
