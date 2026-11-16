@@ -3,8 +3,8 @@ type: concept
 title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ Os [[wiki/concepts/elementos-de-composicao]] acompanham "a branding, a ideia, um
 
 Predominância não é pureza também no botão: o Madero é orgânico e usa botão reto; o site de arquitetura é reto e põe uma foto de pessoa no fim da seção. "Precisa de um tempero, não tem como" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Neutros com a cor de base
+
+Dar aos neutros "um pouco da cor de base" (overlay, ou branco na matiz 247 com saturação 4) "faz com que a nossa interface seja mais harmônica" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Ver [[wiki/concepts/neutros-tingidos]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -64,3 +68,4 @@ Predominância não é pureza também no botão: o Madero é orgânico e usa bot
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — predominância com pontos orgânicos (Dropbox, Nubank)
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — ilustração do unDraw baixada na cor da marca (5FE36A)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botão reto em site orgânico, foto em site reto
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — neutros tingidos com a matiz da base

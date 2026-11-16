@@ -3,8 +3,8 @@ type: concept
 title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
-date_updated: 2026-09-28
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -51,6 +51,10 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] enquadra repertório como o que multiplica o valor da IA, não o que ela substitui: a IA entrega qualquer domínio isolado (front, mobile, dados, infra) com facilidade, mas não tem o repertório de quem já resolveu um problema parecido em outro contexto anos atrás. Quem tem repertório largo aponta a IA para 10 domínios diferentes e cola tudo; quem só tem CRUD aponta a IA só para fazer CRUD. Exemplos pessoais concretos do autor: fazer apps de realidade aumentada foi fácil porque já dominava 3D e animação (faltava só aprender detecção de padrão para ancoragem — e ele já sabia que a malha precisa ser leve para RA rodar bem); animação com código hoje é natural porque entende de timeline e *ease in/ease out* desde o Flash/ActionScript — a ferramenta só trocou de nome, os conceitos continuam os mesmos.
 
+## Repertório de cores
+
+Na aula prática de cores de [[wiki/entities/nasser|Násser]], o bloqueio criativo se resolve com "uma biblioteca de boas referências": shot salvo no [[wiki/entities/dribbble]], print, conta-gotas no Figma, busca por hexadecimal e perfis profissionais no Instagram. A referência é ponto de partida, "não necessariamente use os mesmos tons" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
@@ -58,3 +62,4 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — repertório como "cola" que multiplica o que a IA entrega; exemplos pessoais de transferência entre domínios (3D/RA, Flash/animação)
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — repertório próximo ao foco de especialidade cria brechas de oportunidade para abraçar granadas ([[wiki/concepts/abracar-granadas]])
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — usar um modelo real existente (SaaS, marketplace) como substituto de repertório para gerar requisitos do zero, ver [[wiki/concepts/aprender-com-foco-no-problema]]
+- [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — do shot do Dribbble ao hexadecimal

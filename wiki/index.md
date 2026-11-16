@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] | Aula prática de cores (de [[wiki/entities/nasser\|Násser]]): esquemas (complementar, neutra + uma cor, monocromática, análoga); roxo de base e amarelo de destaque; referências do [[wiki/entities/dribbble]] por hexadecimal; [[wiki/concepts/modelo-de-cor-hsb\|HSB]] no primeiro quadrante; escurecer = brilho −10–15 e saturação +; [[wiki/concepts/neutros-tingidos\|neutros com a matiz da base]] |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -922,6 +923,15 @@ date_updated: 2026-11-13
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Paleta de Cores na Prática (2026-11-15)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/paleta-de-cores]] | Cores com papéis (base, destaque, neutros) e esquemas (complementar, neutra + uma cor, monocromática, análoga); primeiro passo do style guide |
+| [[wiki/concepts/modelo-de-cor-hsb]] | Matiz, saturação, brilho; primeiro quadrante, nada no máximo; HSB ≠ HSL, OKLCH no código |
+| [[wiki/concepts/variacao-tonal-de-cor]] | Escuro: brilho −10–15 e saturação +; claro: o inverso; neutros em passos de 3 |
+| [[wiki/concepts/neutros-tingidos]] | Branco e preto com a matiz da base (overlay ou HSB S≈4) para harmonizar; escada de cinza |
 
 ### UX e UI Design — fundamentos (2026-11-13)
 
