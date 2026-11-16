@@ -62,6 +62,10 @@ O [[wiki/concepts/style-guide]] traz "tipografia no desktop, tipografia no mobil
 
 O style guide define títulos e corpo (h1, h2, h3, h4, p, span) para desktop e mobile, e o que muda de tamanho e peso no responsivo. No style guide do [[wiki/entities/nubank]], 48, 36, 24; no que ele mostra, os tamanhos ainda estão iguais ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). `[skill: ux-ui-mentor]` Esses tamanhos viram tokens de size (xs a 3xl), weight e line-height. Ver [[wiki/concepts/design-tokens]].
 
+## Estilos de texto
+
+Os headings viram text styles (`Heads / H1`, `H2`), com grupos desktop e mobile. No exemplo: Sora 48, 36 e 24, pesos 600, 400, 400 e line-height 110 em todos, "um peso [...] um pouco maior nas fontes maiores". Ele chama 600 de "medium"; no CSS, medium é 500 `[skill: ux-ui-mentor]` ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]). Ver [[wiki/concepts/estilos-no-figma]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -74,3 +78,4 @@ O style guide define títulos e corpo (h1, h2, h3, h4, p, span) para desktop e m
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — texto de 16 no botão; padrões de tamanho adiados para tipografia
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — tipografia desktop e mobile no style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — h1 a span, desktop x mobile; 48/36/24 no Nubank
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — text styles Heads/H1, H2; Sora 48/36/24, line-height 110; "medium" = 600 (tensão)

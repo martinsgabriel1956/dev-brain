@@ -67,6 +67,10 @@ Na abertura do módulo de interfaces web, um projeto do Nubank é "o case do nos
 
 Projeto isolado do curso de [[wiki/entities/nasser|Násser]]: wireframes e depois o style guide, com tipografia 48, 36, 24 (desktop x mobile) e uma família de ícones ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Arquivo de estudo com estilos de texto
+
+O clone de estudo de [[wiki/entities/nasser]] no Figma tem o link guardado no "Master File, no Notion" e já usa estilos de texto: fonte Sora, headings de 48, 36 e 24, line-height 110 ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 
@@ -81,3 +85,4 @@ Projeto isolado do curso de [[wiki/entities/nasser|Násser]]: wireframes e depoi
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões e links totalmente circulares para aproximar
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — case do curso: pagemap por dobras e style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — style guide do projeto prático: tipografia 48/36/24, família de ícones
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — arquivo de estudo no Figma: link no Notion, fonte Sora, headings 48/36/24

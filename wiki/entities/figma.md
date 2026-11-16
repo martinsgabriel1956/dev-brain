@@ -82,6 +82,10 @@ Pesquisa, wireframes e protótipo final de UI, os três passos do [[wiki/concept
 
 Share por link para os alunos copiarem e receberem as atualizações; grupos de estilo pré-definidos (texto, cor, sombra); aba inspect com o CSS do elemento selecionado "sem ser um grupo" ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Estilos e compartilhamento na prática
+
+Na aula prática de [[wiki/concepts/style-guide]], color, text e effect styles com nome `Grupo / nome`, edit style, add description e detach ("correntinha quebrando"); ver [[wiki/concepts/estilos-no-figma]]. Também: share por link (ver ou editar), set as thumbnail para a capa, save local copy e a Community como fonte de design systems, wireframes e UI Kits ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -109,3 +113,4 @@ Share por link para os alunos copiarem e receberem as atualizações; grupos de 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — botão de 56 px, bring to front, plugin Smooth Shadow, edit style no Pegasus
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — três primeiros passos do workflow; biblioteca de wireframes copiada para o Figma
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — share por link, grupos de estilo, aba inspect
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — color, text e effect styles; edit style, detach; share, set as thumbnail, save local copy

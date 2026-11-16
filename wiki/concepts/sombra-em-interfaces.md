@@ -52,8 +52,13 @@ O valor `rgb(252 189 56)` vem da cor de hover do slide da aula teórica. O CSS �
 
 A sombra do card no hover precisa estar escrita, com o CSS, porque o dev pode não abrir o Figma. `box-shadow` é um dos valores da aba inspect que "sempre agregam", e a sombra vira um grupo de estilo no Figma ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). Ver [[wiki/concepts/style-guide]].
 
+## Sombra como estilo
+
+Sombras viram effect styles com grupo e nome (`Shadow / Shadow purple 2`), reordenáveis e editáveis em um lugar ([[wiki/concepts/estilos-no-figma]]). Na mesma aula, o Smooth Shadow é ajustado com offset "o mais centralizado possível", ao contrário da regra "deslocada para baixo" da aula de botões; os estilos shadow purple e shadow black seguem a regra antiga ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: sombra de hover da cor do botão; valores do slide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — sombra de hover documentada; box-shadow do inspect; grupo de estilo de sombra
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: sombras como effect styles; Smooth Shadow com offset centralizado (tensão)

@@ -98,6 +98,10 @@ O [[wiki/concepts/style-guide]] é "meio que um guia para poder ter consistênci
 
 O [[wiki/concepts/style-guide]] leva a consistência para o código: o dev põe os hexadecimais da paleta "no Sass ou então em variáveis no CSS". No Figma, grupos de estilo pré-definidos (texto, cor, sombra) "elevam a consistência no design em outro level". Ver [[wiki/concepts/design-tokens]] ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Consistência por estilos
+
+Estilos do Figma aplicam "uma cor só" em todo o documento, e editar o estilo muda todos os elementos: "a consistência melhora mil vezes" ([[wiki/concepts/estilos-no-figma]], [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -122,3 +126,4 @@ O [[wiki/concepts/style-guide]] leva a consistência para o código: o dev põe 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo botão em toda a interface: altura, padding e radius iguais
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — style guide como guia de consistência
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — paleta no Sass/variáveis CSS; grupos de estilo no Figma
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — estilos de cor, texto e efeito como ferramenta de consistência

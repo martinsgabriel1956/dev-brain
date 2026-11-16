@@ -62,6 +62,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o 
 
 A legenda da abertura do módulo de interfaces web está na pasta "FrontPush"; o case do curso é um projeto do [[wiki/entities/nubank]] ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Ver [[wiki/concepts/workflow-de-interface-web]].
 
+## Style guide do módulo de interface web
+
+O módulo de interface web chega à reta final com o [[wiki/concepts/style-guide]] prático, compartilhado por link ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -82,3 +86,4 @@ A legenda da abertura do módulo de interfaces web está na pasta "FrontPush"; o
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones em cards "como eu fiz no curso do FrontPUSH"
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — "grade do curso" + "inscreva-se"; azul como ímã
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — abertura do módulo de interfaces web; case do Nubank
+- [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — aula prática de style guide do módulo de interface web
