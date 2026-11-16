@@ -4,7 +4,7 @@ title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -28,12 +28,17 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] mostra como pegar o link do avatar de um perfil (botão direito, Copy Image Link) para usar no `src` do card de professor do Proffy.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os avatares dos professores de exemplo (Diego, Mayk, Clayton Souza) vêm do Copy Image Link nos perfis do GitHub.
+
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado como ferramenta a aprender junto com a IA
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — limites técnicos da API de busca de código (indexação, teto de resultados) relevantes para a descoberta de secrets vazadas
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: link do avatar para o card
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: avatares do array
 
 ## Key sources (adição 2026-10-30)
 

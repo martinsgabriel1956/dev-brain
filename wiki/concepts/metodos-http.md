@@ -4,7 +4,7 @@ title: "Métodos HTTP"
 aliases: ["http methods", "get post put delete", "verbos http"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [http, api, rest, idempotencia]
 skill: tech-mentor-networking
 status: stub
@@ -42,9 +42,14 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: GET busca, POST cria, PUT atualiza, DELETE remove, com o Insomnia para testar. Diego diz que "o navegador não sabe fazer outras requisições", mas isso vale só para a barra de endereço; formulários fazem POST e `fetch` usa qualquer método. PUT substitui o recurso inteiro; atualização parcial é PATCH.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], GET é "o padrão desse verbo" ao digitar uma URL; "Cannot GET /" quer dizer que não há rota. POST fica para o dia 5, como "o jeito de esconder os dados", o que é impreciso: só tira os dados da URL.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — GET/PUT/DELETE idempotentes, POST não
 - [[wiki/sources/csrf-cross-site-request-forgery]] — POST de troca de e-mail explorado por CSRF
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: GET em rotas Express; Cannot GET /; POST adiado
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: GET x POST; req.query x req.body
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: GET/POST/PUT/DELETE; "o navegador só faz GET" (só a barra de endereço)
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: GET e o "Cannot GET"

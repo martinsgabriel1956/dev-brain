@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -24,6 +24,11 @@ Ver [[wiki/concepts/tipos-primitivos-javascript]], onde está a coerção de `"1
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica que "o igual assim ele é para atribuir valor. Dois iguais é para comparar valor". Sobre o terceiro igual: "há uma diferença entre dois iguais para três iguais que não nos cabe entender agora [...] Posso colocar só dois ou três tanto faz". Ele usa `==` e `!=` no `findIndex` e no `filter`. O código funciona porque os dois lados são strings vindas de `dataset.id`. Mas não é "tanto faz", pelo mesmo motivo do "tanto faz" de [[wiki/concepts/var-let-const]] no dia 2.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o `{% if filters.subject == loop.index %}` do Nunjucks só funciona porque o `==` é frouxo: a query traz a string "2" e o loop dá o número 2. Com `===` nenhuma opção seria selecionada.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: == frouxo salva a comparação string x número

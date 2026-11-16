@@ -4,7 +4,7 @@ title: "Shell / Terminal"
 aliases: ["terminal", "shell", "linha de comando", "cli", "prompt de comando"]
 date_created: 2026-08-11
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [shell, terminal, cli, linux, bash, zsh, tech-mentor-infra]
 skill: tech-mentor-infra
 status: stub
@@ -40,9 +40,14 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa o Git Bash no Windows para que os comandos se pareçam com os de Mac e Linux, já que em produção "você vai provavelmente usar um ambiente Linux". Para ele, CMD e PowerShell são "um pouco mais diferentes". `[external]` O Git Bash é um bash sobre o Windows (MSYS2), não um Linux; o WSL roda Linux de verdade (https://learn.microsoft.com/en-us/windows/wsl/about).
 
+## Por que o curso evitou a linha de comando
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], [[wiki/entities/nasser|Násser]] instala o Sass por aplicativo porque a linha de comando "talvez exija de vocês um conhecimento prévio maior" e muda entre Windows, Linux e Mac, embora "não é nenhum bicho de sete cabeças". `[external]` A CLI do Dart Sass via npm é a mesma nos três sistemas.
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — PTY, TTY, emulador e shell distinguidos, com demo em Python
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Git Bash como terminal padrão no VS Code; sudo/su
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Git Bash no Windows; não é Linux
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: linha de comando evitada na instalação do Sass

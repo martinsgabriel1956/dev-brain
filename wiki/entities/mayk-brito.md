@@ -4,7 +4,7 @@ title: "Mayk Brito"
 aliases: ["Mayk", "Maykão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [pessoa, educador, rocketseat, frontend, html, css, javascript]
 skill: tech-mentor-frontend
 status: stub
@@ -48,6 +48,10 @@ Também conduz o dia 2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-e
 
 Também conduz o dia 3 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]): a página de dar aulas e o primeiro JavaScript da NLW #2. Repete o método de escrever os passos em português antes do código e tranquiliza quem sente que só copia: "a gente tem a sensação de estar copiando o que os outros estão fazendo [...] É essa sensação mesmo".
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Também conduz o dia 4 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]), o primeiro back-end da NLW #2, com a mesma pilha da NLW #1 (Node, Express, Nunjucks). Desinstala o Live Server "pra você não cair na tentação", entra como professor de exemplo no array e fecha dizendo que demorou "muitos anos para aprender tudo isso".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: NLW #1, dia 1, página inicial do Ecoleta em HTML e CSS
@@ -59,3 +63,4 @@ Também conduz o dia 3 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascri
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2 (Proffy), dia 1: HTML e CSS, especificidade, unidades, box model
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: landing page em grid e página study
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: página give-classes e primeiro JavaScript
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: back-end do Proffy

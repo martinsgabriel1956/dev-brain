@@ -4,7 +4,7 @@ title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -81,6 +81,14 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a ordem muda o 
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], as variáveis (está chovendo? está frio?) "afeta[m] o jeito, o passo a passo", e "a sua maneira de pensar está completamente ligada ao seu passo a passo".
 
+## Pré-requisito do Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o módulo de Sass pede "noção de linguagem de programação", sem exigir JavaScript: "o que é um loop, [...] uma estrutura encadeada if, else, como se declara variáveis, para que serve uma função".
+
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o `if` é apresentado como caminhos: "o se sempre vai observar se alguma coisa é verdadeira", e "a gente consegue ver pelo menos dois caminhos". O `if (data)` que entra mesmo com o objeto vazio vira o exemplo de "problema de lógica de programação", resolvido com `Object.keys(data).length != 0`.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
@@ -91,3 +99,5 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], as vari�
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: if/else, for clássico e for...of
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: a ordem dos passos muda o resultado
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: variáveis mudam o caminho
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: pré-requisito do módulo de Sass
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: if, objeto vazio que "existe"

@@ -4,7 +4,7 @@ title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -26,9 +26,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o body JSON do Insomnia só é lido depois de `app.use(express.json())`. A API devolve itens "serializados" com `image_url`.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], JSON é "JavaScript Object Notation": chaves e valores com aspas duplas, vírgula só entre itens, colchetes para listas. No objeto JavaScript as aspas nas chaves "são facultativas".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: JSON x objeto JavaScript, resposta do IBGE
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: package.json como JSON
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: JSON como contrato entre API, React e React Native
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: body JSON e serialização
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: JSON x objeto JavaScript

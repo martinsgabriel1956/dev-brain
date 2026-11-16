@@ -4,7 +4,7 @@ title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 11
+source_count: 12
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -41,6 +41,10 @@ Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leona
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica, sem dizer "DNS", que youtube.com é convertido em um endereço IP, e menciona comprar um domínio (ecoleta.com.br) apontando para o IP do servidor.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], youtube.com "é transformado no endereço de IP deles pra que a gente possa chegar lá", sem nomear o DNS.
+
 ## Key sources
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — wildcard A + defesa contra DNS rebinding
 - [[wiki/sources/dns]]
@@ -50,6 +54,7 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular
 - [[wiki/sources/email-address]] — registros MX como aplicação de DNS ao roteamento de e-mail (SMTP)
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → número, domínio próprio
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: domínio → IP sem nomear o DNS
 
 ## Key Sources
 

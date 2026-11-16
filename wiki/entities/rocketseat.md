@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -60,6 +60,10 @@ No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estud
 
 O dia 3 da NLW #2 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]) fecha o front-end do Proffy, ainda na trilha de [[wiki/entities/mayk-brito|Mayk Brito]].
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]), Clayton Souza, "colaborador da Rocketseat", vira professor de exemplo no cadastro; [[wiki/entities/mayk-brito|Mayk]] agradece por ter conhecido a Rocketseat (a transcrição dizia "Rocket City").
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -81,3 +85,4 @@ O dia 3 da NLW #2 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-pr
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Proffy, layout de Thiago, Discord da semana
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Camila, professora de inglês
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: fim do front-end do Proffy
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Clayton Souza como exemplo

@@ -4,7 +4,7 @@ title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 15
+source_count: 16
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -121,6 +121,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: "refatorar é melhorar o seu código, é você reescrever parte do seu código a fim de melhorá-lo". Como o cabeçalho e os campos se repetem entre as páginas, o CSS sai para `partials/header.css` e `partials/forms.css`, importados por study e give-classes.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], a estrutura do Proffy vira `src/` (views, server.js) e `public/` (images, scripts, styles), e as rotas ganham funções nomeadas (`pageLanding`, `pageStudy`, `pageGiveClasses`) porque "me parece um pouquinho mais organizado".
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -137,6 +141,7 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: "refator
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: CSS dividido em três arquivos sem mudar o resultado
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/ e partials/
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: header.css e forms.css compartilhados
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: src/public e funções nomeadas
 
 ## Key sources (adição 2026-10-07)
 

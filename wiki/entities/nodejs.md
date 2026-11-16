@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -33,6 +33,10 @@ Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], `crypto.randomBytes(6).toString('hex')` gera nomes únicos de arquivo, e `path.resolve(__dirname, '..', '..', 'uploads')` monta o destino.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Node "nasceu com o intuito de rodar o JavaScript na máquina"; a aula instala a LTS 12.18.3 (fora de suporte desde abril de 2022), confere com `node -v`/`npm -v` e roda `node src/server.js`. "O console do back-end é o terminal."
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -43,3 +47,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: LTS 12.18, REPL, node src/server.js, nodemon
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: Node 12 LTS por gerenciador de pacotes, npx, ts-node
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: crypto e path no upload
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: LTS 12, node -v, console no terminal

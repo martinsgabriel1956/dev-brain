@@ -4,7 +4,7 @@ title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -46,6 +46,10 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `:hover` muda o fundo dos botões com `transition` e a opacidade do link de voltar; `:focus-within` no `.input-block` reage ao foco do input que está dentro dele (ver [[wiki/concepts/indicador-de-foco]]).
 
+## Estados no Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "estados" entram na lista de vantagens do Sass; `[external]` no SCSS, `&:hover` dentro do bloco do botão gera `.botao:hover`.
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
@@ -56,3 +60,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `:hov
 - [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: `.item:nth-child(1)` para dar `margin-top` só à primeira caixa
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `button:hover` (chamado de "pseudo-element" na aula) com `transform: scale` e `transition`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: hover nos botões; focus-within
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: estados como vantagem

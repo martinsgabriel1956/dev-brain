@@ -4,7 +4,7 @@ title: "Estilos padrão do navegador e reset CSS"
 aliases: ["user agent stylesheet", "folha de estilo do navegador", "reset CSS", "CSS reset", "normalize", "estilos padrão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [css, reset, user-agent, cascata, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,10 @@ Na aula 03 do módulo de front-end do [[wiki/entities/frontpush]] ([[wiki/source
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o reset é `* { margin: 0; padding: 0; box-sizing: border-box }`. No DevTools, o `margin: 8px` do *user agent* no body aparece riscado, e o `h1` mostra o estilo que o navegador já define. O `button` não herda cor nem fonte do body, por isso a Poppins vai em `body, input, button, textarea`.
 
+## No primeiro arquivo Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o primeiro `style.scss` começa pelo mesmo reset: `padding: 0`, `margin: 0`, `box-sizing: border-box`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: links e listas "resetados"; "configuração padrão do HTML"
@@ -30,3 +34,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o reset é `* {
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: reset de margin/padding e "border-size" (é `box-sizing`) em border-box no início do projeto
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: reset com box-sizing; margin 8px do body; botão sem herança
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: o "hack" de margin, padding e box-sizing no início do projeto
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: reset no primeiro `style.scss`

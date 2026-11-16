@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 88
+source_count: 90
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -65,6 +65,14 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - "Tudo é caixa": toda tag aceita width, height, padding, margin, border e radius; tags semânticas mudam o significado, não o visual; padding em sentido horário; consultar propriedades no "W3C" (W3Schools) ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
 - Aprender CSS pelas principais propriedades e fuçar o resto ("comece mesmo sabendo poucas"); `border` vermelho como printf do layout ([[wiki/sources/principais-propriedades-css-color-background-font]]).
 - Position no CSS ensinado com dois quadrados: relative "em relação a ele mesmo", absolute pelo pai posicionado, fixed para menus, sticky que "transita" para fixed; menu mobile escondido com −1000 px e `transition`, como no canal do YouTube ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], autoria inferida).
+
+## Sass e SCSS
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], usa Sass "nos projetos [...] do Homem-Aranha, do Nubank"; fala "Sass" mas escreve SCSS, para não esquecer o CSS puro: "a tecnologia é maior que a ferramenta".
+
+## Ferramentas de Sass
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: prefere o Live Sass Compiler, "uma das minhas [...] extensões do VS Code que eu não consigo viver sem", e ensina o Scout-App porque alguns alunos não conseguiram rodar a extensão.
 
 ## Key Sources
 
@@ -156,3 +164,5 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, estrutura do layout do YouTube; fundo agora `#0c0c0c`
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, layout-desafio sem código
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria (inferido): prática com CSS Grid; fundos `#070707`/`#090909`/`#0B0B0B`
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de CSS Sass; diz o próprio nome
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de CSS Sass; diz o nome

@@ -4,7 +4,7 @@ title: "Post/Redirect/Get (PRG)"
 aliases: ["PRG pattern", "redirect after post", "303 see other"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [http, formularios, ux, double-submit]
 skill: tech-mentor-backend
 status: stub
@@ -32,7 +32,12 @@ Quando a duplicidade é inócua e facilmente identificável no banco (ex.: um ca
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], o cadastro do Ecoleta faz `res.render(..., { saved: true })` direto na resposta do POST. Um Ctrl+R pede "resubmeter o formulário" e insere de novo, e [[wiki/entities/mayk-brito|Mayk Brito]] usa isso como atalho para testar. É o caso de manual para PRG: `res.redirect(303, '/create-point?saved=1')`.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], depois de adicionar o professor, o servidor faz `res.redirect("/study")` em vez de renderizar a página. O envio ainda é GET; o POST entra no dia 5.
+
 ## Key Sources
 
 - [[wiki/sources/double-spend-double-submit]] — documento primário
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: POST sem redirect no Ecoleta: reload duplica
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: redirect após cadastro, ainda via GET

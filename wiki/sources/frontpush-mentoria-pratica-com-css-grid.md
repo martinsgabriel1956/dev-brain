@@ -95,7 +95,7 @@ Sessão de mentoria do [[wiki/entities/frontpush|FrontPUSH]] (instrutor inferido
 ## Open Questions
 
 - Onde entra a área D no `grid-template-areas`? Faltou uma linha, ou B era menor (por exemplo, `"A A A B D"`)?
-- "A gente starta o SAS": Live Sass Compiler ou outro servidor? O arquivo criado é `style.css`.
+- "A gente starta o SAS": Live Sass Compiler ou outro servidor? O arquivo criado é `style.css`. Provavelmente o "Watch Sass" do [[wiki/entities/live-sass-compiler]], o fluxo do curso ([[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]).
 - Autoria: inferida como Násser pelo curso, pelos fundos quase pretos (`#070707`/`#090909`/`#0B0B0B`, como o `#0c0c0c` da prática 1) e pelo breakpoint de 960 px. A gravação não diz o nome. `date_published` vazio.
 
 ## Raw quotes

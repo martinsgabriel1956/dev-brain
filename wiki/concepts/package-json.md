@@ -4,7 +4,7 @@ title: "package.json"
 aliases: ["package.json", "package-lock.json", "npm init", "manifesto do projeto Node"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [nodejs, npm, dependencias, json, tooling]
 skill: lang-dynamic
 status: stub
@@ -31,7 +31,12 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: `npm init -y`, `dependencies` x `devDependencies` (`-D` para `@types/express`, `ts-node`, `typescript`) e o script `dev`. Diego chama o `package-lock.json` de "arquivo de cache"; não é, é o lockfile, e vai para o repositório.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], `npm init -y` cria o `package.json`; as dependências aparecem nele, o `package-lock.json` "mapeia" a árvore e um script `dev` com nodemon roda por `npm run dev`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init -y, scripts start, dependencies e devDependencies; node_modules fora do Git
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: npm init -y, -D, script dev; package-lock como "cache" (incorreto)
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: script dev

@@ -4,7 +4,7 @@ title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -48,6 +48,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a mesma analogia do restaurante: front-end é o cliente que pede, o garçom leva, o back-end é "aquela parte da cozinha". Clicar num vídeo do YouTube é pedir e receber: "tá rolando uma troca de dados".
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o back-end tem a responsabilidade de "receber os pedidos do cliente", prepará-los e devolver; o front-end é o cliente. A aula cria o primeiro servidor do Proffy e mostra que, rodando no Git Bash, ele funciona com o editor fechado: "meu servidor, nesse caso, é a minha própria máquina".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
@@ -56,3 +60,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a mesma analogi
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: cozinheiro = back-end; regras de negócio no login
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: um back-end, vários clientes
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: restaurante e troca de dados
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: responsabilidades do back-end

@@ -4,7 +4,7 @@ title: "Compatibilidade entre navegadores (Can I use, Baseline)"
 aliases: ["suporte de navegadores", "cross-browser", "Can I use", "caniuse", "browser support"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [frontend, navegador, css, javascript, compatibilidade, baseline]
 skill: tech-mentor-frontend
 status: stub
@@ -24,7 +24,17 @@ Todo navegador entende HTML, CSS e JavaScript, mas cada um interpreta "com uma d
 
 O [[wiki/entities/mdn-web-docs|MDN]] traz a tabela de compatibilidade e o selo Baseline em cada página. Ver também [[wiki/concepts/guerra-dos-navegadores]], [[wiki/concepts/biblioteca-javascript-de-compatibilidade]] e [[wiki/concepts/css]].
 
+## Can I use na introdução ao Sass
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], Násser volta ao Can I use com `transform`: legenda (verde suportado, vermelho não, verde escuro parcial, cinza desconhecido), versões de IE e Edge, e os prefixos `-moz-`, `-ms-`, `-webkit-` em versões antigas; 98% com prefixo, 96% sem. Diz que o Sass põe os prefixos sozinho; quem faz isso é o Autoprefixer ([[wiki/concepts/prefixo-de-fornecedor]]).
+
+## Prefixos no CSS compilado
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o CSS que sai do Live Sass Compiler já traz `-webkit-` e `-ms-` "para poder melhorar a compatibilidade com browsers antigos" ([[wiki/concepts/prefixo-de-fornecedor]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Can I use, `transform` x `backdrop-filter` no Firefox
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: slide: usar `flex` em vez das propriedades separadas "para melhor consistência entre os browsers" (`0` sem unidade era problema do IE10/11)
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Can I use, legenda e prefixos de `transform`
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: prefixos automáticos no CSS compilado

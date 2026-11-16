@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -88,6 +88,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `.tea
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o seletor de irmão adjacente `+` (`.input-block + .input-block`, `fieldset + fieldset`, `.schedule-item + .schedule-item`) dá margem só ao elemento que tem outro igual logo antes; o primeiro fica sem. "A primeira vez que eu aprendi isso aqui eu achei bem confuso." O `>` volta em `.top-bar-container > img`.
 
+## Descendente e aninhamento (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `h1 span` "formate apenas o span que esteja dentro das tags h1"; depois o mesmo em SCSS, com o `span` dentro do bloco do `h1` ([[wiki/concepts/aninhamento-css]]).
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -99,3 +103,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o seleto
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: tag, classe, id e agrupamento
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: seletor de filho direto (>)
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: irmão adjacente (+)
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: `h1 span` e o equivalente aninhado

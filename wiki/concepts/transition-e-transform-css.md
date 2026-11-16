@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `tran
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `transition: 0.2s` sem nome de propriedade anima todas as que mudarem (o padrão é `all`). De brincadeira, `:hover { transform: translateY(-5px) }` com 1 s faz o botão subir. A margem superior negativa do formulário também "sobe" a caixa sobre o header, mas pelo fluxo.
 
+## transform no Can I use (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `transform` é o exemplo de prefixos: `-ms-` no IE 9, `-webkit-` no Safari antigo, `-moz-` no Firefox antigo; 98% de suporte com prefixo e 96% sem. Ver [[wiki/concepts/prefixo-de-fornecedor]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -39,3 +43,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `transit
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: `@keyframes` anunciado como "módulo de animação" para micro-interações
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: transition de background e opacity
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: transition sem propriedade; translateY
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: suporte e prefixos de `transform`

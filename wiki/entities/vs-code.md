@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 16
+source_count: 18
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -61,6 +61,14 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: Emmet
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: Ctrl+P abre qualquer arquivo pelo nome, clique + Shift + clique seleciona um bloco inteiro e Ctrl+D troca `study` por `give-classes` de uma vez. O Emmet completa `small` + Enter.
 
+## Sass no FrontPUSH
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o VS Code é a forma principal de compilar Sass no curso: extensão [[wiki/entities/live-sass-compiler]] ("tudo no próprio Visual Studio [...] sem utilizar aplicativos externos"), com o Live Server para recarregar.
+
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o terminal integrado passa a usar o Git Bash (Select Default Shell), com split para dois terminais; fechar o painel deixa o processo rodando, a lixeira mata. Shift + End seleciona até o fim da linha, Alt + clique cria vários cursores.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -79,3 +87,5 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: Ctrl+P a
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Emmet, Live Server, Alt+Z, Ctrl+/, color picker
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Ctrl+D, Alt + clique, aviso de sintaxe
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Ctrl+P, Shift + clique, Ctrl+D
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Sass Compiler e Live Server
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Git Bash no terminal integrado

@@ -3,8 +3,8 @@ type: concept
 title: "Apego a Ferramentas"
 aliases: ["lealdade a ferramentas", "tool loyalty", "martelo e chave de fenda"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [carreira, mentalidade, ferramentas, estagnacao-tecnica]
 skill: tech-mentor-leadership
 status: draft
@@ -46,8 +46,13 @@ Heurística proposta: se em dez anos você ainda estiver usando exatamente a mes
 
 [[wiki/entities/lucas-badico]] traz um caso que não é bem apego individual, mas sim uma tecnologia que nunca virou onda de mercado: Ruby on Rails teve forte influência no ecossistema (ex.: DHH), mas no Brasil não gerou volume relevante de vagas além de algumas consultorias — diferente do padrão de "onda que virou tendência" (Visual Basic → PHP/ASP/Flash → Objective-C/Ruby/JS). É um lembrete de que nem toda tecnologia influente se torna uma onda dominante, e apostar cedo demais nisso é um risco distinto do apego a uma ferramenta já obsoleta.
 
+## "A tecnologia é maior que a ferramenta"
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wiki/entities/nasser|Násser]] rejeita a sintaxe indentada do Sass porque ela se afasta do CSS puro: "você não pode ficar muito preso a isso", senão o cérebro se acostuma e "acabe esquecendo do CSS padrão". Escolhe o SCSS para manter a base.
+
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — "engenheiro de software não coleciona ferramentas, coleciona modelos mentais"
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Násser: SCSS para não esquecer o CSS puro

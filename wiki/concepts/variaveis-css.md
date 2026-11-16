@@ -4,7 +4,7 @@ title: "Variáveis CSS (custom properties)"
 aliases: ["custom properties", "variáveis no CSS", "var()", ":root", "CSS variables"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [frontend, css, variaveis-css, design-tokens, cores]
 skill: tech-mentor-frontend
 status: stub
@@ -31,9 +31,14 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], as variáveis d
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a variável `--color-secundary` (com U) foi corrigida para `--color-secondary`; quem digitou com U fica sem a cor, porque `var()` com nome inexistente não acha valor. Os botões e cards usam `--color-primary-lighter`, `--color-secondary-dark`, `--color-box-base` e `--color-line-in-white`.
 
+## "Só cores" no CSS puro? (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wiki/entities/nasser|Násser]] diz que "no CSS puro você só tem como criar variáveis com cores, com hexadecimais", e que o Sass permite variáveis com "propriedades inteiras", como um `box-shadow` de várias camadas. `[external]` Custom properties aceitam qualquer valor: `--sombra: 0 1px 2px #0003, 0 4px 8px #0002;` e `box-shadow: var(--sombra)` funcionam (https://developer.mozilla.org/en-US/docs/Web/CSS/--*). A vantagem do Sass está noutro lugar: `$variáveis` em contas e laços na compilação.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: `--title-color` e `--primary-color` em `:root`
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador; ver [[wiki/concepts/pre-processador-css]]
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy em :root
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: o erro secundary/secondary
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Sass: "só cores" no CSS puro (impreciso)

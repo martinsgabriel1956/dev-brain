@@ -4,7 +4,7 @@ title: "Endereço IP (IPv4 / IPv6)"
 aliases: ["IP", "endereço IP", "IPv4", "IPv6", "IP address"]
 date_created: 2026-08-12
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [rede, endereco-ip, ipv4, ipv6, tcp-ip, cs-fundamentals]
 skill: tech-mentor-networking
 status: stub
@@ -41,8 +41,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o IP local mudou de .13 para .12 entre os dias, e foi preciso editar a `image_url` no código.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], localhost é 127.0.0.1, igual em toda máquina, e um domínio "é transformado no endereço de IP deles". A aula diz que o IP "sempre é único"; endereços públicos podem ser compartilhados (NAT) e um domínio responde por vários IPs.
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — IP como sequência que identifica dispositivo; IPv4 (4 octetos, ~4,3 bi) vs IPv6; coexistência
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → IP; localhost/127.0.0.1
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: localhost x IP da máquina no app
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: IP mudou durante a semana
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: localhost e domínio

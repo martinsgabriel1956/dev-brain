@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-10-14
-source_count: 9
+date_updated: 2026-11-16
+source_count: 10
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -103,6 +103,10 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 
 Compilado direto para máquina (C) vs interpretador/VM/GC: ver [[wiki/concepts/custo-de-abstracao-em-runtime]].
 
+## Sass como compilador de CSS (FrontPUSH)
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Sass é compilado de `.scss` para `.css` pelo [[wiki/entities/live-sass-compiler]] ou pelo [[wiki/entities/scout-app]], com aviso "quando tiver algum erro" e um source map ao lado. É compilação fonte-para-fonte (transpilação), no sentido de [[wiki/concepts/pipeline-de-compilacao]].
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]]
@@ -117,3 +121,4 @@ Compilado direto para máquina (C) vs interpretador/VM/GC: ver [[wiki/concepts/c
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — compilador como carregador do peso da portabilidade (um por arquitetura); limite: não gera de forma consistente certas instruções otimizadas
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Sass compilado para CSS (FrontPUSH)

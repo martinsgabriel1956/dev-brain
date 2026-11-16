@@ -4,7 +4,7 @@ title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -87,6 +87,10 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o Live Server "criou um servidor pra gente" em `127.0.0.1:5500` e atualiza a página ao salvar. A regra de [[wiki/entities/mayk-brito|Mayk]]: "Nunca mais eu vou dar dois cliques nesse arquivo para abrir ele". Antes disso, ele ensina o hard reload (Ctrl+Shift+R) para fugir do cache.
 
+## Live Server no módulo de Sass (FrontPUSH)
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], [[wiki/entities/nasser|Násser]] mostra o "Open with Live Server" na porta 5500 como recurso do [[wiki/entities/live-sass-compiler]]: "quando você salva, ele automaticamente modifica e atualiza o seu browser". Na versão original da extensão, o Live Server era dependência; são duas extensões. O Watch Sass completa o ciclo: salvar o `.scss` compila, e o recarregamento mostra o resultado.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
@@ -96,3 +100,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o Live Server "
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Live Server: servidor local e auto reloading
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: Open With Live Server cria "um servidorzinho com essa página"
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Live Server e hard reload
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server + Watch Sass

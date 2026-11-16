@@ -4,7 +4,7 @@ title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub
@@ -64,6 +64,10 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]]: `text-shadow` aplica sombra no texto e `box-shadow` "sombra em caixa". `[external]` `text-shadow` não tem spread nem `inset`; as várias camadas do Smooth Shadow só funcionam em `box-shadow` com valores separados por vírgula (https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow).
 
+## Sombra numa variável
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o `box-shadow` de várias camadas usado no arquivo todo é o exemplo de variável: muda num lugar só. Vale também para custom properties ([[wiki/concepts/variaveis-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
@@ -72,3 +76,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]]: `text-sha
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: sombras como effect styles; Smooth Shadow com offset centralizado (tensão)
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — copiar o box-shadow de quatro camadas do Inspect para o style guide
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: text-shadow no texto, box-shadow na caixa
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: box-shadow de várias camadas numa variável

@@ -4,7 +4,7 @@ title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -58,10 +58,20 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 "Temos inúmeras portas para entrar no servidor." `[external]` Para HTTPS, a porta padrão é a 443.
 
+## Live Server no FrontPUSH
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: "um servidorzinho na porta 5500 em localhost".
+
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o servidor escuta a porta 5500 "pra homenagear o Live Server". A aula diz que "a porta padrão é a porta 80"; isso vale para HTTP, e o YouTube usa HTTPS (443).
+
 ## Key sources
 
 - [[wiki/sources/portas-de-rede-como-funcionam]]
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: 5500, 3000, 80; 443 para HTTPS
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: 5500; 80 x 443
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — 80/22/443 e 3000/5000/8080 como convenções arbitrárias
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: porta 5500 do Live Server (FrontPUSH)

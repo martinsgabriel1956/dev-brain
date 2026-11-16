@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 65
+source_count: 67
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -223,6 +223,14 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: p
 
 Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: um segundo layout, mais difícil que o do YouTube, deixado como exercício, com dicas de estrutura (container, três flex-itens, flex dentro de flex) e de menu (CTA, hambúrguer com media query, como no projeto do Nubank). O CSS prometido para o layout do YouTube não aparece aqui.
 
+## Módulo de CSS Sass: aula 01, introdução
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: o que é o Sass, vantagens, Can I use e prefixos, Sass vs SCSS no CodePen. Módulo "mais intermediário" (pede noção de programação); projetos pontuais, com o uso real nos práticos do Nubank e do Homem-Aranha. Próxima aula: instalação.
+
+## Módulo de CSS Sass: aula 02, instalação
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: [[wiki/entities/live-sass-compiler]] no VS Code (o jeito do curso) e [[wiki/entities/scout-app]] como alternativa; linha de comando evitada; modos expandido e `compressed`.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -290,3 +298,5 @@ Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: um se
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, HTML do layout do YouTube
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, desafio
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: sessão de mentoria: prática com CSS Grid e `grid-template-areas`
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de CSS Sass
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de CSS Sass

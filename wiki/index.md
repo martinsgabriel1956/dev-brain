@@ -26,6 +26,9 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]] | Dia 4 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: back-end como cozinheiro e [[wiki/concepts/regra-de-negocio\|regra de negócio]] (o preço do sapato); [[wiki/entities/nodejs\|Node]] LTS 12, Git Bash, `src/` + `public/`; npm init, package.json, JSON; [[wiki/entities/express\|Express]] (rotas, arrow function, req/res, sendFile, static), nodemon; [[wiki/entities/nunjucks\|Nunjucks]] com for/if/loop.index; filtros por req.query; cadastro com push, Object.keys e redirect; imprecisões: `==` frouxo string x número, push sem validação, POST "esconde", porta 80 x 443, `-D` "outro lugar", static relativo ao cwd, URL do WhatsApp sem encode, [[wiki/concepts/dados-em-memoria-vs-persistencia\|dados em memória]] |
+| [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]] | Aula 02 do módulo de CSS Sass do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): [[wiki/entities/live-sass-compiler\|Live Sass Compiler]] no VS Code ("Watch Sass", gera `.css` + `.map` com `-webkit-`/`-ms-`) e [[wiki/entities/scout-app\|Scout-App]] como plano B; linha de comando evitada; modos expandido e `compressed`. A extensão original foi arquivada em 2022, o Scout-App parou em 2021 (LibSass), e o "Open with Live Server" é outra extensão |
+| [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]] | Aula 01 do módulo de CSS Sass do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): Sass como pré-processador que compila para CSS ("não é lido pelo browser"); vantagens: mixins, variáveis com valor inteiro (`box-shadow`), pseudo-elementos e estados, prefixos; Can I use com `transform`; Sass indentado vs SCSS no CodePen, SCSS escolhido porque "a tecnologia é maior que a ferramenta". Quem põe o `-webkit-` é o Autoprefixer, e custom properties não são só cores |
 | [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]] | Dia 3 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: favicon e theme-color; `header.css` e `forms.css` ([[wiki/concepts/refatoracao\|refatoração]]); give-classes com [[wiki/concepts/formulario-html\|fieldset/legend]], required, url/number/time, textarea, `name[]` e `form=`; irmão adjacente `+`, `!important` evitado, transition + translateY, grid no desktop; primeiro JavaScript: objetos, `document.location.href`, querySelector, `<script>` no fim do body, [[wiki/concepts/null-e-undefined\|null]] e [[wiki/concepts/carregamento-de-scripts\|defer]], addEventListener + cloneNode + appendChild + querySelectorAll/forEach; imprecisões: labels soltos sem id, `[]` é convenção do servidor, WhatsApp em number, flex "não muda o display", defer "depois de um tempo", const "constante" |
 | [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]] | Mentoria do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido): grid em vez de flex quando linhas e colunas se mesclam ("flexbox dentro do flexbox [...] uma salada"); layout desenhado como "mesclar e centralizar" no Excel, linha do tamanho do menor card; matriz 5 × 5 em `grid-template-areas` + `grid-area` + `grid-gap`; media query `max-width: 960px` troca só o template. Na fala, a área D some da matriz e os nomes vêm colados (precisam de espaço) |
 | [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]] | Dia 2 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: CSS em `styles/partials`; landing do Proffy no celular (hero image, botões com border-radius, hover e transition) e no desktop com [[wiki/concepts/css-grid\|grid]] (`2fr 1fr 2fr`, template-areas, align/justify-self) a partir de 1100 px; root 62,5% acima de 700 px; página study com header, [[wiki/concepts/formulario-html\|form]] (label, select, input time, submit), linha de foco com `:focus-within::after` + absolute, card de professor em `article` e filtros em `repeat(4, 1fr)`; imprecisões: label `for` → `name` (é `id`), root 40%, media query "sobrescrita" é ordem da cascata, text-align/width tratados como herança, `::after` "elemento HTML", select sem [[wiki/concepts/indicador-de-foco\|indicador de foco]] |
@@ -1001,6 +1004,20 @@ date_updated: 2026-11-16
 
 ## Concepts
 
+### NLW #2 — dia 4 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/dados-em-memoria-vs-persistencia]] | Variável do processo some em restart, queda ou deploy e diverge entre instâncias; persistir é gravar fora do processo; Twelve-Factor: processos stateless |
+| [[wiki/concepts/regra-de-negocio]] | Decisões do negócio (preço, desconto, permissão) valem para todos os clientes e ficam no back-end; o front só ajuda a experiência e nunca é a fonte da verdade |
+
+### FrontPUSH: introdução ao Sass (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/prefixo-de-fornecedor]] | `-webkit-`, `-moz-`, `-ms-`, `-o-` para recursos experimentais; gerados pelo Autoprefixer a partir do Can I use e do `browserslist`; hoje quase sempre dispensáveis |
+| [[wiki/concepts/aninhamento-css]] | Regra dentro de regra (`h1 { span {} }` = `h1 span`); do SCSS ao CSS nativo (Chrome 112+, Firefox 117+, Safari 16.5+), com diferenças no `&` |
+
 ### NLW #2 — dia 3 (2026-11-16)
 
 | Page | Hook |
@@ -1045,7 +1062,7 @@ date_updated: 2026-11-16
 | Page | Hook |
 |---|---|
 | [[wiki/concepts/compatibilidade-entre-navegadores]] | Navegadores interpretam e adotam recursos em tempos diferentes: Can I use, Baseline (newly x widely available), browserslist, `@supports`; `backdrop-filter` no Firefox até a v103 |
-| [[wiki/concepts/pre-processador-css]] | Sass compila para CSS e soma recursos de programação (`if/else`, mixins); nesting, custom properties e `if()` nativos tiram parte do motivo |
+| [[wiki/concepts/pre-processador-css]] | Sass compila para CSS e soma recursos de programação (`if/else`, mixins); Sass indentado vs SCSS (superconjunto do CSS); nesting, custom properties e `if()` nativos tiram parte do motivo |
 
 ### NLW #1 com Diego Fernandes — dia 5 (2026-11-16)
 
@@ -3747,6 +3764,8 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/live-sass-compiler]] — extensão do VS Code que compila Sass ao salvar ("Watch Sass"), com Autoprefixer e source map; a original (Ritwick Dey) foi arquivada em 2022, fork de Glenn Marks
+- [[wiki/entities/scout-app]] — app gráfico, gratuito e multiplataforma para compilar Sass; parado desde 2021, usa LibSass (node-sass)
 - [[wiki/entities/multer]] — middleware multipart do Express; diskStorage, single/array; falta limits/fileFilter e storage externo
 - [[wiki/entities/joi]] — validação de schema (via celebrate no Express); @hapi/joi → joi; Zod hoje une front e back
 - [[wiki/entities/netlify]] — hospedagem de front-end com build por push e CDN; SPA precisa de redirect para index.html

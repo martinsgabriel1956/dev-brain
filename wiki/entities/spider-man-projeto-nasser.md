@@ -3,8 +3,8 @@ type: entity
 title: "Spider-Man (projeto do Násser)"
 aliases: ["Spider-Man", "projeto Spider-Man"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [projeto, ui-design, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 Na aula de harmonia das cores, o Homem-Aranha (o personagem, não este projeto) é exemplo de tríade: azul, amarelo e vermelho; o título do Amazing Spider-Man em amarelo ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]).
 
+## Feito com Sass
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "o Homem-Aranha" é citado com o Nubank entre os projetos que usam Sass.
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
@@ -39,3 +43,4 @@ Na aula de harmonia das cores, o Homem-Aranha (o personagem, não este projeto) 
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — imagem do Homem-Aranha usada na demo do TinyImage (inferência)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — jogo do Homem-Aranha com botões chanfrados/hexagonais
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — Homem-Aranha como tríade (o personagem)
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: projeto feito com Sass

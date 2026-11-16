@@ -4,7 +4,7 @@ title: "Servidor Web vs. Servidor de Aplicação"
 aliases: ['web server vs application server']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [web, backend, servidor, infra]
 skill: tech-mentor-frontend
 status: draft
@@ -26,8 +26,13 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], `inde
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] mostra que o Live Server "criou para você um servidor" na porta 5500, mas ele só serve arquivos. O Express com rotas e templates é o primeiro servidor de aplicação do Ecoleta; o `express.static("public")` cuida da parte de arquivos estáticos.
 
+## Live Server no FrontPUSH
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Live Server é o "servidorzinho em localhost" que serve o HTML e recarrega ao salvar: servidor estático, como na NLW.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — `index.html` como documento padrão (escolha do servidor, não do browser)
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Live Server (estático) x Express (aplicação)
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server como servidor estático (FrontPUSH, Sass)

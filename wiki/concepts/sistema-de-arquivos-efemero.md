@@ -4,7 +4,7 @@ title: "Sistema de arquivos efêmero"
 aliases: ["ephemeral filesystem", "disco efêmero", "filesystem efêmero"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [deploy, paas, containers, infraestrutura, armazenamento]
 skill: lang-dynamic
 status: stub
@@ -24,6 +24,11 @@ Em PaaS (Heroku, Render, Railway), containers (Kubernetes, ECS, Cloud Run) e ser
 
 Relacionado: [[wiki/concepts/design-efemero-zero-persistencia]], [[wiki/concepts/deploy-strategies]].
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o problema aparece um passo antes do disco: o cadastro fica num array em memória e some a cada restart. Ver [[wiki/concepts/dados-em-memoria-vs-persistencia]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: uploads em disco x deploy no Heroku
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: estado em memória some ao reiniciar

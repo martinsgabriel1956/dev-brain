@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 23
+source_count: 24
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -103,6 +103,10 @@ Na [[wiki/sources/frontpush-mentoria-pratica-com-css-grid|mentoria de CSS Grid]]
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `legend` usa `space-between` para preparar o lugar do botão "Novo horário", e o footer do formulário usa o mesmo no desktop. Mayk diz que o flex "não modifica o display de cada um dos itens"; na verdade, os filhos viram itens flex e são "blockificados".
 
+## Centralizar o body (FrontPUSH, Sass)
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], `display: flex`, `justify-content: center` e `align-items: center` no `body` "para todo e qualquer elemento ele sempre fique centralizado", o combo da aula 04 do módulo de Flexbox.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -128,3 +132,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `legen
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: space-between, space-evenly, flex 1 1
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: flex é "unidimensional"; layout com linhas e colunas mescladas em flex vira "flexbox dentro do flexbox [...] uma salada"
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: space-between; itens flex blockificados
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: combo de centralização no primeiro `.scss`

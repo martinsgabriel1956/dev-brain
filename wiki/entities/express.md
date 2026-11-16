@@ -4,7 +4,7 @@ title: "Express"
 aliases: ["Express.js", "express", "ExpressJS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [nodejs, backend, framework, http, javascript]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,10 @@ Na API de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: `upload.single('image')` (Multer) e `celebrate(...)` como middlewares encadeados na rota `POST /points`, mais `app.use(errors())` para devolver 400 com as mensagens do Joi.
 
+## Na NLW #2, dia 4 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Proffy usa `const server = express()`, `server.use(express.static("public"))`, rotas `get` com `(req, res)`, `res.send`, `res.sendFile(__dirname + ...)`, `res.render` e `res.redirect("/study")`, `req.query` para os filtros e `listen(5500)`. Tensão: `express.static("public")` é relativo ao diretório de onde o processo roda.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: servidor, rotas GET, `express.static` e integração com Nunjucks (Express 4, 2020)
@@ -47,3 +51,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: Express com TypeScript e @types/express, response.json
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: Router, express.json, express.static, cors, controllers
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Multer e celebrate como middlewares de rota
+- [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: static, rotas, req.query, redirect

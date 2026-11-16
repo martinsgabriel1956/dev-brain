@@ -1,13 +1,13 @@
 ---
 type: concept
 title: "Pré-processador CSS (Sass)"
-aliases: ["Sass", "SCSS", "pré-processador", "preprocessor CSS", "Live Sass Compiler"]
+aliases: ["Sass", "SCSS", "pré-processador", "preprocessor CSS", "Live Sass Compiler", "mixin", "Less", "Dart Sass"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [css, sass, scss, pre-processador, frontend, build]
 skill: tech-mentor-frontend
-status: stub
+status: draft
 ---
 
 # Pré-processador CSS (Sass)
@@ -18,8 +18,22 @@ Linguagem que compila para [[wiki/concepts/css]] e acrescenta recursos de progra
 
 `[skill: tech-mentor-frontend]` Boa parte do que justificava o Sass virou CSS nativo: aninhamento (nesting, Chrome 112+, Firefox 117+, Safari 16.5+), [[wiki/concepts/variaveis-css|variáveis]] (custom properties, que mudam em tempo de execução, ao contrário das `$variáveis` do Sass) e `if()`, que apareceu primeiro no Chromium e ainda está em adoção. O Sass continua comum em projetos legados e com ITCSS + BEM, onde mixins e funções organizam a camada Tools. Ver [[wiki/concepts/compatibilidade-entre-navegadores]].
 
+## Introdução do módulo de Sass
+
+Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wiki/entities/nasser|Násser]] abre o módulo: o Sass "não é lido pelo browser", é "um meio de campo" que "cospe" CSS; não faz "algo além do que o CSS já é capaz de fazer", só aumenta a produtividade. Vantagens do slide: funções (que ele chama de mixins) para bibliotecas reaproveitáveis, variáveis com valores inteiros (um `box-shadow` de várias camadas), facilidades com pseudo-elementos e estados, e prefixos automáticos ([[wiki/concepts/prefixo-de-fornecedor]]). Escolhe o Sass, e não o Less, pela comunidade maior.
+
+**Sass vs SCSS.** A sintaxe indentada (`.sass`, sem chaves nem ponto e vírgula, "próximo da linguagem Python") é "prejudicial" porque afasta do CSS puro: "a tecnologia é maior que a ferramenta" ([[wiki/concepts/apego-a-ferramentas]]). O curso escreve SCSS (`.scss`), "muitíssimo parecido com o CSS puro", com [[wiki/concepts/aninhamento-css|aninhamento]]. `[external]` SCSS é superconjunto do CSS: todo CSS válido é SCSS válido (https://sass-lang.com/documentation/syntax/).
+
+**Precisões.** `[external]` `@mixin`/`@include` despejam declarações; `@function`/`@return` devolvem valor; a aula mistura os dois. O compilador não põe prefixos: é o Autoprefixer, que o Live Sass Compiler roda pela opção `autoprefix`. O LibSass foi descontinuado em 2020; a implementação atual é o Dart Sass (https://sass-lang.com/blog/libsass-is-deprecated/).
+
+## Instalação: extensão, app ou CLI (FrontPUSH)
+
+Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], duas formas: a extensão [[wiki/entities/live-sass-compiler]] no [[wiki/entities/vs-code]] (a do curso, botão "Watch Sass") e o [[wiki/entities/scout-app]], gráfico e multiplataforma. A linha de comando ficou de fora por pedir mais conhecimento de terminal. `[external]` Hoje a CLI do Dart Sass (`npm install -D sass`, `sass --watch scss:css --style=compressed`) é o caminho portátil; o Scout-App e a extensão original usavam LibSass, descontinuado.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador, `if/else`, Live Sass Compiler
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: "Grid System com Sass, utilizando float" citado como forma de layout, com módulo próprio no curso
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: grid system com float em Sass, "seguindo o grid que a gente desenha no Figma"
+- [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: aula 01 do módulo de Sass: o que é, vantagens, prefixos, Sass vs SCSS
+- [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: aula 02 do módulo de Sass: Live Sass Compiler, Scout-App, `compressed`
