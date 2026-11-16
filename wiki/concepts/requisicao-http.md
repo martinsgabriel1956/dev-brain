@@ -4,7 +4,7 @@ title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -37,9 +37,14 @@ rota → [[wiki/concepts/middleware]] → controller → service → banco → r
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] apresenta `req` e `res` nas rotas do [[wiki/entities/express]]: "Req é uma requisição. Requisição é um pedido. Res é uma resposta." A resposta vem com `res.send`, `res.sendFile` e `res.render`. "Lembra que tudo é dado, gente."
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], a request tem cinco blocos: URL/endpoint (recurso), query params, método (ação), headers (informações adicionais) e body (corpo); a response tem headers, Content-Type, status code e body. A aula chama o status code de "outro header" e diz que só POST e PUT levam body; ver as correções na página da fonte.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — anatomia completa do clique até a resposta
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: req/res no Express
+- [[wiki/sources/jstack-http-e-apis-rest]]: cinco blocos da request e quatro da response
 
 ## Key sources (adição 2026-10-06)
 

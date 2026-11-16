@@ -3,8 +3,8 @@ type: concept
 title: "Pilha (Stack)"
 aliases: ["stack", "LIFO", "call stack"]
 date_created: 2026-06-01
-date_updated: 2026-11-03
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [cs-fundamentals, estruturas-de-dados, pilha, stack, lifo]
 skill: cs-fundamentals
 status: draft
@@ -55,9 +55,14 @@ A call stack usada por chamadas de função é administrada automaticamente pelo
 
 [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] afirma que na [[wiki/concepts/gpu]] não existe stack, nem push e pop. Como afirmação absoluta, é exagero. [external] [Respostas de fórum da NVIDIA](https://forums.developer.nvidia.com/t/does-cuda-support-recursion/37139) indicam recursão em CUDA desde a versão 3.1, com stack por thread configurável e restrição nos kernels `__global__`. As fontes são antigas, e o guia atual não pôde ser conferido nesse ponto.
 
+## Call stack no Node (JStack)
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]], `printDouble(2)` empilha `printDouble`, `double` e `multiply`, que saem na ordem inversa: "a primeira função que entra é a última a sair". O Node tem uma call stack por thread de JavaScript, por isso "apenas uma coisa por vez". Ver [[wiki/concepts/event-loop-performance-js]].
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo do desenrolar da call stack em fatorial e Fibonacci recursivos
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — call stack como estrutura de dados alocável manualmente; leitura de assembly (`call` vs. `jump`)
 - [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — alegação de que GPU não tem stack, com ressalva
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: call stack com printDouble/double/multiply; uma stack = single thread

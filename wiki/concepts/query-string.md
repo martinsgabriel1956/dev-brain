@@ -4,7 +4,7 @@ title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os filtro
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o redirect monta `?subject=...&weekday=...&time=...` concatenando `req.body` à mão; os valores são números e horas, mas texto livre pediria `URLSearchParams` ou `encodeURIComponent`. A busca lê os mesmos nomes em `req.query`.
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], query params são "parâmetros adicionais" na URL: `?page=3&orderBy=name` pede "os produtos da página 3 e ordenados pelo nome". Ver [[wiki/concepts/cursor-pagination]] para paginação além de `page`.
+
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 `GET /classes?week_day=1&subject=Matemática&time=9:00`; o Insomnia monta a query pela aba Query. O valor chega como string (daí `Number(week_day)`) e pode chegar como array. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
@@ -47,6 +51,9 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o redirect monta `
 ## Na NLW #2, dia 3 (Diego Fernandes)
 
 No Axios, os filtros do GET vão em `{ params: { subject, week_day, time } }`, porque o segundo argumento direto só vale para POST/PUT. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+## No JStack, aula 05
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota compara `request.url === '/users'`. No Node, `request.url` traz a query string junto, então `/users?page=2` não casa e cai no 404. Separar com `new URL(request.url, 'http://localhost')`: `pathname` para a rota, `searchParams` para os parâmetros.
 
 ## Key sources
 
@@ -56,5 +63,7 @@ No Axios, os filtros do GET vão em `{ params: { subject, week_day, time } }`, p
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: form sem action manda os campos na URL
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: req.query nos filtros e no cadastro
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: query string montada para o redirect
+- [[wiki/sources/jstack-http-e-apis-rest]]: paginação e ordenação via `?page=3&orderBy=name`
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: filtros de aulas na query
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: params do Axios
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: request.url inclui a query; usar new URL

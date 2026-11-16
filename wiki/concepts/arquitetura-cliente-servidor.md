@@ -4,7 +4,7 @@ title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a mesma analogi
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o back-end tem a responsabilidade de "receber os pedidos do cliente", prepará-los e devolver; o front-end é o cliente. A aula cria o primeiro servidor do Proffy e mostra que, rodando no Git Bash, ele funciona com o editor fechado: "meu servidor, nesse caso, é a minha própria máquina".
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], uma API é "alguém ali no meio" que liga web, mobile, desktop e outras APIs à "mesma fonte de dados"; o HTTP é a troca de mensagens em que "o cliente pede e o servidor responde de volta".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
@@ -61,3 +65,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o back-en
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: um back-end, vários clientes
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: restaurante e troca de dados
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: responsabilidades do back-end
+- [[wiki/sources/jstack-http-e-apis-rest]]: API no meio de vários clientes; HTTP como troca de mensagens

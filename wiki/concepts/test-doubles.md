@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-10-05
-source_count: 33
+date_updated: 2026-11-16
+source_count: 34
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -116,6 +116,10 @@ O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado p
 
 Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não confirma que o dado foi de fato persistido — para isso o teste precisa parar de mockar e rodar contra um banco real (mesmo que dedicado a testes), o que o desloca de unitário para [[testes-integracao-banco-real|teste de integração]].
 
+## "Mocks" como dados fake (JStack, aula 05)
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], "mocks" nomeia a pasta de dados fake em memória (`src/mocks/users.js`). Pelo vocabulário desta página isso não é um mock (dublê que verifica interações), e sim dados de exemplo, mais perto de fixture ou seed. O nome é comum em projetos, mas vale saber que são coisas diferentes.
+
 ## Key Sources
 
 - [[wiki/sources/doc-xunitpatterns]] — verbete de glossário dedicado à definição formal de DOC, o que um Test Double substitui
@@ -150,6 +154,7 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/production-code-xunitpatterns]] — verbete de glossário dedicado ao termo "production code": define formalmente o contraponto de "test code" que SUT e DOC sempre são, fechando a lacuna de um termo já citado várias vezes sem fonte própria
 - [[wiki/sources/test-code-xunitpatterns]] — verbete de glossário dedicado ao termo-irmão "test code": código escrito para testar outro código, seja production code ou outro test code — cobre explicitamente o caso de um test double customizado precisar ele próprio de teste
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — nomeia a consequência prática de um Mock Object dessincronizado do comportamento real do DOC: depuração manual, não apenas risco abstrato de integração mascarada
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: "mocks" usado para dados fake
 
 ## Key sources (adição 2026-10-05)
 

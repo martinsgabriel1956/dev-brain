@@ -4,7 +4,7 @@ title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 12
+source_count: 13
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -87,6 +87,10 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o upload sem `fileFilter`, servido pelo `express.static` no mesmo domínio da API, permite subir um HTML/SVG com script e gerar XSS armazenado.
 
+## URL refletida no 404 (JStack, aula 05)
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], o 404 responde `text/html` com `` `Cannot ${request.method} ${request.url}` ``, devolvendo na página um texto controlado pelo cliente sem escapar. O navegador codifica `<` e `>` no path pela barra de endereço, mas não dá para contar com isso; o Express escapa esse texto. Responder `text/plain` ou escapar o HTML resolve.
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — XSS na lista de estudo; HttpOnly como mitigação
@@ -101,3 +105,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — introdução didática com estudo de caso narrativo (loja do Bob): reflected XSS como ataque que exige engenharia social vs. stored XSS entregue automaticamente pelo próprio site; estatísticas de mercado não verificadas (74%/60%)
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — citado como par estrutural (mesmo autor, mesmo formato pedagógico) aplicado a SQL Injection em vez de XSS
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: XSS armazenado via upload sem filtro
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: 404 em text/html refletindo request.url

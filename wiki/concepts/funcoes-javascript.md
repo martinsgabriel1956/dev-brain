@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 12
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -61,6 +61,14 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], funções `async` 
 
 Em [[wiki/sources/frontpush-funcoes-sass]]: "um bloco que retorna sempre um valor", "na grande maioria das linguagens"; parâmetros com padrão (`$total: 12`) como no JS; concatenação de strings com `+`, "muito parecido com o JavaScript". Ver [[wiki/concepts/funcoes-sass]].
 
+## No JStack, aula 03
+
+Em [[wiki/sources/jstack-o-que-sao-modulos]], `module.exports` pode ser a própria função (`module.exports = printName`), e `exports.printName = (name) => ...` declara e exporta de uma vez, "um pouco mais enxuto" com arrow function. Chamar a função sem importá-la dá `is not defined`; importar sem exportar dá `is not a function`.
+
+## No JStack, aula 06
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: função como valor numa propriedade (`handler: UserController.listUsers`), chamada depois. Cuidado anunciado pela própria aula (classes no próximo módulo): método de classe passado como referência perde o `this`; `bind`, arrow function como propriedade ou um wrapper `(req, res) => c.listUsers(req, res)` resolvem.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -73,3 +81,5 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: "um bloco que retorna sempre um valo
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: arrow function, return, getSubject
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: async function, return no then
 - [[wiki/sources/frontpush-funcoes-sass]]: paralelo com funções do Sass
+- [[wiki/sources/jstack-o-que-sao-modulos]]: função exportada; arrow function em exports.printName
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: referência de função; this em métodos de classe

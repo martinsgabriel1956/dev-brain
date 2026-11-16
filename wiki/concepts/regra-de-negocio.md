@@ -4,7 +4,7 @@ title: "Regra de negócio"
 aliases: ["regras de negócio", "business rule", "business logic", "lógica de negócio"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [backend, dominio, regra-de-negocio, seguranca, validacao]
 skill: tech-mentor-backend
 status: stub
@@ -24,7 +24,12 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], [[wiki/en
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], "é muito mais responsabilidade da aplicação fazer a regra de negócio, como eu falei ontem", e o banco guarda os dados. O cadastro continua sem validação nenhuma no servidor, e a regra de horário (`time_from <= x < time_to`) é a única regra da aula escrita em código.
 
+## No JStack, aula 06
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], a regra sai do `index.js` para o [[wiki/concepts/controller]], definido como "o responsável por armazenar toda a regra de negócio". O exemplo ("verificar se o email [...] já não está inserido no banco") é regra de negócio de fato, mas o lugar dela numa arquitetura em camadas é um service/use case, não o controller HTTP.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: regra de negócio no back-end (o preço do sapato) e o cadastro sem validação
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: aplicação regra, banco guarda
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: regra movida para o controller (lugar discutível)

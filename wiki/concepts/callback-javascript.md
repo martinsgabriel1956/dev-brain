@@ -4,7 +4,7 @@ title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 7
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -40,9 +40,24 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o `then(execute)` recebe a função pelo nome, sem executá-la, e a chama quando o banco termina de abrir. Encadear `then` dentro de `then` vira "uma bagunça", e por isso a aula passa a [[wiki/concepts/async-await]]. A NLW #1 fazia o mesmo com callbacks do `sqlite3`.
 
+## No JStack, aula 01
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]], callback é "ligue de volta": "depois que isso aqui terminar de executar, você me liga de volta e me passa esses dados". O slide usa o padrão error-first `function callback(err, data)`. O callback espera na *callback queue* até o [[wiki/concepts/event-loop-performance-js|event loop]] achar a call stack vazia.
+
+## No JStack, aula 04
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]], dois callbacks: o do `createServer`, chamado a cada requisição com `(request, response)`, e o do `listen`, chamado uma vez quando o servidor está de pé.
+
+## No JStack, aula 06
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `handler: UserController.listUsers` guarda a função sem chamá-la ("eu não estou executando a função [...] só estou passando a referência"); o `index.js` a chama depois com `route.handler(request, response)`. Com métodos de classe, a referência solta perde o `this`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: referência x execução no onClick do React
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: callback error-first do Multer
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: then com função nomeada, rumo ao await
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: "ligue de volta"; callback queue e event loop
+- [[wiki/sources/jstack-criando-o-servidor-http]]: callbacks do createServer e do listen
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: handler guardado como referência

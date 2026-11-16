@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-10-06
-source_count: 8
+date_updated: 2026-11-16
+source_count: 9
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -59,6 +59,10 @@ const logger2 = Logger.getInstance();
 
 Use quando a unicidade é **genuinamente necessária**, não para ter estado global conveniente. Prefira injeção de dependência para passar instâncias compartilhadas.
 
+## Cache de módulos no Node (JStack, aula 03)
+
+[[wiki/sources/jstack-o-que-sao-modulos]] apresenta `require`/`module.exports`. Como o Node executa cada módulo uma vez e devolve o mesmo objeto nos `require` seguintes, `module.exports = new Database()` já é um singleton por processo, sem classe especial. Ver [[wiki/concepts/modulos-nodejs]].
+
 ## Key Sources
 
 - [[wiki/sources/sete-padroes-de-design-de-software]]
@@ -67,6 +71,7 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — store de estado global (estilo Zustand) como singleton de módulo no front end
+- [[wiki/sources/jstack-o-que-sao-modulos]]: cache do require como singleton implícito
 
 ## Key sources (adição 2026-10-05)
 

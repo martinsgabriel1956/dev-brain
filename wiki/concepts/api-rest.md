@@ -4,7 +4,7 @@ title: "API REST (RESTful)"
 aliases: ["REST", "RESTful", "API RESTful", "REST API"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [api, rest, http, json, backend, arquitetura]
 skill: lang-dynamic
 status: stub
@@ -30,12 +30,23 @@ Relacionado: [[wiki/concepts/contrato-de-api]], [[wiki/concepts/api-versioning]]
 
 No dia 2 ([[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]), Diego dá a regra prática: as rotas são "muito semânticas". O método diz a ação e o caminho diz o recurso: `GET /users` lista, `POST /users` cria, `GET /users/5` busca um.
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], [[wiki/entities/mateus-silva|Mateus Silva]] define REST como "um padrão para construção de APIs que utiliza o protocolo HTTP" cuja "grande sacada" é retornar "uma representação do estado": JSON no lugar do HTML montado, para web e React Native. Recursos no plural (`GET /products`, `GET /products/10`, `POST`, `PUT`, `DELETE`).
+
+**Correção:** REST é estilo arquitetural de [[wiki/entities/roy-fielding|Roy Fielding]], não amarrado a HTTP nem a JSON. O HTML também é representação, e o hipertexto (HATEOAS) é central na tese. O mesmo recurso pode servir HTML ou JSON por [[wiki/concepts/content-negotiation]]. Plural é convenção `[skill: tech-mentor-backend]`.
+
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 "Full MVC" (HTML pronto do servidor) contra API REST (só dados em JSON), porque "o único dispositivo na Terra capaz de entender HTML é o navegador" e o mesmo back-end serve web e mobile. A comparação é de quem renderiza; REST em si é o estilo de Fielding, não o formato JSON. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+## Primeira rota no JStack (aula 05)
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a regra vira código: GET em `/users`, sem ID, é listagem, e a resposta é JSON (`application/json`). Ver [[wiki/concepts/roteamento-http]].
 
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: MVC com template engine x API REST com JSON; um back-end para web e mobile
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: rotas semânticas: método + recurso
+- [[wiki/sources/jstack-http-e-apis-rest]]: HTML × JSON como "representação do estado"; plural; REST como "padrão HTTP" (corrigido)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: Full MVC × API REST
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: GET /users como listagem em JSON

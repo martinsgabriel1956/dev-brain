@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -32,8 +32,13 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o `{% if 
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `{% if proffys == "" %}` reconhece a lista vazia porque `[] == ""` é verdadeiro: o array vira string vazia. É a segunda vez na NLW #2 que o `==` frouxo faz o template funcionar.
 
+## No JStack, aula 05
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota usa `===` ("igual igual igual") para `request.url` e `request.method`, ambos strings: comparação estrita, sem conversão de tipo.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: == frouxo salva a comparação string x número
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: [] == "" no estado vazio
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: === na condição da rota

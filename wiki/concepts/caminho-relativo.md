@@ -4,7 +4,7 @@ title: "Caminho relativo de arquivos (HTML x CSS)"
 aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [frontend, html, css, caminho-relativo, arquivos]
 skill: tech-mentor-frontend
 status: stub
@@ -35,9 +35,14 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `href="style.cs
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], mover `style.css` para `styles/` quebra o estilo: "ele não vai achar porque agora não está nesse local". Os links passam a `/styles/main.css` e `/styles/partials/page-landing.css`, e Mayk avisa que "muitos erros que eu vejo os alunos cometendo" são arquivos fora da pasta `partials`.
 
+## require × fs (JStack, aula 06)
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `require('../mocks/users')` resolve a partir do arquivo que importa. Já caminhos de `fs` (`readFile('./x')`) resolvem a partir do diretório onde o processo foi iniciado; por isso se usa `__dirname` para eles.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `CSS/style.css`, `./` e `../` no `<link>`
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style.css sem barra x com barra
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/partials e o erro comum dos alunos
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: require relativo ao arquivo, fs relativo ao cwd

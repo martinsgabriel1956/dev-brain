@@ -4,7 +4,7 @@ title: "Recurso (REST)"
 aliases: ["resource", "pensar em recursos", "rest resource"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [rest, api, recurso, design-de-api]
 skill: tech-mentor-networking
 status: stub
@@ -20,8 +20,18 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], a rota é "o endereço completo da nossa requisição" e o recurso é "qual entidade estamos acessando do sistema".
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], o endpoint ("tudo que vem depois do nosso domínio") identifica o recurso: `/products` para a coleção e `/products/10` para um item, sempre no plural. O `/10` é chamado de "parâmetros" (route params, diferentes dos query params).
+
+## No JStack, aula 05
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: `/users` sem ID é a coleção, e o cliente "está esperando uma listagem"; o item (`/users/:id`) fica para depois.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — mudança de mentalidade função → recurso
+- [[wiki/sources/jstack-http-e-apis-rest]]: endpoint identifica o recurso; coleção × item
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: coleção /users
 
 ## Na NLW #2, dia 2 (Diego Fernandes)
 

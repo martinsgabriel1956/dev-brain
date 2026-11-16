@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-16
-source_count: 37
+source_count: 38
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -146,3 +146,4 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: "o Google gosta [...] do HTML semântico"; div genérica dificulta a indexação
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: link azul/roxo (visitado) como padrão que até o Google usa
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: "tenho dúvida, eu vou no Google e vou buscar a documentação"
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: Chrome e V8 (2008) como origem do Node.js

@@ -3,8 +3,8 @@ type: concept
 title: "Thread"
 aliases: ["thread", "linha de execução", "worker thread", "multithreading"]
 date_created: 2026-04-22
-date_updated: 2026-09-14
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [sistema-operacional, concorrência, thread, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -66,9 +66,14 @@ A saída é mover esse trabalho para uma **worker thread**: uma thread separada 
 - [[wiki/concepts/event-loop-performance-js]] — por que Node.js precisa de worker threads para trabalho CPU-bound
 - [[wiki/concepts/renderizacao-ssr-vs-csr]] — SSR pesado como caso concreto de trabalho CPU-bound que se beneficia de worker threads
 
+## "Node é single thread" (JStack)
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]]: "single thread, [...] apenas uma Call Stack, [...] apenas uma coisa por vez". Vale para o JavaScript do usuário; o processo tem as 4 threads do [[wiki/concepts/thread-pool]] da libuv, threads do V8 e, se quiser, worker threads.
+
 ## Key Sources
 
 - [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
 - [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — worker threads como uma das três soluções (junto de chunking e filas) para SSR CPU-bound travando o event loop; distinção worker threads vs. cluster vs. child process calibrada com `references/nodejs-core.md` da skill `lang-dynamic`
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: single thread = uma call stack; o processo tem outras threads

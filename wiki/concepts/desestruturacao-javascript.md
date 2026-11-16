@@ -4,7 +4,7 @@ title: "Desestruturação (JavaScript)"
 aliases: ["desestruturação", "destructuring", "destructuring assignment", "desestruturar objeto", "desestruturar array"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, sintaxe, objeto, array, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -38,8 +38,13 @@ Ele também usa a forma curta de propriedade, `{ weekday }` no lugar de `{ weekd
 
 `({ label, name, ...rest })` (rest) e `{...rest}` no JSX (spread); `const { total } = response.data`; `[...scheduleItems, novo]` e `{ ...scheduleItem, [field]: value }` com chave computada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+## No JStack, aula 03
+
+Em [[wiki/sources/jstack-o-que-sao-modulos]], `const { printName, lastName } = require('./printName')` desestrutura o objeto exportado, e o acesso deixa de precisar de `modulo.algumaCoisa`. A mesma aula usa o *shorthand* inverso na exportação: `module.exports = { printName, lastName }`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: desestruturação no require, no split e nos parâmetros do createProffy
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: body, split e count
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: rest, spread e chave computada
+- [[wiki/sources/jstack-o-que-sao-modulos]]: desestruturação no require; shorthand no module.exports

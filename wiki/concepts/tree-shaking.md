@@ -3,8 +3,8 @@ type: concept
 title: "Tree Shaking"
 aliases: ["remoção de código morto", "dead code elimination frontend"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [frontend, bundler, tree-shaking, build, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -28,6 +28,11 @@ Tree shaking remove código **morto** (nunca usado); [[wiki/concepts/code-splitt
 
 - [[wiki/concepts/code-splitting]]
 
+## CJS × ESM (JStack, aula 03)
+
+[[wiki/sources/jstack-o-que-sao-modulos]] ensina só CommonJS (`require`/`module.exports`), o formato que atrapalha a análise estática descrita acima. Ver [[wiki/concepts/modulos-nodejs]] para a comparação com ESM.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/jstack-o-que-sao-modulos]]: curso ensina CJS, o formato que dificulta tree shaking

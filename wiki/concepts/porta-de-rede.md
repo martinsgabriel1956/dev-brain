@@ -4,7 +4,7 @@ title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -66,11 +66,16 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: "um 
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o servidor escuta a porta 5500 "pra homenagear o Live Server". A aula diz que "a porta padrão é a porta 80"; isso vale para HTTP, e o YouTube usa HTTPS (443).
 
+## No JStack, aula 04
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]], `server.listen(3000, callback)` faz o servidor "ficar ouvindo alguma porta dentro da nossa máquina"; a porta é à escolha. Sem host, o Node escuta em todas as interfaces (`::`/`0.0.0.0`), não só em `localhost`.
+
 ## Key sources
 
 - [[wiki/sources/portas-de-rede-como-funcionam]]
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: 5500, 3000, 80; 443 para HTTPS
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: 5500; 80 x 443
+- [[wiki/sources/jstack-criando-o-servidor-http]]: listen(3000); sem host escuta em todas as interfaces
 
 ## Na NLW #2, dia 2 (Diego Fernandes)
 

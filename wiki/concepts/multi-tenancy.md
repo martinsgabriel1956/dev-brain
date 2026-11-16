@@ -3,8 +3,8 @@ type: concept
 title: "Multi-tenancy"
 aliases: ["multi-tenancy", "multitenancy", "tenant isolation", "saas isolation"]
 date_created: 2026-04-22
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [system-design, saas, isolamento, postgresql, rls, gdpr, migrations, arquitetura]
 skill: tech-mentor-system-design
 status: stable
@@ -150,7 +150,12 @@ async deleteData(tenantId: string) {
 
 Não é só padrão de SaaS/banco: também existe no nível de infra. Provedores de [[wiki/concepts/mainframe-as-a-service]] entregam [[wiki/concepts/lpar|LPARs]] segregadas de um mesmo equipamento físico a clientes diferentes. [skill: tech-mentor-infra] Ressalva: isolamento de partição não resolve sozinho rede, storage e operação.
 
+## Tenant por header (JStack, aula 02)
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], o exemplo de custom header é `X-Org-ID`: o usuário pertence a várias organizações e a interface troca o header quando ele muda de organização. O header só diz qual tenant o cliente *quer*; o servidor tem de conferir se o usuário autenticado pertence a ele, senão vira acesso cruzado entre tenants (BOLA). Ver [[wiki/concepts/tenant-context]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — multitenância de infra: LPARs de um mesmo mainframe para clientes distintos
 - [[wiki/sources/multi-tenancy]]
+- [[wiki/sources/jstack-http-e-apis-rest]]: X-Org-ID para escolher a organização; validar no servidor

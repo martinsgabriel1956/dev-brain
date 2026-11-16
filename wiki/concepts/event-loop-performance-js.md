@@ -3,8 +3,8 @@ type: concept
 title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
-date_updated: 2026-11-11
-source_count: 3
+date_updated: 2026-11-16
+source_count: 5
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -77,8 +77,21 @@ Benefícios: custo de VM menor, responsabilidades isoladas, falhas contidas.
 
 Quando não se sabe qual função é cara, um [[wiki/concepts/cpu-profiling|CPU profile]] gravado durante um [[wiki/concepts/teste-de-carga]] mostra onde a thread passa o tempo. Em [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]], o vilão era uma cópia profunda dos dados a cada requisição.
 
+## O modelo didático: call stack, callback queue e event loop
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o event loop é "como se fosse um while true" entre a *callback queue* e a call stack: quando a operação assíncrona termina, o callback vai para a fila, e o loop o passa para a [[wiki/concepts/pilha|call stack]] assim que ela está vazia. O modelo é útil, com três ajustes:
+- **Não há uma fila só.** O loop da [[wiki/entities/libuv|libuv]] passa por fases (timers, pending, poll, check, close); entre callbacks rodam as microtasks (`process.nextTick`, depois promises) `[skill: lang-dynamic]`.
+- **Não fica perguntando "tem, não, tem".** Na fase poll ele dorme no epoll/kqueue/IOCP até chegar evento ou vencer um timer, e termina quando não há mais nada pendente.
+- **I/O de rede não vai para o [[wiki/concepts/thread-pool]]**; só disco, DNS, crypto e zlib. Ver [[wiki/concepts/non-blocking-io]].
+
+## Por que o servidor não termina (JStack, aula 04)
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]], `node src/index.js` fica rodando, ao contrário dos scripts da aula 03, porque o `listen` registra um handle ativo na [[wiki/entities/libuv|libuv]], e o loop só sai quando não há mais handles nem requisições pendentes. Cada requisição chega como evento e chama o handler do `createServer` na mesma thread.
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — caso concreto de SSR pesado (CPU-bound) travando o event loop inteiro e causando tela em branco para todos os usuários; distinção explícita I/O-bound vs. CPU-bound e por que `await`/`setTimeout` não resolvem bloqueio de CPU
 - [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: CPU gasto por requisição (cópia profunda com `cloneDeep`) derruba a capacidade da rota de 11.000 para 2000 requisições; como achar o culpado com [[wiki/concepts/cpu-profiling]]
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: modelo call stack + callback queue + event loop, com correções
+- [[wiki/sources/jstack-criando-o-servidor-http]]: listen mantém o loop vivo; requisição = evento

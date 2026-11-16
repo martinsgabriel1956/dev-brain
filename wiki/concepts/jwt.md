@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-11-16
+source_count: 9
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -108,6 +108,10 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/concepts/paseto]] — alternativa de cipher rigidity que elimina algorithm confusion por design
 - [[wiki/concepts/token-opaco]] — categoria contrastante: string sem significado embutido, revogável instantaneamente, exige consulta ao servidor
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]], o header `authorization: Bearer usertoken` aparece como o lugar onde vai "o token JWT de autenticação do usuário", usado mais adiante no curso.
+
 ## Key Sources
 
 - [[wiki/sources/sessions]] — JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis: revogação imediata ao custo de state. MFA TOTP: mínimo aceitável. WebAuthn/Passkeys: padrão futuro sem senha,...
@@ -118,3 +122,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — ecossistema JOSE (JWS/JWE/JWK/JWA) por trás do JWT, ataque de algorithm confusion (`alg: none` e RS256→HS256), e o PASETO como alternativa de cipher rigidity
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — "Anatomia de um Token 1", vídeo predecessor da fonte acima: contraste formal entre token autocontido (JWT) e token opaco, e introdução em nível superficial do JOSE
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — `Authorization: Bearer <token>` como header; erros de formato (esquecer `Bearer`, espaço) geram 401
+- [[wiki/sources/jstack-http-e-apis-rest]]: JWT no header Authorization Bearer

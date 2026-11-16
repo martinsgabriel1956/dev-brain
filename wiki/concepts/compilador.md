@@ -4,7 +4,7 @@ title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -107,6 +107,10 @@ Compilado direto para máquina (C) vs interpretador/VM/GC: ver [[wiki/concepts/c
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Sass é compilado de `.scss` para `.css` pelo [[wiki/entities/live-sass-compiler]] ou pelo [[wiki/entities/scout-app]], com aviso "quando tiver algum erro" e um source map ao lado. É compilação fonte-para-fonte (transpilação), no sentido de [[wiki/concepts/pipeline-de-compilacao]].
 
+## V8: "interpretador" ou compilador?
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o [[wiki/entities/v8|V8]] é "um interpretador de código JavaScript", como um tradutor entre um brasileiro e um japonês. Ele interpreta bytecode (Ignition) e compila JIT para código de máquina (Sparkplug, Maglev, TurboFan) `[skill: lang-dynamic]`, então a fronteira entre interpretador e compilador não é binária.
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]]
@@ -117,6 +121,7 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Sa
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker como passada de análise semântica adicional, própria de Rust
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — compilação nativa vs runtime: argumento de overhead
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — o que se perde ao dispensar o compilador (IA gerando assembly/opcode direto)
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: V8 chamado de interpretador; na prática, JIT
 
 ## Key sources (adição 2026-10-14)
 

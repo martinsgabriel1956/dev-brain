@@ -4,7 +4,7 @@ title: "Express"
 aliases: ["Express.js", "express", "ExpressJS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [nodejs, backend, framework, http, javascript]
 skill: lang-dynamic
 status: stub
@@ -52,6 +52,14 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `server.use(expres
 
 "Micro framework": `express()`, `app.listen(3333)`, `express.json()`, `express.Router()` em `routes.ts`, `Request`/`Response` tipados no controller e `cors()`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
 
+## No JStack, aula 04
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]]: "o Express não implementa nada de novo dentro do Node. Ele é só um framework"; "tudo o que a gente faz com o Express a gente conseguiria fazer também com o Node puro. Obviamente, com mais trabalho". O curso faz a primeira API só com `http` antes de usá-lo. O "mais trabalho" é o roteamento, middleware e parsing que o Express implementa em JavaScript.
+
+## "Cannot GET" (JStack, aula 05)
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], o 404 imita "aquele formatinho que o Express usa muito": "Cannot GET /asd". O Express gera isso no handler final, com o texto escapado em HTML.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: servidor, rotas GET, `express.static` e integração com Nunjucks (Express 4, 2020)
@@ -62,3 +70,5 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `server.use(expres
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: static, rotas, req.query, redirect
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: urlencoded, post, redirect filtrado
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: API do Proffy
+- [[wiki/sources/jstack-criando-o-servidor-http]]: Express como framework sobre o http; curso começa sem ele
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: formato "Cannot GET /" imitado

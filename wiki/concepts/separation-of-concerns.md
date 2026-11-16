@@ -3,8 +3,8 @@ type: concept
 title: "Separation of Concerns"
 aliases: ["separation of concerns", "soc", "separacao de responsabilidades"]
 date_created: 2026-08-10
-date_updated: 2026-10-05
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [separation-of-concerns, encapsulamento, arquitetura, modularidade, backend]
 skill: tech-mentor-backend
 status: stub
@@ -14,9 +14,14 @@ status: stub
 
 Princípio de dividir um sistema em partes onde cada uma cuida de uma responsabilidade distinta, com interação limitada e explícita. Num [[wiki/concepts/monolito-modular]], é o que os **contratos/interfaces** entre módulos garantem: o módulo `user` define os modos de interagir com ele (input/output), e os demais módulos não alcançam seus internals — junto com [[wiki/concepts/encapsulamento]]. Relacionado a [[wiki/concepts/hexagonal-architecture]] e [[wiki/concepts/contrato-de-api]].
 
+## No JStack, aula 06
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], a primeira separação do projeto: `index.js` (servidor), `routes.js` (tabela de rotas), `controllers/UserController.js` (handlers) e `mocks/users.js` (dados). Falta separar a regra de negócio da camada HTTP ([[wiki/concepts/controller]]).
+
 ## Key sources
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: index, routes, controllers e mocks separados
 
 ## Key sources (adição 2026-10-05)
 

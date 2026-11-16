@@ -4,7 +4,7 @@ title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -91,6 +91,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o Live Server "
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], [[wiki/entities/nasser|Násser]] mostra o "Open with Live Server" na porta 5500 como recurso do [[wiki/entities/live-sass-compiler]]: "quando você salva, ele automaticamente modifica e atualiza o seu browser". Na versão original da extensão, o Live Server era dependência; são duas extensões. O Watch Sass completa o ciclo: salvar o `.scss` compila, e o recarregamento mostra o resultado.
 
+## Node sem reload (JStack, aula 04)
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]], alterar o código com o servidor rodando não muda nada até Ctrl+C e rodar de novo; o nodemon automatiza isso, mas fica de fora para mostrar "o node raiz". O `node --watch` (estável desde Node 22.0/20.13) faz o mesmo sem pacote `[skill: lang-dynamic]`.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
@@ -101,3 +105,4 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], [[wi
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: Open With Live Server cria "um servidorzinho com essa página"
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Live Server e hard reload
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server + Watch Sass
+- [[wiki/sources/jstack-criando-o-servidor-http]]: reinício manual, nodemon e node --watch

@@ -4,7 +4,7 @@ title: "Dados em memória x persistência"
 aliases: ["estado em memória", "persistir dados", "persistência", "dados somem ao reiniciar", "in-memory state", "stateless"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [backend, persistencia, memoria, banco-de-dados, stateless, twelve-factor, nodejs]
 skill: tech-mentor-backend
 status: stub
@@ -26,7 +26,12 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os profes
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o array do dia 4 dá lugar ao arquivo `database.sqlite`: os professores sobrevivem ao restart do nodemon. O arquivo fica dentro do projeto, o que funciona num servidor com disco persistente, mas não em plataformas de [[wiki/concepts/sistema-de-arquivos-efemero|disco efêmero]].
 
+## No JStack, aula 05
+
+Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], os usuários ficam em `src/mocks/users.js` (array exportado): "informações na memória", "dados fake, que realmente não vão ser armazenados". Qualquer alteração some quando o processo reinicia, e cada instância teria a sua cópia.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: cadastro em array some a cada restart do nodemon
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: o array vira SQLite
+- [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: mocks/users.js em memória

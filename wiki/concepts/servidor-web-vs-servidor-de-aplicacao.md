@@ -4,7 +4,7 @@ title: "Servidor Web vs. Servidor de Aplicação"
 aliases: ['web server vs application server']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [web, backend, servidor, infra]
 skill: tech-mentor-frontend
 status: draft
@@ -30,9 +30,14 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Live Server é o "servidorzinho em localhost" que serve o HTML e recarrega ao salvar: servidor estático, como na NLW.
 
+## No JStack, aula 04
+
+Em [[wiki/sources/jstack-criando-o-servidor-http]], o próprio processo Node é o servidor HTTP: `http.createServer` + `listen(3000)`, sem Nginx ou Apache na frente. Em produção é comum pôr um proxy reverso antes dele (TLS, arquivos estáticos, compressão).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — `index.html` como documento padrão (escolha do servidor, não do browser)
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Live Server (estático) x Express (aplicação)
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server como servidor estático (FrontPUSH, Sass)
+- [[wiki/sources/jstack-criando-o-servidor-http]]: Node como servidor HTTP direto

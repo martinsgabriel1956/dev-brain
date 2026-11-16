@@ -26,6 +26,12 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]] | Aula 06 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `UserController` (objeto com `listUsers`) como lugar de "toda a regra de negócio" e do [[wiki/concepts/crud\|CRUD]]; `require('../mocks/users')` ao mover de pasta; `routes.js` com `{ endpoint, method, handler }`, handler passado por referência; `routes.find(...)` + `route.handler(req, res)` ou 404. Correções: [[wiki/concepts/controller\|controller]] é borda HTTP (regra em service/use case, senão fat controller), referência de método de classe perde o `this`, comparação exata não casa `/users/:id`, `require` relativo ao arquivo × fs ao cwd, `UserController.js` × `userController` quebra no Linux |
+| [[wiki/sources/jstack-criando-a-primeira-rota-da-api]] | Aula 05 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `request.method`/`request.url`, favicon do navegador; `if (url === '/users' && method === 'GET')` como primeira [[wiki/concepts/roteamento-http\|rota]]; `application/json` + `JSON.stringify`; dados em `src/mocks/users.js`; 404 "Cannot GET /asd" no formato do Express, 405 citado e descartado. Correções: `request.url` inclui query string (usar `new URL().pathname`), URL refletida em HTML sem escapar ([[wiki/concepts/xss\|XSS]]), 405 com `Allow`, `end` aceita Buffer, "mocks" ≠ test doubles, Chrome já formata JSON |
+| [[wiki/sources/jstack-criando-o-servidor-http]] | Aula 04 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): primeira API em Node puro antes do [[wiki/entities/express\|Express]] ("só um framework"); código em `src/` por organização; `http.createServer((request, response) => ...)`, `writeHead(200, {'Content-Type': 'text/html'})`, `end('<h1>...')`, `listen(3000, callback)`; o Node não recarrega o código, reinício manual e nodemon citado. Correções: `node --watch` nativo desde o 22, `text/html` sem [[wiki/concepts/charset\|charset]] com "olá", handler único responde a qualquer rota (e ao favicon), `listen` sem host escuta em todas as interfaces, handle do listen mantém o processo vivo |
+| [[wiki/sources/jstack-o-que-sao-modulos]] | Aula 03 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `code .` e `node index.js`; "módulos são conjuntos de código, ponto"; três tipos (próprios, nativos, npm); `printName is not defined` → `is not a function` → [[wiki/concepts/modulos-nodejs\|module.exports]]; objeto com shorthand, [[wiki/concepts/desestruturacao-javascript\|desestruturação]] no require e `exports.x = ...`; `require('os')` e `os.type()`. Correções: é CommonJS e o ESM ficou de fora, extensão opcional só no CJS, armadilha `exports` × `module.exports`, cache de módulos, prefixo `node:` |
+| [[wiki/sources/jstack-http-e-apis-rest]] | Aula 02 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]], inferido): API como ponte de vários clientes para "a mesma fonte de dados"; request em cinco blocos (URL/endpoint, [[wiki/concepts/query-string\|query params]], [[wiki/concepts/metodos-http\|método]], [[wiki/concepts/http-headers\|headers]] com `X-Org-ID`, body em JSON ou multipart); response com [[wiki/concepts/http-status-code\|status code]]; DevTools Network; REST como "representação do estado" (JSON ✅ × HTML ❌), recursos no plural. Correções: REST é estilo de [[wiki/entities/roy-fielding\|Fielding]], HTML também é representação ([[wiki/concepts/content-negotiation\|content negotiation]]), body não é só POST/PUT, PUT × PATCH, status não é header (pseudo-header no HTTP/2), 401 ≠ 403, `X-` desaconselhado (RFC 6648), content-length em bytes |
+| [[wiki/sources/jstack-como-funciona-o-nodejs]] | Aula 01 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]], inferido): Node é runtime, não linguagem; [[wiki/entities/v8\|V8]] (2008) levado ao servidor por [[wiki/entities/ryan-dahl\|Ryan Dahl]] (2009); call stack LIFO com printDouble/double/multiply; single thread × [[wiki/concepts/non-blocking-io\|non-blocking I/O]]; [[wiki/entities/libuv\|libuv]] com [[wiki/concepts/thread-pool\|thread pool]], callback queue e event loop num `db.query`. Correções: I/O de rede não usa o pool, "bloqueante" com sentido trocado, V8 é JIT, fases + microtasks, loop dorme no epoll |
 | [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]] | Dia 4 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: back-end como cozinheiro e [[wiki/concepts/regra-de-negocio\|regra de negócio]] (o preço do sapato); [[wiki/entities/nodejs\|Node]] LTS 12, Git Bash, `src/` + `public/`; npm init, package.json, JSON; [[wiki/entities/express\|Express]] (rotas, arrow function, req/res, sendFile, static), nodemon; [[wiki/entities/nunjucks\|Nunjucks]] com for/if/loop.index; filtros por req.query; cadastro com push, Object.keys e redirect; imprecisões: `==` frouxo string x número, push sem validação, POST "esconde", porta 80 x 443, `-D` "outro lugar", static relativo ao cwd, URL do WhatsApp sem encode, [[wiki/concepts/dados-em-memoria-vs-persistencia\|dados em memória]] |
 | [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]] | Dia 5 (último) da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: [[wiki/concepts/sqlite\|SQLite]] via sqlite-async; três tabelas (proffys, classes, class_schedule) e [[wiki/concepts/normalizacao-de-dados\|normalização]]; [[wiki/concepts/async-await\|async/await]], lastID, map + Promise.all; JOIN e WHERE EXISTS; horário em "minutos"; refatoração (utils/format, pages.js); POST, req.body, redirect filtrado; tensões: toda a SQL interpolada ([[wiki/concepts/sql-injection\|SQL injection]]), aspas duplas como texto, `convertHoursToMinutes` concatena string, Promise.all "um por um", sem transação nem REFERENCES, IF NOT EXISTS não migra, catch sem resposta |
 | [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]] | Dia 1 da trilha de [[wiki/entities/diego-fernandes\|Diego Fernandes]] na [[wiki/entities/next-level-week\|NLW #2]] (Proffy): [[wiki/entities/react\|React]] como lib de UI para [[wiki/concepts/single-page-application\|SPA]], `react` × `react-dom`; CRA com template TypeScript, `react-scripts` (Webpack + Babel), div#root; componentes e JSX; HTML e CSS do zero em [[wiki/concepts/mobile-first]]: raiz 60%/62,5%, rem, variáveis de cor, Archivo/Poppins; landing com [[wiki/concepts/css-grid\|grid]] `2fr 1fr 1fr` + template-areas; [[wiki/entities/react-router]] v5 (exact, Link × a na aba Network); `PageHeader` com `title` via `React.FC<Props>` e `props.children`; `:focus-within::after`; `TeacherItem`; tensões: `children` implícito sumiu no React 18, import React/ReactDOM.render/RR v5/CRA, "contém" é prefixo, SPA não nasceu no Angular, rem ≠ em, peso 500 sem face, 100vw com scrollbar |
@@ -1017,6 +1023,37 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+### JStack, aula 06: controller e sistema de rotas (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/controller]] | Borda de entrada do MVC/camadas: lê a request, chama o use case, traduz em status; regra de negócio fica fora (fat × thin controller); primary adapter no hexagonal |
+| [[wiki/concepts/crud]] | Create, Read, Update, Delete ↔ INSERT/SELECT/UPDATE/DELETE ↔ POST/GET/PUT-PATCH/DELETE; ações fora do CRUD como sub-recurso |
+
+### JStack, aula 05: primeira rota da API (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/roteamento-http]] | Método + caminho decidem o handler; do `if` à tabela de rotas e ao roteador com `:id`; comparar `pathname`, não a URL crua; 404 × 405 com `Allow`; sempre responder |
+
+### JStack, aula 03: módulos no Node.js (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/modulos-nodejs]] | Cada arquivo é um módulo; CommonJS (`require`/`module.exports`, síncrono, extensão opcional) × ESM (`import`/`export`, estático, extensão obrigatória); module wrapper, atalho `exports`, cache, prefixo `node:`, `require(esm)` desde 22.12 |
+
+### JStack, aula 02: HTTP e APIs REST (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/content-negotiation]] | O mesmo recurso em várias representações (HTML, JSON...); cliente pede com `Accept`, servidor responde com `Content-Type` e `Vary`; 406 sem opção; é o "R" de REST |
+
+### JStack, aula 01: como funciona o Node.js (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/thread-pool]] | Threads fixas pegando tarefas de uma fila; na libuv são 4 por padrão (UV_THREADPOOL_SIZE) para fs, DNS, crypto e zlib; rede não passa por ele |
+| [[wiki/concepts/non-blocking-io]] | A chamada de I/O volta na hora e o resultado chega por evento; rede via epoll/kqueue/IOCP, disco via thread pool; "bloqueante" = síncrono que segura a stack |
 
 ### NLW #2 — dia 4 (2026-11-16)
 
@@ -3788,6 +3825,12 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/roy-fielding]] — coautor do HTTP/1.1 e cofundador do Apache; definiu o REST na tese de 2000 como estilo arquitetural (restrições, hipertexto)
+- [[wiki/entities/v8]] — motor JavaScript do Google (2008), base do Chrome, do Node e do Deno; Ignition + Sparkplug + Maglev/TurboFan (JIT)
+- [[wiki/entities/libuv]] — biblioteca C de I/O assíncrono do Node: event loop com fases, rede não bloqueante, thread pool para disco e DNS
+- [[wiki/entities/ryan-dahl]] — criador do Node.js (JSConf EU 2009) e do Deno (2018)
+- [[wiki/entities/jstack]] — curso brasileiro de JavaScript full stack (Node, React, React Native) de Mateus Silva
+- [[wiki/entities/mateus-silva]] — criador e instrutor do JStack; estilo de diálogo com aluno imaginário e slides passo a passo
 - [[wiki/entities/live-sass-compiler]] — extensão do VS Code que compila Sass ao salvar ("Watch Sass"), com Autoprefixer e source map; a original (Ritwick Dey) foi arquivada em 2022, fork de Glenn Marks
 - [[wiki/entities/scout-app]] — app gráfico, gratuito e multiplataforma para compilar Sass; parado desde 2021, usa LibSass (node-sass)
 - [[wiki/entities/multer]] — middleware multipart do Express; diskStorage, single/array; falta limits/fileFilter e storage externo

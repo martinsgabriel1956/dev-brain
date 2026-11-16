@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura em 3 Camadas (3-Tier)"
 aliases: ["3-tier architecture", "layered architecture", "arquitetura em camadas"]
 date_created: 2026-07-30
-date_updated: 2026-10-01
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [3-tier, arquitetura-em-camadas, business-layer, data-access-layer, presentation-layer]
 skill: tech-mentor-backend
 status: draft
@@ -38,8 +38,13 @@ Diferente da [[wiki/concepts/clean-architecture]], onde todas as dependências a
 
 Com camadas fechadas, requests podem atravessar camadas sem lógica própria ([[wiki/concepts/architecture-sinkhole]]); a alternativa de corte por funcionalidade está em [[wiki/concepts/vertical-slice-architecture]] ([[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]]).
 
+## No JStack, aula 06
+
+[[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]] cria a pasta `controllers` como primeira camada além do servidor. Nas três camadas lógicas de backend (controller → service → repository), a regra fica no service; ver [[wiki/concepts/controller]].
+
 ## Key Sources
 
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta entre os dois diagramas, usada para explicar por que Clean Architecture é chamada de "domain-centric"
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — variante "Layered" citada como mais simples e mais rápida para CRUDs, com menos abstrações que Clean/Hexagonal/Onion
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — antipadrão Architecture Sinkhole como problema das camadas fechadas e Vertical Slice como alternativa por funcionalidade
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: controllers como primeira camada

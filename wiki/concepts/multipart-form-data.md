@@ -4,7 +4,7 @@ title: "multipart/form-data"
 aliases: ["multipart form data", "FormData", "form-data", "upload multipart"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [http, upload, formularios, api]
 skill: lang-dynamic
 status: stub
@@ -24,6 +24,11 @@ No Ecoleta ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-d
 
 Relacionado: [[wiki/concepts/formulario-html]], [[wiki/concepts/json]].
 
+## No JStack, aula 02
+
+Em [[wiki/sources/jstack-http-e-apis-rest]]: para imagens, PDFs, áudios e vídeos "a gente não usa o formato JSON", e sim multipart/form-data, "composto por chave e valor", que aceita binário e texto juntos.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: cadastro de ponto com imagem
+- [[wiki/sources/jstack-http-e-apis-rest]]: alternativa ao JSON para arquivos

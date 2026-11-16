@@ -3,8 +3,8 @@ type: concept
 title: "Concorrência"
 aliases: ["concurrency", "execução concorrente", "multitarefa"]
 date_created: 2026-06-26
-date_updated: 2026-07-29
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
 skill: cs-fundamentals
 status: draft
@@ -85,6 +85,10 @@ Bancos de dados relacionais resolvem uma instância específica desse problema c
 - [[wiki/concepts/gerenciamento-de-memoria]] — modelo de memória e modelo de concorrência do runtime são decisões de design acopladas
 - [[wiki/concepts/rust-ownership-borrowing-lifetimes]] — a regra de exclusividade do borrowing como mecanismo concreto de "fearless concurrency"
 
+## Node: concorrente sem ser paralelo no JavaScript
+
+Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o Node "não consegue executar mais de uma coisa ao mesmo tempo" e "consegue executar mais de uma coisa ao mesmo tempo". As duas frases se conciliam com a distinção: esperas de I/O se sobrepõem ([[wiki/concepts/non-blocking-io]]), mas o JavaScript roda uma coisa por vez.
+
 ## Key sources
 
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — MVCC como mecanismo de concorrência específico de bancos de dados, via exemplo de Pix concorrente
@@ -92,3 +96,4 @@ Bancos de dados relacionais resolvem uma instância específica desse problema c
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — concorrência como decisão de runtime ao projetar uma linguagem, difícil de reverter depois
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker eliminando data races em compile-time via regra N leitores OU 1 escritor
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — bot de Discord de Tibia como motivação prática para aprender concorrência do zero
+- [[wiki/sources/jstack-como-funciona-o-nodejs]]: single thread + non-blocking I/O como concorrência sem paralelismo de código

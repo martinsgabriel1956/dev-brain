@@ -4,7 +4,7 @@ title: "async/await (JavaScript)"
 aliases: ["async await", "await", "async function", "Promise.all", "função assíncrona"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, assincronia, promise, async-await, promise-all, nodejs, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -32,8 +32,13 @@ Handlers `async` e `await` em cada operação do Knex, "a famosa promise". Sem `
 
 `async function searchTeachers` com `await api.get('classes', { params })`; sem `try/catch`, o 400 por filtro ausente vira rejeição não tratada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+## No JStack, aula 03
+
+[[wiki/sources/jstack-o-que-sao-modulos]] ensina módulos CommonJS, onde não há top-level `await`. Ver [[wiki/concepts/modulos-nodejs]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: await no createProffy, async obrigatório, Promise.all explicado como sequencial
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: await no Knex e Express 4
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: busca de professores sem catch
+- [[wiki/sources/jstack-o-que-sao-modulos]]: módulos CJS, sem top-level await

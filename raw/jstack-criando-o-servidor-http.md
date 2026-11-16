@@ -1,0 +1,37 @@
+# Criando o servidor HTTP com Node.js
+
+Agora a gente vai começar a desenvolver a nossa primeira API usando Node. O intuito desse projeto é te mostrar antes da gente partir pro Express que é possível sim criar APIs REST usando só o Node puro, até porque o Express não implementa nada de novo dentro do Node. Ele é só um framework, ou seja, ele só facilita o uso dos recursos que já estão presentes dentro do Node. Isso quer dizer que tudo o que a gente faz com o Express a gente conseguiria fazer também com o Node puro. Obviamente, com mais trabalho, mas sim seria plenamente, totalmente possível.
+
+E é isso que eu quero te mostrar nesse módulo aqui. Obviamente a gente não vai desenvolver uma mega API super complexa, eu só quero te dar uma visão de como usar, de como trabalhar com o módulo HTTP do Node, beleza? Então chega de papo e bora codar.
+
+## A pasta src
+
+Eu vou começar criando uma pastinha src aqui na raiz, vou criar dentro dela um arquivo index.js, você pode chamar esse arquivo como você quiser. E por que eu não estou jogando esse arquivo, não estou criando ele aqui na raiz do meu projeto? Bom, ao decorrer do desenvolvimento, essa raiz ela começa a ficar muito poluída. Então aqui vão ficar arquivos e pastas de configuração de git, de ESLint, de Prettier, de editor config, enfim, basicamente todas essas coisinhas mais de configuração, como eu disse mesmo, elas ficam todas aqui dentro da raiz. E aí misturar esses arquivos de configuração com o código da nossa aplicação, o código que a gente está desenvolvendo, fica um negócio muito bagunçado. Então por questão de organização, a gente cria essa pastinha src e vai jogando tudo para dentro dela, beleza?
+
+## createServer, request e response
+
+Então vamos lá, vou começar importando aqui dentro o meu módulo HTTP, a gente já viu como é que faz para importar módulo do Node, é só passar o require e o nome do pacote, do módulo. E aí aqui embaixo eu vou criar uma const server que vai receber o meu servidor HTTP. E para criar um servidor é super simples, a gente vai usar aqui o HTTP, ponto. Aí aqui dentro a gente tem três métodos, o createServer que é o que a gente quer para criar um servidor, mas a gente também tem o get e o request que servem para fazer requisições HTTP. Como a gente não vai usar, eu não vou entrar neles aqui, então vou selecionar o createServer.
+
+E aqui dentro a gente precisa passar uma função, então eu posso passar aqui na sintaxe de function normal ou passar aqui de uma forma reduzida com arrow function que é como eu prefiro, acho que fica um pouco mais legível. E aí dentro dessa função aqui a gente recebe o request e o response, que são exatamente aqueles request e response que a gente viu lá na aula teórica sobre APIs e o protocolo HTTP. Então se você não assistiu, volta lá e assiste, porque agora aqui dentro as pecinhas vão começar a se encaixar, a gente vai simplesmente começar a usar tudo que a gente já aprendeu lá.
+
+## writeHead e end
+
+Então, como é que eu faço agora para mandar uma resposta para o meu cliente? Eu só quero mandar que nessa aula a gente só vai subir um servidor que manda um h1 dentro do HTML dizendo que o servidor está de pé. Como é que a gente vai fazer isso?
+
+Eu vou usar o response e a primeira coisa que eu preciso fazer é escrever algumas mensagens no meu header, no meu cabeçalho. Então eu vou usar o método writeHead, se eu deixar o mouse aqui em cima, a gente vai ver que o primeiro argumento que a gente precisa passar é o código de status, o nosso status code, que também a gente já viu ele serve para identificar, para dizer para o cliente qual que é o status daquela requisição, se ela deu sucesso, se ela deu erro, qual foi o erro e assim por diante. Então, como aqui a gente não tem regra de negócio nenhuma, eu sempre vou retornar o HTML, então a requisição sempre vai ser bem sucedida, logo a gente usa o código 200, que é o código de OK. Aí eu vou passar aqui como segundo argumento um objeto, e aqui dentro desse objeto a gente manda todos os headers que a gente quer dentro da nossa resposta. No meu caso eu só vou mandar o content type para indicar que o tipo de conteúdo do meu body é um text barra HTML, beleza?
+
+E agora como é que a gente faz para enviar esse HTML? A gente vai usar o método dentro do response ainda, chamado .end, tá? E aí aqui dentro a gente passa qual é o HTML, o que a gente quer enviar dentro do nosso corpo. No meu caso, como eu disse, eu vou passar só um h1 hello world, barra h1.
+
+## listen: erguendo o servidor
+
+Show, vou salvar isso aqui, só que se eu tentar executar ainda não vai funcionar, por quê? Porque aqui a gente só criou o servidor, a gente precisa erguê-lo agora, a gente precisa fazer ele ficar ouvindo alguma porta dentro da nossa máquina, e para isso é super simples. Então eu vou pegar aqui a minha constante server, que é a carinha aqui, né? A minha variável que está armazenando o meu servidor HTTP, e vou executar o método .listen, tá? E aí eu vou dizer em qual porta eu quero que ele fique executando. No meu caso aqui eu vou rodar na 3000, você pode executar em qual você quiser, e aí eu vou passar uma função de callback só para dar um console log aqui para me avisar aqui no terminal que o servidor ele está de pé, ele está rodando tudo certinho. Então vou botar um emojizinho só para não perder o costume, e server started at HTTP localhost 3000.
+
+Show, vou salvar isso aqui, e agora vamos lá, vou executar node src, porque agora o meu index está dentro da src, não está mais na raiz do projeto, barra index.js. Vou dar um enter aqui e olha só, server started at localhost 3000. Então comando de clique aqui no link, e está aqui o meu hello world, deixa eu dar um zoom aqui.
+
+## O Node não recarrega o código sozinho
+
+E agora uma característica do node muito importante para você se atentar toda vez que você for fazer isso, é o seguinte, eu vou tirar aqui o hello world e vou pôr um olá mundo. Vou salvar isso aqui, quando eu volto para o navegador e atualizo, ele não mudou, ele continuou com o hello world. Por que isso acontece? Basicamente porque o código que está executando aqui do node é o código que estava no momento em que a gente executou o comando node src barra index.js, ou seja, o node não fica ouvindo por alterações aqui dentro do nosso código. Se a gente quiser que esse hello world apareça lá, o que a gente precisa fazer? Ctrl C aqui para parar o servidor, executa de novo, e agora está aqui o hello world.
+
+Lógico, existem ferramentas, se você é um pouquinho mais ligeiro e já trabalhou um pouquinho com o node, você conhece o nodemon, que serve justamente para isso, ele fica ouvindo alterações nos nossos códigos e sempre que a gente faz alguma coisa, ele para o servidor e sobe de novo para automatizar esse processo. Mas como a ideia aqui desse curso, é desse curso não, desse primeiro módulo, depois do próximo capítulo, do próximo módulo do curso, a gente vai começar a usar os pacotes, mas como o intuito desse módulo aqui é te mostrar como é que o node funciona em sua essência, o node raiz, eu não vou fazer a instalação do nodemon.
+
+Se você quiser, você pode, se você já souber usar, não tem problema, mas eu só estou te passando isso aqui para você se atentar, que às vezes você pode fazer uma alteração no código aqui, aí volta para o navegador ou testa na API e acaba não surtindo efeito, pode ser que seja isso, então você se atente sempre a que fizer uma alteração, atende o servidor e executa ele de novo.

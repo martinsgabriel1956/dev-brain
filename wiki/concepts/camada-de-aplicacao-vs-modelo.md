@@ -3,8 +3,8 @@ type: concept
 title: "Camada de Aplicação vs. Camada de Modelo"
 aliases: ["application layer llm", "camada de aplicação IA", "app layer vs model layer"]
 date_created: 2026-07-21
-date_updated: 2026-11-10
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [mercado-de-ia, produto, camada-de-aplicacao, estrategia]
 skill: tech-mentor-ai
 status: stub
@@ -28,8 +28,13 @@ Ver [[wiki/concepts/lock-in-vendor-ia]] para a mesma tese aplicada a um risco ma
 
 [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] demonstra a escolha por etapa: modelo maior no planner, pequeno na verificação, outro na síntese, todos trocáveis por variável de ambiente. O autor resume que a solução é tão boa quanto a harness e o dado.
 
+## No JStack, aula 06
+
+[[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]] põe "toda a regra de negócio" no controller. Pela distinção desta página, o controller é borda de entrada; regra de aplicação e de modelo ficam abaixo dele. Ver [[wiki/concepts/controller]].
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de lock-in via memória organizacional acumulada em produto de agente de fornecedor único
 - [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — modelo escolhido por nó do grafo
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: controller como "toda a regra" × camadas
