@@ -3,8 +3,8 @@ type: concept
 title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 14
+date_updated: 2026-11-16
+source_count: 15
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -89,6 +89,10 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 
 Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], [[wiki/entities/nasser|Násser]] põe os botões do site "totalmente em maiúsculas" com letter-spacing "para poder chamar mais atenção", sobretudo em CTAs e itens de menu. Ver [[wiki/concepts/texto-em-maiusculas]] e [[wiki/concepts/tracking]].
 
+## Estados do botão no CSS
+
+Os estados da tabela (hover, focus, disabled) viram [[wiki/concepts/pseudo-classe-css|pseudo-classes]] no código; a aula de seletores lista `:hover`, `:active`, `:focus` e `:disabled` ([[wiki/sources/seletores-e-pseudo-elements-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -105,3 +109,4 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], [[wi
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde e laranja com texto preto; hover azul do secundário
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações expressivas aceitas em botões
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — label em maiúsculas com tracking aberto
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — hover, active, focus e disabled como pseudo-classes

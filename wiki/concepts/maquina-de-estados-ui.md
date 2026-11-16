@@ -3,8 +3,8 @@ type: concept
 title: "Interface como Máquina de Estados"
 aliases: ["UI state machine", "estados de componente", "componente como máquina de estados"]
 date_created: 2026-07-21
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [ui, ux, design, frontend, estado, state-machine]
 skill: tech-mentor-frontend
 status: draft
@@ -53,9 +53,14 @@ Na aula de [[wiki/concepts/style-guide]], os estados aparecem por componente: ca
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], a versão de design do mesmo hábito: cada módulo (card, ícone, input) é desenhado em três estados (normal, hover, clicável) e o [[wiki/concepts/style-guide]] registra o que muda entre eles. `[skill: ux-ui-mentor]` Um handoff completo lista sete: default, hover, focus, active, disabled, loading, error ([[wiki/concepts/handoff-design-dev]]).
 
+## Estados no CSS
+
+No CSS, parte dos estados de formulário já vem como [[wiki/concepts/pseudo-classe-css|pseudo-classes]]: `:disabled`, `:enabled`, `:focus`, `:checked`, `:valid`, `:invalid`, `:in-range` ([[wiki/sources/seletores-e-pseudo-elements-css]]). Loading e sucesso não têm pseudo-classe e pedem classe ou atributo (`aria-busy`, `data-state`) `[external]`.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — mencionada como fonte geral de FSM, para contraste entre a aplicação de UI e a aplicação de Game Design (Pac-Man)
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de card e input documentados no style guide
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — três estados visuais por módulo no style guide (design, não código)
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — estados de formulário como pseudo-classes

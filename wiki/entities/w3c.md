@@ -3,8 +3,8 @@ type: entity
 title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [padronizacao, web, xml, soap]
 skill: tech-mentor-backend
 status: stub
@@ -18,6 +18,10 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 
 `[external]` Publica, pela WAI, o [[wiki/concepts/wcag]], a referência de [[wiki/concepts/acessibilidade]] da aula [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]. A aula não cita o W3C.
 
+## Confundido com o W3Schools
+
+Em [[wiki/sources/seletores-e-pseudo-elements-css]], o autor chama o Try CSS Selector de "um artigo no W3C"; a página é do [[wiki/entities/w3schools]], que não tem relação com o consórcio `[external]`.
+
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
@@ -25,3 +29,4 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — aceleração do HTML5/CSS3 (oficiais em 2014) após o fim do Flash
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — publica o WCAG (`[external]`)
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — citado por engano no lugar do W3Schools

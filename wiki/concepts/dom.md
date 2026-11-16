@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -29,6 +29,11 @@ Cada mutação de DOM tem custo real — o navegador pode precisar recalcular es
 - [[wiki/concepts/reconciliacao]]
 - [[wiki/concepts/hydration]] — como o DOM gerado no servidor é conectado a comportamento no cliente
 
+## Seletores andam pela árvore
+
+Os [[wiki/concepts/seletores-css|seletores CSS]] descendente (`div p`), filho (`div > p`) e adjacente (`ul + p`) são relações da árvore do DOM: ancestral, pai e irmão anterior ([[wiki/sources/seletores-e-pseudo-elements-css]]). `[external]` A aula ilustra o filho direto com um `<p>` dentro de outro `<p>`, mas o parser fecha o primeiro ao abrir o segundo e os dois viram irmãos: o DOM não é o HTML escrito.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/seletores-e-pseudo-elements-css]] — combinadores CSS como relações da árvore; `<p>` dentro de `<p>` vira irmão
