@@ -3,8 +3,8 @@ type: concept
 title: "UX Design"
 aliases: ["user experience", "experiência do usuário", "UX", "UX designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ux, ux-design, design, produto, pesquisa]
 skill: ux-ui-mentor
 status: draft
@@ -45,7 +45,12 @@ Em [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]], um e-commerce falha p
 - [[wiki/concepts/design-como-interacao]]: experiência sentida no uso, não só na primeira impressão.
 - [[wiki/concepts/user-stories]]: outro jeito de pôr a necessidade do usuário no centro da decisão.
 
+## Discussões que acontecem no wireframe
+
+Para Násser, "muito da discussão, do conteúdo, do flow" se dá no [[wiki/concepts/wireframe]]: funcionalidades ligadas a acessibilidade e usabilidade, conteúdo, jornada e a forma de dispor o conteúdo, por exemplo em tópicos, que é "mais palatável para o usuário" ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — UI e UX alinhados; jornada de e-commerce
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — conteúdo, flow e jornada se discutem no wireframe

@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,12 @@ Na aula de ilustrações, "o wireframe hero" é "aquela primeira seção do seu 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], um wireframe da futura seção de interface web é desalinhado de propósito e refeito no grid de 12 colunas com a escala 16/32/128.
 
+## No processo: média fidelidade em escala de cinza
+
+Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]], o wireframe é o quinto de seis passos (requisitos → [[wiki/concepts/page-map]] → referências → esboço no papel → wireframe → protótipo final com o [[wiki/concepts/style-guide]]). São "telas semi-prontas em escala de cinza", de **média fidelidade** ([[wiki/concepts/fidelidade-de-prototipo]]): já consideram espaçamentos, funcionalidades, conteúdo, jornada e proporções, mas continuam fáceis de modificar, "por isso que é tudo cinza". Cor, contraste e branding ficam para o protótipo final. Os wireframes com cor das aulas anteriores eram demonstrações, não esse passo.
+
+O segredo para saber desenhá-los: "fazer mil vezes e ter uma biblioteca na sua mente". Um wireframe novo é a montagem de estruturas já conhecidas. Násser admite ter pulado o wireframe cinza no [[wiki/entities/frontpush]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -36,3 +42,4 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — wireframe desalinhado e refeito no grid de 12 colunas
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — blobs (plugin Blobs) como bolhas na composição de wireframes
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes isométricos com gradiente linear embaixo e sombra
+- [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel → wireframe cinza (média fidelidade) → protótipo final; o segredo é fazer mil vezes
