@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-15
-source_count: 36
+date_updated: 2026-11-16
+source_count: 37
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -177,6 +177,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o me
 
 Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a hierarquia também passa pela família: no título, fonte "mais temática", "diferenciada"; no corpo, sem serifa legível e família ampla de pesos, que dá margem para variar o peso. Sem serifa "totalmente padrão" no título "não é uma escolha muito boa", mas "não é uma regra". Ver [[wiki/concepts/combinacao-de-fontes]].
 
+## Hierarquia por cor no CSS
+
+Em [[wiki/sources/classes-e-ids-no-css]], os estilos por tag criam hierarquia com uma escala de cinza: h1 branco ("a cor de maior contraste"), h2 `#CCC`, depois `#555` e o parágrafo `#333`, "mais escura ainda".
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -215,3 +219,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — fonte expressiva no título, sem serifa no corpo
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — maiúsculas em 16 px sobem a hierarquia
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — fonte característica no título, sem serifa no corpo
+- [[wiki/sources/classes-e-ids-no-css]] — h1 branco, h2 e h3 em cinzas, parágrafo #333

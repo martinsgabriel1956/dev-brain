@@ -3,8 +3,8 @@ type: concept
 title: "Classificação tipográfica"
 aliases: ["classificações tipográficas", "categorias de fontes", "tipos de fonte", "serifa", "serifada", "sem serifa", "sans-serif", "slab serif", "serifa grossa", "serifada grossa", "egípcia", "script", "cursiva", "blackletter", "black letter", "display", "decorativa", "monospace", "monoespaçada", "monospaced"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [ui, ui-design, tipografia, fonte, serifa, sans-serif, sem-serifa, script, blackletter, monoespacada, display, classificacao, classificacao-tipografica, identidade-visual, branding]
 skill: ux-ui-mentor
 status: stub
@@ -95,6 +95,10 @@ As classificações expressivas (serifa grossa, script, blackletter, display) v�
 
 `[skill: ux-ui-mentor]` Num design system, a classificação aparece como papel: tokens `display`, `body`, `serif` e `mono`, no máximo duas famílias com papéis definidos. Números em tabela pedem `font-variant-numeric: tabular-nums`, não uma mono.
 
+## Família genérica no CSS
+
+Em [[wiki/sources/classes-e-ids-no-css]], o autor põe `font-family: sans-serif` no seletor universal porque não gosta de fonte serifada ("para poder ela ficar retinha"). `[external]` `sans-serif` é uma família genérica: o navegador escolhe a fonte sem serifa padrão do sistema.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: as seis categorias do roteiro; filtros do Google Fonts; placa "PARE"
@@ -103,3 +107,4 @@ As classificações expressivas (serifa grossa, script, blackletter, display) v�
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]]: serifa x sem serifa x letra de mão como comunicação
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: Madero serifado no logo, sem serifa no corpo; Coco Bambu cursivo
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]: serifa ligada ao exato da arquitetura
+- [[wiki/sources/classes-e-ids-no-css]] — `font-family: sans-serif` como família genérica

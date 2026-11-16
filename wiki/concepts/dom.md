@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -29,6 +29,11 @@ Cada mutação de DOM tem custo real — o navegador pode precisar recalcular es
 - [[wiki/concepts/reconciliacao]]
 - [[wiki/concepts/hydration]] — como o DOM gerado no servidor é conectado a comportamento no cliente
 
+## ID e classe como ganchos
+
+Em [[wiki/sources/classes-e-ids-no-css]], classe e ID são "um gancho" para aplicar estilo e função, usados no CSS e no JavaScript. `[external]` `getElementById` devolve só o primeiro elemento com aquele ID; com IDs duplicados o script age no elemento errado sem erro, que é o "conflito" silencioso da aula: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/classes-e-ids-no-css]] — ID único como gancho do JavaScript; duplicado não dá erro
