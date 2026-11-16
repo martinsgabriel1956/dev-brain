@@ -140,6 +140,9 @@ Em [[wiki/sources/classes-e-ids-no-css]], aula 02 do módulo "Básico CSS" (slid
 ## Básico CSS: seletores
 
 A aula 05 da pasta "FrontPush" sai do design e entra no código: slides "Básico CSS" (logo "FE") sobre [[wiki/concepts/seletores-css]] e o que a aula chama de pseudo-elements, demonstrados no [[wiki/entities/w3schools]] ([[wiki/sources/seletores-e-pseudo-elements-css]]).
+## Módulo de CSS
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a primeira aula do módulo de CSS, de "nivelamento": o que é CSS, a regra `elemento { propriedade: valor; }` e as três formas de aplicar (externo, incorporado, inline). O curso também tem um curso de motion, para onde vão as propriedades de animação. O `background-color` preto do exemplo é "o meu preto, sempre utilizo nas minhas interfaces".
 
 ## Key Sources
 
@@ -184,3 +187,4 @@ A aula 05 da pasta "FrontPush" sai do design e entra no código: slides "Básico
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — site do autor à esquerda, cards curtos centralizados
 - [[wiki/sources/classes-e-ids-no-css]] — aula 02 do módulo Básico CSS; verde dos projetos nos botões
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05: seletores e pseudo-classes ("Básico CSS")
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — módulo de CSS, aula 1

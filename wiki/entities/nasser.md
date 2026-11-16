@@ -129,3 +129,4 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — aula 4 de tipografia (autoria inferida: "meu próprio site", slide "W7"): alinhamento à esquerda, centralizado em cards, justificado nunca; vão de parágrafo = line-height
 - [[wiki/sources/classes-e-ids-no-css]] — aula 02 de Básico CSS (diz o próprio nome: "O que significa isso, Násser?"): classe x ID (CPF), `.btn` com primário e secundário, ID de checkout
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — aula 05 (autoria inferida): seletores, pseudo-classes chamadas de pseudo-elements, hack do menu hambúrguer
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — aula 1 do módulo de CSS (autoria inferida: pasta FrontPush, logo do FrontPUSH, "o meu preto"): o que é CSS, regra, externo/incorporado/inline

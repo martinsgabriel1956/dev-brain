@@ -40,6 +40,9 @@ Em [[wiki/sources/classes-e-ids-no-css]], o CSS externo (arquivo `.css` ligado p
 ## Seletores e pseudo-classes
 
 Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser defende seletores para criar "a menor quantidade de classes possíveis" e percorre o Try CSS Selector do [[wiki/entities/w3schools]]: classe, ID, vírgula, descendente, filho, adjacente, universal, atributo, e uma lista de estados que ele chama de pseudo-elements. Ver [[wiki/concepts/seletores-css]], [[wiki/concepts/pseudo-classe-css]] e [[wiki/concepts/pseudo-elemento-css]]. A troca de nomes da aula de style guide (hover como pseudo-element) se repete aqui.
+## O básico: três famílias e três formas de aplicar
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o CSS é "Cascading Style Sheets, ou seja, folhas de estilo", e "o poder está na junção" com o HTML. O autor divide as propriedades em estilo, layout e motion. A [[wiki/concepts/regra-css|regra]] é `elemento { propriedade: valor; }`, aplicada por arquivo externo (`<link>`, a forma mais usada), `<style>` no `<head>` ou atributo `style`, com prioridade resolvida pela [[wiki/concepts/cascata-css]]. `[external]` A aula o chama de linguagem de "marcação"; o MDN o classifica como linguagem de folha de estilo: https://developer.mozilla.org/en-US/docs/Web/CSS.
 
 ## Key sources
 
@@ -51,3 +54,4 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser defende seletores p
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID, CSS externo como padrão, `.btn` com variações
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — seletores para menos classes; lista de pseudo-classes chamada de pseudo-elements
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — três famílias (estilo, layout, motion); regra; externo, incorporado e inline

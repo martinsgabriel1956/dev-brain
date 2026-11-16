@@ -3,8 +3,8 @@ type: concept
 title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
-date_updated: 2026-07-22
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -71,7 +71,12 @@ O ganho não é conveniência marginal — é eliminar a necessidade de sair do 
 
 [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] descreve o mesmo padrão com Jest em vez de `node --test`: tela dividida entre teste e runner em modo watch, onde qualquer alteração salva reroda o teste automaticamente. A fonte enquadra esse setup como o terceiro (e mais maduro) estágio de uma progressão pessoal — antes dele vêm testar clicando manualmente na interface, e depois testar via cliente HTTP dedicado (Postman). Ver [[wiki/concepts/tres-estagios-maturidade-testes]] para a progressão completa. O ganho demonstrado ali vai além do feedback rápido: o mesmo teste que expõe um bug de autorização (rota retornando `200` em vez de `403` para usuário anônimo) continua rodando em modo watch meses depois, pegando uma regressão futura completamente não relacionada assim que ela é introduzida.
 
+## Live Server no front-end estático
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a extensão Live Server do [[wiki/entities/vs-code]] faz o papel do live reload para HTML e CSS: "inicializei um servidor" e cada Ctrl+S aparece no navegador. Equivale ao Browser Sync citado acima.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — modo watch com Jest como terceiro estágio de maturidade; teste como rede de segurança contra regressão
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Live Server como live reload de HTML/CSS

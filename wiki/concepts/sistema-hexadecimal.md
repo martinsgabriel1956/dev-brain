@@ -3,8 +3,8 @@ type: concept
 title: "Sistema hexadecimal (base 16)"
 aliases: ["hexadecimal", "base 16", "hex", "notação hexadecimal", "notação posicional"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [cs-fundamentals, sistema-hexadecimal, base-16, notacao-posicional, representacao, cor, rgb]
 skill: ux-ui-mentor
 status: stub
@@ -34,6 +34,11 @@ Inferência (fundamentos de CS; a aula não diz isto): um dígito hex = 4 bits (
 
 O uso mais visível para quem faz interface é a cor em hex (`#8FFF00`). Ver [[wiki/concepts/modelos-de-cor]].
 
+## Cor em CSS
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], `color: red` é "a cor em escrito", mas o mesmo valor poderia ir em hexadecimal ou RGBA. Ver [[wiki/concepts/regra-css]].
+
 ## Key Sources
 
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: por que 16 algarismos, notação posicional e a conversão de `8F` (com o erro F = 16)
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — cor por nome, hex ou RGBA no CSS

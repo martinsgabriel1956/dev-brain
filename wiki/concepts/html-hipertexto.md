@@ -17,8 +17,12 @@ HTML marca **estrutura** (cabeçalho, parágrafo, lista), herdando a ideia do SG
 ## Atributos class e id
 
 Em [[wiki/sources/classes-e-ids-no-css]], os elementos HTML recebem `class` (vários elementos, várias classes separadas por espaço) e `id` (um elemento só, "o seu CPF") para o CSS e o JavaScript os encontrarem. A aula os chama de "tags"; `[external]` são atributos globais: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes.
+## Estrutura básica do HTML5
+
+Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o Emmet do [[wiki/entities/vs-code]] gera a estrutura do HTML5: `<html>` engloba tudo, `<head>` é o cabeçalho com as tags meta e o `<title>` (texto da aba), `<body>` recebe o conteúdo. HTML puro dá uma página "extremamente arcaica"; o [[wiki/concepts/css]] entra para personalizar. O atributo `style` inline continua existindo e é a forma de maior prioridade na [[wiki/concepts/cascata-css]].
 
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/classes-e-ids-no-css]] — atributos class e id
+- [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — estrutura do HTML5, `<head>`, `<title>`, `style` inline
