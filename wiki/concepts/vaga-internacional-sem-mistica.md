@@ -35,3 +35,11 @@ Num curso de carreira atribuído ao mesmo autor, [[wiki/sources/introducao-mapea
 Desmistificado o processo, falta escolher o país. Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o mesmo autor dá o mapa: EUA para quem fica no Brasil, Irlanda/Londres/Holanda/Alemanha para imigrar, Portugal e Bálticos como porta de entrada. Ver [[wiki/concepts/criterios-para-escolher-pais-de-vaga]].
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]
+
+## Onde procurar
+
+No curso de carreira do mesmo autor, [[wiki/sources/buscadores-e-outsourcing-galego]] lista onde procurar primeiro: [[wiki/concepts/job-board|job boards]] (LinkedIn antes de tudo) e [[wiki/concepts/empresa-de-outsourcing-remoto|outsourcings]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]]

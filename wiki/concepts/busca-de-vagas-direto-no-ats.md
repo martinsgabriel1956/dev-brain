@@ -1,7 +1,7 @@
 ---
 type: concept
 title: "Busca de vagas direto no ATS"
-aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever"]
+aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever","busca booleana"]
 date_created: 2026-10-07
 date_updated: 2026-11-16
 source_count: 2
@@ -37,3 +37,11 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] propõe outra alavanca contra a concorrência: em vez de sair do LinkedIn, filtrar países pouco procurados (Luxemburgo) e usar job boards nacionais de imigração (Work in Estonia, Work in Lithuania). Confirma que "Remote" costuma ser restrito ([[wiki/concepts/remoto-com-restricao-de-residencia]]) e acrescenta buscar o termo "contractor". As duas estratégias se somam.
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]
+
+## Mesma técnica como "busca booleana"
+
+[[wiki/sources/buscadores-e-outsourcing-galego]] chama de "busca booleana" o método para achar vagas no [[wiki/entities/lever]] fora do Brasil (a aula de busca booleana do curso não está na wiki). Ver também [[wiki/concepts/job-board]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]]

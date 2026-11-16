@@ -101,3 +101,11 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 Aula de um curso de busca de vagas. Avalia países por salário, língua e facilidade de contratação ([[wiki/concepts/criterios-para-escolher-pais-de-vaga]]) e coloca os EUA em primeiro lugar para quem fica no Brasil. Relatos pessoais: morava na Alemanha na gravação; antes trabalhou para uma empresa espanhola e depois para uma de Berlim morando na Itália ([[wiki/concepts/arbitragem-geografica-de-salario]]); já trabalhou para uma empresa australiana que pagava em USD; participou de processos para os Emirados (via outsourcing) e Bangkok. Autoria inferida pela pasta de origem "galego" e pela coerência com relatos anteriores; o nome não é dito.
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — critérios por país, "remote" com restrição de residência, visa sponsorship, Portugal/Bálticos como porta de entrada (autoria inferida)
+
+## Curso de Carreira: Mapeando Vagas (Autoria Inferida)
+
+Aulas curtas de um curso pago de carreira (pasta "galego" das transcrições: Introdução - Mapeando Vagas, Onde encontrar vagas?, Buscadores e Outsourcing, Big Techs, Quais países podem fazer sentido?), com um PDF de job boards e outsourcings. Em [[wiki/sources/buscadores-e-outsourcing-galego]] prioriza [[wiki/entities/linkedin]] e, entre as [[wiki/concepts/empresa-de-outsourcing-remoto|outsourcings]], [[wiki/entities/bairesdev]] (volume) e [[wiki/entities/x-team]] (qualidade). Provavelmente o "curso de carreira" / "roadmap de emprego" já citado nesta página; o nome não é dito.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — onde procurar vaga primeiro (job boards e outsourcing)

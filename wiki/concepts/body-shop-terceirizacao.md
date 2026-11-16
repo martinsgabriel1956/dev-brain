@@ -48,3 +48,11 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — alternativa recomendada: sênior interno lidera o projeto novo, terceiro (quando necessário) fica subordinado a ele
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — outsourcing como objeto do estudo do autor (mestrado 2008) sobre isomorfismo institucional: por que empresas terceirizavam mesmo sem ser ideal — [[wiki/concepts/isomorfismo-institucional]]
 - [[wiki/sources/introducao-mapeando-vagas]] — outsourcing elogiado como porta de entrada para vagas internacionais
+
+## Outsourcing como porta para vaga internacional
+
+[[wiki/concepts/empresa-de-outsourcing-remoto]] cobre o lado do candidato: [[wiki/sources/buscadores-e-outsourcing-galego]] recomenda outsourcings (BairesDev, X-Team, Toptal, Revelo) como porta de entrada para a gringa, com a ressalva de "opiniões mistas" sobre a de maior volume.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — outsourcing visto pelo candidato

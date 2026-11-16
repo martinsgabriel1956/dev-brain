@@ -45,3 +45,11 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o LinkedIn aparece como ferramenta para filtrar vagas **por país** (Luxemburgo, Holanda, Austrália) com o filtro Remote. A ressalva é que "Remote" pode significar remoto dentro de um país ou bloco: é preciso ler a descrição ([[wiki/concepts/remoto-com-restricao-de-residencia]]). Complementa a crítica de [[wiki/concepts/busca-de-vagas-direto-no-ats]] em vez de contradizê-la.
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — filtro por país e por Remote; "Remote US" + "Not eligible for visa sponsorship"
+
+## Principal job board segundo Augusto Galego
+
+Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de todos", no Brasil e na gringa, onde está "a maioria das oportunidades" e o eixo do curso de carreira do autor. Diverge da crítica acima; ver [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]] e [[wiki/concepts/job-board]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
