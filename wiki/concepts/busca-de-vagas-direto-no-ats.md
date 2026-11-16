@@ -54,3 +54,8 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — página de carreiras: filtro por país, várias vagas
+
+## Página de carreiras da Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: buscar "<empresa> Careers" leva à página de vagas (Google Careers, jobs.netflix); filtrar por cargo e país (Software Engineer Brasil: 18 vagas na gravação) e ler qualificações mínimas e preferidas antes de aplicar para várias vagas ([[wiki/concepts/contratacao-por-time-em-big-tech]]).

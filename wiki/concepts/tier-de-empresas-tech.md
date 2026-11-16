@@ -50,3 +50,8 @@ Empresas tech se agrupam em três tiers de compensação. Identificar o tier de 
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/introducao-mapeando-vagas]] — Big Tech com faixa separada e vagas fora do LinkedIn
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — lista de Big Techs adjacentes; Levels.fyi + Glassdoor
+
+## Big Tech além da FANG (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] estende o grupo de topo para além da FANG: Uber, Spotify, Airbnb, Klarna, SAP, NVIDIA, IBM, Oracle, Intel, Cisco, Alibaba e Tencent ([[wiki/concepts/big-tech]]). Usa o [[wiki/entities/levels-fyi]] e o [[wiki/entities/glassdoor]] para confirmar a faixa por nível e país.

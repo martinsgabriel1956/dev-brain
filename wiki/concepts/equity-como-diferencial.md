@@ -3,8 +3,8 @@ type: concept
 title: "Equity Como Diferencial de Compensação"
 aliases: ["equity compensation", "rsu", "stock options", "equity tech"]
 date_created: 2026-04-29
-date_updated: 2026-10-14
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [equity, compensacao, rsu, stock-options, big-tech, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -39,9 +39,14 @@ A maioria dos sites de salário não captura equity porque a maioria dos emprego
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — estratégia prática de venda de RSU no momento do vesting
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — curva de vesting 38/32/20/10 do Google no Levels.fyi
 
 ## Atualização 2026-10-14
 
 [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] traz uma forma de equity fora do emprego: cobrar menos no projeto em troca de X% do produto do cliente ([[wiki/concepts/venda-por-projeto-de-ia]]), postergando o recebimento; o autor ressalva que não serve a quem precisa de capital agora.
 
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
+
+## Curva de vesting na prática (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] separa ações de salário: são remuneração, mas não dinheiro imediato. Curva do Google no [[wiki/entities/levels-fyi]]: 38% ao completar um ano, +32% no segundo, +20% no terceiro, +10% no quarto; quem tem R$ 7 mil/mês em ações só acessa 38% delas depois de um ano. `[external não verificado]` Em 2022 foi noticiada para o Google a curva 33/33/22/12; varia por oferta. [skill: tech-mentor-leadership] Padrão de mercado: 4 anos com cliff de 1 ano; TC = base + bônus + equity.

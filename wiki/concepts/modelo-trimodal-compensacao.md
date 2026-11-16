@@ -49,3 +49,8 @@ Na abertura do módulo Mapeando Vagas ([[wiki/sources/introducao-mapeando-vagas]
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/introducao-mapeando-vagas]] — júnior em SP: média do mercado vs. Google; faixas "invisíveis" dos concorrentes de Big Tech
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google x Amazon no Brasil
+
+## Exemplo em reais: Google x Amazon no Brasil (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: anual de entrada no Brasil R$ 277 mil no Google x R$ 189 mil na Amazon (Levels.fyi). Mesmo dentro do tier de topo há diferença relevante entre empresas; o salário base da Amazon é "bem menor".

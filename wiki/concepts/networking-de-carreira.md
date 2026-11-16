@@ -65,3 +65,8 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — referral acelera mas não garante em Big Tech
+
+## Referral em Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: a indicação de quem trabalha na empresa "pode acelerar um pouco o processo" e aumentar a chance, mas "nunca vai ser garantida de nada, especialmente numa Big Tech"; a decisão não se baseia em quem indica. Ver [[wiki/concepts/contratacao-por-time-em-big-tech]].

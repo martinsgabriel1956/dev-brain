@@ -51,3 +51,8 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — relocation, visa sponsor e passagem paga para on-site
+
+## Big Tech: relocation e visto (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: Big Techs têm escritórios em vários países, oferecem relocation interno (Spotify Suécia → Madrid) e [[wiki/concepts/visa-sponsorship]] "para basicamente qualquer país" se você for bom o suficiente; EUA é o mais difícil. Costumam pagar a passagem para a entrevista on-site.

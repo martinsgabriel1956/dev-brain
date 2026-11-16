@@ -111,6 +111,7 @@ Em [[wiki/sources/introducao-mapeando-vagas]], o que o Google paga a um desenvol
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — Google como interface de texto; Google Fonts; WhatFont no Chrome
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — Google Fonts como catálogo gratuito espelhado no Figma
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — tags meta e visibilidade no Google
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google Brasil no Levels.fyi, vesting, vagas por país, contratação por time
 
 ## Adição (2026-10-14)
 
@@ -138,3 +139,7 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+
+## Google como empregador: faixa salarial e vagas no Brasil
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] usa o Google como exemplo de [[wiki/concepts/big-tech]]: no [[wiki/entities/levels-fyi]], Brasil, L3 ≈ R$ 15 mil/mês e L5 ≈ R$ 33 mil; anual de entrada R$ 277 mil; ações com vesting 38/32/20/10% ([[wiki/concepts/equity-como-diferencial]]). No Google Careers havia 18 vagas de Software Engineer no Brasil, 4 em Málaga e 0 em Portugal na data da gravação. Times como YouTube e Google Ads contratam separadamente ([[wiki/concepts/contratacao-por-time-em-big-tech]]).

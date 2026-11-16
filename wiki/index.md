@@ -35,6 +35,7 @@ date_updated: 2026-11-16
 | [[wiki/sources/buscadores-e-outsourcing-galego]] | Aula curta do curso de carreira de [[wiki/entities/augusto-galego]] (inferido): onde procurar vaga primeiro. [[wiki/concepts/job-board\|Job boards]]: [[wiki/entities/linkedin]] (o melhor, Brasil e gringa), [[wiki/entities/lever]] com busca booleana, [[wiki/entities/indeed]], [[wiki/entities/glassdoor]], [[wiki/entities/wellfound]]. [[wiki/concepts/empresa-de-outsourcing-remoto\|Outsourcing]]: [[wiki/entities/bairesdev]] (volume, opiniões mistas), [[wiki/entities/x-team]] e Cake (qualidade), [[wiki/entities/toptal]] e [[wiki/entities/revelo]] |
 | [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] | Aula do workshop "Roadmap pro seu próximo emprego" ([[wiki/entities/augusto-galego]], inferido): [[wiki/concepts/tres-canais-de-vaga-internacional\|três canais]] (site da empresa, job boards, outsourcing); Total Compensation via levels.fyi; busca booleana, posts de recrutadores, Lever, Who is Hiring; [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional\|outsourcing]] PJ como primeiro degrau |
 | [[wiki/sources/onde-procurar-vagas-guia-definitivo]] | PDF do mesmo workshop: links de 24 Big Techs, 10 job boards e 12 outsourcings; manual de [[wiki/concepts/busca-booleana-de-vagas\|busca booleana]] no LinkedIn e no Google (`site:`, `intitle:`, Google for Jobs) |
+| [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] | Aula "Big Techs" do módulo Mapeando Vagas de [[wiki/entities/augusto-galego]] (inferido): [[wiki/concepts/big-tech]] além da FANG; salário por nível e país no [[wiki/entities/levels-fyi]] (Google Brasil L3 ≈ R$ 15 mil/mês) e no [[wiki/entities/glassdoor]]; vesting 38/32/20/10; [[wiki/concepts/contratacao-por-time-em-big-tech\|contratação por time]] e reaplicação a cada 6 meses; relocation, visa sponsor, referral; [[wiki/concepts/processo-de-entrevista-big-tech\|processo em 7 etapas]] |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -1014,6 +1015,13 @@ date_updated: 2026-11-16
 | [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]] | Intermediária vende suas horas; margem 20–50%, ~35 USD/h, PJ sem direitos; mais fácil, segurança em layoff, degrau para o próximo emprego |
 | [[wiki/concepts/busca-booleana-de-vagas]] | AND/OR/NOT/aspas/parênteses no LinkedIn; `site:`/`intitle:`/`inurl:` no Google; posts de recrutadores; Google for Jobs |
 | [[wiki/concepts/total-compensation]] | Base + bônus + ações + benefícios; só a base cai todo mês, ações por vesting |
+### Big Techs — salários, vagas e aplicação (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/big-tech]] | FANG + adjacentes (Uber, Spotify, Airbnb, Klarna, SAP, NVIDIA...); requisito mínimo baixo, preferido acadêmico; Early Career/Campus |
+| [[wiki/concepts/contratacao-por-time-em-big-tech]] | Cada time contrata: aplique para 5–10 vagas, reaplique em 6 meses, não pule senioridade |
+| [[wiki/concepts/processo-de-entrevista-big-tech]] | Triagem → recruiter → online → on-site (2–5 entrevistas, parte difícil) → comportamental → manager → oferta |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
@@ -3576,6 +3584,8 @@ date_updated: 2026-11-16
 - [[wiki/entities/levels-fyi]] — salários por empresa/nível/local; decomposição da Total Compensation
 - [[wiki/entities/hacker-news]] — fórum da Y Combinator; post mensal "Who is Hiring?"
 
+- [[wiki/entities/levels-fyi]] — faixas salariais por empresa, nível e país, com ações e curva de vesting; primeiro passo para avaliar uma Big Tech
+- [[wiki/entities/glassdoor]] — avaliações e salários informados por funcionários (exige informar o seu); confere o Levels.fyi
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

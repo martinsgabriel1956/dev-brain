@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-10-07
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -76,3 +76,8 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas resolvidos em versão ingênua e versão ótima, com justificativa de complexidade em cada etapa
 - [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — motivação de abertura: não saber responder "qual a complexidade desse código?" numa entrevista; método de 3 passos como resposta operacional a essa pergunta
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — silêncio/balbucio impede o entrevistador de medir o raciocínio ([[wiki/concepts/pensar-em-voz-alta-na-entrevista]]); Big Techs reportadamente voltaram ao presencial por causa da IA `[external não verificado]`; começar por array → two pointer → sliding window, ~10 exercícios por padrão
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — coding na online e na on-site; requisito de 2 anos de DSA
+
+## Onde a entrevista de coding entra no processo de Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] situa o coding na técnica online e na on-site ([[wiki/concepts/processo-de-entrevista-big-tech]]); a online está "cada vez mais difícil" por causa da IA. Requisito mínimo típico: 2 anos de estruturas de dados e algoritmos, acadêmicos ou de indústria.

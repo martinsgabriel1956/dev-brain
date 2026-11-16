@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-11-03
-source_count: 13
+date_updated: 2026-11-16
+source_count: 14
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -84,8 +84,13 @@ Citada com Elastic Beanstalk e App Runner como equivalentes do Azure App Service
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — AWS como o "self-service real" para onde os times fugiram da infra centralizada travada (casos BigCo e WebBiz), trazendo o mantra [[wiki/concepts/you-build-it-you-run-it|you build it, you run it]]
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — Amazon citada como uma das pioneiras de API pública (anos 2000, ao lado de eBay e Salesforce); AWS citada nos anos 2010 como parte da expansão de "API economy" via centenas de APIs de infraestrutura como produto
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — bancos gerenciados em nuvem (AWS/Azure/GCP) não eliminam o CAP
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Amazon como empregadora: faixa salarial e relato de candidatura
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — princípios de liderança da Amazon: [[wiki/concepts/amazon-leadership-principles]]
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — ALB (camada de aplicação) e NLB (rede/transporte) citados como LBs gerenciados
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — AWS Secrets Manager citado como cofre com rotação (e erro de atribuição: Heroku não é 'pai da AWS')
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — de-para de compute (Elastic Beanstalk, App Runner, EC2)
+
+## Amazon como empregadora
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: anual de entrada no Brasil de R$ 189 mil no [[wiki/entities/levels-fyi]], salário base bem menor que o do Google; "dizem ser bastante estressante" (rumor declarado). O autor aplicou para ~10 vagas e um time o chamou ([[wiki/concepts/contratacao-por-time-em-big-tech]]).
