@@ -50,7 +50,7 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 ## Na NLW #2, dia 1 (Mayk Brito)
 
-Na NLW do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), o layout é de Thiago, "nosso colaborador aqui da Rocketseat"; o suporte da semana fica num canal do Discord com a equipe e os alunos.
+Na NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), o layout é de Thiago, "nosso colaborador aqui da Rocketseat"; o suporte da semana fica num canal do Discord com a equipe e os alunos.
 
 ## Key Sources
 

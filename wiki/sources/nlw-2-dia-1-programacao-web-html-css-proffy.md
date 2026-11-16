@@ -19,7 +19,7 @@ date_ingested: 2026-11-16
 
 ## TL;DR
 
-Primeira aula (cerca de 2h19) da [[wiki/entities/next-level-week|Next Level Week]] em que o projeto é o **Proffy**, "nossa plataforma de estudos online" para estudar ou dar aulas, feita para a semana do "dia dos profissionais da educação". O instrutor é [[wiki/entities/mayk-brito|Mayk Brito]], que se apresenta pelo nome ("Mayk Brito na área"); o layout é de Thiago, da [[wiki/entities/rocketseat]]. A transcrição só diz "NLW"; a numeração **#2** é inferida (Proffy, agosto de 2020) `[external, não verificado]`.
+Primeira aula (cerca de 2h19) da [[wiki/entities/next-level-week|Next Level Week]] em que o projeto é o **Proffy**, "nossa plataforma de estudos online" para estudar ou dar aulas, feita para a semana do "dia dos profissionais da educação". O instrutor é [[wiki/entities/mayk-brito|Mayk Brito]], que se apresenta pelo nome ("Mayk Brito na área"); o layout é de Thiago, da [[wiki/entities/rocketseat]]. A transcrição só diz "NLW"; que é a **NLW #2** foi confirmado pelo usuário. A data (agosto de 2020) segue inferida `[external, não verificado]`.
 
 O roteiro repete o do [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta|dia 1 da NLW #1]], também de Mayk: algoritmo, lógica e sintaxe; por que JavaScript; cliente-servidor com garçom e cozinheiro; HTTP e URL; [[wiki/entities/vs-code]] com Emmet e Live Server. A diferença está na segunda metade. O projeto não sai do esqueleto (um `h1` "Proffy", um `p` e dois botões centralizados), e o tempo vai para fundamentos que a NLW #1 só tocou: [[wiki/concepts/especificidade-css|força dos seletores]] (id > classe > tag), pais e filhos com cor herdada, caminho com `/` a partir da raiz do servidor, [[wiki/concepts/variaveis-css|variáveis CSS]] copiadas do [[wiki/entities/figma]], `px` x `%` x `rem` x `em` com `:root { font-size: 60% }`, [[wiki/concepts/mobile-first]], [[wiki/concepts/box-model]] com shorthand em sentido horário e `box-sizing: border-box`, block x inline x flex, Poppins do [[wiki/entities/google-fonts]] e `width: 90vw; max-width: 700px`.
 
@@ -179,7 +179,7 @@ Citados sem página: Thiago (designer do Proffy), Edge, Chrome, Notion (layout e
 
 ## Open Questions
 
-- A numeração "#2" e a data (agosto de 2020) são inferidas pelo Proffy e pelo "dia 6, dia dos profissionais da educação" `[external, não verificado]`.
+- A edição (#2) foi confirmada pelo usuário; a data (agosto de 2020) segue inferida pelo Proffy e pelo "dia 6, dia dos profissionais da educação" `[external, não verificado]`.
 - O tema "launch base" do VS Code, também citado na NLW #1, segue sem confirmação.
 - O código final do dia mostrado na aula não aparece na transcrição; os valores (`60%`, `1.6rem`, `90vw`, `700px`) vêm da fala.
 - Comparado com o [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta|dia 1 da NLW #1]]: aqui `box-sizing: border-box` entra no reset desde o primeiro dia, e o mobile first é anunciado. Falta ver nos dias seguintes se as media queries do Proffy usam `min-width`, o que a NLW #1 nunca fez.

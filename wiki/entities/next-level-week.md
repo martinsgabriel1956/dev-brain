@@ -48,7 +48,7 @@ Comparação das duas trilhas: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-compa
 
 ## Na NLW #2, dia 1 (Mayk Brito)
 
-Outra edição tem como projeto o **Proffy**, "nossa plataforma de estudos online", na "versão 1.0": quem dá aula preenche nome, foto, WhatsApp, biografia, matéria e horários; quem estuda busca a matéria e vê os professores disponíveis. A semana coincide com o "dia 6, que é o dia dos profissionais da educação", e o layout é de Thiago, da Rocketseat ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]). A transcrição só diz "NLW"; a numeração #2 e a data (agosto de 2020) são inferidas `[external, não verificado]`. O dia 1, com [[wiki/entities/mayk-brito|Mayk]], termina com o esqueleto da página inicial e manda o feedback para a "comunidade exclusiva do NLW", onde também rolam os desafios.
+A segunda edição (NLW #2) tem como projeto o **Proffy**, "nossa plataforma de estudos online", na "versão 1.0": quem dá aula preenche nome, foto, WhatsApp, biografia, matéria e horários; quem estuda busca a matéria e vê os professores disponíveis. A semana coincide com o "dia 6, que é o dia dos profissionais da educação", e o layout é de Thiago, da Rocketseat ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]). A transcrição só diz "NLW"; a edição foi confirmada pelo usuário, e a data (agosto de 2020) segue inferida `[external, não verificado]`. O dia 1, com [[wiki/entities/mayk-brito|Mayk]], termina com o esqueleto da página inicial e manda o feedback para a "comunidade exclusiva do NLW", onde também rolam os desafios.
 
 ## Key sources
 

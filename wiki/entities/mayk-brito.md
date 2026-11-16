@@ -38,7 +38,7 @@ Comparação com a trilha de Diego: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-
 
 ## Na NLW #2, dia 1 (Mayk Brito)
 
-Conduz o dia 1 da NLW do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), que abre com "Mayk Brito na área" (a transcrição automática dizia "Mike Brito"). Repete o roteiro conceitual do dia 1 da NLW #1, com as mesmas analogias (garçom e cozinheiro, corpo humano, rotina matinal), e gasta a segunda metade em fundamentos de CSS: força dos seletores, pais e filhos, `rem` x `em`, box model, `box-sizing`, display. Diz ter "muita dificuldade de digitação" e por isso cola o código: "ainda assim é possível ser um bom desenvolvedor, mesmo tendo dificuldades, igual eu".
+Conduz o dia 1 da NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), que abre com "Mayk Brito na área" (a transcrição automática dizia "Mike Brito"). Repete o roteiro conceitual do dia 1 da NLW #1, com as mesmas analogias (garçom e cozinheiro, corpo humano, rotina matinal), e gasta a segunda metade em fundamentos de CSS: força dos seletores, pais e filhos, `rem` x `em`, box model, `box-sizing`, display. Diz ter "muita dificuldade de digitação" e por isso cola o código: "ainda assim é possível ser um bom desenvolvedor, mesmo tendo dificuldades, igual eu".
 
 ## Key sources
 
