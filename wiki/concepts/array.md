@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-16
-source_count: 16
+source_count: 18
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -97,6 +97,12 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `map` x `forEach`:
 
 Em [[wiki/sources/frontpush-for-while-each-sass]]: "o que é um array? Literalmente é um vetor com vários valores dentro". No Sass, listas (`40px, 50px, 80px`) e mapas, percorridos com `@each` ([[wiki/concepts/loops-sass]]).
 
+## No FrontPUSH, módulo de JavaScript, aula 06 (Násser)
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o array é "uma variável com vários compartimentos" e o índice é a gaveta de um armário que "sempre começa com 0". Aninhado: `frutas[4][1]`. Métodos: `pop` (remove e devolve o último), `push` (adiciona no fim; devolve o novo tamanho) e `length`. `frutas[4]` fora do intervalo dá `undefined`, sem erro. Percorrer com `i <= 5` em cinco itens lê um `undefined`; a aula chega a `i < frutas.length`. `typeof` dá `'object'`; `Array.isArray` distingue.
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a continuação: `forEach` percorre "sem você ficar pensando em índice", e `map` devolve um array novo, usado para juntar `marcas` e `carros` pela posição ([[wiki/concepts/metodos-de-array-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -115,3 +121,5 @@ Em [[wiki/sources/frontpush-for-while-each-sass]]: "o que é um array? Literalme
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: array de objetos, push, Object.keys
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: map com index, map x forEach
 - [[wiki/sources/frontpush-for-while-each-sass]]: listas e mapas do Sass com `@each`
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: índice como gaveta, aninhado, pop/push/length
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach e map

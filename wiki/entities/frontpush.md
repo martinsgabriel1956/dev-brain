@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 75
+source_count: 85
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -263,6 +263,46 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: `@function grid($col, $total: 12)` e
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: primeira aula prática. Por que um grid system de classes (precisão contra o Flexbox), container de `max-width` por causa dos monitores 21:9, mixin `responsive` e o começo do `.container`. A biblioteca será anexada.
 
+## Módulo de JavaScript ES6: aula 01, introdução
+
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], [[wiki/entities/nasser|Násser]] abre o módulo de JavaScript ES6, para iniciantes e para "nivelar" antes do React: lógica, DOM e eventos, JS assíncrono. A aula 02 instala VS Code, Node e Git. Ver [[wiki/entities/javascript]] e [[wiki/concepts/ecmascript]].
+
+## Módulo de JavaScript ES6: aula 02, variáveis e operadores
+
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: variável como espaço na memória, `var`/`let`/`const` e escopo de bloco, case sensitive, tipos com `typeof`, "tudo é objeto", concatenação, template string e operadores aritméticos. A instalação do ambiente prometida na aula 01 não aparece.
+
+## Módulo de JavaScript ES6: aula 03, estruturas condicionais
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: booleanos e truthy/falsy, comparadores e `==` × `===`, `if / else if / else` como "estrutura encadeada", `&&`/`||` e `switch case`.
+
+## Módulo de JavaScript ES6: aula 04, functions e arrow functions
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: funções como blocos reaproveitados, parâmetro × argumento, `return`, declaração × expressão × arrow, retorno implícito e parênteses opcionais com um parâmetro.
+
+## Módulo de JavaScript ES6: aula 05, objetos
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: abstração com a caneta, objetos `quadrado` e `retangulo`, acesso por ponto, `this`, method shorthand, mutação e "tudo é objeto" com os métodos de string e número.
+
+## Módulo de JavaScript ES6: aula 06, arrays e loops
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: arrays, índices, aninhamento, `pop`/`push`/`length`, `for` e `while`, loop infinito ao vivo e `i < frutas.length`. Promete métodos de array nas próximas aulas.
+
+## Módulo de JavaScript ES6: aula 07, forEach e map
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: callback, `forEach` (item, índice, array), arrow em uma linha, `map` como array novo e a junção de `marcas` com `carros`.
+
+## Módulo de JavaScript ES6: aula 08, DOM parte 1
+
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: o que é o DOM, o painel Elements, eventos, `window`/`location`/`document` e `querySelector`, `innerText`, `classList`, `id`. As próximas aulas detalham seleção, atributos, classes e eventos.
+
+## Módulo de JavaScript ES6: aula 09, DOM parte 2
+
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: `createElement`, `setAttribute`, `createTextNode`, `appendChild` e `div#app`, com um link para https://frontpush.com.br. A próxima aula mexe no CSS pelo JavaScript.
+
+## Módulo de JavaScript ES6: aula 10, DOM parte 3 (eventos)
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: `addEventListener`, callback nomeado, `event.target` × `currentTarget`, lista de eventos, `classList.toggle` com transition e troca de cor por `keydown` no `window`. Fecha a parte de elementos.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -340,3 +380,13 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: primeira aula prática. 
 - [[wiki/sources/frontpush-for-while-each-sass]]: aula 08 do módulo de CSS Sass
 - [[wiki/sources/frontpush-funcoes-sass]]: aula 09 do módulo de CSS Sass
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: aula 10 do módulo de CSS Sass
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: aula 01 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: aula 02 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: aula 03 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: aula 04 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: aula 05 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: aula 06 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: aula 07 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: aula 08 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: aula 09 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: aula 10 do módulo de JavaScript ES6

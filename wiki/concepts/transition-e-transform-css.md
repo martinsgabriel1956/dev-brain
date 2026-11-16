@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -40,6 +40,8 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], `tra
 
 Em [[wiki/sources/frontpush-variaveis-sass]]: `transition` de 0.5 s "para que essa transição seja suave" no `box-shadow` do hover. A legenda não diz se ficou na regra base; se ficou só no `:hover`, a volta é seca.
 
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], `transition: 1s ease` na classe `.red` suaviza a troca feita por `classList.toggle` no clique: o JavaScript troca a classe, o CSS anima.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -49,3 +51,4 @@ Em [[wiki/sources/frontpush-variaveis-sass]]: `transition` de 0.5 s "para que es
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: transition sem propriedade; translateY
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: suporte e prefixos de `transform`
 - [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: transition no box-shadow
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: transition na classe trocada pelo JS

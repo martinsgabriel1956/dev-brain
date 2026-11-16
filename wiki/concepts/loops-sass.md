@@ -4,7 +4,7 @@ title: "Loops no Sass (@for, @each, @while) e interpolação #{}"
 aliases: ["@for", "@each", "@while", "loops Sass", "estruturas de repetição Sass", "interpolação Sass", "#{}"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [css, sass, scss, loops, interpolacao, function, controle-de-fluxo]
 skill: tech-mentor-frontend
 status: stub
@@ -38,7 +38,10 @@ Regras do [[wiki/concepts/pre-processador-css|Sass]] que repetem um bloco na com
 
 Em [[wiki/sources/frontpush-funcoes-sass]], o exemplo `pow($base, $exponent)` da documentação usa `@for` para multiplicar a base "quantas vezes tem um expoente" (2³ → 2, 4, 8). Ver [[wiki/concepts/funcoes-sass]].
 
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], os mesmos `for` e `while`, agora no JavaScript, que roda no navegador: um loop infinito trava a aba, enquanto o do Sass trava a compilação ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-for-while-each-sass]]: `@for` para classes de grid; `@while` em `@function`; `@each` em lista e mapa
 - [[wiki/sources/frontpush-funcoes-sass]]: `@for` dentro de `pow`
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: for e while no JS

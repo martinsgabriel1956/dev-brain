@@ -4,7 +4,7 @@ title: "Carregamento de scripts: posição, defer e async"
 aliases: ["defer", "async", "script defer", "script no fim do body", "<script> no head", "carregamento de JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [javascript, html, performance, dom, critical-rendering-path, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -27,6 +27,9 @@ Quando o navegador lê um `<script>` comum, ele para de montar o HTML, baixa o a
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], [[wiki/entities/mayk-brito|Mayk]] mostra as três situações. No fim do body o script funciona. No começo do body falha ("o jeito do HTML ler as coisas é linha a linha"; o container "não foi colocado em tela" ainda) e dá o erro de [[wiki/concepts/null-e-undefined|null]]. No `head` com `defer`, funciona, desde que o script seja externo (`scripts/addField.js`): "ele não pega o script inline". A explicação dele, "leia esse script somente depois de um certo tempo" e "depois de passar por toda a renderização da página", simplifica demais: o `defer` espera o fim da leitura do HTML, não um tempo nem a página desenhada.
 
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], `document.querySelector('#app')` só encontra a div se o script rodar depois dela; com o `<script>` no `head` sem `defer`, devolve `null`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: script no fim do body, no começo (erro) e no head com `defer` (só externo)
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: querySelector('#app') depende da ordem do script

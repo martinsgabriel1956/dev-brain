@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-16
-source_count: 4
+source_count: 9
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -73,9 +73,24 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], aparecem
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `Number((hour * 60) + minutes)` concatena: `"09" * 60` vira 540, mas `540 + "00"` vira `"54000"`. O filtro funciona por acaso, porque cadastro e busca usam a mesma função. O certo é `Number(hour) * 60 + Number(minutes)`.
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], [[wiki/entities/nasser|Násser]] anuncia "os sete tipos de dados" e mostra seis: string, number, boolean, undefined, symbol e object, com `typeof`. Faltam `null` e `bigint`, e a frase "tudo em JavaScript é objeto" ignora que primitivos não são objetos (`'x'.length` funciona por *autoboxing*). `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], os tipos da aula 02 viram condição: string não vazia e número diferente de 0 são verdadeiros; `''`, `0`, `undefined` e `NaN` são falsos ([[wiki/concepts/truthy-e-falsy]]).
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], o *autoboxing* aparece de novo como "o string já se torna um objeto": o primitivo ganha um embrulho `String` temporário só para a chamada do método.
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], pela terceira aula seguida, a string "já é um objeto": `nome.length` e o autocomplete com `indexOf` e `matchAll` são apresentados como prova. É *autoboxing*: o primitivo é embrulhado em `String` só durante o acesso ([[wiki/concepts/objetos-javascript]]).
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `typeof frutas` dá `object`, "mas é um objeto do tipo array". Para testar array, `Array.isArray`.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coerção string + number; undefined
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: string, boolean, null, NodeList
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: + concatena string em convertHoursToMinutes
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: "sete tipos", seis mostrados, sem null e bigint
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: tipos como verdadeiro ou falso
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: string "vira objeto" no método
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: "toda variável já é um objeto"
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: typeof de array

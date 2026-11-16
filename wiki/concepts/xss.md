@@ -4,7 +4,7 @@ title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -91,6 +91,8 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], o 404 responde `text/html` com `` `Cannot ${request.method} ${request.url}` ``, devolvendo na página um texto controlado pelo cliente sem escapar. O navegador codifica `<` e `>` no path pela barra de endereço, mas não dá para contar com isso; o Express escapa esse texto. Responder `text/plain` ou escapar o HTML resolve.
 
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o elemento é criado com `createElement` e o texto com `createTextNode`, a forma segura de inserir conteúdo de fora. Com `innerHTML`, o mesmo texto viraria HTML executável ([[wiki/concepts/criacao-de-elementos-dom]]).
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — XSS na lista de estudo; HttpOnly como mitigação
@@ -106,3 +108,4 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], o 404 responde `text/
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — citado como par estrutural (mesmo autor, mesmo formato pedagógico) aplicado a SQL Injection em vez de XSS
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: XSS armazenado via upload sem filtro
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: 404 em text/html refletindo request.url
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: createTextNode em vez de innerHTML

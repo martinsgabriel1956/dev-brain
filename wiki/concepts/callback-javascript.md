@@ -4,7 +4,7 @@ title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 10
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -48,9 +48,15 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]], callback é "ligue de volta":
 
 Em [[wiki/sources/jstack-criando-o-servidor-http]], dois callbacks: o do `createServer`, chamado a cada requisição com `(request, response)`, e o do `listen`, chamado uma vez quando o servidor está de pé.
 
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], as arrow functions são apresentadas como a sintaxe que os frameworks usam o tempo todo; o uso típico delas é justamente como callback ([[wiki/concepts/arrow-functions]]).
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], callback é "uma função genérica que você simplesmente pode colocar o que você quiser", passada como segundo argumento do `addEventListener` e como argumento do `forEach` e do `map`. O resumo da aula diz que o `forEach` "devolve uma função de callback"; ele recebe uma e devolve `undefined`.
+
 ## No JStack, aula 06
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `handler: UserController.listUsers` guarda a função sem chamá-la ("eu não estou executando a função [...] só estou passando a referência"); o `index.js` a chama depois com `route.handler(request, response)`. Com métodos de classe, a referência solta perde o `this`.
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a "boa prática" é declarar o callback à parte e passar só o nome: "deixar o nome da função como referência e aí quando clica, ele busca o nome da função". Isso também permite `removeEventListener` com a mesma referência.
 
 ## Key sources
 
@@ -60,4 +66,7 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `handler: 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: then com função nomeada, rumo ao await
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: "ligue de volta"; callback queue e event loop
 - [[wiki/sources/jstack-criando-o-servidor-http]]: callbacks do createServer e do listen
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions como sintaxe de callback
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: callback no addEventListener, forEach e map
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: handler guardado como referência
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: callback nomeado por referência

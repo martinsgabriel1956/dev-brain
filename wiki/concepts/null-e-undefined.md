@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,12 @@ Nenhum dos dois tem propriedades. Ler `algo.style` quando `algo` é `null` lanç
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], [[wiki/entities/mayk-brito|Mayk]] provoca o erro de propósito. Com o `<script>` no começo do body, `document.querySelector('#container').style...` roda antes de o container existir, e o console diz que não pôde "ler a propriedade style de null". `null` é "vazio", como a casa da música "que não tinha teto, não tinha nada"; "não tem propriedade nenhuma em null". A regra que fica: "sempre que você vir esse erro [...] significa que você não pegou o objeto do jeito que deveria ter pego". Ele cita de passagem a variante "of undefined", sem separar os dois casos.
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], `let nada` sem valor é "indefinida, ou seja, undefined". O `null` não aparece entre os tipos da aula.
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], `undefined` entra na lista de valores que o `if` "vai entender como falso". O item anterior não tem legenda e é provavelmente o `null`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: variável sem valor é undefined; null ausente
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: undefined é falsy

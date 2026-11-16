@@ -4,7 +4,7 @@ title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
 date_updated: 2026-11-16
-source_count: 12
+source_count: 16
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -97,6 +97,14 @@ Em [[wiki/sources/frontpush-if-else-sass]]: "como o próprio nome já grita para
 
 Em [[wiki/sources/frontpush-for-while-each-sass]]: `for`, `while`, `do while` e `forEach` "se você já estudou alguma linguagem de programação, seja ela C, seja ela JavaScript, seja ela PHP"; no Sass, `@for`, `@while` e `@each`, com `$i`, `$j` e `$k` vindos dos "índices de matrizes".
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o roteiro do módulo de JavaScript do FrontPUSH começa pelo básico da lógica: variáveis, condicionais, repetição, funções, objetos, arrays e loops.
+
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], o roteiro anunciado na aula 01 começa: variáveis, tipos (o booleano "muito interessante [...] com estruturas condicionais") e operadores aritméticos.
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], o roteiro do módulo de JavaScript chega às condicionais: `if / else if / else`, comparadores, `&&`/`||` e `switch` ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o roteiro chega a arrays e repetição: "como começa, como termina, como modifica", e o loop infinito como erro clássico ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
@@ -111,3 +119,7 @@ Em [[wiki/sources/frontpush-for-while-each-sass]]: `for`, `while`, `do while` e 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: if, objeto vazio que "existe"
 - [[wiki/sources/frontpush-if-else-sass]]: if/else no Sass; variável declarada antes do condicional
 - [[wiki/sources/frontpush-for-while-each-sass]]: loops no Sass
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: roteiro de lógica do módulo
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: variáveis, tipos e operadores
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: condicionais
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: arrays e repetição

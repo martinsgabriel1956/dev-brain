@@ -4,7 +4,7 @@ title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -35,6 +35,8 @@ Frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte, Vue via `ref
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o aviso "Each child in a list should have a unique key prop" e a explicação: a `key` serve "pro React conseguir encontrar esse elemento na hora de atualizar".
 
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o React é apresentado como "tudo JavaScript" que "renderiza o HTML" com os princípios de `createElement`/`appendChild`. Por baixo são essas APIs, mas o React decide o que mudar comparando árvores, em vez de anexar nó a nó.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -53,3 +55,4 @@ Diego explica o React pela ideia de SPA ("só muda [...] as coisas que são dife
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: key em listas para reconciliação
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: SPA × re-renderização declarativa
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: key nas options e nos horários
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: o princípio por baixo do React

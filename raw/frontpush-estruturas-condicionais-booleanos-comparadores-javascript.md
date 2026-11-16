@@ -1,0 +1,61 @@
+# Estruturas condicionais em JavaScript: booleanos, comparadores, if/else e switch case
+
+Opa, olá pessoal, tudo certo com vocês? Olha só, nós vamos continuar aqui as nossas aulas de JavaScript, onde, nessa aula, nós vamos fazer um overview geral sobre os valores booleanos, comparadores e estruturas condicionais. Então, vamos começar.
+
+## Valor booleano
+
+Primeira coisa, antes de eu começar a falar sobre estruturas condicionais, propriamente dito, é legal a gente reforçar a questão do que é um valor booleano, porque é imprescindível a gente entender isso para estruturas condicionais e também como comparadores do que a gente pode fazer. Lembrando, o que é um valor booleano? Se eu vir aqui e criar uma variável let com o nome de boolean, eu posso atribuir para ela um valor true ou um valor falso. Sempre vai ser ou verdadeiro ou falso. Uma estrutura condicional só entende isso, ela sempre vai sintetizar alguma comparação, alguma variável a simplesmente true ou false. Então, por exemplo, vamos supor que eu coloque o valor do booleano com o valor de true.
+
+## if e else
+
+E aí, nós temos a estrutura condicional, temos duas principais, a if else e a switch case. Em um primeiro momento, eu vou trabalhar o if else, porque eu acredito que é mais fácil, e aí, conforme a gente for entendendo esses conceitos, a gente parte para o switch case, mas a primeira coisa é o if. Se for traduzido em inglês, ele significa se, ou seja, você vai colocar uma proposição aqui dentro e essa proposição vai ser traduzida em simplesmente um valor booleano ou verdadeiro ou falso. Ou true ou falso.
+
+Então, eu posso colocar aqui, por exemplo, a variável booleano e colocar aqui um trecho, um bloco de código. E aqui você vai plotar, por exemplo, no console para poder verificar qual é a condição que está sendo satisfeita. Então, se ele entrar aqui, como está diretamente pegando o valor de um booleano, ele vai aqui é verdadeiro.
+
+Enquanto, eu posso criar a proposição else, que é se não, ou seja, a exceção, se não coube em nenhuma das condições acima, ele cai no else. O else meio que é a exceção. Se não encaixou em nenhuma das condições primeiras que foram estabelecidas, ele vai cair no else. Por isso que se chama estrutura encadeada. A estrutura condicional é cada bloquinho desse aqui. Quando eu coloco mais blocos com relação à mesma variável e tudo mais, eu chamo de estrutura encadeada.
+
+Então, eu posso fazer aqui console.log e simplesmente definir é falso. Vamos lá, então. É falso. Vamos salvar e veja o que apareceu no console. Eu, justamente, estou sempre plotando no console para vocês criarem esse hábito. O programador sempre tem que estar plotando no console para ver qual é a direção que o código está tomando, já que a gente está criando, agora, bifurcações dentro do nosso código com estruturas condicionais. Então, se eu simplesmente colocar aqui falso, ele vai colocar é falso. Deixa eu colocar tudo em maiúscula, é verdadeiro e é falso.
+
+## Verdadeiro e falso além do booleano
+
+Então, vocês perceberam que ele pegou o valor direto, mas vamos, por exemplo, colocar aqui um nome genérico, por exemplo, variável, e ele vai comparar variável. Variável. E eu colocar, por exemplo, um nome aqui dentro, está vendo? É um string, poderia ser qualquer coisa. Então, eu posso colocar, por exemplo, o meu nome Násser. O que vai acontecer? Ele identifica sempre, sempre, sempre, um string como verdadeiro. Lembre-se do que eu falei, uma estrutura condicional sempre vai tentar pegar qualquer proposição, qualquer comparação, qualquer variável e transformar em um valor booleano, ou true ou falso. E uma string que não seja vazia, ela entende como verdadeiro.
+
+Então, se eu colocar, por exemplo, agora vazio, ele vai entrar no falso, bem como com números. Se eu colocar, por exemplo, o número 10, você vai ver que ele vai entrar como verdadeiro, está vendo? Enquanto se eu colocar o número 0, ele vai entender como falso. Então, o único número que ele entende como falso é o 0 e a única string que ele entende como falso é vazio. Se você colocar, por exemplo, qualquer número aqui, por exemplo, 800, 875, ele vai entender como verdadeiro, só vai bater 0 como falso. E é basicamente isso.
+
+O que vocês podem fazer também em estruturas condicionais é negar o valor, colocando, por exemplo, o ponto de exclamação. Ele sempre vai negar o valor booleano, está vendo? Agora ele entrou no verdadeiro, mesmo sendo 0. Se eu colocar, por exemplo, 1, agora ele vai dar como falso porque eu estou negando ele aqui.
+
+Então, o que ele entende como falso? É mais fácil tratar o falso porque ele é mais específico, o verdadeiro entende muito mais coisas como verdadeiro do que como falso. Então, se eu colocar, por exemplo, if 0, ele vai entender como falso. Se eu colocar if vazio, ele vai entender como falso. Se eu colocar falso, logicamente, ele vai entender como falso. Ele também vai entender como falso. Se eu colocar undefined, ele também vai entender como falso. E not a number, N, a, N, quando algo não é um número, ele também entende como falso. Então, são essas as condições.
+
+## Comparadores
+
+Então, vou fazer o teste no console, por exemplo, 10 é maior que 5, ele vai dar true. 5 é maior que 10, falso. E você pode colocar também o maior ou igual. 10 é maior ou igual a 10? Então, true. Se eu colocar 12, falso. Então, tem como você também colocar todas essas comparações, essas condições.
+
+E outro quesito é que você pode colocar as diferenças do igual, igual, quando você está querendo comparar alguma coisa. E é interessante eu levar em consideração isso e explicar aqui para vocês qual é a diferença, por exemplo, do igual, igual e do igual, igual, igual, que são três iguais. Quando eu estou colocando o igual, igual só duas vezes, ele está comparando o conteúdo. Então, se eu, por exemplo, colocar 10 é igual a 10, ele vai dar true, logicamente. Mas se eu transformar esse 10 em uma string, ele vai continuar apresentando true, porque ele vai tentar converter o valor e por mais que seja um string, ela é igual.
+
+Então, o igual, igual, eu estou comparando apenas conteúdo. Quando eu quero comparar o conteúdo e o tipo de dado, eu coloco três iguais. Aí você pode ver que agora ele está dando falso. Está vendo? Então, você pode colocar o igual, igual e também negar esses itens. Então, eu posso colocar assim, que significa diferente. Então, também é o tipo de dado que eu também adiciono mais um tipo de igual. Agora ele vai dar true. Então, é interessante a gente entender esses operadores de comparação quando a gente estiver, sei lá, quebrando a cabeça em qualquer tipo de estrutura.
+
+## else if e estrutura encadeada
+
+Já que a gente falou sobre valores booleanos e comparadores, a gente também pode conversar um pouco sobre operadores lógicos. Condição um, em que eu posso plotar alguma coisa. Então, console.log, a primeira condição, se ele entrar aqui dentro, o que significa? A primeira condição foi satisfeita. E eu posso emendar várias condições aqui, lembrando que o else é sempre a exceção, ou seja, eu posso plotar aqui. Quando cair no else, eu posso dizer que nenhuma condição acima foi satisfeita, ou seja, caiu na exceção.
+
+E aí, quando eu quero emendar mais condições, eu posso colocar o else if. Então, if é sempre a primeira condição, else é sempre a exceção de todas as condições acima. E o else if é quantas condições eu posso colocar no meio. Posso colocar duas, três, quatro, cinco, 10, 20, 30, 50, mil. A gente pode colocar aqui. Então, aqui eu posso colocar condição 2 e aqui a segunda condição. Posso colocar aqui condição 3 e aqui a terceira condição foi satisfeita.
+
+E uma coisa que é muito interessante, ele lê esse quesito aqui linha a linha. Então, o código sempre vai ver a condição. A primeira condição é satisfeita? Se sim, ele vai ler isso aqui e ele vai ignorar todos os blocos que estão na estrutura encadeada. E como é que eu faço para identificar se é uma estrutura encadeada ou não? Uma nova estrutura sempre se inicia com if. Então, se eu colocar if, else if, else if, else if, essa estrutura está encadeada. Ou seja, quando ele descobrir a primeira condição e ela for satisfeita, ele vai ignorar todos os blocos para baixo e vai continuar daqui de novo. Ele vai continuar a ver o código aqui. Ele vai verificar essa aqui e vai pular para outra. Viu que essa aqui satisfez, vai pular o else e vai continuar aqui. Então, isso aqui é uma estrutura encadeada.
+
+E como é que eu crio novas estruturas encadeadas? Simplesmente começando com if. Então, é teoricamente errado você construir estruturas encadeadas só com if, porque você está fazendo if, if, if, if e ele sempre vai verificar todas se você colocar assim. Ele vai verificar a condição 1, eu posso colocar aqui 2, 3, 4, 5. Ele vai verificar a 1, ele vai verificar a 2 sendo falsa ou não, satisfazendo a primeira ou não, porque ela não está encadeada nesse caso.
+
+## Operadores lógicos
+
+Então, isso aqui é um básico para a gente entender estruturas condicionais e o que eu queria dizer também é com relação ao switch case. Eu, particularmente, prefiro bem mais o if else, ele é bem mais aberto, onde a gente pode encadear várias variáveis de vários jeitos diferentes. Eu acredito que tem um pouquinho mais de liberdade, porque no if else você consegue colocar proposições aqui dentro.
+
+Então, já é uma coisa que eu preciso colocar aqui também, que é o e, quando você coloca e comercial e e comercial. Então, eu posso colocar aqui condição 2, por exemplo, para poder ele satisfazer e entrar no if, no bloco do if, essa proposição aqui, as duas têm que ser true, porque esse aqui é um termo e, então essa precisa ser verdadeira e essa também precisa ser verdadeira. Então, você consegue emendar, consegue colocar várias proposições assim com parênteses e eu posso colocar ou e eu posso colocar mais condições assim. Condição 3 e condição 4, ou seja, essas duas precisam ser verdadeiras ou essas duas precisam ser verdadeiras. Então, quando eu tenho duas barras retas é ou e quando eu coloco dois e comercial junto são e e aí você tem mais liberdade para poder construir a condição que você quiser.
+
+## switch case
+
+Já quando a gente fala de switch case, ele é um pouco mais, como é que eu posso dizer, específico com relação apenas à comparação. Então, eu posso colocar, por exemplo, let, sei lá, variável, deixa eu ver uma variável aqui, variável, eu posso colocar aqui o nome, vamos colocar aqui com o nome, opa, nome. Então, eu vou definir o nome Násser para essa variável e aí eu vou abrir um switch case, switch, opa, não é assim que se escreve, switch, onde eu vou analisar qual variável, a variável nome, então eu consigo analisar somente ela por comparação, então eu posso colocar aqui case e eu vou colocando os casos, o meu nome é Yousef, não, esse aqui é o meu sobrenome e aí eu coloco o caso dela, qual é o caso dela?
+
+Então, case eu posso colocar, por exemplo, no console, console.log, por exemplo, esse é o sobrenome e aí eu dou um break, um break que é como se fosse eu estou separando aqui um bloco, ou seja, se for Yousef, o nome da variável, ele vai entrar nesse bloco e vai brecar, vai frear, vai pular e aí você vai construindo vários cases, então você pode colocar, por exemplo, Násser agora, e esse aqui é o nome, esse aqui é o nome, eu posso criar um Yousef Ali, que é o meu terceiro nome, aí eu posso falar esse é o terceiro nome e aí qual é a exceção do switch case?
+
+Está vendo que a gente está criando vários casos, mas a exceção chama default, que é padrão, então você vai construir um caso desse aqui e vai simplesmente colocar o console.log e vai colocar assim, essa é a exceção e aí você pode executar ele desse jeito e aqui, esse é o nome, eu posso colocar aqui Yousef, esse é o sobrenome, posso colocar Ali, esse aqui é o terceiro nome e eu posso colocar aqui algo nada a ver, essa é a exceção, está vendo?
+
+Então, eu recomendo fortemente para vocês repetirem o que eu fiz aqui, tentar aplicar os valores booleanos, comparar o que acontece quando a gente compara, por exemplo, Ali, que é o meu nome, com, por exemplo, o A maiúsculo, pega essas dúvidas, executa, e vai tirando as suas proposições aqui no próprio console para poder tirar essas dúvidas básicas e fixar toda essa aula aqui, beleza? Então falou pessoal e até a próxima.

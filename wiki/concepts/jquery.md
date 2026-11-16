@@ -3,8 +3,8 @@ type: concept
 title: "jQuery"
 aliases: ["JQuery", "write less do more"]
 date_created: 2026-08-04
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [jquery, javascript, frontend, dom, legado, biblioteca]
 skill: tech-mentor-backend
 status: stub
@@ -26,9 +26,12 @@ Dois movimentos simultâneos, a partir de meados dos anos 2010: (1) navegadores 
 
 Extremamente presente em aplicações corporativas, sistemas internos e portais construídos ao longo da última década. Raramente escolhida para projetos novos, mas segue com manutenção ativa — release estável em 17/01/2026, quase 20 anos após seu lançamento.
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], [[wiki/entities/nasser|Násser]] dá o jQuery como prova de que o JavaScript era "um pouco arcaico" antes do ES6: a biblioteca "implementava essas questões que o JavaScript ainda não tinha" e hoje perde procura porque o JS nativo "já faz o que ele fazia". A substituição veio mais das APIs do DOM (`querySelectorAll`, `classList`, `fetch`) do que da especificação [[wiki/concepts/ecmascript]].
+
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — 1ª geração de bibliotecas de compatibilidade entre navegadores ([[wiki/concepts/biblioteca-javascript-de-compatibilidade]])
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: jQuery como sintoma do JS pré-ES6

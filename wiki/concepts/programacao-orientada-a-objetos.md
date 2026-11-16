@@ -3,8 +3,8 @@ type: concept
 title: "Programação Orientada a Objetos"
 aliases: ["POO", "OOP", "object-oriented programming", "orientação a objetos"]
 date_created: 2026-11-03
-date_updated: 2026-11-03
-source_count: 1
+date_updated: 2026-11-16
+source_count: 4
 tags: [poo, oop, paradigma, historia-do-software, encapsulamento, polimorfismo, heranca]
 skill: tech-mentor-backend
 status: draft
@@ -45,6 +45,17 @@ Questionamentos abertos estão em [[wiki/sources/onde-foi-parar-programacao-orie
 
 Ver também [[wiki/concepts/programacao-procedural]], [[wiki/concepts/programacao-funcional]], [[wiki/concepts/design-patterns]] e [[wiki/concepts/objeto-vs-estrutura-de-dados]].
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], um objeto JavaScript é "basicamente uma classe gigante, uma caixa muito grande" com variáveis e funções (`console` é a caixa, `.log` a função). Objeto é instância, conjunto de propriedades; classe é o molde, e em JS `class` é sintaxe sobre protótipos.
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], a distinção sai certa: "console é um objeto em que quando eu aperto o ponto, eu tenho como acessar tanto os métodos, que são as funções, tanto as propriedades" (`log` é método, `memory` propriedade).
+
+## No FrontPUSH, módulo de JavaScript, aula 05 (Násser)
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a orientação a objetos é apresentada como abstração do mundo real: a caneta tem características (cor, comprimento, ponta) e funções (rabiscar, traço fino ou grosso), que viram atributos e métodos. A aula fica em objetos literais; a pergunta "está muito fixo" é respondida com mutação, quando a resposta de OO seria um molde (`class` ou função fábrica) para criar vários retângulos ([[wiki/concepts/objetos-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — história do paradigma e tese de que ele mudou de lugar na arquitetura
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: objeto como "classe gigante" (impreciso)
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: método × propriedade no console
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: caneta como objeto, atributos e métodos

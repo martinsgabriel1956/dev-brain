@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 11
+source_count: 16
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -54,6 +54,18 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o primei
 
 O `react-dom` é o renderizador que diz ao React que a interface "é com a DOM", "a árvore de elementos do HTML"; no React Native o alvo é a interface nativa. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], "DOM e os seus principais eventos" é um dos blocos do módulo de JavaScript do FrontPUSH: o JS "vai justamente manipular" HTML e CSS. O DOM é API da plataforma web, não parte do [[wiki/concepts/ecmascript]].
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], métodos de string e número são chamados de "API, porque é uma conversa entre o JavaScript e o browser". Esses vêm da linguagem; a API do navegador é o DOM (e `fetch`, `localStorage`). O `lastChild` que aparece na lista é propriedade de nó do DOM, não de string.
+
+## No FrontPUSH, módulo de JavaScript, aula 08 (Násser)
+
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o DOM é "uma interface que representa o HTML [...] por meio de objetos", a definição certa. Pelo painel Elements, a aula conclui que ele é "a árvore de conteúdo de tag de HTML e as propriedades CSS"; os estilos são do [[wiki/concepts/cssom]]. Também chama de "árvore" a cadeia `window.location...`, que é o BOM ([[wiki/concepts/window-e-bom]]). Na prática: `document.querySelector('h1')` com seletor de CSS, `innerText`, `classList` (um `DOMTokenList`) e `id`.
+
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], a parte 2 cria nós: `createElement('a')`, `setAttribute('href', ...)`, `createTextNode` + `appendChild` e o link anexado a `div#app` ([[wiki/concepts/criacao-de-elementos-dom]]).
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a parte 3 liga eventos a mudanças no DOM: clique e tecla trocando classes da `.box` ([[wiki/concepts/propagacao-de-eventos-dom]]).
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -66,3 +78,8 @@ O `react-dom` é o renderizador que diz ao React que a interface "é com a DOM",
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: DOM em tempo real x HTML de origem
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: document, querySelector, cloneNode, appendChild
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: react-dom como renderizador
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: manipular HTML e CSS pelo DOM
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: built-ins da linguagem × APIs do navegador
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: interface que representa o HTML por objetos; DOM × CSSOM × BOM
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: criar e anexar elementos
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: eventos que mudam o DOM

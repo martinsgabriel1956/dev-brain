@@ -4,7 +4,7 @@ title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -40,6 +40,8 @@ Na aula de ambiente do [[wiki/entities/frontpush]] ([[wiki/sources/frontpush-con
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: `git init` no monorepo, `.gitignore`, `git remote add origin`, `git push origin master` e o conselho "um git commit para cada [...] feature". "O Git [...] chega a ser [...] tão importante quanto a linguagem de programação."
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o Git volta a ser instalado na aula 02 do módulo de JavaScript, junto do VS Code e do Node.
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
@@ -49,3 +51,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: versionamento da infra
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Git for Windows, motivos para versionar (rollback e time)
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: fluxo básico até o push
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: Git na próxima aula

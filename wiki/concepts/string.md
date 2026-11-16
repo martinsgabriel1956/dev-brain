@@ -4,7 +4,7 @@ title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 3
+source_count: 7
 tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
@@ -84,8 +84,20 @@ Em Go, `rune` é um alias para `int32` — representa um codepoint [[unicode]] c
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: em JavaScript, string se escreve com aspas duplas, simples ou crase; a crase permite interpolação com `${}` (`` `<p>${i}</p>` ``). Uma string solta no código "não serve pra nada" sem ir para uma variável ou função.
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], a string é "um conjunto de caracteres" entre aspas, concatenada com `+` ou montada com [[wiki/concepts/template-literals|template literal]].
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], `name.toUpperCase()` funciona porque, na fala da aula, a string "já se torna um objeto" e "herda" métodos. A string continua primitiva; o método vem de `String.prototype` por *autoboxing*.
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], `nome.length` dá 6 para "Násser", e o autocomplete lista os métodos herdados de `String.prototype` (`indexOf`, `matchAll`; o "lastChild" da legenda é provavelmente `lastIndexOf`).
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `item.toUpperCase()` dentro do `forEach` põe todas as marcas em caixa alta.
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação do algoritmo de decode bytes → runa
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: três tipos de aspas; template string
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: string, concatenação e template string
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: toUpperCase e autoboxing
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: length e métodos de String.prototype
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: toUpperCase em cada item

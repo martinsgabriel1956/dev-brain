@@ -4,7 +4,7 @@ title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -88,6 +88,8 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o event loop é "como se foss
 
 Em [[wiki/sources/jstack-criando-o-servidor-http]], `node src/index.js` fica rodando, ao contrário dos scripts da aula 03, porque o `listen` registra um handle ativo na [[wiki/entities/libuv|libuv]], e o loop só sai quando não há mais handles nem requisições pendentes. Cada requisição chega como evento e chama o handler do `createServer` na mesma thread.
 
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o loop infinito acontece na gravação: um `while` sem `i++` trava o navegador ("isso consome muito processamento"). É a thread principal ocupada; nada mais roda até o loop terminar. Pela mesma razão, um `while` que espera um booleano mudar "em outra parte do seu código, ou então puxando de algum banco de dados" nunca o vê mudar.
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
@@ -95,3 +97,4 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], `node src/index.js` fica rod
 - [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: CPU gasto por requisição (cópia profunda com `cloneDeep`) derruba a capacidade da rota de 11.000 para 2000 requisições; como achar o culpado com [[wiki/concepts/cpu-profiling]]
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: modelo call stack + callback queue + event loop, com correções
 - [[wiki/sources/jstack-criando-o-servidor-http]]: listen mantém o loop vivo; requisição = evento
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: loop infinito trava o browser

@@ -1,0 +1,42 @@
+---
+type: concept
+title: "Truthy e falsy em JavaScript"
+aliases: ["truthy", "falsy", "valores falsos", "ToBoolean", "coerção para booleano", "!!"]
+date_created: 2026-11-16
+date_updated: 2026-11-16
+source_count: 1
+tags: [javascript, booleano, coercao, condicionais, tipos]
+skill: lang-dynamic
+status: stub
+---
+
+# Truthy e falsy em JavaScript
+
+Toda condição (`if`, `while`, ternário, `!`, `&&`, `||`) converte o valor para booleano (`ToBoolean` na especificação). Os valores que viram `false` são os **falsy**; todo o resto é **truthy**. `[external]` https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+
+## Os oito falsy
+
+`false`, `0`, `-0`, `0n` (bigint), `''` (string vazia), `null`, `undefined` e `NaN`. (Mais `document.all`, um resquício histórico dos navegadores.)
+
+## Truthy que surpreendem
+
+- `'0'`, `'false'`, `' '`: strings não vazias.
+- `[]` e `{}`: todo objeto é truthy, inclusive vazio. Para lista vazia, `lista.length === 0`.
+- `-1`, `Infinity`.
+
+## Usos e armadilhas
+
+- `!!valor` ou `Boolean(valor)` convertem explicitamente.
+- `valor || padrão` troca qualquer falsy, inclusive `0` e `''`; `valor ?? padrão` troca só `null`/`undefined` ([[wiki/concepts/null-e-undefined]]).
+- `cond && <Componente />` no React renderiza `0` se `cond` for `0` ([[wiki/concepts/renderizacao-condicional]]).
+- Truthy ≠ `== true`: `'2' == true` é `false`, porque o `==` converte o `true` para `1` ([[wiki/concepts/igualdade-javascript]]).
+
+Relacionado: [[wiki/concepts/logica-booleana]], [[wiki/concepts/tipos-primitivos-javascript]], [[wiki/concepts/estruturas-condicionais-javascript]].
+
+## No FrontPUSH
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], [[wiki/entities/nasser|Násser]] testa no `if`: string não vazia e número diferente de 0 entram; `''`, `0`, `false`, `undefined` e `NaN` não. "É mais fácil tratar o falso porque ele é mais específico." Faltam `-0`, `0n` e (por um trecho sem legenda) provavelmente `null`; "o único número [falso] é o 0" não é exato.
+
+## Key sources
+
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: string vazia, 0, undefined e NaN como falsos

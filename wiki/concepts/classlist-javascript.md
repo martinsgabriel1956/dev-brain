@@ -4,7 +4,7 @@ title: "classList (JavaScript)"
 aliases: ["classList", "classList.toggle", "classList.add", "classList.remove"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [javascript, dom, css, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,12 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Mayk pronuncia "togo" e soletra "t-o-g-g-l-e". Ver [[wiki/concepts/modal]].
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `classList` é "likeArray, porque não é exatamente um array" e devolve um `DOMTokenList`; com duas classes, `classList[0]` e `[1]`. Tem `add`, `remove`, `toggle`, `contains` e `forEach`, mas não `map` (usar `Array.from`).
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], `classList.toggle('red')` no clique, com `transition: 1s ease`, "o que eu faço demais quando eu desenho [...] os menus hambúrgueres". No teclado, `toggle` de `red`, `blue` e `green` acumula classes; trocar pede `remove` ou `replace`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `toggle("selected")` nos itens; `add`/`remove("hide")` no modal
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: DOMTokenList "like array"
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: toggle no clique e no teclado

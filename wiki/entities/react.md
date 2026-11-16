@@ -4,7 +4,7 @@ title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 15
+source_count: 19
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -47,6 +47,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: componente `Dropzone` com `react-dropzone`, preview por `URL.createObjectURL`, função como prop para subir o arquivo ao pai e `useCallback`.
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o React é o "framework" para o qual o módulo de JavaScript do FrontPUSH prepara: "pelo menos um basicinho" de JS antes, "para você não se sentir completamente perdido".
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], o React aparece como o lugar onde "é muito comum a gente sempre estar batendo na tecla em Arrow functions". A razão de fundo, o `this` léxico, não é dita ([[wiki/concepts/arrow-functions]]).
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a diferença `forEach` × `map` é a que importa para renderizar listas no React: só o `map` devolve o array de elementos para o JSX ([[wiki/concepts/metodos-de-array-javascript]]).
+
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o React é a motivação para criar HTML pelo JavaScript: "é o próprio JavaScript que renderiza o HTML, é o próprio JavaScript que renderiza o CSS". O CSS não é renderizado pelo React; vem de arquivos importados ou CSS-in-JS.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
@@ -77,3 +85,7 @@ Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adicio
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Dropzone e comunicação filho → pai
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: núcleo × renderizadores; componentes e props
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: estado, efeitos e o front conectado
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: JS básico antes do React
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions comuns no React
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map × forEach, base das listas no JSX
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: React como "tudo JavaScript"

@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 24
+source_count: 25
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -85,6 +85,8 @@ Extensão SQLite (Open Database, SQLite Explorer, Show Table, New Query + Run Qu
 
 Multicursor e `Ctrl+Shift+L` ("select all occurrences of find match") para trocar `input` por `textarea`/`select` e replicar `value`/`onChange`: "essas mandingas do VS Code". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o VS Code é instalado de novo na aula 02 do módulo de JavaScript.
+
 ## No JStack, aula 03
 
 Em [[wiki/sources/jstack-o-que-sao-modulos]]: `code .` abre a pasta atual; se o comando não existir, command palette (Cmd/Ctrl+Shift+P) → "Install 'code' command in PATH" e reabrir o terminal (necessário no macOS; no Windows e no Linux o instalador já faz isso). Terminal integrado e IntelliSense mostrando os métodos de `os` e as chaves do objeto exportado.
@@ -117,5 +119,6 @@ Criar pasta e arquivo de uma vez digitando `favorites/index.tsx` no "new file". 
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: code ., auto import, Emmet, Fira Code
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: extensão SQLite e Reload Window
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: multicursor e Ctrl+Shift+L
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: instalado na próxima aula
 - [[wiki/sources/jstack-o-que-sao-modulos]]: code ., Install code command, terminal integrado, IntelliSense
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: pasta e arquivo no new file

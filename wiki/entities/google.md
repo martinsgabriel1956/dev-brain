@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-16
-source_count: 38
+source_count: 40
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -86,6 +86,10 @@ Na aula de box model do [[wiki/entities/frontpush|FrontPUSH]], o motivo dado par
 
 Em [[wiki/sources/introducao-mapeando-vagas]], o que o Google paga a um desenvolvedor júnior em São Paulo é o exemplo de faixa "totalmente separada" da média salarial local ([[wiki/concepts/modelo-trimodal-compensacao]]).
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], pesquisar "de forma leiga" no Google ("como fazer para clicar em um título e mudar a cor JavaScript") é o método de estudo recomendado para o DOM.
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a lista de eventos vem de uma busca "events javascript" no Google, num site que ele "sempre" visita.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -147,3 +151,5 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: link azul/roxo (visitado) como padrão que até o Google usa
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: "tenho dúvida, eu vou no Google e vou buscar a documentação"
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: Chrome e V8 (2008) como origem do Node.js
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: pesquisar o DOM de forma leiga
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: buscar a lista de eventos

@@ -1,0 +1,65 @@
+---
+type: concept
+title: "Estruturas condicionais em JavaScript (if/else, switch)"
+aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
+date_created: 2026-11-16
+date_updated: 2026-11-16
+source_count: 3
+tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
+skill: lang-dynamic
+status: stub
+---
+
+# Estruturas condicionais em JavaScript
+
+Desviam o fluxo conforme uma condição convertida para booleano ([[wiki/concepts/truthy-e-falsy]]). `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+
+## if / else if / else
+
+```js
+if (nota >= 9) console.log('A')
+else if (nota >= 7) console.log('B')
+else console.log('C')
+```
+
+A cadeia para na primeira condição verdadeira; o `else` pega o resto. **`if` separados** avaliam todas as condições: é o certo quando mais de uma pode valer ao mesmo tempo, e o errado quando elas se excluem (gasta verificações e pode executar dois blocos). Em funções, o **early return** (`if (!usuario) return`) evita cadeias e aninhamentos fundos.
+
+## Operadores de comparação e lógicos
+
+- Comparação: `>`, `>=`, `<`, `<=`, `===`, `!==` (e os frouxos `==`, `!=`; [[wiki/concepts/igualdade-javascript]]).
+- Lógicos: `&&` (e), `||` (ou), `!` (não). `&&` e `||` param no primeiro operando que decide (curto-circuito) e devolvem esse operando, não um booleano. `&&` tem precedência maior que `||`.
+- `??` (ES2020) escolhe o padrão só para `null`/`undefined` ([[wiki/concepts/null-e-undefined]]).
+
+## Ternário
+
+`cond ? a : b` é uma expressão: cabe numa atribuição, num template literal ou no JSX ([[wiki/concepts/renderizacao-condicional]]).
+
+## switch
+
+```js
+switch (nome) {
+  case 'Násser': console.log('nome'); break
+  case 'Yousef': console.log('sobrenome'); break
+  default: console.log('exceção')
+}
+```
+
+- Compara com `===`.
+- Sem `break`, cai no `case` seguinte (*fall-through*); útil para agrupar (`case 'a': case 'b':`), bug quando esquecido.
+- Alternativa comum: um objeto como tabela (`const rotulos = { Násser: 'nome', Yousef: 'sobrenome' }`), com `rotulos[nome] ?? 'exceção'`.
+
+Relacionado: [[wiki/concepts/logica-booleana]], [[wiki/concepts/logica-de-programacao]], e o equivalente na compilação do Sass, [[wiki/concepts/if-else-sass]].
+
+## No FrontPUSH
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], [[wiki/entities/nasser|Násser]] chama a cadeia `if / else if / else` de "estrutura encadeada" ("uma nova estrutura sempre se inicia com if"), diz que vários `if` seguidos são "teoricamente errado[s]" (são outra lógica, não um erro), agrupa `&&` e `||` com parênteses e mostra o `switch` com `case`, `break` e `default`. Prefere `if/else`, "bem mais aberto".
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], um `if` dentro do `while` decide quando o contador sobe, "misturar as estruturas condicionais [...] dentro do while". A aula também chama `for` e `while` de "estruturas condicionais"; são de repetição ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], `if (event.key === 'r') ... else if ('b') ... else` troca a cor pela tecla; a aula chama a cadeia de "lista encadeada" (é a "estrutura encadeada" da aula 03).
+
+## Key sources
+
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: if dentro do while
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: if/else if por tecla

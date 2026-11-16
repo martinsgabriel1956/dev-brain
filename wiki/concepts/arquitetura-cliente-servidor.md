@@ -4,7 +4,7 @@ title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -56,6 +56,8 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o back-en
 
 Em [[wiki/sources/jstack-http-e-apis-rest]], uma API é "alguém ali no meio" que liga web, mobile, desktop e outras APIs à "mesma fonte de dados"; o HTTP é a troca de mensagens em que "o cliente pede e o servidor responde de volta".
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], front-end é "a parte de frente de usuário" e back-end é "aquele que vai lá no banco de dados, que constrói as funcionalidades". O JavaScript do front também é lógica; a divisão é onde o código roda.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
@@ -66,3 +68,4 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], uma API é "alguém ali no meio" qu
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: restaurante e troca de dados
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: responsabilidades do back-end
 - [[wiki/sources/jstack-http-e-apis-rest]]: API no meio de vários clientes; HTTP como troca de mensagens
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: front em contato com o usuário, back no banco

@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 20
+source_count: 21
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -63,6 +63,8 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: "todo e qualque
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `padding-bottom` do `legend` separa o texto do `border-bottom`: "o preenchimento vem e depois vem a borda". Sem o padding, a borda fica grudada no texto.
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], Násser faz a ponte para o JavaScript: "lá em CSS tudo é div, tudo é caixa, aqui praticamente tudo é objeto".
+
 ## Key sources
 
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
@@ -84,3 +86,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `paddi
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: caixa, shorthand horário, box-sizing com exemplo
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reset com `box-sizing: border-box`; padding de 16 px nos itens
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: padding antes da borda no legend
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: "tudo é caixa" vira "tudo é objeto"

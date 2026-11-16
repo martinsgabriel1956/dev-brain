@@ -4,7 +4,7 @@ title: "Debugging"
 aliases: ["depuração", "encontrar bugs"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stub
@@ -47,6 +47,8 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], Mayk lê os erros em voz alta: `near "Fernandes": syntax error` (faltavam aspas), uma vírgula sobrando, `no such column`, `filter is not defined`, "Cannot POST /save-classes" (rota com nome diferente) e um espaço solto na query. "Identificar, entender, resolver." O SQL "não fala exatamente onde tá o erro".
 
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], [[wiki/entities/nasser|Násser]] faz do `console.log` um hábito: "o programador sempre tem que estar plotando no console para ver qual é a direção que o código está tomando" quando há "bifurcações". O depurador do DevTools faz o mesmo sem editar o código.
+
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
@@ -60,3 +62,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], Mayk lê os erros 
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — debug diagnostica mas **não prova** a correção; evidenciar o erro antes e repetir o mesmo teste depois ([[wiki/concepts/evidenciar-o-problema]], [[wiki/concepts/provar-que-corrigiu]])
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: console.log em cada bifurcação

@@ -3,8 +3,8 @@ type: concept
 title: "História do Front End"
 aliases: ['front-end history', 'linha do tempo da web']
 date_created: 2026-10-14
-date_updated: 2026-11-12
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [frontend, historia, web, fundamentos]
 skill: tech-mentor-frontend
 status: stable
@@ -31,7 +31,10 @@ A tecnologia ainda resolve o problema da melhor forma? Já surgiram substitutos?
 
 Estrutura recorrente a ter na cabeça: **árvores** (elementos HTML, atributos de estilo CSS, páginas linkadas). Ver [[wiki/concepts/dom]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], a linha do tempo resumida: antes do ES6 (2015) o JavaScript era "um pouco arcaico" e o [[wiki/concepts/jquery]] supria o que faltava; depois, Babel, Webpack e o JS mais completo nativamente ([[wiki/concepts/ecmascript]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]: o npm já como pré-requisito dado, sem o contexto histórico
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: antes e depois do ES6

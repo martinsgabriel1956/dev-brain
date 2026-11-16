@@ -4,7 +4,7 @@ title: "Critical Rendering Path"
 aliases: ["pipeline de renderização do browser", "caminho crítico de renderização", "URL para pixel"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [browser, rendering-pipeline, critical-rendering-path, performance, dom, cssom]
 skill: tech-mentor-frontend
 status: draft
@@ -43,7 +43,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `<scri
 
 Em [[wiki/sources/frontpush-import-e-partials-sass]], o Sass junta os arquivos num `style.css`. `[skill: tech-mentor-frontend]` Como CSS bloqueia a renderização, o que pesa é o tamanho do CSS necessário para a primeira tela e evitar `@import` nativo (download em série), não só o número de arquivos. Ver [[wiki/concepts/import-e-partials-sass]].
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o painel Elements é apresentado como "a árvore DOM de elementos" com HTML, estilos e layout; são etapas diferentes deste pipeline (DOM, CSSOM, layout) mostradas na mesma tela.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: script no começo do body x defer
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass: um CSS só × CSS crítico
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: DOM, estilos e layout no painel Elements

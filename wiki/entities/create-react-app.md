@@ -4,7 +4,7 @@ title: "Create React App"
 aliases: ["CRA", "create-react-app", "react-scripts"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [react, build, scaffolding, ferramenta, descontinuado]
 skill: tech-mentor-frontend
 status: stub
@@ -24,8 +24,11 @@ Relacionado: [[wiki/entities/react]], [[wiki/entities/typescript]].
 
 `yarn create react-app web --template typescript`; limpeza de README, CSS, teste, logo, `serviceWorker` (PWA) e `setupTests`; o `react-scripts` com Webpack e Babel. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], a aula diz que "por isso que tem o create-react-app, ele renderiza dentro dessa div chamada app". O CRA usa `div#root`, e o nome não vem da div; `#app` é o do Vue CLI.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: criação do projeto com template TypeScript
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: limpeza e estrutura
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: template TypeScript e react-scripts
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: "create-react-app" atribuído à div#app (impreciso)

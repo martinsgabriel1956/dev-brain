@@ -4,7 +4,7 @@ title: "async/await (JavaScript)"
 aliases: ["async await", "await", "async function", "Promise.all", "função assíncrona"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [javascript, assincronia, promise, async-await, promise-all, nodejs, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -32,6 +32,8 @@ Handlers `async` e `await` em cada operação do Knex, "a famosa promise". Sem `
 
 `async function searchTeachers` com `await api.get('classes', { params })`; sem `try/catch`, o 400 por filtro ausente vira rejeição não tratada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], async/await entra no roteiro do módulo de JavaScript do FrontPUSH como novidade do ES6+ e base da comunicação do front-end com o back-end. `[external]` Chegou no ES2017 (ES8), dois anos depois das promises ([[wiki/concepts/ecmascript]]).
+
 ## No JStack, aula 03
 
 [[wiki/sources/jstack-o-que-sao-modulos]] ensina módulos CommonJS, onde não há top-level `await`. Ver [[wiki/concepts/modulos-nodejs]].
@@ -41,4 +43,5 @@ Handlers `async` e `await` em cada operação do Knex, "a famosa promise". Sem `
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: await no createProffy, async obrigatório, Promise.all explicado como sequencial
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: await no Knex e Express 4
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: busca de professores sem catch
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: async/await no roteiro, ES2017
 - [[wiki/sources/jstack-o-que-sao-modulos]]: módulos CJS, sem top-level await

@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 16
+source_count: 17
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -48,6 +48,9 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o Node "não é uma linguagem
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 Defendido pelo mesmo JavaScript do front e do mobile e pelo non-blocking I/O; streams e worker threads como "as coisas mais legais"; Deno como "o irmão do Node". Node 12.18 LTS na gravação. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o Node é instalado na aula 02 do módulo de JavaScript, e a aula 01 diz que o JS serve "tanto no front-end como no back-end", sem nomear o runtime.
+
 ## No JStack, aula 03 (Mateus Silva)
 
 Em [[wiki/sources/jstack-o-que-sao-modulos]]: `node index.js` roda um arquivo (a extensão pode ser omitida); três tipos de módulo (próprios, nativos como `http`, `os`, `dns`, `v8`, e pacotes do npm); `require` e `module.exports` (CommonJS); `require('os')` e `os.type()` → `Darwin`. Ver [[wiki/concepts/modulos-nodejs]].
@@ -78,6 +81,7 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: tabela de 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: module.exports, require, __dirname
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: JStack aula 01: runtime, V8, call stack, libuv, thread pool, event loop
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: por que Node; streams e worker threads
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: JS no back-end
 - [[wiki/sources/jstack-o-que-sao-modulos]]: JStack aula 03: node index.js, módulos, require, os
 - [[wiki/sources/jstack-criando-o-servidor-http]]: JStack aula 04: servidor com http, sem reload
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: JStack aula 05: primeira rota GET /users

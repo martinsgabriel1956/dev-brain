@@ -3,8 +3,8 @@ type: concept
 title: "Objeto vs. Estrutura de Dados"
 aliases: ["object vs data structure", "objetos e estruturas de dados", "data structure antithesis"]
 date_created: 2026-07-24
-date_updated: 2026-08-23
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [clean-architecture, uncle-bob, oop, encapsulamento, dto, orm, modelo-de-dominio-anemico, expression-problem, dependency-inversion]
 skill: tech-mentor-backend
 status: stable
@@ -72,8 +72,11 @@ Esse segundo padrão é o que Martin chama de **Dependency Inversion** neste pos
 
 [[wiki/sources/arquitetura-limpa-na-pratica]] leva a crítica ao ORM um passo além: usar o padrão **Active Record** (a entidade conhece como persistir a si mesma) diretamente numa entidade de domínio é descrito como impossível dentro da Clean Architecture, porque a própria definição do padrão mistura código de persistência com regra de negócio do domínio, violando a Regra de Dependência. O autor considera aceitável usar Active Record em estruturas de dados (DTOs) na camada externa, onde não há regra de negócio para proteger.
 
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], o objeto JavaScript é dado como "um conjunto de variáveis [...] e funções" com atributos públicos e mutáveis (`retangulo.a = 2`): na prática, uma estrutura de dados com métodos, sem o encapsulamento que esta página associa a objetos.
+
 ## Key Sources
 
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — transcrição de vídeo sobre o post do blog de Uncle Bob, e as duas implicações práticas (ORM, diagrama de Clean Architecture web)
 - [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — post original do blog de Uncle Bob (fonte primária, lido na íntegra): confirma as definições, e adiciona o trade-off de extensibilidade (Expression Problem) e o argumento de direção de dependência (Dependency Inversion)
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — extensão da crítica ao ORM: por que Active Record aplicado a entidades de domínio viola a Regra de Dependência
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: objeto literal com atributos expostos

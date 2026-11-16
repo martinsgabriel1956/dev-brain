@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 98
+source_count: 108
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -14,7 +14,7 @@ status: stub
 
 Instrutor de um curso em PT-BR com módulo de UI Design. Não se apresenta como UI designer de carreira: diz que estuda design porque gosta de criar as próprias interfaces e trabalha como freelancer. Recebe perguntas de alunos pelo Instagram e usa o [[wiki/entities/figma]] no curso ([[wiki/sources/como-aprender-ui]]).
 
-Nome confirmado pelo usuário em 2026-11-13; as legendas automáticas transcreveram "Nácia". Sobrenome desconhecido.
+Nome confirmado pelo usuário em 2026-11-13; as legendas automáticas transcreveram "Nácia". Sobrenome dito na aula 02 do módulo de JavaScript ([[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]): "Yousef, que é o meu sobrenome", na grafia da legenda automática (pode ser Youssef ou Yusuf; não confirmado).
 
 Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada em [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]: o autor diz o próprio nome ("Ah, Násser, como assim?") e mostra o site frontpush.com.br como "a minha interface". Usa o Feather Icons e diz ter posts sobre grids no Instagram.
 
@@ -105,6 +105,46 @@ Em [[wiki/sources/frontpush-funcoes-sass]] (autoria inferida): "o que eu mais ut
 ## Grid system próprio
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]] (diz o nome): usa um grid system "muitíssimo parecido" com o do Bootstrap em vez de `flex-grow` "no olho"; quase sempre só o breakpoint de 960 px, "que é os que eu tenho menos dor de cabeça".
+
+## Módulo de JavaScript
+
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], Násser abre o módulo de JavaScript ES6+ "de cenário novo": não é um curso "completaço", e sim o básico antes do React, com HTML e CSS como pré-requisito.
+
+## Módulo de JavaScript, aula 02
+
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], Násser sai da tela ("escutando apenas a minha voz") e diz o sobrenome ao usá-lo como exemplo de reatribuição de `const`. Leva o "tudo é caixa" do CSS para o "tudo é objeto" do JavaScript.
+
+## Módulo de JavaScript, aula 03
+
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], usa os próprios nomes no `switch`: Násser ("o nome"), Yousef ("o sobrenome") e Ali ("o meu terceiro nome"), na grafia da legenda. Prefere `if/else` a `switch` e insiste em "plotar no console".
+
+## Módulo de JavaScript, aula 04
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], a legenda volta a transcrever o nome como "Nácia" ("Ah, Nácia, como assim?") e, no exemplo do `upperName`, como "Nasser".
+
+## Módulo de JavaScript, aula 05
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], volta à câmera com uma caneta para explicar abstração e chama a aula de "uma das mais importantes". Ideia recorrente: "a grande magia do JavaScript está em a gente descobrir" os objetos e métodos que já existem.
+
+## Módulo de JavaScript, aula 06
+
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], trava o próprio navegador com um `while` sem incremento e mantém o erro no vídeo como lição ("vocês viram eu passando o problema aí justamente na prática").
+
+## Módulo de JavaScript, aula 07
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], insiste em praticar ("para você aprender programação, não tem jeito, é prática") e ensina `forEach` e `map` com marcas e modelos de carros.
+
+## Módulo de JavaScript, aula 08
+
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], recomenda pesquisar o DOM "de forma leiga" no Google e no Stack Overflow, porque "literalmente é um mundo de coisas que dá para fazer". A legenda o chama de "Nácio".
+
+## Módulo de JavaScript, aula 09
+
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], cria pelo JavaScript um link para o próprio site (frontpush.com.br) e o anexa a uma `div#app`. Não diz o nome nesta aula.
+
+## Módulo de JavaScript, aula 10
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], chama eventos de "a aula mais importante" do DOM e deixa o recado "só a sua criatividade que vai te limitar". Usa `toggle` "demais" nos menus hambúrguer. A legenda o chama de "Anás".
 
 ## Key Sources
 
@@ -206,3 +246,13 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]] (diz o nome): usa um grid
 - [[wiki/sources/frontpush-for-while-each-sass]]: aula 08 do módulo de CSS Sass
 - [[wiki/sources/frontpush-funcoes-sass]]: aula 09 do módulo de CSS Sass (inferido)
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: aula 10 do módulo de CSS Sass
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: módulo de JavaScript, aula 01 (diz o nome)
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: módulo de JavaScript, aula 02 (diz nome e sobrenome)
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: módulo de JavaScript, aula 03 (nome, sobrenome e terceiro nome)
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: módulo de JavaScript, aula 04 ("Nácia" na legenda)
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: módulo de JavaScript, aula 05 (diz o nome)
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: módulo de JavaScript, aula 06 (diz o nome)
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: módulo de JavaScript, aula 07
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: módulo de JavaScript, aula 08 ("Nácio" na legenda)
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: módulo de JavaScript, aula 09 (autoria pela sequência)
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: módulo de JavaScript, aula 10 ("Anás" na legenda)

@@ -4,7 +4,7 @@ title: "Pipeline de Assets (minificação e concatenação)"
 aliases: ['asset pipeline', 'minify', 'bundling']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [build, minificacao, webpack, performance, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -26,9 +26,12 @@ Em [[wiki/sources/frontpush-import-e-partials-sass]]: dividir em vários `.scss`
 
 No `react-scripts`, o Webpack "faz a automatização desse processo" e permite importar SVG e CSS pelo JavaScript (`import logoImg from '.../logo.svg'`, `import './styles.css'`). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], Webpack e Babel aparecem como se fossem novidades do ES6+; são etapas deste pipeline, populares porque a sintaxe nova saiu antes do suporte dos navegadores ([[wiki/concepts/ecmascript]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Sass `compressed` e `.map`
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: concatenação por `@import`
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Webpack do CRA: imagem e CSS por import
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: Webpack e Babel no ES6+

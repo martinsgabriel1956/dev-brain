@@ -4,7 +4,7 @@ title: "Layout (Reflow)"
 aliases: ["reflow", "layout do browser"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [browser, layout, reflow, rendering-pipeline, box-model, performance]
 skill: tech-mentor-frontend
 status: draft
@@ -23,6 +23,9 @@ Unidades relativas viram absolutas nessa etapa: `width: 50%` vira um valor em pi
 
 O truque do menu mobile em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]] (`position: relative` com −1000 px, zero no clique, `transition`) anima `top`/`left`, que refazem o layout a cada quadro. `transform: translateX()` dá o mesmo efeito sem reflow `[skill: tech-mentor-frontend]`. Ver [[wiki/concepts/paint-composite]] e [[wiki/concepts/css-position]].
 
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o link é montado inteiro (atributo e texto) e anexado à página uma vez só, o que evita recálculos de layout repetidos. Para muitos nós, `DocumentFragment`.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: menu animado por `top`/`left` (reflow) x `transform`
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: montar fora da página e anexar uma vez

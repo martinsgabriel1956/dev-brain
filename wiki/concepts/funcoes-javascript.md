@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 12
+source_count: 16
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -61,13 +61,23 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], funções `async` 
 
 Em [[wiki/sources/frontpush-funcoes-sass]]: "um bloco que retorna sempre um valor", "na grande maioria das linguagens"; parâmetros com padrão (`$total: 12`) como no JS; concatenação de strings com `+`, "muito parecido com o JavaScript". Ver [[wiki/concepts/funcoes-sass]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], as arrow functions entram na lista de novidades do ES6+ que o módulo vai "esmiuçar". `[external]` São do ES2015 ([[wiki/concepts/ecmascript]]).
+
 ## No JStack, aula 03
 
 Em [[wiki/sources/jstack-o-que-sao-modulos]], `module.exports` pode ser a própria função (`module.exports = printName`), e `exports.printName = (name) => ...` declara e exporta de uma vez, "um pouco mais enxuto" com arrow function. Chamar a função sem importá-la dá `is not defined`; importar sem exportar dá `is not a function`.
 
+## No FrontPUSH, módulo de JavaScript, aula 04 (Násser)
+
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], [[wiki/entities/nasser|Násser]]: funções são "blocos de códigos que são reaproveitados" (`areaRetangulo` num programa de polígonos); "quando eu escrevo aqui é parâmetro, quando eu passo diretamente é argumento", a distinção que a NLW #1 não fez; `helloWorld` "não me retorna nada" (devolve `undefined`); e `return a * b` só aparece no console dentro de um `console.log`. Declaração, expressão e arrow são "exatamente a mesma coisa" na aula, o que não vale para hoisting e `this` ([[wiki/concepts/arrow-functions]]). A "regrinha" de que o tipo que entra é o tipo que sai não é regra; a boa prática é devolver sempre o mesmo tipo.
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], funções como valor de propriedade (métodos), o *method shorthand* `area() {}` "do JavaScript 6", e a regra "sempre que for uma função, eu preciso executar": `quadrado.area` mostra a função, `quadrado.area(4)` a executa. No console, a função exibe `[[Scopes]]`, `arguments` e `length`, sinal de que também é objeto.
+
 ## No JStack, aula 06
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: função como valor numa propriedade (`handler: UserController.listUsers`), chamada depois. Cuidado anunciado pela própria aula (classes no próximo módulo): método de classe passado como referência perde o `this`; `bind`, arrow function como propriedade ou um wrapper `(req, res) => c.listUsers(req, res)` resolvem.
+
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], referência × execução no listener: `addEventListener('click', callback)` passa a função; `callback()` a executaria na hora.
 
 ## Key sources
 
@@ -81,5 +91,9 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: função c
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: arrow function, return, getSubject
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: async function, return no then
 - [[wiki/sources/frontpush-funcoes-sass]]: paralelo com funções do Sass
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: arrow functions como novidade do ES6
 - [[wiki/sources/jstack-o-que-sao-modulos]]: função exportada; arrow function em exports.printName
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: parâmetro × argumento, return, três formas
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: métodos, shorthand e referência × execução
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: referência de função; this em métodos de classe
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: passar a função, não o resultado

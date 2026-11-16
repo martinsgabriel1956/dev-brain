@@ -4,7 +4,7 @@ title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -55,6 +55,8 @@ Cada uma dessas operações corresponde a uma **porta lógica** física — um c
 - [[wiki/concepts/cmos]] — a topologia elétrica complementar usada para construir essas portas com baixo consumo
 - [[wiki/concepts/operacoes-booleanas-em-formas]] — a mesma álgebra aplicada a áreas vetoriais (union, subtract, intersect, exclude)
 
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], a regra de entrada no JavaScript: "uma estrutura condicional só entende" `true` ou `false` e converte qualquer valor para um dos dois ([[wiki/concepts/truthy-e-falsy]]). `&&` e `||` são o "e" e o "ou", agrupados com parênteses.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
@@ -69,3 +71,4 @@ AND, OR, NOT, aspas e parênteses aplicados à busca de vagas no LinkedIn e no G
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: booleano, && e || no JS

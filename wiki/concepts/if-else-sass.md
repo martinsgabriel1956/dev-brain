@@ -4,7 +4,7 @@ title: "@if e @else no Sass (controle de fluxo)"
 aliases: ["@if", "@else", "@else if", "if else Sass", "controle de fluxo Sass", "operadores Sass"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [css, sass, scss, if-else, controle-de-fluxo, mixin]
 skill: tech-mentor-frontend
 status: stub
@@ -39,7 +39,10 @@ Regras do [[wiki/concepts/pre-processador-css|Sass]] que escolhem o que entra no
 
 Em [[wiki/sources/frontpush-for-while-each-sass]], `@for`, `@while` e `@each` completam o controle de fluxo; o `@while` é "meio que um if encadeado". Ver [[wiki/concepts/loops-sass]].
 
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], o mesmo `if / else if / else` no JavaScript, que roda no navegador e decide com [[wiki/concepts/truthy-e-falsy|truthy/falsy]]. No Sass só `false` e `null` são falsos; no JS, `0` e `''` também.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-if-else-sass]]: tema light/dark; mixins de tipografia e layout do projeto Nubank
 - [[wiki/sources/frontpush-for-while-each-sass]]: `@while` como "if encadeado"
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else no JS × no Sass

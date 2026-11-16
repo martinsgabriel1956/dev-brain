@@ -4,7 +4,7 @@ title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,10 @@ O AsyncStorage só guarda texto, então os favoritos vão com `JSON.stringify` e
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `response.end(JSON.stringify(users))` com `Content-Type: application/json`, porque `end` não aceita array (aceita string ou Buffer). JSON é UTF-8 por definição, então "José" não precisa de `charset`.
 
+Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], JSON "basicamente são arrays, objetos" que vêm do back-end para o front-end mostrar. É texto com essa sintaxe; precisa de `JSON.parse` (ou `response.json()`) para virar objeto.
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], os dados do back-end "vão voltar em forma de objeto, seja em XML, seja em JSON". Chegam como texto e precisam de parse antes de virar array de objetos.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: JSON x objeto JavaScript, resposta do IBGE
@@ -57,3 +61,5 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `response.end(JSON.st
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: JSON como formato da API REST
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: JSON no AsyncStorage
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: JSON.stringify no response.end
+- [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: JSON do back-end como motivo para estudar arrays
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: XML ou JSON vindos do back-end

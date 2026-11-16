@@ -4,7 +4,7 @@ title: "Renderização condicional (React)"
 aliases: ["conditional rendering", "&& no JSX", "ternário no JSX", "early return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [react, react-native, jsx]
 skill: tech-mentor-mobile
 status: stub
@@ -32,6 +32,8 @@ Relacionado: [[wiki/concepts/jsx]], [[wiki/concepts/useState]], [[wiki/concepts/
 
 `if (!fontsLoaded) return <AppLoading />` até as fontes do `useFonts` carregarem, para "parecer que o app ainda está carregando". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], `&&` aparece só como "e" lógico ("as duas têm que ser true"). O mesmo operador devolve o operando que decide, e é isso que o `cond && <A />` usa ([[wiki/concepts/truthy-e-falsy]]).
+
 ## Na NLW #2, dia 5 (Diego Fernandes)
 
 `{isFiltersVisible && (<View>...</View>)}` para mostrar e esconder os filtros, e `{headerRight}` no header; ternário para ícone e estilo do favorito. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
@@ -41,4 +43,5 @@ Relacionado: [[wiki/concepts/jsx]], [[wiki/concepts/useState]], [[wiki/concepts/
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: MapView condicionado à posição; early return no detalhe
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: && para a descrição opcional
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: AppLoading até as fontes
+- [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: && como "e" lógico, sem curto-circuito
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros com && e headerRight

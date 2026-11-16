@@ -4,7 +4,7 @@ title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
 date_updated: 2026-11-16
-source_count: 28
+source_count: 29
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -123,6 +123,8 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: o layout do projeto foi desenhado pa
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o projeto foi layoutado com Flexbox (`flex-grow` 2 e 1, ajustado no olho); o mixin `responsive` com `xl`–`xs` também vem dele.
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o projeto do Nubank do FrontPUSH é lembrado como o lugar onde a "manipulação DOM de elementos" já foi usada para dar interatividade.
+
 ## Key Sources
 
 
@@ -154,3 +156,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o projeto foi layoutado 
 - [[wiki/sources/frontpush-for-while-each-sass]]: grid de colunas do layout (Sass, aula de loops)
 - [[wiki/sources/frontpush-funcoes-sass]]: layout 1920, grid 1416, função `grid()`
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: layout por flex-grow; mixin `responsive`
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: manipulação do DOM no projeto Nubank

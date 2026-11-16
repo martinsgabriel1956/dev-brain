@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 22
+source_count: 23
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -79,6 +79,8 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], três lugares p
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: "o Sass não é lido pelo browser [...] o browser sempre vai entender HTML, CSS e JavaScript". O pré-processador só gera CSS ([[wiki/concepts/pre-processador-css]]); SCSS mantém a sintaxe do CSS puro para não esquecê-la.
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o CSS é "mais voltado para estilização" e, com o HTML, "não têm muita inteligência, apesar de que o CSS tenha evoluído tanto". Pré-requisito do módulo de JavaScript.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -103,3 +105,4 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: "o S
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: CSS-em-JS do React Native
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style, <style> e <link>
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: o navegador só entende CSS
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: CSS como estilo e pré-requisito do JS

@@ -4,7 +4,7 @@ title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -58,6 +58,10 @@ O Ecoleta nos dois modelos, lado a lado: [[wiki/questions/nlw-1-duas-trilhas-eco
 
 O Proffy nos dois modelos (formulário com POST e Nunjucks x estado do React com `api.post`): [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], a "dinamicidade" do e-commerce é atribuída ao JavaScript, mas cada produto numa página própria também sai do servidor (SSR), o caminho comum em lojas por causa de SEO.
+
+Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], a demo é CSR em miniatura: página vazia, JavaScript cria o link e o anexa a `div#app`. A frase "o JavaScript sozinho constrói a página" só vale para esse modo.
+
 ## Key Sources
 
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
@@ -72,3 +76,5 @@ De novo a `div#root` vazia: o React "vai rodar sempre a partir do lado do client
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: o Ecoleta em CSR (API + React) x a versão SSR com Nunjucks
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Ecoleta web em CSR (div#root vazia)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: div#root e MVC × SPA
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: dinâmico no servidor × no navegador
+- [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: CSR em miniatura

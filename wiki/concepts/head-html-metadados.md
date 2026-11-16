@@ -4,7 +4,7 @@ title: "head do HTML e metadados (meta charset, viewport, title)"
 aliases: ["head", "<head>", "tags meta", "meta charset", "meta viewport", "metadados HTML", "title"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [html, head, meta, utf-8, viewport, responsivo, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,8 +30,11 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], "todo o conteú
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o head ganha `<link rel="shortcut icon" href="images/favicon.png" type="image/png">` e `<meta name="theme-color" content="#8257E5">`. `rel="icon"` é o valor padrão; "shortcut" é legado. A repetição desses metadados em todas as páginas fica para ser resolvida no back-end.
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o `head` aparece dentro de `document` com `meta` e `title`, "os metadados da minha página". A aula também chama a `location` (URL) de metadados; não é.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: head como cabeçalho de metadados; charset, viewport e title
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: head x body, lang, charset, viewport, title
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: favicon e theme-color
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: head no document

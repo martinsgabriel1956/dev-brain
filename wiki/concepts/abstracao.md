@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-10-14
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -80,6 +80,8 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 
 Ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] e [[wiki/concepts/custo-de-abstracao-em-runtime]]: na tese de [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], abstrações de linguagem existem para o humano e cobram overhead de runtime.
 
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a abstração no sentido de modelagem: "muita coisa precisou ser abstraída do mundo real para o mundo computacional", e a caneta vira um conjunto de características e funções. É o outro lado desta página: escolher o que o modelo mostra, além de esconder o como.
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
@@ -95,3 +97,4 @@ Ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] e [[wiki/concept
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — abstração sobre o hardware como definição de alto nível; troca controle por portabilidade ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: abstrair o mundo real em objetos

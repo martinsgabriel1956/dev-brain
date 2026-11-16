@@ -4,7 +4,7 @@ title: "React Native"
 aliases: ["RN"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [mobile, react-native, react, javascript, ios, android, cross-platform]
 skill: tech-mentor-mobile
 status: stub
@@ -29,6 +29,8 @@ No dia 4 da NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki
 
 Citado como renderizador irmão do `react-dom`: o mesmo núcleo `react`, com a interface "nativa do iOS, do Android". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o React Native é dado como prova de que o JavaScript cresce porque a mesma linguagem vai do front ao mobile.
+
 ## Na NLW #2, dia 4 (Diego Fernandes)
 
 NLW #2: "90%, se não mais" do React web reaproveitado; `View`/`Text`, `StyleSheet` em camelCase, sem herança, flexbox em column, `ImageBackground`, `resizeMode`, `elevation` no Android. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
@@ -42,5 +44,6 @@ Dia 5: `source={{ uri }}` exige largura e altura, sem atalho `border`, `ScrollVi
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: abordagem tradicional x React Native, JavaScriptCore, interface nativa
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o app do Ecoleta: diferenças da web, navegação, mapa e deep link
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: renderizador irmão do react-dom
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: JS no mobile
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Proffy: View/Text, StyleSheet, ImageBackground
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: uri, ScrollView, TextInput e Linking

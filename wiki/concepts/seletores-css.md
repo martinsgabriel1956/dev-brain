@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 12
+source_count: 13
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -100,6 +100,8 @@ Em [[wiki/sources/frontpush-import-e-partials-sass]]: "eu quero estilizar apenas
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "a questão ou não de ter o espaço é importantíssimo no CSS". `a .active` = elemento com `.active` dentro de um `a`; `a.active` = o próprio `a` com a classe. No SCSS, o aninhamento põe o espaço, e o `&` cola ([[wiki/concepts/aninhamento-css]]).
 
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `querySelector` aceita os mesmos seletores do CSS (`h1`, `.classe`, `#id`, atributo): "Selector vem de seletor, que é o seletor do CSS", e por isso o curso pede CSS antes de JavaScript.
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -114,3 +116,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "a questão ou não de t
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: `h1 span` e o equivalente aninhado
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: descendente gerado por aninhamento
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `a .active` × `a.active`; `&`
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: seletores de CSS no querySelector

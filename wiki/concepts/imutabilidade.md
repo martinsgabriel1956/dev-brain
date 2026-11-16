@@ -4,7 +4,7 @@ title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
 date_updated: 2026-11-16
-source_count: 8
+source_count: 11
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -82,6 +82,12 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o `handleSelectItem` com `filter` e spread é copiado da web sem mudança, e os estilos em array (`[styles.item, cond ? styles.selectedItem : {}]`) seguem a mesma lógica.
 
+Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], o `const` do JavaScript é "uma variável que não é para alterar o conteúdo". `const` impede reatribuir o nome; o objeto guardado continua mutável (`Object.freeze` para congelar). Ver [[wiki/concepts/var-let-const]].
+
+Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], `retangulo.a = 2` e `retangulo.border = 1` mudam e acrescentam propriedades depois de criado o objeto, a mutação comum em JavaScript. `Object.freeze` impediria as duas.
+
+Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `map` e `forEach` não mudam o array original: o `map` devolve um array novo (a aula diz "modificado") e o `forEach` só executa o callback. Ver [[wiki/concepts/metodos-de-array-javascript]] para quais métodos mutam (`push`, `sort`) e quais copiam.
+
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
@@ -102,4 +108,7 @@ O toggle de favorito usa `push` e `splice` no array lido do storage; como é uma
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: estado React: spread em vez de push
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: mesma seleção imutável no mobile
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: spread e map nos horários
+- [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: const ≠ imutável
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: push/splice no array de favoritos
+- [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: objeto mutável por padrão
+- [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map devolve array novo

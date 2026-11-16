@@ -3,8 +3,8 @@ type: entity
 title: "Vue.js"
 aliases: ["Vue", "Vue 3", "Vue.js"]
 date_created: 2026-11-12
-date_updated: 2026-11-12
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [frontend, framework, javascript, vue, reatividade]
 skill: tech-mentor-frontend
 status: stub
@@ -18,8 +18,11 @@ Framework JavaScript de UI. Usa [[wiki/concepts/virtual-dom]] na renderização 
 
 Pré-requisitos: [[wiki/entities/nodejs]] e um [[wiki/concepts/gerenciador-de-pacotes]]. O caminho oficial atual é `npm create vue@latest` (`create-vue`, com Vite). O Vue CLI (`@vue/cli`, comando `vue`) está em modo de manutenção ([external](https://cli.vuejs.org/guide/)), embora cursos ainda o ensinem ([[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]). O número que `vue --version` mostra é do CLI, não do framework. Ver [[wiki/concepts/scaffolding-de-projeto]].
 
+Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], o Vue é citado com o React como framework cheio de arrow functions. No Vue (Options API), `methods` e `computed` escritos como arrow perdem o `this` do componente ([[wiki/concepts/arrow-functions]]).
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions e o this do Vue

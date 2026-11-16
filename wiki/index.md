@@ -26,10 +26,20 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]] | Aula 10 do módulo de JavaScript ES6+ do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], "Anás" na legenda): "tudo que você faz no seu browser é um evento"; [[wiki/concepts/event-listener-javascript\|addEventListener]] com callback nomeado por referência; `event.currentTarget` (quem escuta) × `target` (onde clicou) numa `.box` com filhos; type, path; lista de eventos; `classList.toggle('red')` + transition; `keydown`/`resize` no window, `event.key` com if/else if. É [[wiki/concepts/propagacao-de-eventos-dom\|bubbling]] (não nomeado); `path` removido (composedPath); this é o elemento; div não recebe keydown sem foco; keypress obsoleto; toggle acumula cores; div clicável sem teclado |
+| [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]] | Aula 09 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência): criar HTML só com JavaScript como "princípio" da [[wiki/concepts/single-page-application\|SPA]] e do React; [[wiki/concepts/criacao-de-elementos-dom\|createElement('a')]], `setAttribute('href', ...)`, `createTextNode` + `appendChild`, anexado a `div#app` via `querySelector`. CRA usa `#root` (não vem de `#app`); React não renderiza CSS e compara árvores; `<a>` nasce sem href; nó de texto não é elemento; textContent/append mais curtos; createElement é seguro contra XSS |
+| [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]] | Aula 08 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], "Nácio" na legenda): [[wiki/concepts/dom\|DOM]] como "interface que representa o HTML por meio de objetos"; painel Elements; criar/retirar tags, atributos, classes, por eventos (clique, scroll, arrastar, tecla); [[wiki/concepts/window-e-bom\|window]] → location, document → html/head/body; pesquisar "de forma leiga"; `querySelector` com seletor de CSS, `innerText`, `classList` (DOMTokenList), `id`. Estilos são do CSSOM; `window.x.y` é BOM, não a árvore; location não é metadado; querySelector só o primeiro (ou null) |
 | [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]] | Aula 06 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `UserController` (objeto com `listUsers`) como lugar de "toda a regra de negócio" e do [[wiki/concepts/crud\|CRUD]]; `require('../mocks/users')` ao mover de pasta; `routes.js` com `{ endpoint, method, handler }`, handler passado por referência; `routes.find(...)` + `route.handler(req, res)` ou 404. Correções: [[wiki/concepts/controller\|controller]] é borda HTTP (regra em service/use case, senão fat controller), referência de método de classe perde o `this`, comparação exata não casa `/users/:id`, `require` relativo ao arquivo × fs ao cwd, `UserController.js` × `userController` quebra no Linux |
+| [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]] | Aula 07 do módulo de JavaScript ES6+ do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): dados do back-end "em XML ou JSON"; [[wiki/concepts/callback-javascript\|callback]] a partir do `addEventListener`; `forEach` ("each vem para cada") com item, índice e array, nomes livres, ordem fixa; arrow em uma linha; `map` "devolve um array modificado", `forEach` "não devolve nada"; `marcas.map` + `carros[index]` junta os arrays. forEach recebe (não devolve) callback; nenhum dos dois muda o original; e como nome de item confunde; forEach não aceita break/await |
+| [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]] | Aula 06 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): JSON do back-end como motivo; [[wiki/concepts/array\|array]] como "variável com vários compartimentos", índice como gaveta a partir de 0, aninhado, `pop`/`push`/`length`; [[wiki/concepts/estruturas-de-repeticao-javascript\|for e while]] com "como começa, termina, modifica"; 13 voltas em vez de 12; loop infinito ao vivo trava o browser; `i < frutas.length`. O while não vê mudanças externas (thread única); incremento do for é no fim; for...of/forEach evitam off-by-one; JSON é texto |
 | [[wiki/sources/jstack-criando-a-primeira-rota-da-api]] | Aula 05 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `request.method`/`request.url`, favicon do navegador; `if (url === '/users' && method === 'GET')` como primeira [[wiki/concepts/roteamento-http\|rota]]; `application/json` + `JSON.stringify`; dados em `src/mocks/users.js`; 404 "Cannot GET /asd" no formato do Express, 405 citado e descartado. Correções: `request.url` inclui query string (usar `new URL().pathname`), URL refletida em HTML sem escapar ([[wiki/concepts/xss\|XSS]]), 405 com `Allow`, `end` aceita Buffer, "mocks" ≠ test doubles, Chrome já formata JSON |
+| [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]] | Aula 05 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): programação resolve problemas, [[wiki/concepts/abstracao\|abstração]] com a caneta (características → atributos, funções → métodos); [[wiki/concepts/objetos-javascript\|objeto]] `{}` com `typeof` object; `quadrado` e `retangulo` com ponto, referência × execução, `this`, method shorthand do ES6; mutação e propriedade nova; "filho de outro objeto", métodos de string e número. `lado: 4` mistura comprimento e número de lados; primitivo não é objeto (autoboxing); métodos de string não são API do browser; `lastChild` não é de string; molde (class/fábrica) responderia "está muito fixo" |
+| [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]] | Aula 04 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], "Nácia" na legenda): funções como "blocos de códigos que são reaproveitados" (`areaRetangulo`); parâmetro × argumento; método × propriedade no `console`; `return` × só executar; declaração → expressão em `const` → [[wiki/concepts/arrow-functions\|arrow]] → retorno implícito; um parâmetro sem parênteses (`upperName`). Arrow não é "exatamente a mesma coisa" (`this`, `arguments`, `new`); declaração é içada; retorno implícito é por expressão; string não "vira objeto" |
+| [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]] | Aula 03 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): condicional "só entende" true/false; [[wiki/concepts/truthy-e-falsy\|truthy/falsy]] (string vazia, 0, undefined, NaN); `>`/`>=`, `==` "conteúdo" × `===` conteúdo e tipo; [[wiki/concepts/estruturas-condicionais-javascript\|if / else if / else]] como "estrutura encadeada", vários if "teoricamente errado"; `&&`/`||` com parênteses; switch com case, break e default; console.log como hábito. Faltam -0, 0n e null; `==` converte por regras próprias; if separados são outra lógica; && e || devolvem operandos; switch usa === |
 | [[wiki/sources/jstack-criando-o-servidor-http]] | Aula 04 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): primeira API em Node puro antes do [[wiki/entities/express\|Express]] ("só um framework"); código em `src/` por organização; `http.createServer((request, response) => ...)`, `writeHead(200, {'Content-Type': 'text/html'})`, `end('<h1>...')`, `listen(3000, callback)`; o Node não recarrega o código, reinício manual e nodemon citado. Correções: `node --watch` nativo desde o 22, `text/html` sem [[wiki/concepts/charset\|charset]] com "olá", handler único responde a qualquer rota (e ao favicon), `listen` sem host escuta em todas as interfaces, handle do listen mantém o processo vivo |
+| [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]] | Aula 02 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz nome e sobrenome): variável como "espacinho na memória"; [[wiki/concepts/var-let-const\|var, let e const]] com bloco solto (var vaza, let respeita, const não reatribui); case sensitive; "sete tipos" com typeof, seis mostrados; "tudo é objeto", objeto como "classe gigante"; concatenação e [[wiki/concepts/template-literals\|template string]]; [[wiki/concepts/operadores-aritmeticos-javascript\|operadores aritméticos]]. var é de função, não global; const não é imutável; faltam null e bigint; primitivos não são objetos |
 | [[wiki/sources/jstack-o-que-sao-modulos]] | Aula 03 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]]): `code .` e `node index.js`; "módulos são conjuntos de código, ponto"; três tipos (próprios, nativos, npm); `printName is not defined` → `is not a function` → [[wiki/concepts/modulos-nodejs\|module.exports]]; objeto com shorthand, [[wiki/concepts/desestruturacao-javascript\|desestruturação]] no require e `exports.x = ...`; `require('os')` e `os.type()`. Correções: é CommonJS e o ESM ficou de fora, extensão opcional só no CJS, armadilha `exports` × `module.exports`, cache de módulos, prefixo `node:` |
+| [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]] | Aula 01 do módulo de JavaScript ES6 do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): módulo para iniciantes, para "nivelar" antes do React, com HTML e CSS como pré-requisito; roteiro de lógica, DOM e eventos, JS assíncrono; ES vem de [[wiki/concepts/ecmascript\|ECMAScript]], versões pelo ano (ES6 = 2015); jQuery como sintoma do JS "arcaico"; [[wiki/entities/javascript\|JavaScript]] como linguagem de programação que torna a página dinâmica (e-commerce), no front, no back e no mobile. ECMAScript é a especificação (TC39/Ecma), Babel e Webpack são ferramentas, e o e-commerce funciona sem JS |
 | [[wiki/sources/jstack-http-e-apis-rest]] | Aula 02 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]], inferido): API como ponte de vários clientes para "a mesma fonte de dados"; request em cinco blocos (URL/endpoint, [[wiki/concepts/query-string\|query params]], [[wiki/concepts/metodos-http\|método]], [[wiki/concepts/http-headers\|headers]] com `X-Org-ID`, body em JSON ou multipart); response com [[wiki/concepts/http-status-code\|status code]]; DevTools Network; REST como "representação do estado" (JSON ✅ × HTML ❌), recursos no plural. Correções: REST é estilo de [[wiki/entities/roy-fielding\|Fielding]], HTML também é representação ([[wiki/concepts/content-negotiation\|content negotiation]]), body não é só POST/PUT, PUT × PATCH, status não é header (pseudo-header no HTTP/2), 401 ≠ 403, `X-` desaconselhado (RFC 6648), content-length em bytes |
 | [[wiki/sources/jstack-como-funciona-o-nodejs]] | Aula 01 do [[wiki/entities/jstack\|JStack]] ([[wiki/entities/mateus-silva\|Mateus Silva]], inferido): Node é runtime, não linguagem; [[wiki/entities/v8\|V8]] (2008) levado ao servidor por [[wiki/entities/ryan-dahl\|Ryan Dahl]] (2009); call stack LIFO com printDouble/double/multiply; single thread × [[wiki/concepts/non-blocking-io\|non-blocking I/O]]; [[wiki/entities/libuv\|libuv]] com [[wiki/concepts/thread-pool\|thread pool]], callback queue e event loop num `db.query`. Correções: I/O de rede não usa o pool, "bloqueante" com sentido trocado, V8 é JIT, fases + microtasks, loop dorme no epoll |
 | [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]] | Dia 4 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: back-end como cozinheiro e [[wiki/concepts/regra-de-negocio\|regra de negócio]] (o preço do sapato); [[wiki/entities/nodejs\|Node]] LTS 12, Git Bash, `src/` + `public/`; npm init, package.json, JSON; [[wiki/entities/express\|Express]] (rotas, arrow function, req/res, sendFile, static), nodemon; [[wiki/entities/nunjucks\|Nunjucks]] com for/if/loop.index; filtros por req.query; cadastro com push, Object.keys e redirect; imprecisões: `==` frouxo string x número, push sem validação, POST "esconde", porta 80 x 443, `-D` "outro lugar", static relativo ao cwd, URL do WhatsApp sem encode, [[wiki/concepts/dados-em-memoria-vs-persistencia\|dados em memória]] |
@@ -1023,6 +1033,25 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de JavaScript, aula 10: DOM parte 3, eventos (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/propagacao-de-eventos-dom]] | Captura → alvo → bubbling; `target` (origem) × `currentTarget` (quem escuta); delegação com `closest`; stopPropagation × preventDefault; capture/once/passive; composedPath; eventos que não sobem |
+
+### FrontPUSH, módulo de JavaScript, aula 09: DOM parte 2 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/criacao-de-elementos-dom]] | `createElement`, `setAttribute`/propriedades, `textContent`, `appendChild` × `append`, `remove`, `DocumentFragment`; innerHTML × XSS; frameworks montam em `#root`/`#app` |
+
+### FrontPUSH, módulo de JavaScript, aula 08: DOM parte 1 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/window-e-bom]] | `window` é o global do navegador: document (DOM), location, history, navigator, storage, fetch; linguagem × DOM × BOM; sem window no Node, `globalThis` nos dois |
+
 ### JStack, aula 06: controller e sistema de rotas (2026-11-16)
 
 | Page | Hook |
@@ -1030,17 +1059,61 @@ date_updated: 2026-11-16
 | [[wiki/concepts/controller]] | Borda de entrada do MVC/camadas: lê a request, chama o use case, traduz em status; regra de negócio fica fora (fat × thin controller); primary adapter no hexagonal |
 | [[wiki/concepts/crud]] | Create, Read, Update, Delete ↔ INSERT/SELECT/UPDATE/DELETE ↔ POST/GET/PUT-PATCH/DELETE; ações fora do CRUD como sub-recurso |
 
+### FrontPUSH, módulo de JavaScript, aula 07: forEach e map (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/metodos-de-array-javascript]] | forEach (undefined), map (array novo), filter, find, some/every, reduce; quais mutam (push, sort) e as cópias do ES2023; map sem return; forEach sem break/await; map no JSX |
+
+### FrontPUSH, módulo de JavaScript, aula 06: arrays e loops (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/estruturas-de-repeticao-javascript]] | `for` (init → condição → corpo → incremento), `while`, `do...while`, `for...of`, `forEach`/`map`; off-by-one, loop infinito trava a thread, `break`/`continue`, `let` × `var` no for |
+
 ### JStack, aula 05: primeira rota da API (2026-11-16)
 
 | Page | Hook |
 |---|---|
 | [[wiki/concepts/roteamento-http]] | Método + caminho decidem o handler; do `if` à tabela de rotas e ao roteador com `:id`; comparar `pathname`, não a URL crua; 404 × 405 com `Allow`; sempre responder |
 
+### FrontPUSH, módulo de JavaScript, aula 05: objetos (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/objetos-javascript]] | Propriedades chave → valor, método = propriedade função; ponto e colchetes; `this` depende da chamada; cadeia de protótipos e autoboxing; fábrica ou class para vários; keys/entries, spread, freeze |
+
+### FrontPUSH, módulo de JavaScript, aula 04: functions e arrow functions (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/arrow-functions]] | `(a, b) => a * b` (ES2015); retorno implícito só com expressão, `() => ({})` para objeto; sem `this` próprio, `arguments`, `new` nem hoisting; handlers no React, armadilha do `this` no Vue |
+
+### FrontPUSH, módulo de JavaScript, aula 03: estruturas condicionais (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/truthy-e-falsy]] | Condições convertem para booleano; oito falsy (`false`, `0`, `-0`, `0n`, `''`, `null`, `undefined`, `NaN`); `[]`, `{}` e `'0'` são truthy; `\|\|` × `??` |
+| [[wiki/concepts/estruturas-condicionais-javascript]] | `if / else if / else` para na primeira verdadeira; if separados para condições independentes; early return; `&&`/`\|\|` com curto-circuito; ternário; switch com `===` e fall-through |
+
+### FrontPUSH, módulo de JavaScript, aula 02: variáveis e operadores (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/template-literals]] | String com crase e `${expressão}` (ES2015); substitui a concatenação com `+`; só expressões no `${}`; tagged templates |
+| [[wiki/concepts/operadores-aritmeticos-javascript]] | `+ - * / % **`; `+` com string concatena (coerção); divisão não inteira, IEEE 754, `%` é resto (sinal do dividendo), `/ 0` dá Infinity |
+
 ### JStack, aula 03: módulos no Node.js (2026-11-16)
 
 | Page | Hook |
 |---|---|
 | [[wiki/concepts/modulos-nodejs]] | Cada arquivo é um módulo; CommonJS (`require`/`module.exports`, síncrono, extensão opcional) × ESM (`import`/`export`, estático, extensão obrigatória); module wrapper, atalho `exports`, cache, prefixo `node:`, `require(esm)` desde 22.12 |
+
+### FrontPUSH, módulo de JavaScript, aula 01: introdução (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/ecmascript]] | Especificação ECMA-262 do TC39 (Ecma International) que o JavaScript implementa; ES6 = ES2015, depois uma edição por ano; estágios 0–4; Babel/Webpack e DOM não são ECMAScript |
 
 ### JStack, aula 02: HTTP e APIs REST (2026-11-16)
 
@@ -3825,6 +3898,7 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/javascript]] — linguagem da web (navegador, Node, mobile); implementa o ECMAScript; HTML conteúdo, CSS estilo, JS comportamento
 - [[wiki/entities/roy-fielding]] — coautor do HTTP/1.1 e cofundador do Apache; definiu o REST na tese de 2000 como estilo arquitetural (restrições, hipertexto)
 - [[wiki/entities/v8]] — motor JavaScript do Google (2008), base do Chrome, do Node e do Deno; Ignition + Sparkplug + Maglev/TurboFan (JIT)
 - [[wiki/entities/libuv]] — biblioteca C de I/O assíncrono do Node: event loop com fases, rede não bloqueante, thread pool para disco e DNS

@@ -4,7 +4,7 @@ title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 9
+source_count: 11
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
@@ -43,6 +43,10 @@ Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]],
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], "HTML não é programação, HTML é uma linguagem de marcação de hipertexto". Hipertexto é "um texto com mais força": começou na tag `a`, com links que levam a outra página, e depois ganhou imagens e vídeos.
 
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], HTML é "linguagem de marcação, onde você insere o conteúdo da página"; junto do CSS, "não têm muita inteligência", ao contrário do [[wiki/entities/javascript]].
+
+Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `document` → `html` → `head` e `body`, que "engloba todas as tags que a gente conhece": a mesma estrutura da aula de HTML, agora como objetos que o JavaScript manipula ([[wiki/concepts/dom]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -54,3 +58,5 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], "HTML não é p
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o navegador entende HTML, CSS e JavaScript; só um editor basta
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: marcação como etiquetas; tags, aninhamento, html/head/body; tag inventada
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: hipertexto como texto com mais força
+- [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: marcação sem inteligência, JS como programação
+- [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: html/head/body como árvore de objetos

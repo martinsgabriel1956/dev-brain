@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -85,6 +85,8 @@ Botão "Buscar" no lugar de submeter ao mudar o horário, porque "o botão seria
 
 O voltar do header é um `BorderlessButton` só com imagem, sem `accessibilityLabel`; as abas ganham rótulo pelo `tabBarLabel`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], o clique vai numa `div.box`, que não recebe foco nem responde a Enter e Espaço. Ação de interface vai num `<button>`.
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -104,3 +106,4 @@ O voltar do header é um `BorderlessButton` só com imagem, sem `accessibilityLa
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: rem, alt e linha de foco
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: botão Buscar; ids repetidos
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: botão de voltar sem rótulo
+- [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: clique em div sem acesso pelo teclado
