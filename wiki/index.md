@@ -3,29 +3,20 @@ type: index
 date_updated: 2026-11-16
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Wiki Index
 
 ## Sources
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]] | Aula 08, conclusão do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): HTML = conteúdo, CSS = estilo + layout responsivo nativo; flexbox, grid e grid system com Sass a partir do Figma; documentação "é dever de todo programador" (Google, [[wiki/entities/mdn-web-docs\|MDN]], comunidade); escadinha estilo → layout → animação (`@keyframes`); próximo passo: projeto do [[wiki/entities/nubank]]; índice das oito aulas; erro: "versão 3 do CSS" |
+| [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]] | Aula 07 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/css-position\|position]] "não é muito comum" para layout; `absolute` como sistema de coordenadas X/Y (desenhado no Figma); sem pai `relative`, `top: 0` vai à janela; "relative fica no pai, absolute fica no filho"; top/left/right/bottom; bolinhas, "nzinho" e selo do site em `absolute`, o resto em flexbox; erro: `body` relative por padrão |
+| [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]] | Aula 06 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): CSS = estilo + layout; botão do zero (borda 0, fundo, padding, [[wiki/concepts/border-radius\|radius]] 4 px/50%), `:hover` com [[wiki/concepts/transition-e-transform-css\|transform: scale e transition]]; do Figma ao CSS "de maneira plena"; [[wiki/concepts/flexbox\|display: flex]] (filhos viram itens, `row` padrão) e `@media (max-width: 960px)` com `column` ([[wiki/concepts/breakpoint]]); erros: `:hover` como pseudo-element, "0.05", radius como chanfro; desktop-first |
+| [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]] | Aula 05 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/box-model]] com `section.container` e três `div.item`, "coloca borda na div"; margin fora, padding dentro, [[wiki/concepts/shorthand-css\|shorthand]] no sentido horário; [[wiki/concepts/display-css\|block, inline, inline-block]] ("pega dos dois mundos"); width/height; [[wiki/concepts/unidades-de-medida-css\|px, pt, in, %]] e [[wiki/concepts/unidades-de-viewport\|vw/vh]]; erros: `h1` como inline, inline "ignora o espaçamento"; faltam box-sizing e colapso de margens |
+| [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]] | Aula 04 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/seletores-css\|seletores]] na prática: `section > p` x `section p`, `p + span`, `*` como base, `input[type="text"]`, `h1, h2, h3`; `::first-letter`, `:nth-child`/`first-child`/`last-child` ([[wiki/concepts/pseudo-classe-css\|pseudo-classes]]); `::before`/`::after` "como se fosse duas divs" ([[wiki/concepts/pseudo-elemento-css\|pseudo-elements]], setinha do botão do FrontPUSH) com `relative` + `absolute`; erros: pseudo-elements "antes e depois" do elemento, "capitalized" |
+| [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]] | Aula 03 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): menu `header` > `nav` > [[wiki/concepts/listas-html\|ul/li]]; HTML "pobre visualmente", CSS como "segundo agente"; `style.css` por `<link>` com [[wiki/concepts/caminho-relativo\|caminho relativo]]; fundo `#0f0f0f`, links e listas [[wiki/concepts/estilos-padrao-do-navegador-e-reset\|resetados]]; "tudo são caixinhas"; [[wiki/concepts/seletores-css\|seletor]] de tag x classe (`.`) x ID (`#`, "dois CPFs"); classe vence tag ([[wiki/concepts/especificidade-css\|especificidade]], sem o termo) |
+| [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]] | Aula 02 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/html-hipertexto\|HTML]] é linguagem de marcação, tags como etiquetas do conteúdo; Emmet `html:5` no [[wiki/entities/vs-code]]; tags de título, seção, texto, `img`, `form`/`input`; [[wiki/concepts/html-semantico]] contra div dentro de div (Google, refatoração); aninhamento, `html`/`head`/`body`, [[wiki/concepts/head-html-metadados\|meta charset, viewport, title]]; erros: h1–h6 como escala tipográfica, UTF-8 ligado ao teclado ABNT2, "sinal de maior" |
+| [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]] | Aula 01 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): só HTML, CSS e JS pedem apenas um editor; ordem [[wiki/concepts/git\|Git]] → [[wiki/entities/nodejs\|Node]] LTS → Yarn → [[wiki/entities/vs-code]]; versionamento (rollback, time), GitHub x GitLab; Can I use e `backdrop-filter` no Firefox ([[wiki/concepts/compatibilidade-entre-navegadores]]); extensões: vscode-icons, Thunder Client, Prettier, Live Server, Live Sass Compiler ([[wiki/concepts/pre-processador-css]]), Color Highlight, temas; Git Bash como terminal; erros: Git for Windows "é um kernel", su = "super user" |
 | [[wiki/sources/classes-e-ids-no-css]] | Aula 02 de Básico CSS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): CSS externo como padrão; [[wiki/concepts/seletores-css\|classe]] para vários elementos (`.`), ID para um só (`#`, "o seu CPF"); reset `*` com border-box; hierarquia em escala de cinza por tag; `.btn` com `btn-primary` verde e `btn-secondary` com borda; ID `btn-checkout`; ID duplicado não dá erro. Tensão: [[wiki/concepts/especificidade-css\|especificidade]] do ID |
 | [[wiki/sources/seletores-e-pseudo-elements-css]] | Aula 05 "Básico CSS" da pasta FrontPush (de [[wiki/entities/nasser\|Násser]], inferido): seletores para criar "a menor quantidade de classes possíveis"; tour pelo Try CSS Selector do [[wiki/entities/w3schools]] (classe, ID, vírgula, descendente, filho, adjacente, universal, atributo para formulários); "pseudo-elements" que são quase todos [[wiki/concepts/pseudo-classe-css\|pseudo-classes]] (`:checked` do menu hambúrguer, `:focus`, `:hover`, `:nth-child`, `:root`) |
 | [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] | Aula 1 do módulo de [[wiki/concepts/css\|CSS]] do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): CSS = folhas de estilo, "o poder está na junção" com o HTML; propriedades de estilo, layout e motion; [[wiki/concepts/regra-css\|regra]] `elemento { propriedade: valor; }`; externo (`<link>`, o mais usado), incorporado (`<style>`) e inline (`style`), com prioridade pela [[wiki/concepts/cascata-css\|cascata]]; demo no [[wiki/entities/vs-code]] com Emmet e Live Server |
@@ -967,6 +958,31 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+### FrontPUSH: layout CSS (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/transition-e-transform-css]] | `transform` (scale, translate, rotate) muda a caixa sem mexer no fluxo; `transition` anima a troca; na regra base anima ida e volta; animar transform/opacity e respeitar `prefers-reduced-motion` |
+
+### FrontPUSH: CSS, classes e IDs (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/listas-html]] | `ul` (marcador) x `ol` (números), `li`; menu `nav` > `ul` > `li` > `a`; `list-style: none` e o Safari/VoiceOver que deixa de anunciar a lista |
+| [[wiki/concepts/estilos-padrao-do-navegador-e-reset]] | A folha do navegador (link azul/roxo, sublinhado, marcadores, margens) vem antes do CSS do autor; reset zera, normalize padroniza; camada Generic no ITCSS |
+
+### FrontPUSH: o que é HTML (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/head-html-metadados]] | O `head` guarda metadados, não conteúdo: `meta charset` (decodificação; mojibake sem ele), `meta viewport` (sem ela o celular simula ~980 px), `title` (texto da aba) |
+
+### FrontPUSH: configurando o ambiente (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/compatibilidade-entre-navegadores]] | Navegadores interpretam e adotam recursos em tempos diferentes: Can I use, Baseline (newly x widely available), browserslist, `@supports`; `backdrop-filter` no Firefox até a v103 |
+| [[wiki/concepts/pre-processador-css]] | Sass compila para CSS e soma recursos de programação (`if/else`, mixins); nesting, custom properties e `if()` nativos tiram parte do motivo |
 
 ### Classes e IDs no CSS (2026-11-16)
 
@@ -3575,6 +3591,7 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/mdn-web-docs]] — documentação de referência de HTML, CSS e JS da Mozilla (com Open Web Docs); tabela de compatibilidade e selo Baseline; Násser a indica como "MDN da Firefox"
 - [[wiki/entities/w3schools]] — site de tutoriais de HTML/CSS (sem ligação com o W3C); Try CSS Selector destaca o que cada seletor pega; Násser o indica para valores de propriedades como `background-size`
 - [[wiki/entities/vs-code]] — editor da Microsoft; Emmet nativo e extensão Live Server na aula de básico de CSS
 - [[wiki/entities/bairesdev]] — outsourcing de maior volume segundo o Galego; "opiniões mistas"

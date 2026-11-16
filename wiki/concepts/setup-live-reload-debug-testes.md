@@ -4,7 +4,7 @@ title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -75,8 +75,14 @@ O ganho não é conveniência marginal — é eliminar a necessidade de sair do 
 
 Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], a extensão Live Server do [[wiki/entities/vs-code]] faz o papel do live reload para HTML e CSS: "inicializei um servidor" e cada Ctrl+S aparece no navegador. Equivale ao Browser Sync citado acima.
 
+## Live Server na aula de ambiente do FrontPUSH
+
+Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] pede "por favor, instale" o Live Server por dois motivos: sobe um "servidorzinho", porque "tem alguns recursos que só funcionam quando são rodados em servidor" (diferente de abrir o HTML com dois cliques), e faz *auto reloading* a cada Ctrl+S. `[external]` Exemplos do que falha em `file://`: módulos ES e `fetch` de arquivos locais (https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy#file_origins).
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — modo watch com Jest como terceiro estágio de maturidade; teste como rede de segurança contra regressão
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Live Server como live reload de HTML/CSS
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Live Server: servidor local e auto reloading
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: Open With Live Server cria "um servidorzinho com essa página"

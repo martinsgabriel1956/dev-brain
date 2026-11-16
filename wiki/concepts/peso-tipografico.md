@@ -4,7 +4,7 @@ title: "Peso tipográfico"
 aliases: ["font-weight", "negrito", "bold", "itálico", "estilo falso", "faux bold"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [ui, ui-design, tipografia, font-weight, negrito, italico, contraste, css]
 skill: ux-ui-mentor
 status: stub
@@ -36,3 +36,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], com só r
 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; font-weight no Inspect; estilo falso
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: 500 sem efeito, 700 negrito, com só regular e bold carregados
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `font-weight: bold` para "um peso tipográfico maior"

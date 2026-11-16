@@ -4,7 +4,7 @@ title: "Border Radius"
 aliases: ["radius", "raio de borda", "cantos arredondados", "arredondamento", "8-radius"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao, css]
 skill: ux-ui-mentor
 status: stub
@@ -69,3 +69,4 @@ Na aula de box model do curso ([[wiki/sources/box-model-tudo-e-caixa-tags-semant
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — radius 16 aplicado no botão do Figma
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — radius varia com o tamanho do card; documentar tamanho e radius juntos (38 px)
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — sintaxe no CSS: um valor, quatro cantos, 50% para elipse/círculo
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: 4 px para "chanfrar" e 50% para "uma circunferência" num botão (arredonda, não chanfra; 50% num retângulo dá elipse)

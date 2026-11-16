@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 12
+source_count: 17
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -53,6 +53,14 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], primeira 
 
 Na aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], `position` é "um CSS básico que muita gente não sabe": `static` (padrão), `relative`, `absolute`, `fixed` e `sticky`, este "antes só [...] com o JavaScript" ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). Ver [[wiki/concepts/css-position]] e [[wiki/concepts/unidades-de-viewport]].
 
+## Pré-processador e suporte dos navegadores
+
+Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o CSS é "uma linguagem de estilo, [...] de layout", sem recursos de programação como `if/else`; o Sass acrescenta isso ([[wiki/concepts/pre-processador-css]]). Os navegadores interpretam o CSS de jeitos um pouco diferentes e demoram a adotar recursos novos; o Can I use mostra o suporte ([[wiki/concepts/compatibilidade-entre-navegadores]]).
+
+## "Versão 3" e a escadinha estilo → layout → animação
+
+Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]], [[wiki/entities/nasser|Násser]] resume o CSS em três funções, estilização, layout e animação, e diz "por isso que a gente está na versão 3 do CSS". `[external]` Depois do CSS 2.1 a especificação virou módulos com níveis próprios; "CSS3" é rótulo, não versão, e não há CSS4: https://www.w3.org/Style/CSS/specs.en.html.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -67,3 +75,8 @@ Na aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], `p
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — box model, shorthand (TRBL), unidades, W3Schools como referência
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: primeiras propriedades: color, background, display, font, texto; border como printf
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores de `position`; `100vh` no body
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass e Can I use na aula de ambiente
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: o HTML sozinho "é pobre visualmente"; CSS como "segundo agente"; `style.css` por `<link>`
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: CSS modifica "a cor, [...] o posicionamento, [...] o espaçamento, [...] a fonte"; aula de box model
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: as duas funções do CSS: estilização e layout
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: estilo, layout e animação; "versão 3" (CSS é modular desde o 2.1)

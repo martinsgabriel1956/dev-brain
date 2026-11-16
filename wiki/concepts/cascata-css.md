@@ -4,7 +4,7 @@ title: "Cascata do CSS (prioridade entre estilos)"
 aliases: ["cascade", "cascata CSS", "prioridade do CSS", "estilo inline", "estilo incorporado", "CSS externo", "formas de aplicar CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [css, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -35,3 +35,4 @@ O argumento é de manutenção: com um arquivo externo, trocar uma cor é editar
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — externo, incorporado e inline; "quanto mais para baixo, maior a prioridade"; demo em que o externo vence o incorporado
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: estilos padrão do navegador sobrescritos pelo autor; ver [[wiki/concepts/estilos-padrao-do-navegador-e-reset]]

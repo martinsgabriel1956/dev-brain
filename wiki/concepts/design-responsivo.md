@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 20
+source_count: 25
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -97,3 +97,8 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], as viewp
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — % e rem como medidas relativas para a responsividade
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: width em %, margin 0 auto; porcentagem como base do responsivo
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: viewport units para várias telas; menu mobile que entra e sai
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: meta viewport como "padronização de como aparece na tela [...] se tem a versão responsiva"; ver [[wiki/concepts/head-html-metadados]]
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: medidas relativas (`%`, `vw`, `vh`) x fixas (`px`, `pt`, `in`)
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: "um layout para o desktop e um layout para o mobile [...] você também faz com o CSS"; flexbox + media query como "uma das formas"
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: `max-width: 400px` "é melhor" que `width` para a caixa
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: layout responsivo "utilizando só CSS, [...] apenas recursos da tecnologia nativa que o browser entende"

@@ -4,7 +4,7 @@ title: "Position no CSS (static, relative, absolute, fixed, sticky)"
 aliases: ["position", "CSS position", "position absolute", "position relative", "position fixed", "position sticky", "position static", "posicionamento CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [css, frontend, position, layout, containing-block, sticky]
 skill: tech-mentor-frontend
 status: draft
@@ -45,6 +45,12 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], com dois
 - [[wiki/concepts/handoff-design-dev]]: o `position: absolute` que o Figma gera para frames sem Auto Layout não deve ir para o código.
 - [[wiki/concepts/css]]: posicionamento relativo e absoluto chegaram com o CSS2.
 
+## No módulo de front-end do FrontPUSH (aula 07)
+
+Em [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]], [[wiki/entities/nasser|Násser]] explica `absolute` como um "sistema de coordenadas" X/Y cuja origem é o elemento relativo, e resume "relative fica no pai, absolute fica no filho". Sem pai `relative`, um `top: 0` leva o item ao topo da janela, porque, segundo ele, "o body [...] vem por padrão como position relative". A precisão acima vale de novo: o `body` é `static`, e a referência é o *initial containing block*. Sem `top`, o item fica na *static position* e ainda sente o padding do pai. Uso no site do FrontPUSH: bolinhas animadas por `top`/`left`, um "nzinho" e um selo; o resto é flexbox ou grid.
+
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores com dois quadrados, menu fixed e menu sticky
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `relative` no pai e `absolute` + `top/left: 0` no `::after`, "adiantando" a aula de position
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: sistema de coordenadas; "relative fica no pai, absolute fica no filho"; body chamado de relative

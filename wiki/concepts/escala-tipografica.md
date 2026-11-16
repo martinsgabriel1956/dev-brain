@@ -3,8 +3,8 @@ type: concept
 title: "Escala tipográfica"
 aliases: ["escala de texto", "escala de fontes", "escala de tamanho de fonte", "type scale", "tamanho de fonte", "font-size", "modular scale", "escala modular", "escala do Figma"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [ui, ui-design, tipografia, escala-tipografica, font-size, hierarquia-visual, consistencia, design-tokens, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -49,7 +49,12 @@ As duas divergem no piso: a aula aceita corpo a partir de 14 px (e cita o corpo 
 
 `[skill: ux-ui-mentor]` A escala vira token (`fontSize.sm = 0.875rem`, `fontSize.base = 1rem`...) e o nível do heading (h1–h6) fica separado do estilo visual. `[external]` O MDN desaconselha usar headings para redimensionar texto: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements.
 
+## h1–h6 não são a escala
+
+Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], [[wiki/entities/nasser|Násser]] chama `h1`–`h6` de "meio que [...] uma escala tipográfica" (`h1` o maior, `h6` o menor). `[external]` Os níveis marcam a hierarquia do documento; o tamanho vem da folha padrão do navegador e se ajusta no CSS. O MDN pede para não escolher o nível pelo tamanho: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#usage_notes. A escala desta página se aplica com `font-size`, independente da tag.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: escala = tamanho; inconsistência como erro comum; WhatFont
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]: 14–21 px, tamanho vs. espaço, até 6 variações, escala do Figma + 8pt
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: h1–h6 chamados de escala tipográfica (são hierarquia, não tamanho)

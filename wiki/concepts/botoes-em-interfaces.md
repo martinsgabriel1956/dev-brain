@@ -4,7 +4,7 @@ title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 16
+source_count: 17
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -96,6 +96,10 @@ Em [[wiki/sources/classes-e-ids-no-css]], o par primário/secundário vira class
 
 Os estados da tabela (hover, focus, disabled) viram [[wiki/concepts/pseudo-classe-css|pseudo-classes]] no código; a aula de seletores lista `:hover`, `:active`, `:focus` e `:disabled` ([[wiki/sources/seletores-e-pseudo-elements-css]]).
 
+## Um botão do zero no CSS (aula de layout)
+
+Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `border: 0`, `background-color: blue`, `color: white`, `padding: 10px` ("está muito apertado"), `margin-top: 10px`, `border-radius` de 4 px, e no `:hover` um `transform: scale` com `transition` ([[wiki/concepts/transition-e-transform-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -114,3 +118,4 @@ Os estados da tabela (hover, focus, disabled) viram [[wiki/concepts/pseudo-class
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — label em maiúsculas com tracking aberto
 - [[wiki/sources/classes-e-ids-no-css]] — `.btn`, `btn-primary` e `btn-secondary` no CSS; checkout por ID
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — hover, active, focus e disabled como pseudo-classes
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: botão do zero: borda, fundo, padding, radius e hover que cresce

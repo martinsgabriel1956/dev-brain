@@ -3,8 +3,8 @@ type: concept
 title: "Encoding"
 aliases: ["encoding", "codificação", "url encoding", "base64", "hex encoding"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [encoding, base64, url-encoding, representacao-de-dados, fundamentos]
 skill: tech-mentor-security
 status: stable
@@ -63,3 +63,4 @@ Ver [[utf-8]] para encoding de texto.
 
 - [[wiki/sources/encoding-hashing-encryption]]
 - [[wiki/sources/como-strings-realmente-funcionam]] — distinção entre charset encoding (UTF-8) e transport encoding (Base64)
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: `<meta charset="UTF-8">` explicado como padronização do teclado; ver [[wiki/concepts/head-html-metadados]]

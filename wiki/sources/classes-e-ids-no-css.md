@@ -97,3 +97,6 @@ Aula 02 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], de [[
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: `<link>` x `@import` no módulo de tipografia
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: primário preenchido, secundário só com borda (o mesmo par desta aula)
+## Ver também
+
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: aula irmã do módulo de front-end: mesmo tema (classe com `.`, ID com `#`, "dois CPFs"), com menu `header`/`nav`/`ul` e a classe vencendo o seletor de tag

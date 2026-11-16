@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-11-15
-source_count: 8
+date_updated: 2026-11-16
+source_count: 9
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -104,3 +104,4 @@ O segredo de saber desenhar wireframes é "fazer mil vezes e ter uma biblioteca 
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — analogia do goleador: método não substitui prática contínua
 - [[wiki/sources/como-aprender-ui]] — criatividade em UI como músculo; copiar só como ponto de partida, seguido do porquê
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — "fazer mil vezes" como segredo dos wireframes
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aprender CSS "botando a mão na massa, já executando algum projeto"; pesquisar antes de perguntar

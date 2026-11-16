@@ -3,8 +3,8 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: draft
@@ -96,3 +96,4 @@ O grid é "um guia", não uma régua de precisão: figuras de 88 ou ilustraçõe
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — width, columns, gutter, max-width por dispositivo (12/6/4); contas na calculadora
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library, Bootstrap, Material Design; 4/8/12 colunas
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — 72 + 36 = 1260 (o principal), 1216, 1416, 1504, 1548; Center x Stretch; pensar em blocos; grid como guia; equilíbrio do menu
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: o grid do Figma levado ao código como grid system em Sass (hoje CSS Grid faz sem float)

@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -43,3 +43,4 @@ Acessibilidade cognitiva (progressive disclosure, chunking, linguagem simples) "
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tags semânticas (motivo dado: SEO; ganho documentado: landmarks)
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `list-style: none` faz o Safari/VoiceOver deixar de anunciar a lista; ver [[wiki/concepts/listas-html]]

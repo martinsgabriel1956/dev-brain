@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-15
-source_count: 42
+date_updated: 2026-11-16
+source_count: 44
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -194,3 +194,5 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], o autor tenta mostrar no
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — espelho do Google Fonts; demonstração da monoespaçada
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — Inspect para letter-spacing e font-weight; pesos reais da fonte
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — demonstração do justificado
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: o design feito no Figma traduzido "para o CSS de maneira plena"
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: eixos X e Y desenhados para explicar o `position: absolute`

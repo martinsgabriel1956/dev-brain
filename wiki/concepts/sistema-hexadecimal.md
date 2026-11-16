@@ -4,7 +4,7 @@ title: "Sistema hexadecimal (base 16)"
 aliases: ["hexadecimal", "base 16", "hex", "notação hexadecimal", "notação posicional"]
 date_created: 2026-11-14
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [cs-fundamentals, sistema-hexadecimal, base-16, notacao-posicional, representacao, cor, rgb]
 skill: ux-ui-mentor
 status: stub
@@ -42,3 +42,5 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], `colo
 
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: por que 16 algarismos, notação posicional e a conversão de `8F` (com o erro F = 16)
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — cor por nome, hex ou RGBA no CSS
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: extensão Color Highlight pinta `#FFF` de branco no editor
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `#0f0f0f` (quase preto), `#FFF`, `#EEE`, `#000`

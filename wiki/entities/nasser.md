@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 68
+source_count: 76
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -136,3 +136,11 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS (autoria inferida: “Nácia” na legenda, pasta FrontPush): tudo é caixa, tags semânticas, padding, margin, border, radius
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: aula 04 de Básico CSS (autoria inferida: pasta FrontPush; nome não dito)
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: aula 06 do Básico CSS (autoria inferida: pasta FrontPush, "meu canal do YouTube"): os cinco valores de `position`
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: aula 01 do módulo de front-end (diz o nome): Git, Node LTS, Yarn, VS Code e extensões
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: aula 02 do módulo de front-end ("Násser aqui"): HTML, tags, semântica, head e body
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: aula 03 do módulo de front-end ("Násser aqui"): style.css, seletores, classe e ID
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: aula 04 do módulo de front-end: seletores; "até hoje eu aprendo CSS"
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: aula 05 do módulo de front-end: box model; "coloca borda na div para poder você enxergar"
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: aula 06 do módulo de front-end: estilo e layout; flexbox e media query
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: aula 07 do módulo de front-end: position; "relative fica no pai, absolute fica no filho"
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aula 08: conclusão; "isso é dever de todo programador" (olhar a documentação)

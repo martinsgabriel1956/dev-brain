@@ -4,7 +4,7 @@ title: "Handoff design ↔ dev"
 aliases: ["handoff", "handoff de design", "passagem para o desenvolvedor", "redlines", "spec de componente", "documentação para o dev"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [ui, ui-design, handoff, documentacao, figma, css, design-system, estados]
 skill: ux-ui-mentor
 status: stub
@@ -39,3 +39,4 @@ A regra "posição nunca" vale para o `position` que o Figma gera. Na aula de CS
 
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o que documentar para o dev num card e num botão; position descartado; três estados
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: position como ferramenta de layout pontual (fixed, sticky, absolute)
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: "pegar o que a gente fez aqui no Figma e conseguir traduzir para o CSS de maneira plena, porque é espaçamento, são caixinhas"

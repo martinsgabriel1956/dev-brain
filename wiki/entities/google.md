@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-16
-source_count: 34
+source_count: 37
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -143,3 +143,6 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 ## Google como empregador: faixa salarial e vagas no Brasil
 
 [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] usa o Google como exemplo de [[wiki/concepts/big-tech]]: no [[wiki/entities/levels-fyi]], Brasil, L3 ≈ R$ 15 mil/mês e L5 ≈ R$ 33 mil; anual de entrada R$ 277 mil; ações com vesting 38/32/20/10% ([[wiki/concepts/equity-como-diferencial]]). No Google Careers havia 18 vagas de Software Engineer no Brasil, 4 em Málaga e 0 em Portugal na data da gravação. Times como YouTube e Google Ads contratam separadamente ([[wiki/concepts/contratacao-por-time-em-big-tech]]).
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: "o Google gosta [...] do HTML semântico"; div genérica dificulta a indexação
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: link azul/roxo (visitado) como padrão que até o Google usa
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: "tenho dúvida, eu vou no Google e vou buscar a documentação"

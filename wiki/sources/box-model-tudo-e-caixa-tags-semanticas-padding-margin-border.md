@@ -122,3 +122,4 @@ Tela "Básico CSS", tópico **Box-model**: "São propriedades de caixa, que comp
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]: "sempre pense em blocos [...] tudo é div" na aula de grids
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: padding no botão em vez de largura; radius proporcional
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]: padding como respiro do card no design
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: aula irmã do módulo de front-end: o mesmo "tudo é caixa", com container e itens, display block/inline/inline-block e vw/vh; aqui o `h1` é chamado de inline

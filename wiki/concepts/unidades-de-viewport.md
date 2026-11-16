@@ -4,7 +4,7 @@ title: "Unidades de viewport (vh, vw, dvh, svh, lvh)"
 aliases: ["viewport units", "viewport unit", "vh", "vw", "100vh", "dvh", "svh", "lvh", "unidades relativas à tela"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [css, frontend, unidades, viewport, responsivo, mobile]
 skill: tech-mentor-frontend
 status: stub
@@ -32,3 +32,4 @@ No mobile, a barra de endereço aparece e some com o scroll. `vh` usa a viewport
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: `body` com `100vh` para a demonstração ocupar a tela
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: `vw` = largura da tela (375 px no celular), `vh` = altura; "100vh [...] pega a tela inteira", `80vh` = 80%

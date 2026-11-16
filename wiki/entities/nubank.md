@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-15
-source_count: 17
+date_updated: 2026-11-16
+source_count: 18
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -93,7 +93,6 @@ Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em vers
 
 ## Key Sources
 
-
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — relato de que, ao virar banco, a liberdade de ferramentas/inovação tende a diminuir (afirmação do autor, não verificada); palestras sobre Datomic em 2015/2016
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/iso-27001-dicionario-programador]] — certificação ISO 27001 e "modo rua" como controle de acesso contextual
@@ -111,3 +110,4 @@ Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em vers
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — projeto de estudo do curso, detalhes prometidos
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — roxo e branco como paleta neutra + uma cor
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — style guide do Nubank (escalas desktop e mobile)
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: projeto prático do FrontPUSH indicado como o primeiro depois do módulo de HTML e CSS

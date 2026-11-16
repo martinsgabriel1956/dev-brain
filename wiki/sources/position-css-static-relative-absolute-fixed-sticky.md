@@ -107,3 +107,4 @@ Aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]] (autor
 
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]: menu fixo no topo como padrão de usabilidade (site da Apple)
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]: por que animar `top` custa mais que animar `transform`
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: aula irmã do módulo de front-end: só relative e absolute, como sistema de coordenadas; o mesmo erro do `body` relativo; exemplos no site do FrontPUSH

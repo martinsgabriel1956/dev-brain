@@ -3,8 +3,8 @@ type: concept
 title: "UTF-8"
 aliases: ["utf-8", "utf8", "unicode transformation format 8", "text encoding"]
 date_created: 2026-06-10
-date_updated: 2026-07-22
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [utf-8, encoding, unicode, strings, cs-fundamentals, charset, decode, bitwise, overlong-encoding]
 skill: cs-fundamentals
 status: stable
@@ -72,7 +72,12 @@ O verbete [[encoding]] nesta wiki cobre *transport encoding* (Base64, URL encodi
 - [[bitwise-operations]] — AND, OR e left shift usados para montar/desmontar runas
 - [[overlong-encoding]] — regra de largura mínima que um decoder precisa validar
 
+## No HTML: meta charset (e o engano do teclado)
+
+Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], [[wiki/entities/nasser|Násser]] explica o `<meta charset="UTF-8">` como "a padronização dos inputs do teclado", ligada ao layout ABNT2 brasileiro. `[external]` São coisas separadas: o layout do teclado escolhe o caractere; o UTF-8 define como esse caractere vira bytes, e o `meta charset` diz ao navegador como lê-los. Sem ele, "ç" pode aparecer como "Ã§": https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#charset. Ver [[wiki/concepts/head-html-metadados]].
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação prática do algoritmo de decode em Go, via TDD
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: meta charset UTF-8; confusão com o teclado ABNT2

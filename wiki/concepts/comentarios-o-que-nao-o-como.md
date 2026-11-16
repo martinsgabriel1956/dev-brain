@@ -3,8 +3,8 @@ type: concept
 title: "Comentários: O Quê, Não o Como"
 aliases: ["comments explain what not how", "comentar propósito", "comentários clean code"]
 date_created: 2026-04-29
-date_updated: 2026-07-19
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [comentarios, clean-code, refactoring, legibilidade, craftsmanship, coding-agents]
 skill: tech-mentor-leadership
 status: stub
@@ -31,7 +31,12 @@ Se o "como" não é óbvio pela leitura → refatore. Código legível dispensa 
 - [[indentacao-como-aviso]] — aninhamento excessivo gera código que "precisa" de comentários para ser entendido
 - [[wiki/concepts/codebase-legibilidade-ia]] — por que comentários de propósito são mais recuperáveis por agentes do que documentação externa
 
+## Comentar para desligar e para explicar (FrontPUSH)
+
+Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki/entities/nasser|Násser]] define comentário como "apagar alguma coisa da interpretação" sem perdê-la, ou explicar "esse trecho no código faz isso e isso", e recomenda "demais, principalmente na parte de lógica". As duas coisas batem com esta página: desligar código é papel do controle de versão, e explicar o que o trecho faz é o comentário de "como".
+
 ## Key Sources
 
 - [[wiki/sources/estilo-de-codigo-convencoes]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários como contexto recuperável via grep por agentes de IA
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: comentário como "desligar" código e como explicação; tensão com esta página

@@ -3,8 +3,8 @@ type: concept
 title: "Guerra dos Navegadores"
 aliases: ['browser wars']
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [web, navegador, microsoft, netscape, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -17,3 +17,4 @@ Disputa dos anos 90 entre [[wiki/entities/microsoft|Microsoft]] (Internet Explor
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: diferenças de suporte que restaram: Can I use e `backdrop-filter`; ver [[wiki/concepts/compatibilidade-entre-navegadores]]

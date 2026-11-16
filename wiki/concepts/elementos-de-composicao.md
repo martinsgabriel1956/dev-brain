@@ -3,8 +3,8 @@ type: concept
 title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -64,3 +64,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — versão prática "W7": stroke, pontilhado 2, 10, planetas com sombra, cometas
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — análogas para gradiente; definição de monocromática
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — elemento amarelo atrás do texto corrigido com gradiente linear
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: as bolinhas do site do FrontPUSH em `position: absolute`, animadas de `top`/`left` 50/50 → 80/80 → 30/30

@@ -4,7 +4,7 @@ title: "Caminho relativo de arquivos (HTML x CSS)"
 aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [frontend, html, css, caminho-relativo, arquivos]
 skill: tech-mentor-frontend
 status: stub
@@ -23,6 +23,11 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/en
 
 `[external]` A regra: `url()` dentro de uma folha de estilo é resolvida a partir da URL da folha, não da página que a carrega (https://developer.mozilla.org/en-US/docs/Web/CSS/url_value). Um caminho que começa com `/` parte da raiz do site e não depende de onde o arquivo está.
 
+## css/style.css, ./ e ../ no <link>
+
+Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki/entities/nasser|Násser]] liga `CSS/style.css` pelo `<link>`: entrar numa pasta é `pasta/arquivo`, `./` é "esse diretório de agora" e `../` volta uma pasta (no exemplo, chega à área de trabalho). Digitar `./` faz o [[wiki/entities/vs-code]] listar o que há na pasta.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `CSS/style.css`, `./` e `../` no `<link>`

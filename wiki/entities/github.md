@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -18,6 +18,10 @@ Plataforma de hospedagem de código. Na wiki aparece como estudo de caso de falh
 
 Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]], o gato do GitHub ("bem arredondado, tem as orelhinhas") é redesenhado "totalmente reto" para a família de ícones do [[wiki/entities/frontpush]]. `[external]` As diretrizes de logo do GitHub pedem para não modificá-lo (https://github.com/logos).
 
+## GitHub x GitLab no FrontPUSH
+
+Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] apresenta GitHub e GitLab como "repositórios online que a gente utiliza o Git", cita o Bitbucket e diz que o GitHub "está na frente": todo dev que conhece usa. A frase "o GitHub já foi muito utilizado porque ele tinha melhores planos gratuitos" provavelmente queria dizer GitLab. `[external]` O GitHub liberou repositórios privados no plano gratuito em janeiro de 2019: https://github.blog/news-insights/product-news/new-year-new-github/.
+
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
@@ -28,3 +32,4 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 
 - [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — hospeda os samples públicos do Spec2COBOLRot (jbespi/spec2cobolrot-samples)
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — Invertocat redesenhado reto em ícone do FrontPUSH
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: GitHub x GitLab x Bitbucket

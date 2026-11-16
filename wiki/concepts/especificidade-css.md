@@ -4,7 +4,7 @@ title: "Especificidade no CSS"
 aliases: ["especificidade", "CSS specificity", "specificity"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [css, cascata, seletores, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,6 +30,12 @@ O universal `*` vale (0,0,0). Por isso o reset `* { margin: 0 }` perde para qual
 
 `[skill: tech-mentor-frontend]` O ITCSS organiza o CSS por especificidade crescente (settings → reset → elements → objects → components → utilities), e BEM mantém tudo numa classe só para a especificidade ficar plana. Ver [[wiki/concepts/seletores-css]].
 
+## "A classe está em uma hierarquia maior que o seletor"
+
+Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], `a { background-color: red }` perde para `.nav-link { background-color: #FFF }` no link com a classe, e tirar a classe devolve o estilo de `a`. [[wiki/entities/nasser|Násser]] resume: "a classe está em uma hierarquia maior que o seletor". É especificidade (0,1,0 contra 0,0,1), embora a classe também seja seletor e a aula não use o termo.
+
 ## Key Sources
 
 - [[wiki/sources/classes-e-ids-no-css]]: estilo por ID sem tratar de especificidade (tensão registrada na fonte)
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: classe vence seletor de tag ("hierarquia maior")
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `*` como base, classes e IDs "com importâncias diferentes" por cima; o universal tem especificidade zero

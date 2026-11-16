@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -41,3 +41,5 @@ Os [[wiki/concepts/seletores-css|seletores CSS]] descendente (`div p`), filho (`
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/classes-e-ids-no-css]] — ID único como gancho do JavaScript; duplicado não dá erro
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — combinadores CSS como relações da árvore; `<p>` dentro de `<p>` vira irmão
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: classe e ID como etiquetas para o JavaScript "puxar e manipular esses elementos"
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: selecionar no CSS "é muito similar ou deveras igual" ao JavaScript (`querySelector`); pseudo-elements não estão no DOM

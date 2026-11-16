@@ -102,3 +102,6 @@ Aula 05 da pasta "FrontPush" (slides "Básico CSS" com o logo "FE"; autoria de [
 > "Esse sufixo pseudo vem de falso, então é um falso elemento, é meio que um elemento ou um estado dentro de um outro."
 
 > "De disparado é o efeito que a gente mais utiliza, que eu mais utilizo."
+## Ver também
+
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: aula irmã do módulo de front-end: os mesmos combinadores na prática, `nth-child` e `::before`/`::after` (setinha do botão do FrontPUSH); separa melhor pseudo-element de pseudo-classe

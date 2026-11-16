@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 45
+source_count: 53
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -147,6 +147,38 @@ O curso também tem um módulo de código, "Básico CSS" (slide com o logo do Fr
 O curso tem um módulo "Básico CSS" (pasta "CSS Basics" no VS Code). A aula 04, [[wiki/sources/principais-propriedades-css-color-background-font]], é a primeira aula de código do curso na wiki: color, background, display, fontes do [[wiki/entities/google-fonts]] e propriedades de texto. As aulas 01 a 03 (seletores, id com `#`) não foram ingeridas.
 A pasta da transcrição também traz um módulo "Básico CSS" (aulas 01 a 06: básico, classes e IDs, box model, propriedades, seletores e pseudo-elements, position). A aula 06, sobre [[wiki/concepts/css-position]], é a primeira desse módulo na wiki ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). O slide lista as unidades px, pt, em, rem, cm e %.
 
+## Módulo de front-end: aula 01, configurando o ambiente
+
+Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]], [[wiki/entities/nasser|Násser]] abre o módulo de front-end "de código em si": Git, Node (LTS), Yarn e [[wiki/entities/vs-code]], nessa ordem, mais as extensões. É a aula que configura o editor das aulas de CSS já ingeridas. Alguns efeitos de vidro desfocado (`backdrop-filter`) do site do FrontPUSH não funcionavam no Firefox da época ([[wiki/concepts/compatibilidade-entre-navegadores]]). Aulas prometidas: Git básico, Sass, Thunder Client na seção de React.
+
+## Módulo de front-end: aula 02, o que é HTML
+
+Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], aula de nivelamento: HTML como linguagem de marcação, tags, [[wiki/concepts/html-semantico]] e a estrutura `html`/`head`/`body` ([[wiki/concepts/head-html-metadados]]).
+
+## Módulo de front-end: aula 03, CSS, classes e IDs
+
+Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: menu em HTML, `style.css` ligado por `<link>`, primeiros estilos e [[wiki/concepts/estilos-padrao-do-navegador-e-reset|reset]], seletores de tag, classe e ID. Repete o tema da aula 02 do módulo Básico CSS ([[wiki/sources/classes-e-ids-no-css]]).
+
+## Módulo de front-end: aula 04, seletores
+
+Em [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: filho direto, irmão adjacente, universal, atributo, vírgula, `nth-child`, `::first-letter` e `::before`/`::after`. A setinha dos botões do site ("entrar para a turma") é um pseudo-element.
+
+## Módulo de front-end: aula 05, box model
+
+Em [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: margin, padding, shorthand no sentido horário, block x inline x inline-block, width e height, px/pt/in, `%`, `vw` e `vh`. Promete um "projetinho prático". Mesmo tema da aula 03 do Básico CSS ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+
+## Módulo de front-end: aula 06, layout
+
+Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: CSS como estilo (botão com hover e transition) e como layout (flexbox + media query a 960 px). Cita os módulos de Flexbox, Grid Layout e Grid System com Sass.
+
+## Módulo de front-end: aula 07, position
+
+Em [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: relative no pai, absolute no filho, como sistema de coordenadas. No site, as bolinhas animadas por `top`/`left`, um "nzinho" na descrição e um selo são `absolute`; o resto é flexbox, grid layout ou grid system com Sass.
+
+## Módulo de front-end: aula 08, conclusão (e o módulo inteiro)
+
+Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]], [[wiki/entities/nasser|Násser]] fecha o módulo (que chama aqui de "módulo de CSS") com a ordem estilo → layout → animações, o dever de olhar a documentação, a comunidade do curso para dúvidas e o projeto do [[wiki/entities/nubank]] como próximo passo. A página da conclusão lista as oito aulas em ordem. Módulos citados: flexbox, grid layout, Sass (grid system a partir do grid do Figma) e keyframes.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -194,3 +226,11 @@ A pasta da transcrição também traz um módulo "Básico CSS" (aulas 01 a 06: b
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — aula 03 do módulo Básico CSS: box model, tags semânticas, unidades
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: aula 04 do módulo Básico CSS
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: aula 06 do módulo Básico CSS; position static, relative, absolute, fixed e sticky
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: aula 01 do módulo de front-end: ambiente, extensões
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: aula 02 do módulo de front-end: o que é HTML
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: aula 03 do módulo de front-end: CSS, classes e IDs
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: aula 04 do módulo de front-end: seletores; setinha do botão por pseudo-element
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: aula 05 do módulo de front-end: box model
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: aula 06 do módulo de front-end: estilo e layout
+- [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: aula 07 do módulo de front-end: position; bolinhas, "nzinho" e selo do site
+- [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: aula 08: conclusão do módulo; índice das oito aulas

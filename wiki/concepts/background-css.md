@@ -4,7 +4,7 @@ title: "Background no CSS (background-image, size, repeat, position)"
 aliases: ["background", "background-image", "background-size", "background-repeat", "background-position", "background-color", "cover x contain", "imagem de fundo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [frontend, css, background, background-image, background-size, imagem]
 skill: tech-mentor-frontend
 status: stub
@@ -36,3 +36,4 @@ A escolha entre cover e contain é o mesmo dilema do [[wiki/concepts/aspect-rati
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: img x background, cover x contain, no-repeat, position, altura fixa
+- [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `background-color: #0f0f0f` no `body` ("eu gosto de fundo dark"); `pink`, `green` para enxergar caixas

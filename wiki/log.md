@@ -1929,7 +1929,6 @@ Entities:
 
 **Notas:** Transcrição em português (sem necessidade de tradução) — arquivo criado em `raw/sistemas-de-arquivos-explicados.md` com um bloco publicitário sobre um curso de investimentos (AVP) omitido por não ser conteúdo técnico, sinalizado explicitamente no raw. Vídeo é um panorama enumerativo (nenhuma fonte primária, sem autor/canal/data identificáveis na transcrição) — tratado como fonte de referência factual sobre limites técnicos de cada sistema de arquivos, não como opinião a triangular. Sem contradições com o restante da wiki: a tabela comparativa que já existia em [[wiki/concepts/sistema-de-arquivos]] (ext4/NTFS/APFS/ZFS/Btrfs) foi mantida e enriquecida, não substituída — Btrfs continua sem página própria por não ser coberto por esta fonte. Questões abertas registradas na fonte: cobertura ausente de Btrfs em profundidade, F2FS e ReFS (sucessor do NTFS para Windows Server), e se a proteção por checksum do ZFS é exclusiva dele ou compartilhada por outros sistemas copy-on-write como o Btrfs.
 
-
 ---
 
 ## [2026-07-09] ingest | Fundamentos de Software Importam Mais que Nunca na Era da IA
@@ -3198,7 +3197,6 @@ Entities:
 **Skill carregada:** `tech-mentor-testing` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — tópico central é TDD/watch-mode/regressão, mapeado em `references/test-patterns.md` e `references/test-tooling.md` no índice da skill.
 
 **Autoria:** atribuída por inferência a [[wiki/entities/filipe-deschamps]] — evidência interna forte: "Felipinho de Champs de 2014", experiência no [[wiki/entities/pagar-me]], e demonstração prática usando o TabNews (projeto do próprio autor) como codebase — mesmo padrão de pistas já usado para inferir autoria em [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]].
-
 
 **Páginas criadas:**
 - `wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo.md`
@@ -7289,7 +7287,6 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/recursao]] (já draft, 3 fontes) e adiciona os dois traces didáticos completos (fatorial e Fibonacci) que a página ainda não tinha em detalhe. (2) **Imprecisão da fonte sinalizada, não corrigida silenciosamente** — a conclusão da fonte de que "recursão é mais lenta" generaliza um caso exponencial (Fibonacci sem memoização) para toda recursão, ignorando que fatorial recursivo é O(n), a mesma complexidade da versão iterativa. Registrado explicitamente em `wiki/concepts/recursao.md` e `wiki/concepts/programacao-dinamica.md` com link de volta à fonte, em vez de apagar a imprecisão do Open Questions da fonte. (3) **Escopo do ingest menor que a faixa de 10-15 páginas sugerida no CLAUDE.md** — o conteúdo é uma introdução didática que já converge quase inteiramente com `wiki/concepts/recursao.md` (existente, draft, 3 fontes prévias); os quatro conceitos tocados (recursão, programação dinâmica, Big O, pilha) cobrem genuinamente tudo que a fonte introduz de novo. Preferi 4 conexões reais e verificadas a esticar para conceitos sem relação direta (ex.: `divisao-de-tarefas-em-partes-menores`, que é sobre decomposição de tarefas de carreira, domínio diferente, apesar do nome parecido). (4) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal.
 
-
 ---
 
 ## [2026-08-18] ingest | Sistema de Mentoria em Golang: Monolito Modular Construído em Live (Lucas Badico)
@@ -8650,7 +8647,6 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — a fonte é estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]], já ingerida; detalha o que lá era só mencionado (Stub como ponto de controle) com as variações Responder/Saboteur e o padrão Entity Chain Snipping. (2) **Risco de fidelidade da fonte**: por indisponibilidade do site original, recomenda-se reingerir/comparar se o site voltar ao ar, especialmente as citações diretas. (3) O par "observation point"/"indirect output" do eixo controle-observação segue sem verbete de glossário isolado ingerido (mesma lacuna já registrada na fonte-mãe de Test Double).
 
-
 ## [2026-08-31] ingest | xUnit (xUnitPatterns.com — Gerard Meszaros)
 
 **Fonte:** [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário curto do site xUnitPatterns.com (http://xunitpatterns.com/xUnit.html), coletado via `curl` direto (HTML pequeno, sem necessidade de proxy de leitura), traduzido para português e salvo em `raw/xunit-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado em `raw/sut-xunitpatterns.md` e `raw/unit-test-xunitpatterns.md`.
@@ -8690,7 +8686,6 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]] e [[wiki/sources/doc-xunitpatterns]], já ingeridas; formaliza pela primeira vez que SUT é um **papel relativo ao teste** (não propriedade fixa do código) e introduz três siglas irmãs nunca antes documentadas na wiki: **CUT** (class under test), **MUT** (method(s) under test) e **AUT** (application under test) — **OUT** (object under test) já era citado implicitamente em `test-doubles.md` mas sem a sigla nomeada. (2) **OUT não tem entrada própria no índice de Glossário do site** — só aparece dentro do próprio verbete de SUT; tratado como sigla irmã de mesmo peso, sem fonte primária isolada dedicada. (3) Restam sem fonte primária isolada: "observation point", "indirect output", "direct input", "fixture teardown" (mesma lacuna já registrada em ingests anteriores do mesmo glossário).
 
-
 ## [2026-08-31] ingest | Unit Test (xUnitPatterns.com — Gerard Meszaros)
 
 **Fonte:** [[wiki/sources/unit-test-xunitpatterns]] — tradução em `raw/unit-test-xunitpatterns.md` da página `unit test` (verbete de glossário) do catálogo xUnitPatterns.com. Site acessado com sucesso via `curl` direto (mesma abordagem já usada na ingestão de SUT — `WebFetch` do harness falha com `ECONNREFUSED` no IP do host, mas `curl` responde normalmente).
@@ -8709,7 +8704,6 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources, logo após `sut-xunitpatterns`
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte elaborativa em relação a [[wiki/sources/sut-xunitpatterns]] (o par SUT/unit test se define mutuamente: unit test é "SUT pequeno"). (2) **Achado inédito**: "developer test" e "programmer test" como sinônimos de unit test em eXtreme Programming, nunca antes documentados em [[wiki/concepts/extreme-programming]]. (3) **Lacuna aberta**: "customer test" segue sem verbete de glossário isolado próprio — conhecido só por contraste dentro deste verbete e do de SUT; candidato natural para próxima ingestão do mesmo cluster xUnitPatterns.com, junto de "acceptance test" e "user story".
-
 
 ## [2026-08-31] ingest | Test (xUnitPatterns.com — Gerard Meszaros)
 
@@ -12280,7 +12274,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) os tempos do ciclo (10–15 + 5–10 + 30–70 min) somam 45–95 min, não 120 — as 2 h parecem teto; heurística sem evidência. (2) Tensão leve com [[wiki/concepts/debugar-antes-de-perguntar]]: aquela fonte defende resistir a perguntar (aprendizado), esta impõe teto de tempo (prazo) — complementares, sem contradição factual. (3) A fonte cobre só o lado de quem pergunta; papel do sênior/segurança psicológica não tratados. (4) Nenhuma entidade nova criada (ChatGPT/OpenAI e Java só como exemplos).
 
-
 ---
 
 ## [2026-09-29] ingest | Pilares do Desenvolvimento com IA: Harness, Contrato de Revisão e Waves
@@ -12309,7 +12302,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) sem amostra/variância: 90% vs. 50% (Haiku) e 100/100 (Opus) vêm de uma única skill (migração de banco), verbalmente. (2) Alegação de portabilidade entre Claude Code/Codex/OpenCode não demonstrada — só Haiku e Opus testados. (3) Tensão leve com [[wiki/concepts/skills-agente]] ("skill que atrapalha", sem medição): esta fonte oferece o método de medição. (4) O stub [[wiki/concepts/evals-llm]] ganhou fonte relacionada mas continua stub (duplica [[wiki/concepts/llm-evals-testing]]; candidato a lint). (5) Nome da skill do autor ("query optimizer") incerto pela transcrição.
 
-
 ---
 
 ## [2026-09-29] ingest | A Gaiola de Ferro Revisitada: Isomorfismo Institucional, Ondas de Modernização e a Corrida por IA
@@ -12323,7 +12315,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/hype-de-ia]], [[wiki/concepts/ai-washing]], [[wiki/concepts/fomo-tecnologico]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/modernizacao-de-mainframe]], [[wiki/concepts/mainframe]], [[wiki/concepts/arquitetura-cliente-servidor]], [[wiki/concepts/microsservicos]], [[wiki/concepts/body-shop-terceirizacao]], [[wiki/concepts/cloud-como-modelo-de-consumo]], [[wiki/concepts/decisao-terceirizada]], [[wiki/concepts/profecia-autorrealizavel-corrida-da-ia]], [[wiki/concepts/eficacia-vs-eficiencia]], [[wiki/entities/ibm]] — Key sources + bump de `source_count`/`date_updated` (corpo ampliado nas 7 primeiras e em modernizacao-de-mainframe/mainframe).
 
 **Notas:** (1) sem dados quantitativos: custos do cliente-servidor e a contrafactual de 1991 são relato/retórica. (2) A fonte reduz o artigo original a uma taxonomia de adoção tecnológica; o original trata de estruturação de campos organizacionais [external: https://doi.org/10.2307/2095101 — referência bibliográfica não verificada online nesta sessão]. (3) "Mimetismo é racional" convive com [[wiki/concepts/cargo-cult-tecnologico]] (que trata a cópia como erro de contexto) — complementares, não contraditórios. (4) Nenhuma entidade criada para os autores (só o paper); "SISCO MB-10000" e Windows NT/Novell/Clipper/Visual Basic são menções laterais sem página.
-
 
 ---
 
@@ -12339,7 +12330,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) sem números: K, pesos e métricas de retrieval não são dados; a fonte não nomeia BM25 nem RRF (associados via skill). (2) "120/150/200 milhões de tokens" provavelmente é "mil" (erro de transcrição). (3) Trecho de "memória semântica" ambíguo. (4) Reranking não é mencionado no vídeo. (5) Os stubs [[wiki/concepts/bm25]] e [[wiki/concepts/reranking]] seguem stubs (só ganharam fonte relacionada).
 
-
 ---
 
 ## [2026-09-30] ingest | Dicas de Claude Code da Documentação: Worktrees, Paralelismo, Rotinas, Sessões Remotas, Fork e Output Estruturado
@@ -12353,7 +12343,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (13):** [[wiki/concepts/paralelismo-de-tarefas-ia]] (stub→draft), [[wiki/concepts/computer-use]] (stub→draft), [[wiki/concepts/worktree-paralelismo]], [[wiki/concepts/subagentes]], [[wiki/concepts/gerenciamento-de-sessoes-claude-code]], [[wiki/concepts/rewind-checkpoints-claude-code]], [[wiki/concepts/harness]], [[wiki/concepts/loop-engineering]], [[wiki/entities/claude-code]], [[wiki/entities/anthropic]], [[wiki/entities/codex-openai]], [[wiki/entities/opencode]], [[wiki/entities/cursor]] — Key sources + bump de `source_count`/`date_updated`, com seção nova em cada.
 
 **Notas:** (1) Nenhum nome de comando/flag (`--worktree`, `/loop`, `/fork`, `/code/routines`, Agents View, Agent Teams, Remote Control) foi verificado na documentação atual; vêm da fala do autor. (2) "Custo 2x" do paralelismo é estimativa qualitativa; ver benchmark de campo em [[wiki/concepts/subagentes]]. (3) Sem contradições com a wiki; complementa [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] e [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], que já cobriam worktree/subagentes. (4) Trecho de patrocínio (gateway de pagamentos) ignorado, sem página. (5) Artigo "Effective harnesses for long-running agents" tem título inferido; candidato a ingest futuro.
-
 
 ---
 
@@ -12383,7 +12372,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Tudo é experiência anedótica do autor, que se declara "tendência, não certeza"; nenhuma afirmação de mercado (ex.: grandes empresas contratam sênior de fora) foi verificada. (2) Os "subníveis" são modelo pessoal do autor, não padrão; não comparados em profundidade com `engineering-levels-ladder.md`. (3) Sem contradições com a wiki; complementa [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] (lá: ser essencial; aqui: fazer e mostrar). (4) Trecho final de divulgação do curso "Dev que Resolve" ignorado, sem página.
 
-
 ---
 
 ## [2026-09-30] ingest | Versionamento de Prompts: Reprodutibilidade, Metadados, Versionamento Semântico e Rollback Instantâneo
@@ -12397,7 +12385,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (14):** [[wiki/concepts/prompt-engineering]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/evals-llm]], [[wiki/concepts/llmops]], [[wiki/concepts/system-prompt-arquitetura]], [[wiki/concepts/hyperparameters-llm]], [[wiki/concepts/agente-ia]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/concepts/drift-detection]], [[wiki/concepts/ci-cd]], [[wiki/concepts/feature-flag]], [[wiki/concepts/api-versioning]], [[wiki/entities/openrouter]], [[wiki/entities/google]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Reprodutibilidade é parcial: a fonte não trata seed nem snapshot de modelo, e o provedor pode mudar o modelo sob o mesmo ID. (2) Versionar ≠ melhorar (ressalva do próprio autor); golden dataset/regressão só descritos, sem demo, por isso os dois conceitos são stubs. (3) Sem critério objetivo para major vs. minor. (4) Repositório e vídeos citados não foram acessados; nada verificado no código. (5) Sem contradições com a wiki; concretiza [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] (versionamento com gate em CI/CD) e [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] (evals por mudança de prompt). (6) Pedido de curtida/inscrição ignorado.
-
 
 ---
 
@@ -12427,7 +12414,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Conteúdo é material de pentest/hacking ofensivo (dual-use), consistente com fontes já presentes na wiki do mesmo autor e do mesmo gênero ([[wiki/sources/sql-injection-guia-completo-solucoes-galego]], [[wiki/sources/xss-cross-site-scripting-luiz-viana]], [[wiki/sources/pentest-redteam]]); tratado como educacional/defensivo, sem alvo real nomeado. (2) A afirmação de que `INTO OUTFILE` pode levar a RCE é citada na fonte mas não demonstrada ao vivo — registrada como claim não verificada em [[wiki/concepts/load-file-into-outfile-mysql]]. (3) Nomes exatos de flags do SQLMap (`--list-tampers`, sintaxe de `--technique`, uso de `*` em `--headers`) não foram cruzados com a documentação oficial nesta sessão — plausíveis, mas não triangulados. (4) Sem contradições com a wiki; complementa [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] (que cobre defesa em 7 camadas) com o lado ofensivo/exploração. (5) Laboratório do vídeo não identificado por nome/plataforma (só citado como "link na descrição", ausente da transcrição colada).
 
-
 ---
 
 ## [2026-09-30] ingest | ICMP Browser: navegando na internet via ping em Go (Michel Leonardo)
@@ -12441,7 +12427,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (11):** [[wiki/entities/michel-leonardo]], [[wiki/concepts/dns]], [[wiki/concepts/tunelamento]], [[wiki/concepts/vpn]], [[wiki/concepts/reverse-proxy]], [[wiki/concepts/proxy-pattern]], [[wiki/concepts/tcp-three-way-handshake]], [[wiki/concepts/go-stdlib]], [[wiki/concepts/http-vs-https]], [[wiki/concepts/array]], [[wiki/concepts/ddos-syn-flood]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) MTU do áudio ("10000") corrigido por conhecimento externo, sinalizado. (2) O vídeo mistura comportamento IPv4/IPv6 na fragmentação (em IPv6 só a origem fragmenta; [external], não verificado). (3) Segurança do "proxy" é inferência: canal ICMP sem cifra/autenticação. (4) Código do projeto (na descrição), vídeo anterior (codec ICMP) e post do Doom via DNS não acessados. (5) Sem contradições com a wiki; o conceito de proxy foi desambiguado de [[wiki/concepts/proxy-pattern]]. (6) Patrocínio JetBrains e pedidos de engajamento tratados como publicidade/ignorados.
-
 
 ---
 
@@ -12457,7 +12442,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradições com a wiki; reforça [[wiki/sources/ddd-strategic]] e a definição já existente de bounded context. (2) Os seis conceitos novos são stubs: a fonte só nomeia os padrões de integração; definições adicionais vêm da skill e estão marcadas. (3) Tensão não resolvida na fonte: várias classes por contexto podem mapear a mesma tabela, o que mantém acoplamento de dados (inferência; ver [[wiki/concepts/database-per-service]]). (4) Artigo exato de Fowler que originou a imagem Vendas/Suporte não verificado; Evans (2003) não consultado. (5) Vídeos 1–3 e 5 da série não estão na wiki. (6) Pedidos de like/inscrição ignorados.
 
-
 ---
 
 ## [2026-09-30] ingest | Comunicação Assíncrona — Arquiteturas Distribuídas (Bernardo Lobato)
@@ -12471,7 +12455,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/concepts/processamento-assincrono]] (stub → draft), [[wiki/concepts/mensageria]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/acoplamento]], [[wiki/concepts/temporal-coupling]], [[wiki/concepts/microsservicos]], [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]], [[wiki/concepts/observabilidade]], [[wiki/concepts/distributed-tracing]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/buffer]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/kafka]], [[wiki/entities/rabbitmq]], [[wiki/entities/bernardo-lobato]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Sem contradições com a wiki; reforça [[wiki/concepts/temporal-coupling]] e a tabela síncrono/assíncrono da skill. (2) Ressalvas adicionadas: "acoplamento fraco" vale no eixo temporal (o contrato da mensagem continua acoplando); "como se nada tivesse acontecido" omite duplicatas/reprocessamento (exige consumidor idempotente); o vídeo não cita outbox/dual write. (3) A afirmação de que brokers não garantem entrega "por padrão" é genérica e não foi verificada por broker. (4) Cinco conceitos novos são stubs/draft: a fonte só os apresenta em alto nível; definições extras vêm da skill e estão marcadas. (5) Vídeos prometidos sobre comunicação síncrona e mensageria não estão na wiki. (6) Pedidos de like/inscrição tratados como engajamento, sem valor técnico.
-
 
 ---
 
@@ -12837,7 +12820,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição; reforça [[wiki/concepts/sensores-vs-guias]] e dá a atribuição (Böckeler) e o princípio de Hashimoto, ausentes antes. (2) Atribuições, de-para e DeepSeek Harness são relato do áudio `[external, não verificado]`; "half loops" do ASR lido como "(Ralph?) loops", incerto. (3) "Harness importa mais que o modelo" é afirmação sem medição. (4) Anúncio patrocinado e pedidos de interação ignorados. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
 
-
 ---
 
 ## [2026-10-07] ingest | Novos cargos pós-IA e hunting de vagas fora do LinkedIn
@@ -12894,7 +12876,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição direta; tensão com [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]] registrada em [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]]. (2) Afirmações sobre reclamar, lista de tarefas e "criar é fácil, manter é difícil" são opinião do autor, sem dados `[external não verificado]`. (3) Novos itens `draft`; `source_count` das tocadas +1.
 
-
 ---
 
 ## [2026-10-07] ingest | Engenharia de contexto na prática: Write, Select, Compress, Isolate (Felipe Fagundes)
@@ -12908,7 +12889,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/concepts/context-engineering-harness]], [[wiki/concepts/context-compaction]], [[wiki/concepts/subagentes]], [[wiki/concepts/agent-memory-tres-camadas]], [[wiki/concepts/janela-de-contexto]], [[wiki/concepts/degradacao-de-contexto]], [[wiki/concepts/memoria-de-longo-prazo-ia]], [[wiki/concepts/tool-use-agents]], [[wiki/concepts/memory-rot]], [[wiki/concepts/separacao-de-contextos]], [[wiki/concepts/capital-de-tokens]], [[wiki/concepts/harness]], [[wiki/concepts/evals-llm]], [[wiki/entities/langchain]], [[wiki/entities/claude-code]], [[wiki/entities/codex-openai]].
 
 **Notas:** (1) Sem contradição com a wiki; reforça subagentes/compactação e adiciona o método (medir → Write/Select/Compress/Isolate). (2) Números (8.339 → 2.426, ~−71%) vêm de demo fictícia do autor, sem avaliação de qualidade `[external não verificado]`. (3) "Superfície probabilística" é termo informal do autor. (4) API `store.put` atribuída a LangChain não verificada. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
-
 
 ---
 
@@ -12924,7 +12904,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Tensão leve: "decorar a resolução" vs. "memorize o padrão, não o problema" (registrada na fonte). (2) Volta do LeetCode/System Design presencial nas Big Techs é afirmação do autor `[external não verificado]`. (3) Autoria inferida por autorreferência ("Galego"). (4) Novos itens `draft`; `source_count` das tocadas +1.
 
-
 ---
 
 ## [2026-10-07] ingest | O desafio simples de System Design que reprova seniores: sistema de notificação (Ana)
@@ -12938,7 +12917,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** notification-system, entrevista-system-design, kafka, filas-e-workers, fila, idempotencia, mobile-push-notifications, requisitos-funcionais-e-nao-funcionais, high-level-design, reconciliacao, finops, facade-pattern, rate-limiting, pensar-em-voz-alta-na-entrevista, niveis-de-senioridade-system-design, dlq (todas em `wiki/concepts/`).
 
 **Notas:** (1) Sem contradição; a skill sugere SQS FIFO/Standard por prioridade, o vídeo tópicos Kafka — mesma ideia, tecnologia distinta. (2) Faixa de custo SMS (10–500×; 5–25 mil/dia) `[external não verificado]`. (3) Autoria só "Ana"; sem entidade criada. (4) Novos itens `draft`.
-
 
 ---
 
@@ -13234,7 +13212,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) Sem contradição direta; estende [[wiki/concepts/matriz-risco-dificuldade-review-ia]] (transição) com o regime pleno da Anthropic e dá página própria ao [[wiki/concepts/review-md]], antes só uma seção em claude-md. (2) Números da Anthropic (30 mil/dia, 90%, 65%→78%, reverts −40%) vêm de relato oral de segunda mão; "200.500" e o dado de 5+ rodadas estão ilegíveis. (3) Os três papers (Microsoft, ETH Zurique, 67.774 PRs) não foram verificados; contagem de tarefas abertas/fechadas do benchmark é ambígua. (4) "Reversibilidade como metade do segredo" é inferência do apresentador. (5) Camada 4 (segurança) só citada de passagem. (6) Novos itens `draft`/`stub`.
 
-
 ---
 
 ## [2026-10-30] ingest | Upload e Download de Arquivos Gigantes — Presigned URL, Multipart e CDN (Tier S, vídeo 5)
@@ -13457,7 +13434,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** MDN (SSE unidirecional, reconexão com `retry:`/`id:`, limite de 6 conexões sem HTTP/2 e cerca de 100 com HTTP/2), RFC 6455 (HTTP Upgrade, `101`, canal bidirecional), guia de streaming da OpenAI (SSE e modo WebSocket) e API Gateway WebSocket APIs (integração com Lambda). (2) **Correções da fonte:** SSE não é "não nativo do HTTP" (a API é do padrão HTML e o transporte é HTTP comum); "sem handshake" quer dizer sem upgrade de protocolo; WebSocket em serverless é viável com camada gerenciada; SSE atrás de proxy pode exigir desligar o buffer. (3) **Tensão com a wiki:** a regra "WebSocket exige LB L4, nunca L7" de [[wiki/sources/updates-tempo-real-polling-sse-websocket]] é relativizada pela skill (proxy nginx L7 com `Upgrade`); a ressalva foi posta em [[wiki/concepts/websocket-vs-polling]] sem apagar a afirmação original. (4) **Tensão interna:** a fonte descarta combinar SSE com outro canal, mas o próprio exemplo do ChatGPT é requisição de ida com SSE de volta. (5) **Limites da conferência:** a página de referência de streaming da OpenAI deu 403 e foi usado o guia; a interface web do ChatGPT não foi conferida; o envio de `Last-Event-ID` não aparece na página da MDN lida. (6) **Lacunas da fonte:** long polling, escala horizontal e o limite de conexões do SSE.
 
-
 ---
 
 ## [2026-11-10] ingest | Claude Code: tudo que você precisa saber sobre o harness, comandos, contexto e automação
@@ -13472,7 +13448,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** documentação oficial do Claude Code (permission-modes, cli-reference, commands, checkpointing, model-config, memory, skills, mcp, worktrees, common-workflows, headless, interactive-mode, best-practices), lida por um subagente. Esses textos não foram ingeridos e aparecem como `[external]`. (2) **Correções da fonte:** `Ctrl+O` não é descrito como exibição de raciocínio; Deep Research, Design e Dataviz não estão entre as skills empacotadas; `/worktree` é flag; `/todos` não aparece; `ultracode` não é nível de esforço; o padrão é `medium` nos modelos 5.x; `-p` é não interativo, não background; worktree não é clone. (3) **Tensões com a wiki:** `/go` (em [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] e [[wiki/concepts/loop-engineering]]) deve ser `/goal`, com ressalva posta só na primeira; rule "sempre global" em [[wiki/concepts/rules-agente]] contra rules com `paths`; compactação "~200k" em [[wiki/entities/claude-code]] contra gatilho configurável. (4) **Não conferido:** "mais caro o token" em xhigh; as quatro superfícies; os "80%" do `/clear`. (5) **Em aberto:** identidade da skill "NP Spec Driven" e o "quadro 35". (6) **Sem página própria:** Antigravity, Kimi Code, Asaas, Notion.
 
-
 ---
 
 ## [2026-11-10] fix | Comando `/go` corrigido para `/goal`
@@ -13482,7 +13457,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Alteradas:** gerenciamento-de-sessoes-claude-code, agent-containment, loop-engineering, harness (concepts); pedro-nauke, codex-openai, claude-code (entities); 20-melhores-praticas-claude-code-segundo-anthropic, loop-engineering-padroes-loop-deterministico-agentico (sources); index.md.
 
 **Notas:** (1) `raw/` não foi alterado e continua com `/go`; as duas páginas de fonte ganharam nota de correção. (2) `/go` ficou como alias de busca em gerenciamento-de-sessoes-claude-code. (3) Entradas antigas deste log não foram reescritas. (4) A afirmação de Pedro Nauke de que "a maioria dos harnesses" tem o comando só foi conferida para Claude Code e Codex; Hermes não foi conferido. (5) A entrada do `/goal` na tabela da CLI do Codex só foi lida em resumo; a descrição literal vem da página do app desktop.
-
 
 ---
 
@@ -13498,7 +13472,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 
 **Notas:** (1) **Conferido em fontes externas:** Prisma (relation queries, query optimization), TanStack Query (important defaults), TypeORM (eager and lazy relations), guia do Hibernate, MDN (lazy loading), Chrome Lighthouse (third-party facades), preços do CockroachDB e devpleno.com, lidos por um subagente. (2) **Correções da fonte:** "1 décimo" só vale no melhor caso; a demonstração chamada de eager é N+1 entre front-end e backend; a recarga vem de nova montagem com dado stale, não de re-render; "em JavaScript não dá" não vale para o TypeORM. (3) **Tensão com a wiki:** "ORMs lazy-load relacionamentos por padrão" em [[wiki/concepts/n-plus-one]] recebeu ressalva sem apagar a afirmação. (4) **Não conferido:** os 5% a 10% de uso do free tier; custo de RU por leitura e escrita; default de `@OneToOne` no trecho lido do Hibernate; dono do canal no YouTube (página truncada). (5) **Limite temporal:** o vídeo não tem data, e a oferta do CockroachDB mudou em setembro de 2026. (6) **Sem página própria:** Prisma, tRPC, T3 App, Zod, GitHub Copilot, YouTube.
 
-
 ---
 
 ## [2026-11-10] ingest | Dynamic Workflows sem Claude Code: engenharia reversa e implementação em LangGraph
@@ -13512,7 +13485,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** dynamic-workflow, padroes-de-workflow-dinamico, langgraph, grafo-como-abstracao-de-agentes, planner-executor-critic, harness, subagentes, degradacao-de-contexto, determinismo-vs-probabilismo-em-ia, camada-de-aplicacao-vs-modelo, modalidades-de-paralelismo-claude-code (concepts); ronald-hulk, claude-code, openrouter (entities); dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk (sources). Também index.md e log.md. `anthropic`, `langsmith`, `opencode`, `codex-openai` e `rock-pro` receberam só link de saída, para não passar de 15.
 
 **Notas:** (1) **Conferido em fontes externas** por um subagente, sem ingestão: docs de workflows e model-config do Claude Code, anúncio e artigo da Anthropic, Building Effective Agents, docs do LangGraph, OpenRouter, Context Rot, Lost in the Middle, carta de Buffett de 1992. (2) **Correções da fonte:** esforço alto não é exigido; workflows também rodam em sessões cloud, `-p` e Agent SDK. (3) **Não encontrado:** a comparação com skills e subagentes atribuída a um engenheiro da Anthropic; X não pôde ser pesquisado. (4) **Sem declaração explícita:** restrição a modelos Anthropic. (5) **Data inferida:** o vídeo fala em "semana passada", e o anúncio é de 28/05/2026, logo foi gravado por volta de junho de 2026; `date_published` ficou vazio. (6) **Não conferível:** código do autor (repositório fechado), qualidade do relatório, custo por execução. (7) **Tensão com a wiki:** verificação como "tarefa fácil" contra o peso dado ao verificador em [[wiki/concepts/planner-executor-critic]]. (8) **Resolvido em parte:** a ressalva sobre "workflows dinâmicos" em [[wiki/concepts/modalidades-de-paralelismo-claude-code]]. (9) **Sem página própria:** Qwen 3.7 Max, ChatGPT, Claus.
-
 
 ---
 
@@ -13541,7 +13513,6 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** cpu-profiling, teste-de-carga, flame-graph, event-loop-performance-js, opentelemetry, observabilidade, gerenciamento-de-memoria, standard-library-e-ecossistema, decisao-tecnica-embasada-em-metricas, graceful-shutdown (concepts); erick-wendel, lodash, opentelemetry (entities); cpu-profiling-nodejs-inspector-autocannon-erick-wendel, 5-dicas-performance-javascript (sources). Também index.md e log.md. `imutabilidade`, `tree-shaking` e `performance-methods` receberam só link de saída, para não passar de 15.
 
 **Notas:** (1) **Conferido em fontes externas:** documentação do `node:inspector` (fluxo `Profiler.enable`/`start`/`stop` e gravação em `.cpuprofile`), README do autocannon (padrão de 10 conexões por 10 s), documentação de sinais do Node.js, benchmarks públicos de `cloneDeep` contra `structuredClone` (resultados divergentes). (2) **Correções da fonte:** o Ctrl+C manda SIGINT, que não está na lista falada (SIGTERM e SIGQUIT); remover o `cloneDeep` só é seguro se ninguém mutar os dados; "duplicar a capacidade" subestima o caso (cerca de 5,5 vezes) e não vale como promessa geral. (3) **Não conferido:** a contribuição do autor ao `node:inspector/promises` (PR não encontrado); o visualizador web usado (CPUpro é inferência pela menção a "Discover"); o repositório do exemplo, sem URL na transcrição. (4) **Inconsistência interna:** a rota `no-issue`, já otimizada, aparece com "mais de 8.000", abaixo dos 11.000 da rota `issue` alterada. (5) **Data inferida:** o vídeo usa Node.js 22; `date_published` ficou vazio. (6) **Sem página própria:** autocannon (coberto por [[wiki/concepts/teste-de-carga]]), V8, Chrome DevTools, VS Code, Higlobe, JavaScript Expert. (7) **Identidade:** reforça a atribuição de conteúdo Node.js/performance a [[wiki/entities/erick-wendel]]; a dúvida com [[wiki/entities/eric-lenda]] continua aberta.
-
 
 ---
 
@@ -13772,7 +13743,6 @@ Usuário confirmou que o site "Humans" (3×, `00:04:22`, `00:06:51`, `00:08:46`)
 **Tocadas (13 existentes):** icones-em-interfaces, familia-de-icones, hierarquia-visual, simetria-visual, formato-svg, consistencia-visual, contraste, espaco-em-branco (concepts); material-design, figma, frontpush, nasser (entities); icones-parte-1-conceito-comunicacao-identidade-visual-familias (source: pendência dos grids fechada). Também index.md e log.md.
 
 **Notas:** (1) **Material Design conferido no M3** pelo navegador (https://m3.material.io/styles/icons/designing-icons): 24dp, live area 20dp + 2dp de padding, tamanhos 20/24/40/48, keylines (quadrado 18, círculo 20, retângulos 16×20/20×16), stroke 2dp; a página do M2 segue sem texto. (2) **Círculo de 18 dele x keyline de 20**: escolha deliberada de mais respiro, não contradição. (3) **"Tamanho não importa" x tamanhos ópticos**: SVG escala, mas o stroke escala junto (inferência). (4) **Triângulo do Figma "com dois pixels vazios"** não verificado; o fenômeno (centroide a 1/3 da base) é conhecido. (5) **Preenchido = amigável (parte 1) x preenchido = destaque (parte 2)**: conciliados (estilo da família x meio de hierarquia). (6) **Font Awesome**: home atual mostra Solid/Regular/Light/Thin; os botões "Start for Free"/"Get More with Pro" não estão mais lá. (7) Parte 3 (ícones do FrontPUSH) anunciada. Sem página própria: Notion. `date_published` vazio.
-
 
 ## [2026-11-13] ingest | Elementos da interface: ícones, parte 3 (os ícones do FrontPUSH, formas geométricas e referências)
 
@@ -14558,3 +14528,99 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Páginas criadas em dois branches, fundidas numa só (cada afirmação com sua fonte):** [[wiki/concepts/seletores-css]] (os quatro básicos de [[wiki/sources/classes-e-ids-no-css]] + combinadores de [[wiki/sources/seletores-e-pseudo-elements-css]]; divergência registrada: "crie classe quando o estilo se repete" x "a menor quantidade de classes possíveis"), [[wiki/entities/w3schools]], [[wiki/entities/wellfound]], [[wiki/entities/x-team]], [[wiki/entities/glassdoor]], [[wiki/entities/levels-fyi]]. Linhas duplicadas dessas páginas no index.md fundidas numa só.
 
 **Também:** blocos "Key sources" repetidos fundidos num só em box-model, body-shop-terceirizacao, lever, linkedin e augusto-galego (nesta, as duas seções do curso Mapeando Vagas viraram uma); source_count recalculado (fontes distintas citadas) nas 26 páginas tocadas cuja contagem divergia. Nenhum link quebrado novo (os existentes já estavam na main).
+## [2026-11-16] ingest | FrontPUSH, aula 01 do módulo de front-end: configurando o ambiente (Git, Node.js, Yarn, VS Code e extensões)
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/01 - Configurando o ambiente.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes.md`. Texto extraído do SRT por script (timestamps e números removidos, "bem -vindos" → "bem-vindos", "GitHub .com" → "GitHub.com"), parágrafos e 15 subtítulos `##`; nas quebras de parágrafo no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (3.685 tokens no original, 3.692 na limpa): só as correções abaixo; a frase repetida pela legenda ("modifica alguma coisa no nosso site") foi mantida. Correções de ASR: Nasser→Násser; "brand"→branch; "canIuse"→Can I use (2×); "frontpush"→FrontPUSH; "tunder client"→Thunder Client (5×); "PrettierCodeFormatter"→Prettier - Code formatter; "importante ao Live Server"→é o Live Server; "SAS"→Sass (8×, inclusive Live Sass Compiler); "SaaS"→Sass; "HTML Snips"→HTML Snippets; "Color Light"→Color Highlight; "one dark theme"→One Dark Theme (2×); "community material theme, ocean high contrast"→Community Material Theme, Ocean High Contrast; "na URL das vezes"→na maioria das vezes. Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "caiu no GitHub do Yuri"; "o GitHub já foi muito utilizado porque ele tinha melhores planos gratuitos" (provável GitLab); "quase que não sai"; "e o que é browser, do browser"; "então são voltados à programação"; "não mais é isso"; "VSCode".
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-build.md`, seção Baseline e browserslist; `references/frontend-modern-css.md`, `if()` em CSS; `references/frontend-css-architecture.md`, nesting nativo e Sass com ITCSS). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]; conceitos [[wiki/concepts/compatibilidade-entre-navegadores]], [[wiki/concepts/pre-processador-css]].
+
+**Tocadas (15 existentes):** git, gerenciador-de-pacotes, shell-terminal, setup-live-reload-debug-testes, html-hipertexto, css, sistema-hexadecimal, guerra-dos-navegadores, variaveis-css (concepts); nodejs, vs-code, github, frontpush, nasser, react (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada**: Násser diz o nome ("Ah, Násser, o meu sistema operacional não é o Windows"). (2) **Data inferida**: a tela do Can I use mostra `backdrop-filter` desligado no Firefox 98/99; o Firefox 103 (julho de 2022) passou a suportar por padrão, então a gravação é de cerca de março a junho de 2022 `[external]`. `date_published` vazio. (3) **Correções registradas na fonte:** Git for Windows não instala kernel Linux (é MSYS2; o WSL sim); `su` é *substitute user*; Node não "atualiza" o JavaScript do navegador; Yarn moderno vem pelo Corepack; CSS já tem `if()` (Chromium) e nesting. (4) **Resolvido:** [[wiki/entities/vs-code]] dizia que "uma aula anterior do curso, não ingerida" configurava o editor; é esta, link adicionado. (5) Sem página própria: Chrome, Firefox, Safari, Opera, GitLab, Bitbucket, Can I use, Yarn, Postman, Thunder Client, Prettier, WSL.
+
+## [2026-11-16] ingest | FrontPUSH, aula 02 do módulo de front-end: o que é HTML
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/02 - O que é HTML?.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica.md`, pelo mesmo script da aula 01 (timestamps removidos, "bem -vindos"/"pré -definição"/"index .html" unidos, parágrafos e 9 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto). Diff palavra a palavra conferido (2.010 tokens no original, 2.014 na limpa): só as correções abaixo. Correções de ASR: "Nasser aqui"→Násser aqui; "nave"→nav; "anácio"→ah, Násser (3×, a fala imitando o aluno, como "Ah, Násser" da aula 01); "taghead"→tag head; "TF-8"→UTF-8 (3×). Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "esse aqui é o blog do Nasa" (provável "do Násser"); "abrir o sinal de maior" (fala dele; é o sinal de menor); "no meio de uma classe, no meio de um ID" (provável "por meio de"); "a caráter de arquivo" (provável "a nível de arquivo"); "outro texto de texto"; "documents"; "VSCode". **Corte na legenda:** não há texto entre 05:01,83 e 05:18,08, logo depois de "o que é um significado semântico?"; nada inserido.
+
+**Skill:** tech-mentor-frontend (SKILL.md; sem arquivo de referência específico para HTML básico: ⚠️ respondido com conhecimento base e MDN, marcado `[external]`). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]; conceito [[wiki/concepts/head-html-metadados]]; entidade [[wiki/entities/mdn-web-docs]].
+
+**Tocadas (16 existentes):** html-hipertexto, html-semantico, escala-tipografica, box-model, display-css, formulario-html, utf-8, encoding, design-responsivo, setup-live-reload-debug-testes, compatibilidade-entre-navegadores (concepts); vs-code, w3c, google, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Correções registradas na fonte:** `h1`–`h6` são hierarquia, não escala tipográfica (registrado também em escala-tipografica); UTF-8 não tem relação com o teclado ABNT2 (registrado em utf-8); quem diz ao navegador que é HTML é o `Content-Type` e o doctype, não a tag `<html>`; `title` não é meta; tag abre com `<`; `span`, `strong` e `img` são inline. (3) "W3C" indicado de novo para estudo; mesma provável troca por W3Schools já registrada em [[wiki/entities/w3c]]. (4) `date_published` vazio; provavelmente gravada junto da aula 01 (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 03 do módulo de front-end: CSS, classes e IDs
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/03 - CSS, Classes & ID's.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-css-classes-e-ids-seletores-link-style-css.md`, pelo script das aulas 01 e 02, com um ajuste: o ponto solto antes de palavra só é colado quando é extensão (`style .css`→`style.css`), para não grudar os seletores de classe (`é .nav`). Parágrafos e 13 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (2.796 tokens nos dois): só as correções abaixo. Correções de ASR: "Nasser aqui"→Násser aqui; "nave"→nav (14×, inclusive `.nav`, `nav-menu`); "o l"/"O l"/"lista L"/"o L"→ul/UL (5×); "cor banca"→cor branca; "um px -solid -blue"→um px solid blue (hífens da legenda). Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "class-link"/"classe-link" (ele aplica a classe `nav-link`); "para enter duas vezes" (provável "dá enter"); "descoberta Documentação"; "o próximo de preto"; "eu vou o situando"; "como não está, está tudo certo"; "diferença dinâmica" (provável "semântica").
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-css-architecture.md`, reset na camada Generic do ITCSS). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]; conceitos [[wiki/concepts/listas-html]], [[wiki/concepts/estilos-padrao-do-navegador-e-reset]].
+
+**Tocadas (17 existentes):** seletores-css, especificidade-css, css, html-semantico, box-model, caminho-relativo, background-css, sistema-hexadecimal, comentarios-o-que-nao-o-como, dom, acessibilidade, cascata-css (concepts); vs-code, google, frontpush, nasser (entities); [[wiki/sources/classes-e-ids-no-css]] (seção "Ver também", sem mudar o source_count de fonte). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Não é duplicata** de [[wiki/sources/classes-e-ids-no-css]]: aquela é a aula 02 do módulo Básico CSS (botões primário/secundário, reset `*`); esta é a aula 03 do módulo de front-end (menu, `<link>`, classe vencendo tag). Mesmo tema e mesma analogia do CPF; ligadas nas duas direções. (3) **Correções registradas na fonte:** "classe em hierarquia maior que o seletor" é especificidade; o verde do `.header` não aparecia porque o filho rosa cobria a área (inferência), não por falta de tamanho; o padrão azul/roxo vem da folha do navegador, não do HTML; `list-style: none` afeta o VoiceOver no Safari; comentar para desligar código é papel do Git. (4) `date_published` vazio (~2022, inferido pelas aulas vizinhas).
+
+## [2026-11-16] ingest | FrontPUSH, aula 04 do módulo de front-end: seletores
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/04 - Seletores.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements.md`, pelo script da aula 03 (ponto solto só colado em extensões, agora também `.br`). Parágrafos e 10 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (2.219 tokens no original, 2.221 na limpa): só as correções abaixo. Correções de ASR: "Nasser aqui"→Násser aqui; "nascer como assim?"→Násser, como assim? (a fala imitando o aluno); "wide"→white; "inputButton e o inputText, input dos pontos text"→input:button e o input:text, input dois pontos text (abreviações do Emmet); "o l"→o ul; "pie"→pai (3×); "frontpush"→FrontPUSH (o site ficou frontpush.com.br); "position -relative"→position relative (2×, hífen da legenda); "blue -violet ,"→blue-violet,; "100 %"→100%. Sem inserções entre colchetes. Mantidos literalmente: "deverasmente"; "text transform capitalized" (o valor CSS é `capitalize`); "type é igual a texto"; "na W3C"; "MDN Firefox"; "do li ou dele"; "o atributo é literalmente assim, eu não quero modificar" (bloco 06:15–06:28 parece ter perdido palavras; nada inserido).
+
+**Skill:** tech-mentor-frontend (SKILL.md; sem arquivo de referência específico para seletores básicos: ⚠️ conhecimento base e MDN, marcados `[external]`). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]. Nenhuma página nova: tudo coube em seletores-css, pseudo-classe-css e pseudo-elemento-css.
+
+**Tocadas (14 existentes):** seletores-css, pseudo-elemento-css, pseudo-classe-css, css-position, especificidade-css, formulario-html, listas-html, estilos-padrao-do-navegador-e-reset, dom (concepts); mdn-web-docs, w3c, frontpush, nasser (entities); [[wiki/sources/seletores-e-pseudo-elements-css]] (seção "Ver também"). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Não é duplicata** de [[wiki/sources/seletores-e-pseudo-elements-css]] (aula 05 do módulo Básico CSS, tour pelo Try CSS Selector do W3Schools); esta é a aula 04 do módulo de front-end, com demos próprias e `::before`/`::after`. Ligadas nas duas direções. (3) **Correções registradas na fonte:** `::before`/`::after` ficam dentro do elemento, exigem `content` e não estão no DOM; `capitalize` (não "capitalized") e `uppercase` para a primeira letra; `* { color }` atropela a herança; `li:nth-child(1)` é o `li` que é primeiro filho do pai; `~` não aparece. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 05 do módulo de front-end: box model
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/05 - Box Model CSS.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-box-model-margin-padding-display-unidades.md`, pelo script das aulas 03 e 04. Parágrafos e 8 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (1.835 tokens nos dois): só as correções abaixo. Correções de ASR: "Nasser aqui"→Násser aqui; "nasce, estou entendendo"→Násser, estou entendendo (a fala imitando o aluno); "box -module"→box-model; "NTH -child"→nth-child; "250 %"→250% (4×). Sem inserções entre colchetes. Mantidos literalmente (ambíguos): "Deixe-me colocar aqui errado"; "scoop bottom" (provável "isso, bottom"); "modelo contraído"; "não flodar vocês"; "section .container" (com espaço, como foi falado); "div class-item"; "essas diferentes na prática"; "se eu quero que meu elemento tenha elemento, seja característica de bloco".
+
+**Skill:** tech-mentor-frontend (SKILL.md; sem arquivo de referência específico para box model básico: ⚠️ conhecimento base e MDN, marcados `[external]`). O caminho de skills do CLAUDE.md não existe nesta máquina; a skill foi carregada pelo plugin.
+
+**Criado:** [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]. Nenhuma página nova.
+
+**Tocadas (11 existentes):** box-model, shorthand-css, display-css, unidades-de-medida-css, unidades-de-viewport, pseudo-classe-css, design-responsivo, css (concepts); frontpush, nasser (entities); [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] ("Ver também"). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Não é duplicata** da aula 03 do Básico CSS (box model com tags semânticas e border-radius); esta é a aula 05 do módulo de front-end, com container/itens, display e vw/vh. Ligadas nas duas direções. (3) **Correções registradas na fonte:** `h1` é bloco, não inline (contradiz a aula 02 do mesmo módulo, que os tratava como bloco); inline aceita margin/padding horizontais; `%` de altura precisa de pai com altura, e padding/margin em `%` usam a largura; `1in` = 96 px CSS; padding soma à largura sem `border-box`; margens verticais colapsam. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 06 do módulo de front-end: layout CSS
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/06 - Layout CSS.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-layout-css-botao-hover-flexbox-media-query.md`, pelo script das aulas anteriores (agora também unindo decimais: "0 .05"→0.05, "1 .2"→1.2). Parágrafos e 7 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (1.202 tokens nos dois): só as correções abaixo. Correções de ASR: "Nasser aqui"→Násser aqui; "easy"→ease; "linear -gradiente"→linear-gradient; "coreo -new"→Courier New; "fonte -weight"→font-weight; "SAS"→Sass (2×); "flex -py"→flex pai (mesmo erro de "pie"→pai da aula 04); "raw"→row; "media -carry"→media query; hífens da legenda desfeitos em "color white", "button:hover", "media screen" (2×). Sem inserções entre colchetes. Mantidos literalmente: "chanfradinho"; "aumente 5%, 0.05" (o valor que aumenta é 1.05); "tem um chão" (sentido incerto); "Vamos lá que eu coloque"; "flex-itens"; "as demais nuances de você".
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-animations.md`, transform/opacity no compositor e reduced motion; `references/frontend-css-architecture.md`, container queries x media queries e mobile-first).
+
+**Criado:** [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]; conceito [[wiki/concepts/transition-e-transform-css]].
+
+**Tocadas (14 existentes):** flexbox, breakpoint, design-responsivo, border-radius, pseudo-classe-css, botoes-em-interfaces, handoff-design-dev, mobile-animacoes-performaticas, pre-processador-css, peso-tipografico, css (concepts); figma, frontpush, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Correções registradas na fonte:** `:hover` é pseudo-classe (a aula 04 do mesmo módulo já separava); aumentar 5% é `scale(1.05)`; border-radius arredonda, não chanfra, e 50% num retângulo é elipse; `max-width` é desktop-first (skill recomenda mobile-first e container queries); float para grid é legado; transition no `:hover` só anima a ida. (3) 960 px é o mesmo breakpoint da aula de grids do curso. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 07 do módulo de front-end: position
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/07 - Position CSS.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-position-css-relative-absolute-coordenadas.md`, pelo script das aulas anteriores. Parágrafos e 8 subtítulos `##`; nas quebras no meio de frases longas, a vírgula virou ponto. Diff palavra a palavra conferido (1.585 tokens nos dois): só "Nasser"→Násser e "sass"→Sass; os hífens da legenda em "position -relative"/"-absolute" (11×) viraram espaço; "20 ,50"→20, 50. Sem inserções entre colchetes. Mantidos literalmente: "aqui no front" (2×, provável "FrontPUSH"); "ele topou lá no meio"; "esse nzinho aqui"; "é esse o módulo de fazer posicionamento"; "minha tela está bem na frente".
+
+**Skill:** tech-mentor-frontend (SKILL.md; `references/frontend-animations.md`, transform no compositor). Correções de position pelo MDN, marcadas `[external]`.
+
+**Criado:** [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]. Nenhuma página nova.
+
+**Tocadas (10 existentes):** css-position, box-model, flexbox, elementos-de-composicao, transition-e-transform-css, design-responsivo (concepts); figma, frontpush, nasser (entities); [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]] ("Ver também"). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) **Não é duplicata** da aula 06 do Básico CSS (os cinco valores de position, menu mobile); esta é a aula 07 do módulo de front-end, só relative/absolute como sistema de coordenadas. Ligadas nas duas direções. (3) **Mesmo erro nas duas aulas:** o `body` não é `relative` por padrão; sem ancestral posicionado vale o initial containing block. Também: a referência é o ancestral posicionado mais próximo, não só o pai; sem `top`, o `absolute` fica na static position (por isso o padding valia); eixo Y cresce para baixo; animar `top`/`left` custa layout. (4) `date_published` vazio (~2022, inferido).
+
+## [2026-11-16] ingest | FrontPUSH, aula 08 do módulo de front-end: conclusão
+
+**Fonte:** `/home/gabriel-martins/Documentos/transcribe/transcricoes/FrontPUSH/8 - Conclusão.pt_br.srt` (legenda automática PT-BR, sem tradução), limpa com a skill **text-cleaner** em `raw/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao.md`, pelo script das aulas anteriores. Parágrafos e 5 subtítulos `##`. Diff palavra a palavra conferido (756 tokens nos dois): só "Nasser"→Násser e "SaaS"→Sass (3×). Sem inserções entre colchetes. Mantidos literalmente: "grid-layout"/"grid-system" (hífens da legenda); "como é que eu faço para poder fazer tal estilo Google"; "ou utilizei no projeto, ou pergunta".
+
+**Skill:** tech-mentor-frontend (SKILL.md). Correções pelo W3C e MDN, marcadas `[external]`.
+
+**Criado:** [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]], com uma seção "O módulo inteiro" que lista as oito aulas em ordem e as correções que se repetem. Nenhuma página nova.
+
+**Tocadas (12 existentes):** css, transition-e-transform-css, flexbox, design-responsivo, pre-processador-css, grid-de-colunas, pratica-deliberada (concepts); frontpush, nasser, nubank, mdn-web-docs, google (entities). Também index.md e log.md.
+
+**Notas:** (1) **Autoria confirmada** ("Násser aqui"). (2) O módulo aberto na aula 01 como "de front-end" é chamado aqui de "módulo de CSS". (3) **Correções:** "versão 3 do CSS" (o CSS é modular desde o 2.1; não há CSS4); grid system com float é legado frente ao CSS Grid; centralizar com flexbox/grid é alinhamento, não posicionamento. (4) Módulos citados e ainda fora da wiki: flexbox, grid layout, Sass, keyframes, projeto do Nubank. (5) `date_published` vazio (~2022, inferido).
+

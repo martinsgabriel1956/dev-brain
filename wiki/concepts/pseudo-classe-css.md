@@ -4,7 +4,7 @@ title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 5
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -38,3 +38,6 @@ Os estados do [[wiki/concepts/style-guide]] (normal, hover, focus, disabled) che
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — `card-hover` e estados de input no style guide
+- [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `li:nth-child(1)`, `first-child`, `last-child`, pares e ímpares; dúvida "do li ou dele?" (é o `li` que é primeiro filho do pai)
+- [[wiki/sources/frontpush-box-model-margin-padding-display-unidades]]: `.item:nth-child(1)` para dar `margin-top` só à primeira caixa
+- [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `button:hover` (chamado de "pseudo-element" na aula) com `transform: scale` e `transition`

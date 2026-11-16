@@ -4,7 +4,7 @@ title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
@@ -27,6 +27,14 @@ Segundo a aula de box model do [[wiki/entities/frontpush|FrontPUSH]], antes do H
 
 Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `section` em vez de `div` "para poder ficar um pouco mais interessante na questão da semântica", e o menu é `nav` com `ul`/`li` ("lista não ordenada, só com pontinhos"). `[external]` `section` e `nav` são elementos do HTML5 que leitores de tela anunciam como regiões: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav.
 
+## O navegador entende três coisas
+
+Para [[wiki/entities/nasser|Násser]] ([[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]), "todo o navegador, ele entende três coisas, HTML, CSS e JavaScript", por isso só um editor basta para começar. HTML é "uma linguagem de marcação". As diferenças de interpretação entre navegadores ficam em [[wiki/concepts/compatibilidade-entre-navegadores]].
+
+## Linguagem de marcação e tags (aula 02 do FrontPUSH)
+
+Em [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]], [[wiki/entities/nasser|Násser]] lê a sigla: "é uma linguagem, só que é uma linguagem de marcação", e marcação são "labels, ou seja, etiquetas" para "marcar o conteúdo". O HTML "é responsável pelo conteúdo das páginas web"; o estilo vem do [[wiki/concepts/css]]. Uma tag "abre e fecha", e as tags podem ficar "uma dentro das outras" (use tabulação para enxergar o aninhamento). `<html>` engloba tudo, `<head>` traz os [[wiki/concepts/head-html-metadados|metadados]] e `<body>` o conteúdo. Uma tag inventada (`<tiririca>`) "ele não conhece". `[external]` Tag abre com `<` (a aula diz "sinal de maior"); tag desconhecida vira `HTMLUnknownElement` inline, e tags próprias válidas são custom elements com hífen: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -34,3 +42,5 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `section
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — estrutura do HTML5, `<head>`, `<title>`, `style` inline
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — antes do HTML5, interfaces feitas de divs; tags semânticas vieram com o HTML5
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: `section` e `nav` por semântica
+- [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o navegador entende HTML, CSS e JavaScript; só um editor basta
+- [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: marcação como etiquetas; tags, aninhamento, html/head/body; tag inventada
