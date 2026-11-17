@@ -4,7 +4,7 @@ title: "Carregamento de scripts: posição, defer e async"
 aliases: ["defer", "async", "script defer", "script no fim do body", "<script> no head", "carregamento de JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [javascript, html, performance, dom, critical-rendering-path, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -29,7 +29,13 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], [[wiki/e
 
 Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], `document.querySelector('#app')` só encontra a div se o script rodar depois dela; com o `<script>` no `head` sem `defer`, devolve `null`.
 
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o script do Axios "tem que ser declarado primeiro": a tag da CDN vem antes do `app.js`, porque é ela que cria a variável global `axios`.
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], `<script type="module">` é o requisito para `import`/`export` no navegador. Um script módulo é adiado como `defer` por padrão, roda em *strict mode* e não cria globais ([[wiki/concepts/modulos-nodejs]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: script no fim do body, no começo (erro) e no head com `defer` (só externo)
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: querySelector('#app') depende da ordem do script
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: ordem das tags (Axios antes do app)
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: type="module"

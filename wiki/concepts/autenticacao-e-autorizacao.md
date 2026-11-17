@@ -4,7 +4,7 @@ title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -54,6 +54,8 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 
 Na explicação de iniciante de [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: autenticação é "logar e deslogar"; autorização é "o que o usuário [...] tem permissão para fazer". As duas ficam no back-end.
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API "pode ter autenticação ou não": "você pode ser uma pessoa qualificada para acessar aquelas informações mediante uma chave, mediante uma senha". "Qualificada" é autorização; a chave ou senha é a autenticação.
+
 ## Key Sources
 
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
@@ -67,3 +69,4 @@ Na explicação de iniciante de [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecole
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 401 (não autenticado) vs 403 (sem permissão), barrados em [[wiki/concepts/middleware]] antes do controller
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: definição de iniciante, responsabilidade do back-end
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API com ou sem autenticação

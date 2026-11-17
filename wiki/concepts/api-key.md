@@ -3,8 +3,8 @@ type: concept
 title: "API Key"
 aliases: ["API Key", "chave de serviço", "service key"]
 date_created: 2026-09-14
-date_updated: 2026-10-01
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [api-key, token, autenticacao, b2b, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -43,7 +43,10 @@ Grandes provedores geram API keys em formato identificável por prefixo (Anthrop
 - [[wiki/concepts/secrets-management]] — gestão correta evita que a API key chegue a ser vazada em primeiro lugar
 - [[wiki/concepts/secret-scanning]] — detecção automatizada de API keys vazadas em repositórios
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], uma API pode exigir "uma chave [...] uma senha" ou ser pública. Muitas APIs públicas ainda pedem uma chave gratuita; pública quer dizer aberta, não anônima ([[wiki/concepts/api]]).
+
 ## Key Sources
 
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — definição, vantagem de simplicidade, risco de vazamento, boas práticas de armazenamento/rotação/mTLS
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — formato reconhecível por prefixo como vetor de busca em escala para credenciais vazadas
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: chave × API pública

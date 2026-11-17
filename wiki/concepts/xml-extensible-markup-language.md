@@ -3,8 +3,8 @@ type: concept
 title: "XML (Extensible Markup Language)"
 aliases: ["Extensible Markup Language", "XML data format"]
 date_created: 2026-08-04
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [xml, formato-de-dados, interoperabilidade, legado, serializacao]
 skill: tech-mentor-backend
 status: stub
@@ -28,9 +28,12 @@ Com o crescimento das aplicações web (Ajax) e mobile, JSON passou a dominar po
 
 Documentos do Microsoft Office, projetos Java, arquivos de configuração, nota fiscal eletrônica e diversos padrões internacionais de troca de dados. Continua sendo a escolha natural sempre que padronização, validação de schema e interoperabilidade entre sistemas heterogêneos são requisitos centrais — não apenas um detalhe de serialização.
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o JSON é chamado de "linguagem de marcação, de objetos". A marcação é a do XML e do HTML (tags que anotam texto); o JSON é formato de dados. Na [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript|aula 07]] os dois apareciam como alternativas vindas do back-end.
+
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — XML/XHTML e o abuso do XML como linguagem (ColdFusion, JSP)
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: JSON chamado de "marcação" (é formato de dados)

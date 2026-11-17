@@ -3,8 +3,8 @@ type: concept
 title: "Paralelismo"
 aliases: ["parallelism", "execução paralela", "multithreading"]
 date_created: 2026-06-26
-date_updated: 2026-11-03
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [cs-fundamentals, lang-systems, paralelismo, concorrencia, multicore, performance, hpc]
 skill: cs-fundamentals
 status: draft
@@ -62,8 +62,11 @@ Adicionar mais threads sem sincronização cria mais oportunidades de [[race-con
 
 [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] situa o paralelismo como resposta ao [[wiki/concepts/power-wall]]: com a frequência limitada, o ganho passou a vir de [[wiki/concepts/multicore|mais núcleos]] e de [[wiki/concepts/gpu|GPUs]], que usam [[wiki/concepts/simd|SIMD]] em escala. Nesta wiki, cada um tem página própria.
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], "processos que são rodados paralelos" descreve o JavaScript assíncrono. O código JS não roda em paralelo; só a espera de I/O acontece fora da thread. Paralelismo de CPU no JS pede Web Workers ou `worker_threads` ([[wiki/concepts/javascript-assincrono]]).
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — HPC (GPU, multicore, MPI/OpenMPI) como motivação para baixo nível
 - [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — power wall como motor do multicore e das GPUs
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: "paralelo" que é concorrente

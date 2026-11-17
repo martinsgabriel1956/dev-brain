@@ -4,7 +4,7 @@ title: "HTTP vs HTTPS"
 aliases: ["HTTP", "HTTPS", "http vs https", "hypertext transfer protocol secure"]
 date_created: 2026-08-12
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [rede, http, https, ssl, tls, seguranca, man-in-the-middle]
 skill: tech-mentor-networking
 status: stub
@@ -51,6 +51,8 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o POST é apresent
 
 Em [[wiki/sources/jstack-http-e-apis-rest]], o `scheme` HTTPS é "o S de Security, ou seja, [...] uma requisição HTTP segura". O S é de *Secure*: HTTP sobre [[wiki/concepts/tls]].
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], HTTP é "um protocolo [...] para você enviar e receber dados na web, como se fosse um canal", e HTTPS "é o mais amplamente utilizado"; sem ele o navegador mostra "um cadeadinho aberto". O S é de *Secure* (a aula diz "Security"), e a criptografia vem do [[wiki/concepts/tls]].
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — HTTP sem criptografia vs HTTPS seguro; Man-in-the-Middle; o que o SSL garante (e o que não garante)
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — trecho sem HTTP/TLS
@@ -63,3 +65,4 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], o `scheme` HTTPS é "o S de Securit
 
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — protocolo (`http`/`https`) como a parte da URL que diz como acessar
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: HTTP como canal; HTTPS e o cadeado

@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 16
+source_count: 19
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -79,6 +79,12 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: função c
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], referência × execução no listener: `addEventListener('click', callback)` passa a função; `callback()` a executaria na hora.
 
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `minhaPromise` é uma função atribuída a variável que devolve `new Promise(function (resolve, reject) {...})`: função que recebe função, dentro de função. "É muito comum isso em JavaScript."
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], as funções `areaRetangulo`, `perimetroRetangulo` e `upperName` saem do `app.js` para módulos próprios com `export function`.
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desestruturação vai para a lista de parâmetros: `function mouseMove({ clientX, clientY })`. Chamada sem argumento, uma função assim lança `TypeError`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -97,3 +103,6 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: métodos, shorthand e referência × execução
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: referência de função; this em métodos de classe
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: passar a função, não o resultado
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: função que devolve Promise
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: funções exportadas
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação no parâmetro

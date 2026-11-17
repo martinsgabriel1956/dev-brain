@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-11-10
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -72,6 +72,8 @@ Em um sistema com três camadas (web, aplicação, dados), CDN é a solução ca
 
 CDN reduz distância física até o espectador, mas não elimina o que é inerente a streaming via internet: cada player mantém sua própria sessão, consulta seu próprio manifesto e mantém seu próprio buffer. [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] contrasta isso com a TV digital aberta (radiodifusão), que transmite um único sinal de rádio para toda a área de cobertura sem sessão individual — por isso a TV aberta chega com bem menos atraso que uma live equivalente no YouTube, mesmo com CDN otimizando a distribuição pela internet. Ver [[wiki/concepts/latencia-streaming-ao-vivo]] e [[wiki/concepts/cdn-strategy]] para o detalhamento das etapas.
 
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o Axios é carregado "via CDN" com uma tag `<script>` antes do `app.js`, porque o ambiente com npm ainda não foi configurado. Fixar a versão na URL e usar SRI evita mudança silenciosa no código servido.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
@@ -108,3 +110,4 @@ Para downloads de arquivos grandes, CDN entre usuário e S3 reduz latência (Jap
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — afirma que SSE funciona atrás de CDN; sem detalhe de configuração
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: Axios via CDN

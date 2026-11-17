@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 16
+source_count: 17
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -66,6 +66,8 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a parte 3 liga eventos a mudanças no DOM: clique e tecla trocando classes da `.box` ([[wiki/concepts/propagacao-de-eventos-dom]]).
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `document.documentElement` (o elemento `<html>`) recebe o listener de `mousemove` "para poder ele executar sem ser em cima de algum outro elemento, a própria página".
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -83,3 +85,4 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: interface que representa o HTML por objetos; DOM × CSSOM × BOM
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: criar e anexar elementos
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: eventos que mudam o DOM
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: documentElement como alvo

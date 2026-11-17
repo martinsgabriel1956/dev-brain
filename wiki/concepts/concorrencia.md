@@ -4,7 +4,7 @@ title: "Concorrência"
 aliases: ["concurrency", "execução concorrente", "multitarefa"]
 date_created: 2026-06-26
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
 skill: cs-fundamentals
 status: draft
@@ -89,6 +89,8 @@ Bancos de dados relacionais resolvem uma instância específica desse problema c
 
 Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o Node "não consegue executar mais de uma coisa ao mesmo tempo" e "consegue executar mais de uma coisa ao mesmo tempo". As duas frases se conciliam com a distinção: esperas de I/O se sobrepõem ([[wiki/concepts/non-blocking-io]]), mas o JavaScript roda uma coisa por vez.
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], o JavaScript assíncrono é descrito como "ideia de processamento paralelo". É concorrência: uma thread intercala callbacks enquanto o ambiente espera a rede ([[wiki/concepts/javascript-assincrono]]).
+
 ## Key sources
 
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — MVCC como mecanismo de concorrência específico de bancos de dados, via exemplo de Pix concorrente
@@ -97,3 +99,4 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o Node "não consegue executa
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker eliminando data races em compile-time via regra N leitores OU 1 escritor
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — bot de Discord de Tibia como motivação prática para aprender concorrência do zero
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: single thread + non-blocking I/O como concorrência sem paralelismo de código
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: assíncrono do JS é concorrência

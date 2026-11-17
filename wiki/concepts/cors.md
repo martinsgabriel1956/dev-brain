@@ -4,7 +4,7 @@ title: "CORS"
 aliases: ["cross-origin resource sharing", "erro de cors"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [cors, navegador, seguranca, http, origem]
 skill: tech-mentor-networking
 status: stub
@@ -26,7 +26,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 `app.use(cors())` para o front em `localhost:3000` chamar a API em `:3333`. A aula atribui o bloqueio ao servidor ("por padrão, ele permite apenas [...] o mesmo endereço"), mas quem aplica é o navegador; `cors()` sem opções libera `*`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], o CORS aparece como coluna da lista Public APIs e é definido como "uma requisição dentro de uma outra requisição", bloqueada "para poder evitar [...] que você execute um script dentro de um outro lugar". Não é isso: o navegador aplica a same-origin policy, e o CORS é o servidor liberando a leitura por outra origem (`Access-Control-Allow-Origin`). Executar script alheio é [[wiki/concepts/xss]]. "CORS: yes" na lista quer dizer que a API pode ser chamada direto do front.
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], o ESM no navegador "precisa estar rodando em um servidorzinho" (Live Server). O motivo é o CORS: scripts módulo são buscados com as regras de CORS, e a página aberta por `file://` tem origem `null`.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — CORS como política do navegador e correção no servidor
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: cors() no Express; não é controle de acesso
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: cors() para o front em :3000
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: CORS mal definido ("requisição dentro de requisição")
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: módulos exigem servidor por causa do CORS

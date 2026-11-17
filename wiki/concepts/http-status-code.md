@@ -4,7 +4,7 @@ title: "Status Code HTTP"
 aliases: ["status code", "códigos de status http", "401 vs 403", "200 404 500"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 8
+source_count: 11
 tags: [http, api, status-code, erros]
 skill: tech-mentor-networking
 status: stub
@@ -54,6 +54,12 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], `response.writeHead(200, {..
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: 200 na listagem e 404 para "Cannot GET /asd". 405 Method Not Allowed é citado para "a rota users existe, mas [...] um post" e descartado; o 405 deve vir com o header `Allow`.
 
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], o painel Network mostra "statusCode [...] deu 200", mas o código testa só `readyState == 4` ("quando der certo"). 4 é `DONE` e também acontece com 404 ou 500; o teste certo inclui `XHR.status` ([[wiki/concepts/xmlhttprequest]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a aula corrige a anterior: `readyState` 4 "não significa que deu certo", e só `status == 200` resolve a Promise. A URL do GitHub com "uns caracteres a mais" volta 404 e cai no `catch`.
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o Axios "já tem todos os tratamentos": rejeita quando o status sai de 2xx, ao contrário do fetch. Mas a aula não põe o `.catch`, e um 404 ficaria sem tratamento.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — lista comentada de status e mudança de pergunta
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — 429 e RFC 6585
@@ -63,3 +69,6 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: 200 na listagem e 404
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: 201 e 400; 400 no lugar de 500
 - [[wiki/sources/jstack-criando-o-servidor-http]]: 200 no writeHead do Node
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: 404 de fallback; 405 citado e descartado
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: 200 no painel, readyState no código
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: 200 resolve, o resto rejeita
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: Axios rejeita fora de 2xx

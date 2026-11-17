@@ -4,7 +4,7 @@ title: "Vue.js"
 aliases: ["Vue", "Vue 3", "Vue.js"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [frontend, framework, javascript, vue, reatividade]
 skill: tech-mentor-frontend
 status: stub
@@ -20,9 +20,12 @@ Pré-requisitos: [[wiki/entities/nodejs]] e um [[wiki/concepts/gerenciador-de-pa
 
 Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], o Vue é citado com o React como framework cheio de arrow functions. No Vue (Options API), `methods` e `computed` escritos como arrow perdem o `this` do componente ([[wiki/concepts/arrow-functions]]).
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o Vue aparece ao lado do React como framework em que a desestruturação "é muitíssimo utilizad[a]".
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions e o this do Vue
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: citado como motivo da desestruturação

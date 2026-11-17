@@ -4,7 +4,7 @@ title: "Arrow functions em JavaScript"
 aliases: ["arrow function", "função de seta", "=>", "fat arrow", "retorno implícito", "this léxico"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [javascript, funcoes, arrow-function, es6, this, react, vue]
 skill: lang-dynamic
 status: stub
@@ -50,9 +50,12 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `marcas
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], o listener vira arrow de uma linha, e depois a aula usa `this.classList` dentro de uma `function`. Em arrow, esse `this` não seria a `.box`; com `function`, `this` é o `currentTarget`.
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula lembra das arrow functions para dizer que a desestruturação vale "não só para variáveis, mas também para funções". O exemplo concreto é tirar funções de objetos ou arrays, como `const [count, setCount] = useState(0)` ([[wiki/concepts/desestruturacao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: de function a arrow com retorno implícito
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: this em métodos (arrow não serviria)
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: arrow em forEach e map
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: this no listener (function × arrow)
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: arrow function citada no fecho

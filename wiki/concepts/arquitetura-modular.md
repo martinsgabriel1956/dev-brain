@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Modular (vs. Monolito Modular)"
 aliases: ["arquitetura modular", "modular architecture", "10 princípios da arquitetura modular"]
 date_created: 2026-09-01
-date_updated: 2026-09-01
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [arquitetura-modular, monolito-modular, monorepo, nx, microsservicos, backend]
 skill: tech-mentor-backend
 status: draft
@@ -50,7 +50,10 @@ Resolvido via monorepo com detecção de "affected" — NX no exemplo demonstrad
 
 [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] posiciona a arquitetura modular como o nível seguinte a [[wiki/concepts/clean-architecture]] e [[wiki/concepts/hexagonal-architecture]]: ambas isolam domínio do mundo externo, mas nenhuma trata explicitamente de reuso de infraestrutura entre contextos nem de rodar módulos em processos separados — nem o Shared Kernel de [[wiki/concepts/ddd]] cobre isso. Nem a transição para microsserviços resolveu essa lacuna: cada microsserviço continua sendo, internamente, um codebase singular — mesma limitação do monolito tradicional, só que menor. A arquitetura modular é o que parte esse mesmo codebase em módulos com tipos e responsabilidades explícitos. Ver taxonomia completa em [[wiki/concepts/tipos-de-modulos]] (módulos de domínio, de infraestrutura pura e de feature).
 
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], a modularização aparece no nível mais básico: `import`/`export` entre arquivos JavaScript, como preparação para "a dinâmica de frameworks" ([[wiki/concepts/modulos-nodejs]]).
+
 ## Key Sources
 
 - [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — origem do termo e dos 10 princípios nesta wiki; exemplo de sistema de streaming (billing/streaming/identity/shared-infra) em NestJS/NX
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — posiciona arquitetura modular acima de Clean/Hexagonal/DDD; taxonomia de [[wiki/concepts/tipos-de-modulos|três tipos de módulo]] (domínio, infraestrutura pura, feature)
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: modularização no nível do arquivo

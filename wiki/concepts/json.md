@@ -4,7 +4,7 @@ title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 11
+source_count: 17
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -50,6 +50,30 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], JSON "basicam
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], os dados do back-end "vão voltar em forma de objeto, seja em XML, seja em JSON". Chegam como texto e precisam de parse antes de virar array de objetos.
 
+## No FrontPUSH, JavaScript aula 11
+
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], [[wiki/entities/nasser|Násser]] dedica a aula ao JSON como "linguagem unificada" entre front-end e back-end, com a analogia do inglês que o mundo todo aprendesse. Mostra a sintaxe num `produto.json` (array de objetos, aspas duplas, sem vírgula final, objeto e array aninhados) e o par `JSON.parse` ("transforma o texto JSON em objeto") e `JSON.stringify`. Esquece o `null` entre os tipos e chama o JSON de "linguagem de marcação"; a ideia de que o texto precisa estar "em uma linha" vem da string do JavaScript, não do JSON. Não entram `undefined`, funções, `Symbol` e `BigInt` (`TypeError`; `[skill: lang-dynamic]`).
+
+## No FrontPUSH, JavaScript aula 12
+
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a requisição HTTP "me devolve um JSON", que outra tarefa "transforma em um objeto". Esperar a resposta é assíncrono; o `JSON.parse` em si é síncrono ([[wiki/concepts/javascript-assincrono]]).
+
+## No FrontPUSH, JavaScript aula 13
+
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API de tempo devolve "o JSON com essas informações" e a do GitHub "um arquivo do tipo JSON" com login, ID e node ID. Numa API o JSON é o corpo da resposta (`Content-Type: application/json`), não um arquivo.
+
+## No FrontPUSH, JavaScript aula 14
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a resposta da API do GitHub chega "como um texto" em `XHR.responseText` e vira objeto com `JSON.parse`, como na [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back|aula 11]]. Com `xhr.responseType = "json"` ou `response.json()` do fetch, o parse é automático ([[wiki/concepts/xmlhttprequest]]).
+
+## No FrontPUSH, JavaScript aula 15
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `resolve` recebe `JSON.parse(XHR.responseText)`, e o `then` já ganha o objeto pronto.
+
+## No FrontPUSH, JavaScript aula 16
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o `JSON.parse` some: o Axios converte o corpo sozinho e entrega em `response.data`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: JSON x objeto JavaScript, resposta do IBGE
@@ -63,3 +87,9 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], os dado
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: JSON.stringify no response.end
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: JSON do back-end como motivo para estudar arrays
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: XML ou JSON vindos do back-end
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: linguagem unificada, sintaxe, parse e stringify
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: JSON na resposta da requisição assíncrona
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: JSON como resposta da API
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: JSON.parse(XHR.responseText)
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: JSON.parse dentro do resolve
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: parse automático do Axios

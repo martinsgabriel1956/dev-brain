@@ -4,7 +4,7 @@ title: "Headers HTTP"
 aliases: ["http headers", "cabeçalhos http", "authorization header", "content-type"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [http, headers, api, metadados]
 skill: tech-mentor-networking
 status: stub
@@ -41,8 +41,14 @@ Descritos como o que define se a mensagem quer "criar [...] uma lista [...] edit
 
 Em [[wiki/sources/jstack-criando-o-servidor-http]], os headers da resposta vão num objeto, segundo argumento do `writeHead`: `{ 'Content-Type': 'text/html' }`. Falta o `charset=utf-8` ([[wiki/concepts/charset]]).
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], o método HEAD "vem de puxar o cabeçalho", para quando "você precisa dos metadados de alguma coisa". O HEAD devolve os mesmos cabeçalhos do GET (`Content-Type`, `Content-Length`, `Last-Modified`) sem o corpo.
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o console mostra "o cache control, ou seja, meio que são as configurações de metadata". No Axios ele está em `response.headers` (cabeçalhos da resposta), não no `config` da requisição.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — headers como frases da conversa
 - [[wiki/sources/jstack-http-e-apis-rest]]: case-insensitive, Authorization Bearer, X-Org-ID (prefixo X- desaconselhado pela RFC 6648)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: headers × método
 - [[wiki/sources/jstack-criando-o-servidor-http]]: headers no writeHead; text/html sem charset
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: HEAD e cabeçalhos como metadados
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: cache-control em response.headers

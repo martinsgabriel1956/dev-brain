@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 25
+source_count: 27
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -95,6 +95,10 @@ Em [[wiki/sources/jstack-o-que-sao-modulos]]: `code .` abre a pasta atual; se o 
 
 Criar pasta e arquivo de uma vez digitando `favorites/index.tsx` no "new file". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o VS Code sublinha o `produto.json` quando a chave ou a string usa aspas simples, e avisa (warning) quando há chave repetida.
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], o VS Code "já leu o arquivo" e completa o nome no `import { }`; a extensão Live Server serve a página por HTTP, requisito dos módulos, e recarrega ao salvar.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -122,3 +126,5 @@ Criar pasta e arquivo de uma vez digitando `favorites/index.tsx` no "new file". 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: instalado na próxima aula
 - [[wiki/sources/jstack-o-que-sao-modulos]]: code ., Install code command, terminal integrado, IntelliSense
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: pasta e arquivo no new file
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: erro de aspas e warning de chave repetida no JSON
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: autocomplete do import e Live Server

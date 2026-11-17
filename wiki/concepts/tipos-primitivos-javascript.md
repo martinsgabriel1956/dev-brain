@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -83,6 +83,8 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], pela te
 
 Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `typeof frutas` dá `object`, "mas é um objeto do tipo array". Para testar array, `Array.isArray`.
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o JSON aceita número, string, booleano, objeto e array; a aula esquece o `null`. `[external]` `undefined`, `Symbol` e funções somem no `JSON.stringify`, `NaN`/`Infinity` viram `null`, e `BigInt` lança `TypeError` (`[skill: lang-dynamic]`, `nodejs-patterns-runtime.md`).
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
@@ -94,3 +96,4 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `typeof fruta
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: string "vira objeto" no método
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: "toda variável já é um objeto"
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: typeof de array
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: tipos aceitos pelo JSON

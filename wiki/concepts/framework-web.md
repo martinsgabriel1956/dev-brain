@@ -4,7 +4,7 @@ title: "Framework Web"
 aliases: ['web framework', 'framework server-side']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [framework, backend, rails, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -22,9 +22,15 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], framework é o que "só faci
 
 Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], arrow functions são ensinadas "para que, quando a gente for lá em frameworks, não te soe estranho esse tipo de sintaxe" (React, Vue).
 
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], `import`/`export` é "tópico importantíssimo para a gente entender a dinâmica de frameworks": no React, por exemplo, cada componente é um módulo com `export default`.
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desestruturação é ensinada porque é "muitíssimo utilizad[a] quando a gente parte para frameworks como React ou Vue": props, `useState` e imports.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: JS básico antes do framework
 - [[wiki/sources/jstack-criando-o-servidor-http]]: Express sobre http; Node puro antes do framework
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions antes do framework
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: módulos como base dos frameworks
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação como pré-requisito de framework

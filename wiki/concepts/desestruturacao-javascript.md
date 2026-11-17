@@ -4,7 +4,7 @@ title: "Desestruturação (JavaScript)"
 aliases: ["desestruturação", "destructuring", "destructuring assignment", "desestruturar objeto", "desestruturar array"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [javascript, sintaxe, objeto, array, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -42,9 +42,14 @@ Ele também usa a forma curta de propriedade, `{ weekday }` no lugar de `{ weekd
 
 Em [[wiki/sources/jstack-o-que-sao-modulos]], `const { printName, lastName } = require('./printName')` desestrutura o objeto exportado, e o acesso deixa de precisar de `modulo.algumaCoisa`. A mesma aula usa o *shorthand* inverso na exportação: `module.exports = { printName, lastName }`.
 
+## No FrontPUSH, JavaScript aula 18
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], [[wiki/entities/nasser|Násser]] parte do `mousemove`: uma `const` por propriedade (`event.clientX`, `event.clientY`) vira `const { clientX, clientY } = event` e depois `function mouseMove({ clientX, clientY })`, desestruturando "diretamente no argumento". Para arrays, `const [marca1, marca2, marca3, marca4] = carros`: "objeto chaves, array, colchetes". Diz que dá para usar outro nome ("eixoX"), mas não mostra a sintaxe `{ clientX: eixoX }`, sem a qual o valor sai `undefined`. O caso de "desestruturação com funções" que o React usa é `const [count, setCount] = useState(0)`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: desestruturação no require, no split e nos parâmetros do createProffy
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: body, split e count
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: rest, spread e chave computada
 - [[wiki/sources/jstack-o-que-sao-modulos]]: desestruturação no require; shorthand no module.exports
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: objeto, parâmetro e array com mousemove

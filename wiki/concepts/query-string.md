@@ -4,7 +4,7 @@ title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -56,6 +56,8 @@ No Axios, os filtros do GET vão em `{ params: { subject, week_day, time } }`, p
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota compara `request.url === '/users'`. No Node, `request.url` traz a query string junto, então `/users?page=2` não casa e cai no 404. Separar com `new URL(request.url, 'http://localhost')`: `pathname` para a rota, `searchParams` para os parâmetros.
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], a URL do e-commerce "passa um monte de informações", como "o ID do produto [...] o serial number", para o back-end buscar aquele produto. Na URL vão path e query string; o JSON vem na resposta.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: req.query no Express; GET x POST no formulário do Ecoleta
@@ -68,3 +70,4 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota compara `reque
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: filtros de aulas na query
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: params do Axios
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: request.url inclui a query; usar new URL
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: ID do produto na URL do e-commerce

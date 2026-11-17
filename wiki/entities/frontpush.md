@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 85
+source_count: 93
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -303,6 +303,38 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: `addEventListener`, callback nomeado, `event.target` × `currentTarget`, lista de eventos, `classList.toggle` com transition e troca de cor por `keydown` no `window`. Fecha a parte de elementos.
 
+## Módulo de JavaScript ES6: aula 11, JSON
+
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: front × back, JSON como linguagem unificada, sintaxe do `produto.json`, tipos de valor, `JSON.parse` e `JSON.stringify`. Abre a parte de JavaScript assíncrono; a próxima aula trata de API e requisição HTTP.
+
+## Módulo de JavaScript ES6: aula 12, JavaScript assíncrono
+
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: síncrono × assíncrono, exemplo da requisição que devolve JSON, a lista de ferramentas (AJAX, Axios, Promises, Fetch, async/await) e a vantagem de recarregar só uma seção. Só conceito, sem código.
+
+## Módulo de JavaScript ES6: aula 13, API e HTTP
+
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: o que é API (pública ou autenticada), a API do GitHub, a lista Public APIs, HTTP e HTTPS, e os métodos GET, POST, PUT, DELETE e HEAD. Só conceito; a próxima aula é de AJAX.
+
+## Módulo de JavaScript ES6: aula 14, AJAX
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: primeira prática de requisição, juntando as aulas 11 a 13. `new XMLHttpRequest()`, `open('GET', ...)`, `send(null)`, aba Network, `onreadystatechange` com `readyState` 4 e `JSON.parse(responseText)`.
+
+## Módulo de JavaScript ES6: aula 15, Promises
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: o XHR da aula 14 dentro de `new Promise`, com `resolve` no status 200 e `reject` no resto, o `Promise {<pending>}` no console e o consumo com `then`/`catch`. A próxima aula é de Axios.
+
+## Módulo de JavaScript ES6: aula 16, Axios
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: o Axios como encapsulamento do XHR com Promise, carregado por CDN, `axios.get(url).then(...)` e a resposta com `config`, `headers` e `request`.
+
+## Módulo de JavaScript ES6: aula 17, Modules JS
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]]: `type="module"` com Live Server, export e import nomeados entre `retângulo.js`, `string.js` e `app.js`, e um objeto exportado como `default`. Prepara a dinâmica dos frameworks.
+
+## Módulo de JavaScript ES6: aula 18, desestruturação
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: o evento `mousemove` com `clientX`/`clientY`, desestruturação no corpo e no parâmetro, e de array com marcas de carro. Preparação para React e Vue.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -390,3 +422,11 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: aula 08 do módulo de JavaScript ES6
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: aula 09 do módulo de JavaScript ES6
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: aula 10 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: aula 11 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: aula 12 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: aula 13 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: aula 14 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: aula 15 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: aula 16 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: aula 17 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: aula 18 do módulo de JavaScript ES6

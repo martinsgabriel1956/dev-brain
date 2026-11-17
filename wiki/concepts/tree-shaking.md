@@ -4,7 +4,7 @@ title: "Tree Shaking"
 aliases: ["remoção de código morto", "dead code elimination frontend"]
 date_created: 2026-08-03
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [frontend, bundler, tree-shaking, build, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -32,7 +32,10 @@ Tree shaking remove código **morto** (nunca usado); [[wiki/concepts/code-splitt
 
 [[wiki/sources/jstack-o-que-sao-modulos]] ensina só CommonJS (`require`/`module.exports`), o formato que atrapalha a análise estática descrita acima. Ver [[wiki/concepts/modulos-nodejs]] para a comparação com ESM.
 
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], as funções de retângulo vão num objeto exportado como `default`. Agrupar assim impede o bundler de descartar a função que não for usada; exports nomeados com `import * as retangulo` dão o mesmo agrupamento sem esse custo.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/jstack-o-que-sao-modulos]]: curso ensina CJS, o formato que dificulta tree shaking
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: objeto default × tree-shaking

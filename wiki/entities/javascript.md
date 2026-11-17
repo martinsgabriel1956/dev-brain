@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 18
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -41,6 +41,22 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a aula 10 cobre eventos: `addEventListener`, callback por referência, `event.target` × `currentTarget`, `classList.toggle`, `keydown` e `resize` ([[wiki/concepts/propagacao-de-eventos-dom]]).
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], a aula 11 abre o JavaScript assíncrono com o JSON: "o J seja de JavaScript", mas o formato serve a qualquer linguagem; `JSON.parse` e `JSON.stringify` ([[wiki/concepts/json]]).
+
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a aula 12 define síncrono ("ideia de ordem") e assíncrono (tarefas "no fundo da aplicação") e lista AJAX, Axios, Promises, Fetch e async/await ([[wiki/concepts/javascript-assincrono]]).
+
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a aula 13 é conceitual: API, HTTP/HTTPS e os métodos GET, POST, PUT, DELETE e HEAD, preparando o AJAX ([[wiki/concepts/api]]).
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a aula 14 é a primeira prática de requisição: `XMLHttpRequest`, `open`, `send`, `onreadystatechange` e `JSON.parse` contra a API do GitHub ([[wiki/concepts/xmlhttprequest]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a aula 15 cobre Promises: `new Promise`, `resolve`, `reject`, `then`, `catch` e o `pending` no console ([[wiki/concepts/promise-javascript]]).
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a aula 16 troca a Promise com XHR por `axios.get(url).then(...)`, com o Axios carregado por CDN ([[wiki/entities/axios]]).
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], a aula 17 cobre ES Modules no navegador: `type="module"`, `export`, `import` e `export default` ([[wiki/concepts/modulos-nodejs]]).
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula 18 cobre desestruturação de objeto, de parâmetro e de array ([[wiki/concepts/desestruturacao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -53,3 +69,11 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: DOM parte 1
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: criar elementos
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: eventos
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: JSON
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: JavaScript assíncrono
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API e HTTP
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: AJAX com XHR
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: Promises
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: Axios
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: Modules JS
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação

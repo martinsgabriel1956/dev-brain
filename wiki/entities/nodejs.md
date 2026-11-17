@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 17
+source_count: 18
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -67,6 +67,8 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: `request.method` e `r
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: tabela de rotas em `src/routes.js` com `find` e handlers em `src/controllers/UserController.js`, ainda com o `http` puro. Ver [[wiki/concepts/roteamento-http]] e [[wiki/concepts/controller]].
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o back-end "pode ser Node, que é JavaScript, ou pode ser, por exemplo, PHP": com JSON, a linguagem do servidor não importa para o front.
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -86,3 +88,4 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: tabela de 
 - [[wiki/sources/jstack-criando-o-servidor-http]]: JStack aula 04: servidor com http, sem reload
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: JStack aula 05: primeira rota GET /users
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: JStack aula 06: routes.js e controller
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: Node como exemplo de back-end

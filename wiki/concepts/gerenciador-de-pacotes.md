@@ -4,7 +4,7 @@ title: "Gerenciador de Pacotes (CPAN, Bundler, npm, Bower)"
 aliases: ['package manager', 'npm']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [dependencias, npm, build, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -38,6 +38,8 @@ Node, npm e Yarn ("opcional, porém recomendável"); `yarn create react-app` ou 
 
 Em [[wiki/sources/jstack-o-que-sao-modulos]], os pacotes do npm são o terceiro tipo de módulo: "um lugar pra gente conseguir publicar esses módulos que a gente cria [...] com a comunidade". O uso fica para o capítulo seguinte. O npm publica pacotes (pasta com `package.json`), não arquivos soltos. Ver [[wiki/concepts/modulos-nodejs]].
 
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], "você pode instalar aqui via npm, yarn", mas a instalação fica para quando houver framework; até lá, CDN.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -48,3 +50,4 @@ Em [[wiki/sources/jstack-o-que-sao-modulos]], os pacotes do npm são o terceiro 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: init, install, -D
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: yarn create, npx, yarn.lock e dependências transitivas
 - [[wiki/sources/jstack-o-que-sao-modulos]]: npm como terceiro tipo de módulo
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: npm/yarn adiados, CDN no lugar

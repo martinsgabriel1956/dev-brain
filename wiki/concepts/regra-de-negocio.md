@@ -4,7 +4,7 @@ title: "Regra de negócio"
 aliases: ["regras de negócio", "business rule", "business logic", "lógica de negócio"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [backend, dominio, regra-de-negocio, seguranca, validacao]
 skill: tech-mentor-backend
 status: stub
@@ -28,8 +28,11 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], "é muito mais res
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], a regra sai do `index.js` para o [[wiki/concepts/controller]], definido como "o responsável por armazenar toda a regra de negócio". O exemplo ("verificar se o email [...] já não está inserido no banco") é regra de negócio de fato, mas o lugar dela numa arquitetura em camadas é um service/use case, não o controller HTTP.
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o back-end é "aquela parte do código onde faz as requisições, organização das regras de negócio para com o banco de dados"; o front só requisita ou envia valores.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: regra de negócio no back-end (o preço do sapato) e o cadastro sem validação
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: aplicação regra, banco guarda
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: regra movida para o controller (lugar discutível)
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: regras de negócio no back-end

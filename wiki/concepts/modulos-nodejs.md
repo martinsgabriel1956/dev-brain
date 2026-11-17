@@ -4,7 +4,7 @@ title: "Módulos no Node.js (CommonJS e ESM)"
 aliases: ["CommonJS", "CJS", "require", "module.exports", "ES Modules", "ESM", "import/export", "módulos do Node"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [nodejs, javascript, modulos, commonjs, esm, require, import, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -54,8 +54,13 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], o primeiro módulo nativo em
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], mover o código para `controllers/` quebra `require('./mocks/users')`; vira `../mocks/users`. O caminho do `require` é relativo ao arquivo que importa, não ao terminal. O `require('./controllers/userController')` para o arquivo `UserController.js` só funciona em sistemas de arquivos que ignoram maiúsculas.
 
+## ES Modules no navegador (FrontPUSH, JavaScript aula 17)
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], [[wiki/entities/nasser|Násser]] usa ESM direto no navegador: `<script type="module">`, `export function` e `import { areaRetangulo } from "./retângulo.js"`, e depois um objeto como `export default` importado com nome livre. Diferenças em relação ao Node: o navegador exige servidor (o `file://` tem origem `null` e o `import` cai no CORS), `./` e extensão no caminho; o módulo tem escopo próprio, *strict mode* e `defer` implícito. `import * as nome` resolve o "não sei o nome da função" sem agrupar tudo num default, que atrapalha o [[wiki/concepts/tree-shaking]].
+
 ## Key sources
 
 - [[wiki/sources/jstack-o-que-sao-modulos]]: três tipos de módulo; require, module.exports e exports; require('os')
 - [[wiki/sources/jstack-criando-o-servidor-http]]: require('http') na prática
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: require relativo ao arquivo; maiúsculas no nome
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: ESM no navegador, type=module, named × default

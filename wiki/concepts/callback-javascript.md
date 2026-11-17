@@ -4,7 +4,7 @@ title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 14
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -58,6 +58,14 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `handler: 
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a "boa prática" é declarar o callback à parte e passar só o nome: "deixar o nome da função como referência e aí quando clica, ele busca o nome da função". Isso também permite `removeEventListener` com a mesma referência.
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a lista de ferramentas do assíncrono (AJAX, Axios, Promises, Fetch, async/await) deixa de fora o callback, que é o mecanismo mais antigo e que o curso já usou em `addEventListener` e `forEach` ([[wiki/concepts/javascript-assincrono]]).
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], `XHR.onreadystatechange = function () {...}` é um callback de evento: "verificar quando o estado mudar, e aí eu vou lá e disparo uma função" ([[wiki/concepts/xmlhttprequest]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `resolve` e `reject` "parecem uma variável, mas também [são] uma função": são callbacks que o `Promise` cria e passa ao executor. A aula os descreve como "uma função que declara outra função", mas eles só são chamados, não declarados pelo usuário.
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], "o event passa aqui automático, porque é uma função de callback": por isso dá para desestruturá-lo direto no parâmetro do handler.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
@@ -70,3 +78,7 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: callback no addEventListener, forEach e map
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: handler guardado como referência
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: callback nomeado por referência
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: o callback fora da lista do assíncrono
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: onreadystatechange como callback
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: resolve/reject como callbacks prontos
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: o event chega no callback

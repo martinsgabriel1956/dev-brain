@@ -4,7 +4,7 @@ title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -90,6 +90,10 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], `node src/index.js` fica rod
 
 Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o loop infinito acontece na gravação: um `while` sem `i++` trava o navegador ("isso consome muito processamento"). É a thread principal ocupada; nada mais roda até o loop terminar. Pela mesma razão, um `while` que espera um booleano mudar "em outra parte do seu código, ou então puxando de algum banco de dados" nunca o vê mudar.
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], o assíncrono são "tasks [...] que rodam no fundo da aplicação" enquanto o JavaScript roda "o síncrono bonitinho", com "ideia de processamento paralelo". O que roda no fundo é o ambiente (Web APIs, libuv); o callback volta pela fila e o event loop o executa na mesma thread. Ver [[wiki/concepts/javascript-assincrono]].
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `resolve` "levanta uma bandeirinha verde" que "aciona o then". `[skill: lang-dynamic]` Na prática, o callback do `then` entra na fila de microtasks e roda quando a pilha esvazia, antes dos timers.
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
@@ -98,3 +102,5 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o loop infini
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: modelo call stack + callback queue + event loop, com correções
 - [[wiki/sources/jstack-criando-o-servidor-http]]: listen mantém o loop vivo; requisição = evento
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: loop infinito trava o browser
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: "no fundo da aplicação" (é o ambiente, não outra thread JS)
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: then como microtask (a bandeirinha)

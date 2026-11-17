@@ -4,7 +4,7 @@ title: "SPA (Single Page Application)"
 aliases: ['SPA', 'single page apps']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [spa, frontend, estado, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -26,6 +26,8 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o exemplo de
 
 Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], criar HTML só com JavaScript é "um dos princípios" da SPA: "o JavaScript sozinho constrói a página web em modos SPA", dentro de uma `div#app`. É a renderização no cliente; com SSR o HTML já chega pronto.
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a vantagem do JavaScript assíncrono é "carregar seção [...] sem precisar recarregar a página inteira": no e-commerce, só o miolo do produto ([[wiki/concepts/javascript-assincrono]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -34,3 +36,4 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: SPA na aba Network; origem atribuída ao Angular
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: e-commerce como exemplo de página dinâmica
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: JS montando a página dentro de div#app
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: recarregar só uma seção

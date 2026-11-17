@@ -3,8 +3,8 @@ type: concept
 title: "Limites da API de Busca de Código do GitHub"
 aliases: ["github code search", "search code api", "indexação de busca do github"]
 date_created: 2026-10-01
-date_updated: 2026-10-01
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [github, secret-scanning, indexacao, api, security]
 skill: tech-mentor-security
 status: stub
@@ -27,6 +27,9 @@ A rota de busca de código do GitHub (`search code`, parte da REST API de Search
 
 Uma busca ingênua por prefixo de chave (ex.: `sk_live`) tende a devolver repositórios antigos, já bem indexados e irrelevantes para o que acabou de vazar — não o commit mais recente, que é onde uma secret tem maior chance de ainda estar ativa. Do lado defensivo, isso também significa que confiar apenas na busca pública do GitHub para saber se uma credencial da própria empresa vazou é insuficiente: o [[wiki/concepts/secret-scanning]] corporativo (GitHub Advanced Security, push protection) opera sobre o próprio repositório no momento do push, não depende desse índice de busca global.
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API pública do GitHub (`/users/<usuário>`, devolvendo login, ID, node ID) é o exemplo do FrontPUSH. `[external]` Sem token, a API REST do GitHub permite cerca de 60 requisições por hora por IP; com token, 5.000.
+
 ## Key Sources
 
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — introduz o conceito a partir da observação de que busca por prefixo de chave é ineficiente para achar vazamentos recentes
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: /users do GitHub como API pública

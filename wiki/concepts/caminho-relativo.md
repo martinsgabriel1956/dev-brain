@@ -4,7 +4,7 @@ title: "Caminho relativo de arquivos (HTML x CSS)"
 aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [frontend, html, css, caminho-relativo, arquivos]
 skill: tech-mentor-frontend
 status: stub
@@ -39,6 +39,8 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], mover
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `require('../mocks/users')` resolve a partir do arquivo que importa. Já caminhos de `fs` (`readFile('./x')`) resolvem a partir do diretório onde o processo foi iniciado; por isso se usa `__dirname` para eles.
 
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], o `import` usa `from "./retângulo.js"`: "como está no mesmo diretório, eu faço ponto barra". No navegador, `./` e a extensão são obrigatórios; acento no nome do arquivo funciona, mas complica URL e terminal.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`
@@ -46,3 +48,4 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `require('
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style.css sem barra x com barra
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/partials e o erro comum dos alunos
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: require relativo ao arquivo, fs relativo ao cwd
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: ./ no import do navegador

@@ -4,7 +4,7 @@ title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
 date_updated: 2026-11-16
-source_count: 10
+source_count: 14
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -36,6 +36,14 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os avatar
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o avatar do professor de exemplo é o link da imagem de perfil do GitHub de [[wiki/entities/mayk-brito|Mayk]] (Copy Image Link).
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], [[wiki/entities/nasser|Násser]] usa a API pública do GitHub ("muitíssimo utilizada nesses casos") como exemplo de GET: `/users/<usuário>` devolve login, ID e node ID. Promete usá-la nas próximas aulas. O repositório Public APIs, hospedado no GitHub, lista APIs de vários provedores, não só as do GitHub.
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a API `/users/<usuário>` do GitHub é consultada com `XMLHttpRequest`; o objeto traz avatar, bio, blog, company e URLs de outros recursos ([[wiki/concepts/xmlhttprequest]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a API `/users` do GitHub é consultada de novo, agora via Promise; com a URL alterada de propósito, o 404 cai no `catch`.
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a mesma API `/users` do GitHub, agora com `axios.get`; o usuário fica em `response.data`.
+
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
@@ -51,3 +59,7 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o avatar do profes
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — Invertocat redesenhado reto em ícone do FrontPUSH
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: GitHub x GitLab x Bitbucket
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: repositório da NLW; master → main; token
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API pública do GitHub como exemplo
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: /users consultado via XHR
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: /users via Promise, e o 404
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: /users via Axios

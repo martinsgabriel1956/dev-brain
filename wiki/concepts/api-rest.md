@@ -4,7 +4,7 @@ title: "API REST (RESTful)"
 aliases: ["REST", "RESTful", "API RESTful", "REST API"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [api, rest, http, json, backend, arquitetura]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], [[wiki/entities/mateus-silva|Mateus
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a regra vira código: GET em `/users`, sem ID, é listagem, e a resposta é JSON (`application/json`). Ver [[wiki/concepts/roteamento-http]].
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], a troca entre front e back é "por meio de uma API e [...] de arquivos de linguagem unificada", o JSON. A aula ainda não define API; isso fica para a seguinte, com requisição HTTP.
+
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API é o meio da requisição front → back, acessada "via URL" e devolvendo JSON, com os métodos ligados ao CRUD (POST cria, PUT atualiza). A aula diz que a API "reflete o banco de dados"; `[skill: tech-mentor-backend]` o recurso REST não precisa espelhar tabela. Ver [[wiki/concepts/api]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: MVC com template engine x API REST com JSON; um back-end para web e mobile
@@ -51,3 +55,5 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a regra vira código:
 - [[wiki/sources/jstack-http-e-apis-rest]]: HTML × JSON como "representação do estado"; plural; REST como "padrão HTTP" (corrigido)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: Full MVC × API REST
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: GET /users como listagem em JSON
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: API + JSON entre front e back
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API via URL, métodos e CRUD

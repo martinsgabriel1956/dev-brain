@@ -4,7 +4,7 @@ title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -58,6 +58,8 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], uma API é "alguém ali no meio" qu
 
 Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], front-end é "a parte de frente de usuário" e back-end é "aquele que vai lá no banco de dados, que constrói as funcionalidades". O JavaScript do front também é lógica; a divisão é onde o código roda.
 
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o back-end organiza "as regras de negócio para com o banco de dados" e o front-end "requisita ou passa os valores": a página de produto do e-commerce pede pelo ID, e o cadastro "empacota" o formulário. O JSON é o formato comum entre os dois, qualquer que seja a linguagem do servidor (Node, PHP).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
@@ -69,3 +71,4 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], front-end é
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: responsabilidades do back-end
 - [[wiki/sources/jstack-http-e-apis-rest]]: API no meio de vários clientes; HTTP como troca de mensagens
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: front em contato com o usuário, back no banco
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: e-commerce e cadastro como troca front × back em JSON

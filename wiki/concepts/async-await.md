@@ -4,7 +4,7 @@ title: "async/await (JavaScript)"
 aliases: ["async await", "await", "async function", "Promise.all", "função assíncrona"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [javascript, assincronia, promise, async-await, promise-all, nodejs, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -38,6 +38,10 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], async/await 
 
 [[wiki/sources/jstack-o-que-sao-modulos]] ensina módulos CommonJS, onde não há top-level `await`. Ver [[wiki/concepts/modulos-nodejs]].
 
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], `async`/`await` fecha a lista de ferramentas do JavaScript assíncrono do FrontPUSH. O exemplo da aula (requisição → JSON → objeto → cadastro) é uma cadeia dependente, o caso de `await` em sequência ([[wiki/concepts/javascript-assincrono]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a Promise é consumida com `then`/`catch`. Com `async/await` seria `const user = await minhaPromise()` dentro de `try/catch`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: await no createProffy, async obrigatório, Promise.all explicado como sequencial
@@ -45,3 +49,5 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], async/await 
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: busca de professores sem catch
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: async/await no roteiro, ES2017
 - [[wiki/sources/jstack-o-que-sao-modulos]]: módulos CJS, sem top-level await
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: async/await anunciado; exemplo de cadeia dependente
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: then/catch, equivalente com await

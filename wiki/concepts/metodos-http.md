@@ -4,7 +4,7 @@ title: "Métodos HTTP"
 aliases: ["http methods", "get post put delete", "verbos http"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 10
+source_count: 13
 tags: [http, api, rest, idempotencia]
 skill: tech-mentor-networking
 status: stub
@@ -62,6 +62,12 @@ GET busca ou lista, POST cria, PUT atualiza e DELETE apaga; o navegador "sempre"
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `request.method` vem em maiúsculas (`'GET'`), e pela barra do navegador é sempre GET. A rota compara método e caminho; método errado numa rota existente deveria dar 405, mas a aula usa 404 "para facilitar".
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], GET pega ("o padrão"), POST cria ("remete ao CRUD"), PUT atualiza (o usuário 7 troca o e-mail), DELETE apaga e HEAD "puxa o cabeçalho". Precisões: PUT não exige GET antes e substitui o recurso inteiro (troca parcial é PATCH, não citado); HEAD é GET sem corpo; faltam PATCH e OPTIONS.
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], o método é o primeiro argumento de `XHR.open`: "eu estou só pegando uma informação, então é o método get".
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], cada método vira um método do Axios: `.get` na aula, e "eu poderia muito bem colocar aqui o método .put, método .delete, método .post". `post` e `put` recebem o corpo como segundo argumento.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — GET/PUT/DELETE idempotentes, POST não
 - [[wiki/sources/csrf-cross-site-request-forgery]] — POST de troca de e-mail explorado por CSRF
@@ -73,3 +79,6 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `request.method` vem 
 - [[wiki/sources/jstack-http-e-apis-rest]]: GET/POST/PUT/DELETE; navegador sempre GET; sem PATCH
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: GET/POST/PUT/DELETE e o Insomnia
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: request.method; 405 citado, 404 usado
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: GET, POST, PUT, DELETE, HEAD
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: GET no XHR.open
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: axios.get/post/put/delete

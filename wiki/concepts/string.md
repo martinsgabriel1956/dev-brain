@@ -4,7 +4,7 @@ title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
@@ -92,6 +92,8 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], `nome.l
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `item.toUpperCase()` dentro do `forEach` põe todas as marcas em caixa alta.
 
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], `upperName` devolve a string "com a função upperCase [...] em caixa alta": é o método `toUpperCase()`.
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
@@ -101,3 +103,4 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `item.t
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: toUpperCase e autoboxing
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: length e métodos de String.prototype
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: toUpperCase em cada item
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: toUpperCase em upperName

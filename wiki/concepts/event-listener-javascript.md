@@ -4,7 +4,7 @@ title: "Event listener (addEventListener)"
 aliases: ["addEventListener", "ouvidor de eventos", "event listener", "event.target", "evento change"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [javascript, dom, eventos, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -40,6 +40,8 @@ Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], eve
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], "tudo que você faz no seu browser é um evento". `addEventListener('click', callback)` com a função nomeada passada por referência ("se eu colocar assim [com parênteses] ela já vai executar"), o objeto `event` (`currentTarget`, `target`, `type`, o extinto `path`), a lista de eventos de mouse e teclado, `classList.toggle` no clique e `event.key` no `keydown`. `keydown` e `resize` não disparam na `div`: o primeiro pede foco, o segundo só existe no `window`. `keypress` está obsoleto; `mousemove` e `scroll` pedem throttle ([[wiki/concepts/propagacao-de-eventos-dom]]).
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `document.documentElement.addEventListener("mousemove", mouseMove)` loga a posição do mouse. O nome do evento é minúsculo (`"mousemove"`), e o handler pode desestruturar o evento no parâmetro: `function mouseMove({ clientX, clientY })`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: change no select de UF, event.target, selectedIndex
@@ -49,3 +51,4 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: addEventListener como modelo de callback
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: eventos que modificam a árvore
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: click, event, target, keydown, resize no window
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: mousemove e handler desestruturado

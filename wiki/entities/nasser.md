@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 108
+source_count: 116
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -146,6 +146,38 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], chama eventos de "a aula mais importante" do DOM e deixa o recado "só a sua criatividade que vai te limitar". Usa `toggle` "demais" nos menus hambúrguer. A legenda o chama de "Anás".
 
+## Módulo de JavaScript, aula 11
+
+Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], explica o JSON com a analogia do inglês ("todos conseguem se comunicar") e exemplos de notebook Dell e Acer. Não diz o nome; autoria pela sequência do módulo.
+
+## Módulo de JavaScript, aula 12
+
+Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], aula conceitual de 4 minutos, sem código: síncrono como "ideia de ordem" e assíncrono "no fundo da aplicação". Não diz o nome; autoria pela sequência do módulo.
+
+## Módulo de JavaScript, aula 13
+
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], aula conceitual sobre API e HTTP: a API do GitHub com o próprio usuário, a analogia do "canal" para o HTTP e o usuário 7 que troca o e-mail para o PUT. Não diz o nome; autoria pela sequência do módulo.
+
+## Módulo de JavaScript, aula 14
+
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], diz o nome de novo nas perguntas imaginárias ("Ah, Násser, por que vai se chamar XHR?"; a legenda escreve "Anasse"). Consulta o próprio usuário do GitHub com XHR.
+
+## Módulo de JavaScript, aula 15
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], explica o `then` e o `catch` com a imagem das bandeirinhas verde e vermelha e testa o erro quebrando a URL. Não diz o nome; autoria pela sequência do módulo.
+
+## Módulo de JavaScript, aula 16
+
+Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], aula curta sobre Axios ("mais um tijolinho"), com "olha só o tamanho da parafernália" para a versão anterior. Diz o nome ("Ah, Nasser" na legenda).
+
+## Módulo de JavaScript, aula 17
+
+Em [[wiki/sources/frontpush-modules-js-import-export-default]], explica `import`/`export` com área e perímetro de retângulo e `upperName`, e insiste em nomes semânticos no import default ("retângulo, rectangle"). Diz o nome ("Nárcio" na legenda).
+
+## Módulo de JavaScript, aula 18
+
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], ensina desestruturação a partir das coordenadas do mouse e de um array de marcas de carro, para que o aluno "bata o olho" e reconheça o padrão no React. Não diz o nome; autoria pela sequência do módulo.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -256,3 +288,11 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: módulo de JavaScript, aula 08 ("Nácio" na legenda)
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: módulo de JavaScript, aula 09 (autoria pela sequência)
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: módulo de JavaScript, aula 10 ("Anás" na legenda)
+- [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: módulo de JavaScript, aula 11: JSON (autoria pela sequência)
+- [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: módulo de JavaScript, aula 12: JS assíncrono (autoria pela sequência)
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: módulo de JavaScript, aula 13: API e HTTP (autoria pela sequência)
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: módulo de JavaScript, aula 14: AJAX (diz o nome; "Anasse" na legenda)
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: módulo de JavaScript, aula 15: Promises (autoria pela sequência)
+- [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: módulo de JavaScript, aula 16: Axios (diz o nome)
+- [[wiki/sources/frontpush-modules-js-import-export-default]]: módulo de JavaScript, aula 17: Modules JS ("Nárcio" na legenda)
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: módulo de JavaScript, aula 18: desestruturação (autoria pela sequência)

@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-08-18
-source_count: 8
+date_updated: 2026-11-16
+source_count: 9
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -43,6 +43,8 @@ O sentido de "API" como contrato entre dois sistemas via rede é o estágio mais
 - [[wiki/sources/email-address]] — RFC 5322/5321 como exemplo de contrato de sintaxe formal entre sistemas fora do domínio de HTTP/REST: spec rígida (limites de octetos, LDH) coexistindo com desvios de implementação toleráveis (case-insensitivity de fato, apesar da RFC permitir case-sensitivity)
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — origem pré-rede do termo "API" (rotina local de sistema operacional, anos 60-70) até virar contrato de rede
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API é acessada "por meio de regrinhas, por meio de documentos que têm uma padronização": a URL tem que estar "bem de acordo com a documentação daquela API". Isso é o contrato. A aula diz que ela "reflete o banco de dados"; o contrato deveria esconder o schema ([[wiki/concepts/api]]).
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -53,3 +55,4 @@ O sentido de "API" como contrato entre dois sistemas via rede é o estágio mais
 - [[wiki/sources/email-address]] — RFC 5322/5321 como contrato de sintaxe formal, análogo à ideia central deste conceito num domínio fora de HTTP/REST
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — WSDL/SOAP como o extremo de formalidade e rigidez de contrato, em contraste com o contrato mais leve típico de REST
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — "contrato" como interface in-process entre módulos de um [[wiki/concepts/monolito-modular]] (analogia getters/setters), não HTTP — mesma ideia de expor input/output e esconder internals
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: documentação como regra de acesso

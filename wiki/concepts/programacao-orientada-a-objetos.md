@@ -4,7 +4,7 @@ title: "Programação Orientada a Objetos"
 aliases: ["POO", "OOP", "object-oriented programming", "orientação a objetos"]
 date_created: 2026-11-03
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [poo, oop, paradigma, historia-do-software, encapsulamento, polimorfismo, heranca]
 skill: tech-mentor-backend
 status: draft
@@ -53,9 +53,15 @@ Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], a distinç
 
 Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a orientação a objetos é apresentada como abstração do mundo real: a caneta tem características (cor, comprimento, ponta) e funções (rabiscar, traço fino ou grosso), que viram atributos e métodos. A aula fica em objetos literais; a pergunta "está muito fixo" é respondida com mutação, quando a resposta de OO seria um molde (`class` ou função fábrica) para criar vários retângulos ([[wiki/concepts/objetos-javascript]]).
 
+Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a primeira classe do FrontPUSH: `new XMLHttpRequest()`. "Uma classe [...] tem um conceito muito parecido com um objeto [...] quando você instancia ela em alguma variável, automaticamente essa variável vira um objeto [...] que herda todas essas propriedades." Em JavaScript a herança é por protótipo, e `new` chama um construtor ([[wiki/concepts/xmlhttprequest]]).
+
+Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `new Promise(...)` é a segunda "classe" do curso: "eu estou instanciando uma classe, porque eu tenho new". Ele insiste que entender objetos é chave para "uma função dentro da outra, com instanciamento de classes".
+
 ## Key sources
 
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — história do paradigma e tese de que ele mudou de lugar na arquitetura
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: objeto como "classe gigante" (impreciso)
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: método × propriedade no console
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: caneta como objeto, atributos e métodos
+- [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: classe e instância com XMLHttpRequest
+- [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: Promise como classe instanciada

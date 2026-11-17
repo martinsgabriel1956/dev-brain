@@ -4,7 +4,7 @@ title: "Propagação de eventos no DOM (bubbling, target × currentTarget, deleg
 aliases: ["event bubbling", "bubbling", "capturing", "captura", "target", "currentTarget", "delegação de eventos", "event delegation", "stopPropagation", "preventDefault", "composedPath"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [javascript, dom, eventos, bubbling, delegacao, target, currenttarget]
 skill: lang-dynamic
 status: stub
@@ -56,6 +56,9 @@ Relacionado: [[wiki/concepts/event-listener-javascript]], [[wiki/concepts/dom]].
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], [[wiki/entities/nasser|Násser]] põe o listener numa `.box` com `h1` e `h3` dentro: `currentTarget` "está sempre retornando a caixa", e `target` "vai nos filhos". Ele não dá nome ao mecanismo; é o bubbling. Também mostra o `event.path`, hoje removido.
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o `mousemove` é escutado no `document.documentElement`; como o evento sobe por bubbling, `document` ou `window` também receberiam o movimento em qualquer ponto da página.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: target × currentTarget numa .box com filhos
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: mousemove no documentElement

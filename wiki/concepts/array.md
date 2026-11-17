@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-16
-source_count: 18
+source_count: 19
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -103,6 +103,8 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], o array é "u
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a continuação: `forEach` percorre "sem você ficar pensando em índice", e `map` devolve um array novo, usado para juntar `marcas` e `carros` pela posição ([[wiki/concepts/metodos-de-array-javascript]]).
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `const [marca1, marca2, marca3, marca4] = carros` pega as marcas por posição: "array, colchetes". Também existem pulo (`[a, , c]`), resto (`[a, ...resto]`) e valor padrão ([[wiki/concepts/desestruturacao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -123,3 +125,4 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a conti
 - [[wiki/sources/frontpush-for-while-each-sass]]: listas e mapas do Sass com `@each`
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: índice como gaveta, aninhado, pop/push/length
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach e map
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação de array

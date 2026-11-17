@@ -4,7 +4,7 @@ title: "CRUD"
 aliases: ["Create, Read, Update, Delete", "crud", "operações CRUD"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [crud, api, rest, banco-de-dados, backend, metodos-http]
 skill: tech-mentor-backend
 status: stub
@@ -30,6 +30,9 @@ Não confundir com [[wiki/concepts/crud-resolvido]], a tese de que construir CRU
 
 Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: "crud são as operações de create, read, update e delete": criar usuário, pegar todos ou um "a partir do ID", atualizar e remover, todas como funções do [[wiki/concepts/controller]] de usuários. A aula implementa só a listagem.
 
+Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], o POST é "de criar, de create, que sempre remete ao CRUD"; PUT atualiza e DELETE apaga. O Read é o GET.
+
 ## Key sources
 
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: CRUD de usuários como as funções do controller
+- [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: POST como o C do CRUD

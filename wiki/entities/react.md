@@ -4,7 +4,7 @@ title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -55,6 +55,8 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a difer
 
 Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o React é a motivação para criar HTML pelo JavaScript: "é o próprio JavaScript que renderiza o HTML, é o próprio JavaScript que renderiza o CSS". O CSS não é renderizado pelo React; vem de arquivos importados ou CSS-in-JS.
 
+Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o [[wiki/entities/frontpush|FrontPUSH]] ensina desestruturação como preparo para o React. Os usos que vêm lá: `function Card({ title })` nas props e `const [count, setCount] = useState(0)`.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
@@ -89,3 +91,4 @@ Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adicio
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions comuns no React
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map × forEach, base das listas no JSX
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: React como "tudo JavaScript"
+- [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação como preparo para React
