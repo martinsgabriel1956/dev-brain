@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 116
+date_updated: 2026-11-17
+source_count: 122
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -178,6 +178,30 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], explica `import`
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], ensina desestruturação a partir das coordenadas do mouse e de um array de marcas de carro, para que o aluno "bata o olho" e reconheça o padrão no React. Não diz o nome; autoria pela sequência do módulo.
 
+## Módulo de ReactJS, aula 01
+
+Em [[wiki/sources/frontpush-intro-modulo-reactjs]], abre o módulo de React como "biblioteca JavaScript" e diz que "também fiz" o módulo de JavaScript ES6+ para preparar o aluno. Não diz o nome; autoria pela sequência e por essa frase.
+
+## Módulo de ReactJS, aula 02
+
+Em [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]], defende a linguagem antes da biblioteca com "aquela frase que eu sempre digo": todo framework "sempre vai ser baseada em uma determinada linguagem". Não diz o nome; autoria pela sequência.
+
+## Módulo de ReactJS, aula 03
+
+Em [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]], diz o próprio nome ("o que é, Násser?") ao resolver biblioteca × framework: React.js é biblioteca, o ecossistema React é framework. Usa a KaBuM para explicar interface dinâmica.
+
+## Módulo de ReactJS, aula 04
+
+Em [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]], conta que é "desenvolvedor PHP" e que "meio que parei, estou estudando mais front-end"; é "da época" do webmaster, antes de front e back serem duas profissões. Diz o nome no exemplo do endpoint ("ó, Násser, quando você for requisitar produtos").
+
+## Módulo de ReactJS, aula 05
+
+Em [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]], fecha as aulas de SPA com o esquema `App.js` e a componentização, de novo com a KaBuM. Não diz o nome; autoria pela sequência.
+
+## Módulo de ReactJS, aula 06
+
+Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]], mostra o JSX virando `React.createElement` no REPL do Babel e adota o create-react-app para não configurar Babel e Webpack à mão. Não diz o nome; autoria pela sequência.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -296,3 +320,9 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], ensina d
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: módulo de JavaScript, aula 16: Axios (diz o nome)
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: módulo de JavaScript, aula 17: Modules JS ("Nárcio" na legenda)
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: módulo de JavaScript, aula 18: desestruturação (autoria pela sequência)
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: módulo de ReactJS, aula 01: intro (autoria pela sequência)
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: módulo de ReactJS, aula 02: o que saber de JS (autoria pela sequência)
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: módulo de ReactJS, aula 03: conceitos gerais (diz o nome)
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: módulo de ReactJS, aula 04: SPA, métodos (diz o nome; veio do PHP)
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: módulo de ReactJS, aula 05: SPA, componentes (autoria pela sequência)
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: módulo de ReactJS, aula 06: JSX, Webpack e Babel (autoria pela sequência)

@@ -3,8 +3,8 @@ type: concept
 title: "Levantamento de estado (lifting state up)"
 aliases: ["lifting state up", "levantar estado", "callback como prop", "comunicação filho → pai"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-17
+source_count: 3
 tags: [react, estado, componentes, props]
 skill: lang-dynamic
 status: stub
@@ -28,3 +28,4 @@ O `TeacherItem` copia `favorited` para um estado próprio e perde a sincronia; m
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Dropzone → CreatePoint
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: favorito: estado no pai
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: o contraponto: sidebar e content da KaBuM dependem do mesmo produto

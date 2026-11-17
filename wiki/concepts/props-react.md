@@ -3,8 +3,8 @@ type: concept
 title: "Props (React)"
 aliases: ["props", "propriedades", "propriedades de componente"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-17
+source_count: 7
 tags: [react, componentes, typescript]
 skill: tech-mentor-frontend
 status: stub
@@ -47,3 +47,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: HTMLAttributes, rest/spread e teacher
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: title e tabBarIcon
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: ReactNode como prop e booleano
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: botão que recebe destino e cor "como se ele fosse uma função"

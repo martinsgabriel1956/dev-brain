@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-17
+source_count: 15
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -63,3 +63,4 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a mesma API
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: /users consultado via XHR
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: /users via Promise, e o 404
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: /users via Axios
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: api.github.com como exemplo de endpoints

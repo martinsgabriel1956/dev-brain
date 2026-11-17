@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-17
+source_count: 11
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -72,3 +72,4 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o bac
 - [[wiki/sources/jstack-http-e-apis-rest]]: API no meio de vários clientes; HTTP como troca de mensagens
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: front em contato com o usuário, back no banco
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: e-commerce e cadastro como troca front × back em JSON
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: back-end em qualquer linguagem, "porque ele comunica em JSON"

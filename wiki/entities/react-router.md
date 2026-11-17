@@ -3,8 +3,8 @@ type: entity
 title: "React Router"
 aliases: ["react-router-dom", "React Router DOM", "BrowserRouter"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 6
 tags: [react, roteamento, spa, biblioteca]
 skill: tech-mentor-frontend
 status: stub
@@ -42,3 +42,5 @@ v5 no Proffy: `BrowserRouter`, `Route path exact component`, `Link to`, e a aba 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: comparação com o React Navigation
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: rotas /, /study e /give-classes
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: useHistory no cadastro de aula
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: citado como pacote do ecossistema que faz do React um framework
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: rotas no cliente na definição de SPA, sem nomear a biblioteca

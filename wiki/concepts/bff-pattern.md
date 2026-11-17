@@ -3,8 +3,8 @@ type: concept
 title: "BFF (Backend for Frontend)"
 aliases: ["bff", "backend for frontend", "best friends forever"]
 date_created: 2026-07-23
-date_updated: 2026-07-30
-source_count: 5
+date_updated: 2026-11-17
+source_count: 6
 tags: [bff, api-gateway, over-fetching, under-fetching, aggregation, frontend, graphql, n-plus-one]
 skill: tech-mentor-backend
 status: stable
@@ -77,3 +77,4 @@ Em SPAs e apps mobile, o problema de onde guardar tokens de autenticação com s
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — comparação BFF vs. GraphQL como respostas ao mesmo problema de N+1/over-under-fetching
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — BFF de leitura agregando 4 sistemas de fornecedores como alternativa enxuta a unificar produtos via microfrontends
 - [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — BFF citado (sem detalhamento) como alternativa arquitetural ao PKCE para posse segura de token
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: "uma API, múltiplos clientes" sem BFF; o limite que o BFF resolve

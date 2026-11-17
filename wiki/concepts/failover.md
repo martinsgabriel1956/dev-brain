@@ -3,8 +3,8 @@ type: concept
 title: "Failover"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-11-17
+source_count: 4
 tags: [failover]
 skill: tech-mentor-system-design
 status: stub
@@ -28,3 +28,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/dns]]
 - [[wiki/sources/multi-region-global-lb]]
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — fallback entre provedores de LLM na OpenRouter; pool de ≥3
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: "servidor espelhado para quando um cair o outro subir", citado como solução de carga

@@ -3,8 +3,8 @@ type: concept
 title: "Estado"
 aliases: ["state", "program state", "estado do sistema"]
 date_created: 2026-05-13
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-11-17
+source_count: 4
 tags: [estado, state, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -55,3 +55,4 @@ O jogo Snake é citado como um dos melhores projetos para iniciantes exercitarem
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — Snake como projeto de aprendizado de gerenciamento de estado
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "componentes encapsulados que gerenciam seu próprio estado" (frase da antiga home do React)

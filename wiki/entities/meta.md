@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-17
+source_count: 14
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -46,6 +46,7 @@ Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalm
 
 ## Key Sources
 
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: React aula 03 do FrontPUSH: Facebook como criador do React
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — origem do GraphQL como resposta ao N+1/over-under-fetching
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — transição para deploy contínuo em escala (2017)
@@ -59,6 +60,11 @@ Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalm
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — preto e branco do Facebook tingidos de azul
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de codebase excelente
 
+## Facebook como origem do React
+
+Em [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]], a interface do Facebook (chat e curtidas atualizando sem recarregar) é a motivação do [[wiki/entities/react]], "criada pelo Facebook [...] por volta de 2013, 2014". O lançamento público foi em maio de 2013.
+
 ## Meta como empregadora (rumor)
 
 Em [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]], parte da FANG; "dizem que a Meta tem uma codebase excelente", rumor que o autor pede para não tomar como recomendação.
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: o Facebook como quem "disponibiliza" o create-react-app

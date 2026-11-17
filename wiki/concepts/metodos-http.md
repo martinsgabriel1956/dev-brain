@@ -3,8 +3,8 @@ type: concept
 title: "Métodos HTTP"
 aliases: ["http methods", "get post put delete", "verbos http"]
 date_created: 2026-09-30
-date_updated: 2026-11-16
-source_count: 13
+date_updated: 2026-11-17
+source_count: 14
 tags: [http, api, rest, idempotencia]
 skill: tech-mentor-networking
 status: stub
@@ -82,3 +82,4 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], cada métod
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: GET, POST, PUT, DELETE, HEAD
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: GET no XHR.open
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: axios.get/post/put/delete
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: GET confundido com a query string

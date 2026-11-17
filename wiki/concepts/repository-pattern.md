@@ -3,8 +3,8 @@ type: concept
 title: "Repository Pattern"
 aliases: ["padrão repositório", "repository"]
 date_created: 2026-05-01
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-17
+source_count: 9
 tags: [design-patterns, data-access, repository, infrastructure]
 skill: tech-mentor-backend
 status: stub
@@ -47,3 +47,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 - [[wiki/sources/unit-of-work-padrao-de-design]] — SQLAlchemy como implementação real de Repository + Unit of Work combinados (ORM classes + Session)
 - [[wiki/sources/unit-of-work-martin-fowler]] — fonte primária de Unit of Work: definição formal do padrão como alternativa a repositórios simples para coordenar escritas e concorrência
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: citado como sinônimo de Data Mapper (impreciso)
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: ProdutoDAO em PHP (Data Access Object, "Database Access Object" na fala)

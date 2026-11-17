@@ -3,8 +3,8 @@ type: concept
 title: "Reconciliação (Reconciliation)"
 aliases: ["reconciliation", "algoritmo de diffing", "keys em listas"]
 date_created: 2026-08-03
-date_updated: 2026-10-07
-source_count: 3
+date_updated: 2026-11-17
+source_count: 5
 tags: [frontend, react, virtual-dom, reconciliacao, keys, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -51,3 +51,5 @@ Só que gerar essa nova versão não significa que o DOM real vai ser tocado. No
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — job de reconciliação que reescala canal para notificação crítica sem confirmação.
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "comparar quais são as reais modificações" (sem o nome)
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "header e footer eu não preciso mexer": é a reconciliação que garante, não a componentização

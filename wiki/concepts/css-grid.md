@@ -3,8 +3,8 @@ type: concept
 title: "CSS Grid"
 aliases: ["grid", "display: grid", "grid layout", "grid-template-columns", "grid-template-areas", "grid-area"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-17
+source_count: 11
 tags: [css, layout, grid, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -68,3 +68,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o grid system é feito "
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 2fr 1fr 1fr com template-areas; repeat(3, 1fr)
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system de % sem Grid Layout
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: schedule-item 2fr 1fr 1fr
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: CSS Grid como exemplo de recurso novo sem suporte; Babel não ajuda em CSS (Autoprefixer)

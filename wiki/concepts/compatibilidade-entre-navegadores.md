@@ -3,8 +3,8 @@ type: concept
 title: "Compatibilidade entre navegadores (Can I use, Baseline)"
 aliases: ["suporte de navegadores", "cross-browser", "Can I use", "caniuse", "browser support"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 5
 tags: [frontend, navegador, css, javascript, compatibilidade, baseline]
 skill: tech-mentor-frontend
 status: stub
@@ -38,3 +38,4 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o CS
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: slide: usar `flex` em vez das propriedades separadas "para melhor consistência entre os browsers" (`0` sem unidade era problema do IE10/11)
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Can I use, legenda e prefixos de `transform`
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: prefixos automáticos no CSS compilado
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: "o browser não entende JS atualizado", com arrow function e CSS Grid como exemplos

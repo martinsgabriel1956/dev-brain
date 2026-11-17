@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Vertical"
 aliases: ["vertical scaling", "scale up", "upgrade de servidor"]
 date_created: 2026-06-26
-date_updated: 2026-10-08
-source_count: 9
+date_updated: 2026-11-17
+source_count: 10
 tags: [system-design, escalabilidade, infra, performance, tradeoff]
 skill: tech-mentor-system-design
 status: draft
@@ -64,3 +64,4 @@ Vertical online (aumentar CPU/memória sem desligar) existe via hypervisor há b
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — descreve o processo manual de resize num monolito tradicional (desligar → trocar tipo de instância → religar) como razão prática pela qual auto scaling costuma ser mais difícil de operar num monolito de servidor único; reforça a indisponibilidade do resize já registrada acima, mas conflates monolito com single-server sem réplicas (ver ressalva em [[wiki/concepts/auto-scaling]])
 
 - [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — teto da vertical: Postgres ~50k escritas/s na maior instância AWS
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: "servidores mais potentes" para o método tradicional

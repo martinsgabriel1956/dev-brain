@@ -3,8 +3,8 @@ type: concept
 title: "Code Splitting"
 aliases: ["lazy loading de componentes", "chunking de bundle"]
 date_created: 2026-08-03
-date_updated: 2026-11-10
-source_count: 2
+date_updated: 2026-11-17
+source_count: 3
 tags: [frontend, bundler, code-splitting, lazy-loading, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -34,3 +34,4 @@ Um usuário que acessa a Home baixa só o JavaScript necessário para a Home; ao
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy loading de JavaScript e embeds pesados como extensão de [[wiki/concepts/lazy-vs-eager-loading]]
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "carregando somente o que é realmente necessário" só vale para o código com lazy

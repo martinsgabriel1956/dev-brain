@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível Antes do Fundamento"
 aliases: ["ordem invertida de aprendizado", "top-down learning path", "fundamento sob demanda"]
 date_created: 2026-08-17
-date_updated: 2026-10-14
-source_count: 6
+date_updated: 2026-11-17
+source_count: 7
 tags: [aprendizado, carreira, junior, ensino, fundamentos]
 skill: tech-mentor-leadership
 status: stub
@@ -70,3 +70,4 @@ Esta tese está em tensão parcial, não em contradição direta, com a leitura 
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — nota de vocabulário: "alto nível" aqui é ordem de aprendizado, distinto de "alto nível" como abstração sobre hardware ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: contraponto bottom-up: JS antes do React, mas sem bloqueio ("não é que você não vai entender nada"); ver [[wiki/concepts/fundamentos-antes-do-framework]]

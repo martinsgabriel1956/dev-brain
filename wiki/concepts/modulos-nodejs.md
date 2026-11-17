@@ -3,8 +3,8 @@ type: concept
 title: "Módulos no Node.js (CommonJS e ESM)"
 aliases: ["CommonJS", "CJS", "require", "module.exports", "ES Modules", "ESM", "import/export", "módulos do Node"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 5
 tags: [nodejs, javascript, modulos, commonjs, esm, require, import, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -64,3 +64,4 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], [[wiki/entities/
 - [[wiki/sources/jstack-criando-o-servidor-http]]: require('http') na prática
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: require relativo ao arquivo; maiúsculas no nome
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: ESM no navegador, type=module, named × default
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: Modules JS "importando para uma SPA"

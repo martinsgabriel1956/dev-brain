@@ -3,8 +3,8 @@ type: concept
 title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-17
+source_count: 11
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -78,3 +78,6 @@ De novo a `div#root` vazia: o React "vai rodar sempre a partir do lado do client
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: div#root e MVC × SPA
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: dinâmico no servidor × no navegador
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: CSR em miniatura
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: a KaBuM recarrega a página: exemplo de servidor, não de SPA
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: "método tradicional" (servidor monta HTML, ~50 KB) × "método SPA" (JSON, ~5 KB)
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: produto 10 × produto 12: "computacionalmente [...] bem mais barato" mandar só a informação

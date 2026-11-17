@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 93
+date_updated: 2026-11-17
+source_count: 99
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -335,6 +335,30 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]]: `type="module"` 
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: o evento `mousemove` com `clientX`/`clientY`, desestruturação no corpo e no parâmetro, e de array com marcas de carro. Preparação para React e Vue.
 
+## Módulo de ReactJS: aula 01, intro
+
+Em [[wiki/sources/frontpush-intro-modulo-reactjs]]: abertura do módulo de [[wiki/entities/react|ReactJS]], prometido antes e lançado depois ("pela paciência de terem esperado"). Conceitos mais projetos práticos; o módulo de JavaScript ES6+ foi feito como base dele.
+
+## Módulo de ReactJS: aula 02, o que preciso saber de JS
+
+Em [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: checklist do que estudar antes do React (objetos, arrow functions, arrays e métodos, DOM, JS assíncrono, requisições, Modules JS), com o módulo de JavaScript ES6+ como primeiro item. Ver [[wiki/concepts/fundamentos-antes-do-framework]].
+
+## Módulo de ReactJS: aula 03, conceitos gerais
+
+Em [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: slide "Conceitos gerais / React.js" com origem no Facebook, interface dinâmica (exemplo na KaBuM), React.js × React Native, biblioteca × framework, SPA, Virtual DOM, Babel, Webpack e JSX. Cita "uma seção de motion design aqui no curso".
+
+## Módulo de ReactJS: aula 04, SPA (métodos)
+
+Em [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: dois fluxogramas, "Método tradicional" (~50 KB de HTML e CSS montados no servidor) e "Método SPA" (~5 KB de JSON; web, Swift iOS e Kotlin Android na mesma API), com demonstração na KaBuM e código PHP. Primeira de duas aulas sobre SPA.
+
+## Módulo de ReactJS: aula 05, SPA (componentes)
+
+Em [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: slide "Estrutura SPA" com `App.js` contendo header, sidebar, content e footer (cada um com `.css`, `<html>`, `index.js`) e a lista "Componentes" (organização, performance, encapsulamento, estado próprio, aninhamento, compartilhamento). Fecha as duas aulas de SPA.
+
+## Módulo de ReactJS: aula 06, JSX, Webpack e Babel
+
+Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: a última aula teórica antes da prática. Slides "JSX / React Element" (com `babeljs.io/repl`) e "Webpack/Babel" ("No curso vai ser utilizado o create-react-app").
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -430,3 +454,9 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: o evento
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: aula 16 do módulo de JavaScript ES6
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: aula 17 do módulo de JavaScript ES6
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: aula 18 do módulo de JavaScript ES6
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: módulo de ReactJS, aula 01: intro
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: módulo de ReactJS, aula 02: o que saber de JS
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: módulo de ReactJS, aula 03: conceitos gerais
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: módulo de ReactJS, aula 04: SPA, métodos
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: módulo de ReactJS, aula 05: SPA, componentes
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: módulo de ReactJS, aula 06: JSX, Webpack e Babel

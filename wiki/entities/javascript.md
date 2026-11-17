@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 18
+date_updated: 2026-11-17
+source_count: 20
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -77,3 +77,5 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula 1
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: Axios
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: Modules JS
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: o módulo de JS como base do de React
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o mínimo de JS para o React; "sempre vai ser a mesma base"

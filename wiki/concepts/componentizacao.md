@@ -3,8 +3,8 @@ type: concept
 title: "Componentização"
 aliases: ["componentes", "component-based UI", "componente React"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-17
+source_count: 11
 tags: [frontend, react, componentes, reuso, organizacao]
 skill: tech-mentor-frontend
 status: stub
@@ -52,3 +52,6 @@ Em [[wiki/sources/frontpush-import-e-partials-sass]], separar cores, tipografia,
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: Input, Textarea e Select compartilhados
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: PageHeader no app
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: TeacherItem no app
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "seccionar a minha página" em componentes
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: App.js > header, sidebar, content, footer; organização, encapsulamento, aninhamento, reuso; performance é da reconciliação, não da divisão
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: componentes "tripartidos" (HTML, CSS, JS) renderizados pelo JavaScript

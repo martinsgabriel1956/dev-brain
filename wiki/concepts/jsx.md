@@ -3,8 +3,8 @@ type: concept
 title: "JSX"
 aliases: ["JavaScript XML", "React markup"]
 date_created: 2026-04-22
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-17
+source_count: 8
 tags: [react, jsx, sintaxe, compilador]
 skill: tech-mentor-frontend
 status: stable
@@ -66,3 +66,5 @@ No RN, `{'\n'}` no lugar de `<br>`, `{' '}` para espaço, fragment `<>...</>` pa
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: JSX sem HTML no React Native
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: JSX/TSX, chaves, className e htmlFor
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: quebra de linha, espaço e fragment no RN
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "não é HTML, é um negócio que parece com HTML"; compilado no build
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: JSX → React.createElement no REPL; maiúscula muda o tipo, `class` é `className`, nova transformação do React 17

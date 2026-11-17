@@ -3,8 +3,8 @@ type: concept
 title: "Template engine"
 aliases: ["template engine", "motor de templates", "templating", "view engine"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 5
 tags: [backend, html, ssr, template-engine, frontend]
 skill: lang-dynamic
 status: stub
@@ -43,3 +43,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], "o HTML s
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: for/if com dados do banco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: template engine como contraste da API REST
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: HTML com esteroides
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: PHP com `echo` de `<li>` dentro do HTML como o método tradicional

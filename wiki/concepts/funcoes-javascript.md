@@ -3,8 +3,8 @@ type: concept
 title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 19
+date_updated: 2026-11-17
+source_count: 20
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -106,3 +106,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desest
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: função que devolve Promise
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: funções exportadas
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação no parâmetro
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: function, const + function e const + arrow como três formas de componente

@@ -3,8 +3,8 @@ type: concept
 title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-17
+source_count: 12
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -71,3 +71,4 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], a URL
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: params do Axios
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: request.url inclui a query; usar new URL
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: ID do produto na URL do e-commerce
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: `?codigo=` na URL da KaBuM chamado de "método GET"

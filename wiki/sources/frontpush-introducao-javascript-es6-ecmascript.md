@@ -3,7 +3,7 @@ type: source
 title: "Introdução ao módulo de JavaScript ES6+: o que é JavaScript e o que é ES6 (FrontPUSH)"
 aliases: ["FrontPUSH introdução JavaScript", "módulo de JavaScript ES6, aula 01", "O que é JavaScript e ES6+"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
+date_updated: 2026-11-17
 source_count: 0
 tags: [javascript, ecmascript, es6, es2015, jquery, babel, webpack, front-end, back-end, react, react-native, curso, frontend]
 skill: lang-dynamic
@@ -94,7 +94,7 @@ Aula 01 do módulo de JavaScript ES6 do [[wiki/entities/frontpush|FrontPUSH]], c
 - **O que tirou o espaço do jQuery foi mais o DOM do que o ES6.** `querySelectorAll`, `classList`, `fetch` e `addEventListener` padronizado são APIs da web (W3C/WHATWG), não do ECMAScript. O ES6 trouxe a sintaxe (classes, módulos, promises); o fim da fragmentação entre navegadores trouxe o resto. A página [[wiki/concepts/jquery]] já registra os dois movimentos ([[wiki/sources/historia-do-front-end-akita-ep4]]).
 - **O exemplo do e-commerce não exige JavaScript.** Uma listagem com links para páginas de produto geradas pelo servidor funciona com JS desligado, e as lojas costumam ser assim, por SEO ([[wiki/concepts/renderizacao-ssr-vs-csr]]). O JavaScript entra quando a troca acontece sem recarregar a página ([[wiki/concepts/single-page-application]]) ou no carrinho, galeria e simulador de parcelas. A aula mistura "dinâmico no servidor" com "dinâmico no navegador".
 - **Front-end não é "a parte visual" só.** Na mesma frase, a lógica de funcionalidade fica no back-end ("que constrói as funcionalidades"), mas o JavaScript do front também é lógica. A divisão correta é onde o código roda: navegador ou servidor ([[wiki/concepts/arquitetura-cliente-servidor]]).
-- **React como "framework".** A documentação do React o chama de biblioteca; na prática a palavra é usada para os dois ([[wiki/concepts/framework-web]]). O módulo também diz "uma framework", no feminino.
+- **React como "framework".** A documentação do React o chama de biblioteca; na prática a palavra é usada para os dois ([[wiki/concepts/framework-web]]). O módulo também diz "uma framework", no feminino. Na abertura do módulo de React ele já diz "biblioteca JavaScript" ([[wiki/sources/frontpush-intro-modulo-reactjs]]).
 - **Novidades depois da gravação.** `[skill: lang-dynamic]` O TC39 continua lançando uma edição por ano. A API Temporal (datas) chegou ao Stage 4 em março de 2026 e vem ligada no Node 26.
 - **Data da gravação.** "jQuery tem caído" e ES8 como exemplo mais novo apontam para o período 2020–2021, coerente com as outras aulas do FrontPUSH (inferência).
 

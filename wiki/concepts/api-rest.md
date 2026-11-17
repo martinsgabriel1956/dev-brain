@@ -3,8 +3,8 @@ type: concept
 title: "API REST (RESTful)"
 aliases: ["REST", "RESTful", "API RESTful", "REST API"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-17
+source_count: 8
 tags: [api, rest, http, json, backend, arquitetura]
 skill: lang-dynamic
 status: stub
@@ -57,3 +57,4 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: GET /users como listagem em JSON
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: API + JSON entre front e back
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API via URL, métodos e CRUD
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: endereço por recurso (produtos, usuários) e CRUD em JSON, sem dizer REST

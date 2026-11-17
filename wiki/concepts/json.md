@@ -3,8 +3,8 @@ type: concept
 title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 17
+date_updated: 2026-11-17
+source_count: 20
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -93,3 +93,6 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o `JSON.par
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: JSON.parse(XHR.responseText)
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: JSON.parse dentro do resolve
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: parse automático do Axios
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o padrão comum a "várias APIs múltiplas"
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: "o JSON todos entendem": só a informação, ~5 KB, para web, iOS e Android
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "JSON com API fornecendo múltiplos clientes" como base da SPA

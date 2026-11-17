@@ -3,8 +3,8 @@ type: concept
 title: "Criar e inserir elementos no DOM (createElement, appendChild, append)"
 aliases: ["createElement", "createTextNode", "appendChild", "append", "setAttribute", "textContent", "DocumentFragment", "remove", "criar elementos com JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-17
+source_count: 3
 tags: [javascript, dom, createelement, appendchild, setattribute, textcontent, xss]
 skill: lang-dynamic
 status: stub
@@ -45,3 +45,5 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 ## Key sources
 
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: createElement, setAttribute, createTextNode, appendChild
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "Tudo é o JS que faz", com createElement e .style como ponte para o React
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: React.createElement × document.createElement

@@ -3,8 +3,8 @@ type: concept
 title: "Proporção 80/20 entre Estudo e Prática"
 aliases: ["20% estudo 80% prática", "pratique o quanto antes", "dev pitaqueiro"]
 date_created: 2026-09-28
-date_updated: 2026-09-28
-source_count: 1
+date_updated: 2026-11-17
+source_count: 2
 tags: [carreira, aprendizado, pratica, produtividade]
 skill: tech-mentor-leadership
 status: stub
@@ -44,3 +44,4 @@ A justificativa do autor: **é a prática, não o estudo, que transforma conheci
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]]
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: conceitos mais projetos práticos "para fixar"

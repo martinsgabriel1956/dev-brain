@@ -3,8 +3,8 @@ type: concept
 title: "SPA (Single Page Application)"
 aliases: ['SPA', 'single page apps']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-17
+source_count: 11
 tags: [spa, frontend, estado, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -37,3 +37,7 @@ Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a va
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: e-commerce como exemplo de página dinâmica
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: JS montando a página dentro de div#app
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: recarregar só uma seção
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: SPA anunciada para as próximas aulas, ligada aos módulos
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: SPA com declarativo, performance e Virtual DOM como subitens; atualizar só o chat é AJAX, não SPA
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: método tradicional × método SPA; a comparação é SSR × CSR, e omite o bundle da 1ª visita
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "uma única página HTML" e rotas sem recarregar; definição correta, primeira menção às rotas

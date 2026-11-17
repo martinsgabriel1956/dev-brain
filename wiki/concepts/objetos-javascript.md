@@ -3,8 +3,8 @@ type: concept
 title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-17
+source_count: 9
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -75,3 +75,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o objeto
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: instância herdando métodos
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: objeto como export default
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: evento como objeto desestruturado
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: objetos como primeiro item do checklist; "praticamente tudo [...] é objeto"

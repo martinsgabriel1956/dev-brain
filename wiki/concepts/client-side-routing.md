@@ -3,8 +3,8 @@ type: concept
 title: "Client-Side Routing (Roteamento no Cliente)"
 aliases: ["roteamento no cliente", "SPA routing", "History API", "pushState", "popstate"]
 date_created: 2026-08-03
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-17
+source_count: 5
 tags: [frontend, spa, routing, history-api, browser]
 skill: tech-mentor-frontend
 status: stable
@@ -45,3 +45,5 @@ React Router v5 com `BrowserRouter`, `Route exact` e `Link to`. Sem `exact`, a l
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: React Router v5 no Ecoleta
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Route exact e Link no Proffy
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "reconstruída [...] dependendo da rota", mas o exemplo (KaBuM) recarrega
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "as rotas que a gente cria [...] não necessita outra requisição de outra página completa"

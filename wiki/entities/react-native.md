@@ -3,8 +3,8 @@ type: entity
 title: "React Native"
 aliases: ["RN"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-17
+source_count: 7
 tags: [mobile, react-native, react, javascript, ios, android, cross-platform]
 skill: tech-mentor-mobile
 status: stub
@@ -47,3 +47,4 @@ Dia 5: `source={{ uri }}` exige largura e altura, sem atalho `border`, `ScrollVi
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: JS no mobile
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Proffy: View/Text, StyleSheet, ImageBackground
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: uri, ScrollView, TextInput e Linking
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: React.js (web) e React Native (mobile) com "mesmos fundamentos"

@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-11-16
-source_count: 20
+date_updated: 2026-11-17
+source_count: 26
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -92,3 +92,9 @@ Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adicio
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map × forEach, base das listas no JSX
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: React como "tudo JavaScript"
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação como preparo para React
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: abertura do módulo, "módulo de biblioteca JavaScript", JS ES6+ como pré-requisito
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o que saber de JS antes; distinguir o que é JavaScript e o que é React
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: Facebook, interface dinâmica, React.js (biblioteca) × React (ecossistema, framework), SPA, Virtual DOM, JSX
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: por que usar React: método tradicional (PHP, HTML no servidor) × método SPA (JSON)
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: App.js com header, sidebar, content e footer; "encapsulados que gerenciam seu próprio estado"
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: React.createElement × JSX no REPL do Babel; inicial maiúscula

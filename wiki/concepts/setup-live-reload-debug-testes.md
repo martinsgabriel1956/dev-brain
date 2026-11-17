@@ -3,8 +3,8 @@ type: concept
 title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
-date_updated: 2026-11-16
-source_count: 9
+date_updated: 2026-11-17
+source_count: 11
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -106,3 +106,5 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], alterar o código com o serv
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Live Server e hard reload
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server + Watch Sass
 - [[wiki/sources/jstack-criando-o-servidor-http]]: reinício manual, nodemon e node --watch
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: a página "carregue automaticamente quando percebe [...] mudança", atribuído a Babel e Webpack
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: Live Reload como função do Webpack (dev server); Fast Refresh no CRA 4+

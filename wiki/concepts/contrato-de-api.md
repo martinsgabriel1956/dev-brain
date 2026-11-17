@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 9
+date_updated: 2026-11-17
+source_count: 10
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -56,3 +56,4 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — WSDL/SOAP como o extremo de formalidade e rigidez de contrato, em contraste com o contrato mais leve típico de REST
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — "contrato" como interface in-process entre módulos de um [[wiki/concepts/monolito-modular]] (analogia getters/setters), não HTTP — mesma ideia de expor input/output e esconder internals
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: documentação como regra de acesso
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: o back-end "vai fornecer meio que uma documentação" dos endpoints

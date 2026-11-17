@@ -3,8 +3,8 @@ type: entity
 title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 27
+date_updated: 2026-11-17
+source_count: 28
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -128,3 +128,4 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], o VS Code "já l
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: pasta e arquivo no new file
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: erro de aspas e warning de chave repetida no JSON
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: autocomplete do import e Live Server
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: exemplo de código PHP

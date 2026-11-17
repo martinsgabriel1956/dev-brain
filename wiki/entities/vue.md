@@ -3,8 +3,8 @@ type: entity
 title: "Vue.js"
 aliases: ["Vue", "Vue 3", "Vue.js"]
 date_created: 2026-11-12
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-17
+source_count: 7
 tags: [frontend, framework, javascript, vue, reatividade]
 skill: tech-mentor-frontend
 status: stub
@@ -29,3 +29,5 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o Vue ap
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions e o this do Vue
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: citado como motivo da desestruturação
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: citado com o React como biblioteca do método SPA
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: o esquema de HTML, CSS e JS por componente lembra o single-file component

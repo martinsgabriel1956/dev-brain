@@ -3,8 +3,8 @@ type: concept
 title: "Métodos de array em JavaScript (forEach, map, filter, reduce...)"
 aliases: ["forEach", "map", "filter", "reduce", "find", "some", "every", "métodos de array", "array methods", "pop", "push"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-17
+source_count: 3
 tags: [javascript, array, foreach, map, filter, reduce, callback, imutabilidade]
 skill: lang-dynamic
 status: stub
@@ -13,6 +13,8 @@ status: stub
 # Métodos de array em JavaScript
 
 Métodos de `Array.prototype` que recebem um callback `(item, índice, array)` e percorrem o array sem índice manual ([[wiki/concepts/callback-javascript]]). `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+> No FrontPUSH, a lista "Filter, map, Index" do slide de pré-requisitos do React ([[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]) cita "Index", que não é método: os candidatos são `indexOf` e `findIndex`.
 
 ## Os principais
 
@@ -52,3 +54,4 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `routes.fi
 
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach, map e a diferença entre os dois
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: find na tabela de rotas
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: filter, map, "index" e forEach para exibir JSON; "index" não existe (indexOf/findIndex ou 2º parâmetro do map)

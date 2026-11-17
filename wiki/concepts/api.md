@@ -3,8 +3,8 @@ type: concept
 title: "API (Application Programming Interface)"
 aliases: ["API", "Application Programming Interface", "interface de programação", "API web", "API pública"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-17
+source_count: 4
 tags: [api, interface, contrato, api-web, http, backend, frontend]
 skill: tech-mentor-backend
 status: stub
@@ -37,3 +37,5 @@ Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a API do
 
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: API como meio da comunicação front × back; API pública e do GitHub
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: API do GitHub consumida com XHR
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o front consome várias APIs, todas em JSON
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: endpoints como documentação; api.github.com; uma API, múltiplos clientes

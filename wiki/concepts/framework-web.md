@@ -3,8 +3,8 @@ type: concept
 title: "Framework Web"
 aliases: ['web framework', 'framework server-side']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-17
+source_count: 9
 tags: [framework, backend, rails, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -14,7 +14,7 @@ status: draft
 
 Mais que linguagem, fornece **estrutura pré-definida**: segurança, acesso a dados, autenticação/autorização, padrões visuais e **onde colocar cada tipo de código**. Antes, cada app PHP fazia tudo do zero. Popularizado na era Java/J2EE, imitado no PHP, e consagrado pelo [[wiki/entities/ruby-on-rails|Ruby on Rails]] (fim de 2004). Rails também inspirou a 1ª geração de bibliotecas JS/CSS ([[wiki/concepts/biblioteca-javascript-de-compatibilidade]]) e o [[wiki/concepts/pipeline-de-assets]]. Ver [[wiki/concepts/historia-do-front-end]].
 
-Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o módulo de JavaScript do FrontPUSH existe para "nivelar" antes de "alguma framework, como, por exemplo, o React". A documentação do React o chama de biblioteca.
+Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o módulo de JavaScript do FrontPUSH existe para "nivelar" antes de "alguma framework, como, por exemplo, o React". A documentação do React o chama de biblioteca, e o próprio Násser passa a usar "biblioteca JavaScript" ao abrir o módulo de React ([[wiki/sources/frontpush-intro-modulo-reactjs]]).
 
 ## No JStack, aula 04
 
@@ -34,3 +34,6 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desest
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions antes do framework
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: módulos como base dos frameworks
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação como pré-requisito de framework
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: "módulo de biblioteca JavaScript"
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: framework "não faz nada além do que aquela linguagem faz"; ver [[wiki/concepts/fundamentos-antes-do-framework]]
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: React.js biblioteca, ecossistema React framework

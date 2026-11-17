@@ -3,8 +3,8 @@ type: concept
 title: "Separation of Concerns"
 aliases: ["separation of concerns", "soc", "separacao de responsabilidades"]
 date_created: 2026-08-10
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 6
 tags: [separation-of-concerns, encapsulamento, arquitetura, modularidade, backend]
 skill: tech-mentor-backend
 status: stub
@@ -29,3 +29,5 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], o motivo dos mó
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Misturar contexto de tecnologia (HTTP) com negócio via herança ou estático impede o teste ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: um arquivo por assunto
+- [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: back: autenticação, segurança, banco, regra de negócio; front: "mostrar isso na tela"
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: cada componente com seu JS, HTML e CSS: separação por componente, não por linguagem

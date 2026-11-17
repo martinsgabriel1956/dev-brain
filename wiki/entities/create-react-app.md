@@ -3,8 +3,8 @@ type: entity
 title: "Create React App"
 aliases: ["CRA", "create-react-app", "react-scripts"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 6
 tags: [react, build, scaffolding, ferramenta, descontinuado]
 skill: tech-mentor-frontend
 status: stub
@@ -32,3 +32,5 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: limpeza e estrutura
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: template TypeScript e react-scripts
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: "create-react-app" atribuído à div#app (impreciso)
+- [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: a convenção App.js anunciada para as próximas aulas
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: adotado para não configurar Babel e Webpack à mão ("uma função que o próprio Facebook disponibiliza"); descontinuado em 2025

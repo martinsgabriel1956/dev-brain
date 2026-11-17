@@ -3,8 +3,8 @@ type: concept
 title: "JavaScript assíncrono"
 aliases: ["JS assíncrono", "assincronia em JavaScript", "síncrono vs assíncrono", "código não bloqueante"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-17
+source_count: 4
 tags: [javascript, assincrono, sincrono, event-loop, callback, promise, async-await, nao-bloqueante, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -51,3 +51,4 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `Promise {<p
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: síncrono × assíncrono e as ferramentas que vêm
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: XHR assíncrono na aba Network
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: pending como prova do assíncrono
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: JS assíncrono e requisições como pré-requisito

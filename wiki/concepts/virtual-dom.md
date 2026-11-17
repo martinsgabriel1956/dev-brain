@@ -3,8 +3,8 @@ type: concept
 title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-17
+source_count: 8
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -56,3 +56,4 @@ Diego explica o React pela ideia de SPA ("só muda [...] as coisas que são dife
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: SPA × re-renderização declarativa
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: key nas options e nos horários
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: o princípio por baixo do React
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "cópia virtual" para comparar antes de renderizar; o ganho é viabilizar o declarativo, não ser o mais rápido

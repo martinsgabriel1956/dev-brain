@@ -3,8 +3,8 @@ type: entity
 title: "Axios"
 aliases: ["axios"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-17
+source_count: 8
 tags: [http, javascript, cliente-http, biblioteca]
 skill: tech-mentor-frontend
 status: stub
@@ -49,3 +49,4 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], [[wiki/enti
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: Axios na lista do assíncrono
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: Axios anunciado como atalho
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: axios.get via CDN; envelope da resposta
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: citado como pacote do ecossistema React

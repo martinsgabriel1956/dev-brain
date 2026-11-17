@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-11-16
-source_count: 17
+date_updated: 2026-11-17
+source_count: 18
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -86,3 +86,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `documen
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: criar e anexar elementos
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: eventos que mudam o DOM
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: documentElement como alvo
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: manipulação do DOM no checklist; o React substitui esse hábito imperativo

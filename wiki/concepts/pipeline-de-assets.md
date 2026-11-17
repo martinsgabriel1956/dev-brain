@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de Assets (minificação e concatenação)"
 aliases: ['asset pipeline', 'minify', 'bundling']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-17
+source_count: 6
 tags: [build, minificacao, webpack, performance, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -35,3 +35,4 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], Webpack e Ba
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: concatenação por `@import`
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Webpack do CRA: imagem e CSS por import
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: Webpack e Babel no ES6+
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: Webpack importando CSS e imagens no lugar do pipeline

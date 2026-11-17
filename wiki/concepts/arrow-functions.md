@@ -3,8 +3,8 @@ type: concept
 title: "Arrow functions em JavaScript"
 aliases: ["arrow function", "função de seta", "=>", "fat arrow", "retorno implícito", "this léxico"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-17
+source_count: 7
 tags: [javascript, funcoes, arrow-function, es6, this, react, vue]
 skill: lang-dynamic
 status: stub
@@ -59,3 +59,5 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula l
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: arrow em forEach e map
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: this no listener (function × arrow)
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: arrow function citada no fecho
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: sintaxe para "bater o olho" no React, "pouquíssima verbosidade"
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: componente como arrow function; exemplo de sintaxe que os browsers não entendiam

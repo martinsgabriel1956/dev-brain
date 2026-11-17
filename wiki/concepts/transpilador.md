@@ -3,8 +3,8 @@ type: concept
 title: "Transpilador (Sass, Less, CoffeeScript, Babel)"
 aliases: ['transpiler', 'pré-processador']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-17
+source_count: 8
 tags: [transpilador, build, javascript, css, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -37,3 +37,5 @@ O `react-scripts` esconde Babel ("o JavaScript mais moderno para um JavaScript u
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Babel no react-scripts
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: target ES2017 e transpile-only
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: Babel e Webpack como se fossem do ES6
+- [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: Babel para compatibilidade entre browsers; Webpack e dev server à parte
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: Babel converte JS novo em antigo; sintaxe × polyfill; hoje esbuild/SWC

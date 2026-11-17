@@ -3,8 +3,8 @@ type: concept
 title: "ECMAScript (ES6, ES2015 e as edições anuais)"
 aliases: ["ES", "ES6", "ES2015", "ES6+", "ECMA-262", "TC39"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-17
+source_count: 7
 tags: [ecmascript, javascript, es6, es2015, tc39, especificacao]
 skill: lang-dynamic
 status: stub
@@ -52,3 +52,6 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], o *meth
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: let/const e template string como ES6
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: arrow functions
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: method shorthand do ES2015
+- [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: o módulo "JavaScript ES6+" como pré-requisito do React
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: JS "ganhou muita força" depois das atualizações do ECMAScript
+- [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: novas sintaxes do ECMAScript que o browser "demora para poder entender"

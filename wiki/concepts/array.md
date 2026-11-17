@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-11-16
-source_count: 19
+date_updated: 2026-11-17
+source_count: 20
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -126,3 +126,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `const [
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: índice como gaveta, aninhado, pop/push/length
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach e map
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação de array
+- [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: arrays porque o JSON das APIs é "objetos e arrays"
