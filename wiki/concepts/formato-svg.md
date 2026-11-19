@@ -3,8 +3,8 @@ type: concept
 title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
-date_updated: 2026-11-16
-source_count: 15
+date_updated: 2026-11-19
+source_count: 17
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -66,6 +66,14 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 O RN "não lê SVG" sem `react-native-svg`, então o app usa PNG; o SVG faria falta para tingir ícones, o que a aula resolve com fonte de ícones. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Vetorizar antes de tudo (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: "é texto, texto é muito mais leve", estica sem perder resolução e "é manipulável pelo CSS"; logo da Adidas vetorizado pelo plugin Image Tracer do Figma. Precisões: o tamanho depende do número de pontos (tracer gera pontos demais; usar SVGO e o SVG oficial da marca), e o CSS só alcança o SVG inline, não o `<img src>`.
+
+## SVG inline infla o DOM (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: "um SVG que está com mil camadas de gradiente" dispara o aviso de DOM grande. Só o SVG inline entra no DOM (cada `<path>`, `<g>`, `<stop>` é um nó); via `<img>` ou `background-image` é um nó só. Sprite com `<symbol>` + `<use>` e SVGO reduzem o markup.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -83,3 +91,5 @@ O RN "não lê SVG" sem `react-native-svg`, então o app usa PNG; o SVG faria fa
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: fundo e ícones do Ecoleta
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: stroke currentColor trocado à mão
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: PNG no lugar de SVG no app
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: SVG primeiro; Image Tracer
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: SVG inline e DOM grande

@@ -3,8 +3,8 @@ type: concept
 title: "Pré-processador CSS (Sass)"
 aliases: ["Sass", "SCSS", "pré-processador", "preprocessor CSS", "Live Sass Compiler", "mixin", "Less", "Dart Sass"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-19
+source_count: 14
 tags: [css, sass, scss, pre-processador, frontend, build]
 skill: tech-mentor-frontend
 status: draft
@@ -58,6 +58,14 @@ Em [[wiki/sources/frontpush-for-while-each-sass]]: loops para gerar classes (`.g
 
 Em [[wiki/sources/frontpush-funcoes-sass]]: funções que devolvem valor (`grid($col, $total: 12)` em %), funções de cor prontas e operadores. Ver [[wiki/concepts/funcoes-sass]].
 
+## Sass como otimização (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: "a gente já estava fazendo otimização de CSS desde o começo, e vocês não percebiam". O Sass deixa escrever com espaços e partials (acordeon, animações, botões, tipografia, layout) e "cospe" um CSS único. A minificação na aula é feita num site externo, embora o modo `compressed` do Sass já faça isso.
+
+## Sass na otimização de imagens (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], o mixin `responsive` das aulas de Sass vira ferramenta de otimização: classes de visibilidade e imagem por breakpoint. Ver [[wiki/concepts/mixin-sass]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador, `if/else`, Live Sass Compiler
@@ -72,3 +80,5 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: funções que devolvem valor (`grid(
 - [[wiki/sources/frontpush-if-else-sass]]: aula 07: @if/@else
 - [[wiki/sources/frontpush-for-while-each-sass]]: aula 08: loops e interpolação
 - [[wiki/sources/frontpush-funcoes-sass]]: aula 09: funções
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: partials e CSS único como otimização
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: mixin `responsive` reaproveitado

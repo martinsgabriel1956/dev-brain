@@ -3,8 +3,8 @@ type: concept
 title: "Vetorização com a Pen Tool"
 aliases: ["pen tool", "ferramenta caneta", "vetorizar imagem", "vetorização manual", "bend tool", "curvas de bézier", "bezier handles", "alças de bézier", "tracing"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-19
+source_count: 3
 tags: [ui, ui-design, figma, vetorial, svg, pen-tool, bezier, icones, ilustracoes]
 skill: ux-ui-mentor
 status: stub
@@ -42,7 +42,12 @@ O mesmo recurso serve para refazer logo de cliente recebido em baixa definição
 - [[wiki/concepts/icones-em-interfaces]], [[wiki/concepts/ilustracoes-em-interfaces]]
 - [[wiki/concepts/simetria-visual]]
 
+## Pen Tool ou Image Tracer (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], para quem "não sabe vetorizar": as aulas de Figma (Pen Tool) ou o plugin Image Tracer, que traçou um logo da Adidas em segundos. O tracer automático gera mais pontos que o traço manual.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — passo a passo com o ícone de telefone: Pen Tool, Bend Tool, alças
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — vetorizar logo de cliente em baixa definição
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: Pen Tool × Image Tracer

@@ -3,8 +3,8 @@ type: concept
 title: "Curva de Aprendizado (Programação)"
 aliases: ["curva de aprendizagem", "learning curve", "barreiras de conhecimento"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [carreira, aprendizado, complexidade, onboarding]
 skill: tech-mentor-leadership
 status: stub
@@ -23,6 +23,11 @@ Em programação, a relação entre "o que você sabe" (eixo X) e "o que você c
 - [[wiki/concepts/aprendizado-por-luta]] — a dificuldade da barreira não é só custo, é parte do que consolida a retenção (desirable difficulties); a curva de aprendizado descreve *onde* essas dificuldades aparecem estruturalmente na área de programação.
 - [[wiki/concepts/onboarding-de-codebase]] — mesmo fenômeno em escala menor: entender uma codebase nova também exige atravessar barreiras de contexto antes de conseguir contribuir.
 
+## Ferramenta visual × código (3D na web)
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], o instrutor troca o [[wiki/entities/three-js]] pelo [[wiki/entities/spline]] por causa da curva: com Three.js "você teria que saber JavaScript para caramba", e o Cinema 4D "é muito complexo, então a curva de aprendizado seria muito alta". O Spline cobre a maior parte dos casos com uma interface. É o mesmo trade-off de abstração descrito acima: menos barreira de entrada e menos controle fino.
+
 ## Key Sources
 
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — formulação do eixo X/Y e exemplo do SMTP; conecta a curva de aprendizado ao aumento histórico de abstração na área (menos gente aprende o protocolo de baixo nível hoje, mais gente aprende "qual API usar")
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: Spline em vez de Three.js para baixar a curva

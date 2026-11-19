@@ -3,8 +3,8 @@ type: entity
 title: "Creator Push"
 aliases: ["CreatorPush", "Creator", "creatorpush.com.br"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-19
+source_count: 4
 tags: [projeto, curso, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -26,8 +26,13 @@ No style guide, família mais arredondada ([[wiki/entities/iconly]]), porque o p
 
 O style guide reúne um catálogo: linhas e ângulos, círculos tracejados e contínuos (loading), ondas, órbitas, bubbles, texturas. No site, o elemento de composição são "bons gradientes", inspirados no céu do pôr do sol ([[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]). Ver [[wiki/concepts/elementos-de-composicao]].
 
+## Família PUSH
+
+O [[wiki/entities/axlepush]] (curso de 3D com o [[wiki/entities/spline]]) segue o mesmo padrão de nome ([[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]); a ligação é só pela marca.
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — família arredondada para um produto amigável
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — catálogo de elementos de composição; gradientes como ambiência
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: outro curso da família PUSH

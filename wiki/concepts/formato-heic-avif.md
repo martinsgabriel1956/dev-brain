@@ -3,8 +3,8 @@ type: concept
 title: "HEIC e AVIF"
 aliases: ["heic", "heif", "avif", "high efficiency image container", "av1 image file format"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-11-19
+source_count: 3
 tags: [formatos-de-imagem, compressao, heic, avif, codec, hevc, av1]
 skill: cs-fundamentals
 status: stub
@@ -27,6 +27,16 @@ Usa o codec **AV1** — o mais recente e mais eficiente da tabela em [[wiki/conc
 - [[wiki/concepts/video-transcoding]] — mesma tabela de codecs (HEVC, AV1) usada tanto para vídeo quanto para imagem estática
 - [[wiki/concepts/formato-webp]] — geração anterior, adoção mais madura
 
+## Ausente na aula de otimização (FrontPUSH)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o WebP é "o melhor hoje em dia" e o AVIF não aparece. Com suporte nos navegadores atuais e compressão maior, o AVIF é a primeira opção num `<picture>`, com WebP e JPEG de reserva.
+
+## AVIF lido do relatório (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], o AVIF aparece pela primeira vez no módulo, mas só porque o PageSpeed o cita ("WebP ou AVIF"); a recomendação do instrutor segue WebP. AVIF costuma comprimir mais, com `<picture>` e reserva.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: AVIF ausente
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: AVIF citado pela ferramenta

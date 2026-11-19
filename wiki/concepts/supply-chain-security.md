@@ -3,8 +3,8 @@ type: concept
 title: "Supply Chain Security"
 aliases: ["supply chain security", "seguranca de cadeia de suprimentos de software", "ataque de supply chain"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-11-19
+source_count: 4
 tags: [supply-chain-security, sbom, slsa, sigstore, cosign, dependency-pinning, sca, npm, security]
 skill: tech-mentor-security
 status: stable
@@ -40,8 +40,13 @@ Uma camada de defesa adicional, tratada em detalhe em [[wiki/concepts/agent-cont
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] cita, em linguagem simples, a mesma defesa de primeira linha desta página (SCA): "fazer um scan das dependências pra procurar problema com dependência que tem alguma vulnerabilidade" — tratado como algo que precisa estar **sempre** rodando na pipeline, não como verificação pontual antes do lançamento.
 
+## Scripts de CDN de terceiros
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], o CDN é recomendado para bibliotecas sem citar o risco: o script de terceiros roda com os mesmos poderes do seu. Em 2024 o domínio polyfill.io foi vendido e passou a servir código malicioso aos sites que o carregavam. Defesa: versão fixa, atributo `integrity` (Subresource Integrity) com `crossorigin`, ou servir a biblioteca do próprio domínio. `[skill: tech-mentor-frontend]`
+
 ## Key Sources
 
 - [[wiki/sources/supply-chain-security]] — SBOM, SLSA, Sigstore/Cosign como pilares de dependências e artefatos de build
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — vetor de ataque via `postinstall` malicioso e defesa via contenção de processo/agente
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scan de dependências como item de checklist de autopentest, integrado à pipeline
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: CDN de bibliotecas sem SRI

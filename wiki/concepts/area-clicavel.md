@@ -3,8 +3,8 @@ type: concept
 title: "Área clicável"
 aliases: ["touch target", "alvo de toque", "target size", "área de toque", "hit area", "altura mínima de 44 px"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 2
+date_updated: 2026-11-19
+source_count: 3
 tags: [ui, ux, acessibilidade, mobile, responsividade, botoes, wcag]
 skill: ux-ui-mentor
 status: stub
@@ -44,7 +44,12 @@ Fonte da WCAG: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.h
 
 A aula prática repete a regra ("coloque um mínimo de 44 pixels") e constrói o botão com 56 ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
 
+## O "xzinho" do anúncio (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o X pequeno de fechar anúncio ("área de contato muito pequena") aparece junto da mudança de layout. É problema de alvo de toque, não de CLS; o PageSpeed cobra "tamanho mínimo de botão, tamanho mínimo de input".
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — altura mínima de 44 px; mouse x dedo
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — mínimo de 44 px repetido; botão de 56 no Figma
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: X de fechar pequeno

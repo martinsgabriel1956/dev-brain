@@ -3,8 +3,8 @@ type: concept
 title: "Base64 / Base64URL"
 aliases: ["base64", "base64url", "codificacao base64", "binary-to-text encoding"]
 date_created: 2026-08-28
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [encoding, base64, url, http, binary]
 skill: tech-mentor-security
 status: draft
@@ -30,6 +30,11 @@ Variante desenhada especificamente para ser segura dentro de URLs: troca `+` por
 
 Em [[wiki/sources/jstack-http-e-apis-rest]], converter um arquivo para Base64 e mandá-lo como string no JSON é uma "gambiarrinha" que "acaba pesando mais a nossa requisição". O custo é o aumento de ~33% acima, mais a string inteira em memória dos dois lados; para arquivos, [[wiki/concepts/multipart-form-data]] ou upload direto para storage.
 
+## "Foto em vetor" (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], transformar foto em vetor "até tem", "em base64", mas fica "estrondoso de gigantesco". Base64 não vetoriza: só reescreve o bitmap como texto, cerca de 33% maior e sem cache próprio quando embutido no HTML ou no SVG.
+
 ## Key sources
 
 - [[wiki/sources/jstack-http-e-apis-rest]]: Base64 em JSON como "gambiarrinha" para arquivos
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: base64 confundido com vetorização

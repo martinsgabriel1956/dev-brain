@@ -3,8 +3,8 @@ type: concept
 title: "HTML semântico (tags semânticas do HTML5)"
 aliases: ["tags semânticas", "semantic HTML", "HTML5 semântico", "elementos semânticos"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-19
+source_count: 15
 tags: [html, html5, semantica, seo, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -56,6 +56,18 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a pá
 
 "No mobile nós não temos elementos com resultado semântico": `View` para todo bloco e `Text` para todo texto; a semântica, porém, vai em `accessibilityRole`/`accessibilityLabel`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## SEO no módulo de otimização (FrontPUSH)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], o HTML semântico entra pela nota de SEO do relatório: "Interessante a gente falar sobre isso, HTML semântico, mas vamos chegar lá".
+
+## Dois menus no HTML (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], um `div.menu desktop` e um `div.menu mobile` convivem no HTML, um escondido por classe. `display: none` tira o escondido da árvore de acessibilidade, mas os links ficam duplicados no HTML; o comum é um `<nav>` só, com layout por media query.
+
+## Links no `nav` para o Google (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o Google acha "os principais links do site" pela tag `a` dentro de `header`, `nav` e `menu`, e classifica o conteúdo por `section` e `article`. Ajuda a entender a página, mas o Googlebot segue qualquer `<a href>`, e o mapa das páginas vem do `sitemap.xml` ([[wiki/concepts/seo]]).
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — header, nav, section, article, figure, footer; visual igual à div; motivo dado: Google
@@ -70,3 +82,6 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a pá
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: header, main, article, strong
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: main e fieldset no Proffy
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: View/Text e semântica por props
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: HTML semântico na nota de SEO
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: menu duplicado por breakpoint
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: HTML semântico e SEO

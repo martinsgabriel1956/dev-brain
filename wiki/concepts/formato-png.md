@@ -3,8 +3,8 @@ type: concept
 title: "PNG"
 aliases: ["png", "portable network graphics", "apng"]
 date_created: 2026-07-29
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-19
+source_count: 6
 tags: [formatos-de-imagem, compressao, png]
 skill: cs-fundamentals
 status: stub
@@ -31,6 +31,10 @@ Formato de imagem lançado em 1996 como resposta direta a um problema de licenci
 
 Na aula de imagens de [[wiki/entities/nasser|Násser]], PNG fica para fotos com transparência que não dá para vetorizar (recortes aplicados sobre outros artboards); para fotografia realista ele indica JPG, mais leve. A afirmação de que JPG e PNG são "muito parecidos em qualidade" vale para foto; em texto e bordas nítidas o PNG sem perdas ganha ([[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]). Para ícones, PNG resolvia a transparência, mas hoje é "um modelo mais arcaico" diante do [[wiki/concepts/formato-svg|SVG]] ([[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]]).
 
+## Ícone em PNG é coisa do passado (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: "Eu sou da época que [...] eu utilizava PNG quando era ícone." Hoje ícone é SVG; PNG fica para o que não vetoriza e, na web, perde para WebP e AVIF.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -38,3 +42,4 @@ Na aula de imagens de [[wiki/entities/nasser|Násser]], PNG fica para fotos com 
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — PNG para ícone com transparência virou "modelo mais arcaico" diante do SVG
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": "não vai sumir" por causa da transparência; um pouco mais pesado que o JPG
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — export do frame em PNG pelo painel do Figma
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: PNG → SVG ou WebP

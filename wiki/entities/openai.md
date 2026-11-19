@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-11-10
-source_count: 28
+date_updated: 2026-11-19
+source_count: 29
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -118,6 +118,10 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] compara o GPT Live 1 (~US$ 0,05/min ≈ US$ 3/h) ao [[wiki/entities/gemini-live]] (~US$ 0,84/h), que o superaria em benchmark e custo ([[wiki/concepts/speech-to-speech]]).
 
+## ChatGPT para palavras-chave (FrontPUSH)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o instrutor gera as `meta keywords` perguntando ao ChatGPT pelas palavras do nicho (energia solar). A tag é ignorada pelo Google; as palavras servem melhor ao conteúdo e ao `<title>`.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — vagas da OpenAI no Ashby como exemplo
@@ -136,3 +140,4 @@ Citada em [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — streaming do ChatGPT citado como "SSE puro"; a documentação da API confirma SSE e oferece também modo WebSocket
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: palavras-chave via ChatGPT

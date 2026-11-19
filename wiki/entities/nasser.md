@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-17
-source_count: 122
+date_updated: 2026-11-19
+source_count: 130
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -202,6 +202,38 @@ Em [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]], 
 
 Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]], mostra o JSX virando `React.createElement` no REPL do Babel e adota o create-react-app para não configurar Babel e Webpack à mão. Não diz o nome; autoria pela sequência.
 
+## AxlePUSH
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], provavelmente é ele quem abre o [[wiki/entities/axlepush]], curso de assets 3D com o [[wiki/entities/spline]]. Não diz o nome, mas fala do FrontPUSH como seu ("nunca cheguei a trazer algo parecido para o front push") e oferece desconto nele. Estudava 3D "tem tempo"; conhece o Blender "de ser famoso, não de mexer nele".
+
+## Módulo de otimização, aula 01
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], diz o nome nas perguntas retóricas e mostra uma página de energia solar feita por ele (97 de desempenho no PageSpeed). Diz ter feito "alguns testes" para afirmar que um arquivo grande sai mais barato que vários pequenos.
+
+## Módulo de otimização, aula 02
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], diz o nome nas perguntas retóricas. Regra pessoal: código próprio local e cacheado, bibliotecas no CDN, numa versão "nem muito desatualizada, nem a última que saiu". Vê CSS incorporado de geradores de código "demais" no mercado digital.
+
+## Módulo de otimização, aula 03
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], diz o nome. O domínio dos projetos é nasseryousef.com.br (Solten, drone), o que sugere o sobrenome Yousef (inferência). Faz lazy loading "tem um tempinho já", desde o tempo do JavaScript manual; estuda otimização de páginas com muito 3D.
+
+## Módulo de otimização, aula 04
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], mostra as classes `.desktop` e `.mobile` que usa nos projetos (breakpoint de 960 px) e admite que "nem sempre" faz imagem por dispositivo, porque "dá muito trabalho". Não diz o nome; autoria confirmada pelo usuário.
+
+## Módulo de otimização, aula 05
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], diz o nome. Usa fonte mínima de 16 px, `theme-color` com a cor do fundo e gera palavras-chave no ChatGPT. O limite de 100 ms para interação é do FID, anterior a 2024, embora a aula 01 cite o INP.
+
+## Módulo de otimização, aula 06
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], diz o nome. Prioriza mídia pela regra 80-20 e acha que além disso o ganho "não vale a pena mais". Lê render-blocking como JS sem uso e o aviso de fonte como acessibilidade.
+
+## Módulo de otimização, aula 07
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]] (autoria pela sequência e pelos projetos Spider-Man e "Paybank"): sempre põe tela de carregamento com GSAP; testa no celular pela rede local; prioriza CSS puro; acha que "o que conta é o bom senso". Inverte a leitura do web.dev sobre a thread principal interromper o compositor.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -326,3 +358,11 @@ Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-a
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: módulo de ReactJS, aula 04: SPA, métodos (diz o nome; veio do PHP)
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: módulo de ReactJS, aula 05: SPA, componentes (autoria pela sequência)
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: módulo de ReactJS, aula 06: JSX, Webpack e Babel (autoria pela sequência)
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH, aula 01: por que o Spline (autoria inferida)
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: abertura do módulo; diz o nome
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: código local, bibliotecas no CDN
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: domínio nasseryousef.com.br
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: classes de visibilidade
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: hábitos de meta tags e tipografia
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: 80-20 como critério de esforço
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader, teste no celular, bom senso

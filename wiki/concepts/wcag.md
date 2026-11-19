@@ -3,8 +3,8 @@ type: concept
 title: "WCAG (Web Content Accessibility Guidelines)"
 aliases: ["Web Content Accessibility Guidelines", "diretrizes de acessibilidade ao conteúdo da web", "WCAG 2.1", "WCAG 2.2", "A AA AAA"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [acessibilidade, a11y, wcag, w3c, contraste, padronizacao, web]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,11 @@ Fonte da tabela: `[skill: ux-ui-mentor]` (`references/usabilidade.md`, `referenc
 - [[wiki/entities/who-can-use]]: nota por tipo de visão simulada.
 - Contrast Ratio: citado na aula, sem página própria. `[external]` Provavelmente o contrast-ratio.com de Lea Verou.
 
+## AA é a meta (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o corpo de texto deve passar "no teste do AAA". O Lighthouse e a maioria das leis cobram AA (4,5:1 texto normal, 3:1 grande); AAA (7:1) é o extra.
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — WCAG como fonte das recomendações; A/AA/AAA; AA como mínimo, AAA para governo
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: AA × AAA

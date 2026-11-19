@@ -3,8 +3,8 @@ type: concept
 title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 9
+date_updated: 2026-11-19
+source_count: 10
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -64,6 +64,10 @@ Na aula de usabilidade, "uso de confirmações visuais e textuais sempre" entra 
 
 O grande propósito da [[wiki/concepts/variacao-de-cores]] é a mudança de estado: no hover, o botão "vai ficar ou mais escuro ou mais claro", mantendo a harmonização do site ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). `[skill: ux-ui-mentor]` Vira token semântico (`color-brand-hover`), não hex solto no componente.
 
+## Tela de carregamento (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a "página inicial de carregamento" diz "só aguardar um pouquinho" e dá tempo de o site montar. Como feedback, faz sentido quando há espera real (web app, 3D); em landing page, cobrir conteúdo que já chegou atrasa o LCP ([[wiki/concepts/core-web-vitals]]).
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -75,3 +79,4 @@ O grande propósito da [[wiki/concepts/variacao-de-cores]] é a mudança de esta
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — feedback e confirmação visual na receita KISS de acessibilidade
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — "confirmações visuais e textuais sempre"
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — hover como variação mais escura ou mais clara da cor do botão
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader como feedback de espera

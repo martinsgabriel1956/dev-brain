@@ -3,8 +3,8 @@ type: concept
 title: "Compatibilidade entre navegadores (Can I use, Baseline)"
 aliases: ["suporte de navegadores", "cross-browser", "Can I use", "caniuse", "browser support"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 5
+date_updated: 2026-11-19
+source_count: 7
 tags: [frontend, navegador, css, javascript, compatibilidade, baseline]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,14 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], Nás
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o CSS que sai do Live Sass Compiler já traz `-webkit-` e `-ms-` "para poder melhorar a compatibilidade com browsers antigos" ([[wiki/concepts/prefixo-de-fornecedor]]).
 
+## WebGL em "qualquer browser"
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], o 3D precisa rodar no Chrome, no Firefox, no "falecido Internet Explorer" e em "qualquer browser". A definição lida diz que o [[wiki/concepts/webgl]] é compatível com muitos navegadores, "mas às vezes não funciona corretamente ou não é possível". `[skill: tech-mentor-frontend]` Na prática: detectar `getContext("webgl2")` e ter uma imagem estática como fallback.
+
+## Can I Use (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o `loading="lazy"` "está sendo implementado de forma nativa em todos os browsers", conferido no [[wiki/entities/can-i-use]]. Hoje é Baseline: Chrome 2019, Firefox 2020, Safari 2022 (imagens) e 2023 (iframes).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Can I use, `transform` x `backdrop-filter` no Firefox
@@ -39,3 +47,5 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o CS
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Can I use, legenda e prefixos de `transform`
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: prefixos automáticos no CSS compilado
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: "o browser não entende JS atualizado", com arrow function e CSS Grid como exemplos
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: WebGL entre navegadores e fallback
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: Can I Use para o lazy loading

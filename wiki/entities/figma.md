@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-16
-source_count: 52
+date_updated: 2026-11-19
+source_count: 53
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -178,6 +178,10 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: as versões clara e escura das cores
 
 Layout da versão 2.0 do Proffy (web e mobile: login, cadastro, perfil, onboarding) entregue como desafio. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## Image Tracer (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o plugin Image Tracer vetoriza um logo da Adidas buscado no Google; a Pen Tool fica como alternativa manual. Imagens exportadas do Figma sem otimizar são citadas como erro comum.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -232,3 +236,4 @@ Layout da versão 2.0 do Proffy (web e mobile: login, cadastro, perfil, onboardi
 - [[wiki/sources/frontpush-variaveis-sass]]: Smooth Shadow e Inspect → variável Sass
 - [[wiki/sources/frontpush-funcoes-sass]]: variações de cor no Figma, não no Sass
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: Proffy 2.0
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: plugin Image Tracer

@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-16
-source_count: 40
+date_updated: 2026-11-19
+source_count: 45
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -90,6 +90,26 @@ Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], pes
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], a lista de eventos vem de uma busca "events javascript" no Google, num site que ele "sempre" visita.
 
+## Experiência de página no ranking
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: "o Google vai melhor indexar a sua página de acordo com a experiência do usuário", com o relatório de UX do Chrome (CrUX). Os [[wiki/concepts/core-web-vitals]] pesam no ranking, não na indexação.
+
+## PageSpeed: imagens do tamanho do dispositivo
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: o PageSpeed "fala muito sobre [...] disponibilize imagens que são de acordo com o tamanho do dispositivo". A auditoria compara o arquivo com o tamanho exibido (vezes a densidade), não a orientação.
+
+## PageSpeed: as quatro notas
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: desempenho, acessibilidade, práticas recomendadas e SEO, mais o Googlebot que "baixa a internet todos os dias". As notas são do Lighthouse e não são o ranking ([[wiki/concepts/seo]]).
+
+## PageSpeed: os avisos de diagnóstico
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: formatos de última geração, tamanho de imagem, render-blocking, payload, texto visível e DOM grande, cada um com descrição e link. Desde 2024–2025 o Lighthouse agrupa esses avisos em "insights" (confiança média).
+
+## web.dev e análise mobile × desktop
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: o artigo do web.dev sobre animações de alto desempenho (60 fps, pipeline, compositor) e a separação de mobile e desktop no PageSpeed, que emula um celular médio com CPU mais lenta.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -143,6 +163,9 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: experiência do usuário e ranking
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: aviso de tamanho de imagem
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: notas do PageSpeed e rastreamento
 
 ## Google como empregador: faixa salarial e vagas no Brasil
 
@@ -153,3 +176,5 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: Chrome e V8 (2008) como origem do Node.js
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: pesquisar o DOM de forma leiga
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: buscar a lista de eventos
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: avisos do PageSpeed
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: web.dev sobre animações

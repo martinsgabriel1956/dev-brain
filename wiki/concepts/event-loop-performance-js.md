@@ -3,8 +3,8 @@ type: concept
 title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-19
+source_count: 9
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -94,6 +94,10 @@ Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], o as
 
 Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `resolve` "levanta uma bandeirinha verde" que "aciona o then". `[skill: lang-dynamic]` Na prática, o callback do `then` entra na fila de microtasks e roda quando a pilha esvazia, antes dos timers.
 
+## Animação em JS na thread principal (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: animação CSS de `transform`/`opacity` roda no compositor; animação em JS ([[wiki/entities/gsap|GSAP]], `requestAnimationFrame`) disputa a thread principal com o resto e trava quando uma tarefa longa ocupa o event loop, o que também pesa no INP ([[wiki/concepts/taxa-de-quadros-60fps]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
@@ -104,3 +108,4 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `resolve` "l
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: loop infinito trava o browser
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: "no fundo da aplicação" (é o ambiente, não outra thread JS)
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: then como microtask (a bandeirinha)
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: animação JS disputa a thread principal

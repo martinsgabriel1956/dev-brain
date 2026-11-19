@@ -3,8 +3,8 @@ type: concept
 title: "display no CSS (block x inline)"
 aliases: ["display", "display block", "display inline", "elemento de bloco", "elemento inline", "inline-block"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-19
+source_count: 12
 tags: [frontend, css, display, layout, box-model]
 skill: tech-mentor-frontend
 status: stub
@@ -56,6 +56,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `la
 
 Em [[wiki/sources/frontpush-variaveis-sass]], o link vira botão com `display: inline-block` "para poder virar o elemento de caixa": padding e margin verticais passam a ocupar espaço.
 
+## `display: none` não evita download (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], `display: none` esconde a imagem do outro dispositivo, mas a `<img>` escondida é baixada igual: o navegador busca a imagem ao ler o HTML. Para não baixar, `<picture>`/`srcset` ou `background-image` dentro do media query.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: bloco como padrão, span e link inline, link forçado a bloco no botão
@@ -69,3 +73,4 @@ Em [[wiki/sources/frontpush-variaveis-sass]], o link vira botão com `display: i
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label inline; margin-top em inline
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `display: grid` sem template empilha os itens "como se tivesse em display block"
 - [[wiki/sources/frontpush-variaveis-sass]]: link como botão com inline-block
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: `display: none` em imagens

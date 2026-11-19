@@ -3,8 +3,8 @@ type: concept
 title: "Branding"
 aliases: ["identidade de marca", "pegada da marca", "brand"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [ui-design, design, branding, marca, identidade-visual, consistencia]
 skill: ux-ui-mentor
 status: stub
@@ -24,6 +24,11 @@ Nas aulas de UI do [[wiki/entities/frontpush]], "branding" aparece como a cor ou
 
 `[skill: ux-ui-mentor]` Em design system, o branding vira a camada de tokens de marca (cor, tipografia, radius), separada dos tokens semânticos; trocar a marca é trocar essa camada.
 
+## Assets 3D na cor da marca
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], os elementos 3D da landing page do [[wiki/entities/axlepush]] "não eram originais, roxo e rosa dessa forma": o instrutor aplicou "a minha branding" para "dar maior ambiência". Recolorir assets prontos no [[wiki/entities/spline]] é uma forma barata de manter a identidade.
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: elementos 3D recoloridos para a marca

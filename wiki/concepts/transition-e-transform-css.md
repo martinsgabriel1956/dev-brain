@@ -3,8 +3,8 @@ type: concept
 title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-19
+source_count: 9
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/frontpush-variaveis-sass]]: `transition` de 0.5 s "para que es
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], `transition: 1s ease` na classe `.red` suaviza a troca feita por `classList.toggle` no clique: o JavaScript troca a classe, o CSS anima.
 
+## Otimização de animações (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], "priorize o CSS puro" e anime `transform`/`opacity` em vez de `width`. Ressalvas: só `transform`/`opacity` (e às vezes `filter`) saem da thread principal; `@keyframes` de `width` ou `box-shadow` não. `will-change: transform` só pouco antes de animar e em poucos elementos. Falta `prefers-reduced-motion`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -52,3 +56,4 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: suporte e prefixos de `transform`
 - [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: transition no box-shadow
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: transition na classe trocada pelo JS
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: CSS puro, transform/opacity, will-change

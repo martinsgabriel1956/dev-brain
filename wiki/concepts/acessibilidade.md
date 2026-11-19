@@ -3,8 +3,8 @@ type: concept
 title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 20
+date_updated: 2026-11-19
+source_count: 23
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -87,6 +87,18 @@ O voltar do header é um `BorderlessButton` só com imagem, sem `accessibilityLa
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], o clique vai numa `div.box`, que não recebe foco nem responde a Enter e Espaço. Ação de interface vai num `<button>`.
 
+## No Lighthouse (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], a nota de acessibilidade do PageSpeed seria "basicamente tipografia", mais contraste, `alt` e tamanho de botão e input. A categoria roda o axe-core: contraste, `alt`, `label`, nome acessível, `lang`, ARIA, ordem de títulos e alvos de toque; tamanho de fonte não está entre as auditorias de acessibilidade.
+
+## Texto visível não é auditoria de a11y (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], "Garanta que o texto continue visível" é chamado de acessibilidade. É um aviso de desempenho sobre webfonts ([[wiki/concepts/webfonts]]); a categoria de acessibilidade do Lighthouse roda o axe-core.
+
+## Movimento reduzido (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a animação só é cortada por desempenho no celular. Falta `@media (prefers-reduced-motion: reduce)` (no GSAP, `gsap.matchMedia()`) para quem tem vestibulopatia ou enxaqueca (WCAG 2.3.3).
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -107,3 +119,6 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: botão Buscar; ids repetidos
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: botão de voltar sem rótulo
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: clique em div sem acesso pelo teclado
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: acessibilidade no PageSpeed
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: aviso de fonte classificado como a11y
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: falta prefers-reduced-motion

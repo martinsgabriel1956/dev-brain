@@ -3,8 +3,8 @@ type: concept
 title: "Lazy Loading vs. Eager Loading"
 aliases: ["lazy load", "eager load", "carregamento preguiçoso", "carregamento antecipado", "modo fominha"]
 date_created: 2026-11-10
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-19
+source_count: 5
 tags: [lazy-loading, eager-loading, orm, performance, banco-de-dados, frontend, custo]
 skill: tech-mentor-backend
 status: draft
@@ -61,7 +61,22 @@ O mesmo princípio vale para `loading="lazy"` em imagens e iframes ([external](h
 - [[wiki/concepts/lazy-initialization]]: o adiamento aplicado à criação de objetos.
 - [[wiki/concepts/finops]]: em banco cobrado por uso, cada leitura evitada é custo evitado.
 
+## Carregamento sob demanda (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], a aba Network mostra a página dele fazendo "carregamento sobre demanda" de PNGs, e "como é que a gente estabelece carregamento sob demanda" está no escopo do módulo. `[skill: tech-mentor-frontend]` Lazy load não deve ir na imagem acima da dobra, que costuma ser o LCP.
+
+## `loading="lazy"` nativo (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: antes, JavaScript media a distância da imagem ao topo e trocava o `src` vazio a ~1500 px; hoje, `loading="lazy"` em `<img>` e `<iframe>`, com suporte conferido no [[wiki/entities/can-i-use]]. A aula manda pôr "em todas as imagens" e aplica num logo; o certo é deixar sem lazy (e com `fetchpriority="high"`) a imagem acima da dobra, que costuma ser o LCP ([[wiki/concepts/core-web-vitals]]), e dar `width`/`height` a todas. O meio-termo histórico é o `IntersectionObserver`, ainda usado para vídeo e fundos.
+
+## Vídeo no payload (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], "as áreas mais vermelhas são fotos e vídeos" no aviso de payload. Para vídeo, `loading="lazy"` não vale: `preload="none"`/`metadata` com `poster`, ou carregar por `IntersectionObserver` fora da dobra.
+
 ## Key Sources
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]]
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — "carregamento sob demanda" citado como otimização de imagem do lado do código, sem detalhe
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: imagens sob demanda na aba Network
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: `loading="lazy"` e o método antigo por distância
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: fotos e vídeos no payload

@@ -3,8 +3,8 @@ type: concept
 title: "Debug de Requisição HTTP"
 aliases: ["debugar api", "devtools network", "debug http"]
 date_created: 2026-09-30
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-19
+source_count: 5
 tags: [debugging, http, devtools, api]
 skill: tech-mentor-networking
 status: stub
@@ -28,6 +28,10 @@ Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a aba Ne
 
 Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a aba Network mostra status 200, Preview, Response e Timing ("foram 340 milissegundos"). Para testar o erro, ele quebra a URL de propósito e confere a mensagem do `catch`.
 
+## Disable Cache e waterfall (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], a aba Network com Disable Cache + F5 simula "um site aberto pela primeira vez"; as colunas Size e Tempo e a linha do tempo mostram o que chega primeiro. Disable Cache não fecha conexões nem desliga service worker; o throttling completa a simulação.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — exemplos 401 e CORS
 
@@ -35,3 +39,4 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], a aba Network 
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — vocabulário: o que o DevTools chama de URL é URI + localização
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: aba Network com filtro XHR
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: Timing e caminho de erro de propósito
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: Disable Cache e waterfall

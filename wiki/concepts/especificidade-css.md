@@ -3,8 +3,8 @@ type: concept
 title: "Especificidade no CSS"
 aliases: ["especificidade", "CSS specificity", "specificity"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-19
+source_count: 9
 tags: [css, cascata, seletores, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o slide diz que o nestin
 
 `margin-top: 0 !important` dentro do `.schedule-item` para anular `.input-block + .input-block`; um seletor mais específico bastaria. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+## Inline vence incorporado e vinculado (FrontPUSH, otimização aula 02)
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: o CSS inline "está sendo aplicado somente nesta tag e ele tem uma prioridade maior do que o CSS incorporado ou o vinculado". Correto; só `!important` numa regra de folha de estilo passa por cima. A aula manda evitar o inline por manutenção e cache.
+
 ## Key Sources
 
 - [[wiki/sources/classes-e-ids-no-css]]: estilo por ID sem tratar de especificidade (tensão registrada na fonte)
@@ -64,3 +68,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o slide diz que o nestin
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: especificidade de seletores aninhados
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: id × classe no container
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: !important no schedule-item
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: prioridade do CSS inline

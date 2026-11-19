@@ -3,8 +3,8 @@ type: concept
 title: "Webfonts"
 aliases: ["fontes web", "carregar fonte no CSS", "font-family", "@import de fonte", "link de fonte", "font-weight", "@font-face"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-19
+source_count: 6
 tags: [frontend, css, tipografia, google-fonts, performance, font-family, font-weight]
 skill: ux-ui-mentor
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins vem por `<link>` do Google Fonts, mas "não é ainda o suficiente": falta a regra `font` no CSS, aplicada também a `input`, `button` e `textarea`.
 
+## Texto invisível e `font-display` (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], o aviso "Garanta que o texto continue visível" é chamado de "probleminha de acessibilidade". É de desempenho: sem `font-display`, o navegador esconde o texto até a fonte chegar (FOIT, até cerca de 3 s). `font-display: swap` mostra a reserva e troca; `optional` troca só se chegar a tempo e evita o pulo de layout. No Google Fonts, `&display=swap` na URL.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: Google Fonts, pesos, `<link>` x `@import`, `font-family`
@@ -49,3 +53,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins vem p
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: um `<link>` para duas famílias; smoothing
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: link não basta, falta a regra
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: Roboto do Google Fonts com copiar link e font-family
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: aviso de texto visível = `font-display`

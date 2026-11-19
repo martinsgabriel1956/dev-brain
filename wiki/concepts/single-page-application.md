@@ -3,8 +3,8 @@ type: concept
 title: "SPA (Single Page Application)"
 aliases: ['SPA', 'single page apps']
 date_created: 2026-10-14
-date_updated: 2026-11-17
-source_count: 11
+date_updated: 2026-11-19
+source_count: 13
 tags: [spa, frontend, estado, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -28,6 +28,14 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a vantagem do JavaScript assíncrono é "carregar seção [...] sem precisar recarregar a página inteira": no e-commerce, só o miolo do produto ([[wiki/concepts/javascript-assincrono]]).
 
+## Web app × página normal (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], React e Vue, "como ele faz a Single Page Application", "fazem muita otimização de performance", e por isso o módulo foca na landing page em HTML, CSS e JS puros. `[skill: tech-mentor-frontend]` Meia verdade: o build minifica e agrupa por você, mas a SPA costuma ter o primeiro carregamento mais pesado (todo o JS antes do conteúdo) e INP pior; daí [[wiki/concepts/code-splitting]] e SSR.
+
+## CSS "quebrado" no web app (FrontPUSH, otimização aula 02)
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], "o CSS quebrado lá é mais vantajoso" no web app e o contrário na página normal, com o Virtual DOM como motivo. O que divide CSS e JS numa SPA é o [[wiki/concepts/code-splitting]] por rota, não o Virtual DOM.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -41,3 +49,5 @@ Em [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]], a va
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: SPA com declarativo, performance e Virtual DOM como subitens; atualizar só o chat é AJAX, não SPA
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: método tradicional × método SPA; a comparação é SSR × CSR, e omite o bundle da 1ª visita
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "uma única página HTML" e rotas sem recarregar; definição correta, primeira menção às rotas
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: web app "otimiza sozinho" × landing page
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: SPA reativa, CSS dividido

@@ -3,8 +3,8 @@ type: concept
 title: "Texto alternativo (alt text)"
 aliases: ["alt text", "atributo alt", "alt", "texto alternativo de imagem", "descrição de imagem"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-19
+source_count: 4
 tags: [acessibilidade, a11y, alt-text, imagens, ilustracoes, html, leitor-de-tela, wcag]
 skill: ux-ui-mentor
 status: stub
@@ -37,8 +37,13 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o `alt` é "uma alternativa ao source que não existe": com o `src` quebrado aparece "maçã". E serve a leitores de tela: "já que ele não está conseguindo enxergar uma maçã, ele vai ler maçã". O logo do Proffy fica com `alt="logo"`.
 
+## No PageSpeed (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o `alt` ("out" na legenda) é a descrição para quem "não consegue enxergar a imagem". Falta o caso da imagem decorativa, com `alt=""`.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — "sempre coloque um texto alternativo"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — "textos invisíveis" para o text-to-speech
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: alt como alternativa e para leitor de tela
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: `alt` no relatório

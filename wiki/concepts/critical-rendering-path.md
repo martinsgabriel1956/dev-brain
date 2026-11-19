@@ -3,8 +3,8 @@ type: concept
 title: "Critical Rendering Path"
 aliases: ["pipeline de renderização do browser", "caminho crítico de renderização", "URL para pixel"]
 date_created: 2026-07-28
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-19
+source_count: 8
 tags: [browser, rendering-pipeline, critical-rendering-path, performance, dom, cssom]
 skill: tech-mentor-frontend
 status: draft
@@ -45,8 +45,28 @@ Em [[wiki/sources/frontpush-import-e-partials-sass]], o Sass junta os arquivos n
 
 Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o painel Elements é apresentado como "a árvore DOM de elementos" com HTML, estilos e layout; são etapas diferentes deste pipeline (DOM, CSSOM, layout) mostradas na mesma tela.
 
+## CSS e JS do head primeiro (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], na aba Network, os primeiros arquivos são o CSS e o JS do head: o browser "vai dar prioridade para o style.css, para o JavaScript" para não mostrar "aquele site todo quebrado". É o CSS bloqueando a renderização (e o script sem `defer` bloqueando o parser), sem o nome. Por isso um CSS único gigante atrasa o FCP ([[wiki/concepts/core-web-vitals]]).
+
+## CSS crítico inline × "evite incorporado" (FrontPUSH, otimização aula 02)
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], a regra é evitar CSS inline e incorporado porque não cacheia. Tensão: o bloco `<style>` com o CSS crítico no `<head>` é técnica recomendada, porque tira a requisição bloqueante da primeira tela; o resto vai num arquivo externo cacheável. O que a aula condena com razão é o atributo `style=""` espalhado e o código acumulado por geradores e page builders.
+
+## Recursos que bloqueiam a renderização (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], o aviso é explicado como "JavaScript que não tá sendo utilizado" e resolvido jogando o JS "lá pra baixo". No Lighthouse são dois avisos: render-blocking é todo `<link rel="stylesheet">` e `<script>` síncrono no `<head>`, usado ou não; código sem uso é outro aviso ([[wiki/concepts/code-splitting]]). Para JS, `defer` no `<head>` supera o fim do `<body>` (baixa em paralelo, executa na ordem); para CSS, CSS crítico inline e o resto sem bloquear.
+
+## Pipeline por quadro na animação (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], o mesmo pipeline aparece por quadro: estilo, layout, pintura e composição (falta a etapa de JavaScript antes). Cada mudança só refaz as etapas a partir da que afeta ([[wiki/concepts/taxa-de-quadros-60fps]]).
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: script no começo do body x defer
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass: um CSS só × CSS crítico
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: DOM, estilos e layout no painel Elements
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: CSS e JS do head chegam primeiro
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: CSS crítico inline como contraponto
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: render-blocking × JS sem uso; `defer` × fim do body
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: pipeline a cada quadro de animação

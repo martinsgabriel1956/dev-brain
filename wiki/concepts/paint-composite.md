@@ -3,8 +3,8 @@ type: concept
 title: "Paint e Composite"
 aliases: ["paint", "compositing", "compositor"]
 date_created: 2026-07-28
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-19
+source_count: 3
 tags: [browser, paint, composite, gpu, rendering-pipeline, performance]
 skill: tech-mentor-frontend
 status: draft
@@ -23,6 +23,11 @@ Duas etapas finais do pipeline de renderização, depois do [[wiki/concepts/refl
 
 A aula de position ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]) esconde o menu mobile com `relative` e −1000 px e o traz de volta com `transition`. A versão só de composite: `transform: translateX(-100%)` → `translateX(0)`, com `opacity` se quiser fade.
 
+## Três caminhos, não quatro etapas sempre (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], o pipeline é estilo → layout → pintura → composição e o navegador passaria pelas quatro "toda vez que ele renderiza". O ponto do artigo é o contrário: `transform`/`opacity` com camada própria pulam layout e pintura. A aula também diz que `transform` "não é tão performático quanto o opacity"; os dois são composição pura. Queda de frame com muitos `translate` vem de camadas demais, falta de camada (repinta) ou animação dirigida por JS. `will-change` promove a camada antes, mas cada camada gasta memória de GPU. Sombra animada repinta: anime a `opacity` de um `::after` com a sombra.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: transição de menu por `top` e a alternativa com `transform`
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: transform × opacity, will-change, sombra

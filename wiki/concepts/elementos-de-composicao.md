@@ -3,8 +3,8 @@ type: concept
 title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-19
+source_count: 8
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -56,6 +56,10 @@ Cores análogas, "pela transição entre elas ser suave", são "muitíssimo apli
 
 Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: um elemento de composição amarelo atrás de texto branco tira o contraste ("você está dificultando a vida do usuário"). A correção é um gradiente linear: o amarelo vira "um detalhezinho, um entalhe" que some antes do texto. Ver [[wiki/concepts/contraste]] e [[wiki/concepts/paleta-de-cores]].
 
+## Elementos 3D como ambiência
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], os objetos 3D da landing page do [[wiki/entities/axlepush]] fazem o papel de elementos de composição: recoloridos em roxo e rosa para "encaixar, dar maior ambiência". O [[wiki/entities/spline]] também exporta foto e vídeo, o que permite usar o 3D como imagem sem custo de runtime.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -65,3 +69,4 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — análogas para gradiente; definição de monocromática
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — elemento amarelo atrás do texto corrigido com gradiente linear
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: as bolinhas do site do FrontPUSH em `position: absolute`, animadas de `top`/`left` 50/50 → 80/80 → 30/30
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: elementos 3D recoloridos como ambiência

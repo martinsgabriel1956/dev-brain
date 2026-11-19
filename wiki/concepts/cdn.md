@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-19
+source_count: 13
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -74,6 +74,14 @@ CDN reduz distância física até o espectador, mas não elimina o que é ineren
 
 Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], o Axios é carregado "via CDN" com uma tag `<script>` antes do `app.js`, porque o ambiente com npm ainda não foi configurado. Fixar a versão na URL e usar SRI evita mudança silenciosa no código servido.
 
+## CDN ou arquivo local (FrontPUSH)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], "quando é que eu devo utilizar CDN ou arquivo local?" fica para a aula seguinte. Na página de exemplo, só a tipografia vem de fora ([[wiki/entities/google-fonts]]). `[skill: tech-mentor-frontend]` Desde 2020 o cache do navegador é particionado por site, então a CDN pública de bibliotecas não aproveita mais o cache de outros sites.
+
+## CDN para bibliotecas, local para o próprio código (FrontPUSH, otimização aula 02)
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], a regra do instrutor: bibliotecas (GSAP, ScrollTrigger) no CDN, código próprio local. Motivos: trocar a versão no link, servidor mais próximo na primeira visita (Acre buscando do Pará, não de São Paulo) e redundância ("esse link aqui não cai"). `[skill: tech-mentor-frontend]` Contrapesos: domínio extra custa DNS, TCP e TLS; o cache é particionado por site desde 2020; CDN de terceiros é risco de supply chain (polyfill.io, 2024), por isso versão fixa + `integrity`; e CDNs caem (Fastly, 2021). Com o site inteiro atrás de uma CDN (Vercel, Cloudflare), o arquivo local também sai da borda.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
@@ -111,3 +119,5 @@ Para downloads de arquivos grandes, CDN entre usuário e S3 reduz latência (Jap
 
 - [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — afirma que SSE funciona atrás de CDN; sem detalhe de configuração
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: Axios via CDN
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: CDN × arquivo local anunciado
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: CDN × arquivo local

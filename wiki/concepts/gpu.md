@@ -3,8 +3,8 @@ type: concept
 title: "GPU"
 aliases: ["unidade de processamento gráfico", "graphics processing unit", "processador massivamente paralelo", "programação massivamente paralela"]
 date_created: 2026-11-03
-date_updated: 2026-11-03
-source_count: 1
+date_updated: 2026-11-19
+source_count: 3
 tags: [cs-fundamentals, hardware, gpu, paralelismo, throughput, latencia, simt]
 skill: cs-fundamentals
 status: draft
@@ -44,6 +44,16 @@ Serve quando a mesma operação se repete sobre muitos dados e a latência é o 
 - [[wiki/entities/nvidia]]: fabricante dominante em IA.
 - [[wiki/concepts/deep-learning]]: a matemática matricial é uma carga natural de GPU. [skill: cs-fundamentals]
 
+## No 3D da web
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], a GPU é quem renderiza as cenas 3D no navegador, via [[wiki/concepts/webgl]]: "isso aqui é tudo a placa de vídeo que faz utilizando o Three.js". Os fans da placa ligam durante a demonstração. Renderização é a carga original da GPU, a mesma operação sobre muitos vértices e pixels. Para o visitante de uma página com 3D, isso vira calor e bateria, sobretudo no celular.
+
+## Camadas e composição (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a GPU aparece como gargalo do celular ("uma GPU um pouquinho mais lenta") e na composição de camadas. Cada camada promovida (`will-change`, `transform` animado) ocupa memória de GPU; camadas demais derrubam quadros.
+
 ## Key sources
 
 - [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]]
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: a GPU renderiza o WebGL; fans ligando como sinal de custo
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: GPU lenta e memória de camadas

@@ -3,8 +3,8 @@ type: concept
 title: "Princípio de Pareto"
 aliases: ["regra 80/20", "distribuição de Pareto", "80-20 rule"]
 date_created: 2026-07-04
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-19
+source_count: 4
 tags: [produtividade, priorizacao, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -43,8 +43,13 @@ Uma aula de UI afirma que usuários "só utilizam 20% das funcionalidades" de si
 
 No curso de UI e interfaces web, o número aparece duas vezes, sem fonte: programas de gestão "com N funções" em que "usa-se em torno de 20% das funções implementadas" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). O argumento é que a [[wiki/concepts/usabilidade]] poupa trabalho do dev ao cortar o que ninguém usa. `[external]` O dado costuma ser atribuído ao Standish Group (64% das funcionalidades raramente ou nunca usadas, 2002), de metodologia pouco documentada; confiança baixa como regra geral.
 
+## 80-20 na performance web (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: "você consegue resolver 80% das coisas fazendo 20%. Grande parte disso é mídia"; o resto rende "30 milissegundos" e "não vale a pena mais". Vale para landing pages, onde mídia domina os bytes; em web app o gargalo costuma ser JavaScript, cujo custo de CPU cresce muito em celular lento.
+
 ## Key Sources
 
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — "20% das funcionalidades" como argumento de UI
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — "usa-se em torno de 20% das funções" (sem fonte)
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: 80% resolvido pela mídia

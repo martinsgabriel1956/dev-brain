@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-16
-source_count: 37
+date_updated: 2026-11-19
+source_count: 38
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -181,6 +181,10 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 Em [[wiki/sources/classes-e-ids-no-css]], os estilos por tag criam hierarquia com uma escala de cinza: h1 branco ("a cor de maior contraste"), h2 `#CCC`, depois `#555` e o parágrafo `#333`, "mais escura ainda".
 
+## Contraste por nível (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], título mais contrastante e corpo um pouco menos, sem cair abaixo do limite do WCAG.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -220,3 +224,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], os estilos por tag criam hierarquia co
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — maiúsculas em 16 px sobem a hierarquia
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — fonte característica no título, sem serifa no corpo
 - [[wiki/sources/classes-e-ids-no-css]] — h1 branco, h2 e h3 em cinzas, parágrafo #333
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: contraste título × corpo

@@ -3,8 +3,8 @@ type: concept
 title: "Animações Performáticas — Mobile"
 aliases: ["reanimated 3", "compose animation", "flutter animations", "mobile jank"]
 date_created: 2026-04-24
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-19
+source_count: 6
 tags: [mobile, animacoes, reanimated, compose, flutter, ui-thread, jank]
 skill: tech-mentor-mobile
 status: stable
@@ -57,6 +57,10 @@ val offsetX by animateFloatAsState(
 
 "Não tem a parte de animações" refere-se ao CSS; o RN tem `Animated`/Reanimated, e o ripple do `RectButton` vem do Gesture Handler. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Na web: testar no celular e cortar (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: "teste, teste, teste" no aparelho real via Live Server na mesma rede; se continuar travando, "capa no celular" (estático ou `display: none`). Complementos: throttling de CPU no DevTools, `chrome://inspect` por USB, telas de 120 Hz (8,3 ms por quadro) e `prefers-reduced-motion`.
+
 ## Key Sources
 
 - [[wiki/sources/mobile-animacoes-performaticas]]
@@ -64,3 +68,4 @@ val offsetX by animateFloatAsState(
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — ícones animados com sombra interna e externa no SVG (filtros com custo de renderização; nota do agente)
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: hover com `transform: scale` (compositor) no CSS da web; ver [[wiki/concepts/transition-e-transform-css]]
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: animações × CSS no RN
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: teste em aparelho e corte no mobile

@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-16
+date_updated: 2026-11-19
 ---
 
 
@@ -26,6 +26,14 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]] | Aula 07 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência), 21,5 min, última do módulo: animação comunica (como a cor), tela de carregamento com [[wiki/entities/gsap\|GSAP]] e timeline (Spider-Man, "Paybank"), "teste, teste, teste" no celular via Live Server e "capa no celular"; [[wiki/concepts/taxa-de-quadros-60fps\|60 fps / 16,6 ms]]; pipeline estilo → layout → pintura → composição; `width` × `scaleX`, `opacity`, `will-change`; "o que conta é o bom senso"; CSS puro na thread do compositor. Precisões: a thread principal não "passa na frente" (leitura invertida do web.dev), nem todo quadro passa pelas quatro etapas, `transform` e `opacity` são da mesma classe, CSS só vai ao compositor com `transform`/`opacity`, GSAP roda na principal, `will-change` custa memória, ~10 ms de orçamento e 120 Hz, loader atrasa o LCP, falta `prefers-reduced-motion`, "uma tarefa por vez" é por núcleo |
+| [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]] | Aula 06 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 4,5 min, parte 2 do PageSpeed: avisos de diagnóstico um a um, formatos de última geração ("ele quer em WebP"; a ferramenta cita AVIF), tamanho adequado ("4K num celular 320p"), recursos que impedem a renderização (lido como "JavaScript não utilizado", jogar "lá pra baixo"), payload (fotos e vídeos), texto visível (chamado de acessibilidade), DOM grande (ícones, SVG com "mil camadas de gradiente"); [[wiki/concepts/principio-de-pareto\|80-20]]: "grande parte disso é mídia". Precisões: render-blocking ≠ JS sem uso, `defer` > fim do body, CSS crítico inline, texto visível é `font-display` (desempenho), limites de DOM (~800/1.400 nós), SVG inline × `<img>`, vídeo sem `loading`, avisos viraram "insights", mídia domina bytes mas JS domina CPU |
+| [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]] | Aula 05 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 18,5 min: [[wiki/concepts/core-web-vitals\|Core Web Vitals]] como experiência (FCP até 2,5 s, interação até 100 ms, mudança de layout como "dark pattern"); quatro notas; acessibilidade como "tipografia" (16 px), contraste no Who Can Use (#999/#777/#666), `alt`; [[wiki/concepts/seo\|SEO]] por `nav`/`header`; meta tags: `lang`, `theme-color`, `keywords` via ChatGPT, [[wiki/concepts/open-graph\|Open Graph]]. Precisões: é LCP e não FCP, 100 ms é o FID aposentado (INP ≤ 200 ms), CLS não é dark pattern, nota ≠ ranking, Best Practices ≠ semântica, a11y é axe-core, AA é a meta, `keywords` ignorada desde 2009, `lang` é atributo, sitemap |
+| [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]] | Aula 04 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], autoria confirmada pelo usuário), 10 min: PageSpeed pede imagens "de acordo com o tamanho do dispositivo" (1920×1080 horizontal no desktop, vertical menor no mobile; redimensionar por CSS "continua pesando"); classes `.desktop`/`.mobile` com o [[wiki/concepts/mixin-sass\|mixin]] `responsive` (960 px) e `display: none`, ou imagem por breakpoint na própria regra; "nem sempre" vale; imagens são "70%". Precisões: `<img>` escondida é baixada igual, `srcset`/`sizes` e `<picture>` resolvem, mixin só economiza com `background-image` (que atrasa o LCP), PageSpeed compara tamanho exibido × densidade e não orientação, celular 2–3× não é "resolução menor", dois menus duplicam HTML |
+| [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]] | Aula 03 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 11,5 min: primeiro "dá para vetorizar?" ([[wiki/concepts/formato-svg\|SVG]]: texto, escala, CSS; logo da Adidas no Image Tracer do Figma); foto comprimida no "site do panda" e convertida para [[wiki/concepts/formato-webp\|WebP]] (PageSpeed: "formatos de última geração"); imagens "resolve[m] 60%, 70%"; `loading="lazy"` nativo × JS por distância, conferido no [[wiki/entities/can-i-use\|Can I Use]]. Precisões: base64 não vetoriza, SVG traçado pesa e CSS só alcança inline, panda é o TinyPNG, AVIF > WebP com `<picture>`, lazy não vai na imagem do LCP (nem no logo), faltam `width`/`height`, `loading` não vale para vídeo; domínio nasseryousef.com.br |
+| [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]] | Aula 02 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 15 min: web app é exceção ("o CSS quebrado lá é mais vantajoso"); prefira a `.min` das bibliotecas; evite CSS/JS inline e incorporado (geradores, ActiveCampaign, page builders) porque arquivo externo vai para o [[wiki/concepts/http-caching\|cache]] e o HTML "sempre vai ler de novo"; hard refresh como prova; [[wiki/concepts/cdn\|CDN]] para bibliotecas (trocar versão no link, servidor mais perto, "não cai"), código próprio local. Precisões: divisão é code splitting e não VDOM, styled-components injeta `<style>`, cache vem dos headers, CSS crítico inline é recomendado, [[wiki/concepts/cache-busting\|cache busting]], cache particionado, polyfill.io e SRI, CDNs caem (Fastly 2021); GSAP 3.12.2 data em 2023 |
+| [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]] | Aula 01 do módulo de otimização de páginas web do [[wiki/entities/frontpush\|FrontPUSH]] 3.0 ([[wiki/entities/nasser\|Násser]], diz o nome), 15 min: otimização como "fase de acabamento"; PageSpeed 97/90/95/100 e FCP, INP, TTFB ([[wiki/concepts/core-web-vitals\|Core Web Vitals]]); aba Network com Disable Cache; [[wiki/concepts/pipeline-de-assets\|minificar]] CSS e JS só em produção, Sass "cospe" CSS único; web app "otimiza sozinho" × landing page; browser como "caminhãozinho" de requisições, 50K > 5×10K, Bootstrap em arquivo único. Precisões: é PageSpeed (Lighthouse + CrUX), FCP/TTFB são diagnóstico, ranking ≠ indexação, "caminhão" é o HTTP/1.1, CSS gigante bloqueia o render e perde cache, gzip/brotli > minificação, VDOM não otimiza o carregamento; INP data a aula em 2023–2024 |
+| [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]] | Aula 01 do [[wiki/entities/axlepush\|AxlePUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 15 min sem código: curso de assets 3D para a web (HTML/CSS/JS são pré-requisito); 3D no browser exige [[wiki/concepts/webgl\|WebGL]] e [[wiki/entities/three-js\|Three.js]], com modelos do Blender ou do Cinema 4D em [[wiki/concepts/formato-gltf\|GLB/glTF]], tudo em código e renderizado pela GPU; o [[wiki/entities/spline\|Spline]] simplifica (sem toda a luz e sombra, GLB limitado), é web-based e colaborativo, integra com o Webflow e exporta foto e vídeo. Precisões: aula do fim de 2023 (Webflow Conf), GPU não melhora "o desempenho geral" da página, biblioteca não é obrigatória (`<model-viewer>`), WebGPU, limite de GLB não documentado |
 | [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]] | Aula 06 do módulo de ReactJS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência), 14 min, última teórica: componentes "tripartidos"; [[wiki/concepts/jsx\|JSX]] "parece com o HTML, mas não é", virando `React.createElement` no REPL do Babel; inicial maiúscula "por convenção"; Babel converte JS novo em antigo (arrow function, CSS Grid); Webpack importa CSS e imagens e faz Live Reload ([[wiki/concepts/bundler\|bundler]]); curso usa create-react-app. Precisões: maiúscula muda o tipo, `class` é `className`, nova transformação do React 17 (`_jsx`), React Element é objeto, Babel não toca CSS, CRA descontinuado em 2025 |
 | [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]] | Aula 05 do módulo de ReactJS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência), 6,5 min: [[wiki/concepts/single-page-application\|SPA]] como "uma única página HTML" com rotas sem recarregar; `App.js` com header, sidebar, content e footer (KaBuM: só sidebar e content mudam); [[wiki/concepts/componentizacao\|componentes]] encapsulados, com estado próprio, aninhados e reusáveis (botão com parâmetros "como se fosse uma função"). Precisões: frase da antiga home do React, estado compartilhado sobe, performance é da reconciliação, CSS global por padrão, componentes e SPA são independentes |
 | [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]] | Aula 04 do módulo de ReactJS do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome; veio do PHP), 20 min: "método tradicional" (KaBuM com `?codigo=`, Ctrl+U, PHP com `$_GET`, `new Produto`, ProdutoDAO e `echo`; servidor monta ~50 KB de HTML e CSS; front e back atrelados, webmaster, servidor sobrecarregado) × "método SPA" (só [[wiki/concepts/json\|JSON]], ~5 KB; endpoints e `api.github.com`; uma API para web, Swift iOS e Kotlin Android; back em qualquer linguagem). Precisões: é SSR × CSR, 5 KB omite o bundle da 1ª visita, espelho é failover e não capacidade, DAO = Data Access Object, GET ≠ query string, API única tem o limite do BFF |
@@ -1047,6 +1055,45 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de otimização, aula 07: animações (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/taxa-de-quadros-60fps]] | 60 Hz = 16,7 ms por quadro (~10 ms para o código; 8,3 ms a 120 Hz); o caminho do pipeline decide o custo; animação JS disputa a thread principal e pesa no INP |
+| [[wiki/entities/gsap]] | Biblioteca JS de animação (timeline, ScrollTrigger), gratuita desde a compra pela Webflow (2024); roda na thread principal via rAF; loaders do FrontPUSH |
+
+### FrontPUSH, módulo de otimização, aula 05: Google PageSpeed (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/seo]] | Rastreamento → indexação → ranqueamento; relevância antes de experiência de página; title, description, semântica, links rastreáveis, sitemap, JSON-LD; `keywords` ignorada desde 2009 |
+| [[wiki/concepts/open-graph]] | `og:title`/`og:description`/`og:image` (com `property`) e Twitter Cards (com `name`) para a prévia de link; imagem ~1200×630 com URL absoluta |
+
+### FrontPUSH, módulo de otimização, aula 03: imagens parte 1 (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/entities/can-i-use]] | caniuse.com: suporte de recursos HTML/CSS/JS por navegador e versão; base do browserslist; Baseline resume o mesmo |
+
+### FrontPUSH, módulo de otimização, aula 02: cache e CDN (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/cache-busting]] | Mudar a URL do asset quando o conteúdo muda (hash no nome, `?v=`, versão no caminho) para permitir cache longo `immutable`; HTML com revalidação; sem isso, hard refresh |
+
+### FrontPUSH, módulo de otimização, aula 01: minificação (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/core-web-vitals]] | LCP, INP (substituiu o FID em 03/2024) e CLS no p75 do CrUX; FCP e TTFB são diagnóstico; Lighthouse é laboratório, ranking usa campo; pesa no ranking, não na indexação |
+
+### AxlePUSH, aula 01: por que usar o Spline (2026-11-19)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/webgl]] | API JS da Khronos (OpenGL ES) que desenha 2D/3D num `<canvas>` pela GPU, sem plugin; baixo nível, por isso Three.js/Babylon; custo de peso e bateria, fallback; sucessor WebGPU |
+| [[wiki/concepts/formato-gltf]] | glTF 2.0 ("JPEG do 3D"): .gltf (JSON + .bin + texturas) × .glb (binário único); compressão Draco/Meshopt/KTX2 |
 
 ### FrontPUSH, módulo de JavaScript, aula 14: AJAX (2026-11-16)
 
@@ -3934,6 +3981,12 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/axlepush]] — curso em PT-BR de assets 3D para a web com o Spline (Násser, inferido), provavelmente do fim de 2023
+- [[wiki/entities/spline]] — ferramenta web de design 3D colaborativa; modela, anima e exporta para web, Webflow, foto e vídeo; simplifica luz e sombra e limita GLB
+- [[wiki/entities/three-js]] — biblioteca JS de 3D sobre WebGL (mrdoob, 2010): cena, câmera, renderer, GLTFLoader, WebGPURenderer
+- [[wiki/entities/blender]] — modelagem 3D livre e gratuita (GPL), exporta glTF
+- [[wiki/entities/cinema-4d]] — modelagem 3D comercial da Maxon, forte em motion design
+- [[wiki/entities/webflow]] — construtor visual de sites; elemento nativo do Spline desde a Webflow Conf 2023
 - [[wiki/entities/javascript]] — linguagem da web (navegador, Node, mobile); implementa o ECMAScript; HTML conteúdo, CSS estilo, JS comportamento
 - [[wiki/entities/roy-fielding]] — coautor do HTTP/1.1 e cofundador do Apache; definiu o REST na tese de 2000 como estilo arquitetural (restrições, hipertexto)
 - [[wiki/entities/v8]] — motor JavaScript do Google (2008), base do Chrome, do Node e do Deno; Ignition + Sparkplug + Maglev/TurboFan (JIT)

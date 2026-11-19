@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível vs. Baixo Nível"
 aliases: ["high level vs low level", "C é alto nível?", "nível de abstração"]
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [lang-systems, baixo-nivel, alto-nivel, abstracao, hardware]
 skill: lang-systems
 status: draft
@@ -24,6 +24,11 @@ Os termos são **relativos**: dependem de quem fala e do que programa. A régua 
 
 [[wiki/concepts/linguagem-c]] a chama de "linguagem de baixo nível" (régua pedagógica: o mais perto do hardware com sintaxe legível). Não é contradição factual, é régua diferente. Relaciona-se a [[wiki/concepts/abstracao]], [[wiki/concepts/programacao-de-baixo-nivel-como-carreira]] e a [[wiki/concepts/alto-nivel-antes-do-fundamento]] (outro uso do termo: ordem de aprendizado).
 
+## A mesma régua no 3D da web
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]] aparece a mesma troca, fora das linguagens: [[wiki/entities/spline]] (visual) → [[wiki/entities/three-js]] (biblioteca) → [[wiki/concepts/webgl]] (API de baixo nível) → [[wiki/concepts/gpu]]. Subir de nível tira o código e parte do controle: o Spline não traz "todas as features de iluminação, de sombras".
+
 ## Key sources
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]]
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: Spline → Three.js → WebGL → GPU como pilha de abstrações

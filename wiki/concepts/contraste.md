@@ -3,8 +3,8 @@ type: concept
 title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 35
+date_updated: 2026-11-19
+source_count: 36
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -142,6 +142,10 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 Em [[wiki/sources/classes-e-ids-no-css]], o `btn-primary` verde leva texto escuro ("1a") "para poder causar um contraste legal", a mesma regra dos botões verdes do FrontPUSH com texto preto; o h1 recebe "a cor de maior contraste" (branco).
 
+## Cinzas no Who Can Use (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: #999 em branco falha, #777 falha em parte, #666 passa AA mas falha na simulação de sol. "Por favor, não utilize amarelo com branco." Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -179,3 +183,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], o `btn-primary` verde leva texto escur
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; o pingo no universo
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — contraste entre as duas fontes; contraste maior para público mais velho
 - [[wiki/sources/classes-e-ids-no-css]] — texto escuro no botão verde; h1 com maior contraste
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: #999, #777, #666

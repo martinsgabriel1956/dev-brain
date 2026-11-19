@@ -3,8 +3,8 @@ type: concept
 title: "Thread"
 aliases: ["thread", "linha de execução", "worker thread", "multithreading"]
 date_created: 2026-04-22
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-19
+source_count: 6
 tags: [sistema-operacional, concorrência, thread, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -70,6 +70,10 @@ A saída é mover esse trabalho para uma **worker thread**: uma thread separada 
 
 Em [[wiki/sources/jstack-como-funciona-o-nodejs]]: "single thread, [...] apenas uma Call Stack, [...] apenas uma coisa por vez". Vale para o JavaScript do usuário; o processo tem as 4 threads do [[wiki/concepts/thread-pool]] da libuv, threads do V8 e, se quiser, worker threads.
 
+## Thread principal × thread do compositor (FrontPUSH, otimização aula 07)
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a thread principal "é mais importante" e "passa na frente" do compositor, interrompendo as animações. Está invertido: as threads não têm prioridade uma sobre a outra, e a vantagem do compositor é continuar animando `transform`/`opacity` mesmo com a principal ocupada. O JS fica na principal porque mexe no DOM, não por importância; trabalho pesado vai para Web Workers.
+
 ## Key Sources
 
 - [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
@@ -77,3 +81,4 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]]: "single thread, [...] apenas 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — worker threads como uma das três soluções (junto de chunking e filas) para SSR CPU-bound travando o event loop; distinção worker threads vs. cluster vs. child process calibrada com `references/nodejs-core.md` da skill `lang-dynamic`
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: single thread = uma call stack; o processo tem outras threads
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: compositor não é interrompido pela principal

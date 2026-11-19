@@ -3,8 +3,8 @@ type: concept
 title: "Mixin no Sass (@mixin, @include, @content)"
 aliases: ["mixin", "@mixin", "@include", "@content", "mixin de responsividade", "mixin de breakpoint"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-19
+source_count: 8
 tags: [css, sass, scss, mixin, reuso, media-query, responsividade]
 skill: tech-mentor-frontend
 status: stub
@@ -68,6 +68,10 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: mixin "é basicamente um Ctrl+C, Ctr
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o mixin do projeto Nubank recebe um `device` (`xl`/`l`/`m`/`s`/`xs`) e, por `@if`, escolhe a media query; o bloco entra por `@content`. "Um dos recursos que eu mais utilizo."
 
+## Mixin `responsive` para imagens (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], o mixin `responsive` volta de dois jeitos: dentro das classes `.desktop`/`.mobile` (`@include` + `display: none`) e dentro da regra do elemento, com a imagem do desktop em cima e a do mobile no `@include responsive(S)`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: sintaxe, `@content`, mixin de responsividade
@@ -77,3 +81,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o mixin do projeto Nuban
 - [[wiki/sources/frontpush-for-while-each-sass]]: mixin × função explicado corretamente
 - [[wiki/sources/frontpush-funcoes-sass]]: mixin = Ctrl+C/Ctrl+V; função retorna valor
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `responsive($device)` com `@if` e `@content`
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: `responsive` para imagem e visibilidade

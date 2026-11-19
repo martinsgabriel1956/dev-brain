@@ -3,8 +3,8 @@ type: entity
 title: "Who Can Use"
 aliases: ["whocanuse", "whocanuse.com", "WhoCanUse"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 5
+date_updated: 2026-11-19
+source_count: 6
 tags: [ferramenta, acessibilidade, contraste, wcag, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -36,6 +36,10 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 Na abertura do módulo de tipografia, [[wiki/entities/nasser|Násser]] mostra "um outro site que eu deixei aqui no Notion, que é muito importante também para poder a gente entender um pouco sobre contraste", sem dizer o nome. Como a aula de imagens situa o Who Can Use na seção de tipografia do Notion, é provavelmente ele ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
 
+## No módulo de otimização (FrontPUSH, aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o site está no Notion em "cores" e testa os cinzas da página (#999, #777, #666), inclusive na simulação de luz do sol.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
@@ -43,3 +47,4 @@ Na abertura do módulo de tipografia, [[wiki/entities/nasser|Násser]] mostra "u
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — verde claro + branco reprova, preto AAA; "regular vision" mal descrita
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — teste do verde e do laranja do FrontPUSH; condições de visão
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — provável "site de contraste" no Notion (inferido)
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: teste de cinzas

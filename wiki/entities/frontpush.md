@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-17
-source_count: 99
+date_updated: 2026-11-19
+source_count: 107
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -359,6 +359,38 @@ Em [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: 
 
 Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: a última aula teórica antes da prática. Slides "JSX / React Element" (com `babeljs.io/repl`) e "Webpack/Babel" ("No curso vai ser utilizado o create-react-app").
 
+## O 3D ficou para o AxlePUSH
+
+Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], o instrutor diz que "nunca" levou 3D para o FrontPUSH porque o [[wiki/entities/three-js]] teria curva de aprendizado alta demais. O 3D virou outro curso, o [[wiki/entities/axlepush]]. Também diz que há desconto no FrontPUSH por DM.
+
+## Módulo de otimização: aula 01, minificação
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: abertura do módulo de otimização de páginas web, com o Notion do "FrontPUSH 3.0" ("links úteis front-end" → "otimização de websites") e um post antigo de "sete dicas". A edição 3.0 e a citação do INP sugerem gravação em 2023–2024.
+
+## Módulo de otimização: aula 02, cache e CDN
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: segunda dica do post (evitar CSS e JS inline e incorporado) e a resposta ao "CDN ou arquivo local" da aula 01. Cita "as nossas aulinhas do Barba.js, que também já estão disponíveis", outro módulo do curso.
+
+## Módulo de otimização: aula 03, imagens (parte 1)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: terceira dica do post (imagens): vetor, compressão, WebP e lazy loading. Anuncia o site do drone (nasseryousef.com.br/drone), com 3D em iframes e viewers, como próxima página do curso.
+
+## Módulo de otimização: aula 04, imagens (parte 2)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: complemento da aula 03 com imagem por dispositivo via classes `.desktop`/`.mobile` e mixin `responsive`; artigos no Notion ("11 dicas, 35 dicas, 8") e aula de animações prometida "mais para o final". Próxima: PageSpeed ponto a ponto.
+
+## Módulo de otimização: aula 05, Google PageSpeed (parte 1)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: Core Web Vitals, as quatro notas, acessibilidade com o Who Can Use, HTML semântico e meta tags (`theme-color`, `keywords`, compartilhamento). A parte 2 vem a seguir.
+
+## Módulo de otimização: aula 06, relatório do PageSpeed (parte 2)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: os avisos de diagnóstico um a um (formato, tamanho, render-blocking, payload, texto visível, DOM) e a regra 80-20, com mídia como o grosso. A aula 07 comenta os artigos de otimização.
+
+## Módulo de otimização: aula 07, animações
+
+Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: animação como comunicação, tela de carregamento com GSAP, teste no celular, pipeline de renderização, `transform`/`opacity`/`will-change`, CSS antes de JS e bom senso acima da técnica. Fecha o módulo.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -460,3 +492,11 @@ Em [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-a
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: módulo de ReactJS, aula 04: SPA, métodos
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: módulo de ReactJS, aula 05: SPA, componentes
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: módulo de ReactJS, aula 06: JSX, Webpack e Babel
+- [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH, aula 01: por que o 3D não entrou no FrontPUSH
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: minificação; edição 3.0
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: cache e CDN; módulo de Barba.js citado
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: imagens; site do drone
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: imagem mobile/desktop
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: PageSpeed, a11y e meta tags
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: avisos do PageSpeed e 80-20
+- [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: otimização de animações

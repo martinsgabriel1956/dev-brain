@@ -3,8 +3,8 @@ type: concept
 title: "head do HTML e metadados (meta charset, viewport, title)"
 aliases: ["head", "<head>", "tags meta", "meta charset", "meta viewport", "metadados HTML", "title"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-19
+source_count: 5
 tags: [html, head, meta, utf-8, viewport, responsivo, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -32,9 +32,14 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o head g
 
 Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o `head` aparece dentro de `document` com `meta` e `title`, "os metadados da minha página". A aula também chama a `location` (URL) de metadados; não é.
 
+## Além do modelo do Emmet (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], charset, viewport e title são "insuficiente[s]"; ele acrescenta `lang` pt-br (atributo do `<html>`, não meta), `theme-color`, `keywords` (ignorada pelo Google desde 2009), `author`, `description` e as tags de compartilhamento ([[wiki/concepts/open-graph]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]]: head como cabeçalho de metadados; charset, viewport e title
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: head x body, lang, charset, viewport, title
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: favicon e theme-color
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: head no document
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: meta tags de SEO e compartilhamento

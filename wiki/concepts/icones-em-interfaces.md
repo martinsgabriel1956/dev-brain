@@ -3,8 +3,8 @@ type: concept
 title: "Ícones em interfaces"
 aliases: ["ícone", "ícones", "iconografia", "icon", "icons", "ícones de sistema", "system icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-19
+source_count: 14
 tags: [ui, ui-design, elementos-da-interface, icones, iconografia, carga-cognitiva, padroes-de-interface, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -90,6 +90,14 @@ Em [[wiki/sources/frontpush-for-while-each-sass]], o mapa `$icons: ("eye": "\f11
 
 Ícones por fonte (`@expo/vector-icons`, Ionicons) nas abas, porque a cor muda com a aba ativa, o que o PNG não permite; os outline do layout não existiam na versão do pacote. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Ícones em SVG (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o instrutor usava PNG para ícones e hoje usa SVG: mais leve, escalável e estilizável pelo CSS (quando inline).
+
+## Muitos ícones, DOM grande (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], "muitos ícones dentro de uma página" é a causa típica do aviso de DOM grande. Ícone repetido pede sprite (`<symbol>` + `<use>`) ou `<img>` em vez de colar o SVG inteiro a cada uso.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — aula teórica de ícones: definição, patterns, objeto x ação, Material Design, identidade visual, famílias
@@ -104,3 +112,5 @@ Em [[wiki/sources/frontpush-for-while-each-sass]], o mapa `$icons: ("eye": "\f11
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — ícone preenchido roxo sobre pastel com stroke amarelo; Scale x Move
 - [[wiki/sources/frontpush-for-while-each-sass]]: mapa de ícones de fonte gerado por `@each`
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Ionicons nas abas
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: ícone em SVG
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: ícones como causa de DOM grande

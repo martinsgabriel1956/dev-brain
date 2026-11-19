@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-11-17
-source_count: 18
+date_updated: 2026-11-19
+source_count: 19
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -68,6 +68,10 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `document.documentElement` (o elemento `<html>`) recebe o listener de `mousemove` "para poder ele executar sem ser em cima de algum outro elemento, a própria página".
 
+## DOM grande (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], o aviso "Evite DOMs muito grandes" é ligado a muitos ícones e a "um SVG que está com mil camadas de gradiente". O Lighthouse avisa acima de cerca de 800 nós e falha acima de cerca de 1.400 (também profundidade > 32, > 60 filhos; confiança média-alta). O custo é de estilo, layout, memória e INP, não de download. SVG inline conta cada `<path>`/`<stop>`; em `<img>` é um nó só.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -87,3 +91,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `documen
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: eventos que mudam o DOM
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: documentElement como alvo
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: manipulação do DOM no checklist; o React substitui esse hábito imperativo
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: tamanho do DOM, ícones e SVG inline

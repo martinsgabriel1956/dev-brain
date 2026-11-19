@@ -3,8 +3,8 @@ type: concept
 title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
-date_updated: 2026-11-17
-source_count: 8
+date_updated: 2026-11-19
+source_count: 10
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -37,6 +37,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]], o React é apresentado como "tudo JavaScript" que "renderiza o HTML" com os princípios de `createElement`/`appendChild`. Por baixo são essas APIs, mas o React decide o que mudar comparando árvores, em vez de anexar nó a nó.
 
+## "Ele próprio faz muita otimização" (FrontPUSH, otimização aula 01)
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], o Virtual DOM aparece como razão de o web app precisar de menos otimização: "compara o que mudou [...] e aí ele modifica somente o necessário". O ganho é nas atualizações depois do carregamento; não reduz o tamanho do bundle nem acelera o primeiro carregamento.
+
+## Não decide quantos arquivos baixar (FrontPUSH, otimização aula 02)
+
+Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], o Virtual DOM volta como razão de o web app poder ter "CSS quebrado". Ele decide o que atualizar no DOM, não quantos arquivos o navegador baixa; isso é do [[wiki/concepts/code-splitting]].
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -57,3 +65,5 @@ Diego explica o React pela ideia de SPA ("só muda [...] as coisas que são dife
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: key nas options e nos horários
 - [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchild]]: FrontPUSH, JavaScript aula 09: o princípio por baixo do React
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "cópia virtual" para comparar antes de renderizar; o ganho é viabilizar o declarativo, não ser o mais rápido
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: Virtual DOM como otimização do web app
+- [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: Virtual DOM e CSS dividido

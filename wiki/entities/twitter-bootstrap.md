@@ -3,8 +3,8 @@ type: entity
 title: "Twitter Bootstrap"
 aliases: ['Bootstrap']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-19
+source_count: 10
 tags: [css, framework-css, twitter, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -42,6 +42,14 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid system de [[wiki/entities/nasser|Násser]] é "muitíssimo parecido com o Grid System do próprio Bootstrap", que ele chama de "uma das, se não a maior framework CSS"; os breakpoints dele (540/960/1140) vêm das larguras de container do Bootstrap 4.
 
+## Arquivo único minificado
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], a página de download do Bootstrap 5 ("compilado e minificado CSS bundles") é a prova de que "um único arquivo bootstrap.js e um único arquivo bootstrap.css" é a estratégia dos grandes. A distribuição também traz `bootstrap-grid`, `-reboot` e `-utilities` separados, e o `bootstrap.bundle.min.js` inclui o Popper (`[external]` https://getbootstrap.com/docs/5.3/getting-started/contents/).
+
+## Classes de visibilidade
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], as classes `.desktop` e `.mobile` do instrutor equivalem a `d-none d-lg-block` do Bootstrap: boas para layout, mas a `<img>` escondida continua sendo baixada.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -52,3 +60,5 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid system de [[wiki/
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — "eu prefiro o do Bootstrap": 12 colunas no Figma
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — cores de alerta como referência de cor semântica
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: modelo do grid system do FrontPUSH
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: arquivo único minificado como exemplo
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: `.desktop`/`.mobile` ≈ `d-none`

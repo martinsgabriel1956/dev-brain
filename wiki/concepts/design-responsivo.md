@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 36
+date_updated: 2026-11-19
+source_count: 37
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -95,6 +95,10 @@ Em [[wiki/sources/frontpush-mixin-e-content-sass]], a tipografia encolhe com a t
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: "ele se torna fluido em determinada resolução para poder apertar, e você define o breakpoint para poder ele quebrar um embaixo do outro". Uma das formas de responsividade, ao lado de Flexbox e Grid Layout.
 
+## Esconder por classe (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], classes `.desktop` e `.mobile` com o mixin `responsive` (corte em 960 px) mostram ou escondem imagem, menu ou "mil coisas". Bom para layout; ruim para imagem pesada, que é baixada mesmo escondida.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -133,3 +137,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: "ele se torna fluido em 
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: só o `grid-template-areas` muda dentro da media query, de 5 × 5 para 4 × 4
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin `responsive` com `@content`; tipografia por breakpoint
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system fluido + breakpoint de empilhamento
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: classes de visibilidade por breakpoint

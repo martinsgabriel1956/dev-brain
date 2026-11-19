@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de imagens para web"
 aliases: ["otimização de imagens", "image optimization", "compressão de imagens", "imagens responsivas"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-19
+source_count: 11
 tags: [performance, imagens, web, compressao, responsivo, figma, core-web-vitals]
 skill: ux-ui-mentor
 status: stub
@@ -50,6 +50,22 @@ A edição "W7" justifica pela acessibilidade (mobile, tablet, desktop) e manda 
 
 Na prática "W7", o TinyImage Compressor tem um controle deslizante de qualidade para achar o "custo-benefício" entre peso e compressão; cuidado, porque na demo ele comprimiu todas as imagens de uma vez. Para exportar, ele põe a imagem ou o ícone dentro de um frame e exporta o frame (formato, escalas, preview) ([[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]]).
 
+## No módulo de otimização do FrontPUSH
+
+Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], "como é que a gente faz a otimização de imagens" está no escopo anunciado do módulo, ainda sem conteúdo. `[skill: tech-mentor-frontend]` A imagem do hero costuma ser o elemento do LCP ([[wiki/concepts/core-web-vitals]]).
+
+## A ordem da aula de otimização (FrontPUSH, otimização aula 03)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], a sequência é: (1) dá para vetorizar? então SVG; (2) foto: comprimir ("o do panda", TinyPNG) e converter para WebP; (3) `loading="lazy"`. Imagens "resolve[m] coisa de 60%, 70%". `[skill: tech-mentor-frontend]` Faltam: AVIF com `<picture>`, `width`/`height` contra CLS, e não aplicar lazy na imagem do LCP. A imagem por dispositivo fica para a parte 2.
+
+## Classes `.desktop`/`.mobile` × `<picture>` (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], a imagem por dispositivo é feita com duas `<img>` (horizontal e vertical) e classes que dão `display: none` em cada breakpoint. Não economiza: a `<img>` escondida é baixada do mesmo jeito. O que resolve é o `srcset`/`sizes` (tamanhos) ou o `<picture>` com `<source media>` (recorte), registrados acima. A variante com o mixin só economiza se a imagem for `background-image` no media query.
+
+## O relatório confirma (FrontPUSH, otimização aula 06)
+
+Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], dois avisos do PageSpeed resumem a parte de imagens do módulo: "formatos de última geração" (WebP ou AVIF) e "tamanho adequado" ("4K num celular de resolução 320p"). Fotos e vídeos também lideram o aviso de payload. A resposta continua sendo `<picture>` com AVIF/WebP e `srcset`/`sizes`.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]
@@ -59,3 +75,7 @@ Na prática "W7", o TinyImage Compressor tem um controle deslizante de qualidade
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — demo do TinyImage Compressor e export pelo frame
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — SVG leve: ilustração do unDraw com 9KB, mockup exportado com 2KB
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — menos pontos no vetor = caminho SVG mais curto (nota do agente em [[wiki/concepts/vetorizacao-com-pen-tool]])
+- [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: imagens no escopo do módulo
+- [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: vetor → compressão → WebP → lazy
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: imagem mobile/desktop por classes e mixin
+- [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: formato, tamanho e payload no relatório

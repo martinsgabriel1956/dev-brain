@@ -3,8 +3,8 @@ type: concept
 title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-19
+source_count: 15
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -102,6 +102,10 @@ Em [[wiki/sources/frontpush-if-else-sass]]: `xl` acima de 1440, `l` 1140–1440,
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `xl` > 1440, `l` 1140–1440, `m` 960–1140, `s` < 960, `xs` < 540, "boas divisões com base no próprio sistema de grids do Bootstrap", mas "na maioria das vezes, eu simplesmente aplico de 960 pixels para baixo". `[external]` 540/720/960/1140 são as larguras de container do Bootstrap 4; os breakpoints dele são 576/768/992/1200.
 
+## 960 px nas classes de visibilidade (FrontPUSH, otimização aula 04)
+
+Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], o corte das classes `.desktop`/`.mobile` é o tamanho S do mixin `responsive`, que o instrutor primeiro diz ser 620 px e corrige para 960 ("menos que o contêiner M").
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — definição, media query abaixo de 960 px, quebra na landing page do FrontPUSH
@@ -118,3 +122,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `xl` > 1440, `l` 1140–
 - [[wiki/sources/frontpush-if-else-sass]]: escala xl/l/m/s/xs (1440/1140/960/540)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 1100 e 700 px no Proffy em React
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: escala xl–xs; 540/960/1140 são containers do Bootstrap 4
+- [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: breakpoint de 960 px

@@ -3,8 +3,8 @@ type: concept
 title: "Razão de contraste"
 aliases: ["contrast ratio", "razão de contraste WCAG", "contraste WCAG", "nota de contraste"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-19
+source_count: 2
 tags: [ui, acessibilidade, wcag, contraste, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -36,6 +36,11 @@ O checker mostrado na aula colore o resultado: **vermelho** reprova; **laranja**
 
 O verde do [[wiki/entities/frontpush]] dá 1.65 contra o branco e reprova. O hex falado ("5F36A") tem cinco dígitos; `#5FE36A` é a única inserção de um dígito que dá ~1,65 (cálculo do agente: 1,66:1 no branco, 12,68:1 no preto). Por isso o botão verde leva texto preto.
 
+## #999, #777 e #666 em branco (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], a demonstração bate com as razões: #999 ≈ 2,8:1 (falha), #777 ≈ 4,5:1 (no limite do AA), #666 ≈ 5,7:1 (passa AA, falha AAA).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — nota de 0 a 21 (na verdade 1 a 21); notas vermelha, laranja e verde; verde do FrontPUSH a 1.65
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: razões dos cinzas da demonstração

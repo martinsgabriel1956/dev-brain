@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-17
-source_count: 14
+date_updated: 2026-11-19
+source_count: 15
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -44,6 +44,10 @@ Na aula de paleta de Násser, Facebook (azul) e WhatsApp (verde) são exemplos d
 
 Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalmente sem saturação, ele tem um pingo de azul naquele preto, assim como um branco" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/variacao-de-cores]].
 
+## Open Graph
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], as tags repetidas "pelo Facebook" são o Open Graph, protocolo criado pelo Facebook em 2010 ([[wiki/concepts/open-graph]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: React aula 03 do FrontPUSH: Facebook como criador do React
@@ -59,6 +63,7 @@ Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalm
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — Facebook azul e WhatsApp verde como cor de branding
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — preto e branco do Facebook tingidos de azul
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de codebase excelente
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: Open Graph do Facebook
 
 ## Facebook como origem do React
 

@@ -3,8 +3,8 @@ type: concept
 title: "Escala tipográfica"
 aliases: ["escala de texto", "escala de fontes", "escala de tamanho de fonte", "type scale", "tamanho de fonte", "font-size", "modular scale", "escala modular", "escala do Figma"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-19
+source_count: 8
 tags: [ui, ui-design, tipografia, escala-tipografica, font-size, hierarquia-visual, consistencia, design-tokens, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -69,6 +69,10 @@ Em [[wiki/sources/frontpush-if-else-sass]]: dois mixins (`typeface-1` para títu
 
 Em [[wiki/sources/frontpush-for-while-each-sass]], o exemplo da documentação: `scale-below($value, $base, $ratio: 1.618)` divide pela razão áurea até ficar abaixo da base; `scale-below(20px, 16px)` = 12.36px. Uma escala modular calculada pelo compilador.
 
+## Mínimo de 16 px (FrontPUSH, otimização aula 05)
+
+Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: "no mínimo 14 pixels", e "eu sempre coloco no mínimo de 16 pixels" no mobile. 16 px é o padrão do navegador e evita o zoom automático do iOS em inputs.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: escala = tamanho; inconsistência como erro comum; WhatFont
@@ -78,3 +82,4 @@ Em [[wiki/sources/frontpush-for-while-each-sass]], o exemplo da documentação: 
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: Sass aula 06: tamanhos por breakpoint × `clamp()`
 - [[wiki/sources/frontpush-if-else-sass]]: escala h1–h5 × desktop/mobile num mixin
 - [[wiki/sources/frontpush-for-while-each-sass]]: razão 1.618 numa `@function`
+- [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: fonte mínima
