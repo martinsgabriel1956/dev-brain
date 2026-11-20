@@ -3,8 +3,8 @@ type: concept
 title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
-date_updated: 2026-11-19
-source_count: 17
+date_updated: 2026-11-20
+source_count: 19
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -74,6 +74,14 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: "é t
 
 Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: "um SVG que está com mil camadas de gradiente" dispara o aviso de DOM grande. Só o SVG inline entra no DOM (cada `<path>`, `<g>`, `<stop>` é um nó); via `<img>` ou `background-image` é um nó só. Sprite com `<symbol>` + `<use>` e SVGO reduzem o markup.
 
+## SVG como base do motion (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], a "esmagadora maioria" das animações do site de Násser é SVG, "animações vetorizadas", e o SVG "no fundo é tags HTML", por isso o CSS o manipula. Precisão: SVG é XML com namespace próprio; inline, vira nós do DOM e o CSS da página alcança `fill`, `stroke`, `stroke-dasharray` e `transform`. Propriedades do SVG são um módulo do mini curso ([[wiki/concepts/motion-design]]).
+
+## SVG para otimizar e desenhar no scroll (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], Násser compensa o site pesado de motion com "SVGs em todas as minhas páginas" e o mínimo de imagens, e mostra SVG desenhado em linhas no scroll (técnica usual: `stroke-dasharray` + `stroke-dashoffset`). Tensão com a aula 06 de otimização: SVG inline com muitos nós infla o DOM.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -93,3 +101,5 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: PNG no lugar de SVG no app
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: SVG primeiro; Image Tracer
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: SVG inline e DOM grande
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: SVG como base do motion; "no fundo é tags HTML"
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: SVG como otimização e line drawing no scroll

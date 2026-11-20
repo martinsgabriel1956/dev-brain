@@ -3,8 +3,8 @@ type: concept
 title: "HTML e Hipertexto"
 aliases: ['HTML', 'hipertexto', 'href']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-20
+source_count: 12
 tags: [html, web, hipertexto, historia, html5, html-semantico]
 skill: tech-mentor-frontend
 status: draft
@@ -47,6 +47,10 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], HTML é "lin
 
 Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `document` → `html` → `head` e `body`, que "engloba todas as tags que a gente conhece": a mesma estrutura da aula de HTML, agora como objetos que o JavaScript manipula ([[wiki/concepts/dom]]).
 
+## Motion para web (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], o recorte do mini curso é motion feito com "as tecnologias que o browser entende, que é HTML, CSS e JavaScript" ([[wiki/concepts/motion-design]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -60,3 +64,4 @@ Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `do
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: hipertexto como texto com mais força
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: marcação sem inteligência, JS como programação
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: html/head/body como árvore de objetos
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: HTML, CSS e JavaScript como base do motion para web

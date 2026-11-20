@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-11-19
-source_count: 19
+date_updated: 2026-11-20
+source_count: 20
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -72,6 +72,10 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `documen
 
 Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], o aviso "Evite DOMs muito grandes" é ligado a muitos ícones e a "um SVG que está com mil camadas de gradiente". O Lighthouse avisa acima de cerca de 800 nós e falha acima de cerca de 1.400 (também profundidade > 32, > 60 filhos; confiança média-alta). O custo é de estilo, layout, memória e INP, não de download. SVG inline conta cada `<path>`/`<stop>`; em `<img>` é um nó só.
 
+## JS manda no CSS pelo DOM (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: o JavaScript "consegue manipular a árvore DOM de elementos do HTML, consequentemente, ele consegue englobar o CSS". Bibliotecas de animação fazem isso a cada quadro, escrevendo estilos inline ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -92,3 +96,4 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: documentElement como alvo
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: manipulação do DOM no checklist; o React substitui esse hábito imperativo
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: tamanho do DOM, ícones e SVG inline
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manipula o CSS via DOM

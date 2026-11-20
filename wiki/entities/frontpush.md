@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-19
-source_count: 107
+date_updated: 2026-11-20
+source_count: 111
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -391,6 +391,22 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: animação como comunicação, tela de carregamento com GSAP, teste no celular, pipeline de renderização, `transform`/`opacity`/`will-change`, CSS antes de JS e bom senso acima da técnica. Fecha o módulo.
 
+## Mini curso de CSS Animations: aula 01, introdução ao motion design
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: o mini curso de animação (legenda: "Patch CA", "CSS Animations") abre com a definição de [[wiki/concepts/motion-design]], o método por exemplos e a grade: princípios, propriedades CSS, SVG, animações, bibliotecas JS × CSS puro, exemplos e bônus. O slide usa um logo triangular com "A", diferente do logo do FrontPUSH.
+
+## Mini curso de CSS Animations: aula 02, vantagens e boas práticas
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: pontos de atenção, [[wiki/concepts/microinteracao]], "não coloque motion em tudo", valor e preço do motion. Exemplos de sites com SVG ficam no Notion do curso.
+
+## Mini curso de CSS Animations: aula 03, princípios de motion
+
+Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: linha do tempo, [[wiki/concepts/keyframes-css]] e [[wiki/concepts/easing]]. Demonstração com a animação feita para "três dias para o lançamento do curso": bolinha com `bounce in` e duas órbitas girando em tempos diferentes.
+
+## Mini curso de CSS Animations: aula 04, bibliotecas JS vs. CSS puro
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: otimização × facilidade, bibliotecas CSS e JS, anime.js no Notion do curso, 3D como exceção ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -500,3 +516,7 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: PageSpeed, a11y e meta tags
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: avisos do PageSpeed e 80-20
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: otimização de animações
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: introdução ao motion design e grade
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: vantagens e boas práticas do motion
+- [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, keyframes, easing; animação de lançamento
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: bibliotecas JS × CSS puro

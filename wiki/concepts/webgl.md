@@ -3,8 +3,8 @@ type: concept
 title: "WebGL"
 aliases: ["Web Graphics Library", "WebGL 2", "WebGraphics Library"]
 date_created: 2026-11-19
-date_updated: 2026-11-19
-source_count: 1
+date_updated: 2026-11-20
+source_count: 2
 tags: [frontend, 3d, gpu, browser-api, canvas, graficos]
 skill: tech-mentor-frontend
 status: stub
@@ -28,6 +28,11 @@ Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], o WebGL é a b
 - [[wiki/concepts/formato-gltf]]
 - [[wiki/concepts/alto-nivel-vs-baixo-nivel]]
 
+## 3D "imprescindível" com biblioteca (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], Násser diz que para 3D com perspectiva "as bibliotecas JavaScript meio que são imprescindíveis". Precisão: CSS faz 3D simples (`perspective`, `rotateY`, `preserve-3d`); malhas, luz e câmera pedem WebGL ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: WebGL como base do 3D na web
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: 3D: CSS transforms × WebGL

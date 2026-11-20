@@ -3,7 +3,7 @@ type: source
 title: "Otimização de animações: pipeline de renderização, transform, opacity e a thread do compositor (FrontPUSH)"
 aliases: ["FrontPUSH otimização aula 07", "Otimização de Animações", "módulo de otimização, aula 07"]
 date_created: 2026-11-19
-date_updated: 2026-11-19
+date_updated: 2026-11-20
 source_count: 0
 tags: [performance, animacao, rendering-pipeline, layout, paint, composite, transform, opacity, will-change, compositor-thread, main-thread, 60fps, gsap, loading-screen, mobile, curso, frontend]
 skill: tech-mentor-frontend
@@ -104,6 +104,10 @@ Aula 07 do módulo de otimização do [[wiki/entities/frontpush|FrontPUSH]], cer
 - **Sombra animada repinta.** Animar `box-shadow` repinta a cada quadro. O truque comum é pôr a sombra num `::after` e animar só a `opacity` dele. Gradientes e sombras grandes aumentam a área de pintura, como ele diz ([[wiki/concepts/paint-composite]]). Confiança alta.
 - **"W3C" deve ser o W3Schools.** A busca "scaleX CSS 2D transform" e a página com a lista de funções lembram o tutorial "CSS 2D Transforms" do W3Schools, que não é o W3C (consórcio que publica as especificações). Confiança média.
 - **Lapsos e ASR.** "64 para 28" é 128 (dito certo antes). "Display nano" virou `display: none`. "Wheel change" virou `will-change`. "Paybank" ficou literal: provavelmente é o projeto Nubank, citado com o Homem-Aranha na [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss|aula de Sass]] (confiança média).
+
+## Continuação: biblioteca ou CSS puro
+
+A tensão GSAP × CSS puro desta aula vira tópico de módulo no mini curso de animação: "utilizar uma biblioteca ou CSS puro" ([[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], [[wiki/concepts/motion-design]]).
 
 ## Open Questions
 

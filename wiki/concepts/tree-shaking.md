@@ -3,8 +3,8 @@ type: concept
 title: "Tree Shaking"
 aliases: ["remoção de código morto", "dead code elimination frontend"]
 date_created: 2026-08-03
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-20
+source_count: 4
 tags: [frontend, bundler, tree-shaking, build, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -34,8 +34,13 @@ Tree shaking remove código **morto** (nunca usado); [[wiki/concepts/code-splitt
 
 Em [[wiki/sources/frontpush-modules-js-import-export-default]], as funções de retângulo vão num objeto exportado como `default`. Agrupar assim impede o bundler de descartar a função que não for usada; exports nomeados com `import * as retangulo` dão o mesmo agrupamento sem esse custo.
 
+## "Copiar a biblioteca inteira" (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], Násser diz que bibliotecas "que não estejam seccionadas" obrigam a carregar tudo para usar um recurso. Com ES modules e tree-shaking, só o importado vai ao bundle (anime.js v4, GSAP por plugins); o problema persiste com `<script>` via CDN ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/jstack-o-que-sao-modulos]]: curso ensina CJS, o formato que dificulta tree shaking
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: objeto default × tree-shaking
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: biblioteca inteira × módulos importados

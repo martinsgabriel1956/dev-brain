@@ -3,7 +3,7 @@ type: source
 title: "Conclusão do módulo de CSS: estilo, layout, animação e a documentação como caminho (FrontPUSH, módulo de front-end)"
 aliases: ["FrontPUSH conclusão aula 08", "aula 08 módulo front-end FrontPUSH", "Conclusão FrontPUSH CSS"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
+date_updated: 2026-11-20
 source_count: 0
 tags: [css, html, layout, animacao, keyframes, documentacao, aprendizado, frontend, curso]
 skill: tech-mentor-frontend
@@ -94,6 +94,10 @@ O módulo "Básico CSS" do mesmo curso cobre quase os mesmos temas, com outras d
 - **"Por isso que a gente está na versão 3 do CSS."** `[external]` Não existe uma versão 3 única nem um CSS4: depois do CSS 2.1, o CSS foi dividido em módulos com níveis próprios (Selectors Level 4, Color Level 5...), e "CSS3" virou rótulo genérico. Animação (`@keyframes`, CSS Animations Level 1) é um desses módulos; não foi ela que "trouxe" a versão 3: https://www.w3.org/Style/CSS/specs.en.html. Ver [[wiki/concepts/css]].
 - **Float para grid system.** Mesma ressalva da aula 06 ([[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]): `[external]` hoje o CSS Grid nativo faz o grid de colunas do Figma sem float nem Sass (`grid-template-columns: repeat(12, 1fr)` com `gap`).
 - **"Centralizar uma div [...] porque é posicionamento."** Com flexbox ou grid, centralizar é alinhamento (`justify-content`/`align-items`, ou `place-items: center`), não `position`. A aula 07 do mesmo módulo reservou "posicionamento" para `position`.
+
+## Continuação: o mini curso de animação
+
+A "escadinha" e os `@keyframes` prometidos "um pouquinho depois" voltam em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: "três partes, lembra? A parte de estilização, a parte de layout e a parte de animação", agora como abertura do mini curso de CSS Animations ([[wiki/concepts/motion-design]]).
 
 ## Open Questions
 

@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-19
-source_count: 38
+date_updated: 2026-11-20
+source_count: 39
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -185,6 +185,10 @@ Em [[wiki/sources/classes-e-ids-no-css]], os estilos por tag criam hierarquia co
 
 Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], título mais contrastante e corpo um pouco menos, sem cair abaixo do limite do WCAG.
 
+## Motion como hierarquia (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], Násser compara: o título é lido primeiro por ser branco e maior entre cinzas, e "o motion é exatamente a mesma coisa". Numa tela estática, o que se move ganha o foco; com tudo se mexendo, o usuário se confunde.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -225,3 +229,4 @@ Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — fonte característica no título, sem serifa no corpo
 - [[wiki/sources/classes-e-ids-no-css]] — h1 branco, h2 e h3 em cinzas, parágrafo #333
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: contraste título × corpo
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: contraste de movimento como hierarquia

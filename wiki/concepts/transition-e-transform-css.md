@@ -3,8 +3,8 @@ type: concept
 title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
-date_updated: 2026-11-19
-source_count: 9
+date_updated: 2026-11-20
+source_count: 12
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,18 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], "priorize o CSS puro" e anime `transform`/`opacity` em vez de `width`. Ressalvas: só `transform`/`opacity` (e às vezes `filter`) saem da thread principal; `@keyframes` de `width` ou `box-shadow` não. `will-change: transform` só pouco antes de animar e em poucos elementos. Falta `prefers-reduced-motion`.
 
+## Transição entre estados (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], [[wiki/entities/nasser|Násser]] define motion como "transição entre estados com determinados níveis de velocidade diferentes entre eles" ([[wiki/concepts/motion-design]]). Os "níveis de velocidade" são a função de temporização (`transition-timing-function`, `animation-timing-function`: `ease`, `cubic-bezier()`, `steps()`, `linear()`). `[skill: tech-mentor-frontend]`
+
+## Keyframes e as propriedades do transform (FrontPUSH, motion aula 03)
+
+Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]], os [[wiki/concepts/keyframes-css]] mudam escala, opacidade, translado e skew ("deitar o objeto"), e as órbitas giram de 0 a 360deg em 7 s. `transition` liga dois estados; `@keyframes`, N estados. Duas animações de `transform` no mesmo elemento brigam: a última vence; usar pai e filho ou `scale`/`rotate` individuais. A velocidade entre estados é o [[wiki/concepts/easing]].
+
+## Quem anima é o CSS (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: "é o CSS que manipula todo e qualquer elemento de Motion" (scale, opacity, translate, rotate). "Entortar [...] com a propriedade de scale" deveria ser `skew`. Precisão: bibliotecas JS escrevem essas propriedades, mas calculam os quadros na thread principal ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -57,3 +69,6 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: transition no box-shadow
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: transition na classe trocada pelo JS
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: CSS puro, transform/opacity, will-change
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: motion como transição entre estados com velocidades diferentes (easing)
+- [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: keyframes de scale, skew e rotate; transition × @keyframes
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: transform como base de todo motion

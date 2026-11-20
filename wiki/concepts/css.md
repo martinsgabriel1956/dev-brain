@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 23
+date_updated: 2026-11-20
+source_count: 25
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -81,6 +81,14 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: "o S
 
 Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o CSS é "mais voltado para estilização" e, com o HTML, "não têm muita inteligência, apesar de que o CSS tenha evoluído tanto". Pré-requisito do módulo de JavaScript.
 
+## Animação como terceira parte (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], Násser retoma "três partes, lembra? A parte de estilização, a parte de layout e a parte de animação" e abre o mini curso de CSS Animations ([[wiki/concepts/motion-design]]). Lapso: chama o CSS de "linguagem de marcação"; é linguagem de folhas de estilo, e a marcação é o HTML. "O CSS3 trouxe vários recursos": transitions, animations e transforms são módulos separados da especificação, não uma versão 3.
+
+## @keyframes (FrontPUSH, motion aula 03)
+
+Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: "a propriedade do keyframes que trouxe no CSS3" permite "emendar vários estados em uma linha do tempo". Precisão: `@keyframes` é at-rule; as propriedades são `animation-*`, do módulo CSS Animations ([[wiki/concepts/keyframes-css]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -106,3 +114,5 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o CSS é "ma
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: style, <style> e <link>
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: o navegador só entende CSS
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: CSS como estilo e pré-requisito do JS
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: estilização, layout e animação; "linguagem de marcação" (lapso)
+- [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: @keyframes como "propriedade do CSS3"
