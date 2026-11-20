@@ -14,7 +14,7 @@ Do lançamento do GitHub Copilot, em junho de 2021, parece que vivemos em outro 
 - **2022** — ChatGPT (OpenAI).
 - **2023** (março, segundo o vídeo) — Claude (Anthropic), lançado "devagarzinho", pouco conhecido no início. O canal já tinha um vídeo especulando que a Anthropic poderia virar a "próxima OpenAI".
 
-No modelo de "chat", o dev ia até o chat, pedia o que queria, esperava a resposta, e voltava. Foi ficando claro que não bastava pedir tudo do zero sempre — surgiu a necessidade de o sistema já trazer contexto (do GitHub, do projeto) sem precisar reexplicar tudo a cada pedido. Daí vieram o Claude Code, o Codex (OpenAI), o Open Code, o Cursor e outras ferramentas com abordagens diferentes — cada uma com uma aposta própria. O Devin, mais atrás na linha do tempo, apareceu prometendo algo que hoje muitas outras ferramentas já entregam.
+No modelo de "chat", o dev ia até o chat, pedia o que queria, esperava a resposta, e voltava. Foi ficando claro que não bastava pedir tudo do zero sempre — surgiu a necessidade de o sistema já trazer contexto (do GitHub, do projeto) sem precisar reexplicar tudo a cada pedido. Daí vieram o Claude Code, o Codex (OpenAI), o OpenCode, o Cursor e outras ferramentas com abordagens diferentes — cada uma com uma aposta própria. O Devin, mais atrás na linha do tempo, apareceu prometendo algo que hoje muitas outras ferramentas já entregam.
 
 ## A era dos agentes e o vocabulário novo
 
