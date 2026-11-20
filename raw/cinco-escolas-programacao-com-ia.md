@@ -8,7 +8,7 @@ Abertura com um anúncio de um serviço de gestão de impostos para PJ ("Conta D
 
 ## Introdução: o conflito de escolas
 
-O apresentador descreve um cenário comum: você abre o Cloud Code, o Cursor, ou qualquer outro editor/harness agêntico (OpenCode, etc.) e ouve vozes conflitantes sobre a forma "certa" de programar com IA — um defende usar só autocomplete, outro defende usar agentes para tudo, um terceiro defende não usar IA nenhuma, e um quarto deixa um agente rodando sozinho de madrugada, gastando tokens de API enquanto dorme.
+O apresentador descreve um cenário comum: você abre o Claude Code, o Cursor, ou qualquer outro editor/harness agêntico (OpenCode, etc.) e ouve vozes conflitantes sobre a forma "certa" de programar com IA — um defende usar só autocomplete, outro defende usar agentes para tudo, um terceiro defende não usar IA nenhuma, e um quarto deixa um agente rodando sozinho de madrugada, gastando tokens de API enquanto dorme.
 
 A tese central do vídeo: **não existe consenso**. Inclusive duas referências importantes do meio — que o autor chama de "Illuminatis" — que pregavam fazer tudo na unha e não terceirizar o cérebro para a IA, mudaram de lado nos últimos 6-12 meses.
 

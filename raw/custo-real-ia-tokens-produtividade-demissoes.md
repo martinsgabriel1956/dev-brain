@@ -56,7 +56,7 @@ Conclusão possível: o custo da indústria de software era capital humano; agor
 
 ## Demissões: IA como bode expiatório?
 
-Ligado a esse assunto está a redução de times. Casos como o da Ford (que teria voltado a contratar centenas de engenheiros após demitir) e o de Mark Zuckerberg mostram um padrão: o CEO da Meta admitiu que a tecnologia de agentes de IA não está progredindo como ele esperava — mesmo citando o Cloud Code como referência. A meta esperava colher frutos mais rápido com a implantação de agentes e viu que isso não aconteceu, o que fez o ajuste de funcionários parecer antecipado demais.
+Ligado a esse assunto está a redução de times. Casos como o da Ford (que teria voltado a contratar centenas de engenheiros após demitir) e o de Mark Zuckerberg mostram um padrão: o CEO da Meta admitiu que a tecnologia de agentes de IA não está progredindo como ele esperava — mesmo citando o Claude Code como referência. A meta esperava colher frutos mais rápido com a implantação de agentes e viu que isso não aconteceu, o que fez o ajuste de funcionários parecer antecipado demais.
 
 Zuckerberg reconheceu que a Meta cometeu erros na reestruturação de equipes por IA (o caso do assistente de recuperação de senha no Instagram que "recitava" senhas de usuários foi citado como exemplo). Em memorando interno, ele escreveu algo como:
 

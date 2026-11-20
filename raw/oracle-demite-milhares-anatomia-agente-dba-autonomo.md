@@ -38,7 +38,7 @@ A automação óbvia: criar um **bot no Slack/Teams** com acesso ao repositório
 
 Um dos motivos que torna esse bot viável sem manutenção paralela de documentação: a melhor documentação continua sendo o próprio código. Gerar documentação (via prompts, instruções, skills, agentes) é fácil, mas mantê-la atualizada é o problema histórico — e ela fica defasada de qualquer forma.
 
-Agentes como Claude Code, Codex ou Open Code — que rodam com acesso ao terminal — conseguem usar ferramentas de busca de arquivo para, a partir de uma pergunta de produto, determinar em qual módulo do projeto a resposta está, buscar arquivos com palavras-chave relevantes e encontrar a implementação real. Isso é ainda mais viável com modelos de janela de contexto grande (na casa de 1 milhão de tokens). Em monorepos grandes, uma prática que ajuda o agente a navegar é ter um `.md` por módulo, funcionando como mapa — não como documentação exaustiva a ser mantida manualmente.
+Agentes como Claude Code, Codex ou OpenCode — que rodam com acesso ao terminal — conseguem usar ferramentas de busca de arquivo para, a partir de uma pergunta de produto, determinar em qual módulo do projeto a resposta está, buscar arquivos com palavras-chave relevantes e encontrar a implementação real. Isso é ainda mais viável com modelos de janela de contexto grande (na casa de 1 milhão de tokens). Em monorepos grandes, uma prática que ajuda o agente a navegar é ter um `.md` por módulo, funcionando como mapa — não como documentação exaustiva a ser mantida manualmente.
 
 ## O layoff da Oracle como estudo de caso: agente de DBA
 

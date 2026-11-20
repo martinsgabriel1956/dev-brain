@@ -67,7 +67,7 @@ Vídeo em português que define harness de forma técnica: tudo que envolve o mo
 
 > "Não é toda ferramenta de agentic coding que vai ter memória episódica — algumas oferecem, outras não; às vezes você vai ter que configurar manualmente."
 
-> "O Cloud Code, na verdade, nada mais é do que o harness da Antropic."
+> "O Claude Code, na verdade, nada mais é do que o harness da Anthropic."
 
 ## Raw Source
 

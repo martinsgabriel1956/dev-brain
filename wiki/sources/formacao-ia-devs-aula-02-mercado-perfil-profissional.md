@@ -72,7 +72,7 @@ Camadas de conhecimento recomendadas (do mais ao menos relevante):
 
 ## Raw Quotes
 
-> "Uma pessoa que domina tanto a visão do produto quanto o Cloud Code deveria entregar dois ou três dias uma funcionalidade que antes levava um mês." — CEO relatado por Branas
+> "Uma pessoa que domina tanto a visão do produto quanto o Claude Code deveria entregar dois ou três dias uma funcionalidade que antes levava um mês." — CEO relatado por Branas
 
 > "Você não vai perder o teu emprego pra IA. Você pode perder o teu emprego pra alguém que usa IA melhor que você." — Rodrigo Branas
 

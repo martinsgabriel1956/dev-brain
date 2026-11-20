@@ -1,6 +1,6 @@
-# Achei um "Esquema Illuminati" pra Rodar Cloud Code de Graça
+# Achei um "Esquema Illuminati" pra Rodar Claude Code de Graça
 
-Eu achei um esquema Illuminati para poder rodar o Cloud Code de graça, paizão. Porra, tô muito feliz, mano. Essa semana um amigo me apresentou o **Nine Router** — basicamente ele é um proxy onde você consegue plugar vários providers: Gemini, Cloud Code, Cursor, OpenRouter, tem um monte de ferramenta chinesa, e ele consegue pegar os modelos da própria Anthropic também.
+Eu achei um esquema Illuminati para poder rodar o Claude Code de graça, paizão. Porra, tô muito feliz, mano. Essa semana um amigo me apresentou o **Nine Router** — basicamente ele é um proxy onde você consegue plugar vários providers: Gemini, Claude Code, Cursor, OpenRouter, tem um monte de ferramenta chinesa, e ele consegue pegar os modelos da própria Anthropic também.
 
 E tem um recursozinho interessante nele, meu jogador: você consegue colocar algumas contas free tier nele. Por exemplo, eu posso ter três contas do Gemini, posso ter, por exemplo, três contas da Anthropic. E ele tem um esquema que, quando acaba o token de uma, ele joga pra outra; acabou de outra, ele joga pra outra. É praticamente uma "disqueteira" para nós que somos velhos. E isso não é pirataria, tá? Isso pode ser imoral, mas não é nada ilegal.
 
@@ -20,15 +20,15 @@ E pronto — já tá aqui, mano, já tá funcionando, já com login e senha. Nã
 
 ## Providers e o esquema de rotação de contas free tier
 
-Se a gente vier aqui na lateral, na aba de providers, a gente tem: Cloud Code, Antigravity (sem limite), e alguns free tier providers, se é que você me entende. Tem o OpenCode Free, o Opener (já conectado), o Ollama Cloud — tá tudo aqui.
+Se a gente vier aqui na lateral, na aba de providers, a gente tem: Claude Code, Antigravity (sem limite), e alguns free tier providers, se é que você me entende. Tem o OpenCode Free, o Opener (já conectado), o Ollama Cloud — tá tudo aqui.
 
 Basicamente você conecta, por exemplo, o Kiro AI, que tem vários planos free tier, e ele tem todo o esquema de rotação: tá esgotando o token dessa conta, vamos pra próxima; tá esgotando dessa, vamos pra próxima. Ele faz essa rotação e você fica tranquilo. Por exemplo, se você tem duas contas do Cloud, você não precisa esperar os seus tokens acabarem — pode colocar duas contas, por exemplo, uma da empresa e uma pessoal, e ele vai rotacionando. Você não precisa esperar aquele ciclo de "ah, vou ter que esperar 4 horas" — não, mano, ele já resolve isso também.
 
 A instalação é muito simples graças à Hostinger, que é parceira desse canal. Se você quiser testar, rodar na sua máquina, deixei um linkzinho na descrição — se usar o cupom "Devin" você ainda vai ter desconto. Eu tenho aqui minha máquina de laboratório, tenho a máquina dos meus SaaS rodando na Docker — a galera sabe que ela te atende desde o MVP até produção mesmo, até você escalar o seu produto. Então usa meu cupom, você vai ajudar a fortalecer pra caramba o canal.
 
-## Configurando o Cloud Code pra usar o Nine Router
+## Configurando o Claude Code pra usar o Nine Router
 
-Eu particularmente gosto de rodar ele usando o OpenRouter, gosto muito do OpenRouter. Só que tem uma galera que já tá acostumada, por exemplo, com a usabilidade do Cloud Code — eu até entendo que é muito boa, principalmente porque você já tem os atalhos, já sabe onde tudo funciona. Então eu sei que migrar de CLI, de ferramenta de desenvolvimento, é muito complexo. Então vamos pro Cloud Code.
+Eu particularmente gosto de rodar ele usando o OpenRouter, gosto muito do OpenRouter. Só que tem uma galera que já tá acostumada, por exemplo, com a usabilidade do Claude Code — eu até entendo que é muito boa, principalmente porque você já tem os atalhos, já sabe onde tudo funciona. Então eu sei que migrar de CLI, de ferramenta de desenvolvimento, é muito complexo. Então vamos pro Claude Code.
 
 A primeira coisa que você precisa fazer dentro do seu Nine Router é ir no menu **Endpoint and Key**. Ele basicamente já vai gerar uma URL pra você — a minha URL da Hostinger — e você vai gerar uma chave de API ali. Pode criar uma chave. Eu já vou copiar — lógico que isso é uma API temporária, então pode ser que vaze; se vazar não tem problema, porque ela vai ser deletada antes que os script kiddies fiquem de olho aí pra querer me foder. Mas fica tranquilo, o pai tá vacinado.
 
@@ -38,7 +38,7 @@ Então eu não loguei, não fiz nada. Vou entrar aqui na minha pasta `barra-app`
 
 ### Mapeando modelos
 
-Uma parada interessante é que eu consigo, por exemplo, mapear o modelo que o meu Cloud Code tá usando lá — esse Haiku 4.5. Então eu posso simplesmente vir aqui e adicionar os modelos que eu quero usar. Por exemplo, eu tenho aqui o OpenRouter, tô usando o GLM 5.2. Então, enquanto o meu Cloud Code tá conectado no Haiku 4.5, eu mapeei o GLM 5.2 — mas eu posso simplesmente mapear com outros modelos.
+Uma parada interessante é que eu consigo, por exemplo, mapear o modelo que o meu Claude Code tá usando lá — esse Haiku 4.5. Então eu posso simplesmente vir aqui e adicionar os modelos que eu quero usar. Por exemplo, eu tenho aqui o OpenRouter, tô usando o GLM 5.2. Então, enquanto o meu Claude Code tá conectado no Haiku 4.5, eu mapeei o GLM 5.2 — mas eu posso simplesmente mapear com outros modelos.
 
 Se você tiver usando o Kiro, que tem um free tier muito generoso, você consegue usar o próprio modelo da Anthropic, se quiser, e o OpenRouter também. A vantagem do Kiro é que você usa meio que de graça enquanto é free tier — como eu já estourei a minha cota, não consigo nem testar. Mas eu tenho outra parada interessante: o **MiMo Code Free**, que é da Xiaomi, tem esse modelo MiMo. Então também posso selecionar esse modelo pra adicionar no meu combo.
 
@@ -53,7 +53,7 @@ Outra coisa muito interessante nele é que você tem todo o controle de uso. Olh
 Essa parte aqui confesso que é polêmica, e é exatamente o que eu quero testar. Ele tem uma funcionalidade chamada **Token Saver**. O que isso faz: basicamente economiza token pra você.
 
 - **Compress output** — já vem ligado por padrão. Basicamente enxuga a saída de comandos tipo `git diff`, `grep`, `ls` antes de mandar pro modelo, resolvendo aquele problema de agente queimando token à toa só pra ler "ruído" de comando. Achei uma parada maneira.
-- **Compress** (segunda opção) — faz uma compactação de toda a conversa quando você tá numa sessão muito longa, resolvendo aquele problema do Cloud Code ficar "esquecendo" todo o contexto quando você tá no finalzinho da janela e ela acaba estourando.
+- **Compress** (segunda opção) — faz uma compactação de toda a conversa quando você tá numa sessão muito longa, resolvendo aquele problema do Claude Code ficar "esquecendo" todo o contexto quando você tá no finalzinho da janela e ela acaba estourando.
 - **Caveman** (terceira opção) — a gente já falou aqui no canal daquela skill do "homem das cavernas", que faz o modelo falar de forma mais econômica, tipo homem das cavernas, e resolve as paradas — te economiza token pra caramba. Você consegue selecionar se quer light, full ou ultra. Por padrão você não precisa de skill nenhuma pra isso; toda vez que você tiver plugado no seu Nine Router, ele controla isso pelo dashboard.
 - **Lazy senior dev** (última opção) — basicamente é o espírito do programador sênior preguiçoso, que tenta não abstrair tanto, não precisa escrever tanto código pra aquilo — é basicamente o "sênior cansado", que tem muita preguiça. Acho maravilhoso.
 
@@ -61,7 +61,7 @@ Essa parte aqui confesso que é polêmica, e é exatamente o que eu quero testar
 
 Quero mostrar na prática, ao vivo: eu testei e vou falar pra você que, pro que eu uso, não foi tão legal assim — mas talvez, testando seu caso de uso, pode ser que funcione pra você.
 
-Com o Cloud Code aberto, sem nenhuma opção de Token Saver habilitada, colei um prompt do meu "Mega Brain" pedindo pra criar uma aplicação em Ruby on Rails 7 — basicamente um CRUD de locadora (a gente que é velho já ama isso), só uma API com SQLite, mas tem que rodar os testes e tem que funcionar. Rodei o Mega Brain e ele finalizou a tarefa, tudo rodando, testes passando: três exemplos, zero falhas.
+Com o Claude Code aberto, sem nenhuma opção de Token Saver habilitada, colei um prompt do meu "Mega Brain" pedindo pra criar uma aplicação em Ruby on Rails 7 — basicamente um CRUD de locadora (a gente que é velho já ama isso), só uma API com SQLite, mas tem que rodar os testes e tem que funcionar. Rodei o Mega Brain e ele finalizou a tarefa, tudo rodando, testes passando: três exemplos, zero falhas.
 
 Fui ver o uso pra poder comparar com os outros módulos: gastamos **$0,81**, 705 mil tokens de input, 4.800 de output, 748,8 mil de leitura de cache.
 
@@ -71,17 +71,17 @@ O que eu quero trazer com isso: pra mim, que sou programador Ruby on Rails, isso
 
 ## Sessão longa "infinita" e fallback silencioso
 
-Tem outras coisas que confesso que achei bem interessantes. A gente sabe que, quando tá programando e a janela de contexto vai enchendo, perto do final ele começa a "delirar", dar resposta errada pra caramba. Ele tem um recurso, que já é padrão, de uma sessão muito mais longa — te dá um contexto muito maior, como se você tivesse uma janela de contexto infinita. E, por mais que faça aquela troca de modelo que comentei, o contexto acaba migrando de modelo pra modelo. Isso o OpenCode também faz, que acho maravilhoso. Mas se você gosta do Cloud Code, cara, você consegue fazer isso também com o Cloud Code.
+Tem outras coisas que confesso que achei bem interessantes. A gente sabe que, quando tá programando e a janela de contexto vai enchendo, perto do final ele começa a "delirar", dar resposta errada pra caramba. Ele tem um recurso, que já é padrão, de uma sessão muito mais longa — te dá um contexto muito maior, como se você tivesse uma janela de contexto infinita. E, por mais que faça aquela troca de modelo que comentei, o contexto acaba migrando de modelo pra modelo. Isso o OpenCode também faz, que acho maravilhoso. Mas se você gosta do Claude Code, cara, você consegue fazer isso também com o Claude Code.
 
 Outro recurso que eu curti muito é o **fallback silencioso**. A gente sabe que alguns modelos chineses, principalmente quando a gente tá usando conta free — essas continhas que a gente vai fazendo pra testar — começam a dar erro do nada, pra caramba. O fallback silencioso é o seguinte: ele fez a chamada nesse modelo, esse modelo deu problema, ele vai pro próximo; o próximo deu problema, ele vai pro próximo. Ele vai testando vários modelos, e o contexto acaba sendo compartilhado entre os modelos. Isso, mano, é lindo.
 
 ## Um contraponto sincero: cuidado com contas free tier
 
-Agora sendo bem sincero, falando sério: a gente fica muito emocionado com essa parada de jogar várias contas de free tier, mas, na prática, pra usar no dia a dia de trabalho, talvez isso não seja uma parada tão OK, porque a gente sabe que o Gemini CLI e o próprio Cloud Code têm meio que um detector pra saber se você tá usando alguma ferramenta assim, e acaba bloqueando seu acesso — e você acaba perdendo a conta. Você pode plugar várias ferramentas chinesas e fazer essas contas free tier e tal, mas tem que tomar muito cuidado com isso.
+Agora sendo bem sincero, falando sério: a gente fica muito emocionado com essa parada de jogar várias contas de free tier, mas, na prática, pra usar no dia a dia de trabalho, talvez isso não seja uma parada tão OK, porque a gente sabe que o Gemini CLI e o próprio Claude Code têm meio que um detector pra saber se você tá usando alguma ferramenta assim, e acaba bloqueando seu acesso — e você acaba perdendo a conta. Você pode plugar várias ferramentas chinesas e fazer essas contas free tier e tal, mas tem que tomar muito cuidado com isso.
 
 Pra você que é estudante, tá fazendo projeto paralelo, tá com pouca grana pra torrar nisso, acho que vale a pena. Agora, na prática, pra você que trabalha no dia a dia, sendo bem sincero, eu não confiaria 100% — mas pra brincar, testar uma coisa ou outra, vale muito a pena, principalmente pra testar esse monte de modelo chinês que foi lançado sem gastar um centavo.
 
-E antes que a galera fale "pô, paizão, mas você tá usando uma parada paga" — calma, calma, porque tem o Cloud Code e tem os modelos da Anthropic; você tá usando a ferramenta de graça, porque a ferramenta tem um "lockin" que você só pode usar com modelos Anthropic, e o que eu acabei de fazer aqui foi usar modelos chineses — o GLM 5.2, mais conhecido como "o Fable Killer", que é o concorrente que quase empata com o Fable — usando a ferramenta. Lógico que tem uns bugzinhos, se você observar tem umas mensagens de erro ali, mas nada que incomode, é só ignorar. E é isso: a gente consegue quebrar o "lockin" do Cloud Code.
+E antes que a galera fale "pô, paizão, mas você tá usando uma parada paga" — calma, calma, porque tem o Claude Code e tem os modelos da Anthropic; você tá usando a ferramenta de graça, porque a ferramenta tem um "lockin" que você só pode usar com modelos Anthropic, e o que eu acabei de fazer aqui foi usar modelos chineses — o GLM 5.2, mais conhecido como "o Fable Killer", que é o concorrente que quase empata com o Fable — usando a ferramenta. Lógico que tem uns bugzinhos, se você observar tem umas mensagens de erro ali, mas nada que incomode, é só ignorar. E é isso: a gente consegue quebrar o "lockin" do Claude Code.
 
 ## Fechamento
 
