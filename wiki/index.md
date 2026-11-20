@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-19
+date_updated: 2026-11-20
 ---
 
 
@@ -26,6 +26,10 @@ date_updated: 2026-11-19
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]] | Aula 04 do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 13 min: biblioteca JS ou CSS puro? "Depende": dualidade otimização × facilidade ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao\|quadro 2×2]]); "é o CSS que manipula todo e qualquer elemento de Motion", JS "consegue mandar no CSS" pelo DOM, "lá no fundo [...] é CSS"; bibliotecas CSS e JS: facilidade, mas conflitos e "uma porrada de código"; [[wiki/entities/anime-js\|anime.js]] "uma das minhas preferidas"; CSS puro ♥: nativo, sem mediador, "código na unha"; 3D pede biblioteca. Precisões: JS calcula os quadros na thread principal, JS faz o que CSS não faz (canvas, física, controle), Web Animations API como meio-termo, tree-shaking, CSS só é rápido com `transform`/`opacity`, 3D simples existe em CSS, tensão com o AxlePUSH, biblioteca CSS = Animate.css (inferência) |
+| [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]] | Aula 03 do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência), 11 min: princípios vindos do [[wiki/entities/after-effects\|After Effects]]: linha do tempo ("o tempo transcorrido", 2 s), [[wiki/concepts/keyframes-css\|keyframes]] ("key vem de chave, frame vem de foto", N estados de 0% a 100%, escala/opacidade/translado/skew, analogia com 60 fps) e transição entre estados ([[wiki/concepts/easing\|easing]]: frear um carro, linear "irreal", "ease invertido"); demo da animação de "três dias para o lançamento": `bounce in` e órbitas a 360deg em 7 s, "uma linha do tempo para cada elemento". Precisões: não são os 12 da Disney (inferência da aula 01 corrigida), frame é quadro, keyframes ≠ fps, "breakpoint" ≠ breakpoint de layout, `@keyframes` é at-rule, "ease invertido" = `ease-out`, curva é progresso × tempo, duas animações de `transform` brigam, `fill-mode`, timeline do GSAP |
+| [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]] | Aula 02 do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 13,5 min, teórica: motion cria pontos de atenção e guia a jornada (e-commerce), "não [é] puramente estético"; erro vermelho, vibração, piscar; visão periférica; [[wiki/concepts/microinteracao\|microinterações]] (botão que cresce com sombra, barrinha no menu); "não coloque motion em tudo" (contraste, como a [[wiki/concepts/hierarquia-visual\|hierarquia]] do texto); diferencial, cobrar mais, clientes pelo site; "sentimento de descoberta"; preço: "o sistema pode ficar mais lento", site exagerado porque "é o meu produto"; SVG desenhado no scroll cria identidade. Precisões: cor não é o único sinal (WCAG 1.4.1/3.3.1), limite de piscar (2.3.1), sem Vibration API no iOS, hover não existe no toque, `box-shadow` repinta, SVG inline infla o DOM, descoberta × encontrabilidade, Saffer (2013) |
+| [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]] | Aula 01 do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome; legenda: "Patch CA"), 6 min: [[wiki/concepts/motion-design\|motion design]] é "o gráfico em movimento no espaço da tela e no tempo"; motion para web com HTML, CSS e JS; "transição entre estados com [...] níveis de velocidade diferentes"; método por exemplos ("biblioteca de exemplos na sua cabeça"); grade: princípios → propriedades CSS → [[wiki/concepts/formato-svg\|SVG]] → animações → bibliotecas JS × CSS puro → exemplos → bônus. Precisões: CSS não é linguagem de marcação, CSS3 é rótulo, SVG é XML (não HTML), velocidade variável é easing, princípios não nomeados, grade sem `prefers-reduced-motion` |
 | [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]] | Aula 07 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], pela sequência), 21,5 min, última do módulo: animação comunica (como a cor), tela de carregamento com [[wiki/entities/gsap\|GSAP]] e timeline (Spider-Man, "Paybank"), "teste, teste, teste" no celular via Live Server e "capa no celular"; [[wiki/concepts/taxa-de-quadros-60fps\|60 fps / 16,6 ms]]; pipeline estilo → layout → pintura → composição; `width` × `scaleX`, `opacity`, `will-change`; "o que conta é o bom senso"; CSS puro na thread do compositor. Precisões: a thread principal não "passa na frente" (leitura invertida do web.dev), nem todo quadro passa pelas quatro etapas, `transform` e `opacity` são da mesma classe, CSS só vai ao compositor com `transform`/`opacity`, GSAP roda na principal, `will-change` custa memória, ~10 ms de orçamento e 120 Hz, loader atrasa o LCP, falta `prefers-reduced-motion`, "uma tarefa por vez" é por núcleo |
 | [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]] | Aula 06 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 4,5 min, parte 2 do PageSpeed: avisos de diagnóstico um a um, formatos de última geração ("ele quer em WebP"; a ferramenta cita AVIF), tamanho adequado ("4K num celular 320p"), recursos que impedem a renderização (lido como "JavaScript não utilizado", jogar "lá pra baixo"), payload (fotos e vídeos), texto visível (chamado de acessibilidade), DOM grande (ícones, SVG com "mil camadas de gradiente"); [[wiki/concepts/principio-de-pareto\|80-20]]: "grande parte disso é mídia". Precisões: render-blocking ≠ JS sem uso, `defer` > fim do body, CSS crítico inline, texto visível é `font-display` (desempenho), limites de DOM (~800/1.400 nós), SVG inline × `<img>`, vídeo sem `loading`, avisos viraram "insights", mídia domina bytes mas JS domina CPU |
 | [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]] | Aula 05 do módulo de otimização do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 18,5 min: [[wiki/concepts/core-web-vitals\|Core Web Vitals]] como experiência (FCP até 2,5 s, interação até 100 ms, mudança de layout como "dark pattern"); quatro notas; acessibilidade como "tipografia" (16 px), contraste no Who Can Use (#999/#777/#666), `alt`; [[wiki/concepts/seo\|SEO]] por `nav`/`header`; meta tags: `lang`, `theme-color`, `keywords` via ChatGPT, [[wiki/concepts/open-graph\|Open Graph]]. Precisões: é LCP e não FCP, 100 ms é o FID aposentado (INP ≤ 200 ms), CLS não é dark pattern, nota ≠ ranking, Best Practices ≠ semântica, a11y é axe-core, AA é a meta, `keywords` ignorada desde 2009, `lang` é atributo, sitemap |
@@ -1055,6 +1059,31 @@ date_updated: 2026-11-19
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, mini curso de CSS Animations, aula 04: bibliotecas JS vs. CSS puro (2026-11-20)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/css-puro-vs-biblioteca-de-animacao]] | "Depende": otimização × facilidade (Násser); o que decide de fato é onde roda a interpolação e o que ela muda; tabela de casos (hover → CSS, timeline → GSAP, scroll → `animation-timeline`/ScrollTrigger, 3D → Three.js); peso e tree-shaking |
+
+### FrontPUSH, mini curso de CSS Animations, aula 03: princípios de motion (2026-11-20)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/keyframes-css]] | Pontos na linha do tempo onde as propriedades mudam; `@keyframes` + `animation-*` (duração = linha do tempo, `fill-mode`); várias animações por elemento e o conflito de `transform`; keyframes não são fps |
+| [[wiki/concepts/easing]] | Como a velocidade varia entre estados; carro freando = `ease-out`; tabela `linear`/`ease`/`ease-in`/`ease-out`/`ease-in-out` com `cubic-bezier`; `steps()`, `linear()`; entrada `ease-out`, saída `ease-in` |
+
+### FrontPUSH, mini curso de CSS Animations, aula 02: vantagens e boas práticas (2026-11-20)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/microinteracao]] | Resposta pequena do sistema à ação do usuário (hover, clique, erro); gatilho, regras, feedback, loops (Saffer); reforço, não único sinal; curta e barata (`transform`/`opacity`) |
+
+### FrontPUSH, mini curso de CSS Animations, aula 01: introdução ao motion design (2026-11-20)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/motion-design]] | Gráfico em movimento no espaço da tela e no tempo; na web, transição entre estados com easing, SVG manipulado por CSS e bibliotecas JS; biblioteca × CSS puro (compositor × controle); `prefers-reduced-motion` |
 
 ### FrontPUSH, módulo de otimização, aula 07: animações (2026-11-19)
 
@@ -3981,6 +4010,8 @@ date_updated: 2026-11-19
 
 ## Entities
 
+- [[wiki/entities/anime-js]] — biblioteca JS de animação (MIT, Julian Garnier); timelines, stagger, SVG; v4 modular com modo WAAPI; "uma das preferidas" de Násser
+- [[wiki/entities/after-effects]] — programa da Adobe de animação e motion graphics; onde Násser aprendeu linha do tempo, keyframes e easing; exporta para a web via Lottie
 - [[wiki/entities/axlepush]] — curso em PT-BR de assets 3D para a web com o Spline (Násser, inferido), provavelmente do fim de 2023
 - [[wiki/entities/spline]] — ferramenta web de design 3D colaborativa; modela, anima e exporta para web, Webflow, foto e vídeo; simplifica luz e sombra e limita GLB
 - [[wiki/entities/three-js]] — biblioteca JS de 3D sobre WebGL (mrdoob, 2010): cena, câmera, renderer, GLTFLoader, WebGPURenderer

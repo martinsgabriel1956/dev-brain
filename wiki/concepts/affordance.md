@@ -3,8 +3,8 @@ type: concept
 title: "Affordance"
 aliases: ["affordance em ux", "affordance visual", "signifiers"]
 date_created: 2026-07-21
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-20
+source_count: 9
 tags: [ui, ux, design, frontend, affordance]
 skill: tech-mentor-frontend
 status: draft
@@ -73,6 +73,10 @@ Na aula de seletores ([[wiki/sources/seletores-e-pseudo-elements-css]]), `:hover
 
 Em [[wiki/sources/frontpush-variaveis-sass]]: no hover, o botão "cresça um box-shadow, indicando que isso é um elemento clicável, para poder melhorar a experiência do usuário".
 
+## Microinteração como reforço (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], o botão do site de Násser já parece clicável no repouso (contraste, "cara de botão", CTA claro); no hover "ele cresce, ele coloca uma sombra", "mais um indicativo". No menu, uma barrinha cresce sob o link. Hover não existe no toque, então o repouso tem de bastar ([[wiki/concepts/microinteracao]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -83,3 +87,4 @@ Em [[wiki/sources/frontpush-variaveis-sass]]: no hover, o botão "cresça um box
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botão diagonal + seta sinaliza direção
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — `:hover` e `:focus` como pseudo-classes
 - [[wiki/sources/frontpush-variaveis-sass]]: box-shadow no hover como sinal de clique
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: hover como reforço de clicável

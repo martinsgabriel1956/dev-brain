@@ -3,8 +3,8 @@ type: concept
 title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 18
+date_updated: 2026-11-20
+source_count: 19
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -100,6 +100,10 @@ Os estados da tabela (hover, focus, disabled) viram [[wiki/concepts/pseudo-class
 
 Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `border: 0`, `background-color: blue`, `color: white`, `padding: 10px` ("está muito apertado"), `margin-top: 10px`, `border-radius` de 4 px, e no `:hover` um `transform: scale` com `transition` ([[wiki/concepts/transition-e-transform-css]]).
 
+## Botão que cresce com sombra (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], a [[wiki/concepts/microinteracao]] do botão é crescer um pouco e ganhar sombra no hover. `[skill: tech-mentor-frontend]` `transform: scale()` é barato; a sombra fica mais barata animando a `opacity` de um pseudo-elemento que já a tem, em vez de animar `box-shadow`.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -120,3 +124,4 @@ Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `borde
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — hover, active, focus e disabled como pseudo-classes
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: botão do zero: borda, fundo, padding, radius e hover que cresce
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: botões de call to action no menu como variação do desafio de flexbox
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: hover com scale e sombra

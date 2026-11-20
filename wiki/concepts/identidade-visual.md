@@ -3,8 +3,8 @@ type: concept
 title: "Identidade visual"
 aliases: ["identidade de marca", "branding", "visual identity", "cor de marca", "cor de branding"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
-source_count: 2
+date_updated: 2026-11-20
+source_count: 3
 tags: [ui, ui-design, identidade-visual, branding, cor, paleta-de-cores]
 skill: ux-ui-mentor
 status: stub
@@ -24,6 +24,11 @@ Na aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-ana
 - Ilustrações: SVG recolorido com a cor da marca fica "mais harmônico com a minha identidade visual" ([[wiki/concepts/harmonia-visual]]).
 - Fundo: [[wiki/concepts/elementos-de-composicao]] acompanham a branding.
 
+## Animação cria identidade (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], sites com SVG desenhado em linhas conforme o scroll: "cria identidade, dependendo da animação que você aplica, a forma". O jeito de animar entra na identidade, como a cor e a forma.
+
 ## Key Sources
 
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — paleta como identidade: McDonald's, Facebook, WhatsApp, Spotify, Rocketseat
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: animação como identidade

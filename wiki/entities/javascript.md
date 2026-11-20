@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 20
+date_updated: 2026-11-20
+source_count: 22
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -57,6 +57,14 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], a aula 17 cobre 
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula 18 cobre desestruturação de objeto, de parâmetro e de array ([[wiki/concepts/desestruturacao-javascript]]).
 
+## Motion para web (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], JavaScript é uma das três tecnologias do motion para web, e as bibliotecas JavaScript de animação têm módulo próprio no mini curso ([[wiki/concepts/motion-design]]).
+
+## "Consegue mandar no CSS" (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: JS é "linguagem propriamente dita de programação" e, pelo DOM, "consegue mandar no CSS", com condições, laços e matemática. Lapso: diz que JS "já não é só uma linguagem de marcação ou de estilo". Precisão: JS anima também o que o CSS não alcança (canvas, WebGL, física, controle de reprodução) ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -79,3 +87,5 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula 1
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação
 - [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: o módulo de JS como base do de React
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o mínimo de JS para o React; "sempre vai ser a mesma base"
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: bibliotecas JS de animação no mini curso
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manda no CSS; o que só JS faz

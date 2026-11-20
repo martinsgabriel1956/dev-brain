@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-19
-source_count: 130
+date_updated: 2026-11-20
+source_count: 134
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -234,6 +234,22 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]] (autoria pela sequência e pelos projetos Spider-Man e "Paybank"): sempre põe tela de carregamento com GSAP; testa no celular pela rede local; prioriza CSS puro; acha que "o que conta é o bom senso". Inverte a leitura do web.dev sobre a thread principal interromper o compositor.
 
+## Mini curso de CSS Animations, aula 01
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]] (diz o nome): define motion como "o gráfico em movimento no espaço da tela e no tempo"; ensina por exemplos; diz que dar o curso o faz aprender; quase todas as animações do site dele são SVG; chama o CSS de "linguagem de marcação" (lapso).
+
+## Mini curso de CSS Animations, aula 02
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: motion cria pontos de atenção, "não coloque motion em tudo"; admite que "talvez" exagerou na home, mas o site pessoal é o produto e vitrine ("preciso demonstrar [...] que eu sei mexer"); já conseguiu clientes "de cara" pelo motion do site.
+
+## Mini curso de CSS Animations, aula 03
+
+Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]] (autoria pela sequência; não diz o nome): aprendeu os princípios de motion no [[wiki/entities/after-effects|After Effects]]; ensina linha do tempo, [[wiki/concepts/keyframes-css]] e [[wiki/concepts/easing]] (carro freando); mostra a animação de "três dias para o lançamento do curso".
+
+## Mini curso de CSS Animations, aula 04
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]] (diz o nome): responde "depende" à pergunta biblioteca × CSS puro; "o meu coração bate por construir páginas o mais otimizado possível"; anime.js é "uma das minhas preferidas".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -366,3 +382,7 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: hábitos de meta tags e tipografia
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: 80-20 como critério de esforço
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader, teste no celular, bom senso
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: abre o mini curso de animação
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: site como vitrine de motion
+- [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: princípios vindos do After Effects
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende"; coração pelo CSS puro

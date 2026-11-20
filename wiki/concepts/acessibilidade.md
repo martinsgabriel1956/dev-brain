@@ -3,8 +3,8 @@ type: concept
 title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
-date_updated: 2026-11-19
-source_count: 23
+date_updated: 2026-11-20
+source_count: 25
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -99,6 +99,14 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a animação só é cortada por desempenho no celular. Falta `@media (prefers-reduced-motion: reduce)` (no GSAP, `gsap.matchMedia()`) para quem tem vestibulopatia ou enxaqueca (WCAG 2.3.3).
 
+## Grade de motion sem movimento reduzido (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], a grade do mini curso de animação não cita `prefers-reduced-motion`. O slide tem um tópico "Vantagens e boas práticas motion" que a fala não detalha. WCAG 2.2.2 (Pause, Stop, Hide, A) e 2.3.3 (Animation from Interactions, AAA) ([[wiki/concepts/motion-design]]).
+
+## Piscar, vermelho e movimento (FrontPUSH, motion aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], os recursos de atenção (vermelho, piscar, movimento) aparecem sem limites. `[external]` WCAG 1.4.1 (cor não é o único sinal), 3.3.1 (erro identificado em texto), 2.3.1 (até três flashes por segundo), 2.2.2 (pausar o que se move por mais de 5 s). `prefers-reduced-motion` segue fora do curso.
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -122,3 +130,5 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: acessibilidade no PageSpeed
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: aviso de fonte classificado como a11y
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: falta prefers-reduced-motion
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: grade sem prefers-reduced-motion
+- [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: cor, piscar e movimento sem limites

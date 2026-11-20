@@ -3,8 +3,8 @@ type: entity
 title: "Three.js"
 aliases: ["three.js", "threejs", "three", "3DS (erro de ASR)"]
 date_created: 2026-11-19
-date_updated: 2026-11-19
-source_count: 1
+date_updated: 2026-11-20
+source_count: 2
 tags: [3d, webgl, webgpu, javascript, biblioteca, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -18,6 +18,11 @@ Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], é o caminho p
 
 Alternativas: Babylon.js, PlayCanvas, `<model-viewer>` para só exibir um modelo `[skill: tech-mentor-frontend]`.
 
+## Biblioteca 3D no mini curso de animação (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], bibliotecas JS de manipulação 3D são o caso em que JS "não tem como" evitar. Tensão com o [[wiki/entities/axlepush|AxlePUSH]], onde ele diz que "nunca" levou 3D ao FrontPUSH pela curva de aprendizado do Three.js ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: Three.js como alternativa de código ao Spline
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: 3D como exceção ao CSS puro

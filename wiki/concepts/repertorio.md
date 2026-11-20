@@ -3,8 +3,8 @@ type: concept
 title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-20
+source_count: 8
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -59,6 +59,10 @@ No design de interfaces, saber "qual wireframe colocar, em qual flow de pagemap 
 
 Na aula prática de cores de [[wiki/entities/nasser|Násser]], o bloqueio criativo se resolve com "uma biblioteca de boas referências": shot salvo no [[wiki/entities/dribbble]], print, conta-gotas no Figma, busca por hexadecimal e perfis profissionais no Instagram. A referência é ponto de partida, "não necessariamente use os mesmos tons" ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
 
+## Biblioteca de exemplos no motion (FrontPUSH)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], Násser diz que motion "não é uma regrinha": há princípios, mas o domínio vem de "literalmente ter uma biblioteca de exemplos na sua cabeça". O mini curso tem um módulo só de exemplos ([[wiki/concepts/motion-design]]).
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
@@ -68,3 +72,4 @@ Na aula prática de cores de [[wiki/entities/nasser|Násser]], o bloqueio criati
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — usar um modelo real existente (SaaS, marketplace) como substituto de repertório para gerar requisitos do zero, ver [[wiki/concepts/aprender-com-foco-no-problema]]
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — repertório de wireframes para encaixar no pagemap
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — do shot do Dribbble ao hexadecimal
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "biblioteca de exemplos na sua cabeça"

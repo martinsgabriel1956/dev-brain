@@ -3,8 +3,8 @@ type: entity
 title: "GSAP"
 aliases: ["GreenSock", "GreenSock Animation Platform", "gsap.timeline", "ScrollTrigger"]
 date_created: 2026-11-19
-date_updated: 2026-11-19
-source_count: 2
+date_updated: 2026-11-20
+source_count: 5
 tags: [biblioteca, javascript, animacao, timeline, scrolltrigger, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -21,7 +21,22 @@ Biblioteca JavaScript de animação (GreenSock Animation Platform). Anima qualqu
 - Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], o GSAP 3.12.2 com o ScrollTrigger é o exemplo de biblioteca carregada por [[wiki/concepts/cdn]].
 - Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], [[wiki/entities/nasser|Násser]] monta a tela de carregamento dos projetos ([[wiki/entities/spider-man-projeto-nasser|Spider-Man]], "Paybank") "só utilizando o GSAP e uma timeline", e na mesma aula recomenda CSS puro por rodar no compositor. As duas coisas puxam para lados opostos.
 
+## Biblioteca ou CSS puro (FrontPUSH, motion aula 01)
+
+Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], o mini curso de CSS Animations promete um módulo de bibliotecas JavaScript e a discussão "utilizar uma biblioteca ou CSS puro". O GSAP é a biblioteca que Násser já usou no curso (inferência: centro provável do módulo) ([[wiki/concepts/motion-design]]).
+
+## Uma linha do tempo por elemento (FrontPUSH, motion aula 03)
+
+Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]], cada elemento da animação de lançamento tem "uma linha do tempo" própria em CSS, sincronizada por durações e delays. A `gsap.timeline()` junta tudo numa linha do tempo só, como no After Effects: um argumento do lado "biblioteca" do debate da aula 01 ([[wiki/concepts/keyframes-css]]).
+
+## Biblioteca na balança (FrontPUSH, motion aula 04)
+
+Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], a aula prometida na aula 01 responde "depende": biblioteca dá facilidade, CSS puro dá otimização. O GSAP não é citado pelo nome; o exemplo é o [[wiki/entities/anime-js|anime.js]] ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: GSAP e ScrollTrigger via CDN
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: timeline da tela de carregamento
+- [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: módulo de bibliotecas e "biblioteca ou CSS puro"
+- [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: timeline única × uma linha do tempo por elemento no CSS
+- [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: otimização × facilidade
