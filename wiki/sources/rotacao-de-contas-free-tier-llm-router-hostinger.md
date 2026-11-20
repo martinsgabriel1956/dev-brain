@@ -1,6 +1,6 @@
 ---
 type: source
-title: "Achei um Esquema pra Rodar Cloud Code de Graça (Rotação de Contas Free Tier via LLM Router)"
+title: "Achei um Esquema pra Rodar Claude Code de Graça (Rotação de Contas Free Tier via LLM Router)"
 aliases: ["esquema illuminati cloud code de graça", "nine router", "rotação de contas free tier llm"]
 date_created: 2026-08-05
 date_updated: 2026-08-05
@@ -15,11 +15,11 @@ date_published:
 date_ingested: 2026-08-05
 ---
 
-# Achei um Esquema pra Rodar Cloud Code de Graça (Rotação de Contas Free Tier via LLM Router)
+# Achei um Esquema pra Rodar Claude Code de Graça (Rotação de Contas Free Tier via LLM Router)
 
 ## TL;DR
 
-Transcrição de vídeo demonstrando o "Nine Router" (nome ouvido foneticamente, grafia não confirmada) — um AI Gateway/proxy local, compatível com as APIs da Anthropic e OpenAI, que permite (1) plugar múltiplos providers de LLM (Cloud Code, Gemini CLI, Cursor, Codex, Llama, Qwen, Kiro, OpenRouter) atrás de uma única URL/chave, (2) mapear o modelo que uma ferramenta como o Claude Code "acha" que está usando para qualquer outro modelo real (ex.: GLM 5.2, MiMo), e (3) cadastrar várias contas free tier do mesmo provider e rotacioná-las automaticamente quando o token de uma esgota — driblando o limite de free tier de cada conta individual e, segundo o autor, "quebrando o lockin" de ferramentas como o Claude Code (usá-las de graça com modelos não-Anthropic). O vídeo também testa ao vivo uma funcionalidade de compressão de contexto ("Token Saver") e conclui, com dados de uso reais, que ela piorou o resultado no caso de teste (Ruby on Rails): custo e tokens consumidos aumentaram (de $0,81/705k tokens de input para 2,2 milhões de tokens de input) em vez de diminuir. O autor reconhece abertamente, ao final, que a prática de rotacionar contas free tier é arriscada para uso profissional — provedores como Gemini CLI e Claude Code têm detecção de abuso e podem banir a conta.
+Transcrição de vídeo demonstrando o "Nine Router" (nome ouvido foneticamente, grafia não confirmada) — um AI Gateway/proxy local, compatível com as APIs da Anthropic e OpenAI, que permite (1) plugar múltiplos providers de LLM (Claude Code, Gemini CLI, Cursor, Codex, Llama, Qwen, Kiro, OpenRouter) atrás de uma única URL/chave, (2) mapear o modelo que uma ferramenta como o Claude Code "acha" que está usando para qualquer outro modelo real (ex.: GLM 5.2, MiMo), e (3) cadastrar várias contas free tier do mesmo provider e rotacioná-las automaticamente quando o token de uma esgota — driblando o limite de free tier de cada conta individual e, segundo o autor, "quebrando o lockin" de ferramentas como o Claude Code (usá-las de graça com modelos não-Anthropic). O vídeo também testa ao vivo uma funcionalidade de compressão de contexto ("Token Saver") e conclui, com dados de uso reais, que ela piorou o resultado no caso de teste (Ruby on Rails): custo e tokens consumidos aumentaram (de $0,81/705k tokens de input para 2,2 milhões de tokens de input) em vez de diminuir. O autor reconhece abertamente, ao final, que a prática de rotacionar contas free tier é arriscada para uso profissional — provedores como Gemini CLI e Claude Code têm detecção de abuso e podem banir a conta.
 
 ## Key Claims
 
@@ -62,8 +62,8 @@ Transcrição de vídeo demonstrando o "Nine Router" (nome ouvido foneticamente,
 
 > "Eu posso ter três contas do Gemini, posso ter, por exemplo, três contas da Anthropic. E ele tem um esquema que, quando acaba o token de uma, ele joga pra outra; acabou de outra, ele joga pra outra. É praticamente uma disqueteira para nós que somos velhos. E isso não é pirataria, tá? Isso pode ser imoral, mas não é nada ilegal."
 
-> "Enquanto o meu Cloud Code tá conectado no Haiku 4.5, eu mapeei o GLM 5.2, mas eu posso simplesmente mapear com outros modelos."
+> "Enquanto o meu Claude Code tá conectado no Haiku 4.5, eu mapeei o GLM 5.2, mas eu posso simplesmente mapear com outros modelos."
 
 > "No primeiro resultado gastou... olha isso, olha a quantidade de tokens: 2,2 milhões de tokens de input, 12.800 de output, 2,6 milhões de leitura de cache... para mim, que sou programador Ruby on Rails, isso não funcionou."
 
-> "A gente sabe que o Gemini CLI e o próprio Cloud Code eles têm meio que um detector para saber se você tá usando alguma ferramenta, alguma coisa assim, e acaba bloqueando seu acesso e acaba perdendo conta... na prática, para você que trabalha no dia a dia, eu sendo bem sincero eu não confiaria 100%."
+> "A gente sabe que o Gemini CLI e o próprio Claude Code eles têm meio que um detector para saber se você tá usando alguma ferramenta, alguma coisa assim, e acaba bloqueando seu acesso e acaba perdendo conta... na prática, para você que trabalha no dia a dia, eu sendo bem sincero eu não confiaria 100%."

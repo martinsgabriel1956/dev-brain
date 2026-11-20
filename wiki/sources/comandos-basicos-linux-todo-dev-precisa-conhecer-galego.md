@@ -68,7 +68,7 @@ Vídeo introdutório de [[wiki/entities/augusto-galego]] cobrindo os comandos de
 ## Raw Quotes
 
 - "É assim que as IAs estão manipulando o seu computador."
-- "O Cloud Code manipula o arquivo via comandos."
+- "O Claude Code manipula o arquivo via comandos."
 - "Isso aqui é o puro suco da harness. A harness está fazendo isso o tempo todo."
 - "Você não precisa decorar tudo isso... o importante é: quando eu leio numa pipeline um `sed`, um `grep`, um `echo`, eu sei o que está acontecendo."
 - "Cuidado com `rm -rf` — ele deleta recursivamente e não vai pedir permissão nenhuma."
