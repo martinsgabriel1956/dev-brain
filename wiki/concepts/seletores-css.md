@@ -3,8 +3,8 @@ type: concept
 title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 13
+date_updated: 2026-11-20
+source_count: 14
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -102,6 +102,10 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: "a questão ou não de t
 
 Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `querySelector` aceita os mesmos seletores do CSS (`h1`, `.classe`, `#id`, atributo): "Selector vem de seletor, que é o seletor do CSS", e por isso o curso pede CSS antes de JavaScript.
 
+## O asterisco no reset (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: "o asterisco é um seletor, onde eu falo para ele aplicar para todas as tags HTML da minha página". `[external]` O seletor universal não alcança pseudo-elementos; por isso o reset comum é `*, *::before, *::after`.
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -117,3 +121,4 @@ Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], `qu
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: descendente gerado por aninhamento
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `a .active` × `a.active`; `&`
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: seletores de CSS no querySelector
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: seletor universal no reset

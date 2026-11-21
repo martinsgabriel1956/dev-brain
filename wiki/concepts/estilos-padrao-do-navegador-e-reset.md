@@ -3,8 +3,8 @@ type: concept
 title: "Estilos padrão do navegador e reset CSS"
 aliases: ["user agent stylesheet", "folha de estilo do navegador", "reset CSS", "CSS reset", "normalize", "estilos padrão"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-20
+source_count: 8
 tags: [css, reset, user-agent, cascata, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -26,6 +26,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o reset é `* {
 
 Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o primeiro `style.scss` começa pelo mesmo reset: `padding: 0`, `margin: 0`, `box-sizing: border-box`.
 
+## "Sempre aplique esse hack" (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: `*` zera margin e padding "porque [...] algumas tags do HTML [...] por padrão vem com o margin e com o padding", mais `box-sizing: border-box`. `[external]` O reset moderno inclui `*::before, *::after` ([[wiki/concepts/box-model]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: links e listas "resetados"; "configuração padrão do HTML"
@@ -35,3 +39,4 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o pr
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: reset com box-sizing; margin 8px do body; botão sem herança
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: o "hack" de margin, padding e box-sizing no início do projeto
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: reset no primeiro `style.scss`
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: o reset `*` antes das demos de transform

@@ -3,8 +3,8 @@ type: concept
 title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-20
+source_count: 13
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -62,6 +62,10 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o hover do link aninhado
 
 `:focus-within` no `.input-block` "vai verificar se dentro desse input block existe um input que tenha focus". Diego primeiro chamou de pseudo-elemento e corrigiu. Também `:hover`, `:first-child` e o irmão adjacente `.input-block + .input-block`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+## :hover chamado de pseudo-element (FrontPUSH, básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o hover "é um pseudo-element que muda o estado atual do objeto". É pseudo-classe ([[wiki/concepts/pseudo-elemento-css]] cria partes novas). No modo responsivo do DevTools, ele simula o hover "com o clique, não passando o mouse".
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
@@ -76,3 +80,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o hover do link aninhado
 - [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: hover com sombra em variável
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `&:hover`
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: :focus-within, :hover, :first-child
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: hover chamado de pseudo-element; simulado por clique

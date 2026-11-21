@@ -3,8 +3,8 @@ type: entity
 title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 28
+date_updated: 2026-11-20
+source_count: 29
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -99,6 +99,10 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o VS 
 
 Em [[wiki/sources/frontpush-modules-js-import-export-default]], o VS Code "já leu o arquivo" e completa o nome no `import { }`; a extensão Live Server serve a página por HTTP, requisito dos módulos, e recarrega ao salvar.
 
+## Plugin de Sass (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], o Sass é compilado por "um plugin que eu instalo aqui no VS Code" ([[wiki/entities/live-sass-compiler]]).
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -129,3 +133,4 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], o VS Code "já l
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: erro de aspas e warning de chave repetida no JSON
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: autocomplete do import e Live Server
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: exemplo de código PHP
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: plugin de Sass

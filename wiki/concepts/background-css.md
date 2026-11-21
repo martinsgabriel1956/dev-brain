@@ -3,8 +3,8 @@ type: concept
 title: "Background no CSS (background-image, size, repeat, position)"
 aliases: ["background", "background-image", "background-size", "background-repeat", "background-position", "background-color", "cover x contain", "imagem de fundo"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-20
+source_count: 5
 tags: [frontend, css, background, background-image, background-size, imagem]
 skill: tech-mentor-frontend
 status: stub
@@ -37,8 +37,18 @@ A escolha entre cover e contain é o mesmo dilema do [[wiki/concepts/aspect-rati
 
 Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `background: url("../assets/home-background.svg") no-repeat` (sem `no-repeat` o fundo "vai querer ficar repetindo"), `height: 100vh` para a imagem não sair cortada e `background-position: 35vw bottom`, que vira `background-position-x: 70vw` abaixo de 900 px. Ele escreve `background-url` por engano e corrige no ícone: "não era não, era image".
 
+## Gradiente para ver o giro (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], com cor sólida "você não sabe se ele girou", então entra um `linear-gradient` "bem feio, o clássico blue-red", copiado do [[wiki/entities/figma]], para ver o `rotate`.
+
+## O gradiente esconde a cor animada (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], ao animar `background-color` de red a blue, "esse linear-gradiente aqui está meio que me atrapalhando". `[external]` O gradiente é `background-image` e fica por cima da cor. Gradientes não interpolam sem `@property`.
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: img x background, cover x contain, no-repeat, position, altura fixa
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: fundo SVG, no-repeat, 100vh, position em vw
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: `background-color: #0f0f0f` no `body` ("eu gosto de fundo dark"); `pink`, `green` para enxergar caixas
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: linear-gradient para ver o rotate
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: gradiente cobre background-color animado

@@ -4,7 +4,7 @@ title: "Motion design"
 aliases: ["Motion Design", "motion", "motion para web", "animação de interface", "CSS Animations"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 4
+source_count: 9
 tags: [motion-design, animacao, css, svg, easing, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -55,9 +55,34 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], a pergunta da aula 01 vira "depende", pela dualidade otimização × facilidade: CSS puro para o simples, biblioteca JS para 3D e casos complexos. Ver [[wiki/concepts/css-puro-vs-biblioteca-de-animacao]].
 
+## As propriedades de motion começam pelo transform (básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]] começa o módulo "Básico CSS" do mini curso: `transform`, `transition`, `opacity`, `position`, `animation`. A primeira aula fica com as funções de `transform` e a [[wiki/concepts/perspective-css|perspectiva]]; os exemplos dos sites dele (seta que transita entre pontos de translate com velocidades diferentes, links que sobem no hover) são `translate` com [[wiki/concepts/easing]].
+
+## Ponto de ancoragem e 3D (básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: [[wiki/concepts/transform-origin-css]] e `preserve-3d`, e o convite a "colocar transitando esses estados utilizando a animação".
+
+## A propriedade animation (básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], "a tão esperada e tão aclamada propriedade de animação": `@keyframes` com N estados e as subpropriedades de `animation` ([[wiki/concepts/keyframes-css]]); a linha do tempo e os keyframes da aula 03 de princípios viram código.
+
+## A curva como identidade do movimento (básico CSS aula 04)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: "eu quero um padrão que é só o meu": `cubic-bezier` próprio, e a curva do carro freando como a "noção" que a transição entre estados tem de passar ([[wiki/concepts/easing]]).
+
+## Juntando tudo (básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], a estrutura 3D da aula de transform ganha `@keyframes`, várias animações e uma curva própria. Fecho: criatividade e repertório ([[wiki/concepts/repertorio]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: definição, motion para web, grade do curso
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: vantagens, cuidados, "não coloque motion em tudo"
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, keyframes e easing; origem no After Effects
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende": otimização × facilidade
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: módulo Básico CSS: transform e perspectiva
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: @keyframes e subpropriedades de animation
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curva própria com cubic-bezier
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: prática com keyframes, várias animações e cubic-bezier

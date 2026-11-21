@@ -3,8 +3,8 @@ type: concept
 title: "Pré-processador CSS (Sass)"
 aliases: ["Sass", "SCSS", "pré-processador", "preprocessor CSS", "Live Sass Compiler", "mixin", "Less", "Dart Sass"]
 date_created: 2026-11-16
-date_updated: 2026-11-19
-source_count: 14
+date_updated: 2026-11-20
+source_count: 15
 tags: [css, sass, scss, pre-processador, frontend, build]
 skill: tech-mentor-frontend
 status: draft
@@ -66,6 +66,10 @@ Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: "a g
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], o mixin `responsive` das aulas de Sass vira ferramenta de otimização: classes de visibilidade e imagem por breakpoint. Ver [[wiki/concepts/mixin-sass]].
 
+## Sass só pelos prefixos (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: "eu estou utilizando apenas CSS, o Sass eu estou utilizando porque ele adiciona o WebKit". Os prefixos vêm do Autoprefixer da extensão, não do Sass ([[wiki/concepts/prefixo-de-fornecedor]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Sass como pré-processador, `if/else`, Live Sass Compiler
@@ -82,3 +86,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]
 - [[wiki/sources/frontpush-funcoes-sass]]: aula 09: funções
 - [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: partials e CSS único como otimização
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: mixin `responsive` reaproveitado
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: Sass usado só pelos prefixos

@@ -4,7 +4,7 @@ title: "CSS puro vs. biblioteca de animação"
 aliases: ["biblioteca ou CSS puro", "Bib JS vs. CSS puro", "otimização vs. facilidade", "CSS vs JavaScript para animação"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 1
+source_count: 3
 tags: [animacao, css, javascript, biblioteca, performance, trade-off, motion-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -47,6 +47,16 @@ O critério de facilidade é **o que a animação precisa**:
 
 "Você carrega uma porrada de código para poder utilizar uma animação" vale para script inteiro por `<script>`/[[wiki/concepts/cdn]]. Com ES modules e [[wiki/concepts/tree-shaking]], o bundler leva só o que é importado. Uma biblioteca de dezenas de KB pesa pouco perto das imagens, mas o JS também custa parse e execução na thread principal.
 
+## O flip 3D em CSS puro (básico CSS aula 01)
+
+Na aula 04, perspectiva e 3D pareciam pedir biblioteca JS. Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], `perspective: 400px` no pai e `rotateX` fazem um flip 3D sem JavaScript ([[wiki/concepts/perspective-css]]). Biblioteca segue útil para 3D com malhas e luz ([[wiki/concepts/webgl]]).
+
+## "O CSS já faz isso" (básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], depois do `preserve-3d`: "ver que o CSS já faz isso e aquelas bibliotecas JS [...] auxiliam justamente essa manipulação [...] que não é muito simples". O tom muda do "imprescindíveis" da aula 04 para "auxiliam".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende", otimização × facilidade, anime.js, 3D
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: flip 3D sem JS
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: 3D em CSS; bibliotecas "auxiliam"

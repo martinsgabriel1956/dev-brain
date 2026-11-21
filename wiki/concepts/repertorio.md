@@ -4,7 +4,7 @@ title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
 date_updated: 2026-11-20
-source_count: 8
+source_count: 9
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -63,6 +63,10 @@ Na aula prática de cores de [[wiki/entities/nasser|Násser]], o bloqueio criati
 
 Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]], Násser diz que motion "não é uma regrinha": há princípios, mas o domínio vem de "literalmente ter uma biblioteca de exemplos na sua cabeça". O mini curso tem um módulo só de exemplos ([[wiki/concepts/motion-design]]).
 
+## "Biblioteca de efeitos na sua cabeça" (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], [[wiki/entities/nasser|Násser]] repete a ideia da aula 01: animação "é muito da sua criatividade, dos exemplos [...] para você desenvolver uma biblioteca de efeitos na sua cabeça".
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
@@ -73,3 +77,4 @@ Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-cur
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — repertório de wireframes para encaixar no pagemap
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — do shot do Dribbble ao hexadecimal
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "biblioteca de exemplos na sua cabeça"
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: biblioteca de efeitos na cabeça

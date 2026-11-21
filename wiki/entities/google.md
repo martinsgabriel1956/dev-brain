@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-19
-source_count: 45
+date_updated: 2026-11-20
+source_count: 46
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -159,6 +159,10 @@ Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]
 
 Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o board próprio do Google é "a fonte da verdade" das vagas abertas, que nem sempre chegam ao LinkedIn: 28 vagas em Zürich e 9 em Madrid na demo de abril de 2025, e a decomposição da [[wiki/concepts/total-compensation]] de um L3 via [[wiki/entities/levels-fyi]]. O PDF [[wiki/sources/onde-procurar-vagas-guia-definitivo]] indica o Google também como motor de [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] e o bloco Google for Jobs.
 
+## Chrome DevTools no FrontPUSH
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]], "esse editor do Google Chrome é muito legal": o editor de cubic-bezier do [[wiki/entities/chrome-devtools]].
+
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
@@ -178,3 +182,4 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o boar
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: buscar a lista de eventos
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: avisos do PageSpeed
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: web.dev sobre animações
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: editor de curvas do Chrome

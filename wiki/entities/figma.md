@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-19
-source_count: 53
+date_updated: 2026-11-20
+source_count: 54
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -182,6 +182,10 @@ Layout da versão 2.0 do Proffy (web e mobile: login, cadastro, perfil, onboardi
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o plugin Image Tracer vetoriza um logo da Adidas buscado no Google; a Pen Tool fica como alternativa manual. Imagens exportadas do Figma sem otimizar são citadas como erro comum.
 
+## Gradiente para a demo de rotate (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], [[wiki/entities/nasser|Násser]] copia do Figma um gradiente "blue-red" para ver o `rotate` girar.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -237,3 +241,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o plu
 - [[wiki/sources/frontpush-funcoes-sass]]: variações de cor no Figma, não no Sass
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: Proffy 2.0
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: plugin Image Tracer
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: gradiente copiado para a demo de rotate
