@@ -4,7 +4,7 @@ title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
 date_updated: 2026-11-20
-source_count: 11
+source_count: 12
 tags: [padronizacao, web, xml, soap, css]
 skill: tech-mentor-backend
 status: stub
@@ -37,6 +37,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], "vocês vêm aqui no W3C" e clicam nos exercícios; o slide traz em inglês o texto da página de `transform-style` do [[wiki/entities/w3schools]] ("Specifies that child elements will NOT preserve its 3D position"). Confiança alta de que o site é o W3Schools.
 
+## Resolvido: era o W3Schools (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], o instrutor passa a dizer "W3Schools" e mostra os exemplos "Play it" do site; o "W3C" das aulas de transform era o [[wiki/entities/w3schools]].
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — aceleração do HTML5/CSS3 (oficiais em 2014) após o fim do Flash
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — publica o WCAG (`[external]`)
@@ -48,3 +52,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: "o próprio W3C fala que é legal definir o flex dessa forma": confirmado na especificação do flexbox
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: "material de apoio é o W3C"
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: o "W3C" recomendado é o W3Schools (texto do slide)
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: diz "W3Schools" pelo nome

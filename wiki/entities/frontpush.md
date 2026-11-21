@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 113
+source_count: 114
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -415,6 +415,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: slide "Propriedades transform" (`transform-origin`, `transform-style`), demo de rotação no hover com várias origens e `.parent`/`.box` com `preserve-3d`.
 
+## Mini curso de CSS Animations: básico CSS, aula 03, propriedade animation (parte 1)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: slide "Animation" com todas as subpropriedades, `@keyframes box` com `from`/`to`, exemplos do W3Schools e o shorthand.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -530,3 +534,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: bibliotecas JS × CSS puro
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: funções de transform e perspectiva
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e transform-style
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: propriedade animation, parte 1

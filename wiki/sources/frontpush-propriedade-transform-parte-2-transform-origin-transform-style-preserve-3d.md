@@ -104,6 +104,10 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 - A "terceira [posição] que é a Z, mas não precisa da gente entender agora": não foi retomada.
 - De onde é o diagrama "Definindo ponto de ancoragem" enviado junto?
 
+## Continuação
+
+O `transition` usado no hover, "uma propriedade que a gente ainda vai estudar", é contrastado com `animation` em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: dois estados × N estados.
+
 ## Raw quotes
 
 - "dominem essa propriedade, eu posso dizer 70% dela a gente vai entender"

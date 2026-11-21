@@ -3,8 +3,8 @@ type: concept
 title: "WCAG (Web Content Accessibility Guidelines)"
 aliases: ["Web Content Accessibility Guidelines", "diretrizes de acessibilidade ao conteúdo da web", "WCAG 2.1", "WCAG 2.2", "A AA AAA"]
 date_created: 2026-11-15
-date_updated: 2026-11-19
-source_count: 2
+date_updated: 2026-11-20
+source_count: 3
 tags: [acessibilidade, a11y, wcag, w3c, contraste, padronizacao, web]
 skill: ux-ui-mentor
 status: stub
@@ -48,7 +48,12 @@ Fonte da tabela: `[skill: ux-ui-mentor]` (`references/usabilidade.md`, `referenc
 
 Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o corpo de texto deve passar "no teste do AAA". O Lighthouse e a maioria das leis cobram AA (4,5:1 texto normal, 3:1 grande); AAA (7:1) é o extra.
 
+## 2.2.2 e animações em loop (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], loops `infinite alternate` são o padrão do instrutor; o critério 2.2.2 (Pausar, parar, ocultar) pede mecanismo de pausa para movimento automático acima de 5 s.
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — WCAG como fonte das recomendações; A/AA/AAA; AA como mínimo, AAA para governo
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: AA × AAA
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: loops infinitos e o critério 2.2.2

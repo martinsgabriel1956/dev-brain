@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-20
-source_count: 14
+source_count: 15
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -66,6 +66,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], as duas propriedades que "ajudam a configurar a propriedade transform": [[wiki/concepts/transform-origin-css]] (o eixo de rotação) e `transform-style` ([[wiki/concepts/perspective-css]]). A demo gira 180° no `:hover` com `transition: all 1s ease`, "para não ficar bruto". `all` anima qualquer propriedade que mude; nomear `transform` é mais seguro.
 
+## transition = dois estados (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: "a limitação do transition é que eu consigo utilizar apenas dois estados, um inicial e um final"; `animation` faz "essas configurações do transition e um pouco mais", com N estados ([[wiki/concepts/keyframes-css]]). O foco do módulo em `transform` é porque "com ela a gente vai conseguir fazer efeitos que com as propriedades básicas do CSS talvez a gente não consiga".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -82,3 +86,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: transform como base de todo motion
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: funções de transform uma a uma; Y invertido; scale como juros; matrix; perspectiva
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin, transform-style, transition all 1s ease no hover
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: transition limitada a dois estados; animation com N

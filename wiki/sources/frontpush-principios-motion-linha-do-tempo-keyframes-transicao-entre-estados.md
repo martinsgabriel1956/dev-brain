@@ -101,6 +101,8 @@ Aula 03 do mini curso de CSS Animations do [[wiki/entities/frontpush|FrontPUSH]]
 
 Na aula 04 ([[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]), o mesmo código volta como exemplo de animação "puramente implementada em CSS", e a biblioteca CSS descrita lá (classes com keyframes prontos) reforça a ligação do `bounce in` com o Animate.css.
 
+A linha do tempo, os keyframes e a curva viram código em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: `@keyframes` com `from`/`to` ou porcentagens e as subpropriedades de `animation`.
+
 ## Raw quotes
 
 - "os princípios meio que se estabelecem"

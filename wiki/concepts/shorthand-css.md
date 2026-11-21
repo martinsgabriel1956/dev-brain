@@ -3,8 +3,8 @@ type: concept
 title: "Shorthand CSS (propriedades que resumem outras)"
 aliases: ["propriedade shorthand", "shorthand properties", "propriedade resumo", "TRBL", "top right bottom left"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-20
+source_count: 8
 tags: [css, sintaxe, box-model, padding, margin, border, background]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o shorthand de 
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `border-width` + `border-color` viram `border: 1px solid red`; no Sass, a alternativa é `border: { style: solid; color: purple; }`, que gera as longhands. Ele mesmo quase não usa a segunda forma.
 
+## O shorthand animation (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: "essa tag animation aqui é um resumo de todas as outras propriedades [...] eu não faço desse jeito": `animation: box 3s ease infinite alternate`. `[external]` O primeiro tempo é `duration`, o segundo `delay`; o resto é reconhecido pelo tipo. Um valor inválido (como `infinity`) derruba a declaração inteira.
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — padding em sentido horário; background engloba background-color; border em três valores
@@ -41,3 +45,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `border-width` + `border
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: `flex` como atalho de grow, shrink e basis; padrão `0 1 auto`; o W3C recomenda usá-lo
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: sentido horário, meio-dia, 3, 6, 9
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `border` shorthand × nesting de propriedades
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: animation como shorthand

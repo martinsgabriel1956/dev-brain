@@ -4,7 +4,7 @@ title: "Taxa de quadros e orçamento de 16 ms"
 aliases: ["60 fps", "frame budget", "orçamento de quadro", "queda de frame", "jank", "16,6 ms"]
 date_created: 2026-11-19
 date_updated: 2026-11-20
-source_count: 4
+source_count: 5
 tags: [performance, animacao, rendering-pipeline, fps, jank, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -36,9 +36,14 @@ Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: CSS puro é "tecnologia nativa", sem JS "como mediadora". Vale para `transform`/`opacity`; um `@keyframes` de `width` também gasta a thread principal. O custo é o trabalho por quadro, não o tamanho do código ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
 
+## A primeira demo de @keyframes anima width (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], o primeiro keyframe vai de `width: 0` a `100px`. Funciona, mas refaz layout a cada quadro; `transform: scaleX()` cresce no compositor.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: 60 fps e 16,6 ms
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: "o sistema pode ficar mais lento"
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: 60 fps × número de keyframes
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: nativo × mediador; o custo é por quadro
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: keyframe de width na primeira demo

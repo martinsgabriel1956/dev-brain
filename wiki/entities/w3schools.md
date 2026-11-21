@@ -4,7 +4,7 @@ title: "W3Schools"
 aliases: [w3schools, cssref w3schools, Try CSS Selector, w3schools.com, W3 Schools]
 date_created: 2026-11-16
 date_updated: 2026-11-20
-source_count: 3
+source_count: 4
 tags: [site, referencia, tutorial, web, css, html, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -23,8 +23,13 @@ Site de tutoriais e referência de HTML, CSS e JavaScript, com exemplos editáve
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o slide de `transform-style` copia a sintaxe `flat|preserve-3d|initial|inherit` e as descrições em inglês do W3Schools, que [[wiki/entities/nasser|Násser]] chama de "W3C" ([[wiki/entities/w3c]]).
 
+## Chamado pelo nome no mini curso (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], [[wiki/entities/nasser|Násser]] diz "W3Schools" e usa os exemplos "Play it" das páginas de `animation-*` (direction, duration, fill-mode, iteration-count, play-state, timing-function), confirmando que o "W3C" das aulas anteriores era este site.
+
 ## Key Sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — Try CSS Selector como material da aula de seletores
 - [[wiki/sources/principais-propriedades-css-color-background-font]] — referência para os valores de `background-size`
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: slide de transform-style copiado do W3Schools
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: exemplos Play it das propriedades de animation

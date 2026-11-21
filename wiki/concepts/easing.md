@@ -4,7 +4,7 @@ title: "Easing (função de temporização)"
 aliases: ["easing", "timing function", "função de temporização", "transition-timing-function", "animation-timing-function", "cubic-bezier", "ease-in", "ease-out", "transição entre estados"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 3
+source_count: 4
 tags: [easing, timing-function, cubic-bezier, animacao, css, motion-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -42,8 +42,13 @@ O gráfico de uma curva de easing é progresso × tempo, não velocidade: a velo
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: "o modo da transição do modo ease. Não se preocupe que eu vou explicar ainda". `ease` = `cubic-bezier(0.25, 0.1, 0.25, 1)`, o padrão de `transition`.
 
+## animation-timing-function (FrontPUSH, básico CSS aula 03)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], a timing function "é a forma, é a curva": quatro curvas-padrão e `cubic-bezier` para "criar sua própria curva", tema da aula seguinte. "Na maioria das vezes eu utilizo o ease." `[external]` Numa `animation` a curva se aplica a cada intervalo entre keyframes, não à linha do tempo inteira, e pode ser trocada dentro de um keyframe.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: carro freando, linear × ease, "ease invertido"
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "níveis de velocidade diferentes"
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: ease usado antes de explicado
+- [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: timing function por intervalo; ease como padrão dele
