@@ -103,6 +103,8 @@ Na aula 04 ([[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-fa
 
 A linha do tempo, os keyframes e a curva viram código em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: `@keyframes` com `from`/`to` ou porcentagens e as subpropriedades de `animation`.
 
+O carro freando volta em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]] como a noção que a curva tem de passar, agora desenhada num `cubic-bezier()`.
+
 ## Raw quotes
 
 - "os princípios meio que se estabelecem"

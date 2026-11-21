@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 137
+source_count: 138
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -262,6 +262,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]] (autoria inferida): `@keyframes`, `from`/`to` e as subpropriedades de `animation`; "na grande maioria das minhas animações eu deixo infinite e alternate"; prefere `ease` e o shorthand.
 
+## Mini curso de CSS Animations, básico CSS, aula 04
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]] (diz o nome): editor de curvas do Chrome e cubic-bezier.com; "essas propriedades são uma avalanche"; aprendeu a ler o gráfico "depois de muito executar".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -401,3 +405,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: transform e perspectiva; "o eixo y é invertido"
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: animation e keyframes; infinite alternate
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curvas e cubic-bezier

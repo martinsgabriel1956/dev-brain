@@ -68,6 +68,7 @@ O usuário enviou também um diagrama "Definindo ponto de ancoragem": um quadrad
 - [[wiki/entities/nasser]]: instrutor (inferido).
 - [[wiki/entities/frontpush]]: curso; módulo "Básico CSS" do mini curso.
 - [[wiki/entities/w3c]] e [[wiki/entities/w3schools]]: o "W3C" recomendado; o texto do slide é do W3Schools.
+- [[wiki/entities/chrome-devtools]]: inspecionar e editar o CSS ao vivo; modo responsivo.
 
 ## Concepts
 

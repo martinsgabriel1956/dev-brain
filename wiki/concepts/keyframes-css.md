@@ -4,7 +4,7 @@ title: "Keyframes e animation no CSS"
 aliases: ["@keyframes", "keyframe", "quadro-chave", "CSS Animations", "animation CSS", "linha do tempo no CSS"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 3
+source_count: 4
 tags: [keyframes, animacao, css, motion-design, linha-do-tempo, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -67,8 +67,13 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 
 `from`/`to` = `0%`/`100%`; três pontos ou mais pedem porcentagem. Ele usa o shorthand `animation: box 3s ease infinite alternate` e diz que "infinite e alternate" é o padrão da maioria das animações dele; loops assim pedem um jeito de pausar (WCAG 2.2.2). A demo anima `width`, que refaz layout a cada quadro.
 
+## A curva da animation (FrontPUSH, básico CSS aula 04)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]], a `animation-timing-function` do shorthand troca `ease` por um `cubic-bezier()` copiado de [[wiki/entities/cubic-bezier-com]] ([[wiki/concepts/easing]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, N estados, bolinha `bounce in` e órbitas
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: keyframe appear em CSS puro; bibliotecas CSS
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: todas as subpropriedades de animation; from/to; shorthand
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: timing function trocada por cubic-bezier

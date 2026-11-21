@@ -111,7 +111,7 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 
 ## Continuação
 
-A próxima aula promete as curvas de `animation-timing-function` e `cubic-bezier` e "de fato botar essa nossa animação aqui para rodar".
+A próxima aula promete as curvas de `animation-timing-function` e `cubic-bezier` e "de fato botar essa nossa animação aqui para rodar". Veio em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: editor do [[wiki/entities/chrome-devtools]] e [[wiki/entities/cubic-bezier-com]]; a demo fica em trechos sem fala.
 
 ## Raw quotes
 

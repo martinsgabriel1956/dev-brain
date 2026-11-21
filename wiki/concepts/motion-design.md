@@ -4,7 +4,7 @@ title: "Motion design"
 aliases: ["Motion Design", "motion", "motion para web", "animação de interface", "CSS Animations"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 7
+source_count: 8
 tags: [motion-design, animacao, css, svg, easing, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -67,6 +67,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], "a tão esperada e tão aclamada propriedade de animação": `@keyframes` com N estados e as subpropriedades de `animation` ([[wiki/concepts/keyframes-css]]); a linha do tempo e os keyframes da aula 03 de princípios viram código.
 
+## A curva como identidade do movimento (básico CSS aula 04)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: "eu quero um padrão que é só o meu": `cubic-bezier` próprio, e a curva do carro freando como a "noção" que a transição entre estados tem de passar ([[wiki/concepts/easing]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: definição, motion para web, grade do curso
@@ -76,3 +80,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: módulo Básico CSS: transform e perspectiva
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: @keyframes e subpropriedades de animation
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curva própria com cubic-bezier

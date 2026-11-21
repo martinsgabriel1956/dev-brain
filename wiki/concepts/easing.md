@@ -4,7 +4,7 @@ title: "Easing (função de temporização)"
 aliases: ["easing", "timing function", "função de temporização", "transition-timing-function", "animation-timing-function", "cubic-bezier", "ease-in", "ease-out", "transição entre estados"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 4
+source_count: 5
 tags: [easing, timing-function, cubic-bezier, animacao, css, motion-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -46,9 +46,14 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], a timing function "é a forma, é a curva": quatro curvas-padrão e `cubic-bezier` para "criar sua própria curva", tema da aula seguinte. "Na maioria das vezes eu utilizo o ease." `[external]` Numa `animation` a curva se aplica a cada intervalo entre keyframes, não à linha do tempo inteira, e pode ser trocada dentro de um keyframe.
 
+## Editor do Chrome e cubic-bezier.com (FrontPUSH, básico CSS aula 04)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]], [[wiki/entities/nasser|Násser]] mostra as curvas no editor do [[wiki/entities/chrome-devtools]] (`ease-in-out`, `ease-out`, presets *out sine* e *out back*) e cria uma curva própria em [[wiki/entities/cubic-bezier-com]], copiando o `cubic-bezier()` "ao invés de colocar ease". Leitura do gráfico: horizontal é o tempo, vertical "a progressão". `[external]` A velocidade é a inclinação, não a distância da diagonal; os x dos pontos de controle ficam entre 0 e 1, os y podem sair da faixa, e é isso que faz a curva "ir e voltar" (*overshoot*). O carro freando volta como a noção que a curva tem de passar.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: carro freando, linear × ease, "ease invertido"
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "níveis de velocidade diferentes"
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: ease usado antes de explicado
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: timing function por intervalo; ease como padrão dele
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: editor do Chrome, cubic-bezier.com, curva própria, overshoot

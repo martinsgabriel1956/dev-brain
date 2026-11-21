@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 114
+source_count: 115
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -419,6 +419,10 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: slide "Animation" com todas as subpropriedades, `@keyframes box` com `from`/`to`, exemplos do W3Schools e o shorthand.
 
+## Mini curso de CSS Animations: básico CSS, aula 04, propriedade animation (parte 2)
+
+Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: curvas no DevTools, curva própria em cubic-bezier.com (link no Notion do curso) e o carro freando.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -535,3 +539,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: funções de transform e perspectiva
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e transform-style
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: propriedade animation, parte 1
+- [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curvas e cubic-bezier
