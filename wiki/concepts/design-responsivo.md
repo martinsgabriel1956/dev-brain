@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-19
-source_count: 37
+date_updated: 2026-11-21
+source_count: 38
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -99,6 +99,10 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: "ele se torna fluido em 
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], classes `.desktop` e `.mobile` com o mixin `responsive` (corte em 960 px) mostram ou escondem imagem, menu ou "mil coisas". Bom para layout; ruim para imagem pesada, que é baixada mesmo escondida.
 
+## SVG fluido (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: o SVG exportado do Figma "não está responsivo", mas pode ficar "fluido para poder pegar o tamanho de um div pai". `[external]` Manter o `viewBox` e trocar `width`/`height` fixos por `width: 100%; height: auto`.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -138,3 +142,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin `responsive` com `@content`; tipografia por breakpoint
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system fluido + breakpoint de empilhamento
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: classes de visibilidade por breakpoint
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: SVG exportado do Figma tornado fluido

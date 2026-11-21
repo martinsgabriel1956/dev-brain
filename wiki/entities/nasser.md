@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-20
-source_count: 139
+date_updated: 2026-11-21
+source_count: 142
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -270,6 +270,18 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]] (autoria inferida): `ease infinite alternate` como "a configuração que eu mais utilizo"; várias animações por vírgula; "biblioteca de efeitos na sua cabeça".
 
+## Mini curso de CSS Animations, propriedades SVG, aula 01
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]] (autoria inferida): "muitas das minhas criações são com base em SVGs"; "todo o meu site é feito com SVGs", com imagens até "uns dois anos ou até um ano" atrás; SVG como "espelho do Figma" e "Photoshop da web"; "assim como o PHP" (lapso).
+
+## Mini curso de CSS Animations, propriedades SVG, aula 02
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]] (autoria inferida): "acredito que são as únicas quatro [...] se houver, por favor me avise"; usa `<img>` para ícones, inline para animar ("o módulo que eu mais utilizo"); `object` e data URI "só vi desvantagem e nem cheguei a considerar"; fundo `#1A1A1A` "que eu sempre estou utilizando".
+
+## Mini curso de CSS Animations, propriedades SVG, aula 03
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]] (diz o nome): "eu nunca entendi de fato [...] como se dá o caminho", "eu faço pelo Figma"; "a maioria disso eu aprendi sozinho e não tenho medo de falar que eu tenho muito a aprender"; não mexe no viewBox exportado; bordas são "um dos meus efeitos principais".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -411,3 +423,6 @@ Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-v
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: animation e keyframes; infinite alternate
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curvas e cubic-bezier
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: prática de animation
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: abre o módulo de SVG; site todo em SVG
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: quatro formas de inserir SVG; inline por padrão
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura do SVG; admite não ler o path

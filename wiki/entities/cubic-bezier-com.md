@@ -3,8 +3,8 @@ type: entity
 title: "cubic-bezier.com"
 aliases: ["cubic-bezier", "site cubic-bezier", "cubic-bezier.com (Lea Verou)"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
-source_count: 2
+date_updated: 2026-11-21
+source_count: 3
 tags: [ferramenta, css, easing, cubic-bezier, animacao, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -22,7 +22,12 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], uma curva "muito rápido [...] e no final, muito devagar" é copiada e colada "no lugar do ease".
 
+## Bézier no path do SVG (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: o comando `C` do path é a mesma curva cúbica, com dois pontos de controle ([[wiki/concepts/path-svg]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: comparar com linear e copiar a curva
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: curva copiada para o shorthand
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: C do path

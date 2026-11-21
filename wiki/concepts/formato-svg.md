@@ -3,8 +3,8 @@ type: concept
 title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
-date_updated: 2026-11-20
-source_count: 21
+date_updated: 2026-11-21
+source_count: 24
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -90,6 +90,18 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o `transform-origin` "é muito importante para quando a gente estiver falando de SVGs". `[external]` Em SVG o padrão é `0 0`; `transform-box: fill-box` + `transform-origin: center` gira a forma no lugar ([[wiki/concepts/transform-origin-css]]).
 
+## Definição e por que usar (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]], [[wiki/entities/nasser|Násser]] abre o módulo de SVG: "vetorial no formato XML que suporta animações", "adimensional", "pense como um espelho do Figma" (export "não muda em nada"), elementos separados manipuláveis pelo CSS, filtros ("Liquid Motion"), árvore no DOM, "Photoshop da web" e [[wiki/concepts/stroke-svg|stroke]] com pontas redondas e dash array. Única desvantagem citada: "precisa estar no estilo inline". Precisões: "mais leve" depende do número de pontos; o export do Figma não é responsivo por causa de `width`/`height` fixos (manter o `viewBox`); background blur não tem filtro SVG equivalente; *gooey* = `feGaussianBlur` + `feColorMatrix`.
+
+## Quatro formas de inserir (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: `<img>` (ícones estáticos, "não tem edição no DOM"), `background-image` (altura fixa), `iframe`/`object`/`embed` ("muito ruim") e inline ("o módulo que eu mais utilizo"; preço: "volume de código"). SVG de 8KB contra PNG de 728KB, "91 vezes mais leve"; suporte em quase tudo no Can I Use. Tabela completa, com sprite `<use>` e data URI, em [[wiki/concepts/formas-de-inserir-svg]].
+
+## Estrutura por dentro (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: viewport × viewBox ([[wiki/concepts/viewbox-svg]]), formas básicas (`rect`, `circle`, `ellipse`, `line`, `polyline`, `polygon`), [[wiki/concepts/path-svg]] com `M`/`L`/`A`/`Z`, `fill` em vez de `background`, e `defs` com filtros e gradientes chamados por ID. Precisões: Y cresce para baixo; `background` não pinta formas SVG; `fill`/`stroke` no atributo são CSS de especificidade zero, que a folha de estilo sobrescreve; `filter0_d` repete entre exports.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -113,3 +125,6 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-trans
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: SVG como otimização e line drawing no scroll
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: matrix em SVG exportado; transform-origin 0 0 em SVG
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin "muito importante" em SVG; transform-box
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: SVG XML adimensional; espelho do Figma; desvantagem do inline
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: quatro formas de inserir; 8KB × 728KB
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura: viewBox, formas, path, defs, fill

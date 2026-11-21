@@ -3,8 +3,8 @@ type: concept
 title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
-date_updated: 2026-11-20
-source_count: 20
+date_updated: 2026-11-21
+source_count: 22
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -76,6 +76,14 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: o JavaScript "consegue manipular a árvore DOM de elementos do HTML, consequentemente, ele consegue englobar o CSS". Bibliotecas de animação fazem isso a cada quadro, escrevendo estilos inline ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
 
+## SVG inline "possui árvore no DOM" (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: o SVG "possui árvore no DOM", então o JavaScript também o manipula; vale só inline ("precisa estar no estilo inline"). Cada `<path>`/`<g>` vira nó: a tensão com o DOM grande da aula 06 de otimização continua.
+
+## Só o inline entra no DOM (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: `<img>` e background ficam "sem edição no DOM"; o inline "permite a edição no DOM, na árvore de elementos", com CSS em cada parte ([[wiki/concepts/formas-de-inserir-svg]]).
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -97,3 +105,5 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: manipulação do DOM no checklist; o React substitui esse hábito imperativo
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: tamanho do DOM, ícones e SVG inline
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manipula o CSS via DOM
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: árvore do SVG inline manipulável por JS
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: img/background fora do DOM; inline dentro

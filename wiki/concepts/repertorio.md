@@ -3,8 +3,8 @@ type: concept
 title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
-date_updated: 2026-11-20
-source_count: 9
+date_updated: 2026-11-21
+source_count: 10
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -67,6 +67,10 @@ Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-cur
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], [[wiki/entities/nasser|Násser]] repete a ideia da aula 01: animação "é muito da sua criatividade, dos exemplos [...] para você desenvolver uma biblioteca de efeitos na sua cabeça".
 
+## Colecionar exemplos de SVG (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: "você vai colecionando exemplos na sua cabeça e vai entendendo cada dia mais a estrutura desse arquivo", agora aplicado ao SVG.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
@@ -78,3 +82,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-v
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — do shot do Dribbble ao hexadecimal
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "biblioteca de exemplos na sua cabeça"
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: biblioteca de efeitos na cabeça
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: colecionar exemplos de SVG

@@ -3,8 +3,8 @@ type: concept
 title: "Easing (função de temporização)"
 aliases: ["easing", "timing function", "função de temporização", "transition-timing-function", "animation-timing-function", "cubic-bezier", "ease-in", "ease-out", "transição entre estados"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
-source_count: 6
+date_updated: 2026-11-21
+source_count: 7
 tags: [easing, timing-function, cubic-bezier, animacao, css, motion-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], a curva "muito rápido [...] e no final, muito devagar" (um `ease-out` forte) substitui o `ease` do shorthand; com 15 s a diferença some, com 2 s "ficou mais acentuada". `[external]` O giro `ease alternate` de 0 a 360 vira pêndulo; rotação contínua pede `linear`.
 
+## A mesma Bézier no path (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]], o `C` do path aparece como letra desconhecida. `[external]` É a Bézier cúbica do `cubic-bezier()`: lá tempo × progresso, aqui posição no desenho ([[wiki/concepts/path-svg]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: carro freando, linear × ease, "ease invertido"
@@ -62,3 +66,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-v
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: timing function por intervalo; ease como padrão dele
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: editor do Chrome, cubic-bezier.com, curva própria, overshoot
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: curva própria no lugar de ease; ease alternate em giro = pêndulo
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: C do path = Bézier cúbica

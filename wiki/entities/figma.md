@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-20
-source_count: 54
+date_updated: 2026-11-21
+source_count: 56
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -186,6 +186,14 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], o plu
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], [[wiki/entities/nasser|Násser]] copia do Figma um gradiente "blue-red" para ver o `rotate` girar.
 
+## Espelho do SVG (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: "pense como um espelho do Figma". Export em PNG, JPG, SVG e PDF; o SVG "não muda em nada"; layer blur, background blur e inner shadow "a gente também consegue fazer no SVG"; Ctrl-Shift-G (desagrupar) mostra os vetores separados. Precisão: background blur não tem equivalente em filtro SVG (`backdrop-filter` é do CSS).
+
+## Origem do código SVG (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: "eu faço pelo Figma" e nunca entendeu o `d` do path; `fill` é "muito parecido com o do Figma"; efeitos viram filtros nos `defs`, gradiente com `stop-color`, e o export repete IDs como `filter0_d`.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -242,3 +250,5 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: Proffy 2.0
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: plugin Image Tracer
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: gradiente copiado para a demo de rotate
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: espelho do SVG; efeitos no export; Ctrl-Shift-G
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: fill, filtros, gradientes e IDs do export

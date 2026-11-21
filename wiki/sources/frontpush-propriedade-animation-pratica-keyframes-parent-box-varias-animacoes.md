@@ -3,7 +3,7 @@ type: source
 title: "Propriedade animation na prática: keyframes no parent e no box e várias animações (FrontPUSH)"
 aliases: ["FrontPUSH motion, básico CSS aula 05", "Propriedade animation: Prática", "animation prática", "CSS Animations, básico CSS, aula 05"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
+date_updated: 2026-11-21
 source_count: 0
 tags: [css, animation, keyframes, shorthand, rotatex, rotatey, preserve-3d, cubic-bezier, background-color, motion-design, curso, frontend]
 skill: tech-mentor-frontend
@@ -99,6 +99,8 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 ## Continuação
 
 Fecha a sequência de `animation` do módulo "Básico CSS". A grade da parte 1 de transform ainda promete `opacity` e `position`.
+
+A aula seguinte abre o módulo de SVG: [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]].
 
 ## Raw quotes
 

@@ -3,8 +3,8 @@ type: concept
 title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-21
+source_count: 11
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -63,6 +63,10 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 
 "Toda mensagem [...] ela tem cabeçalho e corpo": cabeçalho como metadados, corpo como conteúdo. A aula põe no cabeçalho o "tipo da mensagem" (criar, listar), que na verdade é o método da linha de requisição. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
 
+## SVG inline economiza a requisição (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: o inline "não precisa fazer request HTTP". O outro lado: sem cache separado e repetido em cada página; um arquivo externo reutilizado costuma ganhar com HTTP/2 ([[wiki/concepts/formas-de-inserir-svg]]).
+
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — HTTP como pergunta e resposta: sem gatilho do cliente o servidor não fala, origem do problema de tempo real
@@ -70,3 +74,4 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: JSON buscado via HTTP (anunciado)
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: requisição como exemplo de assíncrono
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: requisição como "informações de padronização"
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: inline sem requisição, mas sem cache

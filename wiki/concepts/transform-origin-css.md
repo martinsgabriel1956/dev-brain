@@ -3,8 +3,8 @@ type: concept
 title: "transform-origin (ponto de ancoragem)"
 aliases: ["transform-origin", "ponto de ancoragem", "origem da transformação", "eixo de rotação CSS", "transform-box"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
-source_count: 2
+date_updated: 2026-11-21
+source_count: 3
 tags: [css, transform, transform-origin, svg, animacao, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -38,7 +38,12 @@ Em elementos SVG o padrão é `0 0` do sistema de coordenadas do SVG, não o cen
 
 Na [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva|parte 1 da aula de transform]], [[wiki/entities/nasser|Násser]] aponta que o `rotate` gira em torno do centro, "o seu ponto de ancoragem", e promete mudá-lo. Na [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d|parte 2]], gira um quadrado 180° no hover com a origem em `center`, `0% 0%`, `50% 0%` e `100%`, e prefere porcentagem por ser "mais intuitivo". Na fala os eixos das palavras-chave saem trocados ("quando é Y, é left ou right"), mas o código funciona, porque o navegador reconhece `top`/`left` pelo nome. Ver [[wiki/concepts/transition-e-transform-css]].
 
+## Origem do atributo transform (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]], o SVG exportado traz `transform` na tag. `[external]` A origem é o `0 0` do sistema de coordenadas do SVG ([[wiki/concepts/viewbox-svg]]); `rotate(a cx cy)` aceita o centro no próprio atributo.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: o centro como "ponto de ancoragem"
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: demo com 0%, 50% e 100%; importância no SVG
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: rotate(a cx cy) no atributo

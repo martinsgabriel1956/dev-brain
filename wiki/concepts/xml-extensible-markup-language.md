@@ -3,8 +3,8 @@ type: concept
 title: "XML (Extensible Markup Language)"
 aliases: ["Extensible Markup Language", "XML data format"]
 date_created: 2026-08-04
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-21
+source_count: 4
 tags: [xml, formato-de-dados, interoperabilidade, legado, serializacao]
 skill: tech-mentor-backend
 status: stub
@@ -34,6 +34,11 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o JSO
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 
+## SVG é um documento XML (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: o SVG "é literalmente código, é um documento XML", e XML é "uma linguagem de marcação, assim como o PHP". Precisão: PHP não é de marcação; o par é o HTML (lapso ou ASR). Inline no HTML5, o SVG dispensa o prólogo `<?xml ?>` e o namespace é implícito.
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — XML/XHTML e o abuso do XML como linguagem (ColdFusion, JSP)
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: JSON chamado de "marcação" (é formato de dados)
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: SVG como documento XML; "assim como o PHP" (lapso)

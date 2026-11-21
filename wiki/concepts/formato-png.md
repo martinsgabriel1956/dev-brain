@@ -3,8 +3,8 @@ type: concept
 title: "PNG"
 aliases: ["png", "portable network graphics", "apng"]
 date_created: 2026-07-29
-date_updated: 2026-11-19
-source_count: 6
+date_updated: 2026-11-21
+source_count: 8
 tags: [formatos-de-imagem, compressao, png]
 skill: cs-fundamentals
 status: stub
@@ -35,6 +35,14 @@ Na aula de imagens de [[wiki/entities/nasser|Násser]], PNG fica para fotos com 
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: "Eu sou da época que [...] eu utilizava PNG quando era ícone." Hoje ícone é SVG; PNG fica para o que não vetoriza e, na web, perde para WebP e AVIF.
 
+## "Não vão desaparecer" (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: PNG e JPG "não vão desaparecer", mas pedem versões menores no mobile e maiores no desktop, "uma preocupação que eu não preciso ter" com SVG.
+
+## 728KB × 8KB (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: o mesmo desenho em PNG transparente pesa 728KB contra 8KB do SVG, "91 vezes mais leve". Precisão: depende da escala do export; um PNG 1x do tamanho exibido seria bem menor.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -43,3 +51,5 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: "Eu s
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": "não vai sumir" por causa da transparência; um pouco mais pesado que o JPG
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — export do frame em PNG pelo painel do Figma
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: PNG → SVG ou WebP
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: PNG/JPG ficam, mas pedem vários tamanhos
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: PNG de 728KB contra SVG de 8KB

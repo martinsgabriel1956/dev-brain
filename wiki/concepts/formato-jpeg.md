@@ -3,8 +3,8 @@ type: concept
 title: "JPEG"
 aliases: ["jpg", "jpeg", "joint photographic experts group"]
 date_created: 2026-07-29
-date_updated: 2026-11-19
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [formatos-de-imagem, compressao, jpeg, exif]
 skill: cs-fundamentals
 status: stub
@@ -46,6 +46,10 @@ Ver [[wiki/concepts/exif-metadados]] — arquivos JPEG carregam metadados que po
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], as fotos em JPG passam pelo compressor e depois por um conversor para WebP, que o PageSpeed recomenda. JPEG continua como reserva num `<picture>`.
 
+## "Não vão desaparecer" (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: o JPG pixela no zoom, contra o SVG; com o PNG, "eles não vão desaparecer", mas pedem versões por tamanho de tela.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -53,3 +57,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], as fo
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — ícone exportado em JPG fica com fundo branco (sem transparência)
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": o mais difundido; fotografia e ilustração realista; boa relação qualidade/peso
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: JPG comprimido e convertido
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: JPG pixela no zoom; não desaparece

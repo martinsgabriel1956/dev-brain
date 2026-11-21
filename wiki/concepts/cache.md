@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-10-06
-source_count: 21
+date_updated: 2026-11-21
+source_count: 22
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -119,6 +119,11 @@ Aviso: cache é cópia temporária reconstruível; tratá-lo como única fonte d
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — cache in-memory dentro do servidor (`Map`, Redis local) é estado global e quebra [[wiki/concepts/stateless]]. Ver [[wiki/concepts/estado-global-em-servidor]].
 
+## SVG inline não tem cache próprio (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: o inline poupa a requisição, mas o SVG vai junto com cada HTML; `<img>`, background e sprite `<use>` ficam no cache do navegador e servem a várias páginas ([[wiki/concepts/formas-de-inserir-svg]]).
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — cache como troca de frescor por latência/custo; ver [[wiki/concepts/tolerancia-a-desatualizacao-de-cache]].
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: inline × arquivo cacheável

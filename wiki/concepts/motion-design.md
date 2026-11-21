@@ -3,8 +3,8 @@ type: concept
 title: "Motion design"
 aliases: ["Motion Design", "motion", "motion para web", "animação de interface", "CSS Animations"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
-source_count: 9
+date_updated: 2026-11-21
+source_count: 10
 tags: [motion-design, animacao, css, svg, easing, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -75,6 +75,10 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], a estrutura 3D da aula de transform ganha `@keyframes`, várias animações e uma curva própria. Fecho: criatividade e repertório ([[wiki/concepts/repertorio]]).
 
+## SVG completa o combo (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]], o módulo de SVG "vai completar esse combo" com as propriedades CSS "para poder a gente começar literalmente a animar"; "por isso que o Motion e o UI Design se encaixam tão bem" (SVG como espelho do Figma).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: definição, motion para web, grade do curso
@@ -86,3 +90,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-v
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: @keyframes e subpropriedades de animation
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curva própria com cubic-bezier
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: prática com keyframes, várias animações e cubic-bezier
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: abre o módulo de SVG do mini curso

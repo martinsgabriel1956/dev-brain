@@ -3,8 +3,8 @@ type: concept
 title: "Densidade de pixels"
 aliases: ["pixel density", "@2x @3x", "DPR", "device pixel ratio", "dp", "pt"]
 date_created: 2026-11-16
-date_updated: 2026-11-19
-source_count: 4
+date_updated: 2026-11-21
+source_count: 5
 tags: [mobile, imagens, design, telas]
 skill: tech-mentor-mobile
 status: stub
@@ -34,9 +34,14 @@ PNGs em 1x/@2x/@3x escolhidos pelo RN; o exemplo do iPhone X ("mil pixels" × 3)
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]], o celular pede imagem "com uma resolução menor". Com densidade 2× ou 3×, uma imagem de 400 px de largura na tela precisa de 800 a 1200 px reais; o `srcset` com descritores `w` escolhe sozinho.
 
+## SVG dispensa 1x/1,5x/2x (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]], "densidade de pixels" abre o "por que usar" SVG: o zoom pixela a foto do site, não o vetor; com PNG/JPG é preciso exportar 1x, 1,5x, 2x no Figma. Precisão: os multiplicadores servem à densidade (DPR, `srcset` com `x`); tamanho de tela pede `srcset` com `w` + `sizes`; a fala junta os dois.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: exportar 1x/2x/3x do Figma
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: "16 pixels num 4K" (imprecisão)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: iPhone X: pontos × pixels
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: densidade e imagem de celular
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: SVG sem múltiplos exports por densidade

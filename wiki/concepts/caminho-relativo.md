@@ -3,8 +3,8 @@ type: concept
 title: "Caminho relativo de arquivos (HTML x CSS)"
 aliases: ["caminho relativo", "relative path", "../", "voltar um diretório", "src relativo", "url() relativo"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-21
+source_count: 7
 tags: [frontend, html, css, caminho-relativo, arquivos]
 skill: tech-mentor-frontend
 status: stub
@@ -41,6 +41,10 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `require('
 
 Em [[wiki/sources/frontpush-modules-js-import-export-default]], o `import` usa `from "./retângulo.js"`: "como está no mesmo diretório, eu faço ponto barra". No navegador, `./` e a extensão são obrigatórios; acento no nome do arquivo funciona, mas complica URL e terminal.
 
+## img × url() com SVG (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: no `<img>`, "como eu estou no index.html, eu já entro direto na pasta SVG"; no `background-image`, "como a minha array está sendo no CSS, eu tenho que voltar uma pasta".
+
 ## Key Sources
 
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: `src` a partir do index, `url()` a partir do style.css com `../`
@@ -49,3 +53,4 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], o `import` usa `
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/partials e o erro comum dos alunos
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: require relativo ao arquivo, fs relativo ao cwd
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: ./ no import do navegador
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: src do HTML × url() do CSS

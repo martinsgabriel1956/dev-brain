@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-20
-source_count: 116
+date_updated: 2026-11-21
+source_count: 119
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -427,6 +427,18 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 
 Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: `.parent` e `.box` animados com dois `@keyframes`, contagem finita, `changeColor` por vírgula e curva própria.
 
+## Mini curso de CSS Animations: propriedades SVG, aula 01, introdução
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: abre o módulo "Propriedades SVG's": o que é, por que usar (slide com sete motivos), espelho do Figma, stroke e dash array; a próxima aula trata de como inserir o SVG no HTML.
+
+## Mini curso de CSS Animations: propriedades SVG, aula 02, como usar o SVG
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: `<img>`, `background-image`, `iframe`/`object`/`embed` e inline; Can I Use; SVG de 8KB contra PNG de 728KB; o curso foca o inline.
+
+## Mini curso de CSS Animations: propriedades SVG, aula 03, estrutura do SVG
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: plano cartesiano, viewport × viewBox, formas básicas, path, `defs`, propriedades exclusivas e IDs repetidos entre exports.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -545,3 +557,6 @@ Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-v
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: propriedade animation, parte 1
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curvas e cubic-bezier
 - [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: animation na prática
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: propriedades SVG, aula 01
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: como usar o SVG
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura do SVG

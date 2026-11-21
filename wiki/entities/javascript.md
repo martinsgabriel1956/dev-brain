@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
-date_updated: 2026-11-20
-source_count: 22
+date_updated: 2026-11-21
+source_count: 23
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -65,6 +65,10 @@ Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-cur
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: JS é "linguagem propriamente dita de programação" e, pelo DOM, "consegue mandar no CSS", com condições, laços e matemática. Lapso: diz que JS "já não é só uma linguagem de marcação ou de estilo". Precisão: JS anima também o que o CSS não alcança (canvas, WebGL, física, controle de reprodução) ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
 
+## Manipula o SVG pelo DOM (FrontPUSH, propriedades SVG aula 01)
+
+Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: como o SVG "possui árvore no DOM", "eu posso manipular ele com JavaScript também" (só inline).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -89,3 +93,4 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: o mínimo de JS para o React; "sempre vai ser a mesma base"
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: bibliotecas JS de animação no mini curso
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manda no CSS; o que só JS faz
+- [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: JS manipula o SVG inline

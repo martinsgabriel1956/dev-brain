@@ -3,8 +3,8 @@ type: concept
 title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-21
+source_count: 9
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub
@@ -72,6 +72,10 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], o `b
 
 Em [[wiki/sources/frontpush-variaveis-sass]], a sombra do botão sai do Smooth Shadow no Figma na cor do botão ("deixa as minhas sombras mais realistas"), com camadas, alpha e blur; o CSS do Inspect vai para a variável `box-shadow purple` em `_shadows.scss` e entra no `:hover`. Para suavizar, muda no Figma, recopia e substitui só a variável. `[skill: tech-mentor-frontend]` Animar um `box-shadow` com várias camadas repinta a cada quadro; o mais barato é a sombra num `::after` com `opacity` animada.
 
+## Sombra do Figma vira filtro SVG (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: drop shadow, inner shadow e blurs do Figma aparecem nos `defs` como filtros (`feBlend`, "effect, drop shadow"), "onde a gente muda a opacidade em conjunto com outro tipo de filtro". `[external]` A cadeia é `feFlood` → `feColorMatrix` → `feOffset` → `feGaussianBlur` → `feBlend`; filtro custa pintura a cada quadro animado.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
@@ -82,3 +86,4 @@ Em [[wiki/sources/frontpush-variaveis-sass]], a sombra do botão sai do Smooth S
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: text-shadow no texto, box-shadow na caixa
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: box-shadow de várias camadas numa variável
 - [[wiki/sources/frontpush-variaveis-sass]]: sombra Smooth Shadow numa variável, aplicada no hover
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: sombras do Figma como filtros nos defs

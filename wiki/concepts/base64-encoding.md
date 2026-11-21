@@ -3,8 +3,8 @@ type: concept
 title: "Base64 / Base64URL"
 aliases: ["base64", "base64url", "codificacao base64", "binary-to-text encoding"]
 date_created: 2026-08-28
-date_updated: 2026-11-19
-source_count: 2
+date_updated: 2026-11-21
+source_count: 3
 tags: [encoding, base64, url, http, binary]
 skill: tech-mentor-security
 status: draft
@@ -34,7 +34,12 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], converter um arquivo para Base64 e 
 
 Em [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]], transformar foto em vetor "até tem", "em base64", mas fica "estrondoso de gigantesco". Base64 não vetoriza: só reescreve o bitmap como texto, cerca de 33% maior e sem cache próprio quando embutido no HTML ou no SVG.
 
+## Data URI de SVG (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: "pesquisem sobre data URI [...] só que ela é lenta, só vi desvantagem". Precisão: em base64 o SVG incha ~33%; codificado como URL (`data:image/svg+xml,%3Csvg...`) é a forma usual de ícones pequenos no CSS, sem requisição extra.
+
 ## Key sources
 
 - [[wiki/sources/jstack-http-e-apis-rest]]: Base64 em JSON como "gambiarrinha" para arquivos
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: base64 confundido com vetorização
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: data URI de SVG: base64 × URL-encoded
