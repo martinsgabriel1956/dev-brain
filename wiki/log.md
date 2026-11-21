@@ -15780,3 +15780,16 @@ O usuário confirmou que a aula 04 ([[wiki/sources/frontpush-otimizacao-de-image
 **Tocadas (6 existentes + 3 sources):** easing, keyframes-css, motion-design (concepts); nasser, frontpush, google (entities). Também as sources da animation parte 1 (Continuação), da aula 03 de princípios (o carro freando) e da transform parte 2 (link para chrome-devtools), index.md e log.md. Aula curta; menos páginas tocadas que o alvo de 10–15.
 
 **Notas:** (1) "O ease [...] devagar e depois mais rápido" = `ease-in`. (2) **Velocidade é a inclinação**, não a distância da diagonal. (3) **y fora de 0–1 = overshoot** ("ir e voltar"); x preso entre 0 e 1. (4) Presets *sine*/*back* vêm das equações de Penner. (5) `cubic-bezier` não faz mola com vários quiques; `linear()` ou biblioteca. (6) A demo prometida fica nos trechos sem fala. (7) `prefers-reduced-motion` segue ausente.
+
+
+## [2026-11-20] ingest | FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: propriedade animation na prática
+
+**Fonte:** legenda SRT `transcricoes/FrontPush/05 - Propriedade animation: Prática.pt_br.srt` (PT-BR, 139 blocos, cerca de 9 min), limpa com a skill **text-cleaner** em `raw/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes.md` (sem tradução; 1 título, 5 subtítulos `##`). Diff palavra a palavra conferido sem pontuação, caixa nem hífens (1.116 tokens no original, 1.120 na limpa): só as correções de ASR "is"→ease (2×; alta) e "fuçem"→fucem (grafia), e as separações `keyframes -box`→keyframes box, `background -color -red/-blue`→background-color red/blue, `infinite -alternate`→infinite alternate. Nenhuma inserção entre colchetes. Mantidos literalmente: "essa bichinha"; "o flow vai mudar"; "quase pararam"; "o que eu estava falando não estava mentindo, correto"; "Ele está mudando a cor juntamente em uma outra... Keyframe"; `changeColor` (nome de keyframe).
+
+**Skill:** tech-mentor-frontend. Referência: `references/frontend-animations.md` (CSS animations, compositor, `prefers-reduced-motion`). `[external]` sem fetch, por conhecimento prévio: CSS Animations Level 1 (listas por vírgula pareadas por posição, fill-mode; confiança alta); `background-image` sobre `background-color` e `@property` para gradientes (alta); WCAG 2.2.2 e 2.3.1 (alta). Autoria: pela sequência; não diz o nome. Sem slide.
+
+**Criado:** [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]].
+
+**Tocadas (13 existentes + 2 sources):** keyframes-css, perspective-css, shorthand-css, easing, background-css, taxa-de-quadros-60fps, repertorio, motion-design, acessibilidade (concepts); cubic-bezier-com, chrome-devtools, nasser, frontpush (entities). Também as sources da animation parte 2 (Continuação: a demo dos trechos sem fala) e da transform parte 2, index.md e log.md.
+
+**Notas:** (1) **`ease alternate` num giro de 360 é pêndulo**; giro contínuo pede `linear`. (2) Contagem finita: 360 ≡ 0, o "voltar" pouco aparece. (3) Várias animações convivem porque mexem em propriedades diferentes. (4) **O gradiente é `background-image` por cima da cor animada.** (5) `background-color` repinta. (6) Listas do shorthand pareadas por posição. (7) Curva "muito rápido, muito devagar" = `ease-out` forte. (8) `forwards` "no máximo" × hábito de `infinite`. (9) Loops sem pausa; `prefers-reduced-motion` ausente.

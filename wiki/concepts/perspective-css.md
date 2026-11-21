@@ -4,7 +4,7 @@ title: "Perspectiva e 3D no CSS (perspective)"
 aliases: ["perspective", "perspectiva CSS", "perspective()", "3D no CSS", "flip 3D", "rotateX", "preserve-3d"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 2
+source_count: 3
 tags: [css, transform, perspective, 3d, rotatex, animacao, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -41,7 +41,12 @@ Isso responde em parte à aula 04, onde 3D com perspectiva parecia pedir bibliot
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], `.parent` com `perspective: 200px` e `rotateY(30deg)`, `.box` filha com `rotateX(70deg)`. Com `flat` (padrão), "o flat ele leva em consideração só ele, não o filho"; com `preserve-3d`, os dois giros se compõem no mesmo espaço 3D. O `rotateY` da própria `.parent` só achatava "talvez porque eu teria que colocar a perspectiva no [...] pai do pai": certo, a propriedade `perspective` vale para os filhos. `[external]` `preserve-3d` não é herdado, e `overflow` ≠ `visible`, `opacity` < 1, `filter`, `clip-path` ou `mask` no pai o forçam de volta a `flat`.
 
+## preserve-3d animado (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], a `.parent` (com perspectiva e `preserve-3d`) gira em Y e a `.box` em X, com durações diferentes (10 s e 3 s, depois 15 s e 5 s): os dois giros se compõem no mesmo espaço 3D, o que antes só se via mudando valores no console.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: `rotateX` sem e com `perspective: 400px` no pai
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: preserve-3d no pai; perspectiva no "pai do pai"
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: parent e box girando em eixos diferentes

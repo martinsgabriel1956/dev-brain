@@ -4,7 +4,7 @@ title: "Shorthand CSS (propriedades que resumem outras)"
 aliases: ["propriedade shorthand", "shorthand properties", "propriedade resumo", "TRBL", "top right bottom left"]
 date_created: 2026-11-16
 date_updated: 2026-11-20
-source_count: 8
+source_count: 9
 tags: [css, sintaxe, box-model, padding, margin, border, background]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,10 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `border-width` + `border
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: "essa tag animation aqui é um resumo de todas as outras propriedades [...] eu não faço desse jeito": `animation: box 3s ease infinite alternate`. `[external]` O primeiro tempo é `duration`, o segundo `delay`; o resto é reconhecido pelo tipo. Um valor inválido (como `infinity`) derruba a declaração inteira.
 
+## Ordem e listas no shorthand animation (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: "aqui é sempre a duração, aqui é sempre o delay" (o primeiro tempo e o segundo). Várias animações vão separadas por vírgula, cada uma com sua linha do tempo; nas longhands, as listas se pareiam pela posição.
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — padding em sentido horário; background engloba background-color; border em três valores
@@ -46,3 +50,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: sentido horário, meio-dia, 3, 6, 9
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `border` shorthand × nesting de propriedades
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: animation como shorthand
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: primeiro tempo = duração, segundo = delay; listas por vírgula

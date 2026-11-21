@@ -4,7 +4,7 @@ title: "Taxa de quadros e orçamento de 16 ms"
 aliases: ["60 fps", "frame budget", "orçamento de quadro", "queda de frame", "jank", "16,6 ms"]
 date_created: 2026-11-19
 date_updated: 2026-11-20
-source_count: 5
+source_count: 6
 tags: [performance, animacao, rendering-pipeline, fps, jank, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]], o primeiro keyframe vai de `width: 0` a `100px`. Funciona, mas refaz layout a cada quadro; `transform: scaleX()` cresce no compositor.
 
+## background-color animado (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], `changeColor` anima `background-color` em loop. Repinta a cada quadro: mais barato que layout, mais caro que `transform`/`opacity`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: 60 fps e 16,6 ms
@@ -47,3 +51,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: 60 fps × número de keyframes
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: nativo × mediador; o custo é por quadro
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: keyframe de width na primeira demo
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: background-color repinta a cada quadro

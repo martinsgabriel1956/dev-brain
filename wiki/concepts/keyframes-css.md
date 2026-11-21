@@ -4,7 +4,7 @@ title: "Keyframes e animation no CSS"
 aliases: ["@keyframes", "keyframe", "quadro-chave", "CSS Animations", "animation CSS", "linha do tempo no CSS"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 4
+source_count: 5
 tags: [keyframes, animacao, css, motion-design, linha-do-tempo, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -71,9 +71,14 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]], a `animation-timing-function` do shorthand troca `ease` por um `cubic-bezier()` copiado de [[wiki/entities/cubic-bezier-com]] ([[wiki/concepts/easing]]).
 
+## Na prática: dois keyframes e várias animações (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: `@keyframes box` (`rotateX` 0 → 360deg) na `.box` e `@keyframes parent` (`rotateY`) na `.parent`, com `animation: box 3s ease infinite alternate` e 10 s no pai. Com `iteration-count` 3, para e volta ao estilo da classe. Uma segunda animação, `changeColor` (`background-color` red → blue), entra na mesma classe separada por vírgula, "totalmente independente" porque mexe em outra propriedade. `[external]` Para giro contínuo, `linear` com direção `normal` evita o efeito pêndulo de `ease alternate`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, N estados, bolinha `bounce in` e órbitas
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: keyframe appear em CSS puro; bibliotecas CSS
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: todas as subpropriedades de animation; from/to; shorthand
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: timing function trocada por cubic-bezier
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: dois keyframes, várias animações por vírgula, contagem finita

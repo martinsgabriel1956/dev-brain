@@ -4,7 +4,7 @@ title: "Motion design"
 aliases: ["Motion Design", "motion", "motion para web", "animação de interface", "CSS Animations"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 8
+source_count: 9
 tags: [motion-design, animacao, css, svg, easing, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -71,6 +71,10 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-dura
 
 Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: "eu quero um padrão que é só o meu": `cubic-bezier` próprio, e a curva do carro freando como a "noção" que a transição entre estados tem de passar ([[wiki/concepts/easing]]).
 
+## Juntando tudo (básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], a estrutura 3D da aula de transform ganha `@keyframes`, várias animações e uma curva própria. Fecho: criatividade e repertório ([[wiki/concepts/repertorio]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: definição, motion para web, grade do curso
@@ -81,3 +85,4 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d
 - [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 03: @keyframes e subpropriedades de animation
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: curva própria com cubic-bezier
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: prática com keyframes, várias animações e cubic-bezier

@@ -109,6 +109,8 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 
 O `transition` usado no hover, "uma propriedade que a gente ainda vai estudar", é contrastado com `animation` em [[wiki/sources/frontpush-propriedade-animation-parte-1-keyframes-from-to-duration-direction-fill-mode]]: dois estados × N estados.
 
+A estrutura `.parent`/`.box` com `preserve-3d` ganha `@keyframes` em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: o pai gira em Y e a caixa em X, sem precisar do console.
+
 ## Raw quotes
 
 - "dominem essa propriedade, eu posso dizer 70% dela a gente vai entender"

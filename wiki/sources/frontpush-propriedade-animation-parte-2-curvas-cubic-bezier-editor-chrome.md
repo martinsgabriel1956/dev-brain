@@ -91,7 +91,7 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 
 ## Continuação
 
-Encerra a parte de `animation` do módulo "Básico CSS"; a grade da parte 1 ainda lista `opacity` e `position` entre as propriedades de motion.
+A demo que ficou nos trechos sem fala aparece em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: dois `@keyframes`, várias animações por vírgula e o `cubic-bezier` copiado no lugar de `ease`. A grade da parte 1 de transform ainda lista `opacity` e `position`.
 
 ## Raw quotes
 

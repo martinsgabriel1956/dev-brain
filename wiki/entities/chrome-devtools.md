@@ -4,7 +4,7 @@ title: "Chrome DevTools"
 aliases: ["DevTools", "Inspecionar", "console do Chrome", "editor de cubic-bezier do Chrome"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 2
+source_count: 3
 tags: [ferramenta, chrome, devtools, css, debug, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -21,7 +21,12 @@ Ferramentas de desenvolvedor do Google Chrome (botão direito → Inspecionar). 
 
 `[external]` O painel Animations (Mais ferramentas → Animations) grava, desacelera e reproduz animações CSS da página, útil para inspecionar keyframes e curvas ([[wiki/concepts/keyframes-css]]). Confiança alta.
 
+## Do console ao keyframe (FrontPUSH, básico CSS aula 05)
+
+Em [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]], os giros que antes eram testados "pelo próprio console" viram `@keyframes`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: inspecionar e editar o CSS ao vivo
 - [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-editor-chrome]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 04: editor de cubic-bezier
+- [[wiki/sources/frontpush-propriedade-animation-pratica-keyframes-parent-box-varias-animacoes]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 05: do teste no console ao @keyframes
