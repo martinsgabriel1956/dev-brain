@@ -3,8 +3,8 @@ type: entity
 title: "GSAP"
 aliases: ["GreenSock", "GreenSock Animation Platform", "gsap.timeline", "ScrollTrigger"]
 date_created: 2026-11-19
-date_updated: 2026-11-20
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [biblioteca, javascript, animacao, timeline, scrolltrigger, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -33,6 +33,10 @@ Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]], a aula prometida na aula 01 responde "depende": biblioteca dá facilidade, CSS puro dá otimização. O GSAP não é citado pelo nome; o exemplo é o [[wiki/entities/anime-js|anime.js]] ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
 
+## No portfólio do autor (FrontPUSH, hospedagem aula 06)
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: o portfólio usa GSAP, "porém eu adicionei a página como um script, eu não utilizei nenhum npm"; o site segue estático.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: GSAP e ScrollTrigger via CDN
@@ -40,3 +44,4 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: módulo de bibliotecas e "biblioteca ou CSS puro"
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: timeline única × uma linha do tempo por elemento no CSS
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: otimização × facilidade
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: GSAP por script, sem npm

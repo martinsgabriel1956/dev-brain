@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-11-16
-source_count: 12
+date_updated: 2026-11-21
+source_count: 16
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -64,5 +64,25 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], youtube.c
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — o host da URL é o que o DNS resolve
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], DNS e registro de domínio entram como tópicos prometidos do módulo de hospedagem ([[wiki/concepts/hospedagem-de-sites]]).
+
+## FrontPUSH, hospedagem aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: o DNS "converte nomes de domínio em endereço de IP", porque "é bem mais fácil eu lembrar de um nome"; `ping frontpush.com.br` → `162.241.61.29`. O "servidor DNS 192.168.1.154" da tela é o roteador repassando consultas; o slide põe os browsers na seta, mas quem consulta é o sistema operacional (ou o DoH do browser).
+
+## FrontPUSH, hospedagem aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]], o domínio é delegado aos servidores da HostGator na Registro.br (`nspro34`/`nspro35.hostgator.com.br`, "master e slave"); "demora algumas horas". O autor chama o name server de "meio que um IP"; detalhes e o caminho alternativo (registro A) em [[wiki/concepts/name-server]].
+
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]], contas de e-mail no próprio domínio (`contato@frontpush.com.br`) saem do cPanel. Funcionam porque o domínio está delegado à HostGator, cujo DNS publica o registro MX; para entregabilidade, SPF, DKIM e DMARC.
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — primeira etapa ao digitar uma URL: "lista telefônica" nome → IP
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: DNS anunciado no módulo de hospedagem
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, hospedagem aula 02: nome → IP via ping; servidor DNS da rede de casa
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: delegação aos name servers da HostGator
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: e-mail no próprio domínio depende do MX

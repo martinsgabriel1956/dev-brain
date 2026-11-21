@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-11-17
-source_count: 26
+date_updated: 2026-11-21
+source_count: 28
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -77,6 +77,14 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o [[wiki
 
 Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adiciona uma nova div", como no jQuery), `useState`, `useEffect`, componentes de formulário com `HTMLAttributes` e o front ligado à API. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], React é exemplo de aplicação web que "necessita de um build" e "de um banco de dados, de um MySQL". Precisões: o build gera arquivos estáticos que qualquer host serve; `localhost:3000` é o servidor de desenvolvimento; banco é assunto do back-end.
+
+## FrontPUSH, hospedagem aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: "você vai ter que buildar todo o ecossistema do React no servidor" e "para fazer uma rota em React, eu tenho que configurar todo um ecossistema". O build roda local ou no CI e sobe como estático; rotas pedem React Router e redirect para `index.html`.
+
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — renderização condicional como mecanismo de [[wiki/concepts/lazy-vs-eager-loading]]
@@ -98,3 +106,5 @@ Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adicio
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: por que usar React: método tradicional (PHP, HTML no servidor) × método SPA (JSON)
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: App.js com header, sidebar, content e footer; "encapsulados que gerenciam seu próprio estado"
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: React.createElement × JSX no REPL do Babel; inicial maiúscula
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: React como "aplicação web" (ressalvas)
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: "buildar no servidor" (ressalva)

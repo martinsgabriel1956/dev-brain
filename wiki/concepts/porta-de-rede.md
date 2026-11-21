@@ -3,8 +3,8 @@ type: concept
 title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-21
+source_count: 9
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -81,7 +81,17 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], `server.listen(3000, callbac
 
 "Quando nós não temos a porta, quer dizer que a porta é 80" (é o padrão do HTTP; HTTPS usa 443); em desenvolvimento, 3333 para a API e 3000 para o front. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: "a porta 80 é a porta padrão, e quando ela é a padrão, ela meio que não existe"; fora dela, "precisa especificar" (5500 do Live Server). Mesma ressalva: 80 é do HTTP, HTTPS usa 443, e o próprio módulo promete instalar SSL.
+
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: Apache do XAMPP "na porta 80 e na porta 443"; React em desenvolvimento na 3000; hospedagem compartilhada com Apache "configurado na porta 80".
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — 80/22/443 e 3000/5000/8080 como convenções arbitrárias
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: porta 5500 do Live Server (FrontPUSH)
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: 3333 × 3000; 80 e 443
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: porta 80 "meio que não existe"; 443 para HTTPS
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: 80/443 do Apache, 3000 do React

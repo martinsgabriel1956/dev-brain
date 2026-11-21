@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-21
-source_count: 119
+source_count: 125
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -439,6 +439,30 @@ Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: `<img>
 
 Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: plano cartesiano, viewport × viewBox, formas básicas, path, `defs`, propriedades exclusivas e IDs repetidos entre exports.
 
+## Módulo de hospedagem: aula 01, introdução
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: "módulo bônus"; hospedagem tradicional, clouds gratuitas e grandes clouds; esquema da URL; slide dos principais sites. O site divide servidor com CreatorPUSH e portfólio.
+
+## Módulo de hospedagem: aula 02, IP e DNS
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: IP como CPF, IPv4 × IPv6, celular em `192.168.1.92:5500`, IP público × privado, `ping frontpush.com.br` → `162.241.61.29` (HostGator), DNS e Registro.br.
+
+## Módulo de hospedagem: aula 03, website estático vs. aplicação web
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: o site do FrontPUSH "é uma aplicação que está desenvolvida em PHP" e roda localmente no [[wiki/entities/xampp]]; a aula responde (de lado) por que não usou React.
+
+## Módulo de hospedagem: aula 04, HostGator parte 1
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: plano Turbo da HostGator, e-mail técnico, cPanel, domínio na Registro.br no CPF do autor e delegação para `nspro34`/`nspro35.hostgator.com.br`.
+
+## Módulo de hospedagem: aula 05, HostGator parte 2
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: tour pelo cPanel (banco, arquivos, FTP, domínios, e-mail, banda, SSH, SSL, WordPress); `contato@frontpush.com.br` como exemplo de e-mail próprio.
+
+## Módulo de hospedagem: aula 06, HostGator parte 3
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: o site do FrontPUSH é domínio adicional com raiz em `public_html/frontpush`, com `index.php`; é PHP por ter página de cadastro/lista de espera. Upload por gerenciador ou FileZilla; AutoSSL.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -560,3 +584,9 @@ Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-d
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: propriedades SVG, aula 01
 - [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: como usar o SVG
 - [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura do SVG
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, módulo de hospedagem aula 01: introdução
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, módulo de hospedagem aula 02: IP e DNS
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, módulo de hospedagem aula 03: website estático × aplicação web
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, módulo de hospedagem aula 04: HostGator parte 1
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, módulo de hospedagem aula 05: tour pelo cPanel
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: upload, domínios adicionais, AutoSSL

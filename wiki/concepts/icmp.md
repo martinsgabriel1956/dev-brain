@@ -3,8 +3,8 @@ type: concept
 title: "ICMP (Internet Control Message Protocol)"
 aliases: ["icmp","icmpv6","ping","echo request"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-11-21
+source_count: 2
 tags: [networking, icmp, ping, camada-3, diagnostico]
 skill: tech-mentor-networking
 status: draft
@@ -26,6 +26,11 @@ Uma interface que escuta ICMP recebe tráfego não solicitado (erros de roteador
 
 Regra de firewall relacionada [skill: tech-mentor-networking — `references/linux-networking.md`]: filtrar ICMP tipo 3 código 4 quebra Path MTU Discovery (conexão abre e a transferência trava).
 
+## FrontPUSH, hospedagem aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]], `ping www.google.com.br` e `ping frontpush.com.br` no prompt do Windows mostram o IP de cada nome. O `ping` usa ICMP, não HTTP; o IP que aparece é a resolução DNS, e um servidor pode bloquear ICMP e ainda servir o site.
+
 ## Key sources
 
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — usado como canal de transporte de HTML no ICMP Browser; tipos 128/129 e filtragem por tipo
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, hospedagem aula 02: ping para descobrir o IP de um domínio

@@ -3,8 +3,8 @@ type: concept
 title: "SPA (Single Page Application)"
 aliases: ['SPA', 'single page apps']
 date_created: 2026-10-14
-date_updated: 2026-11-19
-source_count: 13
+date_updated: 2026-11-21
+source_count: 14
 tags: [spa, frontend, estado, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -36,6 +36,10 @@ Em [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]], Reac
 
 Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], "o CSS quebrado lá é mais vantajoso" no web app e o contrário na página normal, com o Virtual DOM como motivo. O que divide CSS e JS numa SPA é o [[wiki/concepts/code-splitting]] por rota, não o Virtual DOM.
 
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], "navegação entre páginas dinâmicas e complexas, como [...] utilizando um ReactJS" seria impossível "com um website estático". Ao contrário: o build de uma SPA é estático e roda em GitHub Pages ou Netlify; só pede o redirect para `index.html` ([[wiki/concepts/client-side-routing]]).
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -51,3 +55,4 @@ Em [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]], "o 
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "uma única página HTML" e rotas sem recarregar; definição correta, primeira menção às rotas
 - [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: web app "otimiza sozinho" × landing page
 - [[wiki/sources/frontpush-cache-e-cdn-css-js-inline-incorporado-externo]]: FrontPUSH, otimização aula 02: SPA reativa, CSS dividido
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: SPA tratada como não estática (ressalva)

@@ -3,8 +3,8 @@ type: concept
 title: "URL — Uniform Resource Locator"
 aliases: ["url", "uniform resource locator", "endereço web", "localizador de recurso"]
 date_created: 2026-10-09
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [uri, url, http, redes, networking]
 skill: tech-mentor-networking
 status: draft
@@ -41,9 +41,14 @@ Em [[wiki/sources/jstack-http-e-apis-rest]]: `https://mywebsite.com/products?pag
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `request.url` no Node é só o *request target* (`/users?page=2`), sem esquema nem host. Para ter um objeto `URL`, passe uma base: `new URL(request.url, 'http://localhost')`.
 
+## Esquema de URL no FrontPUSH (hospedagem, aula 01)
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], `http://127.0.0.1:5500/index.html` vira um esquema com quatro rótulos: protocolo, host, porta, "arquivo ou diretório". A barra é "a raiz do meu projeto" e o `index.html` "não precisa [...] ser escrito"; quem o escolhe é o servidor, não o browser (ver [[wiki/concepts/servidor-web-vs-servidor-de-aplicacao]]). Host local: [[wiki/concepts/localhost]].
+
 ## Key sources
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — URL como URI com localização; uso coloquial vs. técnico
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: URL como endereço; sigla dita errada
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: sigla errada de novo; URL e caminho com /
 - [[wiki/sources/jstack-http-e-apis-rest]]: URL × endpoint × query params
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: request.url é o request target
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: protocolo, host, porta, arquivo ou diretório

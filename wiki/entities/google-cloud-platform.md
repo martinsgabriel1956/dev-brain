@@ -3,8 +3,8 @@ type: entity
 title: "Google Cloud Platform (GCP)"
 aliases: ["GCP", "Google Cloud"]
 date_created: 2026-10-09
-date_updated: 2026-11-03
-source_count: 3
+date_updated: 2026-11-21
+source_count: 4
 tags: [google, cloud, ia, receita]
 skill: tech-mentor-ai
 status: stub
@@ -20,8 +20,13 @@ Divisão de nuvem do [[wiki/entities/google]]. Segundo a fonte, Cloud faturou ~U
 
 Citado com App Engine como equivalente do Azure App Service e Compute Engine como equivalente de VM. O autor diz não ter achado serviço OpenShift no Google. `[external]` A Red Hat oferece [OpenShift Dedicated no Google Cloud](https://www.redhat.com/en/technologies/cloud-computing/openshift/dedicated).
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], "o Google Cloud" entre as plataformas maiores do módulo de hospedagem.
+
 ## Key Sources
 
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]]
 - [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: provider Google
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — de-para de compute (App Engine, Compute Engine)
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: entre as grandes clouds

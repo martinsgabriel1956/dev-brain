@@ -3,8 +3,8 @@ type: concept
 title: "Ttl"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-11-21
+source_count: 5
 tags: [ttl]
 skill: tech-mentor-backend
 status: stub
@@ -28,9 +28,14 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 TTL de 5 min na chave `user_id` → `photo_url`, combinado com atualização no upload; define a janela máxima de desatualização caso a atualização falhe (inferência).
 
+## TTL na troca de name servers
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]], trocar os servidores DNS do domínio "demora algumas horas": é o TTL da delegação em cache nos resolvers, não processamento do registrador ([[wiki/concepts/name-server]]).
+
 ## Key sources
 
 - [[wiki/sources/cache-stampede-invalidation]]
 - [[wiki/sources/cache-strategies]]
 - [[wiki/sources/cache]]
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: TTL de 5 min no cache da URL da foto de perfil
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: "algumas horas" de propagação = TTL

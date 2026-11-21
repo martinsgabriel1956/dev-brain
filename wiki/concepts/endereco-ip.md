@@ -3,8 +3,8 @@ type: concept
 title: "Endereço IP (IPv4 / IPv6)"
 aliases: ["IP", "endereço IP", "IPv4", "IPv6", "IP address"]
 date_created: 2026-08-12
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-21
+source_count: 8
 tags: [rede, endereco-ip, ipv4, ipv6, tcp-ip, cs-fundamentals]
 skill: tech-mentor-networking
 status: stub
@@ -49,6 +49,14 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], localhost
 
 `baseURL` com o IP local (`192.168.x.x:3333`) em vez de `localhost`, que no emulador e no aparelho aponta para o próprio dispositivo; no emulador Android, `10.0.2.2` também serve. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], `127.0.0.1` "está apontando para o host, ou seja, para a sua própria máquina", e a aula pergunta por que outro celular da mesma casa não abre o endereço. Resposta (adiada pela aula): loopback × IP privado × NAT, em [[wiki/concepts/localhost]].
+
+## FrontPUSH, hospedagem aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: "o IP é um protocolo" que identifica o dispositivo "assim como [...] um CPF"; IPv4 com "quatro grupos [...] 32 bits" × IPv6 com "oito grupos [...] 128 bits". O CPF acompanha a pessoa; o IP muda com a rede e, com NAT, é dividido. Privado × público em [[wiki/concepts/ip-publico-vs-ip-privado]].
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — IP como sequência que identifica dispositivo; IPv4 (4 octetos, ~4,3 bi) vs IPv6; coexistência
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → IP; localhost/127.0.0.1
@@ -56,3 +64,5 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], localhost
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: IP mudou durante a semana
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: localhost e domínio
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: IP local no app
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: 127.0.0.1 e a pergunta do celular
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, hospedagem aula 02: IP como CPF; IPv4 × IPv6; privado × público

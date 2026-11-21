@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-21
+source_count: 15
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -73,6 +73,10 @@ Panorama didático (não exaustivo de todos os produtos) que ordena os serviços
 
 Citada com Elastic Beanstalk e App Runner como equivalentes do Azure App Service. `[external]` O App Runner [não aceita novos clientes desde 30/abr/2026](https://docs.aws.amazon.com/ja_jp/apprunner/latest/dg/apprunner-availability-change.html); a AWS sugere ECS Express Mode.
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], a "Amazon" das grandes clouds: "uma vez que você aprende um, você só precisa mexer um pouquinho na plataforma para poder aprender o outro". Vale para os conceitos; nomes, IAM e preços diferem.
+
 ## Key Sources
 
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — panorama dos 15 serviços mais usados, ordenados por dependência lógica de pilha, com arquitetura de referência ponta a ponta
@@ -90,6 +94,7 @@ Citada com Elastic Beanstalk e App Runner como equivalentes do Azure App Service
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — ALB (camada de aplicação) e NLB (rede/transporte) citados como LBs gerenciados
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — AWS Secrets Manager citado como cofre com rotação (e erro de atribuição: Heroku não é 'pai da AWS')
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — de-para de compute (Elastic Beanstalk, App Runner, EC2)
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: grandes clouds "muito parecidos"
 
 ## Amazon como empregadora
 

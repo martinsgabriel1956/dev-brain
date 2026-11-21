@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-11-16
-source_count: 13
+date_updated: 2026-11-21
+source_count: 14
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -67,9 +67,14 @@ A documentação do Azure publica um fluxograma de escolha de compute, usado em 
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — estudo IA generativa × pensamento crítico (autorrelato)
 
+## Azure no FrontPUSH (hospedagem, aula 01)
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], Microsoft Azure entra com Amazon e Google entre as "clouds [...] de empresas gigantescas", "muito parecidos".
+
 ## Key sources (adição 2026-11-03)
 
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — fluxograma de compute do Azure como base da decisão
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: Azure entre as grandes clouds
 
 ## Microsoft como empregadora (rumor)
 

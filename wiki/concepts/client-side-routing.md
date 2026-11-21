@@ -3,8 +3,8 @@ type: concept
 title: "Client-Side Routing (Roteamento no Cliente)"
 aliases: ["roteamento no cliente", "SPA routing", "History API", "pushState", "popstate"]
 date_created: 2026-08-03
-date_updated: 2026-11-17
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [frontend, spa, routing, history-api, browser]
 skill: tech-mentor-frontend
 status: stable
@@ -40,6 +40,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 React Router v5 com `BrowserRouter`, `Route exact` e `Link to`. Sem `exact`, a landing aparece em `/study`; Diego chama de "verificação de conteúdo", mas o v5 testa prefixo por segmento. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], a navegação de um app React aparece como motivo para não ser estático. Roteamento no cliente roda em hospedagem estática; o único ajuste é servir `index.html` para qualquer rota.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -47,3 +51,4 @@ React Router v5 com `BrowserRouter`, `Route exact` e `Link to`. Sem `exact`, a l
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Route exact e Link no Proffy
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: "reconstruída [...] dependendo da rota", mas o exemplo (KaBuM) recarrega
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: "as rotas que a gente cria [...] não necessita outra requisição de outra página completa"
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: navegação React em hospedagem estática

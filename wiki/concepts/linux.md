@@ -3,8 +3,8 @@ type: concept
 title: "Linux"
 aliases: ["distro Linux", "GNU/Linux", "Linux kernel"]
 date_created: 2026-07-20
-date_updated: 2026-10-14
-source_count: 3
+date_updated: 2026-11-21
+source_count: 4
 tags: [sistema-operacional, linux, servidor, open-source, cs-fundamentals]
 skill: cs-fundamentals
 status: stub
@@ -42,5 +42,10 @@ Segundo [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito e mercado
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — comandos básicos de shell e por que devs precisam reconhecê-los na era dos agentes
 
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]], "para quem conhece um pouco de Linux", o servidor cru pede `sudo apt-get install mysql-server` no terminal; a hospedagem compartilhada poupa esse passo.
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — ep. 4 reforça: estudar distros e subir um Nginx
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: apt-get no servidor cru
