@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 135
+source_count: 136
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -254,6 +254,10 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]] (autoria inferida), abre o módulo "Básico CSS" com as funções de `transform` e a perspectiva: "aqui o eixo y é invertido, não é como a gente vê lá na escola"; scale "é como se fosse aplicar desconto"; matrix "não é muito intuitivo"; "a gente nunca aplica [a perspectiva] na div que a gente está olhando".
 
+## Mini curso de CSS Animations, básico CSS, aula 02
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]] (autoria inferida): `transform-origin` e `transform-style`; "dominem essa propriedade, eu posso dizer 70% dela a gente vai entender"; prefere porcentagem no `transform-origin`; "me marque lá no Instagram que eu vou repostar".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -391,3 +395,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: princípios vindos do After Effects
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende"; coração pelo CSS puro
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: transform e perspectiva; "o eixo y é invertido"
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d

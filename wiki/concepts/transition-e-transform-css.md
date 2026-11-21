@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-20
-source_count: 13
+source_count: 14
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -62,6 +62,10 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], [[wiki/entities/nasser|Násser]] passa pelo slide do `transform`: `rotate` em `deg` em torno do centro (o "ponto de ancoragem", `transform-origin`, fica para a próxima aula); `translate` em px a partir da posição inicial, com o Y invertido (positivo desce) e Z invisível sem perspectiva; `scale` como juros (1,2 = +20%, 0,7 = −30%); `skewX`/`skewY`; várias funções separadas por espaço; e `matrix` como resumo ([[wiki/concepts/transform-matrix-css]]). O 3D fica com [[wiki/concepts/perspective-css]]. Precisões: `translate(50px, 100px)` é um deslocamento só, não "primeiro x, depois y"; a ordem importa *entre* funções; `skew(50deg, 50deg)` espelha a caixa em vez de "esticar mais"; `transform` não mexe no fluxo, então o "hack" de layout deixa o espaço original reservado.
 
+## transform-origin, transform-style e transition all (FrontPUSH, básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], as duas propriedades que "ajudam a configurar a propriedade transform": [[wiki/concepts/transform-origin-css]] (o eixo de rotação) e `transform-style` ([[wiki/concepts/perspective-css]]). A demo gira 180° no `:hover` com `transition: all 1s ease`, "para não ficar bruto". `all` anima qualquer propriedade que mude; nomear `transform` é mais seguro.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
@@ -77,3 +81,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: keyframes de scale, skew e rotate; transition × @keyframes
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: transform como base de todo motion
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: funções de transform uma a uma; Y invertido; scale como juros; matrix; perspectiva
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin, transform-style, transition all 1s ease no hover

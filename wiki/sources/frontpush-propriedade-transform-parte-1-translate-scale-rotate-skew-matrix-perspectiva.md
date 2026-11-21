@@ -102,6 +102,7 @@ Primeira aula do módulo "Básico CSS" do mini curso de CSS Animations do [[wiki
 - [[wiki/concepts/transition-e-transform-css]]: as funções de `transform`.
 - [[wiki/concepts/perspective-css]]: perspectiva e 3D no CSS (página criada nesta ingestão).
 - [[wiki/concepts/transform-matrix-css]]: `matrix()` e `matrix3d()` (página criada nesta ingestão).
+- [[wiki/concepts/transform-origin-css]]: o "ponto de ancoragem" prometido.
 - [[wiki/concepts/box-model]], [[wiki/concepts/estilos-padrao-do-navegador-e-reset]], [[wiki/concepts/seletores-css]]: o reset com `*`.
 - [[wiki/concepts/flexbox]]: centralizar a caixa.
 - [[wiki/concepts/prefixo-de-fornecedor]], [[wiki/concepts/pre-processador-css]]: o "WebKit automático".
@@ -142,7 +143,7 @@ Todas `[skill: tech-mentor-frontend]` ou `[external]` sem fetch, por conheciment
 
 ## Continuação
 
-A próxima aula promete as "propriedades do transform", começando pelo ponto de ancoragem (`transform-origin`).
+A próxima aula promete as "propriedades do transform", começando pelo ponto de ancoragem (`transform-origin`). Veio em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: [[wiki/concepts/transform-origin-css]] e `transform-style: preserve-3d`.
 
 ## Raw quotes
 

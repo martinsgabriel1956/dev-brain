@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 112
+source_count: 113
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -411,6 +411,10 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]] começa o módulo "Básico CSS" do mini curso (transform, transition, opacity, position, animation), distinto do básico da "codificação front-end", que é pré-requisito. Aula com slide das funções de `transform`, reset, demos de rotate/translate/scale/skew, matrix e perspectiva.
 
+## Mini curso de CSS Animations: básico CSS, aula 02, transform-origin e transform-style
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: slide "Propriedades transform" (`transform-origin`, `transform-style`), demo de rotação no hover com várias origens e `.parent`/`.box` com `preserve-3d`.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -525,3 +529,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, keyframes, easing; animação de lançamento
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: bibliotecas JS × CSS puro
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: funções de transform e perspectiva
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e transform-style

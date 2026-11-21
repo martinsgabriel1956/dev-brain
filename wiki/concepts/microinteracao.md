@@ -4,7 +4,7 @@ title: "Microinteração"
 aliases: ["microinterações", "microinteraction", "micro-interação", "microinteractions"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 1
+source_count: 2
 tags: [microinteracao, motion-design, animacao, feedback, hover, ux, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -35,6 +35,11 @@ Resposta pequena e pontual do sistema a uma ação do usuário. Para [[wiki/enti
 - **Animar barato.** `transform` e `opacity` em vez de `width` ou `box-shadow` ([[wiki/concepts/transition-e-transform-css]], [[wiki/concepts/taxa-de-quadros-60fps]]).
 - **Curta.** `[skill: tech-mentor-frontend]` Feedback de interação costuma ficar entre ~100 e ~300 ms; mais que isso atrasa a próxima ação. Respeitar `prefers-reduced-motion` ([[wiki/concepts/acessibilidade]]).
 
+## Hover no toque (FrontPUSH, básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o giro no `:hover` precisa ser "simulado com o clique" no modo responsivo. `[external]` Em telas de toque o hover gruda até tocar fora; `@media (hover: hover)` restringe o efeito a quem tem mouse.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: definição, botão e menu do site de Násser
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: hover simulado por clique no modo responsivo

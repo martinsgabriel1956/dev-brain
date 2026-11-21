@@ -3,8 +3,8 @@ type: entity
 title: "W3Schools"
 aliases: [w3schools, cssref w3schools, Try CSS Selector, w3schools.com, W3 Schools]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-20
+source_count: 3
 tags: [site, referencia, tutorial, web, css, html, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -19,7 +19,12 @@ Site de tutoriais e referência de HTML, CSS e JavaScript, com exemplos editáve
 
 `[external]` É de uma empresa privada (Refsnes Data, Noruega) e **não tem ligação com o [[wiki/entities/w3c]]**, apesar do nome. Para a definição normativa e o detalhe de compatibilidade, MDN (https://developer.mozilla.org) e as especificações são as fontes de referência.
 
+## O "W3C" do mini curso de CSS Animations (FrontPUSH)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o slide de `transform-style` copia a sintaxe `flat|preserve-3d|initial|inherit` e as descrições em inglês do W3Schools, que [[wiki/entities/nasser|Násser]] chama de "W3C" ([[wiki/entities/w3c]]).
+
 ## Key Sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — Try CSS Selector como material da aula de seletores
 - [[wiki/sources/principais-propriedades-css-color-background-font]] — referência para os valores de `background-size`
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: slide de transform-style copiado do W3Schools

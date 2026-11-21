@@ -4,7 +4,7 @@ title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
 date_updated: 2026-11-20
-source_count: 20
+source_count: 21
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -86,6 +86,10 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: "quando você bater o olho nessa propriedade matrix, em algum objeto SVG, você já fala, ele está aplicando a propriedade transform" ([[wiki/concepts/transform-matrix-css]]). `[external]` Em elementos SVG, o `transform-origin` padrão é `0 0`, não o centro: o `rotate` gira em torno do canto.
 
+## transform-origin em SVG (FrontPUSH, básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]], o `transform-origin` "é muito importante para quando a gente estiver falando de SVGs". `[external]` Em SVG o padrão é `0 0`; `transform-box: fill-box` + `transform-origin: center` gira a forma no lugar ([[wiki/concepts/transform-origin-css]]).
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -108,3 +112,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: SVG como base do motion; "no fundo é tags HTML"
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: SVG como otimização e line drawing no scroll
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: matrix em SVG exportado; transform-origin 0 0 em SVG
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin "muito importante" em SVG; transform-box

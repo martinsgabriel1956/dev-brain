@@ -4,7 +4,7 @@ title: "Easing (função de temporização)"
 aliases: ["easing", "timing function", "função de temporização", "transition-timing-function", "animation-timing-function", "cubic-bezier", "ease-in", "ease-out", "transição entre estados"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 2
+source_count: 3
 tags: [easing, timing-function, cubic-bezier, animacao, css, motion-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -38,7 +38,12 @@ O gráfico de uma curva de easing é progresso × tempo, não velocidade: a velo
 
 `[skill: tech-mentor-frontend]` Elemento entrando na tela: `ease-out` (chega rápido e assenta). Elemento saindo: `ease-in`. Movimento dentro da tela: `ease-in-out`. `linear` só para rotação contínua, loaders e progresso, como as órbitas de 0 a 360deg da aula 03. É o princípio *slow in and slow out* da animação tradicional.
 
+## ease antes da explicação (FrontPUSH, básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: "o modo da transição do modo ease. Não se preocupe que eu vou explicar ainda". `ease` = `cubic-bezier(0.25, 0.1, 0.25, 1)`, o padrão de `transition`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: carro freando, linear × ease, "ease invertido"
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: "níveis de velocidade diferentes"
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: ease usado antes de explicado

@@ -4,7 +4,7 @@ title: "Motion design"
 aliases: ["Motion Design", "motion", "motion para web", "animação de interface", "CSS Animations"]
 date_created: 2026-11-20
 date_updated: 2026-11-20
-source_count: 5
+source_count: 6
 tags: [motion-design, animacao, css, svg, easing, ui-design, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -59,6 +59,10 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]] começa o módulo "Básico CSS" do mini curso: `transform`, `transition`, `opacity`, `position`, `animation`. A primeira aula fica com as funções de `transform` e a [[wiki/concepts/perspective-css|perspectiva]]; os exemplos dos sites dele (seta que transita entre pontos de translate com velocidades diferentes, links que sobem no hover) são `translate` com [[wiki/concepts/easing]].
 
+## Ponto de ancoragem e 3D (básico CSS aula 02)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: [[wiki/concepts/transform-origin-css]] e `preserve-3d`, e o convite a "colocar transitando esses estados utilizando a animação".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: definição, motion para web, grade do curso
@@ -66,3 +70,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: linha do tempo, keyframes e easing; origem no After Effects
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende": otimização × facilidade
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: módulo Básico CSS: transform e perspectiva
+- [[wiki/sources/frontpush-propriedade-transform-parte-2-transform-origin-transform-style-preserve-3d]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 02: transform-origin e preserve-3d
