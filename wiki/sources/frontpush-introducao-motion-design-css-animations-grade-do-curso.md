@@ -104,6 +104,8 @@ Os "princípios de Motion" vieram na aula 03 ([[wiki/sources/frontpush-principio
 
 A "grande dualidade" biblioteca × CSS puro virou a aula 04 ([[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]): "depende", otimização × facilidade ([[wiki/concepts/css-puro-vs-biblioteca-de-animacao]]).
 
+As "propriedades de CSS voltadas ao motion" começaram no módulo "Básico CSS" com a propriedade `transform` ([[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]): funções 2D, `matrix` e [[wiki/concepts/perspective-css|perspectiva]].
+
 ## Raw quotes
 
 - "o gráfico em movimento no espaço da tela e no tempo"

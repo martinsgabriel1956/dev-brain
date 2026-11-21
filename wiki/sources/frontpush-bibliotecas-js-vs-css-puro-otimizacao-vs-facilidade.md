@@ -108,6 +108,10 @@ Rodapé: "Ao passo que existem bibliotecas JS que ajudam na manipulação dos el
 - "O próximo módulo de básico CSS" e "no próximo módulo" (propriedades de motion): é o módulo de CSS do mini curso, prometido na grade da aula 01.
 - "A grande ponta é que oferece facilidade": provável "o grande ponto"; deixado literal.
 
+## Continuação
+
+O "próximo módulo de básico CSS" começou com a propriedade `transform` ([[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]). Lá o flip 3D sai em CSS puro com `perspective` no pai, o que responde em parte ao "3D pede biblioteca" desta aula ([[wiki/concepts/perspective-css]]). O "entortar com scale" se repete na teoria ("o scale é quando eu quero deitar o objeto"), de novo no lugar de skew.
+
 ## Raw quotes
 
 - "a resposta aí depende"

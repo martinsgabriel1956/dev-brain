@@ -3,8 +3,8 @@ type: concept
 title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 26
+date_updated: 2026-11-20
+source_count: 27
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -115,6 +115,10 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `display: flex` faz dos 
 
 "Todos os elementos já vêm com o display flex" e `flexDirection: 'column'` por padrão; `flex: 1` para ocupar o espaço e `space-between` + `48%` nos botões. O RN também muda `flexShrink` e `alignContent` padrão. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Palco centralizado para as demos (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], `display: flex` no body centraliza o filho direto `.box` na horizontal e na vertical, para as demos de `transform`. `[external]` A centralização vertical só aparece se o body tiver altura (`min-height: 100vh`). O translate como "hack" para algo que "foge demais no flexbox" move só o desenho, não o espaço no fluxo.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -143,3 +147,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `display: flex` faz dos 
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: combo de centralização no primeiro `.scss`
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: flexbox como contraexemplo de precisão
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: column padrão e flex: 1 no RN
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: body em flex como palco; translate como "hack" de flexbox

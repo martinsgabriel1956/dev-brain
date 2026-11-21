@@ -3,8 +3,8 @@ type: concept
 title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
-date_updated: 2026-11-16
-source_count: 21
+date_updated: 2026-11-20
+source_count: 22
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -65,6 +65,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `paddi
 
 Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], Násser faz a ponte para o JavaScript: "lá em CSS tudo é div, tudo é caixa, aqui praticamente tudo é objeto".
 
+## box-sizing no reset da aula de transform (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], o reset `*` leva `box-sizing: border-box` "para poder ele ter como referência a borda e não o conteúdo". Na demonstração, o texto grande "passa da minha caixa" com `border-box`, e com `content-box` e `padding: 0 20px` "o conteúdo se adequa". `[external]` O transbordo de texto é `overflow`, não efeito do box-sizing; com `content-box` o padding soma por fora (100 + 40 = 140 px). `*` não pega `::before`/`::after`.
+
 ## Key sources
 
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
@@ -87,3 +91,4 @@ Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], N�
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reset com `box-sizing: border-box`; padding de 16 px nos itens
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: padding antes da borda no legend
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: "tudo é caixa" vira "tudo é objeto"
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: reset `*` com border-box; demonstração mistura box-sizing e overflow

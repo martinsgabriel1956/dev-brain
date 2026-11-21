@@ -4,7 +4,7 @@ title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
 date_updated: 2026-11-20
-source_count: 19
+source_count: 20
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -82,6 +82,10 @@ Em [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-cur
 
 Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], Násser compensa o site pesado de motion com "SVGs em todas as minhas páginas" e o mínimo de imagens, e mostra SVG desenhado em linhas no scroll (técnica usual: `stroke-dasharray` + `stroke-dashoffset`). Tensão com a aula 06 de otimização: SVG inline com muitos nós infla o DOM.
 
+## matrix no SVG (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: "quando você bater o olho nessa propriedade matrix, em algum objeto SVG, você já fala, ele está aplicando a propriedade transform" ([[wiki/concepts/transform-matrix-css]]). `[external]` Em elementos SVG, o `transform-origin` padrão é `0 0`, não o centro: o `rotate` gira em torno do canto.
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -103,3 +107,4 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: SVG inline e DOM grande
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: SVG como base do motion; "no fundo é tags HTML"
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: SVG como otimização e line drawing no scroll
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: matrix em SVG exportado; transform-origin 0 0 em SVG

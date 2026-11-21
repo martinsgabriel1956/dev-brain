@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-20
-source_count: 134
+source_count: 135
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -250,6 +250,10 @@ Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao
 
 Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]] (diz o nome): responde "depende" à pergunta biblioteca × CSS puro; "o meu coração bate por construir páginas o mais otimizado possível"; anime.js é "uma das minhas preferidas".
 
+## Mini curso de CSS Animations, básico CSS, aula 01
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]] (autoria inferida), abre o módulo "Básico CSS" com as funções de `transform` e a perspectiva: "aqui o eixo y é invertido, não é como a gente vê lá na escola"; scale "é como se fosse aplicar desconto"; matrix "não é muito intuitivo"; "a gente nunca aplica [a perspectiva] na div que a gente está olhando".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -386,3 +390,4 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: site como vitrine de motion
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: princípios vindos do After Effects
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: "depende"; coração pelo CSS puro
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: transform e perspectiva; "o eixo y é invertido"

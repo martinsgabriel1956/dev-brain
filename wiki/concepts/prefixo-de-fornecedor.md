@@ -3,8 +3,8 @@ type: concept
 title: "Prefixo de fornecedor (vendor prefix)"
 aliases: ["vendor prefix", "prefixos CSS", "-webkit-", "-moz-", "-ms-", "-o-", "Autoprefixer"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-20
+source_count: 4
 tags: [css, compatibilidade, navegador, vendor-prefix, autoprefixer, postcss]
 skill: tech-mentor-frontend
 status: stub
@@ -32,8 +32,13 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o pr
 
 Em [[wiki/sources/frontpush-mixin-e-content-sass]], "a facilidade de adicionar aqueles prefixos, traço webkit, traço moz" é listada como uso de mixin. Era o padrão antes do Autoprefixer; hoje fica com a ferramenta.
 
+## WebKit automático no transform (FrontPUSH, básico CSS aula 01)
+
+Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], [[wiki/entities/nasser|Násser]] usa Sass "porque ele adiciona o WebKit nos meus comandos de forma automática". Quem adiciona é o Autoprefixer da extensão ([[wiki/entities/live-sass-compiler]]); para `transform`, o prefixo é desnecessário há anos.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Can I use com `transform`; `-webkit-` gerado no CSS compilado
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: `-webkit-` e `-ms-` gerados pelo Live Sass Compiler
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin para prefixos (prática antiga)
+- [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: "o Sass adiciona o WebKit"; prefixo de transform já desnecessário
