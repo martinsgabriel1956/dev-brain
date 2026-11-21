@@ -3,8 +3,8 @@ type: entity
 title: "Live Sass Compiler (extensão do VS Code)"
 aliases: ["Live Sass Compiler", "Watch Sass", "glenn2223.live-sass", "ritwickdey.live-sass"]
 date_created: 2026-11-16
-date_updated: 2026-11-20
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [ferramenta, vs-code, extensao, sass, scss, compilador]
 skill: tech-mentor-frontend
 status: stub
@@ -33,6 +33,10 @@ Em [[wiki/sources/frontpush-import-e-partials-sass]], o Watch Sass gerou `colors
 
 Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]], o Sass entra "porque ele adiciona o WebKit nos meus comandos de forma automática", por "um plugin que eu instalo aqui no VS Code": esta extensão e seu Autoprefixer.
 
+## Aula de SVG (FrontPUSH, propriedades SVG aula 02)
+
+Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: "eu aperto para poder rodar o sass, ele compila" o `style.scss`, com WebKit inserido: o botão e o autoprefixer da extensão, como nas aulas de transform.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: citada na aula de ambiente
@@ -40,3 +44,4 @@ Em [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: instalação, Watch Sass, `.map`, prefixos
 - [[wiki/sources/frontpush-import-e-partials-sass]]: gera CSS para todo `.scss` que não é partial
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: Autoprefixer como motivo para usar Sass
+- [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: compila o style.scss da aula de SVG

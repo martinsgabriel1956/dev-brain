@@ -3,7 +3,7 @@ type: source
 title: "Introdução ao Motion Design: o que é e a grade do mini curso de CSS Animations (FrontPUSH)"
 aliases: ["FrontPUSH motion aula 01", "Introdução ao Motion Design", "mini curso Patch CA", "CSS Animations, aula 01"]
 date_created: 2026-11-20
-date_updated: 2026-11-20
+date_updated: 2026-11-21
 source_count: 0
 tags: [motion-design, animacao, css, svg, transicao, estado, biblioteca-vs-css-puro, gsap, curso, frontend]
 skill: tech-mentor-frontend
@@ -98,6 +98,8 @@ O slide da aula lista: Introdução; O que é motion design? ("É o gráfico em 
 ## Continuação
 
 O tópico "Vantagens e boas práticas" virou a aula 02 ([[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]): pontos de atenção, [[wiki/concepts/microinteracao]], "não coloque motion em tudo" e o preço em desempenho. `prefers-reduced-motion` também não aparece lá.
+
+O tópico SVG da grade abre em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: o que é, por que usar e o "espelho do Figma".
 
 
 Os "princípios de Motion" vieram na aula 03 ([[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]): linha do tempo, [[wiki/concepts/keyframes-css]] e [[wiki/concepts/easing]], não os 12 princípios da Disney inferidos acima.

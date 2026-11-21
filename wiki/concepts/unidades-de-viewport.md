@@ -3,8 +3,8 @@ type: concept
 title: "Unidades de viewport (vh, vw, dvh, svh, lvh)"
 aliases: ["viewport units", "viewport unit", "vh", "vw", "100vh", "dvh", "svh", "lvh", "unidades relativas à tela"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-21
+source_count: 6
 tags: [css, frontend, unidades, viewport, responsivo, mobile]
 skill: tech-mentor-frontend
 status: stub
@@ -41,6 +41,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o con
 
 `html, body, #root { height: 100vh }`, `#page-landing` com `100vw`/`100vh` e `.container` em `90vw`. O `100vw` inclui a barra de rolagem e pode criar rolagem horizontal no desktop. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+## Viewport do SVG é outra coisa (FrontPUSH, propriedades SVG aula 03)
+
+Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]], "viewport" é a área do elemento `<svg>` (`width`/`height`), "a janelinha", não a janela do navegador que `vw`/`vh` medem ([[wiki/concepts/viewbox-svg]]).
+
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: `body` com `100vh` para a demonstração ocupar a tela
@@ -48,3 +52,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o con
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: 100vh em html/body, 90vw no container
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: 90vw, 100vw e 100vh
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 100vh/100vw/90vw no Proffy em React
+- [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: viewport do SVG ≠ viewport da página
