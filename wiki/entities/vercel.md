@@ -3,8 +3,8 @@ type: entity
 title: "Vercel"
 aliases: ["Vercel"]
 date_created: 2026-07-28
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-21
+source_count: 7
 tags: [tech-mentor-ai, harness, tool-call, deploy, serverless]
 skill: tech-mentor-ai
 status: stub
@@ -40,7 +40,12 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], a Vercel aparece no repositório `remoteintech/remote-jobs` como "worldwide", com vagas remotas em vários países e híbridas em São Francisco; o autor supõe que, "sendo quase uma Big Tech", ela também faça relocação.
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], "o próprio Netlify ou a Vercel também são muito bons": clouds com plano gratuito e pago, ao lado do GitHub Pages.
+
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: deploy do front-end (ex-ZEIT)
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: alternativa ao Netlify

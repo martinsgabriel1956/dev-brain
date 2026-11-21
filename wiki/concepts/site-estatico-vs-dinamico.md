@@ -3,8 +3,8 @@ type: concept
 title: "Site estático vs. dinâmico (e interface dinâmica)"
 aliases: ["interface dinâmica", "interface estática", "site estático", "site dinâmico", "página dinâmica"]
 date_created: 2026-11-17
-date_updated: 2026-11-17
-source_count: 2
+date_updated: 2026-11-21
+source_count: 5
 tags: [frontend, backend, renderizacao, spa, ssr, ssg, site-estatico]
 skill: tech-mentor-frontend
 status: stub
@@ -35,7 +35,22 @@ A definição junta os sentidos 1 e 2. O exemplo é do sentido 1 (ele mesmo diz 
 - [[wiki/concepts/template-engine]]
 - [[wiki/concepts/historia-do-front-end]]
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], hospedagem serve "um site ou aplicação web", "e olha que tem diferença": a aplicação "necessita de mais configurações". Na escolha do host isso pesa: GitHub Pages só estático, Heroku roda processos ([[wiki/concepts/hospedagem-de-sites]]).
+
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], estático é "HTML, CSS e JS puros", "denominado estático porque ele não consegue construir funcionalidades complexas" (to-do list que some no F5), e React não caberia nele. A aula mistura os eixos da tabela acima: estático é o servidor entregar arquivos prontos; um build de React é estático e navega entre telas. O critério que sobra, e que importa para hospedar, é o do servidor: PHP pede interpretador, estático só um servidor de arquivos.
+
+## FrontPUSH, hospedagem aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]], o critério vira prático: o portfólio (com GSAP por `<script>`, sem npm) e o CreatorPUSH são estáticos porque "qual é a funcionalidade que eu preciso que ele tenha? Nenhuma"; página de vendas também ("texto, imagem e link"), por ser "bem leve", "escalável", "performático". O FrontPUSH é PHP por ter outras páginas (cadastro, lista de espera). Ressalvas: páginas ligadas por link também são estáticas; o build de React também é estático.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: interface dinâmica × estática pela KaBuM
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: o mesmo e-commerce da KaBuM, agora explicado como HTML montado no servidor
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: site × aplicação web na hora de hospedar
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: website estático × aplicação web (eixos misturados)
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: portfólio e vendas estáticos, FrontPUSH em PHP

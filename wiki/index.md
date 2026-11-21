@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-20
+date_updated: 2026-11-21
 ---
 
 
@@ -26,6 +26,12 @@ date_updated: 2026-11-20
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]] | Módulo de hospedagem, aula 06, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 20 min, fim do tutorial da [[wiki/entities/hostgator]]: `public_html` como raiz do domínio principal (portfólio estático com [[wiki/entities/gsap]] por script, sem npm); por que portfólio e página de vendas são estáticos ("qual é a funcionalidade [...]? Nenhuma"); upload por "carregar" no [[wiki/entities/cpanel]] ou pelo [[wiki/entities/filezilla]] (FTP sem criptografia, "clicar em sim"); `/Nubank` e `/Spider-Man` em subpastas; FrontPUSH e CreatorPUSH como domínios adicionais em `public_html/frontpush` e `/creatorpush` ([[wiki/concepts/virtual-host]]); FrontPUSH em PHP por ter página de cadastro ("com PHP é bem mais fácil" que rota em React); AutoSSL verde/vermelho. Precisões: build de React não roda no servidor, páginas ligadas por link são estáticas (o motivo real do PHP seria o formulário), SFTP ≠ FTPS, domínio adicional também abre como subpasta, URLs diferenciam maiúsculas, AutoSSL valida o DNS, TLS e não SSL, IP `.25` × `.29` |
+| [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]] | Módulo de hospedagem, aula 05, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 11 min, tour pelo [[wiki/entities/cpanel]] da [[wiki/entities/hostgator]]: domínio na Registro.br separado do host ("um precisa combinar com o outro"); login em "domínio barra cPanel"; [[wiki/entities/phpmyadmin]] e MySQL prontos × `apt-get install mysql-server` no servidor cru; gerenciador de arquivos e `public_html`; [[wiki/concepts/ftp]]; domínios adicionados; e-mail `contato@frontpush.com.br`; largura de banda estourada; SSH; SSL grátis nos três domínios; preparado para [[wiki/entities/wordpress]], "eu indico" para PHP. Precisões: FTP em texto claro (SFTP/FTPS), `public_html` = raiz do domínio principal, "banda" = transferência mensal, SSH é shell remoto, e-mail próprio depende do MX (SPF/DKIM/DMARC), AutoSSL cobre `mail.`, phpMyAdmin não cria o banco, MariaDB no Debian |
+| [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]] | Módulo de hospedagem, aula 04, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 8,5 min, primeira prática: escolher host ("naquelas maiores"); planos P, M e Turbo da [[wiki/entities/hostgator]] (Turbo por SSD, SSL grátis, processamento); [[wiki/entities/hostinger]] "melhor" (Git, SSH, CDN), mas o plano "já está pago"; e-mail técnico com name servers `nspro34`/`nspro35.hostgator.com.br` ("master e slave"), IP e acesso ao [[wiki/entities/cpanel]]; domínio pago direto na [[wiki/entities/registro-br]] (R$ 40/ano, CPF/CNPJ); delegar aos servidores do host, "demora algumas horas". Precisões: [[wiki/concepts/name-server\|name server]] é nome, não IP; delegar × registro A; primário/secundário; atraso = TTL; domínio grátis via Registro.br só `.br` (conferir titular); SSL grátis virou padrão; "R$ 185 por dois anos" é outro período |
+| [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]] | Módulo de hospedagem, aula 03, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 8 min: "por que você não utilizou [...] ReactJS"; [[wiki/concepts/site-estatico-vs-dinamico\|website estático]] = HTML, CSS e JS "que o browser entende", sem instalar nada, mas "não consegue construir funcionalidades complexas" (to-do list no F5, local storage); aplicação web = back-end, API, banco, configuração; FrontPUSH em [[wiki/entities/php]] só abre com o Apache ligado no [[wiki/entities/xampp]] (80/443); [[wiki/entities/react]] em `localhost:3000` precisa de build e "de um MySQL"; terminal; HostGator/Hostinger com Apache pronto; CreatorPUSH é estático. Precisões: estático é do servidor, não da funcionalidade; build de React é estático (SPA + redirect); React não precisa de MySQL; Apache sozinho não roda PHP; a demo mostra falta de servidor; Hostinger usa LiteSpeed; a pergunta do React não é respondida de frente |
+| [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]] | Módulo de hospedagem, aula 02, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 9 min, "bem superficial": [[wiki/concepts/endereco-ip\|IP]] "é um protocolo" que identifica o dispositivo como um CPF; IPv4 (4 grupos, 32 bits) × [[wiki/concepts/ipv6]] (8 grupos, 128 bits) por causa da IoT; a pergunta da aula 01 respondida: no celular, `192.168.1.92:5500` na mesma rede ([[wiki/concepts/localhost]]); [[wiki/concepts/ip-publico-vs-ip-privado\|IP público × privado]] com faixas "Classe A/B/C"; `ping frontpush.com.br` → `162.241.61.29` (HostGator); [[wiki/concepts/dns]] converte nome em IP; [[wiki/entities/registro-br]] para domínios no Brasil. Precisões: público ≠ fixo, "demodulação" = NAT, classes × CIDR (RFC 1918), IPv4 esgotou em 2011 e IPv6 já é usado, ping é ICMP, IP de hospedagem compartilhada mostra a página padrão, Registro.br só `.br` |
+| [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]] | Módulo de hospedagem, aula 01, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 9 min, "módulo bônus": [[wiki/concepts/hospedagem-de-sites\|hospedagem]] = "serviço online que permite a publicação de um site ou aplicação web" ("tem diferença"); por que `127.0.0.1:5500/index.html` não abre no celular da mesma casa ([[wiki/concepts/localhost]]); esquema da [[wiki/concepts/url]] (protocolo, host, [[wiki/concepts/porta-de-rede\|porta]], arquivo ou diretório); slide: GitHub/Netlify/Heroku "Gratuitos*", Amazon/Google/Azure "Clouds", Hostinger/HostGator "Pagos"; deploy pelo Git em vez de FTP; FrontPUSH, CreatorPUSH e portfólio no mesmo servidor. Precisões: 80 é do HTTP (HTTPS 443), o servidor serve o `index.html`, loopback × IP privado × NAT, free da Heroku extinto em 2022, GitHub Pages só estático, virtual host, FTP sem criptografia |
 | [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]] | Propriedades SVG, aula 03, do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome), 19,5 min: entender a estrutura "para [...] pelo menos se guiar" no código exportado do [[wiki/entities/figma\|Figma]]; plano cartesiano com quatro quadrantes; [[wiki/concepts/viewbox-svg\|viewport × viewBox]] ~ "tela × resolução" (janelinha que corta; viewBox 150 = zoom in, 600 = zoom out; tira `width`/`height` e deixa o CSS); formas básicas (`circle r cx cy` preto por padrão, `rect`, `line`, `polyline`, `ellipse`, `polygon`); `fill` × `background` ("talvez mude"); [[wiki/concepts/path-svg\|path]] com `M`/`L`/`A`/`Z` e o `C` que ele não conhece ("eu nunca entendi de fato"), morph do Spotify; `defs` com filtros (`feBlend`, drop shadow) e gradiente linear chamado por ID no `fill`; propriedades exclusivas (`clip-rule`, `fill-*`, `stroke-*`); `filter0_d` repetido entre exports. Precisões: Y cresce para baixo, viewBox tem 4 números + `preserveAspectRatio`, `background` não pinta formas, presentation attributes perdem para o CSS, `M` é um ponto só, `C` = Bézier cúbica, morph pede comandos iguais, `defs` guarda elementos, cadeia de filtro do Figma, background blur via `foreignObject`, atributo `transform` ≠ CSS, `fill-rule` |
 | [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]] | Propriedades SVG, aula 02, do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 13,5 min: [[wiki/concepts/formas-de-inserir-svg\|quatro formas]], "acredito que são as únicas quatro": `<img>` (ícones estáticos; "não tem edição no DOM"), `background-image` (`url()` relativo ao CSS, `cover`, "um height fixo"), `iframe`/`object`/`embed` ("muito ruim", "lento"; data URI "só vi desvantagem") e inline ("o módulo que eu mais utilizo": DOM, CSS por parte, "não precisa fazer request HTTP"; preço: "volume de código", include por JS ou PHP); [[wiki/entities/can-i-use\|Can I Use]] (IE 6–8, Android antigo); SVG 8KB × PNG 728KB, "91 vezes mais leve"; Sass com "inserção de WebKit". Precisões: faltam sprite `<use>`, máscara CSS e build (SVGR), `<style>` interno anima via `<img>`, `cover` recorta, `object` ≠ data URI (base64 +33%, URL-encoded), inline sem cache e repetido, IDs de gradiente colidem, include por JS volta a requisição, WebKit é do Autoprefixer, a11y das quatro formas |
 | [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]] | Propriedades SVG, aula 01, do mini curso de CSS Animations do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 11,5 min: [[wiki/concepts/formato-svg\|SVG]] é "vetorial no formato XML que suporta animações", "literalmente código", "adimensional"; "pense como um espelho do Figma" (export "não muda em nada"; layer blur, background blur, inner shadow); export não responsivo, mas pode ser fluido; [[wiki/concepts/densidade-de-pixels\|densidade]]: o zoom não pixela, sem exportar 1x/1,5x/2x; vetores separados (Ctrl-Shift-G) manipuláveis pelo CSS; "Liquid Motion", árvore no DOM, JS; [[wiki/concepts/stroke-svg\|stroke]] redondo e dash array; "Photoshop da web"; desvantagem: "precisa estar no estilo inline". Precisões: XML ≠ "assim como o PHP", "mais leve" depende, nitidez ≠ desempenho, `width`/`height` fixos × `viewBox`, background blur sem filtro SVG, *gooey*, `round` come o vão, inline só para CSS/JS da página, DPR × tamanho de tela, a11y de SVG ausente |
@@ -1067,6 +1073,37 @@ date_updated: 2026-11-20
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de hospedagem aula 06: HostGator parte 3 (2026-11-21)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/virtual-host]] | Vários sites num IP/porta pelo cabeçalho `Host` (e SNI no HTTPS); `<VirtualHost>`/`server_name`; domínio adicional do cPanel; acesso por IP cai no site padrão; subpasta × domínio |
+
+### FrontPUSH, módulo de hospedagem aula 05: HostGator parte 2 (2026-11-21)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/ftp]] | FTP (RFC 959, texto claro, portas 21 + dados) × SFTP (sobre SSH, 22) × FTPS (TLS); conta FTP do cPanel × gerenciador de arquivos × deploy por Git |
+
+### FrontPUSH, módulo de hospedagem aula 04: HostGator parte 1 (2026-11-21)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/name-server]] | Servidor autoritativo e delegação (NS na zona do TLD); delegar ao host × registro A no registrador; primário/secundário; propagação = TTL; zona pronta antes de trocar |
+
+### FrontPUSH, módulo de hospedagem aula 02: IP e DNS (2026-11-21)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/ip-publico-vs-ip-privado]] | Faixas RFC 1918 (`10/8`, `172.16/12`, `192.168/16`) não roteáveis; NAT/PAT e CGNAT; público ≠ fixo; por que site em `192.168.x` só é visto no mesmo Wi-Fi; "classes" × CIDR |
+
+### FrontPUSH, módulo de hospedagem aula 01: introdução (2026-11-21)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/hospedagem-de-sites]] | Servidor sempre ligado com IP público; três famílias (tradicional/compartilhada, plataformas de front-end e PaaS, grandes clouds) e o que cada uma serve; site × aplicação web |
+| [[wiki/concepts/localhost]] | `localhost` = loopback (`127.0.0.1`, `::1`); no celular aponta para o celular; mesma rede pede IP privado + servidor em `0.0.0.0`; internet pede hospedagem (NAT) |
 
 ### FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura do SVG (2026-11-21)
 
@@ -4050,6 +4087,13 @@ date_updated: 2026-11-20
 
 ## Entities
 
+- [[wiki/entities/filezilla]] — cliente FTP/FTPS/SFTP open source (e servidor no XAMPP); no FrontPUSH, upload do portfólio para public_html
+- [[wiki/entities/phpmyadmin]] — administração web de MySQL/MariaDB em PHP; vem no XAMPP e no cPanel; no FrontPUSH, "programinha" com interface gráfica
+- [[wiki/entities/wordpress]] — CMS em PHP + MySQL, o mais instalado em hospedagem compartilhada; no FrontPUSH, motivo para indicar HostGator/Hostinger
+- [[wiki/entities/cpanel]] — painel da hospedagem compartilhada: domínios, zona DNS, SSL, MySQL, FTP, WordPress; credenciais no e-mail técnico da HostGator
+- [[wiki/entities/xampp]] — pacote local com Apache, MariaDB, PHP, FileZilla, Mercury e Tomcat; no FrontPUSH, liga o Apache (80/443) para o site em PHP abrir em `localhost/frontpush`
+- [[wiki/entities/php]] — linguagem no servidor que gera o HTML por requisição; precisa do interpretador (mod_php, PHP-FPM, `php -S`); o site do FrontPUSH é em PHP
+- [[wiki/entities/registro-br]] — registro de domínios `.br` do NIC.br; no FrontPUSH, "o órgão para [...] registrar o domínio no Brasil"; não vende `.com`
 - [[wiki/entities/chrome-devtools]] — ferramentas de desenvolvedor do Chrome; no FrontPUSH, editar CSS ao vivo e o editor de cubic-bezier
 - [[wiki/entities/cubic-bezier-com]] — ferramenta de Lea Verou para desenhar curvas `cubic-bezier()`, comparar com presets e copiar o valor
 - [[wiki/entities/anime-js]] — biblioteca JS de animação (MIT, Julian Garnier); timelines, stagger, SVG; v4 modular com modo WAAPI; "uma das preferidas" de Násser

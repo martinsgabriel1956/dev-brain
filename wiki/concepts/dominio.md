@@ -3,8 +3,8 @@ type: concept
 title: "Domínio (nome + TLD)"
 aliases: ["domínio", "domain", "TLD", "top level domain", "nome de domínio"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-11-21
+source_count: 4
 tags: [rede, dominio, dns, tld, web]
 skill: tech-mentor-networking
 status: stub
@@ -30,5 +30,20 @@ O ponto separa as duas partes. Consequência importante: **mesmo nome + TLD dife
 
 Domínios são comprados em **registradores** (ex.: [[wiki/entities/godaddy]], [[wiki/entities/hostinger]]), onde também se configuram os **name servers** que decidem para qual DNS o domínio aponta.
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], "contrata o domínio, vincula" faz parte do método tradicional; o autor tem FrontPUSH, CreatorPUSH e portfólio "tudo no mesmo servidor, só que com três domínios diferentes" (provável virtual host; a aula só anuncia).
+
+## FrontPUSH, hospedagem aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]], [[wiki/entities/registro-br]] é "o órgão para [...] registrar o domínio no Brasil"; frontpush.com.br "já está registrado no meu nome". Vale só para `.br`; `.com` e outros vão por registradores como a [[wiki/entities/godaddy]].
+
+## FrontPUSH, hospedagem aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: o autor prefere "sempre pagar o meu domínio na Registro.br" (R$ 40/ano na tela), com titularidade por CPF ou CNPJ, e aponta os servidores DNS para o host. Domínio grátis do host: conferir titular e preço de renovação ([[wiki/concepts/name-server]]).
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — domínio como tradução de IP; composição nome + TLD; TLD diferente = domínio diferente
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: três domínios no mesmo servidor
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, hospedagem aula 02: Registro.br para domínios .br
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: registrar direto e delegar ao host

@@ -3,8 +3,8 @@ type: entity
 title: "Netlify"
 aliases: ["netlify", "Netlify Deploy"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-21
+source_count: 2
 tags: [deploy, frontend, hospedagem, jamstack, ferramenta]
 skill: lang-dynamic
 status: stub
@@ -20,6 +20,11 @@ Na NLW #1 ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-de
 
 Relacionado: [[wiki/concepts/deploy-strategies]], [[wiki/concepts/object-storage]].
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], "plano starter [...] para projetos pessoais"; "você pode buildar a sua aplicação sem precisar [...] entrar no servidor [...] por meio de um FTP", "direto pelo Git". O módulo fará o deploy nele e no GitHub Pages. Os nomes dos planos mudaram desde então `[external]` (https://www.netlify.com/pricing/).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: opção de deploy do front-end
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: plano starter, deploy pelo Git em vez de FTP

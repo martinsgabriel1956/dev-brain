@@ -3,8 +3,8 @@ type: concept
 title: "Protocolo de Rede"
 aliases: ["network protocol", "TCP/IP", "HTTP", "modelo em camadas", "OSI"]
 date_created: 2026-06-26
-date_updated: 2026-10-09
-source_count: 7
+date_updated: 2026-11-21
+source_count: 8
 tags: [cs-fundamentals, redes, protocolos, tcp-ip, http, networking]
 skill: cs-fundamentals
 status: draft
@@ -95,5 +95,10 @@ Antes de qualquer resposta HTTP chegar, três etapas já consumiram latência: *
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — UDP em jogos e videochamada; analogia dos Correios para camada 4 (caminhoneiro) vs camada 7 (atendente/triagem)
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — DNS → TCP handshake → TLS → HTTP como latência escondida atrás de "digitar uma URL e apertar enter"
 
+## FrontPUSH, hospedagem aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: a internet é "um conglomerado de computadores" que precisam de "regras de comunicação e é isso que os protocolos fazem"; o IP é o protocolo que identifica o destino do pacote.
+
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — a URL carrega protocolo + host + recurso: o ponto de entrada das camadas descritas aqui
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, hospedagem aula 02: protocolo como regras de comunicação; IP

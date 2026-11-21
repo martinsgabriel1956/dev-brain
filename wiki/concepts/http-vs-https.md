@@ -3,8 +3,8 @@ type: concept
 title: "HTTP vs HTTPS"
 aliases: ["HTTP", "HTTPS", "http vs https", "hypertext transfer protocol secure"]
 date_created: 2026-08-12
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-21
+source_count: 14
 tags: [rede, http, https, ssl, tls, seguranca, man-in-the-middle]
 skill: tech-mentor-networking
 status: stub
@@ -63,6 +63,26 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: POST de novo como "escondido"
 - [[wiki/sources/jstack-http-e-apis-rest]]: scheme HTTPS ("S de Security" → Secure)
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: HTTP é "Hypertext Transfer Protocol", o protocolo na frente da URL; o módulo promete "instalar certificados SSL, que é para poder a gente colocar o protocolo HTTPS". Com HTTPS a porta padrão passa a ser 443, não a 80 que a aula cita.
+
+## FrontPUSH, hospedagem aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]], o plano Turbo da HostGator tinha "certificado SSL grátis", "para você ter o protocolo HTTPS [...] para poder garantir confiabilidade". Hoje AutoSSL/Let's Encrypt tornaram o certificado gratuito comum.
+
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]], o SSL grátis do cPanel sai "só com alguns cliques", instalado nos três domínios do autor, "tanto para e-mail, tanto para o protocolo HTTPS" (AutoSSL inclui `mail.`, `webmail.`), e "aparece o cadeadinho".
+
+## FrontPUSH, hospedagem aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: AutoSSL no cPanel, verde/vermelho por domínio, "executar AutoSSL" nos novos. Vermelho costuma ser DNS ainda sem apontar para o servidor; certificados de ~90 dias renovados sozinhos. "SSL barra TLS": o protocolo é TLS.
+
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — protocolo (`http`/`https`) como a parte da URL que diz como acessar
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: HTTP como canal; HTTPS e o cadeado
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: sigla do HTTP; SSL prometido
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: SSL grátis no plano
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: AutoSSL nos três domínios
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: AutoSSL e status do certificado

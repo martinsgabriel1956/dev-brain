@@ -3,8 +3,8 @@ type: concept
 title: "SSH e Chaves SSH"
 aliases: ["ssh", "secure shell", "chave ssh", "ssh-keygen", "authorized_keys", "openssh"]
 date_created: 2026-07-10
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-11-21
+source_count: 7
 tags: [ssh, openssh, ed25519, autenticacao, criptografia-assimetrica, iam, hardening, bastion]
 skill: tech-mentor-security
 status: stable
@@ -78,9 +78,24 @@ Host two
 
 [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: o cliente SSH ocupa o lugar do programa local e o `sshd` remoto fala com o master de um [[wiki/concepts/pty-pseudoterminal|PTY]] no servidor. Um [[wiki/concepts/terminal-web-broker-websocket-ssh|broker]] pode abrir SSH em nome do navegador; o fingerprint do host é conferido a cada sessão (`ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub`), pois o MVP não guarda `known_hosts` ([[wiki/concepts/design-efemero-zero-persistencia]]).
 
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], "Acesso ao terminal" leva estrela no slide: aplicação web "na maioria das vezes" pede terminal para configurar. No servidor isso é SSH, que hospedagem compartilhada costuma limitar e VPS/cloud dão.
+
+## FrontPUSH, hospedagem aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]], "acesso a SSH" (com Git e CDN) é o motivo para o autor achar a Hostinger "um plano melhor que da HostGator".
+
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: "o acesso SSH é quando você vai acessar diretamente essa pastinha aqui, só que via terminal", "utilizando o comando do SSH no Linux". É um shell remoto na conta (comandos, Git), não só a pasta; e existe no Windows também. SFTP roda sobre ele ([[wiki/concepts/ftp]]).
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — SSH como cliente/`sshd` sobre PTY; conferência de fingerprint no terminal web
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/portas-de-rede-como-funcionam]] — porta 22 como well-known port do SSH
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — via SSH em produção você opera por comandos de shell; interface gráfica costuma inexistir ou ser travada
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: acesso ao terminal para aplicação web
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: SSH como critério de plano
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: SSH como "a pastinha via terminal"

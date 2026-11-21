@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-21
-source_count: 142
+source_count: 148
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -282,6 +282,30 @@ Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]] (autori
 
 Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]] (diz o nome): "eu nunca entendi de fato [...] como se dá o caminho", "eu faço pelo Figma"; "a maioria disso eu aprendi sozinho e não tenho medo de falar que eu tenho muito a aprender"; não mexe no viewBox exportado; bordas são "um dos meus efeitos principais".
 
+## Módulo de hospedagem, aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]] (autoria inferida): "muita gente sempre me pergunta de como eu hospedo os meus websites"; FrontPUSH, CreatorPUSH e portfólio "tudo no mesmo servidor"; repete que o browser puxa o `index.html`.
+
+## Módulo de hospedagem, aula 02
+
+Em [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]] (perguntas encenadas "Ah, Násser"): "vai ser bem superficial"; seus três domínios, inclusive o pessoal, ficam "no mesmo servidor que é na HostGator"; diz acessar o site pelo IP.
+
+## Módulo de hospedagem, aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: "o pessoal sempre me pergunta, Násser, por que você não utilizou nenhuma biblioteca ou framework no FrontPUSH?"; usa [[wiki/entities/xampp]] e PHP; "se não me engano" sobre a porta 3000 do React.
+
+## Módulo de hospedagem, aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: "eu sempre procuro ir naquelas maiores"; assinou o Turbo da HostGator; acha a Hostinger melhor, mas o plano "já está pago"; prefere registrar domínios direto na Registro.br; três domínios no CPF dele.
+
+## Módulo de hospedagem, aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]] ("eu, Násser, prefiro deixar separado"): registra domínios fora do host; "já utilizei muito" o phpMyAdmin; já estourou a largura de banda do próprio site; indica hospedagem compartilhada para PHP/WordPress.
+
+## Módulo de hospedagem, aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: portfólio estático com GSAP por script em `public_html`; projetos Nubank e Spider-Man em subpastas; FrontPUSH em PHP "pela facilidade"; "para que eu vou fazer uma aplicação web [...] sendo que para essa aplicação eu não preciso disso".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -426,3 +450,9 @@ Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-d
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: abre o módulo de SVG; site todo em SVG
 - [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: quatro formas de inserir SVG; inline por padrão
 - [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: estrutura do SVG; admite não ler o path
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, módulo de hospedagem aula 01: como ele hospeda os sites
+- [[wiki/sources/frontpush-ip-e-dns-ipv4-ipv6-ip-publico-privado-registro-br]]: FrontPUSH, módulo de hospedagem aula 02: domínios dele na Registro.br e HostGator
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, módulo de hospedagem aula 03: FrontPUSH em PHP, sem framework
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, módulo de hospedagem aula 04: escolha de host e domínios
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, módulo de hospedagem aula 05: preferências e histórico de hospedagem
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: como hospeda portfólio, projetos e cursos

@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-10-09
-source_count: 12
+date_updated: 2026-11-21
+source_count: 17
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -38,8 +38,27 @@ Também citada (oitavo bloco patrocinado) em [[wiki/sources/omxterm-terminal-web
 
 Patrocínio do vídeo: VPS (custo previsível, qualquer tecnologia) com Dokploy para deploy GitHub → contêiner Docker; usam há +10 anos; cupom "códigofonte".
 
-## Key Sources
+## FrontPUSH, hospedagem aula 01
 
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], exemplo do "método tradicional": contratar, subir os arquivos, domínio, SSL.
+
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], citada com a HostGator como servidor que já vem com Apache na porta 80. Na hospedagem compartilhada a Hostinger usa LiteSpeed `[external, não verificado]`; PHP roda pronto do mesmo jeito.
+
+## FrontPUSH, hospedagem aula 04
+
+Em [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: "tem acesso Git, tem acesso a SSH, tem CDN, então eu acredito que a Hostinger tem sido um plano melhor que da HostGator"; é o exemplo de troca de host (copiar os dois DNS dela na Registro.br).
+
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]], de novo o exemplo de troca ("altero o DNS para apontar para os servidores da Hostinger") e, com a HostGator, o tipo de serviço "que já vem com tudo isso preparado" para PHP e WordPress.
+
+## FrontPUSH, hospedagem aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]], citada com a HostGator pelos tutoriais em blog e por vir com PHP pronto "porque ele já vem preparado para o WordPress".
+
+## Key Sources
 
 - [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — patrocínio VPS + Dokploy
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — KVM4/KVM2, Ubuntu 24.04 + Docker, cupom "Otávio Miranda"
@@ -54,3 +73,8 @@ Patrocínio do vídeo: VPS (custo previsível, qualquer tecnologia) com Dokploy 
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — patrocínio: VPS + Dokploy (GitHub → Docker), cupom do canal
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — exemplo de hospedagem cujo painel permite configurar variáveis de ambiente sem entrar no servidor
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: hospedagem tradicional
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: PHP pronto (LiteSpeed, não Apache)
+- [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: considerada melhor que a HostGator (Git, SSH, CDN)
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: alternativa e exemplo de troca
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: tutoriais e PHP pronto

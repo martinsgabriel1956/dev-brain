@@ -3,8 +3,8 @@ type: concept
 title: "MySQL"
 aliases: ["mysql", "innodb"]
 date_created: 2026-07-07
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-11-21
+source_count: 6
 tags: [mysql, banco-de-dados, sql, innodb, gap-locking, skip-locked, backend]
 skill: tech-mentor-backend
 status: draft
@@ -50,10 +50,19 @@ Padrão de fábrica sem alterar `my.cnf`: 151 conexões. Em servidores com 128�
 
 Citado na família relacional madura (ao lado de PostgreSQL, MariaDB, SQLite, SQL Server, Oracle).
 
-## Key Sources
+## FrontPUSH, hospedagem aula 03
 
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], "MySQL: precisa instalar e criar sua base de dados" (slide): instalar, configurar, criar base, tabelas e usuário "para conectar com a sua aplicação". A aula o põe junto do React; quem fala com o banco é o back-end. O "MySQL" do [[wiki/entities/xampp]] é MariaDB.
+
+## FrontPUSH, hospedagem aula 05
+
+Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: no cPanel, "banco de dados MySQL" e [[wiki/entities/phpmyadmin]] já prontos; num "servidor cru", `sudo apt-get install mysql-server` (no Debian o padrão é MariaDB).
+
+## Key Sources
 
 - [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — família relacional
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 - [[wiki/sources/uuid-primary-key-mysql]] — UUID como PK degrada performance de índice B-tree no InnoDB
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — limites reais de conexão em instância única e a distinção conexão vs. usuário online
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: MySQL como exemplo de configuração de aplicação web
+- [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: MySQL pronto no cPanel × instalar no servidor cru

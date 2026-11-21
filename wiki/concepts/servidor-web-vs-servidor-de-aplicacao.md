@@ -3,8 +3,8 @@ type: concept
 title: "Servidor Web vs. Servidor de Aplicação"
 aliases: ['web server vs application server']
 date_created: 2026-10-14
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-21
+source_count: 8
 tags: [web, backend, servidor, infra]
 skill: tech-mentor-frontend
 status: draft
@@ -34,6 +34,18 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o Li
 
 Em [[wiki/sources/jstack-criando-o-servidor-http]], o próprio processo Node é o servidor HTTP: `http.createServer` + `listen(3000)`, sem Nginx ou Apache na frente. Em produção é comum pôr um proxy reverso antes dele (TLS, arquivos estáticos, compressão).
 
+## FrontPUSH, hospedagem aula 01
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], de novo "o próprio browser faz isso" sobre o `index.html`; é o servidor que serve o documento padrão. A aula também separa website ("você upa ele") de aplicação web ("necessita de mais configurações"), a mesma linha entre servir arquivos e executar código ([[wiki/concepts/hospedagem-de-sites]]).
+
+## FrontPUSH, hospedagem aula 03
+
+Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]], "o PHP precisa do Apache para rodar": o FrontPUSH em PHP só abre em `http://localhost/frontpush` depois de ligar o Apache no [[wiki/entities/xampp]]. Precisões: quem executa é o interpretador PHP (`mod_php`/PHP-FPM), e com o Apache desligado nem um HTML puro abriria; a demo mostra falta de servidor, não de PHP.
+
+## FrontPUSH, hospedagem aula 06
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]], desta vez certo: "quando ele ver index.html, por padrão, ele já vai executar" (é o servidor que serve o documento padrão). O FrontPUSH em PHP sobe igual a um estático porque a HostGator já tem Apache com PHP; "não se engane".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -41,3 +53,6 @@ Em [[wiki/sources/jstack-criando-o-servidor-http]], o próprio processo Node é 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Live Server (estático) x Express (aplicação)
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Server como servidor estático (FrontPUSH, Sass)
 - [[wiki/sources/jstack-criando-o-servidor-http]]: Node como servidor HTTP direto
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: index.html atribuído ao browser outra vez; site × aplicação
+- [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-react]]: FrontPUSH, hospedagem aula 03: PHP + Apache no XAMPP
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: index.html padrão; PHP sobe igual a estático

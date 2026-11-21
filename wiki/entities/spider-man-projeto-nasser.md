@@ -3,8 +3,8 @@ type: entity
 title: "Spider-Man (projeto do Násser)"
 aliases: ["Spider-Man", "projeto Spider-Man"]
 date_created: 2026-11-13
-date_updated: 2026-11-19
-source_count: 7
+date_updated: 2026-11-21
+source_count: 8
 tags: [projeto, ui-design, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "o H
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], o projeto é exemplo de "página inicial de carregamento" feita "só utilizando o GSAP e uma timeline" ([[wiki/entities/gsap]]).
 
+## Hospedado em subpasta
+
+Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: "da mesmíssima forma, eu fiz para o Spider-Man", em `/Spider-Man` no domínio do autor, pasta criada no cPanel.
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
@@ -49,3 +53,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — Homem-Aranha como tríade (o personagem)
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: projeto feito com Sass
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader com GSAP
+- [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: hospedado em /Spider-Man

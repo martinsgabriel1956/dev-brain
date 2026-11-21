@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-11-17
-source_count: 15
+date_updated: 2026-11-21
+source_count: 16
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -53,6 +53,10 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a mesma API
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: avatares do array
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: avatar de exemplo
 
+## GitHub Pages no FrontPUSH (hospedagem, aula 01)
+
+Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], GitHub Pages é a "maneira bem simples de você hospedar o seu website"; o módulo fará o deploy nele. Serve só arquivos estáticos ([[wiki/concepts/hospedagem-de-sites]]).
+
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — hospeda os samples públicos do Spec2COBOLRot (jbespi/spec2cobolrot-samples)
@@ -64,3 +68,4 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a mesma API
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: /users via Promise, e o 404
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: /users via Axios
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: api.github.com como exemplo de endpoints
+- [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: GitHub Pages para site estático
