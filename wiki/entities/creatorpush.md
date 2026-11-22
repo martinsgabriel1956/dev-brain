@@ -3,8 +3,8 @@ type: entity
 title: "Creator Push"
 aliases: ["CreatorPush", "Creator", "creatorpush.com.br"]
 date_created: 2026-11-13
-date_updated: 2026-11-21
-source_count: 10
+date_updated: 2026-11-22
+source_count: 11
 tags: [projeto, curso, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: d
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: domínio adicional com raiz em `public_html/creatorpush`, "que também tem uma página estática"; AutoSSL instalado.
 
+## Marca mais viva que a do FrontPUSH
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], a mentoria "faz parte do CreatorPUSH, o curso que eu quero montar". A marca precisava "ser um pouco mais amigável", "não ter muito traço reto", "cores um pouco mais vivas", ao contrário do azul do FrontPUSH.
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 - [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, hospedagem aula 04: domínio no CPF do autor
 - [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, hospedagem aula 05: domínio adicionado no cPanel, com SSL
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: domínio adicional, página estática
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: curso de marca planejado; identidade amigável e viva

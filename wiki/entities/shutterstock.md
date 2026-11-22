@@ -3,8 +3,8 @@ type: entity
 title: "Shutterstock"
 aliases: ["shutterstock.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-22
+source_count: 2
 tags: [banco-de-imagens, fotografia, vetores, licenca, branding]
 skill: ux-ui-mentor
 status: stub
@@ -16,6 +16,11 @@ status: stub
 
 `[external]` Diferente do [[wiki/entities/unsplash]], o Shutterstock é pago: a imagem só pode ser usada depois de licenciada (https://www.shutterstock.com/license). Para pesquisar referência, como na aula, não há problema; para publicar a imagem, vale o alerta de "free x pago" da própria aula.
 
+## Busca de logos
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: "pesquise termos em inglês, barra logo no Shutterstock, que ele vai te dar uma porrada de exemplos".
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — referência de branding ("Letter B Logo")
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: termo em inglês + logo para referências

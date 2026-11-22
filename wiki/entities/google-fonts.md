@@ -3,8 +3,8 @@ type: entity
 title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-22
+source_count: 15
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -73,6 +73,10 @@ Archivo 400/700 e Poppins 400 pelo embed `<link>`. O `font-weight: 500` padrão 
 
 No app, `@expo-google-fonts/archivo` e `/poppins` com `useFonts`; o negrito é outro `fontFamily` (Poppins_600SemiBold), e não `fontWeight`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Sem serifa com personalidade
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: filtrar sem serifa e escolher uma com traço próprio: Raleway, Poppins, PT Sans, Ubuntu, Titillium Web, Inter, Cairo. "Aqui é tudo free" (ver [[wiki/concepts/licenca-de-fontes]]).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -89,3 +93,4 @@ No app, `@expo-google-fonts/archivo` e `/poppins` com `useFonts`; o negrito é o
 - [[wiki/sources/frontpush-if-else-sass]]: Sora e Source Sans Pro do projeto Nubank
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Archivo e Poppins; peso 500 sem face
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Archivo e Poppins no RN
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: lista de sem serifas; Poppins do Black Dev

@@ -3,8 +3,8 @@ type: entity
 title: "Color Hunt"
 aliases: ["colorhunt", "ColorHunt", "colorhunt.co"]
 date_created: 2026-11-14
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-22
+source_count: 3
 tags: [ferramenta, cor, paleta-de-cores, referencia, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -19,7 +19,12 @@ Site com paletas de cores prontas e gratuitas, "um monte de paleta de cores já 
 
 `[external]` Endereço: https://colorhunt.co
 
+## Na mentoria de ID visual
+
+Aberto no início da [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]] e indicado ao aluno: "traz boas paletas".
+
 ## Key Sources
 
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — referência de paletas prontas
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — exercício de classificar paletas; hexadecimais copiáveis
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: indicado ao aluno

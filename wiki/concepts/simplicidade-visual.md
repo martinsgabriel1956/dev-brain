@@ -3,8 +3,8 @@ type: concept
 title: "Simplicidade Visual"
 aliases: ["simplicidade", "menos é mais", "less is more", "design minimalista", "ponto focal"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 12
+date_updated: 2026-11-22
+source_count: 13
 tags: [ui, ui-design, simplicidade, minimalismo, carga-cognitiva, espaco-em-branco]
 skill: ux-ui-mentor
 status: stub
@@ -67,6 +67,10 @@ Elemento de composição "tem que ser simples para poder formar o background, n�
 
 "Utilizar várias cores em um projeto faz ficar confuso." A receita da aula de paleta é curta: cores de contraste, uma cor característica, branco e preto ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). Ver [[wiki/concepts/paleta-de-cores]].
 
+## Simplicidade no logo
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], "aquele menos é mais" vira teste de logo: replicável em dark e light, costurável, numa cor. Ver [[wiki/concepts/logo-minimalista]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
@@ -81,3 +85,4 @@ Elemento de composição "tem que ser simples para poder formar o background, n�
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade invisível; "use o menos possível"; os 20% de novo
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição simples para não roubar atenção
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — várias cores confundem; paleta mínima
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: menos é mais no logo

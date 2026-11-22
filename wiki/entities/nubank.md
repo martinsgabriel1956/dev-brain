@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-21
-source_count: 30
+date_updated: 2026-11-22
+source_count: 31
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -129,6 +129,10 @@ Em [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]], o p
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]], "o projeto do Nubank" (página estática do curso) fica em `/Nubank` no domínio do autor: "só criei uma pasta aqui dentro chamada Nubank". Não tem domínio próprio.
 
+## Arredondado como identidade
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: o banco "que mais traz para perto as pessoas", com "borda arredondada, o botão é totalmente arredondado"; o Banco Inter arredonda menos.
+
 ## Key Sources
 
 
@@ -162,3 +166,4 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: layout por flex-grow; mixin `responsive`
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: manipulação do DOM no projeto Nubank
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: projeto estático em /Nubank
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: botão totalmente arredondado como proximidade

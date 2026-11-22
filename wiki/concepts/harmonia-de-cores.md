@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Harmonia de cores"
-aliases: ["harmonia das cores", "harmonia cromática", "color harmony", "esquemas de cor", "cores análogas", "cores complementares", "monocromática", "complementar", "análoga", "triádica", "paleta monocromática", "paleta triádica", "split complementary", "split-complementary", "complementar dividida", "dividir complementar", "gradiente", "gradientes suaves"]
+aliases: ["harmonia das cores", "harmonia cromática", "color harmony", "esquemas de cor", "cores análogas", "cores complementares", "monocromática", "complementar", "análoga", "triádica", "paleta monocromática", "paleta triádica", "split complementary", "split-complementary", "complementar dividida", "dividir complementar"]
 date_created: 2026-11-14
-date_updated: 2026-11-15
-source_count: 3
+date_updated: 2026-11-22
+source_count: 4
 tags: [ui, ui-design, cor, teoria-das-cores, harmonia, harmonia-de-cores, circulo-cromatico, paleta-de-cores, contraste, gradiente]
 skill: ux-ui-mentor
 status: stub
@@ -72,8 +72,13 @@ Análogas dão continuidade e [[wiki/concepts/harmonia-visual]]. Vizinhas transi
 
 `[skill: ux-ui-mentor]` Em HSL ou OKLCH, os esquemas viram aritmética de matiz (H): complementar = H + 180°, dividido = H + 150° e H + 210°, triádico = H + 120° e H + 240°, análogo = H ± 30°. Como dito acima, esse círculo é o RGB, não o RYB das aulas.
 
+## Gradiente tem página própria
+
+As regras de gradiente da mentoria de identidade visual (bad gradient vermelho → ciano, vizinhas, mesma matiz) estão em [[wiki/concepts/gradiente]]. A mesma aula usa as análogas na leitura da paleta de Nina Talks (rosa + azul, "por mais que tenha um roxo aqui no meio").
+
 ## Key Sources
 
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — céu, pássaro e arara como guias para análogas, gradientes e complementares
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — os quatro tipos, exemplos da natureza, super-heróis e cinema; tour pelo Adobe Color
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — círculo cromático (RYB) aplicado a quatro tipos de paleta e ao complementar dividido; exemplos falados sobre telas
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: gradiente pelo círculo cromático; Nina Talks análoga

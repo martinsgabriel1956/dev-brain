@@ -3,8 +3,8 @@ type: entity
 title: "Dribbble"
 aliases: ["dribble", "dribbble.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-22
+source_count: 8
 tags: [dribbble, design, referências, inspiração]
 skill: tech-mentor-frontend
 status: stub
@@ -47,6 +47,10 @@ Na aula prática de cores de [[wiki/entities/nasser|Násser]] ([[wiki/sources/pa
 
 Na aula de variação de cores, Násser deixa o Dribbble para uma aula sobre onde buscar inspiração ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
 
+## Cores e marcas
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: `dribbble.com/colors` com filtro de cor para achar gradientes; Liked Shots de um designer de marcas que Násser segue. Ele ainda não postou lá a nova página do FrontPUSH: "enquanto o negócio não fica bom, não consigo soltar".
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
@@ -56,3 +60,4 @@ Na aula de variação de cores, Násser deixa o Dribbble para uma aula sobre ond
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — exemplo de layout responsivo
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — busca de referências por hexadecimal
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — anunciado como fonte de inspiração para cores
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: dribbble.com/colors; designer de marcas que ele segue

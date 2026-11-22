@@ -3,8 +3,8 @@ type: concept
 title: "Blend modes (modos de mesclagem)"
 aliases: ["blend mode", "modos de mesclagem", "modo de mesclagem", "mix-blend-mode", "background-blend-mode", "color dodge", "lighten", "screen", "multiply", "overlay", "difference"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-22
+source_count: 5
 tags: [ui-design, imagens, figma, composicao-de-imagens, blend-modes, css, gradiente]
 skill: ux-ui-mentor
 status: stub
@@ -59,9 +59,14 @@ Na aula prática de cores, o overlay da cor de base sobre o branco e o preto tin
 
 Na aula de variação de cores, uma barra com o ciclo cromático muda de pass-through para luminosity e vira escala de cinza: o brilho de cada matiz fica visível (amarelo 89%, azul 11%) ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/luminosidade-das-cores]]. `[external]` No modo luminosity, a camada cede só a luminosidade e mantém matiz e saturação do que está embaixo; sobre fundo neutro, sobra o cinza.
 
+## Ruído em overlay (FrontPUSH, mentoria de ID visual)
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], a textura granulada do style guide do FrontPUSH: plugin Noise da Figma Community, camada em overlay (mais clara que Pass-through), opacidade de 20% a 30%, sempre por cima e com a layer travada. "Dá um requinte."
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — máscara com gradiente radial, color dodge e lighten para tirar o fundo preto, wallpapers do FrontPUSH
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — as outras camadas da ambiência do FrontPUSH
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — overlay da cor de base sobre branco e preto
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity revela o brilho de cada matiz
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: plugin Noise em overlay, 20–30% de opacidade

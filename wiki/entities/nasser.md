@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-21
-source_count: 148
+date_updated: 2026-11-22
+source_count: 149
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -306,6 +306,10 @@ Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]] ("
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: portfólio estático com GSAP por script em `public_html`; projetos Nubank e Spider-Man em subpastas; FrontPUSH em PHP "pela facilidade"; "para que eu vou fazer uma aplicação web [...] sendo que para essa aplicação eu não preciso disso".
 
+## Mentoria de identidade visual
+
+Em [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]] ("se fosse eu, Násser"): faz identidades visuais como freelancer (Black Dev, com Brand Book), mais barato para alunos; um ou dois dias de referências por marca; gosta de traço reto ("só vou em Volkswagen"); desenha a própria tipografia do FrontPUSH; não posta no Dribbble até ficar bom.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
@@ -456,3 +460,4 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 - [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, módulo de hospedagem aula 04: escolha de host e domínios
 - [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, módulo de hospedagem aula 05: preferências e histórico de hospedagem
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: como hospeda portfólio, projetos e cursos
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: processo de marca, Black Dev

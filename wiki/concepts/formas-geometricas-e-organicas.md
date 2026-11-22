@@ -3,8 +3,8 @@ type: concept
 title: "Formas Geométricas e Orgânicas"
 aliases: ["formas em UI", "geométrico vs orgânico", "forma geométrica", "forma orgânica", "psicologia das formas", "border-radius e personalidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 12
+date_updated: 2026-11-22
+source_count: 13
 tags: [ui, ui-design, formas, geometrico, organico, branding, border-radius, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -87,6 +87,10 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 
 Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a pergunta da aula de formas ("qual é a mensagem?") "se aplica demais à tipografia". O restaurante italiano é orgânico (o chefe faz a pizza na hora, "não é linha de produção como o McDonald's") e por isso tende à serifada. Ver [[wiki/concepts/classificacao-tipografica]].
 
+## Pontas afastam (FrontPUSH, mentoria de ID visual)
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: "tudo aquilo que é extremamente pontiagudo [...] tem um repulso um pouco maior", como a faca pontuda; arredondar as bordas deixou "mais amigável" o logo do FrontPUSH e o do Black Dev sem perder a geometria. Reto passa "exatidão, mais precisão, mais cálculo"; redondo "te traz mais para perto". Repete o equilíbrio do Madero (hambúrguer orgânico, site geométrico) e do Nubank (botão totalmente arredondado). `[external]` Bar e Neta (2006, *Psychological Science*) acharam preferência por objetos curvos (alta).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -101,3 +105,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia passa informação como as formas; maiúsculas x minúsculas
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — fonte geométrica (Bauhaus) e script como orgânica
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — a predominância orgânica leva o restaurante italiano à serifa
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: pontiagudo afasta; arredondar suaviza; Madero, Nubank, Banco Inter

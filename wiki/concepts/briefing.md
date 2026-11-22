@@ -3,8 +3,8 @@ type: concept
 title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-22
+source_count: 2
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -33,6 +33,11 @@ O cliente "muito provavelmente [...] não sabe exatamente como mostrar isso da m
 - [[wiki/concepts/soft-skills]]: a comunicação é "a soft skills que você mais tem que ter desenvolvido nesse processo".
 - [[wiki/concepts/ux-design]]: o designer acrescenta valor ao que o cliente pede.
 
+## Escrever o que quer transmitir
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], o briefing do Black Dev começa por palavras: "eu quero algo mais preciso, [...] mais sóbrio, [...] mais profissional, por isso que a marca dele é preto". "É bom você escrever o que eu quero transmitir"; cor, forma e fonte saem daí.
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: briefing do Black Dev: preciso, sóbrio, profissional
