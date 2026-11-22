@@ -3,8 +3,8 @@ type: concept
 title: "Branding"
 aliases: ["identidade de marca", "pegada da marca", "brand"]
 date_created: 2026-11-15
-date_updated: 2026-11-19
-source_count: 2
+date_updated: 2026-11-22
+source_count: 3
 tags: [ui-design, design, branding, marca, identidade-visual, consistencia]
 skill: ux-ui-mentor
 status: stub
@@ -28,7 +28,12 @@ Nas aulas de UI do [[wiki/entities/frontpush]], "branding" aparece como a cor ou
 
 Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], os elementos 3D da landing page do [[wiki/entities/axlepush]] "não eram originais, roxo e rosa dessa forma": o instrutor aplicou "a minha branding" para "dar maior ambiência". Recolorir assets prontos no [[wiki/entities/spline]] é uma forma barata de manter a identidade.
 
+## Brand Book e marcas do ramo
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], Násser entrega um Brand Book explicando as escolhas ao cliente. A pesquisa inclui marcas do mesmo ramo (Node hexágono, Vue triângulo, npm quadrado, Laravel linhas retas): "eu não posso muito sair da linha disso aqui". Ver [[wiki/concepts/logo-minimalista]].
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: elementos 3D recoloridos para a marca
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: Brand Book do Black Dev; marcas do ramo como limite

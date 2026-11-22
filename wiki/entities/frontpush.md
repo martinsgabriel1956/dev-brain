@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-21
-source_count: 125
+date_updated: 2026-11-22
+source_count: 126
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -463,6 +463,10 @@ Em [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: t
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: o site do FrontPUSH é domínio adicional com raiz em `public_html/frontpush`, com `index.php`; é PHP por ter página de cadastro/lista de espera. Upload por gerenciador ou FileZilla; AutoSSL.
 
+## Mentoria de identidade visual
+
+Em [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: azul para "sóbrio, mais profissional, mais confiante"; paleta branco, azul e preto; logo reto com bordas arredondadas; fonte com "características próprias" e alfabeto próprio em desenho; ruído granulado no style guide; nova página animada em preparo.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -590,3 +594,4 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 - [[wiki/sources/frontpush-hostgator-parte-1-plano-turbo-name-servers-registro-br]]: FrontPUSH, módulo de hospedagem aula 04: HostGator parte 1
 - [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, módulo de hospedagem aula 05: tour pelo cPanel
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: upload, domínios adicionais, AutoSSL
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: azul, paleta, fonte própria, noise

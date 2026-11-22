@@ -3,8 +3,8 @@ type: concept
 title: "Identidade visual"
 aliases: ["identidade de marca", "branding", "visual identity", "cor de marca", "cor de branding"]
 date_created: 2026-11-14
-date_updated: 2026-11-20
-source_count: 3
+date_updated: 2026-11-22
+source_count: 4
 tags: [ui, ui-design, identidade-visual, branding, cor, paleta-de-cores]
 skill: ux-ui-mentor
 status: stub
@@ -28,7 +28,12 @@ Na aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-ana
 
 Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], sites com SVG desenhado em linhas conforme o scroll: "cria identidade, dependendo da animação que você aplica, a forma". O jeito de animar entra na identidade, como a cor e a forma.
 
+## Processo de criação (FrontPUSH, mentoria de ID visual)
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], o processo de [[wiki/entities/nasser|Násser]]: um ou dois dias de referências (Shutterstock com termo em inglês + "logo", Dribbble), rabisco no sketchbook sobre quadrados, redesenho com a Pen Tool no Figma, cor, tipografia. O logo tem de passar no teste do [[wiki/concepts/logo-minimalista]]; cor, forma e fonte seguem o que se escreveu antes ("é bom você escrever o que eu quero transmitir"). No caso Black Dev, preto + geometria + Poppins + ícones com raio de 2, 4 ou 8 px. "É treino e pesquisa."
+
 ## Key Sources
 
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — paleta como identidade: McDonald's, Facebook, WhatsApp, Spotify, Rocketseat
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: animação como identidade
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: processo de criação de marca; caso Black Dev

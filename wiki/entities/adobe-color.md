@@ -3,8 +3,8 @@ type: entity
 title: "Adobe Color"
 aliases: ["Color Adobe", "color.adobe.com", "Adobe Kuler", "Kuler"]
 date_created: 2026-11-14
-date_updated: 2026-11-14
-source_count: 1
+date_updated: 2026-11-22
+source_count: 2
 tags: [ferramenta, cor, harmonia-de-cores, paleta-de-cores, adobe]
 skill: ux-ui-mentor
 status: stub
@@ -25,6 +25,11 @@ Ferramenta web da Adobe para gerar combinações de cor a partir de uma regra de
 
 `[external]` A Adobe descreve o círculo de 12 matizes padronizado por Itten, de base RYB (https://www.adobe.com/express/learn/blog/color-wheel-explained). Por isso o oposto do azul aqui é o laranja, não o amarelo do HSL. Era o antigo Adobe Kuler (o nome antigo é conhecimento externo, não dito na aula).
 
+## Usado pelo aluno
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], o aluno Diego criou a paleta da coruja no Adobe Color.
+
 ## Key Sources
 
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: paleta do aluno

@@ -3,8 +3,8 @@ type: concept
 title: "Classificação tipográfica"
 aliases: ["classificações tipográficas", "categorias de fontes", "tipos de fonte", "serifa", "serifada", "sem serifa", "sans-serif", "slab serif", "serifa grossa", "serifada grossa", "egípcia", "script", "cursiva", "blackletter", "black letter", "display", "decorativa", "monospace", "monoespaçada", "monospaced"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-22
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, sans-serif, sem-serifa, script, blackletter, monoespacada, display, classificacao, classificacao-tipografica, identidade-visual, branding]
 skill: ux-ui-mentor
 status: stub
@@ -99,6 +99,10 @@ As classificações expressivas (serifa grossa, script, blackletter, display) v�
 
 Em [[wiki/sources/classes-e-ids-no-css]], o autor põe `font-family: sans-serif` no seletor universal porque não gosta de fonte serifada ("para poder ela ficar retinha"). `[external]` `sans-serif` é uma família genérica: o navegador escolhe a fonte sem serifa padrão do sistema.
 
+## Monoespaçada e sem serifa numa marca (FrontPUSH, mentoria de ID visual)
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: o Black Dev usa monoespaçada no corpo "porque monoespaçada é utilizada em IDEs" ("as letras têm exatamente a mesma largura") e Poppins, geométrica, nos títulos. Para iniciante, sem serifa: "só de ser sem serifa, ela já é mais sóbria". `[skill: ux-ui-mentor]` Monoespaçada em texto longo lê pior que proporcional (média).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: as seis categorias do roteiro; filtros do Google Fonts; placa "PARE"
@@ -108,3 +112,4 @@ Em [[wiki/sources/classes-e-ids-no-css]], o autor põe `font-family: sans-serif`
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: Madero serifado no logo, sem serifa no corpo; Coco Bambu cursivo
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]: serifa ligada ao exato da arquitetura
 - [[wiki/sources/classes-e-ids-no-css]] — `font-family: sans-serif` como família genérica
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: monoespaçada no corpo do Black Dev; sem serifa é sóbria

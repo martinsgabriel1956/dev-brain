@@ -3,8 +3,8 @@ type: concept
 title: "Paleta de cores"
 aliases: ["paleta", "color palette", "paleta de cor", "esquema de cores", "paleta da marca", "base + enfoque", "base e enfoque", "cor de base", "cor de enfoque", "cor de destaque", "escala de cinza", "cores complementares", "paleta monocromática", "paleta análoga"]
 date_created: 2026-11-14
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-22
+source_count: 5
 tags: [ui, ui-design, cor, paleta-de-cores, harmonia-de-cores, design-tokens, branding, identidade-visual, contraste, hierarquia-visual, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -86,9 +86,14 @@ A paleta é o primeiro passo do style guide, para "aplicar estilos de maneira or
 
 Componentes usam só os semânticos; componente nunca usa primitivo direto. Dark mode muda o valor dos semânticos, não o nome. HSL ou OKLCH facilitam gerar a escala de tons variando só a luminosidade; em OKLCH, o mesmo L dá o mesmo brilho percebido entre matizes, o que facilita a "luminosidade do espectro" que o slide da análoga pede. Cor de marca e [[wiki/concepts/cor-semantica]] (sucesso, erro) ficam em tokens separados: a cor de destaque da marca e o amarelo de warning devem ser tokens diferentes. As cores de estado vêm de convenção, não da harmonia.
 
+## Uma cor + preto + branco para começar
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: "começa pela paleta de cores mais simples possível, que é aplicar uma cor, preto e branco" (site dele branco, verde e preto; FrontPUSH branco, azul e preto). "Até duas cores eu acho super tranquilo." Nina Talks: dois azuis, rosa, branco e preto; azul e branco na base, rosa só de destaque.
+
 ## Key Sources
 
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia como introdução à paleta; 3 a 5 cores; Color Hunt e Adobe Color
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — definição, receita mínima, quatro tipos, ligação com a regra 60-30-10, Rocketseat, Color Hunt
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — modelo base e enfoque (roxo + amarelo + neutros), hierarquia por cor, escala de cinza, 60% branco, ícones em tons pastéis
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — esquemas, base e destaque, neutros F1/F2 e 20–30, paleta como primeiro passo do style guide
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: uma cor + preto + branco; Nina Talks

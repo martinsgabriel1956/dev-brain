@@ -3,8 +3,8 @@ type: concept
 title: "Luminosidade das cores"
 aliases: ["padrão de luminosidade", "Padrão de luminosidade", "luminosidade da paleta de cores", "luminosidade por matiz", "brilho percebido", "brilho percebido das cores", "perceived lightness", "luma", "luminância relativa", "relative luminance"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-22
+source_count: 3
 tags: [ui, ui-design, cor, luminosidade, matiz, contraste, acessibilidade, wcag, oklch, paleta]
 skill: ux-ui-mentor
 status: stub
@@ -59,7 +59,12 @@ Os números do slide e os da WCAG diferem porque vêm de fórmulas diferentes. A
 
 `[skill: ux-ui-mentor]` HSL e HSB ignoram esse padrão: "azul e amarelo com o mesmo L parecem ter brilhos diferentes". A skill monta paletas em OKLCH, em que o L é a luminosidade percebida e o espaço é perceptualmente uniforme: com L fixo, o mesmo L dá o mesmo brilho percebido em qualquer matiz, e trocar o matiz não muda o contraste, coisa que HSL não garante.
 
+## Extremos para contraste (FrontPUSH, mentoria de ID visual)
+
+Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: "para você conseguir contraste, é bom você ir para os extremos". Nina Talks usa azul ("o trecho [...] mais escuro") e branco, e o rosa ("30%, 40%", "no meio") só como destaque, nunca de fundo. Valores ditos: vermelho 30% a 40%, amarelo 80%; diferem dos 89% do amarelo da aula de variação, e o rosa deveria ser mais claro que o vermelho (inferência).
+
 ## Key Sources
 
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — barra do espectro em modo luminosity; amarelo 89%, azul 11%
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — amarelo, ciano e verde claros; azul escuro; observar a luminosidade antes de escolher a cor do texto
+- [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: extremos de luminosidade; rosa no meio; números divergentes
