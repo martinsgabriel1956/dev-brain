@@ -3,8 +3,8 @@ type: concept
 title: "Inglês para Desenvolvedores"
 aliases: ["inglês como pré-requisito de carreira", "sem inglês não tem mercado global"]
 date_created: 2026-09-14
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-22
+source_count: 6
 tags: [carreira, ingles, mercado-global, remoto-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -41,8 +41,13 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: "começa a codar tudo em inglês [...] vai no Google Tradutor, traduz as coisas". Os comentários ficam em português só para clareza da aula.
 
+## Condição para ganhar em moeda forte
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], a língua estrangeira é a condição para trabalhar lá fora: "você precisa ter fluidez não só na sua língua nativa, mas também em uma língua estrangeira" ([[wiki/concepts/dolarizacao-de-renda]]).
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: fluidez em outra língua para ganhar em moeda forte
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — contrapeso: inglês perfeito não é exigido, mas precisa ser OK para conversar sobre software ([[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]])
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: documentação de primeira mão em inglês

@@ -3,8 +3,8 @@ type: concept
 title: "Fundamentos da linguagem antes do framework"
 aliases: ["linguagem antes do framework", "JavaScript antes do React", "aprender a base antes da biblioteca"]
 date_created: 2026-11-17
-date_updated: 2026-11-17
-source_count: 1
+date_updated: 2026-11-22
+source_count: 2
 tags: [aprendizado, fundamentos, framework, biblioteca, javascript, react, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,11 @@ Paralelo no back-end: o JStack monta o servidor com o `http` do Node antes do Ex
 - [[wiki/concepts/fundamentos-e-teoria-na-era-da-ia]]
 - [[wiki/entities/javascript]]
 
+## "Nada mais é do que JS" (FrontPUSH, aula 04)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] usa o argumento para a carreira: hooks e build são a introdução, "mas quando você abre uma determinada seção de código [...] você continua escrevendo em JavaScript"; quem estudou a linguagem vai para React Native, Node e full-stack com mais facilidade.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: estudar JS abre React Native, Node e full-stack
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: por que e o que saber de JS antes do React

@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-21
-source_count: 56
+date_updated: 2026-11-22
+source_count: 57
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -194,8 +194,13 @@ Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: 
 
 Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: "eu faço pelo Figma" e nunca entendeu o `d` do path; `fill` é "muito parecido com o do Figma"; efeitos viram filtros nos `defs`, gradiente com `stop-color`, e o export repete IDs como `filter0_d`.
 
+## Escolha pela comunidade
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz que o designer deve escolher o Figma pela comunidade: features, plugins e "muito material [...] de forma gratuita" no Figma Community. "Isso é ferramenta, não é o mais importante."
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolher Figma pela comunidade
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-22
+source_count: 9
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -75,8 +75,13 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: "uma das coisas mais importantes dessa Next Level Week é colocar sempre o projeto no seu portfólio", mesmo incompleto, com README e imagens.
 
+## Versão front-end (FrontPUSH)
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]] dá a versão de front: to-do list, requisição HTTP crua, página estática (Nubank) e um blog com CRUD, cada um com o porquê no README. Ver [[wiki/concepts/demonstrar-experiencia-na-primeira-vaga]].
+
 ## Key sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: equivalente de front: narrativa de projetos e README
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — SaaS funcional deixou de provar competência por si só; reforça por que os itens deste checklist (testes, SQL, observabilidade) continuam sendo o diferencial real
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projetos de portfólio como prova de autonomia e vontade de aprender, mesmo sem experiência profissional prévia

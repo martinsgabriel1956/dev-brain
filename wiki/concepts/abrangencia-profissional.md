@@ -3,8 +3,8 @@ type: concept
 title: "Abrangência Profissional"
 aliases: ["abrangência", "T-shaped", "generalista", "interessado vs interessante", "breadth"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-11-22
+source_count: 5
 tags: [carreira, contratação, liderança, comunicação, aprendizado]
 skill: tech-mentor-leadership
 status: stable
@@ -64,8 +64,18 @@ A fonte nota que **líderes tendem a ser generalistas** (cita Elon Musk como exe
 
 [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] trata a abrangência como necessidade de mercado: fronteiras entre funções estão diluindo e cruzá-las é o passo 2 do [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
 
+## Abrangência no módulo de freelancer
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]] quer "abranger a maior quantidade de áreas possíveis" para o aluno "enxergar mais possibilidades", e trata generalista × expertise como aula própria. Ver [[wiki/concepts/profissional-t-shaped]].
+
+## Saber avaliar sem saber fazer
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], a abrangência é a cor azul do mapa de [[wiki/entities/nasser|Násser]]: áreas em que ele sabe "bater o olho [...] e ver, cara, aqui foi bem estruturado" (banco de dados, branding), sem ser "experto". É ela que permite liderar e delegar, porque "você entende mais qual é a expertise dos outros".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: abrangência = saber avaliar; base para liderar e delegar
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: "enxergar mais possibilidades"; generalista × expertise
 - [[wiki/sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 12, prós/contras de especialista vs. generalista
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

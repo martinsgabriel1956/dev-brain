@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-11-21
-source_count: 28
+date_updated: 2026-11-22
+source_count: 29
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -57,8 +57,13 @@ Em [[wiki/sources/frontpush-dom-parte-2-criar-elementos-createelement-appendchil
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o [[wiki/entities/frontpush|FrontPUSH]] ensina desestruturação como preparo para o React. Os usos que vêm lá: `function Card({ title })` nas props e `const [count, setCount] = useState(0)`.
 
+## Por que React, segundo o FrontPUSH
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] recomenda React entre os três frameworks de SPA pela comunidade (bugs corrigidos mais rápido, mais conteúdo) e pelo volume de vagas, e lembra que no código "você continua escrevendo em JavaScript". Cita Webpack na introdução; o Create React App foi descontinuado em 2025 `[external]`.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolha pela comunidade e pelas vagas
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — React Hook Form citado como exemplo de lib madura a preferir em vez de construir gerenciamento de formulário do zero, evitando [[wiki/concepts/under-engineering]]

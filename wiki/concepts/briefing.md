@@ -4,7 +4,7 @@ title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
 date_updated: 2026-11-22
-source_count: 2
+source_count: 3
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ O cliente "muito provavelmente [...] não sabe exatamente como mostrar isso da m
 
 Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], o briefing do Black Dev começa por palavras: "eu quero algo mais preciso, [...] mais sóbrio, [...] mais profissional, por isso que a marca dele é preto". "É bom você escrever o que eu quero transmitir"; cor, forma e fonte saem daí.
 
+## Pré-briefing e reuniões com cliente
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]] põe o briefing no pilar de monetização: a aula 9 trata de "como é que eu construo a estrutura para poder fazer a primeira apresentação do cliente, pré-briefing [...], quais são o workflow das reuniões".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: pré-briefing e workflow de reuniões na aula 9
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: briefing do Black Dev: preciso, sóbrio, profissional

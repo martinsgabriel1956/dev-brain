@@ -1,0 +1,32 @@
+---
+type: concept
+title: "Metodologia e clareza"
+aliases: ["metodologia de trabalho", "aquilo que não é claro eu não compro", "workflow de freelancer"]
+date_created: 2026-11-22
+date_updated: 2026-11-22
+source_count: 2
+tags: [carreira, freelance, metodologia, workflow, clareza, comunicacao]
+skill: tech-mentor-leadership
+status: stub
+---
+
+# Metodologia e clareza
+
+Base do triângulo de três pilares do módulo "Monetização e Freelancer" do [[wiki/entities/frontpush|FrontPUSH]] (metodologia na base, [[wiki/concepts/prospeccao-ativa-e-passiva|prospecção]] e monetização em cima). [[wiki/entities/nasser|Násser]] fala de duas metodologias: a "de ensino", do curso, e a "de workflow, de processo", do trabalho. Ela vale "não só [para] freelancer": serve "para poder você se apresentar em uma entrevista e ter mais segurança do seu trabalho" ([[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]).
+
+A aula 6 do roteiro tem este nome. A frase-guia: "aquilo que não é claro eu não compro, aquilo que não é claro eu não invisto o meu tempo, eu preciso ter clareza, objetividade, eu preciso ter metodologia, tanto para mim como para quem está contratando os meus serviços, seja CLT ou freelancer".
+
+## Relação com outros conceitos
+
+- [[wiki/concepts/workflow-de-interface-web]]: exemplo de workflow do próprio Násser no módulo de UI (pesquisa, wireframe, style guide).
+- [[wiki/concepts/briefing]]: o pré-briefing e o "workflow das reuniões" entram na aula 9.
+- [[wiki/concepts/clareza-antes-do-prompt]]: a mesma ideia de clareza antes de executar, em outro contexto.
+
+## Confiança para vender vem do processo
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], a ideia aparece como causa de não ganhar dinheiro: "se você não consegue ter confiança naquilo que você faz [...] você não consegue vender, porque você precisa de um processo bem definido, de um workflow bem definido". O freela deve saber "da ponta da língua" a estrutura de reunião e o ponto forte do serviço. Fecha a aula como "workflow clarificado".
+
+## Key Sources
+
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: processo bem definido dá confiança para vender
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: o pilar e a frase-guia

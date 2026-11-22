@@ -3,8 +3,8 @@ type: concept
 title: "Product Engineer"
 aliases: ["product engineer", "produto engineer", "engenheiro de produto"]
 date_created: 2026-06-09
-date_updated: 2026-10-30
-source_count: 5
+date_updated: 2026-11-22
+source_count: 6
 tags: [carreira, perfil-profissional, harness, produto, taste, ia-para-devs, builders]
 skill: tech-mentor-ai
 status: stable
@@ -99,8 +99,13 @@ Os quatro movimentos práticos para começar essa semana — segundo [[wiki/sour
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] lista "product engineer" como um dos títulos sob os quais o perfil de design engineer aparece ([[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]]).
 
+## Eliminar intermediários no freela
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] recomenda "eliminar intermediários": o cliente "quer o produto final", e "às vezes só o design não é suficiente e às vezes só o desenvolvimento também não". Daí o "desenvolvimento de um produto digital de ponta a ponta" como forma de agregar valor.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: freelancer de ponta a ponta, sem intermediários
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — alias de design engineer em vagas
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]

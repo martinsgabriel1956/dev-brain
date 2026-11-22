@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-22
-source_count: 126
+source_count: 130
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -467,8 +467,28 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 
 Em [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: azul para "sóbrio, mais profissional, mais confiante"; paleta branco, azul e preto; logo reto com bordas arredondadas; fonte com "características próprias" e alfabeto próprio em desenho; ruído granulado no style guide; nova página animada em preparo.
 
+## Módulo Monetização e Freelancer
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]], o curso ganha um módulo de carreira com 12 aulas em três pilares: metodologia, [[wiki/concepts/prospeccao-ativa-e-passiva|prospecção]] e monetização, em triângulo que espelha a linha do curso (desenhar → construir → animar). Cobre desenvolvimento e design, CLT e freela. Násser fala em "atualizar esse FrontPUSH 2.0" e na volta do suporte.
+
+## Monetização aula 02: como ganhar dinheiro
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]]: sete erros e sete acertos de renda; UI e desenvolvimento do curso citados como vendáveis no mercado internacional.
+
+## Monetização aula 03: T-shaped
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], Násser diz que o curso aprofunda as áreas da expertise dele (front visual, interaction, React.js, motion, UI) e trata branding, estratégia, comunicação, mercado e banco de dados com menos fundo.
+
+## Monetização aula 04: primeira vaga
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], o blog e o projeto Nubank do curso viram exemplos de narrativa para entrevista; a aula é desenhada no Procreate com a paleta "FrontPUSH 2.0".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: projetos do curso como narrativa de entrevista
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: o curso segue o T do autor
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: como ganhar dinheiro: erros, acertos, preço
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: módulo Monetização e Freelancer, três pilares e 12 aulas
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — paleta de três cores como exemplo de consistência; confirma o instrutor
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — landing page como exemplo de objetivo (página de aterrissagem)

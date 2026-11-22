@@ -3,8 +3,8 @@ type: concept
 title: "Site estático vs. dinâmico (e interface dinâmica)"
 aliases: ["interface dinâmica", "interface estática", "site estático", "site dinâmico", "página dinâmica"]
 date_created: 2026-11-17
-date_updated: 2026-11-21
-source_count: 5
+date_updated: 2026-11-22
+source_count: 6
 tags: [frontend, backend, renderizacao, spa, ssr, ssg, site-estatico]
 skill: tech-mentor-frontend
 status: stub
@@ -47,8 +47,13 @@ Em [[wiki/sources/frontpush-website-estatico-vs-aplicacao-web-php-apache-xampp-r
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]], o critério vira prático: o portfólio (com GSAP por `<script>`, sem npm) e o CreatorPUSH são estáticos porque "qual é a funcionalidade que eu preciso que ele tenha? Nenhuma"; página de vendas também ("texto, imagem e link"), por ser "bem leve", "escalável", "performático". O FrontPUSH é PHP por ter outras páginas (cadastro, lista de espera). Ressalvas: páginas ligadas por link também são estáticas; o build de React também é estático.
 
+## De novo: estático "sem funcionalidade"
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]] repete a definição pela funcionalidade (estáticas "só têm de HTML e CSS"; dinâmicas têm rotas, e-mail, reatividade, SPA). A ressalva desta página vale: o build de uma SPA também é estático do ponto de vista do servidor.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: definição por funcionalidade repetida
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: interface dinâmica × estática pela KaBuM
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: o mesmo e-commerce da KaBuM, agora explicado como HTML montado no servidor
 - [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: site × aplicação web na hora de hospedar

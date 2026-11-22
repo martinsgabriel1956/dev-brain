@@ -3,8 +3,8 @@ type: concept
 title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-22
+source_count: 7
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -36,8 +36,18 @@ Fechar um contrato grande não encerra o funil: [[wiki/sources/3-fatores-nao-tec
 
 Em freelance de UI, [[wiki/sources/como-aprender-ui]] aponta que argumentos sólidos sobre cada decisão de design evitam dor de cabeça dos dois lados: "o cliente não é dever dele saber sobre UI, é dever seu". Ver [[wiki/concepts/porque-das-decisoes-de-design]].
 
+## Freela sem largar a CLT (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] lista três perfis: quem está na CLT e vê o freela "como uma renda extra", quem quer começar com freela "para poder ter as suas primeiras experiências" e quem quer conciliar os dois. "Não entenda que eu estou falando assim, saia do seu CLT e vá ser freelancer, muito pelo contrário." O módulo segue em [[wiki/concepts/metodologia-e-clareza|metodologia]], [[wiki/concepts/prospeccao-ativa-e-passiva|prospecção]] e monetização (ofertas, invoice e contrato).
+
+## Sete erros e sete acertos (FrontPUSH)
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]] lista por que freelancers não ganham dinheiro (marketing, comunicação, autoconhecimento, oferta × demanda, mercado, execução, intermediários) e o que funcionou para [[wiki/entities/nasser|Násser]] (produtividade, comunicação, [[wiki/concepts/branding-pessoal]], moeda forte, generalista com expertise, workflow clarificado, eliminar intermediários). Precificação: [[wiki/concepts/precificacao-por-valor-vs-por-hora]].
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: sete erros, sete acertos; preço pela fila e pelo valor
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: três perfis (CLT, iniciante, conciliar) e o roteiro do módulo
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — precificação (ancoragem) como alavanca para sair do freela pequeno rumo a grandes contratos
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — próximo estágio do funil: sustentar recorrência depois de já ter fechado contratos maiores de IA

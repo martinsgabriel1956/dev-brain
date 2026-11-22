@@ -4,7 +4,7 @@ title: "Branding"
 aliases: ["identidade de marca", "pegada da marca", "brand"]
 date_created: 2026-11-15
 date_updated: 2026-11-22
-source_count: 3
+source_count: 4
 tags: [ui-design, design, branding, marca, identidade-visual, consistencia]
 skill: ux-ui-mentor
 status: stub
@@ -32,8 +32,13 @@ Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], os elementos 3
 
 Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], Násser entrega um Brand Book explicando as escolhas ao cliente. A pesquisa inclui marcas do mesmo ramo (Node hexágono, Vue triângulo, npm quadrado, Laravel linhas retas): "eu não posso muito sair da linha disso aqui". Ver [[wiki/concepts/logo-minimalista]].
 
+## Branding de pessoa
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]] leva o conceito para o profissional: [[wiki/concepts/branding-pessoal]] é "ser identificado pelo aquilo que você faz", repetindo a mesma expertise por muito tempo.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: branding pessoal
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: elementos 3D recoloridos para a marca
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: Brand Book do Black Dev; marcas do ramo como limite
