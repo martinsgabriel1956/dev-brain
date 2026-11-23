@@ -3,8 +3,8 @@ type: concept
 title: "Meta-Prompting"
 aliases: ["meta prompting", "prompt template", "placeholder prompting"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-11-23
+source_count: 4
 tags: [prompt-engineering, meta-prompting, template, xml-markdown]
 skill: tech-mentor-ai
 status: draft
@@ -55,8 +55,13 @@ Ver [[wiki/concepts/xml-markdown-prompts]] para o padrão combinado completo.
 
 No [[wiki/concepts/plan-mode|plan mode]], o meta-prompting é usado para construir specs iterativamente: o LLM preenche os placeholders, o dev revisa, adiciona restrições, e itera. O template garante que nenhuma seção importante seja omitida.
 
+## LLM escrevendo o prompt de outra IA (FrontPUSH, módulo de IA)
+
+Um segundo sentido de meta-prompting, o da referência `[skill: tech-mentor-ai]`, é usar um LLM para escrever ou otimizar o prompt de outro modelo. É o que [[wiki/entities/nasser|Násser]] faz em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: dita em áudio, sem pressa, o que quer para o ChatGPT, que devolve um prompt "mais rebuscado, mais cheio de detalhes" para o [[wiki/entities/midjourney]], o [[wiki/entities/nano-banana-pro]] ou o [[wiki/entities/kling-ai]]. "Eu uso a IA para poder escrever os prompts das outras IAs." Os placeholders desta página não aparecem nesse uso: o LLM recebe a intenção em linguagem natural e devolve o prompt pronto.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — o *Skill Creator*: uma [[wiki/concepts/skills-agente|skill]] que cria skills (lê seu próprio `SKILL.md` e roda scripts para gerar novas), exemplo direto de meta-prompting aplicado a harness
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: ChatGPT escreve os prompts das IAs de imagem e vídeo

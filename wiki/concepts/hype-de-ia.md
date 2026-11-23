@@ -3,8 +3,8 @@ type: concept
 title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
-date_updated: 2026-10-14
-source_count: 6
+date_updated: 2026-11-23
+source_count: 7
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -84,6 +84,10 @@ Além do ciclo de capital, há a pressão organizacional: cases anunciados, forn
 
 Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita comprar produto sem entender o que é; o autor propõe aprender a evolução dos conceitos como antídoto. Cautela com agentes como "expectativa puxada pelo hype" (opinião, sem dados). [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## "Essa bolha está prestes a estourar" (FrontPUSH, módulo de IA)
+
+[[wiki/entities/nasser|Násser]], em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: com as "empresas trilionárias" injetando bilhões, "vai surgir uma inteligência artificial nova todo dia [...] mas eu penso que essa bolha está prestes a estourar". Ao mesmo tempo, chama a IA de "mudança de paradigma muito grande" e promete "uma visão mais realista [...] e não tão marqueteira". Previsão sem dado, que contrasta com a seção "Não é Bolha no Sentido Clássico" acima. Na prática, a resposta dele ao hype é parar de trocar de ferramenta e fixar um método ([[wiki/concepts/apego-a-ferramentas]]).
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — governança e segurança como temas centrais internamente nas empresas, mas ausentes do mainstream por não gerarem hype/engajamento
@@ -92,3 +96,4 @@ Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita c
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — hype como risco de scope creep vindo do cliente, em vez de fenômeno de mercado
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — hype de IA como pressão institucional: CEO/acionistas/clientes → "estratégia de IA" antes do problema (isomorfismo mimético)
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — antídoto conceitual: entender a evolução dos termos; cautela com agentes
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: "bolha prestes a estourar", método contra o hype

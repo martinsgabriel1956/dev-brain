@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 136
+source_count: 137
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -487,6 +487,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], a landing page do FrontPUSH, o Spider-Man, o blog e o Nubank aparecem como peças de portfólio com objetivos diferentes ([[wiki/concepts/estrutura-de-portfolio]]).
 
+## Módulo de IA: aula 01, como eu crio imagens e vídeos com IA
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: o novo módulo de IA abre vagas com acesso vitalício. O projeto do joystick (design, IA, animação e código) vai inteiro para o curso, e um evento posterior vai codar a hero e outra seção. A aula 01 é o [[wiki/concepts/pipeline-de-midia-com-ia]] completo, publicado como vídeo não listado no YouTube.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -625,3 +629,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]]: FrontPUSH, módulo de hospedagem aula 05: tour pelo cPanel
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: upload, domínios adicionais, AutoSSL
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: azul, paleta, fonte própria, noise
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01

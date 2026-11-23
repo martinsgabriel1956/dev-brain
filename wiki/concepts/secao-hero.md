@@ -3,8 +3,8 @@ type: concept
 title: "Seção Hero"
 aliases: ["hero", "hero section", "wireframe do tipo Hero", "wireframe hero", "primeira dobra"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [ui, ux, ui-design, wireframe, hero, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -34,7 +34,12 @@ Na aula de ilustrações, o "wireframe hero" já aparecia como "aquela primeira 
 - [[wiki/concepts/objetivo-da-interface]] — o hero diz o que o site faz.
 - [[wiki/concepts/hierarquia-visual]] — o hero concentra o ponto focal da página.
 
+## Hero com vídeo controlado pelo scroll (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], a hero do site do joystick troca a mídia e a cor do controle e tem um vídeo gerado por IA que avança com o scroll ([[wiki/concepts/animacao-por-sequencia-de-frames-no-scroll]]). É a primeira seção que o evento promete codar, porque dá para ensinar "sem essa base gigantesca".
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes Hero e para que serve cada um
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — hero como primeira seção, com ilustração
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: hero do joystick com frames no scroll

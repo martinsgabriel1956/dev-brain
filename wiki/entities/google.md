@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-20
-source_count: 46
+date_updated: 2026-11-23
+source_count: 47
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -110,6 +110,10 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: o artigo do web.dev sobre animações de alto desempenho (60 fps, pipeline, compositor) e a separação de mobile e desktop no PageSpeed, que emula um celular médio com CPU mais lenta.
 
+## Gemini e Nano Banana Pro na produção de mídia
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o Gemini aparece como alternativa ao ChatGPT para escrever prompts, e o [[wiki/entities/nano-banana-pro]] (Gemini 3 Pro Image) como a ferramenta para alterar fotos existentes, usada no plano gratuito.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -136,6 +140,7 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — Google Fonts como catálogo gratuito espelhado no Figma
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — tags meta e visibilidade no Google
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google Brasil no Levels.fyi, vesting, vagas por país, contratação por time
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: Gemini e Nano Banana Pro
 
 ## Adição (2026-10-14)
 

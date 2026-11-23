@@ -3,8 +3,8 @@ type: concept
 title: "Apego a Ferramentas"
 aliases: ["lealdade a ferramentas", "tool loyalty", "martelo e chave de fenda"]
 date_created: 2026-07-03
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-23
+source_count: 5
 tags: [carreira, mentalidade, ferramentas, estagnacao-tecnica]
 skill: tech-mentor-leadership
 status: draft
@@ -50,9 +50,14 @@ Heurística proposta: se em dez anos você ainda estiver usando exatamente a mes
 
 Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], [[wiki/entities/nasser|Násser]] rejeita a sintaxe indentada do Sass porque ela se afasta do CSS puro: "você não pode ficar muito preso a isso", senão o cérebro se acostuma e "acabe esquecendo do CSS padrão". Escolhe o SCSS para manter a base.
 
+## O avesso: trocar de IA a cada lançamento (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o risco é o inverso do apego, a troca compulsiva: "se a gente não adaptar o nosso fluxo e tentar estabelecer um mínimo método, a gente sempre vai estar contratando novas Inteligências Artificiais, gastando muito mais dinheiro". Ele admite que podem existir ferramentas melhores e mais baratas "a partir da data desse vídeo", e mesmo assim fica com as que já domina. O ponto é o mesmo desta página: o valor está no método ([[wiki/concepts/pipeline-de-midia-com-ia]]), não na ferramenta. Ele conta que viu, em dez anos de carreira, as ondas do Dreamweaver, do [[wiki/entities/webflow]] e do Framer.
+
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — "engenheiro de software não coleciona ferramentas, coleciona modelos mentais"
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Násser: SCSS para não esquecer o CSS puro
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: método estável em vez de IA nova
