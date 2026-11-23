@@ -4,7 +4,7 @@ title: "Criar consciência no cliente"
 aliases: ["valor antes do preço", "valor versus preço", "explique o processo", "não fale o preço de cara", "educar o cliente"]
 date_created: 2026-11-23
 date_updated: 2026-11-23
-source_count: 2
+source_count: 4
 tags: [freelance, venda, oferta, precificacao, metodologia, confianca]
 skill: tech-mentor-leadership
 status: stub
@@ -43,3 +43,5 @@ Na aula anterior ([[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-ho
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: valor versus preço; explique o processo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: "você não criou nem consciência nele"
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: quem não pensou o processo "cobrou uma merreca, entregou muita coisa"
+- [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: orçamento que lista etapas e telas

@@ -4,7 +4,7 @@ title: "Explicar o Porquê das Decisões"
 aliases: ["por que e como", "justificar decisões técnicas em entrevista"]
 date_created: 2026-10-07
 date_updated: 2026-11-23
-source_count: 4
+source_count: 5
 tags: [carreira, entrevista, arquitetura, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -36,3 +36,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: "o que te fez tomar essas minidecisões"
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: "saber dizer o porquê" com cases e números define o degrau projeto + valor
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: argumentar com a teoria quando o cliente insiste; se ele mantiver, entregar e não pôr no portfólio

@@ -4,7 +4,7 @@ title: "Goal Gradient Effect"
 aliases: ["efeito gradiente de meta", "goal gradient", "proximidade da meta"]
 date_created: 2026-04-29
 date_updated: 2026-11-23
-source_count: 2
+source_count: 3
 tags: [psicologia, motivacao, produtividade, projetos, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -49,3 +49,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|a
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: maratona: "mais um quilômetro, parabéns"
+- [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: "estratégias de gamificação" e "módulos do curso + progresso" no orçamento real

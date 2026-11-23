@@ -63,6 +63,10 @@ Aula de cerca de 18 min do módulo "Monetização e Freelancer" do [[wiki/entiti
 - "Muita gente fala assim, para poder você ficar rico [...] você deve investir na bolsa, na minha opinião [...] invista em você mesmo, porque o maior ativo é você." O retorno "é muito maior do que [...] uma renda fixa, em uma bolsa, não que você não deva fazer".
 - "Invista em negócios, invista em livros para poder você aumentar a sua percepção de mercado, [...] de convencimento, de argumentação."
 
+### Continuação
+
+- A parte 2, com o workflow de reuniões e o pagamento por etapas, está em [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]; os modelos de orçamento e invoice, em [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]].
+
 ## Precisões e ressalvas
 
 - **Dumping** `[external]`, alta: em comércio internacional (OMC, GATT art. VI), dumping é exportar abaixo do preço normal do mercado de origem, muitas vezes abaixo do custo, para tirar concorrentes. O caso que a aula descreve (preço menor porque o custo é menor) é **liderança em custo**, que é concorrência legítima. A aula mistura os dois e depois condena o primeiro como "prostituir o mercado". O exemplo da China também mistura vantagem de custo e as acusações formais de dumping.

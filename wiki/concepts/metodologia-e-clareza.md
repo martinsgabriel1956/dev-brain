@@ -4,7 +4,7 @@ title: "Metodologia e clareza"
 aliases: ["metodologia de trabalho", "aquilo que não é claro eu não compro", "workflow de freelancer"]
 date_created: 2026-11-22
 date_updated: 2026-11-23
-source_count: 6
+source_count: 7
 tags: [carreira, freelance, metodologia, workflow, clareza, comunicacao]
 skill: tech-mentor-leadership
 status: stub
@@ -50,3 +50,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: dinheiro como fim do processo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: criar consciência no cliente antes do preço
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: explique o processo ao cliente
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: a metodologia apresentada na primeira reunião, com as regras do jogo

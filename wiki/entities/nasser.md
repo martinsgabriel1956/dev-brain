@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 157
+source_count: 159
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -342,8 +342,14 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|a
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] defende valor antes do preço, "qualidade + preço baixo" sem "prostituir o mercado", explicar o processo e investir em si mesmo.
 
+## Workflow de freela (aula 10)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas|aula 10 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra as quatro reuniões com pagamento 30/20/30/20 e diz que hoje pega "pouquíssimo" branding, "porque eu acredito que eu sou melhor em outras áreas".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: FrontPUSH, Monetização e Freelancer aula 10: quatro reuniões e pagamento por etapas
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: FrontPUSH, Monetização e Freelancer aula 09: valor antes do preço; dumping; explique o processo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: hora, projeto e projeto + valor
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: quatro círculos do nicho; terreno alugado
