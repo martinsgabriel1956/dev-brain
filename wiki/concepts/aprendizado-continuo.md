@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Contínuo"
 aliases: ["lifelong learning", "continuous learning", "aprendizado permanente"]
 date_created: 2026-05-19
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [soft-skills, aprendizado, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -47,7 +47,12 @@ Aprendizado contínuo é a *postura*. [[aprender-a-aprender]] é a *habilidade t
 
 Sem "aprender a aprender", aprendizado contínuo vira consumo de conteúdo sem profundidade — o ciclo do hype de ferramentas onde você nunca desenvolve nada de verdade.
 
+## Ninguém sabe 80% de uma tecnologia
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] usa o aprendizado contínuo contra barras de habilidade no CV: "você precisa aprender todo dia", então dizer que sabe 80% ou 100% de uma tecnologia "é simplesmente um tiro no pé" ([[wiki/concepts/estrutura-de-curriculo]]).
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: argumento contra porcentagem no CV

@@ -3,8 +3,8 @@ type: entity
 title: "Webflow"
 aliases: []
 date_created: 2026-11-19
-date_updated: 2026-11-19
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [no-code, site-builder, ferramenta, 3d]
 skill: tech-mentor-frontend
 status: stub
@@ -19,3 +19,4 @@ Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], o instrutor do
 ## Key Sources
 
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: integração Spline–Webflow
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: Jan Losert, "designer Webflow expert", como portfólio de referência

@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-22
-source_count: 7
+date_updated: 2026-11-23
+source_count: 8
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] explica por que e-commerces se parecem: "eu sempre preciso procurar soluções que diminuam a carga cognitiva do usuário", "que o usuário não pense mais". Reduzir a carga está "muito ligado a pattern", e todo padrão vira componente reaproveitável, o que também aumenta a produtividade de quem faz ([[wiki/concepts/padroes-de-interface]]).
 
+## No portfólio
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] aplica a ideia ao portfólio: "muitas dobras, muita coisa" tiram a clareza; o portfólio deve "reduzir a carga cognitiva do usuário" e mostrar só o mais importante ([[wiki/concepts/estrutura-de-portfolio]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -55,3 +59,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — ícone por módulo como "redução cognitiva"; só o objeto
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — patterns reduzem a carga cognitiva; não reinventar a roda
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — parágrafo longo vira tópicos para o usuário de fato ler
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: portfólio sem dobras demais

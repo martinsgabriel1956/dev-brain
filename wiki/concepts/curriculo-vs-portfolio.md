@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-11-22
-source_count: 14
+date_updated: 2026-11-23
+source_count: 15
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -86,6 +86,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autocon
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], a prova do júnior é o projeto documentado: "projetos com um bom README" no GitHub, com metodologia, decisões e como instalar e rodar. Ver [[wiki/concepts/demonstrar-experiencia-na-primeira-vaga]].
 
+## Portfólio, CV e README (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o formato: o portfólio como envelope (capa, trabalhos, sobre, contato), o CV "preto no branco" sem barras de porcentagem e o README como portfólio mínimo. Ver [[wiki/concepts/estrutura-de-portfolio]], [[wiki/concepts/estrutura-de-curriculo]] e [[wiki/concepts/estrutura-de-readme]].
+
 ## Key Sources
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: README como prova do júnior
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: erro do título com cinco especialidades
@@ -102,3 +106,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projeto pessoal alinhado aos requisitos reais de uma vaga como forma de gerar "o que falar" em entrevista, mesmo sem experiência profissional prévia
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — estudo de caso: currículo com pior formatação venceu na avaliação de trajetória por causa da seção de projetos pessoais com link, ferramentas e data
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: README como vitrine
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o envelope, o CV e o README

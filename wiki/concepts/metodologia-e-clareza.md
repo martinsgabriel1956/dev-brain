@@ -3,8 +3,8 @@ type: concept
 title: "Metodologia e clareza"
 aliases: ["metodologia de trabalho", "aquilo que não é claro eu não compro", "workflow de freelancer"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [carreira, freelance, metodologia, workflow, clareza, comunicacao]
 skill: tech-mentor-leadership
 status: stub
@@ -26,7 +26,12 @@ A aula 6 do roteiro tem este nome. A frase-guia: "aquilo que não é claro eu n�
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], a ideia aparece como causa de não ganhar dinheiro: "se você não consegue ter confiança naquilo que você faz [...] você não consegue vender, porque você precisa de um processo bem definido, de um workflow bem definido". O freela deve saber "da ponta da língua" a estrutura de reunião e o ponto forte do serviço. Fecha a aula como "workflow clarificado".
 
+## Sem metodologia não há portfólio
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]] fecha assim: "não tem como você fazer um portfólio sem [...] ter a metodologia do que você utilizou". O portfólio só mostra a metodologia que já existe.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: processo bem definido dá confiança para vender
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: o pilar e a frase-guia
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: portfólio depende da metodologia

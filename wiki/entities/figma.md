@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-22
-source_count: 57
+date_updated: 2026-11-23
+source_count: 58
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -257,3 +257,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: gradiente copiado para a demo de rotate
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: espelho do SVG; efeitos no export; Ctrl-Shift-G
 - [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: fill, filtros, gradientes e IDs do export
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: layout da próxima versão do portfólio do Násser

@@ -3,8 +3,8 @@ type: concept
 title: "Padrão de Seções de Documentação Técnica"
 aliases: ["getting started tutorials api reference examples", "estrutura padrão de docs"]
 date_created: 2026-08-24
-date_updated: 2026-08-24
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [carreira, aprendizado, documentacao]
 skill: tech-mentor-leadership
 status: stub
@@ -37,3 +37,4 @@ O padrão de quatro seções observado empiricamente pela fonte corresponde de p
 ## Key Sources
 
 - [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]]
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o README de portfólio repete o Getting Started (ver [[wiki/concepts/estrutura-de-readme]])

@@ -3,8 +3,8 @@ type: concept
 title: "Posicionamento no mercado"
 aliases: ["posicionamento profissional", "posicionamento de carreira", "escolher uma área", "título de portfólio"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [carreira, posicionamento, portfolio, freelance, t-shaped, especialista]
 skill: tech-mentor-leadership
 status: stub
@@ -26,7 +26,12 @@ A base é o exercício do [[wiki/concepts/profissional-t-shaped]]: separar o que
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] repete o erro no contexto da primeira vaga: o júnior quer "mostrar a maior quantidade de habilidades possível para a empresa para poder impressionar" e escreve "Full Stack UX UI Motion Designer"; "você é um júnior, então você percebe como está desconexo isso?". O primeiro passo da vaga é o exercício do T-shaped.
 
+## Título do portfólio e do CV
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] põe duas skills na capa do próprio portfólio, mas só "porque eu tenho um tempo maior de carreira": "sempre equilibre". O CV de exemplo se apresenta só como "Product Designer", embora a pessoa também faça motion.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: título inflado do júnior; T-shaped como primeiro passo
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: o erro do título com cinco especialidades e a regra de escolher uma área
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: duas skills só com carreira longa

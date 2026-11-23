@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-22
-source_count: 130
+date_updated: 2026-11-23
+source_count: 131
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -483,8 +483,13 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autocon
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], o blog e o projeto Nubank do curso viram exemplos de narrativa para entrevista; a aula é desenhada no Procreate com a paleta "FrontPUSH 2.0".
 
+## Os projetos do curso como portfólio
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], a landing page do FrontPUSH, o Spider-Man, o blog e o Nubank aparecem como peças de portfólio com objetivos diferentes ([[wiki/concepts/estrutura-de-portfolio]]).
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio, CV e README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: projetos do curso como narrativa de entrevista
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: o curso segue o T do autor
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: como ganhar dinheiro: erros, acertos, preço

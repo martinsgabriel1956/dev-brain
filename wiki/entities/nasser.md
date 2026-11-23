@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-22
-source_count: 153
+date_updated: 2026-11-23
+source_count: 154
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -326,8 +326,13 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autocon
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] dá cinco passos (T-shaped, mercado, descrição da vaga, demonstrar experiência, alinhamento) e explica por que escolheu React. Para UI designer, diz que está "um pouquinho fora".
 
+## Portfólio (aula 05)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o próprio portfólio (capa com duas skills, projetos FrontPUSH, Spider-Man, Blog e Nubank) e, no Figma, a próxima versão com uma página por projeto.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio como envelope; CV e README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: cinco passos; escolha do React
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: mapa de expertise e de áreas que sabe avaliar
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: cobrança, fila e branding pessoal

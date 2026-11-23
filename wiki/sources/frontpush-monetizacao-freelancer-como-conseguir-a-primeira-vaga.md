@@ -3,7 +3,7 @@ type: source
 title: "Monetização e Freelancer, aula 04: como conseguir a primeira vaga (FrontPUSH)"
 aliases: ["FrontPUSH monetização aula 04", "Como conseguir a primeira vaga FrontPUSH", "primeira vaga júnior FrontPUSH"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
+date_updated: 2026-11-23
 source_count: 0
 tags: [carreira, primeira-vaga, junior, t-shaped, descricao-da-vaga, react, javascript, figma, frontend, ux, ui, portfolio, readme, github, entrevista, curso]
 skill: tech-mentor-leadership
@@ -69,6 +69,10 @@ Tela do iPad: "Como conseguir a 1ª Vaga?" · Faça o exercício do T-SHAPED · 
 
 - "Entenda que é um contrato da empresa com você": a empresa diz expectativas e cultura; você pergunta "qual é o regime de trabalho, como é que vocês costumam reagir, por exemplo, quando tem um bug, como é que vocês tratam o júnior, tem alguém para poder acompanhar" ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]]).
 - "Você tem que fazer projetos com um bom README": metodologia, processo, decisões, "como é que você fez a instalação", o comando para rodar. "O que você puder deixar mastigado [...] vai facilitar demais." Portfólio fica para "as próximas aulas" ([[wiki/concepts/curriculo-vs-portfolio]]).
+
+### Continuação
+
+- A aula seguinte, sobre portfólio, CV e README, está em [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]].
 
 ## Precisões e ressalvas
 

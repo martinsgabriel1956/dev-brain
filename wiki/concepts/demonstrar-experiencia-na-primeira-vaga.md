@@ -3,8 +3,8 @@ type: concept
 title: "Demonstrar experiência na primeira vaga"
 aliases: ["experiência sem experiência", "como demonstrar experiência", "narrativa de projetos", "README como portfólio"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [carreira, primeira-vaga, junior, portfolio, readme, entrevista, storytelling]
 skill: tech-mentor-leadership
 status: stub
@@ -30,6 +30,11 @@ Quem nunca trabalhou não tem experiência de emprego para mostrar, mas tem a de
 - [[wiki/concepts/portfolio-backend-junior]]: a versão de back-end do mesmo problema.
 - [[wiki/concepts/metodologia-e-clareza]]: a metodologia que o módulo põe na base.
 
+## O README cataloga a experiência
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]] fecha o assunto: "a sua experiência meio que já está catalogada aqui no README". Os exemplos (Rocketshoes, MeetApp) estão em [[wiki/concepts/estrutura-de-readme]]; a vitrine maior, em [[wiki/concepts/estrutura-de-portfolio]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: "trazer algo do mundo das ideias para a realidade"; narrativa e README
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: README como catálogo da experiência

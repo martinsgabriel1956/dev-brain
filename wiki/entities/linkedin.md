@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-23
+source_count: 11
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -53,3 +53,4 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de 
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link de contato no portfólio; "para mais, visite o LinkedIn" no CV
