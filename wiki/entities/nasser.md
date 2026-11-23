@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 154
+source_count: 155
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -330,8 +330,13 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o próprio portfólio (capa com duas skills, projetos FrontPUSH, Spider-Man, Blog e Nubank) e, no Figma, a próxima versão com uma página por projeto.
 
+## Nicho (aulas 06 e 07)
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] apresenta os quatro círculos do nicho e conta o caso de um cliente que quer uma plataforma de cursos própria, fora da Hotmart e com gamificação.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: quatro círculos do nicho; terreno alugado
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio como envelope; CV e README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: cinco passos; escolha do React
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: mapa de expertise e de áreas que sabe avaliar

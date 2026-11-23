@@ -3,8 +3,8 @@ type: concept
 title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
-date_updated: 2026-11-22
-source_count: 7
+date_updated: 2026-11-23
+source_count: 8
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -44,6 +44,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metod
 
 A [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]] lista por que freelancers não ganham dinheiro (marketing, comunicação, autoconhecimento, oferta × demanda, mercado, execução, intermediários) e o que funcionou para [[wiki/entities/nasser|Násser]] (produtividade, comunicação, [[wiki/concepts/branding-pessoal]], moeda forte, generalista com expertise, workflow clarificado, eliminar intermediários). Precificação: [[wiki/concepts/precificacao-por-valor-vs-por-hora]].
 
+## A digitalização abriu espaço ao freela
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] atribui à pandemia a corrida de autônomos e pequenos negócios para o digital, o que "possibilitou a nós freelancers" fazer desenvolvimento de produto, antes coisa de agências e grandes empresas. O exemplo é um cliente que quer a própria plataforma de cursos com gamificação ([[wiki/concepts/escolha-de-nicho]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: sete erros, sete acertos; preço pela fila e pelo valor
@@ -58,3 +62,4 @@ Passo seguinte do funil: [[wiki/sources/5-modelos-economicos-para-vender-servico
 
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
 - [[wiki/sources/como-aprender-ui]] — justificar decisões de UI para convencer o cliente em freelance
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: digitalização e o caso da plataforma de cursos

@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
-date_updated: 2026-11-22
-source_count: 5
+date_updated: 2026-11-23
+source_count: 6
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
 status: draft
@@ -55,6 +55,10 @@ O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] trata não saber se vender e falta de comunicação como erros que travam a renda: apresentar a ideia "de forma concisa", "passo a passo", "porque aquilo que eu não entendo eu não compro". A estrutura sugerida é a da redação (introdução, desenvolvimento, conclusão), e o treino, curso de oratória ou de teatro. Compra é decisão "na maioria das vezes [...] emocional" justificada com pontos racionais.
 
+## A explicação da demanda já é a venda
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]]: "só de eu estar explicando aqui para vocês o motivo, eu já meio que estou fazendo uma venda aqui". O argumento do terreno alugado é o discurso do freela ([[wiki/concepts/terreno-alugado-vs-terreno-proprio]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: vender = confiança + processo; estrutura de redação; oratória e teatro
@@ -62,3 +66,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — adaptação de registro de comunicação por nível hierárquico e por canal
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: terreno alugado como argumento de venda

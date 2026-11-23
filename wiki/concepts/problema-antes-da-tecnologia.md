@@ -3,8 +3,8 @@ type: concept
 title: "Problema Antes da Tecnologia"
 aliases: ["qual problema estamos tentando resolver", "inverter a pergunta", "estratégia de IA antes do problema"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [tomada-de-decisao, estrategia-tecnica, hype, estrategia-de-ia, modernizacao]
 skill: tech-mentor-leadership
 status: draft
@@ -35,6 +35,11 @@ Antes de adotar uma tecnologia, a primeira pergunta deve ser **"qual problema es
 - [[wiki/concepts/mudanca-cultural-como-produto-de-servicos-de-ia]] e [[wiki/concepts/validacao-de-problema]] — descoberta do problema real em projetos de IA.
 - [skill: tech-mentor-leadership] Tech Radar (Adopt/Trial/Assess/Hold) com justificativa "por quê / quando usar / quando NÃO usar" transforma a pergunta em processo (`references/strategy/tech-radar-build-vs-buy.md`).
 
+## No freela: o problema por trás do pedido
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] leva a ideia para a venda: "sempre tem um problema por trás e é interessante que você estude esse problema"; o cliente quer dinheiro, "mas às vezes querem um dinheiro para quê?".
+
 ## Key Sources
 
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]]
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: o problema por trás do pedido do cliente

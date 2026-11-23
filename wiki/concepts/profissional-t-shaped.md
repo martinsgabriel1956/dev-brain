@@ -4,7 +4,7 @@ title: "Profissional T-Shaped (Formação em T)"
 aliases: ["formacao em T", "T-shaped", "profissional em T", "especialista generalista"]
 date_created: 2026-08-13
 date_updated: 2026-11-23
-source_count: 9
+source_count: 10
 tags: [carreira, t-shaped, formacao-em-t, generalista, especialista, arquiteto-de-solucoes]
 skill: tech-mentor-leadership
 status: stub
@@ -66,6 +66,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], o T-shaped aparece escrito no CV como "expertise e outras skills", e o título fica com uma especialidade só, mesmo para quem domina mais de uma ([[wiki/concepts/estrutura-de-curriculo]]).
 
+## Do autoconhecimento ao mercado
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], o exercício do T vira o primeiro passo da [[wiki/concepts/escolha-de-nicho]]: "da mesma forma que você fez um trabalho de autoconhecimento naquela seção, agora a gente vai fazer um trabalho de autoconhecimento do mercado". Interesses e aptidão são os dois círculos que vêm do T.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: primeiro passo da primeira vaga; tensão com a aula 03
@@ -85,3 +89,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 - [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — tese generalista do Vale; T como conciliação
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: T-shaped como seção do CV
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: T-shaped como base da escolha de nicho

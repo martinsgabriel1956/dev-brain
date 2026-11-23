@@ -4,7 +4,7 @@ title: "Branding pessoal"
 aliases: ["marca pessoal", "personal branding", "personal brand"]
 date_created: 2026-11-22
 date_updated: 2026-11-23
-source_count: 3
+source_count: 4
 tags: [carreira, freelance, branding, posicionamento, expertise]
 skill: tech-mentor-leadership
 status: stub
@@ -29,3 +29,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: influência vem de vender uma expertise
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: definição e o exemplo das animações
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: site próprio e humanização
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: "as pessoas querem uma marca para poder melhor representar elas" como demanda

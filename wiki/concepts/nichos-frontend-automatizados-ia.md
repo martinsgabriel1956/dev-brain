@@ -3,8 +3,8 @@ type: concept
 title: "Nichos de Frontend Comoditizados pela IA"
 aliases: ["escopo crud automatizado", "agencia freelancer landing page ia", "compressao de mercado frontend"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [frontend, carreira, mercado-de-trabalho, ia-para-devs, ciclo-de-mercado-tech]
 skill: tech-mentor-frontend
 status: stub
@@ -37,6 +37,11 @@ Menos vagas de frontend puro; mais vagas fullstack/mobile, porque a demanda se d
 - [[wiki/concepts/product-engineer]] — o perfil que emerge como resposta à comoditização do CRUD simples
 - [[wiki/concepts/novo-perfil-dev-ia]] — a mudança de requisito que acompanha a compressão desses nichos
 
+## Tensão com a escolha de nicho
+
+As [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]] apontam websites, landing pages e blogs como a demanda principal do freela. Esta página mostra que são justamente os nichos mais comoditizados; o diferencial que a aula propõe (identidade, experiência, gamificação) é o que resiste melhor ([[wiki/concepts/escolha-de-nicho]]).
+
 ## Key Sources
 
 - [[wiki/sources/impacto-ia-mercado-frontend]]
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: websites como demanda, antes da IA

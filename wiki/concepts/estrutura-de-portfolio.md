@@ -4,7 +4,7 @@ title: "Estrutura de portfólio"
 aliases: ["portfólio como envelope", "seções de um portfólio", "como montar um portfólio"]
 date_created: 2026-11-23
 date_updated: 2026-11-23
-source_count: 1
+source_count: 2
 tags: [carreira, portfolio, freelance, primeira-vaga, design, branding-pessoal]
 skill: tech-mentor-leadership
 status: stub
@@ -36,3 +36,4 @@ O passo seguinte é uma página por projeto com cliente, objetivos, descrição 
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o envelope, os quatro projetos do Násser e portfólios de designers
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: repete: site com portfólio não é preciso para vaga; GitHub basta

@@ -3,8 +3,8 @@ type: concept
 title: "Bons e maus clientes"
 aliases: ["identificar bons e maus clientes", "cliente ruim", "red flags de cliente"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [carreira, freelance, clientes, prospeccao]
 skill: tech-mentor-leadership
 status: stub
@@ -23,3 +23,4 @@ Aula 7 do módulo "Monetização e Freelancer" do [[wiki/entities/frontpush|Fron
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: o tema anunciado
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: o problema por trás do pedido do cliente (dinheiro "para quê?")

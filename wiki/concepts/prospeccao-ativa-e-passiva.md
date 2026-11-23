@@ -3,8 +3,8 @@ type: concept
 title: "Prospecção ativa e passiva"
 aliases: ["prospecção ativa", "prospecção passiva", "prospecção de clientes", "outbound e inbound para freelancer"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [carreira, freelance, prospeccao, clientes, vendas]
 skill: tech-mentor-leadership
 status: stub
@@ -22,6 +22,11 @@ Segundo pilar do módulo "Monetização e Freelancer" do [[wiki/entities/frontpu
 - [[wiki/concepts/bons-e-maus-clientes]]: filtro depois de achar o cliente.
 - [[wiki/concepts/metodologia-e-clareza]]: a base do triângulo em que a prospecção se apoia.
 
+## Para quem você resolve
+
+As [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]] definem o público antes da prospecção: autônomos, empreendedores, produtores de conteúdo, agências e empresas, "todo e qualquer pessoa que esteja querendo empreender" ([[wiki/concepts/escolha-de-nicho]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: o pilar e a aula 8 do roteiro
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: o círculo de mercado

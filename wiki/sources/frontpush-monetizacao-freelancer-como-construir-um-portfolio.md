@@ -80,6 +80,10 @@ Fecho: não há portfólio sem o trabalho e a metodologia das aulas anteriores; 
 - "Não tem como você fazer um portfólio sem ter feito tudo aquilo que a gente falou antes, sem ter trabalho para poder apresentar, sem ter a metodologia." Mesmo um exercício simples de JavaScript: "faça, demonstre isso, escreva isso".
 - "Uma vez que você abrangiu cerca de 90%, 80% daquilo que está descrito na vaga [...] comece a submeter para vaga" ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
 
+### Continuação
+
+- A aula seguinte, sobre como escolher o nicho, está em [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]].
+
 ## Precisões e ressalvas
 
 - **CV sem cores e gráficos** `[external]`: bate com a orientação de ATS. Layout em colunas, gráficos e texto em imagem atrapalham a leitura automática; ver [[wiki/concepts/otimizacao-ats-curriculo]]. O argumento da aula é outro (barra de porcentagem não mede nada), mas os dois apontam para o mesmo CV.

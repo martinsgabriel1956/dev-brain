@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-19
-source_count: 15
+date_updated: 2026-11-23
+source_count: 16
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -73,3 +73,4 @@ Em [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtua
 
 Em [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]], parte da FANG; "dizem que a Meta tem uma codebase excelente", rumor que o autor pede para não tomar como recomendação.
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: o Facebook como quem "disponibiliza" o create-react-app
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: Instagram como terreno alugado, "condomínio do Marcos Zuckerberg"

@@ -4,7 +4,7 @@ title: "Posicionamento no mercado"
 aliases: ["posicionamento profissional", "posicionamento de carreira", "escolher uma área", "título de portfólio"]
 date_created: 2026-11-22
 date_updated: 2026-11-23
-source_count: 3
+source_count: 4
 tags: [carreira, posicionamento, portfolio, freelance, t-shaped, especialista]
 skill: tech-mentor-leadership
 status: stub
@@ -30,8 +30,13 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] põe duas skills na capa do próprio portfólio, mas só "porque eu tenho um tempo maior de carreira": "sempre equilibre". O CV de exemplo se apresenta só como "Product Designer", embora a pessoa também faça motion.
 
+## Nicho
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] trata o nicho como interseção de demanda, interesses, aptidão e mercado: "não só no que você é bom, mas no que você é bom e o mercado precisa" ([[wiki/concepts/escolha-de-nicho]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: título inflado do júnior; T-shaped como primeiro passo
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: o erro do título com cinco especialidades e a regra de escolher uma área
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: duas skills só com carreira longa
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: nicho como interseção de quatro círculos
