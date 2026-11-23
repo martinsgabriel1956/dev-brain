@@ -4,7 +4,7 @@ title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
 date_updated: 2026-11-23
-source_count: 8
+source_count: 9
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -48,6 +48,10 @@ A [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-p
 
 Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] atribui à pandemia a corrida de autônomos e pequenos negócios para o digital, o que "possibilitou a nós freelancers" fazer desenvolvimento de produto, antes coisa de agências e grandes empresas. O exemplo é um cliente que quer a própria plataforma de cursos com gamificação ([[wiki/concepts/escolha-de-nicho]]).
 
+## Começar cobrando por hora
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], o freela de renda extra começa "no raso, na piscina": cobrando por hora, um pouco abaixo do mercado, para aprender a conversar com cliente, dar prazo e entregar. Só para quem "já trabalha" ou tem bons projetos; "com a cara e a coragem" queima o nome ([[wiki/concepts/calculo-do-valor-da-hora]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: sete erros, sete acertos; preço pela fila e pelo valor
@@ -63,3 +67,4 @@ Passo seguinte do funil: [[wiki/sources/5-modelos-economicos-para-vender-servico
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
 - [[wiki/sources/como-aprender-ui]] — justificar decisões de UI para convencer o cliente em freelance
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: digitalização e o caso da plataforma de cursos
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: começar por hora, abaixo do mercado

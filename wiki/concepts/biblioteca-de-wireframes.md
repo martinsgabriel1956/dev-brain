@@ -3,8 +3,8 @@ type: concept
 title: "Biblioteca de wireframes"
 aliases: ["Frankenstein de wireframes", "biblioteca de referências", "repertório de seções", "modelos pré-prontos"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [ui, ux, ui-design, wireframe, referencias, processo-criativo]
 skill: ux-ui-mentor
 status: stub
@@ -25,3 +25,4 @@ A ideia segue o "criatividade se constrói" das aulas iniciais: copiar, entender
 ## Key Sources
 
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — o Frankenstein, a biblioteca de seções e o fim do "bloqueio criativo"
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: wireframes prontos tornam o trabalho mais rápido, o que pune quem cobra por hora

@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 155
+source_count: 156
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -334,8 +334,13 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] apresenta os quatro círculos do nicho e conta o caso de um cliente que quer uma plataforma de cursos própria, fora da Hotmart e com gamificação.
 
+## Cobrança (aula 08)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz estar no degrau "projeto + valor", com "mais de dois anos de forma bem mais incisiva" no freela, e promete mostrar oferta e orçamento nas aulas seguintes.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: hora, projeto e projeto + valor
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: quatro círculos do nicho; terreno alugado
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio como envelope; CV e README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: cinco passos; escolha do React

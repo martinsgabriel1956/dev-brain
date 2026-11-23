@@ -3,8 +3,8 @@ type: concept
 title: "Precificação por valor vs. por hora"
 aliases: ["cobrar por hora", "cobrança por valor", "value-based pricing", "precificação de freelance", "preço por projeto"]
 date_created: 2026-11-22
-date_updated: 2026-11-22
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [freelance, precificacao, oferta-e-demanda, produtividade, negocio]
 skill: tech-mentor-leadership
 status: stub
@@ -37,6 +37,11 @@ Para [[wiki/entities/nasser|Násser]], "não é muito inteligente você sempre c
 - [[wiki/concepts/padroes-de-interface]]: a fonte da produtividade que a hora "sabota".
 - [[wiki/concepts/briefing]]: as perguntas de escopo antes do preço.
 
+## Quando a hora ainda serve (aula 08)
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]] matiza a aula 02: hora é o primeiro degrau de quem começa ("ser pago para ter experiência") e segue valendo para trabalhos pequenos, consultoria, manutenção e ajustes. O argumento contra continua: "se você está fazendo mais rápido e você cobra por hora, você está meio que ganhando menos", soma-se o "baixo estímulo para a criatividade" e o limite de ganho. Ver [[wiki/concepts/escada-de-cobranca-hora-projeto-valor]] e [[wiki/concepts/calculo-do-valor-da-hora]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: hora sabota a produtividade; fila, inflar, perguntas de escopo
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: hora como primeiro degrau; quando sair dela

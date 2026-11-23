@@ -73,6 +73,10 @@ O nicho fica na interseção. É o exercício do [[wiki/concepts/profissional-t-
 - "O dinheiro é o fim da parada." Com a metodologia executada, "não tem como dar errado".
 - Prometido: "exemplos específicos com o decorrer das aulas".
 
+### Continuação
+
+- A aula seguinte, sobre como cobrar (hora, projeto, projeto + valor), está em [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]; o caso da plataforma de cursos com gamificação volta como exemplo de valor agregado.
+
 ## Precisões e ressalvas
 
 - **Ikigai** `[external]`: os quatro círculos lembram o diagrama ocidental de "ikigai" (o que você ama, em que é bom, de que o mundo precisa, pelo que pode ser pago), popularizado por Marc Winn em 2014. A aula não cita o nome e troca "pelo que pode ser pago" por "mercado: para quem você resolve". Confiança alta na semelhança, média na origem.

@@ -3,8 +3,8 @@ type: concept
 title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
-date_updated: 2026-11-22
-source_count: 3
+date_updated: 2026-11-23
+source_count: 4
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -46,3 +46,4 @@ A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodo
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: pré-briefing e workflow de reuniões na aula 9
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: briefing do Black Dev: preciso, sóbrio, profissional
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: perguntas antes de cobrar por projeto: o cliente sabe o que quer? prazo? espaço para criatividade?

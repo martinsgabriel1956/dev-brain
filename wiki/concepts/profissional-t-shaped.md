@@ -4,7 +4,7 @@ title: "Profissional T-Shaped (Formação em T)"
 aliases: ["formacao em T", "T-shaped", "profissional em T", "especialista generalista"]
 date_created: 2026-08-13
 date_updated: 2026-11-23
-source_count: 10
+source_count: 11
 tags: [carreira, t-shaped, formacao-em-t, generalista, especialista, arquiteto-de-solucoes]
 skill: tech-mentor-leadership
 status: stub
@@ -90,3 +90,4 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 - [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — tese generalista do Vale; T como conciliação
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: T-shaped como seção do CV
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: T-shaped como base da escolha de nicho
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: o T traçado "lá atrás" sustenta o degrau projeto + valor

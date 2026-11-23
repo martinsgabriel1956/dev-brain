@@ -4,7 +4,7 @@ title: "Posicionamento no mercado"
 aliases: ["posicionamento profissional", "posicionamento de carreira", "escolher uma área", "título de portfólio"]
 date_created: 2026-11-22
 date_updated: 2026-11-23
-source_count: 4
+source_count: 5
 tags: [carreira, posicionamento, portfolio, freelance, t-shaped, especialista]
 skill: tech-mentor-leadership
 status: stub
@@ -40,3 +40,4 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: o erro do título com cinco especialidades e a regra de escolher uma área
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: duas skills só com carreira longa
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: nicho como interseção de quatro círculos
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: respeito na expertise como base do preço por valor

@@ -4,7 +4,7 @@ title: "Escolha de nicho"
 aliases: ["como escolher um nicho", "nicho ideal", "quatro círculos do nicho", "demanda, interesses, aptidão e mercado"]
 date_created: 2026-11-23
 date_updated: 2026-11-23
-source_count: 1
+source_count: 2
 tags: [carreira, freelance, nicho, mercado, demanda, autoconhecimento, t-shaped]
 skill: tech-mentor-leadership
 status: stub
@@ -43,3 +43,4 @@ Para [[wiki/entities/nasser|Násser]], o nicho está na interseção de quatro c
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: os quatro círculos e o exemplo de websites
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: o dinheiro como "fim das coisas" de novo; o caso da gamificação continua
