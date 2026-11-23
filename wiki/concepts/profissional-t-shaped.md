@@ -4,7 +4,7 @@ title: "Profissional T-Shaped (Formação em T)"
 aliases: ["formacao em T", "T-shaped", "profissional em T", "especialista generalista"]
 date_created: 2026-08-13
 date_updated: 2026-11-23
-source_count: 11
+source_count: 12
 tags: [carreira, t-shaped, formacao-em-t, generalista, especialista, arquiteto-de-solucoes]
 skill: tech-mentor-leadership
 status: stub
@@ -70,6 +70,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], o exercício do T vira o primeiro passo da [[wiki/concepts/escolha-de-nicho]]: "da mesma forma que você fez um trabalho de autoconhecimento naquela seção, agora a gente vai fazer um trabalho de autoconhecimento do mercado". Interesses e aptidão são os dois círculos que vêm do T.
 
+## O T como vantagem de custo
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], quem faz UI e dev sozinho corta "custos de uma outra pessoa" e pode cobrar menos que a agência; "o grande diferencial de um freelancer é ele investir em si mesmo [...] melhorando aquele formato T" ([[wiki/concepts/dumping-de-preco]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: primeiro passo da primeira vaga; tensão com a aula 03
@@ -91,3 +95,4 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: T-shaped como seção do CV
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: T-shaped como base da escolha de nicho
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: o T traçado "lá atrás" sustenta o degrau projeto + valor
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: T-shaped como vantagem de custo sobre a agência

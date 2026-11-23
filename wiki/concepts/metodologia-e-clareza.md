@@ -4,7 +4,7 @@ title: "Metodologia e clareza"
 aliases: ["metodologia de trabalho", "aquilo que não é claro eu não compro", "workflow de freelancer"]
 date_created: 2026-11-22
 date_updated: 2026-11-23
-source_count: 5
+source_count: 6
 tags: [carreira, freelance, metodologia, workflow, clareza, comunicacao]
 skill: tech-mentor-leadership
 status: stub
@@ -38,6 +38,10 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], explicar o processo ao cliente ("fazer tela é esse trabalho [...], não é simplesmente [...] um esboço e está pronto") evita o "achei caro": sem isso, "você não criou nem consciência nele".
 
+## Explique o processo
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], a metodologia vira argumento de venda: "antes de você montar qualquer oferta [...] você precisa explicar o processo", porque "as pessoas não pagam aquilo que elas não entendem". O slide lista pesquisa, responsivo, CMS, wireframes e conteúdo, animações e style guide ([[wiki/concepts/criar-consciencia-no-cliente]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: processo bem definido dá confiança para vender
@@ -45,3 +49,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|a
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: portfólio depende da metodologia
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: dinheiro como fim do processo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: criar consciência no cliente antes do preço
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: explique o processo ao cliente

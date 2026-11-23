@@ -3,8 +3,8 @@ type: concept
 title: "Mood Board"
 aliases: ["moodboard", "painel de referências", "painel semântico", "referências visuais"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-23
+source_count: 5
 tags: [ui, ui-design, design, pesquisa, referencias, criatividade]
 skill: ux-ui-mentor
 status: stub
@@ -44,3 +44,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — referências de estrutura (menu, hero, seções) para montar o page map
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — busca de referências como passo 3 do processo de wireframes
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — pesquisar referências antes de escolher fonte
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: pesquisa visual e mood board como etapa explicada ao cliente na oferta

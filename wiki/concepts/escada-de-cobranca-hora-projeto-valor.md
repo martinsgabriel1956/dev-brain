@@ -4,7 +4,7 @@ title: "Escada de cobrança: hora, projeto, projeto + valor"
 aliases: ["escadinha de cobrança", "hora vs projeto", "projeto + valor", "quando parar de cobrar por hora"]
 date_created: 2026-11-23
 date_updated: 2026-11-23
-source_count: 1
+source_count: 2
 tags: [freelance, precificacao, carreira, value-based-pricing]
 skill: tech-mentor-leadership
 status: stub
@@ -40,3 +40,4 @@ Para [[wiki/entities/nasser|Násser]], o freelancer sobe três degraus de cobran
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: os três degraus, slides e o exemplo da gamificação
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: "se você estiver começando, preço lá embaixo"; entregando bem, iguala a agência ou passa

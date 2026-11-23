@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 156
+source_count: 157
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -338,8 +338,13 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz estar no degrau "projeto + valor", com "mais de dois anos de forma bem mais incisiva" no freela, e promete mostrar oferta e orçamento nas aulas seguintes.
 
+## Ofertas (aula 09)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] defende valor antes do preço, "qualidade + preço baixo" sem "prostituir o mercado", explicar o processo e investir em si mesmo.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: FrontPUSH, Monetização e Freelancer aula 09: valor antes do preço; dumping; explique o processo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: hora, projeto e projeto + valor
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: quatro círculos do nicho; terreno alugado
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio como envelope; CV e README

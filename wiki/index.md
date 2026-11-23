@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]] | Módulo Monetização e Freelancer, aula 09, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 18 min com slides: valor antes do preço, "não fale o preço de cara" ([[wiki/concepts/criar-consciencia-no-cliente]]); "qualidade + preço baixo" porque o freela não tem custos de agência e cobre UI e dev, chamado de [[wiki/concepts/dumping-de-preco\|dumping]], "cuidado, não prostitua o mercado"; explique o processo (pesquisa, mood board, responsivo, CMS, wireframes, style guide), "as pessoas não pagam aquilo que elas não entendem"; "onde devo investir? Você". Precisões: dumping ≠ liderança em custo, tensão com o preço por valor, ancoragem pelo valor |
 | [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]] | Módulo Monetização e Freelancer, aula 08, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 25 min com slides: [[wiki/concepts/escada-de-cobranca-hora-projeto-valor\|escadinha de cobrança]] hora → projeto → projeto + valor; hora para iniciantes, "ser pago para ter experiência", e depois só para manutenção e consultoria ([[wiki/concepts/calculo-do-valor-da-hora\|valor da hora]]: salário CLT ÷ 22 ÷ horas, custos, mercado um pouco abaixo); hora pune a eficiência e a criatividade; projeto exige saber se o cliente sabe o que quer; projeto + valor com o exemplo da gamificação ("mais um quilômetro, parabéns", [[wiki/concepts/goal-gradient-effect]]) e "criar consciência" no cliente. Precisões: CLT ÷ horas subestima a hora de PJ, risco de escopo no preço fechado, 10 mil horas, área pequena |
 | [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]] | Módulo Monetização e Freelancer, aulas 06 e 07 (um vídeo em duas partes, 19 min), do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/escolha-de-nicho\|nicho]] na interseção de quatro círculos (demanda: o que querem; interesses: o que você ama; aptidão: o que já é bom; mercado: que problema resolve e para quem), o T-shaped virado em "autoconhecimento do mercado"; websites como demanda pós-pandemia e o [[wiki/concepts/terreno-alugado-vs-terreno-proprio\|terreno alugado]] ("condomínio do Marcos Zuckerberg"); cliente que quer plataforma de cursos fora da Hotmart, com gamificação; "o dinheiro é a ponta". Precisões: forma do ikigai, sem critério para medir demanda, sites simples comoditizados pela IA |
 | [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]] | Módulo Monetização e Freelancer, aula 05, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 29 min em tela compartilhada: site próprio "não é necessário, mas é bom" (mais para design e freela); [[wiki/concepts/estrutura-de-portfolio\|portfólio como envelope]] (capa → trabalhos diversos com objetivo → sobre, "pessoas contratam pessoas" → contato e CV); [[wiki/concepts/estrutura-de-curriculo\|CV preto no branco]], sem cores, gráficos nem "sei 80% de tal tecnologia", título único e T-shaped como "expertise e outras skills"; página por projeto como próximo passo; [[wiki/concepts/estrutura-de-readme\|README]] como portfólio mínimo (Rocketshoes, MeetApp, AnimaVita); designers seguem o mesmo padrão. Precisões: ATS, "80% a 90% da vaga" mais exigente que o usual, grafias de nomes só da legenda |
@@ -1081,6 +1082,13 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo Monetização e Freelancer aula 09: ofertas (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/criar-consciencia-no-cliente]] | Valor antes do preço: explicar processo e etapas para o cliente não julgar o preço pelo que "já sabe"; sem isso, "achei caro" |
+| [[wiki/concepts/dumping-de-preco]] | "Qualidade + preço baixo" do freela (sem custos de agência), com o limite de "não prostituir o mercado"; dumping vs liderança em custo |
 
 ### FrontPUSH, módulo Monetização e Freelancer aula 08: como cobrar (2026-11-23)
 

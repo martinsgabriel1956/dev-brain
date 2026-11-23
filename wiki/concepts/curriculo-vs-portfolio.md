@@ -4,7 +4,7 @@ title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
 date_updated: 2026-11-23
-source_count: 15
+source_count: 16
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -107,3 +107,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — estudo de caso: currículo com pior formatação venceu na avaliação de trajetória por causa da seção de projetos pessoais com link, ferramentas e data
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: README como vitrine
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o envelope, o CV e o README
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: "o cliente está bem mais interessado no que você tem feito do que você diz que vai fazer"

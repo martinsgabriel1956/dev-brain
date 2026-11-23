@@ -4,7 +4,7 @@ title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
 date_updated: 2026-11-23
-source_count: 6
+source_count: 7
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
 status: draft
@@ -67,3 +67,4 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — adaptação de registro de comunicação por nível hierárquico e por canal
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: terreno alugado como argumento de venda
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: as etapas do processo como "vieses argumentativos" da oferta

@@ -4,7 +4,7 @@ title: "Aprendizado Contínuo"
 aliases: ["lifelong learning", "continuous learning", "aprendizado permanente"]
 date_created: 2026-05-19
 date_updated: 2026-11-23
-source_count: 3
+source_count: 4
 tags: [soft-skills, aprendizado, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -51,8 +51,13 @@ Sem "aprender a aprender", aprendizado contínuo vira consumo de conteúdo sem p
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] usa o aprendizado contínuo contra barras de habilidade no CV: "você precisa aprender todo dia", então dizer que sabe 80% ou 100% de uma tecnologia "é simplesmente um tiro no pé" ([[wiki/concepts/estrutura-de-curriculo]]).
 
+## Onde investir? Você
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] fecha com "o maior ativo é você": com pouco dinheiro, investir em capacitação, negócios e livros rende mais que renda fixa ou bolsa. `[external]` Não substitui reserva de emergência, mais necessária com renda irregular.
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: argumento contra porcentagem no CV
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: "o maior ativo é você"

@@ -4,7 +4,7 @@ title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
 date_updated: 2026-11-23
-source_count: 9
+source_count: 10
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -52,6 +52,10 @@ Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], o freela de renda extra começa "no raso, na piscina": cobrando por hora, um pouco abaixo do mercado, para aprender a conversar com cliente, dar prazo e entregar. Só para quem "já trabalha" ou tem bons projetos; "com a cara e a coragem" queima o nome ([[wiki/concepts/calculo-do-valor-da-hora]]).
 
+## Freela × agência
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], o freela tem menos custo que a agência (imposto de empresa, sede, CLT, intermediários) e por isso pode cobrar menos pela mesma qualidade, sem "prostituir o mercado" ([[wiki/concepts/dumping-de-preco]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: sete erros, sete acertos; preço pela fila e pelo valor
@@ -68,3 +72,4 @@ Passo seguinte do funil: [[wiki/sources/5-modelos-economicos-para-vender-servico
 - [[wiki/sources/como-aprender-ui]] — justificar decisões de UI para convencer o cliente em freelance
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: digitalização e o caso da plataforma de cursos
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: começar por hora, abaixo do mercado
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: freela × agência no custo

@@ -3,8 +3,8 @@ type: concept
 title: "Ancoragem de Preço"
 aliases: ["price anchoring", "ancoragem de valor", "efeito de ancoragem", "anchoring", "decoy premium"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [precificacao, negocio, psicologia-de-preco, posicionamento, mercado-de-ia, freelance]
 skill: tech-mentor-ai
 status: stub
@@ -46,6 +46,11 @@ A ancoragem não teria função sem [[wiki/concepts/corrida-preco-qualidade-llm|
 - [[wiki/concepts/ltv-cac]] — quando a decisão de preço precisa fechar unit economics.
 - [[wiki/concepts/freelance-como-alavanca-de-renda]] — o público que a fonte quer ensinar a precificar.
 
+## O valor como âncora (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] ancora pelo valor, não por uma oferta premium: explicar todas as etapas antes, para que o preço seja comparado ao valor já percebido e não ao que o cliente "já sabe" ([[wiki/concepts/criar-consciencia-no-cliente]]).
+
 ## Key Sources
 
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — único source até o momento.
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: valor explicado antes do preço

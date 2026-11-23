@@ -71,6 +71,10 @@ O valor da hora sai do salário CLT de um júnior (÷ 22 dias úteis ÷ horas po
 - **Subcontratar:** precisa de identidade visual e não é sua expertise? "Contratar uma pessoa [...], você paga para ela e ainda tira a sua parte [...], isso é empresa, pessoal."
 - **Criar consciência no cliente:** explicar que "fazer tela é esse trabalho [...], não é simplesmente eu imaginar que fiz aqui um esboço e está pronto". Sem isso, ele "vai falar assim, eu achei caro, vai fechar com outra pessoa, você não criou nem consciência nele" ([[wiki/concepts/metodologia-e-clareza]]).
 
+### Continuação
+
+- A aula seguinte, sobre como montar ofertas (valor antes do preço, explicar o processo), está em [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]].
+
 ## Precisões e ressalvas
 
 - **Tensão aparente com a aula 02:** lá, "não é muito inteligente você sempre cobrar por hora"; aqui, hora é o primeiro degrau. Não é contradição: a aula 02 fala de quem já padronizou, a 08 de quem começa. O "sempre" da aula 02 já deixava espaço. Ver [[wiki/concepts/precificacao-por-valor-vs-por-hora]].
