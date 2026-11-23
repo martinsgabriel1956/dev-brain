@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-11-19
-source_count: 29
+date_updated: 2026-11-23
+source_count: 30
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -85,6 +85,10 @@ Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]], mesmo co
 
 Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI relata ter passado cinco meses construindo e lançando um produto interno sob a restrição de que nenhuma linha fosse escrita manualmente — lógica de aplicação, testes, CI, documentação, observabilidade e ferramentas internas, produzidos pelo [[wiki/entities/codex-openai|Codex]], chegando a ~1 milhão de linhas. Autorrelato da própria empresa, sem link para paper/post técnico detalhado no artigo original. Ver [[wiki/entities/codex-openai#Produto Interno da OpenAI com "Zero Código Escrito Manualmente"|Codex]] e [[wiki/concepts/governanca-de-codigo-gerado-por-ia]].
 
+## ChatGPT como escritor de prompts
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o ChatGPT gratuito, usado por áudio no app, escreve os prompts para as IAs de imagem e vídeo ([[wiki/concepts/meta-prompting]]). "Não tem limite de áudio, ou se tiver, ele é muito grande", segundo o autor.
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
@@ -109,6 +113,7 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — citada como caso mais simples de prompt caching: cache implícito/automático, sem configuração manual, ao contrário do breakpoint explícito da Anthropic
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — produto interno com ~1M linhas geradas via Codex sob restrição de zero código escrito manualmente
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: ChatGPT como escritor de prompts
 
 ## Vagas no Ashby
 

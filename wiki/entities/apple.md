@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 9
+date_updated: 2026-11-23
+source_count: 10
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -45,6 +45,10 @@ Na abertura do módulo de cores: o azul como informação de link ("a plataforma
 
 Medida com WhatFont: SF Pro Display, peso 600, título de 80 px e corpo de 28; "foge a regra" porque tem pouca informação e é bem seccionada ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
 
+## Página de produto como referência de motion
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], "um website de apresentação de produto estilo Apple", com "frames renderizados, lindos, passando na tela", é o objetivo do projeto do joystick ([[wiki/concepts/animacao-por-sequencia-de-frames-no-scroll]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
@@ -56,6 +60,7 @@ Medida com WhatFont: SF Pro Display, peso 600, título de 80 px e corpo de 28; "
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — azul de link; branco x cinza com o mesmo peso tipográfico
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — SF Pro Display 600, 80/28 px
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; bem falada como empregadora
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: estilo Apple de página de produto
 
 ## Apple como empregadora (rumor)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de imagens para web"
 aliases: ["otimização de imagens", "image optimization", "compressão de imagens", "imagens responsivas"]
 date_created: 2026-11-13
-date_updated: 2026-11-19
-source_count: 11
+date_updated: 2026-11-23
+source_count: 12
 tags: [performance, imagens, web, compressao, responsivo, figma, core-web-vitals]
 skill: ux-ui-mentor
 status: stub
@@ -66,6 +66,10 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]
 
 Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]], dois avisos do PageSpeed resumem a parte de imagens do módulo: "formatos de última geração" (WebP ou AVIF) e "tamanho adequado" ("4K num celular de resolução 320p"). Fotos e vídeos também lideram o aviso de payload. A resposta continua sendo `<picture>` com AVIF/WebP e `srcset`/`sizes`.
 
+## Mídia gerada por IA: 4K60 na produção, 1080p30 no site (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], [[wiki/entities/nasser|Násser]] produz em 4K60 ([[wiki/concepts/upscaling-com-ia]]) e entrega em 1080p30, porque o 1080p "abraça" mais dispositivos, inclusive mobile, "com um desempenho infinitamente melhor". Aceita pixelar um pouco numa tela 4K: "a gente precisa abrir mão de alguma coisa". Vídeos em loop de 3 a 5 s ficam "mais ou menos do tamanho de uma imagem". A otimização final do 4K60 fica para outra aula.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]
@@ -79,3 +83,4 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 - [[wiki/sources/frontpush-otimizacao-de-imagens-svg-webp-lazy-loading]]: FrontPUSH, otimização aula 03: vetor → compressão → WebP → lazy
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: imagem mobile/desktop por classes e mixin
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: formato, tamanho e payload no relatório
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: resolução-alvo 1080p30 para mídia de IA

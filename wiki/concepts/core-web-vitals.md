@@ -3,8 +3,8 @@ type: concept
 title: "Core Web Vitals"
 aliases: ["Web Vitals", "LCP INP CLS", "métricas de experiência do Google", "CrUX"]
 date_created: 2026-11-19
-date_updated: 2026-11-19
-source_count: 6
+date_updated: 2026-11-23
+source_count: 7
 tags: [performance, web-performance, core-web-vitals, seo, lcp, inp, cls, fcp, ttfb, lighthouse, crux]
 skill: tech-mentor-frontend
 status: stub
@@ -61,6 +61,10 @@ Em [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regr
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: a tela de carregamento esconde a página e atrasa o LCP (maior elemento *visível*); site "montado às coxas" se corrige com `font-display`, `width`/`height` e CSS crítico. Animação dirigida por JS ocupa a thread principal e pesa no INP.
 
+## Sequência de frames e vídeo pesado (FrontPUSH, módulo de IA)
+
+O site do joystick em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]] "dá umas travadinhas" e demora "para poder carregar algumas mídias" sob tráfego. É o custo de uma hero feita com [[wiki/concepts/animacao-por-sequencia-de-frames-no-scroll|frames no scroll]]: muitas imagens grandes pesam no LCP, e o desenho no scroll pesa no INP. A resposta da aula é baixar a resolução para 1080p30. Pré-carregamento, formato e quantidade de frames ficam sem resposta.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: FCP, INP, TTFB e o PageSpeed
@@ -69,3 +73,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: os três principais, com FCP e FID
 - [[wiki/sources/frontpush-relatorio-pagespeed-imagens-render-blocking-dom-regra-80-20]]: FrontPUSH, otimização aula 06: diagnósticos do relatório
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader × LCP; animação JS × INP
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: mídia pesada na hero

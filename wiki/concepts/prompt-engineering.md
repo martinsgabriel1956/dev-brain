@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-10-08
-source_count: 18
+date_updated: 2026-11-23
+source_count: 19
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -115,6 +115,10 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 
 [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] complementa a seção anterior: antes de validar (gate de eval), é preciso poder **rastrear e reproduzir** cada versão. A proposta é versionar o ecossistema do prompt — texto + modelo + provedor + temperatura + autor + motivo — e não só a string ([[wiki/concepts/versionamento-de-prompt]], [[wiki/concepts/metadados-de-prompt]]). Ressalva da própria fonte: versionar não melhora a resposta; a qualidade vem de instruções, estrutura e tools.
 
+## Prompt de imagem e vídeo (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], as regras de prompt para mídia são concretas. Para foto: proporção (`--ar 16:9`) e versão (`--v 7`) no [[wiki/entities/midjourney]]; o que manter ("material, textura, iluminação, posicionamento") e o que tirar (logos, escritas) no [[wiki/entities/nano-banana-pro]]. Para vídeo: dizer o que é cada frame ("a primeira imagem é a frente [...] a outra é o verso"), o eixo de rotação e pedir movimento "leve, suave" ([[wiki/concepts/start-frame-e-end-frame]]). O prompt é escrito por um LLM a partir de áudio ditado ([[wiki/concepts/meta-prompting]]).
+
 ## Fontes
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — perguntas extensas antes de implementação (brainstorm → user flow → segurança → arquitetura) como variante de "Tell It" para quem não revisa código linha a linha; reforço independente da recomendação de screenshot como referência já documentada acima
@@ -134,6 +138,7 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — a mesma estrutura "estático → variável" recomendada para clareza também é o requisito técnico para acionar [[wiki/concepts/prompt-caching]]; dado dinâmico (timestamp) no início do prompt quebra o cache do provider
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — versionamento como ecossistema (não só string), reprodutibilidade, semver de prompt e rollback
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — montagem de [[wiki/concepts/prompt-aumentado-rag]]: entrada + contexto recuperado + regras/políticas
+- [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: prompts para Midjourney, Nano Banana Pro e Kling AI
 
 ## Key sources (adição 2026-10-08)
 
