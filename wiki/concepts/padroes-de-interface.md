@@ -3,8 +3,8 @@ type: concept
 title: "Padrões de Interface (UI Patterns)"
 aliases: ["ui patterns", "padrões de ui", "design patterns de interface", "interaction patterns", "padrões de interação"]
 date_created: 2026-11-13
-date_updated: 2026-11-22
-source_count: 15
+date_updated: 2026-11-23
+source_count: 16
 tags: [ui, ux, design, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: draft
@@ -92,6 +92,10 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] liga padrão a dinheiro: "tudo que é padrão eu consigo colocar em um componente" (React, biblioteca em Sass, Figma, wireframes prontos) e refazer "em segundos, em minutos". Por isso critica cobrar por hora, que "sabota a sua produtividade" ([[wiki/concepts/precificacao-por-valor-vs-por-hora]]).
 
+## Patterns no e-commerce (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], [[wiki/entities/nasser|Násser]] usa Kabum, Magazine Luiza e Netshoes: a UI "coincidentemente nunca mudou", e qualquer redesign viria em "pequenas mudanças ao longo do tempo", porque "qualquer coisa da jornada do usuário que eu modifique nesse tipo de loja vai afetar diretamente a venda". A barra de busca grande no topo, "com um bom contraste", volta como exemplo, agora contra o "iconezinho" do menu. Também mostra um arquivo de wireframes com padrões por tipo de seção ([[wiki/concepts/biblioteca-de-wireframes]]) e conclui: "UI hoje, pessoal, você precisa de pattern". Para criar algo diferente, combine padrões diferentes ([[wiki/concepts/modelar-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: padrão → componente → produtividade; contra cobrar por hora
@@ -109,3 +113,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólios de freelancer convergem no mesmo page map
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — patterns como base de fácil aprendizado e memorabilidade; atalhos do Photoshop
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — padrões e heurísticas como base da usabilidade; "não reinventar a roda"
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — Kabum, Magalu e Netshoes; mudar pattern no e-commerce "afeta diretamente a venda"

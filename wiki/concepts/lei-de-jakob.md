@@ -3,8 +3,8 @@ type: concept
 title: "Lei de Jakob"
 aliases: ["Jakob's Law", "jakobs law", "lei de jakob nielsen"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-23
+source_count: 7
 tags: [ux, ui, design, leis-de-ux, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Na aula de usabilidade, o menu da [[wiki/entities/apple]] fica no topo, fixo, "que é justamente onde você procura. Isso aqui é um padrão". Padrões "testados" e "comprovados no mercado" melhoram a [[wiki/concepts/usabilidade]] porque "as empresas já trabalharam para poder instalar esses padrões na sua cabeça" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). É a lei sem o nome, outra vez.
 
+## Mudança pequena e gradual (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: o usuário da Kabum "já sabe onde está o botão de adicionar novo endereço", "o código de rastreio", "a posição e a jornada que eu faço toda vez". Por isso grandes lojas trocam a UI em passos pequenos, e "toda e qualquer decisão que você saia do padrão nisso aqui, você pode acabar com a empresa". Ele restringe o peso ao e-commerce, "dados as devidas proporções em outras UIs".
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -52,3 +56,4 @@ Na aula de usabilidade, o menu da [[wiki/entities/apple]] fica no topo, fixo, "q
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — interface totalmente nova obriga o usuário a reaprender
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — atalhos do Photoshop: expectativa formada pelo próprio produto
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo da Apple; padrões "instalados na sua cabeça"
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — usuário da Kabum já sabe onde fica cada botão; redesign só em passos pequenos

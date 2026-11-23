@@ -4,7 +4,7 @@ title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
 date_updated: 2026-11-23
-source_count: 32
+source_count: 33
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -133,6 +133,10 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 
 Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: o banco "que mais traz para perto as pessoas", com "borda arredondada, o botão é totalmente arredondado"; o Banco Inter arredonda menos.
 
+## Caso de modelagem (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], o projeto Nubank do curso mostra o processo de referências: cada seção (cards deitados no fundo, CTA com os selos das lojas, menu enxuto, fotos de pessoas, três cards com ícone) veio de um shot, e o cartão girando juntou um exemplo de perspectiva em CSS com a ideia do cartão ([[wiki/concepts/modelar-referencias]]). Ilustrações de pessoas de várias etnias comunicam o banco "para todos"; a estrutura "ilustração de um lado, descrição do outro, link" é a mesma da landing page "Everyball".
+
 ## Key Sources
 
 
@@ -168,3 +172,4 @@ Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradien
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: projeto estático em /Nubank
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: botão totalmente arredondado como proximidade
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: projeto institucional como peça de portfólio
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — cada seção do projeto Nubank tem uma referência de origem

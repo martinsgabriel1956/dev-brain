@@ -3,8 +3,8 @@ type: concept
 title: "Razão de contraste"
 aliases: ["contrast ratio", "razão de contraste WCAG", "contraste WCAG", "nota de contraste"]
 date_created: 2026-11-15
-date_updated: 2026-11-19
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [ui, acessibilidade, wcag, contraste, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -40,7 +40,12 @@ O verde do [[wiki/entities/frontpush]] dá 1.65 contra o branco e reprova. O hex
 
 Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], a demonstração bate com as razões: #999 ≈ 2,8:1 (falha), #777 ≈ 4,5:1 (no limite do AA), #666 ≈ 5,7:1 (passa AA, falha AAA).
 
+## Laranja de marca reprovado (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], o laranja com branco "falhou" no [[wiki/entities/who-can-use|Who Can Use]]. Saída sugerida: escurecer no HSB ([[wiki/concepts/modelo-de-cor-hsb]]); o tom mais escuro ainda falhou, porque a ferramenta "considera o pior caso", "uma tipografia pequena em corpo de texto". Negrito e tamanho maior melhoram. `[external]` É a diferença entre os limites de texto normal (4,5:1) e de texto grande (3:1, a partir de 24px, ou 18,66px em negrito) no WCAG 2.x (alta).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — nota de 0 a 21 (na verdade 1 a 21); notas vermelha, laranja e verde; verde do FrontPUSH a 1.65
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: razões dos cinzas da demonstração
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — laranja + branco reprova; escurecer e engrossar o texto

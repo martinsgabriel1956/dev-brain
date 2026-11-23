@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-20
-source_count: 39
+date_updated: 2026-11-23
+source_count: 40
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -189,6 +189,10 @@ Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta
 
 Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], Násser compara: o título é lido primeiro por ser branco e maior entre cinzas, e "o motion é exatamente a mesma coisa". Numa tela estática, o que se move ganha o foco; com tudo se mexendo, o usuário se confunde.
 
+## Z, F e o botão no caminho (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "ou a gente lê em Z, ou a gente lê em F". Z é "a maioria das interfaces", "quando você tem pouco conteúdo", e se enxerga primeiro "o que é maior", "o que está na parte de cima", "o que está na esquerda". F é o de "portal de notícia": desce, lê para o lado, desce. Regra prática: "no meio do caminho do Z, eu sempre tenho um botão". No blog, a notícia maior à esquerda (padrão do G1) dá "destaque" e "ênfase". `[external]` O F vem do eyetracking da NN/g (2006, revisto em 2017), que o lê como sintoma de texto pouco escaneável; o Z é heurística de layout com menos base empírica (média-alta).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -230,3 +234,4 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 - [[wiki/sources/classes-e-ids-no-css]] — h1 branco, h2 e h3 em cinzas, parágrafo #333
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: contraste título × corpo
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: contraste de movimento como hierarquia
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — leitura em Z e em F; botão no caminho do Z; padrão do G1

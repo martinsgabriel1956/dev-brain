@@ -3,8 +3,8 @@ type: concept
 title: "Modelo de cor HSB"
 aliases: ["HSB", "HSV", "hue saturation brightness", "matiz saturação brilho", "modo HSB", "primeiro quadrante"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-23
+source_count: 4
 tags: [ui, ui-design, cor, hsb, figma, paleta-de-cores]
 skill: ux-ui-mentor
 status: stub
@@ -36,8 +36,13 @@ Em [[wiki/sources/frontpush-variaveis-sass]], dois roxos parecidos com matiz 277
 
 Em [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue` gira a matiz em graus ("60 deg") no círculo cromático, a mesma operação do H do HSB. Hoje, `color.adjust($c, $hue: 60deg)`.
 
+## Escurecer para passar no contraste (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], para o laranja de marca passar no [[wiki/entities/who-can-use|Who Can Use]]: "vai lá no modo de cores", "nesse primeiro quadrante", "diminuir o brilho aumenta a saturação", e "você nunca vai subir assim ou fazer assim, da esquerda para a direita". No HSB, S e B são eixos independentes; a frase descreve um caminho no seletor (descer e ir para a direita juntos, para a cor não acinzentar), não uma propriedade do modelo (inferência, alta).
+
 ## Key Sources
 
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — modo HSB, primeiro quadrante, não topar S nem B
 - [[wiki/sources/frontpush-variaveis-sass]]: roxos de matiz 277 × 286
 - [[wiki/sources/frontpush-funcoes-sass]]: `adjust-hue` em graus
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — escurecer o laranja: descer o brilho e subir a saturação juntos

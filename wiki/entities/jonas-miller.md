@@ -3,8 +3,8 @@ type: entity
 title: "Jonas Miller"
 aliases: []
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-23
+source_count: 2
 tags: [pessoa, ui-design, freelance, portfolio]
 skill: ux-ui-mentor
 status: stub
@@ -24,6 +24,11 @@ UI designer, "meu brother até", segundo [[wiki/entities/nasser|Násser]]. O sit
 
 Ver [[wiki/concepts/page-map]].
 
+## Na mentoria de UI Design (FrontPUSH)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]] (legenda: "Jonas Milan"), o site dele, figmento.cc, é o exemplo de modelagem: pegou seções de [[wiki/entities/nasser|Násser]] e de Gilberto Prado "e adaptou para a identidade dele. Isso aqui não é cópia, isso aqui é modelagem" ([[wiki/concepts/modelar-referencias]]). Grafia e domínio não verificados.
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]]
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — site citado como modelagem, não cópia
