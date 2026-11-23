@@ -3,8 +3,8 @@ type: concept
 title: "Dolarização de Renda e Patrimônio"
 aliases: ["dolarizar salário", "renda em dólar", "proteção cambial pessoal"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-22
+source_count: 8
 tags: [financas-pessoais, carreira, dolar, tributacao, pj]
 skill: tech-mentor-leadership
 status: stub
@@ -41,8 +41,13 @@ Recomendada a partir de ~R$ 25.000/mês em [[wiki/sources/como-eu-investiria-com
 
 [[wiki/sources/introducao-mapeando-vagas]] aponta o outsourcing (empresa que te terceiriza para outra) como "porta de entrada muito legal para gringa": outra via de trabalho remoto para fora, sem ser contratado diretamente pela empresa estrangeira. Ver [[wiki/concepts/body-shop-terceirizacao]] para os riscos.
 
+## Moeda forte no freela (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] põe "ganhar em moeda forte" entre os pontos para ganhar mais: o poder de compra pode "multiplicar cinco vezes" com o mesmo trabalho, porque o UI e o dev do curso lá fora "não [são] muito diferente[s]", só "mais bem cobrado[s]". Condição: "fluidez [...] em uma língua estrangeira". O "cinco vezes" é câmbio nominal, não paridade de poder de compra.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: "multiplicar cinco vezes o seu poder de compra" com freela em moeda forte
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — inglês como pré-requisito de acesso ao mercado global, anterior à escolha de stack

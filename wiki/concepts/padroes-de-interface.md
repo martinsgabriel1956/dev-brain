@@ -3,8 +3,8 @@ type: concept
 title: "Padrões de Interface (UI Patterns)"
 aliases: ["ui patterns", "padrões de ui", "design patterns de interface", "interaction patterns", "padrões de interação"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 14
+date_updated: 2026-11-22
+source_count: 15
 tags: [ui, ux, design, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: draft
@@ -88,8 +88,13 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 
 "A usabilidade se dá muito, muito, muito pelo bom uso de boas heurísticas, de patterns, de padrões que já estão bem estabelecidos no mercado." O exemplo é o site da [[wiki/entities/apple]]: menu horizontal fixo no topo, seções sempre com ilustração, headline, subtítulo e link, e ícones no submenu. "As empresas já trabalharam para poder instalar esses padrões na sua cabeça"; "é literalmente não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
 
+## Padrão como produtividade (e preço)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] liga padrão a dinheiro: "tudo que é padrão eu consigo colocar em um componente" (React, biblioteca em Sass, Figma, wireframes prontos) e refazer "em segundos, em minutos". Por isso critica cobrar por hora, que "sabota a sua produtividade" ([[wiki/concepts/precificacao-por-valor-vs-por-hora]]).
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: padrão → componente → produtividade; contra cobrar por hora
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
 - [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]] — catálogo, definição e linguagem comum
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — eixos como padrões; "uso de patterns" como parte da acessibilidade

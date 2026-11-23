@@ -3,8 +3,8 @@ type: concept
 title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
-date_updated: 2026-11-22
-source_count: 2
+date_updated: 2026-11-23
+source_count: 5
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,18 @@ O cliente "muito provavelmente [...] não sabe exatamente como mostrar isso da m
 
 Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]], o briefing do Black Dev começa por palavras: "eu quero algo mais preciso, [...] mais sóbrio, [...] mais profissional, por isso que a marca dele é preto". "É bom você escrever o que eu quero transmitir"; cor, forma e fonte saem daí.
 
+## Pré-briefing e reuniões com cliente
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]] põe o briefing no pilar de monetização: a aula 9 trata de "como é que eu construo a estrutura para poder fazer a primeira apresentação do cliente, pré-briefing [...], quais são o workflow das reuniões".
+
+## Formulário de pré-briefing (aula 10)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas|aula 10 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o formulário de briefing que usava em branding ("não é para desenvolvimento de websites, mas [...] muitas perguntas são pertinentes"): nome e significado, por que abriu a empresa, o que vende e onde ("essa pergunta aqui não pode faltar"), diferencial, concorrentes com links, público (gênero, faixa etária), "se sua empresa fosse uma pessoa, como ela seria?", três palavras que a descrevem e três que não, cor que não quer, empresa de referência. Pergunta obrigatória na primeira reunião: quais referências visuais ou de negócio levaram o cliente até você ([[wiki/concepts/workflow-de-reunioes-do-freela]]).
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: pré-briefing e workflow de reuniões na aula 9
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: briefing do Black Dev: preciso, sóbrio, profissional
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: perguntas antes de cobrar por projeto: o cliente sabe o que quer? prazo? espaço para criatividade?
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: formulário de pré-briefing de marca

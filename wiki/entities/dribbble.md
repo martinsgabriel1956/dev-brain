@@ -3,8 +3,8 @@ type: entity
 title: "Dribbble"
 aliases: ["dribble", "dribbble.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-22
-source_count: 8
+date_updated: 2026-11-23
+source_count: 9
 tags: [dribbble, design, referências, inspiração]
 skill: tech-mentor-frontend
 status: stub
@@ -61,3 +61,4 @@ Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradien
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — busca de referências por hexadecimal
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — anunciado como fonte de inspiração para cores
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: dribbble.com/colors; designer de marcas que ele segue
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link de contato em portfólios e CVs de designers

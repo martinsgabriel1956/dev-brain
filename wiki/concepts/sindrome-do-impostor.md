@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-10-09
-source_count: 9
+date_updated: 2026-11-22
+source_count: 10
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -60,8 +60,13 @@ Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequê
 
 [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] associa o medo de "parecer incompetente" ao extremo de **nunca pedir ajuda** (estourar prazo em silêncio) e propõe um método objetivo ([[wiki/concepts/ciclo-de-2-horas]]) para substituir a decisão emocional de "perguntar ou não". Ver [[wiki/concepts/equilibrio-ao-pedir-ajuda]]. Não é evidência clínica; é observação do apresentador.
 
+## Foco reduz o impostor (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] liga o impostor ao querer ser bom em tudo. A cadeia: saber no que é bom → focar → desempenho melhor → "a minha frustração provavelmente será menor" → "a síndrome do impostor vai me atacar de forma menor". O exercício do [[wiki/concepts/profissional-t-shaped]] é a ferramenta.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: foco no que é bom reduz frustração e impostor
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — descreve a dinâmica de pedestal ("relação criador-criatura") como bloqueio de potencial
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — variante sênior da síndrome (medo de estar desatualizado) e o enquadramento de que o estado atual de falta de habilidade é provisório

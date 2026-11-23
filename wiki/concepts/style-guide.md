@@ -3,8 +3,8 @@ type: concept
 title: "Style guide (guia de estilo)"
 aliases: ["guia de estilo", "styleguide", "style-guide", "guia de estilos", "UI kit", "guia visual", "style guide de UI", "guia de estilo de interface", "style guide de interface", "mapa de design"]
 date_created: 2026-11-15
-date_updated: 2026-11-16
-source_count: 9
+date_updated: 2026-11-23
+source_count: 12
 tags: [ui, ui-design, style-guide, design-system, consistencia, cor, tipografia, figma, documentacao, handoff, design-tokens, css, prototipagem]
 skill: ux-ui-mentor
 status: stub
@@ -114,3 +114,6 @@ Em [[wiki/sources/frontpush-variaveis-sass]], o style guide do projeto Nubank é
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — seção de style guide para ícones próprios prometida
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: menu fixed/sticky como comportamento a documentar
 - [[wiki/sources/frontpush-variaveis-sass]]: style guide → variáveis do Sass; fonte errada no guia
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: style guide com ícones e tipografia como entregável da oferta
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: "pente fino" de style guide na 3ª reunião
+- [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: "Styleguide completo para interfaces web" como bloco separado do orçamento

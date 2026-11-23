@@ -3,8 +3,8 @@ type: concept
 title: "Especialista Leva Vantagem com IA"
 aliases: ["especialista vence com ia", "a ia ampliou a distância"]
 date_created: 2026-10-08
-date_updated: 2026-10-30
-source_count: 2
+date_updated: 2026-11-22
+source_count: 3
 tags: [ia, senioridade, especialista, carreira]
 skill: tech-mentor-ai
 status: draft
@@ -23,8 +23,13 @@ Complementa o ganho desigual de [[wiki/concepts/ia-como-amplificador]]; fecha co
 
 **Confiança:** média.
 
+## Especialista na analogia da medicina (FrontPUSH)
+
+Sem falar de IA, a [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]] chega a uma conclusão parecida pelo mercado: médicos especialistas "nunca faltam trabalho para eles, porque eles sabem mostrar muito bem a expertise deles", e o clínico geral encaminha. Ressalva: o clínico geral é a triagem do sistema, e todo especialista passou pela formação geral, o que reforça o T mais do que o especialista puro.
+
 ## Key sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: especialistas da medicina; clínico geral encaminha
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — origem desta página
 
 ## Contraponto: "Empresas Querem Generalistas"

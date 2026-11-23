@@ -3,8 +3,8 @@ type: concept
 title: "CRUD"
 aliases: ["Create, Read, Update, Delete", "crud", "operações CRUD"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-23
+source_count: 3
 tags: [crud, api, rest, banco-de-dados, backend, metodos-http]
 skill: tech-mentor-backend
 status: stub
@@ -36,3 +36,4 @@ Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], 
 
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: CRUD de usuários como as funções do controller
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: POST como o C do CRUD
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o blog com CRUD como peça de portfólio

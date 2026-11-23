@@ -3,8 +3,8 @@ type: concept
 title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 11
+date_updated: 2026-11-22
+source_count: 12
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -80,8 +80,13 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 
 Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], escolher fonte faz parte do processo de pesquisa, e "ter um porquê para você selecionar isso da melhor forma possível [...] demonstra a sua maturidade". Exemplo dado pelo autor: Ubuntu no próprio site para lembrar um terminal do Linux.
 
+## Valor é decisão, não recurso
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz que o que agrega ao cliente "nem sempre é um recurso de design, é uma decisão": "isso aqui é mais inteligente por causa disso, disso e disso". Senso crítico com argumento técnico ou empírico é o que deixa cobrar mais.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: valor como decisão; argumento técnico ou empírico
 - [[wiki/sources/como-aprender-ui]]
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — o slide como exercício; saber explicar cada elemento
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — frase de Victor Berriel; não levar ao pé da letra

@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-23
+source_count: 16
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -74,7 +74,26 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o README com imagens e tecnologias "chama a atenção de quem tá olhando teu GitHub".
 
+## Portfólio para a vaga e para o freela
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]] anuncia uma aula de portfólio com duas perguntas separadas: "como é que eu construo meu portfólio para conseguir a minha primeira vaga" e "para poder atuar como freelancer". Ou seja, o mesmo portfólio serve a públicos diferentes (recrutador e cliente).
+
+## O título do portfólio com cinco especialidades
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] aponta um erro de portfólio: "eu sou o Full Stack Desenvolvedor UX UI Motion Designer", "cinco especificidades" que ninguém domina ao mesmo tempo. O portfólio deve escolher uma área ([[wiki/concepts/posicionamento-no-mercado]]).
+
+## README como prova (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], a prova do júnior é o projeto documentado: "projetos com um bom README" no GitHub, com metodologia, decisões e como instalar e rodar. Ver [[wiki/concepts/demonstrar-experiencia-na-primeira-vaga]].
+
+## Portfólio, CV e README (FrontPUSH)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o formato: o portfólio como envelope (capa, trabalhos, sobre, contato), o CV "preto no branco" sem barras de porcentagem e o README como portfólio mínimo. Ver [[wiki/concepts/estrutura-de-portfolio]], [[wiki/concepts/estrutura-de-curriculo]] e [[wiki/concepts/estrutura-de-readme]].
+
 ## Key Sources
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: README como prova do júnior
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: erro do título com cinco especialidades
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: portfólio para a primeira vaga × para freela
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — 'fim da era do parecer': diploma não garante capacidade, a entrega é a prova ([[wiki/concepts/fim-da-era-do-parecer]])
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — 3–4 currículos por trilha
@@ -87,3 +106,5 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projeto pessoal alinhado aos requisitos reais de uma vaga como forma de gerar "o que falar" em entrevista, mesmo sem experiência profissional prévia
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — estudo de caso: currículo com pior formatação venceu na avaliação de trajetória por causa da seção de projetos pessoais com link, ferramentas e data
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: README como vitrine
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o envelope, o CV e o README
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: "o cliente está bem mais interessado no que você tem feito do que você diz que vai fazer"

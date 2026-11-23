@@ -3,8 +3,8 @@ type: question
 title: "Generalista ou especialista na era da IA? Fontes em direções opostas"
 aliases: ["generalista vs especialista", "especializar ou generalizar"]
 date_created: 2026-10-30
-date_updated: 2026-10-30
-source_count: 4
+date_updated: 2026-11-22
+source_count: 6
 tags: [carreira, generalista, especialista, ia-para-devs, contradicao]
 skill: tech-mentor-leadership
 status: draft
@@ -33,8 +33,18 @@ Para o júnior a ordem importa: primeiro uma base funda, depois amplitude. Caso 
 
 Nenhuma das fontes traz dados de vagas. São relatos e opiniões. Uma fonte com dados de demanda por perfil resolveria a questão.
 
+## Fonte pendente: FrontPUSH
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]] anuncia aulas sobre T-shaped e "Generalista X Expertise" para dev e design, sem IA no enquadramento. Quando forem ingeridas, entram na tabela acima.
+
+## FrontPUSH: especialista com barra horizontal de avaliação
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]] entra do lado especialista, sem IA no argumento: o generalista raso é o pato da fábula (segundo em tudo, mal valorizado); o portfólio deve escolher uma área. Mas a barra horizontal continua: áreas que você "sabe identificar" sem executar, base para liderar e delegar. Na aula 02 a fórmula era "generalista, mas ter expertise". Encaixa na síntese da tabela (especialista de base que generaliza), com ênfase na profundidade.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: lado especialista; o pato; barra horizontal = saber avaliar
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: aulas de T-shaped e generalista × expertise anunciadas
 - [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]]
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]

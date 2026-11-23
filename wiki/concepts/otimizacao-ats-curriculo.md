@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de Currículo para ATS"
 aliases: ["ATS", "applicant tracking system", "robô que lê currículo", "keyword matching currículo"]
 date_created: 2026-07-15
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-23
+source_count: 6
 tags: [carreira, contratação, ats, currículo]
 skill: tech-mentor-leadership
 status: draft
@@ -51,6 +51,10 @@ Passar no ATS é só a primeira barreira — é sobre o currículo (a "promessa"
 
 [[wiki/sources/introducao-mapeando-vagas]] propõe ler os requisitos das vagas para achar lacunas do currículo ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]); a mesma leitura dá as palavras-chave para o ATS.
 
+## CV sem cores nem gráficos
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] pede CV "preto no branco", sem cores, gráficos nem "eu sei 80% de tal tecnologia". O motivo dele é a imaturidade que isso revela, não o ATS, mas o resultado serve aos dois. Ver [[wiki/concepts/estrutura-de-curriculo]].
+
 ## Key sources
 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]]
@@ -58,3 +62,4 @@ Passar no ATS é só a primeira barreira — é sobre o currículo (a "promessa"
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — mesmo mecanismo de metadados de busca, aplicado ao perfil do LinkedIn em vez de ao currículo
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — PDF pesquisável como pré-requisito mecânico, e o padrão de habilidade listada (Java) sem nenhuma evidência de uso no corpo do currículo
 - [[wiki/sources/introducao-mapeando-vagas]] — mapear requisitos das vagas
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: CV preto no branco

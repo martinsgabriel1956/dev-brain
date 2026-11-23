@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-22
-source_count: 31
+date_updated: 2026-11-23
+source_count: 32
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -167,3 +167,4 @@ Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradien
 - [[wiki/sources/frontpush-dom-parte-1-arvore-de-elementos-queryselector]]: FrontPUSH, JavaScript aula 08: manipulação do DOM no projeto Nubank
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: projeto estático em /Nubank
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: botão totalmente arredondado como proximidade
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: projeto institucional como peça de portfólio

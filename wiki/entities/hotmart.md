@@ -3,8 +3,8 @@ type: entity
 title: "Hotmart"
 aliases: ["Hotmart"]
 date_created: 2026-08-05
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-23
+source_count: 6
 tags: [hotmart, produto-digital, afiliado, marketplace]
 skill: tech-mentor-ai
 status: stub
@@ -26,6 +26,10 @@ Em [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]], ele r
 
 Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]], Násser redesenha "totalmente reto" o foguinho da Hotmart ("bem desenhado, bem ondulado") para seguir a consistência da família de ícones do [[wiki/entities/frontpush]].
 
+## Por que sair dela
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], um cliente do [[wiki/entities/nasser|Násser]] quer a própria plataforma "que não seja nos moldes da Hotmart": controle de recursos, de dados, de quem assiste e da interface. Na Hotmart, "você vai mandar um ticket [...] e só Deus sabe quando" ([[wiki/concepts/terreno-alugado-vs-terreno-proprio]]).
+
 ## Key Sources
 
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]]
@@ -33,3 +37,4 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — motivo para mostrar só projetos próprios
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — "tomara que o Hotmart não derrube" ao mostrar telas com ilustrações de terceiros
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — foguinho redesenhado reto para a família de ícones do FrontPUSH
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: plataforma própria fora da Hotmart

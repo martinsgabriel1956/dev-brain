@@ -26,6 +26,16 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]] | Módulo Monetização e Freelancer, aula 10 ("boas ofertas, parte 2"), do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 23 min: [[wiki/concepts/workflow-de-reunioes-do-freela\|quatro reuniões]] (pré-briefing + metodologia + contrato; wireframes, jornada e conteúdo; alta fidelidade e dev; só entrega) com [[wiki/concepts/pagamento-por-etapas\|pagamento 30/20/30/20]]; "nunca comece sem receber", recusar 30% de entrada é sinal de mau cliente, "pagou 80%" não some; formulário de [[wiki/concepts/briefing\|pré-briefing]] de marca; orçamento em 5-7 dias, cronograma de ~39 dias. Precisões: falta o que vai no contrato (revisões, escopo, direitos), percentuais e prazos somados |
+| [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]] | Material de apoio do módulo Monetização e Freelancer do [[wiki/entities/frontpush\|FrontPUSH]]: [[wiki/concepts/orcamento-de-freela\|orçamento]] real (valores apagados) do dashboard de cursos com gamificação, em dois blocos (UI dashboard com telas por jornada; style guide como extra), e modelo genérico de invoice em inglês (traduzido; números de placeholder, "VAT 21%"). Precisões: invoice ≠ NFS-e, escopo sem limite de revisões |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]] | Módulo Monetização e Freelancer, aula 09, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 18 min com slides: valor antes do preço, "não fale o preço de cara" ([[wiki/concepts/criar-consciencia-no-cliente]]); "qualidade + preço baixo" porque o freela não tem custos de agência e cobre UI e dev, chamado de [[wiki/concepts/dumping-de-preco\|dumping]], "cuidado, não prostitua o mercado"; explique o processo (pesquisa, mood board, responsivo, CMS, wireframes, style guide), "as pessoas não pagam aquilo que elas não entendem"; "onde devo investir? Você". Precisões: dumping ≠ liderança em custo, tensão com o preço por valor, ancoragem pelo valor |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]] | Módulo Monetização e Freelancer, aula 08, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 25 min com slides: [[wiki/concepts/escada-de-cobranca-hora-projeto-valor\|escadinha de cobrança]] hora → projeto → projeto + valor; hora para iniciantes, "ser pago para ter experiência", e depois só para manutenção e consultoria ([[wiki/concepts/calculo-do-valor-da-hora\|valor da hora]]: salário CLT ÷ 22 ÷ horas, custos, mercado um pouco abaixo); hora pune a eficiência e a criatividade; projeto exige saber se o cliente sabe o que quer; projeto + valor com o exemplo da gamificação ("mais um quilômetro, parabéns", [[wiki/concepts/goal-gradient-effect]]) e "criar consciência" no cliente. Precisões: CLT ÷ horas subestima a hora de PJ, risco de escopo no preço fechado, 10 mil horas, área pequena |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]] | Módulo Monetização e Freelancer, aulas 06 e 07 (um vídeo em duas partes, 19 min), do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/escolha-de-nicho\|nicho]] na interseção de quatro círculos (demanda: o que querem; interesses: o que você ama; aptidão: o que já é bom; mercado: que problema resolve e para quem), o T-shaped virado em "autoconhecimento do mercado"; websites como demanda pós-pandemia e o [[wiki/concepts/terreno-alugado-vs-terreno-proprio\|terreno alugado]] ("condomínio do Marcos Zuckerberg"); cliente que quer plataforma de cursos fora da Hotmart, com gamificação; "o dinheiro é a ponta". Precisões: forma do ikigai, sem critério para medir demanda, sites simples comoditizados pela IA |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]] | Módulo Monetização e Freelancer, aula 05, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 29 min em tela compartilhada: site próprio "não é necessário, mas é bom" (mais para design e freela); [[wiki/concepts/estrutura-de-portfolio\|portfólio como envelope]] (capa → trabalhos diversos com objetivo → sobre, "pessoas contratam pessoas" → contato e CV); [[wiki/concepts/estrutura-de-curriculo\|CV preto no branco]], sem cores, gráficos nem "sei 80% de tal tecnologia", título único e T-shaped como "expertise e outras skills"; página por projeto como próximo passo; [[wiki/concepts/estrutura-de-readme\|README]] como portfólio mínimo (Rocketshoes, MeetApp, AnimaVita); designers seguem o mesmo padrão. Precisões: ATS, "80% a 90% da vaga" mais exigente que o usual, grafias de nomes só da legenda |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]] | Módulo Monetização e Freelancer, aula 04, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 27 min no iPad, primeira vaga em cinco passos: T-shaped (o júnior "Full Stack UX UI Motion Designer" está "desconexo"); mercado (React, Vue ou Angular; React e Figma pela [[wiki/concepts/comunidade-tecnica\|comunidade]]; "nada mais é do que JS", [[wiki/concepts/fundamentos-antes-do-framework]]); descrição da vaga (front do front × back do front; UX e UI, Product Design; pedir demais = "trabalho de dois pagando por um", [[wiki/concepts/vaga-junior-vira-pleno]]); [[wiki/concepts/demonstrar-experiencia-na-primeira-vaga\|demonstrar experiência]] ("trazer algo do mundo das ideias para a realidade"; to-do list, blog com CRUD, narrativa Nubank → JS → blog; "fiz porque estava na pauta [...] não é resposta"); alinhamento empresa × você ("é um contrato"); README bem feito no GitHub. Precisões: tensão com a aula 03 (júnior), estático ≠ sem funcionalidade, CRA descontinuado, Product Design além de UX+UI |
+| [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]] | Módulo Monetização e Freelancer, aula 03, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 20 min, [[wiki/concepts/profissional-t-shaped\|T-shaped]]: "designer de quê?" deixa "no limbo"; design = objetivo (carro esportivo × popular); web designer e webmaster que faziam tudo × áreas de hoje; exercício da "sopinha de letrinhas" (laranja = muito bom, azul = sabe avaliar) e o mapa dele (front visual, interaction, React, motion, UI); "não queira ser bom em tudo", não serve para júnior; história do pato (segundo em tudo, mal valorizado); título "Full Stack Desenvolvedor UX UI Motion Designer" ([[wiki/concepts/posicionamento-no-mercado]]); médicos especialistas, escolher "Dev front"; vantagens: liderança e delegação, visão de produto e de riscos, [[wiki/concepts/sindrome-do-impostor]], influência. Precisões: fábula de Reavis, tensão com a aula 02, o mapa dele parece o título que critica, clínico geral é a triagem, acessibilidade em branco |
+| [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]] | Módulo Monetização e Freelancer, aula 02, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 24 min: sete erros (não saber se vender, comunicação, autoconhecimento, oferta × demanda, mercado, execução, intermediários) e sete acertos "que funcionaram para mim"; vender pede confiança e confiança pede processo ([[wiki/concepts/metodologia-e-clareza]]); preço sobe com a fila, "coloco ele inflado", perguntas de escopo de site; padrões reduzem a [[wiki/concepts/carga-cognitiva]] e viram componente, e cobrar por hora "sabota a sua produtividade" ([[wiki/concepts/precificacao-por-valor-vs-por-hora]]); comunicação como redação de vestibular; [[wiki/concepts/branding-pessoal]] ("vai lembrar do Násser"); generalista que sabe identificar ([[wiki/concepts/profissional-t-shaped\|T-shaped]]); eliminar intermediários; moeda forte "cinco vezes" ([[wiki/concepts/dolarizacao-de-renda]]). Precisões: câmbio nominal × PPP, risco de escopo no preço fechado, preço inflado só com fila cheia, Krug e lei de Jakob, "Briel" sem grafia |
+| [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]] | Módulo Monetização e Freelancer, aula 01, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 7,5 min, "as regras do jogo": não é só freela, é "o mercado como um todo" (dev e design, CLT, iniciante, conciliar os dois; "saia do seu CLT [...] muito pelo contrário"); base na experiência dele, formato podcast; três pilares em triângulo: [[wiki/concepts/metodologia-e-clareza\|metodologia]] na base (também para entrevista), [[wiki/concepts/prospeccao-ativa-e-passiva\|prospecção]] ([[wiki/concepts/bons-e-maus-clientes]]) e monetização (contrato, oferta); 12 aulas: ganhar dinheiro, [[wiki/concepts/profissional-t-shaped\|T-shaped]], generalista × expertise, posicionamento, portfólio, clareza, clientes, prospecção, ofertas e pré-briefing, execução, estratégias, invoice e contrato. Precisões: aulas 10 e 11 só no slide (lacuna de 14 s na legenda), "retorno de agência" e "pré-briefing, não tem briefing" literais |
 | [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]] | Mentoria ao vivo do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 54 min) sobre a marca-coruja de um aluno: referências no [[wiki/entities/shutterstock]] e no [[wiki/entities/dribbble]]; [[wiki/concepts/logo-minimalista]] (Nike, BMW, Burger King × McDonald's, Apple; desenhar sobre um quadrado); caso Black Dev (K de CMYK, `->` do PHP, Brand Book); [[wiki/concepts/gradiente]] pelo círculo cromático (bad gradient vermelho → ciano, vizinhas, monocromático); [[wiki/concepts/psicologia-das-cores]]; Nina Talks: extremos de [[wiki/concepts/luminosidade-das-cores\|luminosidade]], rosa só de destaque; pontas afastam, arredondar suaviza; Poppins + monoespaçada, sem serifa do [[wiki/entities/google-fonts]]; Madero e [[wiki/entities/nubank]]; ruído em overlay no Figma. Precisões: história do swoosh, K = key, números de luminosidade divergentes, interpolação em OKLCH, Bar e Neta (2006) |
 | [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]] | Módulo de hospedagem, aula 06, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido), 20 min, fim do tutorial da [[wiki/entities/hostgator]]: `public_html` como raiz do domínio principal (portfólio estático com [[wiki/entities/gsap]] por script, sem npm); por que portfólio e página de vendas são estáticos ("qual é a funcionalidade [...]? Nenhuma"); upload por "carregar" no [[wiki/entities/cpanel]] ou pelo [[wiki/entities/filezilla]] (FTP sem criptografia, "clicar em sim"); `/Nubank` e `/Spider-Man` em subpastas; FrontPUSH e CreatorPUSH como domínios adicionais em `public_html/frontpush` e `/creatorpush` ([[wiki/concepts/virtual-host]]); FrontPUSH em PHP por ter página de cadastro ("com PHP é bem mais fácil" que rota em React); AutoSSL verde/vermelho. Precisões: build de React não roda no servidor, páginas ligadas por link são estáticas (o motivo real do PHP seria o formulário), SFTP ≠ FTPS, domínio adicional também abre como subpasta, URLs diferenciam maiúsculas, AutoSSL valida o DNS, TLS e não SSL, IP `.25` × `.29` |
 | [[wiki/sources/frontpush-hostgator-parte-2-cpanel-recursos-ftp-ssl-email]] | Módulo de hospedagem, aula 05, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], se nomeia), 11 min, tour pelo [[wiki/entities/cpanel]] da [[wiki/entities/hostgator]]: domínio na Registro.br separado do host ("um precisa combinar com o outro"); login em "domínio barra cPanel"; [[wiki/entities/phpmyadmin]] e MySQL prontos × `apt-get install mysql-server` no servidor cru; gerenciador de arquivos e `public_html`; [[wiki/concepts/ftp]]; domínios adicionados; e-mail `contato@frontpush.com.br`; largura de banda estourada; SSH; SSL grátis nos três domínios; preparado para [[wiki/entities/wordpress]], "eu indico" para PHP. Precisões: FTP em texto claro (SFTP/FTPS), `public_html` = raiz do domínio principal, "banda" = transferência mensal, SSH é shell remoto, e-mail próprio depende do MX (SPF/DKIM/DMARC), AutoSSL cobre `mail.`, phpMyAdmin não cria o banco, MariaDB no Debian |
@@ -1074,6 +1084,70 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo Monetização e Freelancer aula 10 e modelos: workflow e orçamento (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/workflow-de-reunioes-do-freela]] | Três a quatro reuniões: inicial (pré-briefing, metodologia, contrato), conteúdo em baixa fidelidade, alta fidelidade, só entrega |
+| [[wiki/concepts/pagamento-por-etapas]] | 30/20/30/20 por reunião; "nunca comece sem receber"; entrada como filtro e anti-calote |
+| [[wiki/concepts/orcamento-de-freela]] | Orçamento por blocos com preço próprio, escopo item a item e telas por jornada; style guide como extra |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 09: ofertas (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/criar-consciencia-no-cliente]] | Valor antes do preço: explicar processo e etapas para o cliente não julgar o preço pelo que "já sabe"; sem isso, "achei caro" |
+| [[wiki/concepts/dumping-de-preco]] | "Qualidade + preço baixo" do freela (sem custos de agência), com o limite de "não prostituir o mercado"; dumping vs liderança em custo |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 08: como cobrar (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/escada-de-cobranca-hora-projeto-valor]] | Três degraus de cobrança: hora (iniciante, trabalhos pequenos), projeto (mais complexo) e projeto + valor (expertise com cases); quando subir |
+| [[wiki/concepts/calculo-do-valor-da-hora]] | Primeiro preço do freela: salário CLT ÷ 22 ÷ horas, custos, mercado um pouco abaixo, tempo medido; subestima a hora de PJ |
+
+### FrontPUSH, módulo Monetização e Freelancer aulas 06 e 07: nicho (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/escolha-de-nicho]] | Nicho = interseção de demanda, interesses, aptidão e mercado; o T-shaped aplicado ao mercado; dinheiro como consequência |
+| [[wiki/concepts/terreno-alugado-vs-terreno-proprio]] | Rede social é terreno alugado, site é casa própria com controle; argumento de venda do freela; ter os dois |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 05: portfólio (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/estrutura-de-portfolio]] | Portfólio como envelope: capa curta, trabalhos poucos e diversos com objetivo, sobre para humanizar, contato e CV; "não tem muito o que ensaiar" |
+| [[wiki/concepts/estrutura-de-curriculo]] | CV "preto no branco": sem cores, gráficos nem porcentagem de habilidade; título único, T-shaped como expertise + outras skills, experiência relevante |
+| [[wiki/concepts/estrutura-de-readme]] | README como portfólio mínimo: imagem/GIF, descrição, tecnologias, pré-requisitos, passo a passo, deploy, licença e contato |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 04: primeira vaga (2026-11-22)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/demonstrar-experiencia-na-primeira-vaga]] | Sem emprego anterior, experiência é contar o porquê de cada projeto em narrativa (estático → JS → blog com CRUD) e deixar tudo "mastigado" no README |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 03: profissional T-shaped (2026-11-22)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/posicionamento-no-mercado]] | Escolher uma área ("Dev front"); o erro do portfólio com cinco especialidades; "se você falar muita coisa, no final você não está falando nada" |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 02: como ganhar dinheiro (2026-11-22)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/precificacao-por-valor-vs-por-hora]] | Hora "sabota a sua produtividade"; preço pelo valor, branding e expertise; fila cheia sobe o preço; perguntas de escopo; risco de escopo no preço fechado |
+| [[wiki/concepts/branding-pessoal]] | "Ser identificado pelo aquilo que você faz"; repetir a mesma expertise por anos; alimenta a prospecção passiva |
+
+### FrontPUSH, módulo Monetização e Freelancer aula 01: introdução (2026-11-22)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/prospeccao-ativa-e-passiva]] | Segundo pilar do módulo: achar cliente; ativa = ir atrás, passiva = o cliente chega (leitura `[external]` até a aula 8) |
+| [[wiki/concepts/bons-e-maus-clientes]] | Aula 7 anunciada, "para você evitar dor de cabeça na sua vida"; critérios ainda não ditos |
+| [[wiki/concepts/metodologia-e-clareza]] | Base do triângulo: metodologia de ensino e de workflow; "aquilo que não é claro eu não compro"; vale para entrevista e freela |
 
 ### FrontPUSH, mentoria de identidade visual (2026-11-22)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade", "design barato e rápido"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 17
+date_updated: 2026-11-23
+source_count: 19
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: draft
@@ -89,6 +89,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: o site pode ser todo branco, com blocos em cinza, e só o banner principal ("no wireframe hero") na cor de base. Ver [[wiki/concepts/paleta-de-cores]].
 
+## Na reunião de conteúdo
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas|aula 10 do módulo Monetização e Freelancer]], o wireframe é a segunda reunião, que "nunca falta": "rabisco é fácil de mudar", mais fácil que alta fidelidade ou código. Evita o erro de desenvolver tudo "sem conferir com o cliente" ([[wiki/concepts/workflow-de-reunioes-do-freela]]).
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -108,3 +112,5 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — convite para revisar os wireframes do curso
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu conferidos no grid; exercício de verificar o alinhamento
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — hero em roxo, resto branco e cinza
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: wireframes e conteúdo como etapa que evita "o vai e volta"
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: wireframe como reunião de conteúdo com o cliente

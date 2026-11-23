@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-22
-source_count: 149
+date_updated: 2026-11-23
+source_count: 159
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -310,8 +310,54 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 
 Em [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]] ("se fosse eu, Násser"): faz identidades visuais como freelancer (Black Dev, com Brand Book), mais barato para alunos; um ou dois dias de referências por marca; gosta de traço reto ("só vou em Volkswagen"); desenha a própria tipografia do FrontPUSH; não posta no Dribbble até ficar bom.
 
+## Monetização e freelancer
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao|aula de introdução do módulo Monetização e Freelancer]], Násser abre o módulo de carreira dizendo que o conteúdo é "literalmente a minha experiência" e que não manda ninguém largar a CLT. Ideia-base: [[wiki/concepts/metodologia-e-clareza]] ("aquilo que não é claro eu não compro"). Confirma de novo o nome ao imitar o aluno: "Násser, como é que eu construo meu portfólio".
+
+## Como ele cobra e se vende
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]]: não cobra por hora ("sabota a sua produtividade"); preço sobe com a fila e, cheio, "coloco ele inflado" em vez de recusar; perguntas de escopo antes do preço. Usa a si mesmo como [[wiki/concepts/branding-pessoal]] ("eu preciso fazer animações no meu site, automaticamente você vai lembrar do Násser"). Diz que aprendeu "literalmente no campo de batalha".
+
+## O mapa T-shaped dele
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o próprio mapa: expert em front visual, interaction, "front back", React.js, motion design e UI; sabe avaliar UX, branding, back-end, banco de dados, estratégia, mercado, usabilidade, comunicação e posicionamento. Trabalhou com branding, mas não o estuda "com o mesmo furor". As áreas de expertise são as que o curso aprofunda.
+
+## Conselhos para a primeira vaga
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] dá cinco passos (T-shaped, mercado, descrição da vaga, demonstrar experiência, alinhamento) e explica por que escolheu React. Para UI designer, diz que está "um pouquinho fora".
+
+## Portfólio (aula 05)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o próprio portfólio (capa com duas skills, projetos FrontPUSH, Spider-Man, Blog e Nubank) e, no Figma, a próxima versão com uma página por projeto.
+
+## Nicho (aulas 06 e 07)
+
+Nas [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal|aulas 06 e 07 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] apresenta os quatro círculos do nicho e conta o caso de um cliente que quer uma plataforma de cursos própria, fora da Hotmart e com gamificação.
+
+## Cobrança (aula 08)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto|aula 08 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz estar no degrau "projeto + valor", com "mais de dois anos de forma bem mais incisiva" no freela, e promete mostrar oferta e orçamento nas aulas seguintes.
+
+## Ofertas (aula 09)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas|aula 09 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] defende valor antes do preço, "qualidade + preço baixo" sem "prostituir o mercado", explicar o processo e investir em si mesmo.
+
+## Workflow de freela (aula 10)
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas|aula 10 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra as quatro reuniões com pagamento 30/20/30/20 e diz que hoje pega "pouquíssimo" branding, "porque eu acredito que eu sou melhor em outras áreas".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: FrontPUSH, Monetização e Freelancer aula 10: quatro reuniões e pagamento por etapas
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: FrontPUSH, Monetização e Freelancer aula 09: valor antes do preço; dumping; explique o processo
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: hora, projeto e projeto + valor
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: quatro círculos do nicho; terreno alugado
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: portfólio como envelope; CV e README
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: cinco passos; escolha do React
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: mapa de expertise e de áreas que sabe avaliar
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: cobrança, fila e branding pessoal
+- [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: abre o módulo de monetização; metodologia e clareza
 - [[wiki/sources/o-que-e-ux-ui-design]] — aula 1 do módulo
 - [[wiki/sources/como-aprender-ui]] — aula 2 do módulo
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — aula de patterns (autoria inferida, depois confirmada pelo vínculo com o FrontPUSH)

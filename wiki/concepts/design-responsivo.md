@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-21
-source_count: 38
+date_updated: 2026-11-23
+source_count: 39
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -143,3 +143,4 @@ Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: 
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system fluido + breakpoint de empilhamento
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: classes de visibilidade por breakpoint
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: SVG exportado do Figma tornado fluido
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: responsivo como item da oferta, ligado a acessibilidade

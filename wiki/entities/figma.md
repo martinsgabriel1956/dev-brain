@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-21
-source_count: 56
+date_updated: 2026-11-23
+source_count: 60
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -194,8 +194,13 @@ Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: 
 
 Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: "eu faço pelo Figma" e nunca entendeu o `d` do path; `fill` é "muito parecido com o do Figma"; efeitos viram filtros nos `defs`, gradiente com `stop-color`, e o export repete IDs como `filter0_d`.
 
+## Escolha pela comunidade
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz que o designer deve escolher o Figma pela comunidade: features, plugins e "muito material [...] de forma gratuita" no Figma Community. "Isso é ferramenta, não é o mais importante."
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolher Figma pela comunidade
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -252,3 +257,6 @@ Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-d
 - [[wiki/sources/frontpush-propriedade-transform-parte-1-translate-scale-rotate-skew-matrix-perspectiva]]: FrontPUSH, mini curso de CSS Animations, básico CSS aula 01: gradiente copiado para a demo de rotate
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: espelho do SVG; efeitos no export; Ctrl-Shift-G
 - [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-defs]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 03: fill, filtros, gradientes e IDs do export
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: layout da próxima versão do portfólio do Násser
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: medir as horas do design para precificar
+- [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: FrontPUSH, Monetização e Freelancer aula 10: protótipo de baixa fidelidade na 2ª reunião; arquivo entregue na 4ª

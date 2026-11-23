@@ -3,8 +3,8 @@ type: entity
 title: "Vercel"
 aliases: ["Vercel"]
 date_created: 2026-07-28
-date_updated: 2026-11-21
-source_count: 7
+date_updated: 2026-11-23
+source_count: 8
 tags: [tech-mentor-ai, harness, tool-call, deploy, serverless]
 skill: tech-mentor-ai
 status: stub
@@ -49,3 +49,4 @@ Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-port
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: deploy do front-end (ex-ZEIT)
 - [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: alternativa ao Netlify
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link do deploy no README

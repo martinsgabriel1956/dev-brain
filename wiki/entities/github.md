@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-11-21
-source_count: 16
+date_updated: 2026-11-23
+source_count: 18
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -69,3 +69,5 @@ Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-port
 - [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]]: FrontPUSH, JavaScript aula 16: /users via Axios
 - [[wiki/sources/frontpush-spa-metodos-tradicional-vs-spa-json-api-multiplos-clientes]]: FrontPUSH, React aula 04: api.github.com como exemplo de endpoints
 - [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: GitHub Pages para site estático
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: README como portfólio mínimo ([[wiki/concepts/estrutura-de-readme]])
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: basta para vaga, sem site

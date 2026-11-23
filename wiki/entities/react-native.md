@@ -3,8 +3,8 @@ type: entity
 title: "React Native"
 aliases: ["RN"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 7
+date_updated: 2026-11-23
+source_count: 8
 tags: [mobile, react-native, react, javascript, ios, android, cross-platform]
 skill: tech-mentor-mobile
 status: stub
@@ -48,3 +48,4 @@ Dia 5: `source={{ uri }}` exige largura e altura, sem atalho `border`, `ScrollVi
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Proffy: View/Text, StyleSheet, ImageBackground
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: uri, ScrollView, TextInput e Linking
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: FrontPUSH, React aula 03: React.js (web) e React Native (mobile) com "mesmos fundamentos"
+- [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: Rocketshoes (React Native e Redux) como README de exemplo

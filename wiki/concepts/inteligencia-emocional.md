@@ -3,8 +3,8 @@ type: concept
 title: "Inteligência Emocional"
 aliases: ["IE", "EQ", "emotional intelligence", "maturidade emocional"]
 date_created: 2026-05-19
-date_updated: 2026-09-21
-source_count: 4
+date_updated: 2026-11-22
+source_count: 5
 tags: [soft-skills, inteligencia-emocional, carreira, resiliência, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -58,8 +58,13 @@ Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui
 - [[wiki/concepts/sindrome-do-impostor]] — o risco emocional quando a IE falha nesse momento
 - [[wiki/concepts/persistencia-em-processo-seletivo]] — o que fazer depois de absorver o feedback e ser reprovado
 
+## Autoconhecimento de habilidades (FrontPUSH)
+
+A [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]] lista inteligência emocional entre as vantagens do perfil T-shaped: saber "do que você é bom" deixa a pessoa "mais flexível, com menos rigidez", reduz a frustração e permite admitir "eu não sou bom o suficiente nessa área" para delegar.
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: T-shaped como autoconhecimento; flexibilidade e delegação
 - [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — não reproduzir hábitos tóxicos observados numa cultura política ruim; pergunta de diagnóstico contínuo sobre saúde do ambiente
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — não tornar pessoal os comentários de code review

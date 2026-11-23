@@ -3,8 +3,8 @@ type: concept
 title: "Ego-Driven Development"
 aliases: ["ego-driven development", "ego na engenharia", "desenvolvimento guiado por ego"]
 date_created: 2026-04-29
-date_updated: 2026-07-23
-source_count: 2
+date_updated: 2026-11-22
+source_count: 3
 tags: [ego, over-engineering, carreira, qualidade, comportamento, soft-skills]
 skill: tech-mentor-backend
 status: stable
@@ -45,7 +45,12 @@ Ego-driven development não é só um problema individual. Quando o código resu
 - [[wiki/concepts/kiss]] — o antídoto comportamental
 - [[wiki/concepts/abstraction-bloat]] — efeito análogo com IA como vetor (viés de treinamento vs viés de ego)
 
+## Diminuir o ego para delegar
+
+Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens|aula 03 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] pede o contrário do ego: como gestor, "diminuir o seu ego para falar que eu não sou bom o suficiente nessa área, tem gente que é melhor que eu, vou delegar", e assim "você se valoriza e valoriza os outros".
+
 ## Key Sources
 
+- [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: diminuir o ego para delegar
 - [[wiki/sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
