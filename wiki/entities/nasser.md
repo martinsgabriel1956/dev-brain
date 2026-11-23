@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 160
+source_count: 161
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -350,6 +350,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-f
 
 Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: mídia de um site de produto "estilo Apple" para um joystick, feito em código nativo, "sem Framer ou qualquer page builder". Fluxo ChatGPT → [[wiki/entities/midjourney]] ou [[wiki/entities/nano-banana-pro]] → [[wiki/entities/kling-ai]] → [[wiki/entities/topaz-video]] ([[wiki/concepts/pipeline-de-midia-com-ia]]), fruto de "quatro meses de muito estudo e muito teste". Diz ser desenvolvedor "há um pouco mais de 10 anos" e se apresenta como "desenvolvedor front-end e UI designer". Dita os prompts em áudio. Portfólio em nasseryousef.com.br, o que confirma a grafia Yousef do sobrenome. Instagram @nasseryousef__ (grafia inferida da legenda).
 
+## Mentoria de UI Design (FrontPUSH)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], junta "os principais itens de UI": pesquisa antes de tudo, patterns de e-commerce, três fontes diárias ([[wiki/entities/lapa-ninja]], [[wiki/entities/dribbble]], [[wiki/entities/behance]]), "modelar, não copiar" no projeto Nubank ([[wiki/concepts/modelar-referencias]]), leitura em Z e em F, contraste no Who Can Use e a 60-30-10. Revela que a setinha do botão do FrontPUSH veio de uma landing page de referência.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -512,3 +516,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: mídia de
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: como hospeda portfólio, projetos e cursos
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: processo de marca, Black Dev
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: como cria imagens e vídeos com IA
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — mentoria de UI: pesquisa, patterns, modelar referências, Z/F, contraste

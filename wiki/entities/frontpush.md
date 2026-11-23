@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-23
-source_count: 137
+source_count: 138
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -491,6 +491,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: o novo módulo de IA abre vagas com acesso vitalício. O projeto do joystick (design, IA, animação e código) vai inteiro para o curso, e um evento posterior vai codar a hero e outra seção. A aula 01 é o [[wiki/concepts/pipeline-de-midia-com-ia]] completo, publicado como vídeo não listado no YouTube.
 
+## Mentoria de UI Design
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], [[wiki/entities/nasser|Násser]] mostra as três landing pages do FrontPUSH como evolução ("é treino, é sentar e fazer 70 vezes"); o objetivo da atual é captar nome e e-mail, e a setinha que sai do botão veio da landing page "Everyball". Para o novo site, salvou referências "com três pontos": UI, código e motion.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -630,3 +634,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: o novo m�
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, módulo de hospedagem aula 06: upload, domínios adicionais, AutoSSL
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: azul, paleta, fonte própria, noise
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — três landing pages; objetivo da LP; setinha do botão

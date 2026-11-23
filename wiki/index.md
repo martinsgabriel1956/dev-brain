@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] | Mentoria ao vivo do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 54 min) sobre "os principais itens de UI": pesquisa antes de tudo, patterns de e-commerce (Kabum, Magalu, Netshoes), três fontes diárias (Lapa Ninja, Dribbble, Behance), [[wiki/concepts/modelar-referencias\|modelar, não copiar]] no projeto Nubank, arquivo de wireframes, tópicos, botão vs. link, leitura em Z e em F, Who Can Use, três cores de fundo e 60-30-10 |
 | [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]] | Módulo de IA, aula 01, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 38 min: mídia de um site de produto "estilo Apple" para um joystick, com [[wiki/concepts/animacao-por-sequencia-de-frames-no-scroll\|frames no scroll]]; [[wiki/concepts/pipeline-de-midia-com-ia\|fluxo]] ChatGPT/Gemini escreve os prompts por áudio → [[wiki/entities/midjourney\|Midjourney]] (foto do zero) ou [[wiki/entities/nano-banana-pro\|Nano Banana Pro]] (alterar foto, tirar logos) → [[wiki/entities/kling-ai\|Kling AI]] ([[wiki/concepts/start-frame-e-end-frame\|start/end frame]]) → [[wiki/entities/topaz-video\|Topaz Video]] ([[wiki/concepts/upscaling-com-ia\|upscale]] 2x, 4K60) → 1080p30 no site; "quando você não especifica ele inventa"; custos de cada ferramenta; método antes de IA nova. Precisões: "CleanAI" = Kling, tirar o logo não tira o desenho industrial, SynthID, upscale inventa detalhe, preços com lapsos |
 | [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]] | Módulo Monetização e Freelancer, aula 10 ("boas ofertas, parte 2"), do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 23 min: [[wiki/concepts/workflow-de-reunioes-do-freela\|quatro reuniões]] (pré-briefing + metodologia + contrato; wireframes, jornada e conteúdo; alta fidelidade e dev; só entrega) com [[wiki/concepts/pagamento-por-etapas\|pagamento 30/20/30/20]]; "nunca comece sem receber", recusar 30% de entrada é sinal de mau cliente, "pagou 80%" não some; formulário de [[wiki/concepts/briefing\|pré-briefing]] de marca; orçamento em 5-7 dias, cronograma de ~39 dias. Precisões: falta o que vai no contrato (revisões, escopo, direitos), percentuais e prazos somados |
 | [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]] | Material de apoio do módulo Monetização e Freelancer do [[wiki/entities/frontpush\|FrontPUSH]]: [[wiki/concepts/orcamento-de-freela\|orçamento]] real (valores apagados) do dashboard de cursos com gamificação, em dois blocos (UI dashboard com telas por jornada; style guide como extra), e modelo genérico de invoice em inglês (traduzido; números de placeholder, "VAT 21%"). Precisões: invoice ≠ NFS-e, escopo sem limite de revisões |
@@ -1085,6 +1086,12 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, mentoria de UI Design (2026-11-23)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/modelar-referencias]] | Juntar pedaços de várias referências e adaptar à identidade; copiar é fase de iniciante; estrutura padrão não é cópia |
 
 ### FrontPUSH, módulo de IA aula 01: imagens e vídeos com IA (2026-11-23)
 
@@ -4179,6 +4186,9 @@ date_updated: 2026-11-21
 
 ## Entities
 
+- [[wiki/entities/lapa-ninja]] — galeria de landing pages por categoria; uma das três fontes diárias do Násser
+- [[wiki/entities/behance]] — portfólios criativos da Adobe; uma das três fontes diárias do Násser
+- [[wiki/entities/halo-lab]] — estúdio de design (ucraniano, não "americano") a seguir no Dribbble
 - [[wiki/entities/midjourney]] — gerador pago de imagens (e vídeos curtos); no FrontPUSH, foto do zero com `--ar`/`--v 7`, plano Basic US$ 10/mês
 - [[wiki/entities/nano-banana-pro]] — Gemini 3 Pro Image, do Google; no FrontPUSH, alterar fotos de referência e remover logos, plano gratuito
 - [[wiki/entities/kling-ai]] — gerador de vídeo da Kuaishou com start/end frame e créditos; "CleanAI" na legenda; o "campeão" de vídeo do Násser

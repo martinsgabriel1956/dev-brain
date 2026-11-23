@@ -3,8 +3,8 @@ type: concept
 title: "Page Map"
 aliases: ["pagemap", "PageMap", "page map", "mapa da página", "mapa de página", "mapa de seções", "estrutura de seções", "flow das dobras", "flow de seções", "flow da página", "dobras da página", "dobra", "fold"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-23
+source_count: 7
 tags: [ui, ux, ui-design, wireframe, page-map, pagemap, sitemap, jornada-do-usuario, landing-page, portfolio, referencias, arquitetura-de-informacao, arquitetura-da-informacao, processo-de-design, layout]
 skill: ux-ui-mentor
 status: stub
@@ -119,6 +119,10 @@ Todas concordam que o page map trata de uma página e o sitemap da árvore de p�
 - [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]]: o levantamento que o alimenta.
 - [[wiki/concepts/design-persuasivo]]: os gatilhos de uma página de vendas ganham lugar no page map.
 
+## No projeto Nubank (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "copiei e colei aqui no Figma, fiquei olhando um para um, um para outro, desenhei um page map e aí sim começou a surgir as ideias". O page map rabiscado vira wireframe de média fidelidade, e uma ideia (o celular virando card) muda no caminho (o cartão girando). Depois dele vem a pergunta de UX: "o que vai ter na primeira dobra, qual é o objetivo da primeira dobra?" ([[wiki/concepts/objetivo-da-interface]], [[wiki/concepts/modelar-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — definição, dobras como telinhas, jornada e gatilhos, página de vendas de curso
@@ -127,3 +131,4 @@ Todas concordam que o page map trata de uma página e o sitemap da árvore de p�
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — PageMap como base para montar a página com modelos prontos
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — page map do portfólio montado por comparação de referências
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — pagemap como flow de dobras; case do Nubank; antes dos wireframes
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — shots no Figma → page map → wireframe de média fidelidade (Nubank)

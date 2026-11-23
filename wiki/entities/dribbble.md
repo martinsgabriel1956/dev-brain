@@ -4,7 +4,7 @@ title: "Dribbble"
 aliases: ["dribble", "dribbble.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-23
-source_count: 9
+source_count: 10
 tags: [dribbble, design, referências, inspiração]
 skill: tech-mentor-frontend
 status: stub
@@ -51,6 +51,10 @@ Na aula de variação de cores, Násser deixa o Dribbble para uma aula sobre ond
 
 Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia|mentoria de identidade visual]]: `dribbble.com/colors` com filtro de cor para achar gradientes; Liked Shots de um designer de marcas que Násser segue. Ele ainda não postou lá a nova página do FrontPUSH: "enquanto o negócio não fica bom, não consigo soltar".
 
+## Mentoria de UI Design (FrontPUSH)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], uma das três fontes diárias de [[wiki/entities/nasser|Násser]], com [[wiki/entities/lapa-ninja]] e [[wiki/entities/behance]] ("80% do que eu pesquiso"). Busca por tema ("Digita dashboard no Dribbble e vai") e "selecione pessoas boas aqui dentro", como a [[wiki/entities/halo-lab|Halo Lab]].
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
@@ -62,3 +66,4 @@ Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradien
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — anunciado como fonte de inspiração para cores
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: dribbble.com/colors; designer de marcas que ele segue
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link de contato em portfólios e CVs de designers
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — uma das três fontes; seguir estúdios como a Halo Lab

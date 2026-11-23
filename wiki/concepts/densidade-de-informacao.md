@@ -3,8 +3,8 @@ type: concept
 title: "Densidade de Informação"
 aliases: ["espaço vs. meio", "espaço versus meio", "information density", "densidade", "compacto vs. confortável"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-23
+source_count: 5
 tags: [ui, ui-design, layout, espacamento, densidade-de-informacao, espaco-em-branco, cards, linhas]
 skill: ux-ui-mentor
 status: stub
@@ -45,9 +45,14 @@ No [[wiki/concepts/wireframe]], o texto "muito carregado" se resolve em tópicos
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], texto "totalmente corrido" fica "muito pesado, fica cansado de ler". A saída é quebrar em parágrafos de 4 a 8 linhas com vão do tamanho do line-height; no G1, site denso, o vão é um pouco maior. Ver [[wiki/concepts/espacamento-entre-paragrafos]].
 
+## Tópicos no lugar de texto longo (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "o ser humano [...] entende melhor as coisas quando elas são feitas por tópicos", como nos posts "sete dicas de como fazer isso". Receita: perguntar "qual a ideia desse texto?", elencar os itens (100% gratuito, sem taxa, melhor suporte) "e um link para você detalhar". `[external]` Nielsen (1997, *How Users Read on the Web*): texto escaneável melhorou a usabilidade medida em 47%; conciso, escaneável e objetivo, em 124% (alta, sem fetch).
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — espaço vs. meio: Facebook e G1 densos com cards e linhas; site simples com espaços grandes
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática da aula de espaço vs. meio no Figma (wireframe pouco denso, vãos de até 128)
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — texto carregado em tópicos (benefícios do Nubank)
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — parágrafos de 4 a 8 linhas aliviam texto corrido
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — texto longo vira tópicos + link de detalhe

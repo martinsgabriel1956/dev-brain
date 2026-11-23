@@ -3,8 +3,8 @@ type: entity
 title: "Who Can Use"
 aliases: ["whocanuse", "whocanuse.com", "WhoCanUse"]
 date_created: 2026-11-13
-date_updated: 2026-11-19
-source_count: 6
+date_updated: 2026-11-23
+source_count: 7
 tags: [ferramenta, acessibilidade, contraste, wcag, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -40,6 +40,10 @@ Na abertura do módulo de tipografia, [[wiki/entities/nasser|Násser]] mostra "u
 
 Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], o site está no Notion em "cores" e testa os cinzas da página (#999, #777, #666), inclusive na simulação de luz do sol.
 
+## Na mentoria de UI Design (FrontPUSH)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "esse site aqui é obrigatório para você que está projetando interface, simplesmente obrigatório". Testa laranja + branco (falha), um laranja mais escuro (falha de novo, "pior caso" de texto pequeno) e mostra as simulações de catarata, glaucoma, deuteranopia e protanopia.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
@@ -48,3 +52,4 @@ Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — teste do verde e do laranja do FrontPUSH; condições de visão
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — provável "site de contraste" no Notion (inferido)
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: teste de cinzas
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — "simplesmente obrigatório"; laranja + branco reprova

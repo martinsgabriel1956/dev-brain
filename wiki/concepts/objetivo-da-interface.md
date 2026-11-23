@@ -3,8 +3,8 @@ type: concept
 title: "Objetivo da Interface"
 aliases: ["qual o objetivo da UI", "o que faz uma boa UI", "boa UI depende do objetivo"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 11
+date_updated: 2026-11-23
+source_count: 12
 tags: [ui, ui-design, ux, design, conversao, cta]
 skill: ux-ui-mentor
 status: stub
@@ -75,6 +75,10 @@ A aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel
 
 Na aula de usabilidade, a definição já é sobre objetivo: usabilidade "permite que as pessoas alcancem facilmente os seus objetivos". A boa prática é usar "jornadas com objetivos claros, sem muita bifurcação". Num e-commerce, "muitos links, muitas coisas na jornada" fazem o usuário "se perder" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
 
+## Botão, não link (FrontPUSH, mentoria de UI Design)
+
+Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "você sempre vai ter um objetivo [...] Qual é o objetivo da sua página?" Na landing page do [[wiki/entities/frontpush|FrontPUSH]], é "que você conheça o meu trabalho e que você deixe o seu nome e o seu e-mail". A ação principal vai em botão: "Link, ele tem que parecer link. Botão, ele tem que parecer botão. O botão é para a tomada de ação, link é para o usuário explorar". Depois, contraste e posição no caminho do Z ([[wiki/concepts/hierarquia-visual]]). `[skill: ux-ui-mentor]` No código, o par é `<button>` para ação e `<a href>` para navegação.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -88,3 +92,4 @@ Na aula de usabilidade, a definição já é sobre objetivo: usabilidade "permit
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólio freelancer: o objetivo é o pedido de proposta, no hero e no fim
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "útil" como necessidade do usuário, complementar ao objetivo
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade como alcançar objetivos; jornada de compra sem bifurcação
+- [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — objetivo da LP; ação principal em botão, link é secundário
