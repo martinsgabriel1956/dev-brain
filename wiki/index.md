@@ -26,6 +26,7 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] | Aula 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, REPL do Node): `=` atribui, `==`/`!=` comparam e convertem (`'1' == 1`), "tipagem fraca, dinâmica"; `===`/`!==` testam o tipo e são "mais seguros"; relacionais com o mnemônico do jacaré. `!==` não é "mesmo tipo"; relacionais convertem diferente (`'10' < '9'`) |
 | [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
 | [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]] | Aula 01, parte 2, do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 15 min, REPL do Node, era ES5): variável como "nome simbólico" com `var`; number (inteiro e float), string (aspas simples = duplas), boolean, null e undefined "a mesma coisa"; objeto literal com ponto; array indexado a partir de 0; "arrays são objetos" via `pessoa['altura']`. undefined ≠ variável inexistente (ReferenceError); ponto não é "mais rápido" |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
@@ -1091,6 +1092,12 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, aula 03: operadores de igualdade e relacionais (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-relacionais-javascript]] | `<`, `>`, `<=`, `>=`: strings comparam como texto (`'10' < '9'`), tipos mistos viram número, `null >= 0`, NaN sempre false |
 
 ### JavaScript Ninja, aula 02: operadores aritméticos (2026-11-24)
 

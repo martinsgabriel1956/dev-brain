@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -67,8 +67,13 @@ Conhecer os pitfalls permite usar a linguagem com as partes boas e evitar as arm
 
 Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], dois pontos que a aula trata como simples têm armadilha. `++`/`--` mudam de valor conforme a posição (`y = x++` × `y = ++x`) e convertem string para número, ao contrário de `+=` ([[wiki/concepts/incremento-e-decremento]]). E espaço "não tem diferença nenhuma" só entre tokens: `a+++b` vira `a++ + b`, e `return` seguido de quebra de linha devolve `undefined` pela inserção automática de ponto e vírgula. `[external]`
 
+## Comparações (JavaScript Ninja, aula 03)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==` converte tipos e a aula manda usar `===`. As armadilhas que ficam de fora são as dos relacionais, que não têm versão estrita: `'10' < '9'` é true (comparação de texto), `null >= 0` é true com `null == 0` false, e tudo com `NaN` dá false ([[wiki/concepts/operadores-relacionais-javascript]]). `[external]`
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: pré × pós-incremento; espaço e ASI
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: == converte; relacionais sem versão estrita

@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -20,7 +20,12 @@ A primeira aula tem ao menos duas partes; a segunda cobre variáveis e tipos de 
 
 Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], expressões e operadores aritméticos; o vídeo seguinte é de igualdade e relacionais.
 
+## Aula 03
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igualdade (`==`, `===`) e relacionais; o vídeo seguinte é de funções.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: aula 02: operadores aritméticos
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: aula 03: igualdade e relacionais

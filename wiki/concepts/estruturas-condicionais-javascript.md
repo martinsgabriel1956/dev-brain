@@ -3,8 +3,8 @@ type: concept
 title: "Estruturas condicionais em JavaScript (if/else, switch)"
 aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -58,8 +58,13 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], um `if` dentr
 
 Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]], `if (event.key === 'r') ... else if ('b') ... else` troca a cor pela tecla; a aula chama a cadeia de "lista encadeada" (é a "estrutura encadeada" da aula 03).
 
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==`, `===`, `!=`, `!==`, `>`, `<`, `>=` e `<=` aparecem antes do `if`, testados soltos no REPL ([[wiki/concepts/operadores-relacionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: if dentro do while
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: if/else if por tecla
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: comparadores antes do if

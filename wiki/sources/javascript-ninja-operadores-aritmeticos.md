@@ -28,6 +28,8 @@ Vídeo seguinte ao de [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados
 - **Atribuição composta:** `+=`, `-=`, `*=`, `/=`. `soma += 20` "é basicamente igual a `soma = soma + 20`" ([[wiki/concepts/atribuicao-composta]]).
 - Próximo vídeo: operadores de igualdade e relacionais ([[wiki/concepts/igualdade-javascript]]).
 
+Continua em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]].
+
 ## Key Claims
 
 ### Expressões

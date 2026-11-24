@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 7
+source_count: 8
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota usa `===` ("ig
 
 [[wiki/sources/javascript-ninja-operadores-aritmeticos]] termina anunciando "operadores de igualdade e operadores relacionais" para o vídeo seguinte do [[wiki/entities/javascript-ninja|JavaScript Ninja]].
 
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==` e `!=` comparam e `=` atribui; `'1' == 1` dá true "porque JavaScript, ele faz conversão de tipos", e `===`/`!==` "testam também o tipo". A recomendação é a desta página: "a gente vai usar sempre a notação com três igual [...] porque isso é mais seguro". Imprecisão: `!==` não é "diferente, mas o mesmo tipo"; dá true se o tipo **ou** o valor diferem.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
@@ -55,3 +59,4 @@ Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota usa `===` ("ig
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: == "conteúdo", === conteúdo e tipo
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: === na condição da rota
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: igualdade anunciada para o próximo vídeo
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: ==, !=, ===, !==; "três igual" por segurança

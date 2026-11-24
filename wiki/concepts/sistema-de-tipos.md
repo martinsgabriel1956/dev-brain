@@ -4,7 +4,7 @@ title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -53,6 +53,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], a mesma `var x` recebe `0`, `1.2`, `'Hello World'`, `true`, `null` e `{}` sem erro. A aula explica pelo nome ("um valor que pode variar"), mas é tipagem dinâmica: o tipo pertence ao valor, não à variável.
 
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], o JavaScript é "uma linguagem com tipagem fraca, dinâmica", e a prova é `'1' == 1` dar true. Os dois eixos aparecem juntos: dinâmica (o tipo está no valor, ver aula 01) e fraca (conversão implícita na comparação).
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
@@ -60,3 +64,4 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], a mesma `var x`
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — `Option`/`Result`/`match` exaustivo como caso concreto de tipo carregando o comportamento possível
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript: tipagem estática e IntelliSense
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: x recebe valores de vários tipos (tipagem dinâmica)
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: "tipagem fraca, dinâmica" via '1' == 1

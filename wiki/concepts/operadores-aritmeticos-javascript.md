@@ -4,7 +4,7 @@ title: "Operadores aritméticos em JavaScript"
 aliases: ["operadores aritméticos", "operador de resto", "módulo %", "operadores JavaScript", "coerção com +"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [javascript, operadores, aritmetica, coercao, number]
 skill: lang-dynamic
 status: stub
@@ -36,9 +36,14 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `i++` "é exa
 
 Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], são "quatro tipos de operadores aritméticos" (`+`, `-`, `*`, `/`), sem `%` nem `**`, mais os "abreviados": [[wiki/concepts/incremento-e-decremento|++ e --]] e a [[wiki/concepts/atribuicao-composta|atribuição composta]] (`+=`, `-=`, `*=`, `/=`). Espaço em volta do operador "não tem diferença nenhuma", mas deixa o código "mais legível". Coerção com string não aparece.
 
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+[[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] continua a série com os comparadores; a coerção que o `+` faz com string reaparece no `==` (`'1' == 1`) ([[wiki/concepts/igualdade-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: as cinco operações aritméticas
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: comparadores e lógicos
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: i++ como i = i + 1
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: quatro operadores, ++/-- e +=; espaços para legibilidade
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: continuação com igualdade e relacionais
