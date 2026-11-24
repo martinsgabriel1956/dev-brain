@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-21
+date_updated: 2026-11-24
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]] | Aula 01, parte 2, do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 15 min, REPL do Node, era ES5): variável como "nome simbólico" com `var`; number (inteiro e float), string (aspas simples = duplas), boolean, null e undefined "a mesma coisa"; objeto literal com ponto; array indexado a partir de 0; "arrays são objetos" via `pessoa['altura']`. undefined ≠ variável inexistente (ReferenceError); ponto não é "mais rápido" |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
 | [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]] | Aula 02 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min): o [[wiki/entities/dash-class\|DashClass]] como mix de [[wiki/entities/finclass\|Finclass]], [[wiki/entities/como-se-virar\|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web\|Gustavo Web]], sem copiar fluxos de cliente; "Hotmart mais específica"; escopo, grid de 12 colunas recuado pela sidebar; tour pelos fluxos de usuário, cursos, pagamento, ajuda, login e painel admin |
 | [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] | Aula 01 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]], o [[wiki/entities/dash-class\|Dash Class]] ([[wiki/entities/nasser\|Násser]], 10 min): dashboard como painel de gestão do back-office; genérico × plataforma própria; dados para decidir ("me tragam dados", atribuição a Deming duvidosa); cinco tipos (operacional, financeiro, estratégico, tático, plataformas), que misturam eixos; origem na [[wiki/entities/finclass\|Finclass]] |
@@ -1089,6 +1090,12 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, aula 01, parte 2: variáveis e tipos de dados (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/notacao-de-ponto-e-colchetes]] | `obj.chave` × `obj['chave']`: ponto para chave fixa, colchetes para dinâmica ou não identificador; mesma velocidade |
 
 ### FrontPUSH, módulo de dashboards aula 03: grids e patterns (2026-11-24)
 
@@ -4210,6 +4217,8 @@ date_updated: 2026-11-21
 
 ## Entities
 
+- [[wiki/entities/fernando-daciuk]] — instrutor do curso JavaScript Ninja ("Fernanda Gentil" na legenda)
+- [[wiki/entities/javascript-ninja]] — curso de JavaScript de Fernando Daciuk, era ES5 (não confundir com o Lapa Ninja)
 - [[wiki/entities/como-se-virar]] — plataforma de ensino gamificada de uma dupla de médicos para calouros de medicina (CSV); origem do DashClass
 - [[wiki/entities/gustavo-web]] — professor de PHP (ex-UpInside, Black Dev); Násser desenhou a plataforma dele
 - [[wiki/entities/dash-class]] — módulo e projeto de dashboards do FrontPUSH: plataforma de ensino com painel administrativo

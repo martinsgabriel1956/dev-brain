@@ -3,8 +3,8 @@ type: concept
 title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-24
+source_count: 6
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -37,6 +37,10 @@ Em [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]], [[
 
 Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], `const areaRetangulo = function (a, b) {}` é dada como "exatamente igual" à declaração `function areaRetangulo`. A declaração é içada inteira; a `const` só existe depois da linha (chamar antes dá `ReferenceError`).
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], [[wiki/entities/fernando-daciuk|Daciuk]] só usa `var`: "sempre que você for declarar uma variável em JavaScript, você precisa utilizar a palavra-chave". No REPL do Node, `var x` imprime `undefined`, que é o valor de conclusão da declaração, não o de `x`. Sem `let` nem `const`, a aula é da era ES5.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
@@ -44,3 +48,4 @@ Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], `const are
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: const no cloneField
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: var vaza do bloco, let respeita, const sem reatribuição
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: função em const × declaração (hoisting)
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: só `var`; variável como "nome simbólico" para um valor

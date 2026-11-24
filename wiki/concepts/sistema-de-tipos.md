@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-24
+source_count: 5
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -49,9 +49,14 @@ Rust representa ausência de valor com `Option<T>` (`Some`/`None`) em vez de um 
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], o argumento prático da tipagem estática no [[wiki/entities/typescript]]: a função esquecida há três meses não diz se o campo é `user.city` ou `user.address.city`, e o tipo declarado faz o editor responder.
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], a mesma `var x` recebe `0`, `1.2`, `'Hello World'`, `true`, `null` e `{}` sem erro. A aula explica pelo nome ("um valor que pode variar"), mas é tipagem dinâmica: o tipo pertence ao valor, não à variável.
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — `Option`/`Result`/`match` exaustivo como caso concreto de tipo carregando o comportamento possível
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript: tipagem estática e IntelliSense
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: x recebe valores de vários tipos (tipagem dinâmica)

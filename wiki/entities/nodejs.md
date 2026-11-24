@@ -3,8 +3,8 @@ type: entity
 title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
-date_updated: 2026-11-16
-source_count: 18
+date_updated: 2026-11-24
+source_count: 19
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -69,6 +69,10 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: tabela de 
 
 Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o back-end "pode ser Node, que é JavaScript, ou pode ser, por exemplo, PHP": com JSON, a linguagem do servidor não importa para o front.
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o Node serve de REPL: "vou acessar a interface do Node para poder digitar os comandos". Cada expressão é avaliada e o resultado aparece na hora; Control L limpa a tela.
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -89,3 +93,4 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o bac
 - [[wiki/sources/jstack-criando-a-primeira-rota-da-api]]: JStack aula 05: primeira rota GET /users
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: JStack aula 06: routes.js e controller
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: Node como exemplo de back-end
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: Node como REPL para testar a linguagem

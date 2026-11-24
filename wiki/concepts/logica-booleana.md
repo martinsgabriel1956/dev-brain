@@ -3,8 +3,8 @@ type: concept
 title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-24
+source_count: 7
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -57,6 +57,10 @@ Cada uma dessas operações corresponde a uma **porta lógica** física — um c
 
 Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], a regra de entrada no JavaScript: "uma estrutura condicional só entende" `true` ou `false` e converte qualquer valor para um dos dois ([[wiki/concepts/truthy-e-falsy]]). `&&` e `||` são o "e" e o "ou", agrupados com parênteses.
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o boolean do JavaScript é apresentado como `true` ou `false`, "algo que é verdadeiro ou algo que é falso", sem operadores lógicos (ficam para a aula de operadores).
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
@@ -72,3 +76,4 @@ AND, OR, NOT, aspas e parênteses aplicados à busca de vagas no LinkedIn e no G
 
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: booleano, && e || no JS
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: boolean como true ou false
