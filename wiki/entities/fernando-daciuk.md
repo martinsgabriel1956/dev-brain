@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 8
+source_count: 11
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,18 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], se apresenta ("Fernando d
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], adia o desafio da semana 2 anunciado no vídeo anterior: "nós temos um assunto antes disso". Volta ao REPL, com as demos digitadas ao vivo.
 
+## Semana 3, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], abre com "nossa terceira aula do curso" e se apresenta ("na fenda do tio" na legenda, nova deformação). Usa a si mesmo como exemplo: o objeto `pessoa` tem `nome: 'Fernando'` e `idade: 30`.
+
+## Semana 3, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o próprio nome vira dado: `pessoa.sobrenome` e `pessoa.nomeCompleto()` devolvem "Fernando Daciuk", que a legenda escreve "Fernando da Silva". É a evidência mais forte de que "Fernando da Silva" nas aulas anteriores é deformação de Daciuk.
+
+## Semana 3, vídeo 03
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], se apresenta ("Fernando da Silva" na legenda) e mostra a própria conta no GitHub, `fdaciuk` ("F da Silva que" na legenda), e o repositório do curso na organização `da2k`. Pede dúvidas por email ou issue e incentiva mandar o desafio "pela metade mesmo": "o ninja de verdade [...] pergunta".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -54,3 +66,6 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], adia o desafio 
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: semana 2, vídeo 02: operadores unários; se apresenta
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: semana 2, vídeo 03: estrutura léxica; se apresenta
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: semana 2, vídeo 04: if, else e else if
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: semana 3, vídeo 01: tipos de dados e objetos; se apresenta
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: semana 3, vídeo 02: métodos de objeto; nomeCompleto() devolve o próprio nome
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: semana 3, vídeo 03: desafio 3 e fluxo de git; contas fdaciuk e da2k

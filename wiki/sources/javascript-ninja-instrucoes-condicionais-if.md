@@ -28,6 +28,8 @@ Quarto vídeo da "segunda aula" do [[wiki/entities/javascript-ninja|JavaScript N
 - **`else if`** testa "mais de duas coisas": "como se fosse mais um if", encadeado; se tudo for falso, cai no `else` final.
 - Próximo vídeo: o desafio da semana 2.
 
+Continua em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]] (semana 3, vídeo 01: tipos de dados e objetos); o desafio não está entre as transcrições.
+
 ## Key Claims
 
 ### O que é

@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -34,6 +34,10 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], `null` é "nenh
 
 Em [[wiki/sources/javascript-ninja-funcoes]], função sem `return` devolve `undefined` ("o valor é indefinido"), e uma variável que só existe dentro da função, lida de fora, dá "não está definido", que é `ReferenceError`, não `undefined`.
 
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], os dois são "os valores especiais": um significa "que um valor não foi passado ou não existe" para a propriedade, o argumento ou a variável; o `null` é passado de propósito, "dizendo a esse cara que não tem [...] valor nenhum", e precisa ser atribuído explicitamente. Para variável não declarada, a mesma tensão da aula 01: é `ReferenceError`, não `undefined`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
@@ -41,3 +45,4 @@ Em [[wiki/sources/javascript-ninja-funcoes]], função sem `return` devolve `und
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: undefined é falsy
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: "a mesma coisa" na maior parte das vezes; undefined ≠ variável inexistente
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: função sem return dá undefined
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: valores especiais; null atribuído de propósito
