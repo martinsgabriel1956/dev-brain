@@ -4,7 +4,7 @@ title: "Notação de ponto e de colchetes (JavaScript)"
 aliases: ["dot notation", "bracket notation", "notação de ponto", "notação de colchetes", "property accessors", "acesso a propriedade"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 3
 tags: [javascript, objetos, propriedades, array, sintaxe]
 skill: lang-dynamic
 status: stub
@@ -31,6 +31,16 @@ Arrays são objetos, e os índices são chaves: `numeros[3]` e `numeros['3']` le
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], [[wiki/entities/fernando-daciuk|Daciuk]] usa `pessoa['altura']` para provar que "no JavaScript não existem arrays [...] eles nada mais são do que objetos". Ele recomenda o ponto porque "a notação de objeto é mais rápida". A recomendação é boa, o motivo não.
 
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], só o ponto: `objeto.propriedade`, `pessoa.nome`, `carro.cor`, `carro.motor`. Os colchetes não voltam.
+
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o ponto também escreve: `pessoa.cor = 'caucasiano'` cria a propriedade sem perder as outras, e `pessoa.andar = function () {...}` cria um método. "Novas atribuições, sempre [...] o nome do objeto, ponto, o nome da propriedade, é igual, o valor." `[external]` Se a propriedade já existe, o ponto sobrescreve.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: `pessoa.altura` × `pessoa['altura']`; arrays como objetos
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: leitura com ponto em pessoa e carro
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: ponto para criar propriedade e método

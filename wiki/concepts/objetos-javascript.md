@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 11
+source_count: 14
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -73,6 +73,18 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o objeto é "um
 
 Em [[wiki/sources/javascript-ninja-estrutura-lexica]], o objeto literal "formado pela chave", com "chave, 2 pontos, valor", e o array literal aparecem como literais da linguagem. Literal não é imutável: cada `{}` cria um objeto novo e alterável ([[wiki/concepts/estrutura-lexica-javascript]]).
 
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], o objeto é "um conjunto de propriedades" que "podem, não, devem receber o nome e um valor", e "todos os outros tipos de dados", além dos primitivos, "são objeto". Literal com chaves, `nome: valor` separados por vírgula, leitura com ponto; serve para "organizar os seus dados" (`pessoa`, `carro`). A função entra como "outro tipo de objeto" que pode ser valor de propriedade ([[wiki/concepts/funcoes-de-primeira-classe]]). Método e `this` ainda não aparecem; o próximo vídeo é "Métodos de objeto".
+
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o método entra pela definição: "quando nós atribuímos a uma propriedade de um objeto uma função, nós chamamos essa propriedade de método". Reatribuir a variável (`pessoa = { sexo: 'masculino' }`) troca o objeto inteiro; acrescentar é com ponto (`pessoa.cor = ...`). Os métodos `andar`, `aniversario` (`pessoa.idade++`) e `nomeCompleto` leem `pessoa` pelo nome da variável, não por `this`, o que quebra se a variável for reatribuída ou o método copiado.
+
+## No JavaScript Ninja, semana 3, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a revisão por analogia: fora do objeto, variável e função; dentro, "ao invés de variável, você tem uma propriedade" e a função "não se chama função, ele se chama método". A analogia tem limite: propriedade não tem escopo nem declaração e só existe pelo objeto. O desafio da semana 3 é criar objetos, propriedades e métodos.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -86,3 +98,6 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], o objeto literal "formado
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: objetos como primeiro item do checklist; "praticamente tudo [...] é objeto"
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: literal, ponto para ler e escrever, colchetes com string
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: objeto e array literais
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: conjunto de propriedades; tudo que não é primitivo; função como objeto
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: método como propriedade-função; reatribuir × acrescentar; métodos sem this
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade como variável dentro do objeto, método como função; desafio 3

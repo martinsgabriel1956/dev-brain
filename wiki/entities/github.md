@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-11-23
-source_count: 18
+date_updated: 2026-11-24
+source_count: 19
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -57,6 +57,10 @@ Em [[wiki/sources/frontpush-axios-cdn-get-then-encapsulamento-xhr]], a mesma API
 
 Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]], GitHub Pages é a "maneira bem simples de você hospedar o seu website"; o módulo fará o deploy nele. Serve só arquivos estáticos ([[wiki/concepts/hospedagem-de-sites]]).
 
+## No JavaScript Ninja, semana 3, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], o curso vive no GitHub: repositório `da2k/curso-javascript-ninja`, um fork por aluno, desafios entregues por pull request e dúvidas por issue, "que pode ajudar outras pessoas". O software desktop do GitHub da época "não suporta mais de um remote", segundo o instrutor; por isso a linha de comando ([[wiki/concepts/fork-e-upstream]]).
+
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — hospeda os samples públicos do Spec2COBOLRot (jbespi/spec2cobolrot-samples)
@@ -71,3 +75,4 @@ Em [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-port
 - [[wiki/sources/frontpush-introducao-hospedagem-de-websites-url-localhost-porta]]: FrontPUSH, hospedagem aula 01: GitHub Pages para site estático
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: README como portfólio mínimo ([[wiki/concepts/estrutura-de-readme]])
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: FrontPUSH, Monetização e Freelancer aulas 06 e 07: basta para vaga, sem site
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: fork, pull request e issues como estrutura do curso

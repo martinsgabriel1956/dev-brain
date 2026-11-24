@@ -3,8 +3,8 @@ type: concept
 title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-24
+source_count: 12
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -102,6 +102,10 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `map` e
 
 O toggle de favorito usa `push` e `splice` no array lido do storage; como é uma cópia vinda do `JSON.parse`, funciona, mas `splice(-1, 1)` apaga o último se o id não existir. `filter` seria mais seguro. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], as duas operações que a imutabilidade separa aparecem juntas: reatribuir a variável (`pessoa = {...}`, objeto novo) e mutar o objeto (`pessoa.cor = ...`, `pessoa.idade++`). A aula usa a mutação como forma normal de acrescentar dados.
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].
@@ -112,3 +116,4 @@ O toggle de favorito usa `push` e `splice` no array lido do storage; como é uma
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: push/splice no array de favoritos
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: objeto mutável por padrão
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map devolve array novo
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: reatribuir × mutar objeto

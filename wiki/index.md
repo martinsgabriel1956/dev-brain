@@ -26,6 +26,9 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]] | Semana 3, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 14 min): revisão (propriedade é "variável" dentro do objeto, método é a função); desafio 3 com placeholders `[NOME] [SOBRENOME]`; fluxo de fork com `origin` (`fdaciuk`) e `upstream` (`da2k`), master espelhando o curso, `checkout -b challenge-03`, commit, push e pull request. `fetch` não cria branch local; hoje há *Sync fork* e `main` |
+| [[wiki/sources/javascript-ninja-metodos-de-objeto]] | Semana 3, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): método é a propriedade cujo valor é função; reatribuir `pessoa = {...}` perde tudo, `pessoa.cor = ...` acrescenta; `andar`, `aniversario` (`idade++`, sem retorno) e `nomeCompleto` (só retorno). Métodos usam `pessoa` em vez de `this`; reatribuir troca a referência; `nomeCompleto()` confirma o sobrenome Daciuk |
+| [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]] | Semana 3, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, "terceira aula"): primitivos (number, string, boolean, null, undefined) × objetos, "todos os outros"; objeto como "conjunto de propriedades" com nome e valor; literal com chaves e leitura com ponto (`pessoa`, `carro`); funções são objetos "de primeira classe" e podem ser anônimas numa variável. Faltam `symbol` e `bigint`; primeira classe é mais que atribuir; a anônima ganha `name` |
 | [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]] | Semana 2, vídeo 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): `if` como controle para "tomar decisões"; condição vira booleano; `&&` e `\|\|` no `if`; condição falsa ignora o bloco; `else` "como senão"; `else if` "como se fosse mais um if". Condição não precisa ser booleana; `if` é instrução (ternário é a expressão); chaves evitam o *goto fail* |
 | [[wiki/sources/javascript-ninja-estrutura-lexica]] | Semana 2, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, "nossa segunda aula"): estrutura léxica como regras de escrita; case sensitive (`animal` × `Animal`); `//` e `/* */`; literais; identificadores com letra, `_`, `$` e dígitos, `π` vale mas "não deve"; palavras reservadas pela MDN. Literal ≠ imutável; emoji não é identificador; a lista de reservadas mudou desde o ES5 |
 | [[wiki/sources/javascript-ninja-operadores-unarios]] | Semana 2, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 6 min): `+x` converte para número ou dá `NaN` (que é do tipo number); `-x` converte e inverte o sinal, sem efeito colateral; `+` binário concatena string com número; `++`/`--` gravam na variável. "Sempre concatena" vale só para o `+` (`'3' - 1` é 2); faltam `typeof`, `void`, `delete`, `~` |
@@ -1640,6 +1643,7 @@ date_updated: 2026-11-24
 | [[wiki/concepts/promise-javascript]] | Valor que vai chegar: pending, fulfilled, rejected; `then` encadeia, `catch` trata erro; `async/await` é açúcar |
 | [[wiki/concepts/json]] | Texto com sintaxe de objeto/array JS e chaves entre aspas; formato padrão de APIs; `JSON.parse`, `res.json()` |
 | [[wiki/concepts/funcoes-javascript]] | Registrar x executar, parâmetro x argumento, `return`, anônima, arrow function, passagem por referência como callback |
+| [[wiki/concepts/funcoes-de-primeira-classe]] | Função como valor: atribuída, passada, devolvida e guardada em estruturas; em JavaScript porque função é objeto chamável; base de callbacks, closures e métodos |
 | [[wiki/concepts/event-listener-javascript]] | `addEventListener(tipo, fn)`; `event.target`; `change` no select; `selectedIndex` |
 | [[wiki/concepts/var-let-const]] | var (função, hoisting), let (bloco), const (bloco, sem reatribuição mas mutável); não é "tanto faz" |
 
@@ -3105,6 +3109,7 @@ date_updated: 2026-11-24
 | [[wiki/concepts/variaveis-de-ambiente]] | `.env` (arquivo oculto), `export VAR=v` na sessão, `.zshrc`/`.bashrc` para persistir; `$VAR` lê o valor |
 | [[wiki/concepts/pipe-operator]] | `\|` conecta comandos: stdout de um vira stdin do próximo (`cat f \| grep x`); base da composição no shell |
 | [[wiki/concepts/git]] | Guarda-chuva de controle de versão; `git init` cria a pasta oculta `.git` com o estado do repositório |
+| [[wiki/concepts/fork-e-upstream]] | Fork na sua conta + remote `upstream` do original; `fetch` e merge para sincronizar, branch padrão espelhando o upstream, uma branch por entrega, pull request; *Sync fork* e `gh repo sync` |
 
 ### Armazenamento de Dados (Mídias & Hardware)
 

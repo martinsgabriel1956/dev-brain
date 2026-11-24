@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 31
+source_count: 34
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -101,6 +101,18 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], estrutura léxica: case s
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `if`, `else` e `else if` ([[wiki/concepts/estruturas-condicionais-javascript]]).
 
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], primitivos × objetos, objeto literal e funções como objetos de primeira classe ([[wiki/concepts/objetos-javascript]], [[wiki/concepts/funcoes-de-primeira-classe]]).
+
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], métodos de objeto e a diferença entre reatribuir o objeto e acrescentar propriedade com ponto ([[wiki/concepts/objetos-javascript]]).
+
+## No JavaScript Ninja, semana 3, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], revisão de propriedade × método e o desafio da semana 3; o resto do vídeo é git ([[wiki/concepts/fork-e-upstream]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -134,3 +146,6 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `if`, `else` e 
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: operadores unários
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: estrutura léxica
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: instruções condicionais
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: tipos de dados e objetos
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: métodos de objeto
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade × método; desafio 3
