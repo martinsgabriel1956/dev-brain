@@ -4,7 +4,7 @@ title: "Atribuição composta (+=, -=, *=, /=)"
 aliases: ["+=", "-=", "*=", "/=", "%=", "**=", "operadores de atribuição", "compound assignment", "atribuição abreviada", "&&=", "||=", "??="]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [javascript, operadores, atribuicao, expressoes]
 skill: lang-dynamic
 status: stub
@@ -23,6 +23,11 @@ status: stub
 
 Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], "mais igual, menos igual, vezes igual, dividido igual" são "outro formato de utilizar os operadores aritméticos abreviados": `soma += 20` leva 21 a 41, `soma -= 20` volta a 21. "Isso aqui é basicamente igual a soma igual soma mais 20." Faltam `%=`, `**=` e os lógicos.
 
+## Operadores lógicos (JavaScript Ninja, semana 2, vídeo 01)
+
+[[wiki/sources/javascript-ninja-operadores-logicos]] apresenta `&&`, `||` e `!` na era ES5; as atribuições lógicas `&&=`, `||=` e `??=` (ES2021) não aparecem ([[wiki/concepts/operadores-logicos-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: +=, -=, *=, /= com a variável soma
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e !, sem &&=/||=/??=

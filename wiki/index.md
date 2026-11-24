@@ -26,6 +26,7 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-operadores-logicos]] | Semana 2, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min): `&&` só true com os dois lados true, `\|\|` com pelo menos um, `!` inverte; `x === 3 && y === 7`; negar comparação com `!` "não é utilizado"; volta ao `!=` × `!==` com `'3'`. `&&`/`\|\|` devolvem operando, não booleano; curto-circuito e precedência (`!x === 3`) ficam de fora |
 | [[wiki/sources/javascript-ninja-funcoes]] | Aula 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, REPL do Node): função como bloco nomeado invocado com `()`; `soma` × `soma()`; ponto e vírgula "sempre"; reuso alterando o `x` de fora; escopo de função; `return`; parâmetros e `NaN`. Função pode ser anônima; parâmetro ≠ argumento; ASI; efeito colateral |
 | [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] | Aula 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, REPL do Node): `=` atribui, `==`/`!=` comparam e convertem (`'1' == 1`), "tipagem fraca, dinâmica"; `===`/`!==` testam o tipo e são "mais seguros"; relacionais com o mnemônico do jacaré. `!==` não é "mesmo tipo"; relacionais convertem diferente (`'10' < '9'`) |
 | [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
@@ -1093,6 +1094,12 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, semana 2, vídeo 01: operadores lógicos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-logicos-javascript]] | `&&`, `\|\|`, `!`, `??`: devolvem operando (só `!` dá booleano), curto-circuito, precedência (`!x === 3`), De Morgan |
 
 ### JavaScript Ninja, aula 04: funções (2026-11-24)
 

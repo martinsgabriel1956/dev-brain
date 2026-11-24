@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -75,6 +75,10 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==`
 
 Em [[wiki/sources/javascript-ninja-funcoes]], o ponto e vírgula vai "sempre" no fim de cada instrução. A ASI torna isso opcional na maioria dos casos; as armadilhas são linha começando com `(`, `[` ou crase (cola na anterior) e `return` seguido de quebra de linha. `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion
 
+## `!x === 3` (JavaScript Ninja, semana 2, vídeo 01)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], "not X é igual a 3" dá falso. Escrito como `!x === 3`, o `!` vem primeiro (`false === 3`) e o resultado bate por coincidência; negar a comparação é `!(x === 3)` ou `x !== 3`. Outro: `&&`/`||` devolvem operando, não booleano ([[wiki/concepts/operadores-logicos-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -82,3 +86,4 @@ Em [[wiki/sources/javascript-ninja-funcoes]], o ponto e vírgula vai "sempre" no
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: pré × pós-incremento; espaço e ASI
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: == converte; relacionais sem versão estrita
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: ponto e vírgula "sempre" e a ASI
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: precedência do ! sobre ===

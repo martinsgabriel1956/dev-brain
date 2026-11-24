@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-24
-source_count: 13
+source_count: 14
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -97,6 +97,10 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `'1'
 
 Em [[wiki/sources/javascript-ninja-funcoes]], `soma()` sem argumentos dá `NaN`, "not a number": `undefined + undefined` não é número. `[external]` `typeof NaN` é `"number"`; testa-se com `Number.isNaN`.
 
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], `y === '7'` é falso e `y === 7` é true com `y = 7`: "o tipo dele é o número". Mesmo par number × string das aulas de igualdade, agora dentro de `&&` e `||`.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
@@ -112,3 +116,4 @@ Em [[wiki/sources/javascript-ninja-funcoes]], `soma()` sem argumentos dá `NaN`,
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: sete tipos com array no lugar de symbol e bigint; inteiro e decimal no mesmo number
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: '1' × 1 com == e ===
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: NaN em soma() sem argumentos
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: 7 × '7' com ===
