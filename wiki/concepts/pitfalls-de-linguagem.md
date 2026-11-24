@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -79,6 +79,10 @@ Em [[wiki/sources/javascript-ninja-funcoes]], o ponto e vírgula vai "sempre" no
 
 Em [[wiki/sources/javascript-ninja-operadores-logicos]], "not X é igual a 3" dá falso. Escrito como `!x === 3`, o `!` vem primeiro (`false === 3`) e o resultado bate por coincidência; negar a comparação é `!(x === 3)` ou `x !== 3`. Outro: `&&`/`||` devolvem operando, não booleano ([[wiki/concepts/operadores-logicos-javascript]]).
 
+## `+` concatena, `-` converte (JavaScript Ninja, semana 2, vídeo 02)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], string com número no `+` "não soma, ele concatena". Mas só o `+`: `'3' - 1` é `2`, `1 + 2 + '3'` é `'33'`, `'1' + 2 + 3` é `'123'`. Para somar, `+'3' + 3`. Sintaxe: `a+++b` é `(a++) + b` ([[wiki/concepts/operadores-unarios-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -87,3 +91,4 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], "not X é igual a 3" d�
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: == converte; relacionais sem versão estrita
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: ponto e vírgula "sempre" e a ASI
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: precedência do ! sobre ===
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena, - converte

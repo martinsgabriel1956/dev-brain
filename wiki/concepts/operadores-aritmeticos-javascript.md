@@ -4,7 +4,7 @@ title: "Operadores aritméticos em JavaScript"
 aliases: ["operadores aritméticos", "operador de resto", "módulo %", "operadores JavaScript", "coerção com +"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [javascript, operadores, aritmetica, coercao, number]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], são "quatro tipos 
 
 [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] continua a série com os comparadores; a coerção que o `+` faz com string reaparece no `==` (`'1' == 1`) ([[wiki/concepts/igualdade-javascript]]).
 
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], o `+` e o `-` com um operando só: `+'3'` converte para número, `-x` inverte o sinal ([[wiki/concepts/operadores-unarios-javascript]]). O `+` binário "serve também para concatenar": com string e número, "ele não soma, ele concatena". Isso vale só para o `+`; `'3' - 1` dá `2`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: as cinco operações aritméticas
@@ -47,3 +51,4 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], são "quatro tipos 
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: i++ como i = i + 1
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: quatro operadores, ++/-- e +=; espaços para legibilidade
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: continuação com igualdade e relacionais
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena string com número; + e - unários

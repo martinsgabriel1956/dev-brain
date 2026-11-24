@@ -4,7 +4,7 @@ title: "Incremento e decremento (++ e --)"
 aliases: ["++", "--", "incremento", "decremento", "pós-incremento", "pré-incremento", "pós-decremento", "pré-decremento", "i++", "++i", "postfix increment", "prefix increment"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [javascript, operadores, incremento, decremento, expressoes]
 skill: lang-dynamic
 status: stub
@@ -35,6 +35,11 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], os dois são "opera
 
 Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `i++` "é exatamente igual" a `i = i + 1`: vale como instrução, não como expressão ([[wiki/concepts/operadores-aritmeticos-javascript]]).
 
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], `++` e `--` entram como operadores unários que, ao contrário de `+x` e `-x`, "causam o efeito colateral. Ele atribui o novo valor a essa variável": com `x = 3`, `x++` deixa 4 e `++x` deixa 5 ([[wiki/concepts/operadores-unarios-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: pós e pré-incremento e decremento pelo eco do REPL
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: ++/-- como unários com efeito colateral

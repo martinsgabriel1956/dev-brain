@@ -28,6 +28,8 @@ Primeiro vídeo da segunda leva do [[wiki/entities/javascript-ninja|JavaScript N
 - **Diferente estrito × não estrito:** volta ao `!=` × `!==` com `x = 3` e `'3'`. A legenda perdeu boa parte da demo; a conclusão é a da aula de igualdade: sem testar o tipo, "isso é bastante problemático", fique com o operador estrito ([[wiki/concepts/igualdade-javascript]]).
 - Dúvidas: no desafio, por email ou "abrir uma issue no GitHub". Próximo vídeo: operadores unários.
 
+Continua em [[wiki/sources/javascript-ninja-operadores-unarios]].
+
 ## Key Claims
 
 ### O que são

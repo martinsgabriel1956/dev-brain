@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -32,6 +32,8 @@ Em [[wiki/sources/javascript-ninja-funcoes]], funções. A primeira aula termina
 
 Em [[wiki/sources/javascript-ninja-operadores-logicos]], primeiro vídeo depois da correção do desafio da semana (esse vídeo de correção não está na wiki): operadores lógicos; o seguinte é de operadores unários. Dúvidas vão por email ou issue no GitHub. Como as páginas anteriores numeraram cada vídeo da primeira semana como "aula", esta leva é citada como "semana 2, vídeo NN" para não colidir.
 
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], o segundo vídeo: `+` e `-` unários, `+` como concatenação e `++`/`--` com efeito colateral; o seguinte é de estrutura léxica.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -39,3 +41,4 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], primeiro vídeo depois 
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: aula 03: igualdade e relacionais
 - [[wiki/sources/javascript-ninja-funcoes]]: aula 04: funções; desafio da semana
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: semana 2, vídeo 01: operadores lógicos
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: semana 2, vídeo 02: operadores unários

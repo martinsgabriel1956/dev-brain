@@ -4,7 +4,7 @@ title: "Operadores lógicos em JavaScript (&&, ||, !, ??)"
 aliases: ["&&", "||", "!", "??", "AND OR NOT em JavaScript", "curto-circuito", "short-circuit evaluation", "operador E", "operador OU", "operador not", "nullish coalescing"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [javascript, operadores, operadores-logicos, boolean, curto-circuito, precedencia, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -46,6 +46,11 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], os três operadores com
 
 Relacionado: [[wiki/concepts/estruturas-condicionais-javascript]], [[wiki/concepts/tipos-primitivos-javascript]].
 
+## `!` como operador unário
+
+[[wiki/sources/javascript-ninja-operadores-unarios]], a aula seguinte, não cita o `!`, mas ele é o terceiro unário ao lado de `+x` e `-x`: os três convertem o operando (para booleano ou número) e não alteram a variável ([[wiki/concepts/operadores-unarios-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! com comparações estritas
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: ! entre os unários
