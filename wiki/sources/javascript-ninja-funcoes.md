@@ -29,6 +29,8 @@ Quarto vídeo da primeira aula do [[wiki/entities/javascript-ninja|JavaScript Ni
 - **`return`** devolve um valor; `y + cinco()` dá 9 porque "a função invocada vale 5".
 - **Parâmetros:** `function soma(x, y) { return x + y; }`. `soma()` sem argumentos dá `NaN`, "not a number"; `soma(1, 2)` dá 3 ([[wiki/concepts/tipos-primitivos-javascript]]).
 
+Depois do desafio, continua em [[wiki/sources/javascript-ninja-operadores-logicos]] (semana 2).
+
 ## Key Claims
 
 ### Declarar e invocar

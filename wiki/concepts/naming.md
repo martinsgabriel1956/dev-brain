@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-24
+source_count: 8
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -56,6 +56,10 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 
 Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [[wiki/entities/nasser|Násser]] chama de boa prática a "árvore de classes" (o filho leva o nome do pai: `nav` → `nav-item` → `nav-link`) e corrige a si mesmo por misturar português e inglês ("isso aqui não é legal"). `[external]` É a ideia do BEM (https://getbem.com/naming/).
 
+## Identificadores em JavaScript (JavaScript Ninja)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], a regra mecânica antes do estilo: nomes começam com letra, `_` ou `$` e depois aceitam dígitos; `var π = 3.14` funciona, "mas você não deve utilizar", porque o próximo desenvolvedor pode não ter como "ditar" aquele código. Letras, dígitos, `_` e `$` deixam "o código mundialmente fácil [de] digitar" ([[wiki/concepts/identificadores-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre naming como um dos dois problemas difíceis
@@ -65,3 +69,4 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — números mágicos e valores hard-coded (URLs, chaves de API) como falta de naming; busca textual ambígua vs. busca por nome de constante
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `double d` vs `valorDescontoPedido`: em método longo, a variável alterada várias vezes longe da declaração pesa na leitura
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: "árvore de classes" (prefixo do pai) e não misturar português com inglês
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: regras de identificador e nomes só em ASCII

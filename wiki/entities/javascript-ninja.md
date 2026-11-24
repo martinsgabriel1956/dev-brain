@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 4
+source_count: 8
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -28,9 +28,23 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igua
 
 Em [[wiki/sources/javascript-ninja-funcoes]], funções. A primeira aula termina com um "desafio da semana", apresentado no vídeo seguinte; o curso parece ter cadência semanal (inferência, média).
 
+## Semana 2
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], primeiro vídeo depois da correção do desafio da semana (esse vídeo de correção não está na wiki): operadores lógicos; o seguinte é de operadores unários. Dúvidas vão por email ou issue no GitHub. Como as páginas anteriores numeraram cada vídeo da primeira semana como "aula", esta leva é citada como "semana 2, vídeo NN" para não colidir.
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], o segundo vídeo: `+` e `-` unários, `+` como concatenação e `++`/`--` com efeito colateral; o seguinte é de estrutura léxica.
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], o terceiro vídeo: estrutura léxica; o seguinte é o desafio da semana. O instrutor diz "nossa segunda aula do curso", o que confirma que esta leva é a aula 2 e que os quatro vídeos anteriores, numerados "aula 01–04" na wiki, são as partes da aula 1.
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o quarto vídeo: `if`, `else` e `else if`. O desafio da semana 2, prometido no vídeo 03, passa para o seguinte.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: aula 02: operadores aritméticos
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: aula 03: igualdade e relacionais
 - [[wiki/sources/javascript-ninja-funcoes]]: aula 04: funções; desafio da semana
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: semana 2, vídeo 01: operadores lógicos
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: semana 2, vídeo 02: operadores unários
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: semana 2, vídeo 03: estrutura léxica; "segunda aula"
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: semana 2, vídeo 04: instruções condicionais

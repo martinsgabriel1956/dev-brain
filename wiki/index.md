@@ -26,6 +26,10 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]] | Semana 2, vídeo 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): `if` como controle para "tomar decisões"; condição vira booleano; `&&` e `\|\|` no `if`; condição falsa ignora o bloco; `else` "como senão"; `else if` "como se fosse mais um if". Condição não precisa ser booleana; `if` é instrução (ternário é a expressão); chaves evitam o *goto fail* |
+| [[wiki/sources/javascript-ninja-estrutura-lexica]] | Semana 2, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, "nossa segunda aula"): estrutura léxica como regras de escrita; case sensitive (`animal` × `Animal`); `//` e `/* */`; literais; identificadores com letra, `_`, `$` e dígitos, `π` vale mas "não deve"; palavras reservadas pela MDN. Literal ≠ imutável; emoji não é identificador; a lista de reservadas mudou desde o ES5 |
+| [[wiki/sources/javascript-ninja-operadores-unarios]] | Semana 2, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 6 min): `+x` converte para número ou dá `NaN` (que é do tipo number); `-x` converte e inverte o sinal, sem efeito colateral; `+` binário concatena string com número; `++`/`--` gravam na variável. "Sempre concatena" vale só para o `+` (`'3' - 1` é 2); faltam `typeof`, `void`, `delete`, `~` |
+| [[wiki/sources/javascript-ninja-operadores-logicos]] | Semana 2, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min): `&&` só true com os dois lados true, `\|\|` com pelo menos um, `!` inverte; `x === 3 && y === 7`; negar comparação com `!` "não é utilizado"; volta ao `!=` × `!==` com `'3'`. `&&`/`\|\|` devolvem operando, não booleano; curto-circuito e precedência (`!x === 3`) ficam de fora |
 | [[wiki/sources/javascript-ninja-funcoes]] | Aula 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, REPL do Node): função como bloco nomeado invocado com `()`; `soma` × `soma()`; ponto e vírgula "sempre"; reuso alterando o `x` de fora; escopo de função; `return`; parâmetros e `NaN`. Função pode ser anônima; parâmetro ≠ argumento; ASI; efeito colateral |
 | [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] | Aula 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, REPL do Node): `=` atribui, `==`/`!=` comparam e convertem (`'1' == 1`), "tipagem fraca, dinâmica"; `===`/`!==` testam o tipo e são "mais seguros"; relacionais com o mnemônico do jacaré. `!==` não é "mesmo tipo"; relacionais convertem diferente (`'10' < '9'`) |
 | [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
@@ -1093,6 +1097,25 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, semana 2, vídeo 03: estrutura léxica (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/estrutura-lexica-javascript]] | Regras que o lexer aplica: case sensitive, espaços, `//` e `/* */` (não aninha), tabela de literais (`null` sim, `undefined` não), literal ≠ imutável |
+| [[wiki/concepts/identificadores-javascript]] | Letra, `_` ou `$`, depois dígitos (*ID_Start*/*ID_Continue*: `π` vale, emoji não); reservadas sempre, futuras (`enum`), só no modo estrito, `await`; `obj.class` vale |
+
+### JavaScript Ninja, semana 2, vídeo 02: operadores unários (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-unarios-javascript]] | `+x` = `Number(x)`, `-x`, `!`, `~`, `typeof`, `void`, `delete`, `++`/`--`: quais convertem e quais têm efeito colateral; `a+++b` |
+
+### JavaScript Ninja, semana 2, vídeo 01: operadores lógicos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-logicos-javascript]] | `&&`, `\|\|`, `!`, `??`: devolvem operando (só `!` dá booleano), curto-circuito, precedência (`!x === 3`), De Morgan |
 
 ### JavaScript Ninja, aula 04: funções (2026-11-24)
 

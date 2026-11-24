@@ -4,7 +4,7 @@ title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -57,6 +57,10 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], a mesma `var x`
 
 Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], o JavaScript é "uma linguagem com tipagem fraca, dinâmica", e a prova é `'1' == 1` dar true. Os dois eixos aparecem juntos: dinâmica (o tipo está no valor, ver aula 01) e fraca (conversão implícita na comparação).
 
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], a tipagem fraca aparece no `+`: string com número "o JavaScript sempre vai entender que eu quero fazer uma concatenação", e `+x`/`-x` convertem para número. A conversão implícita depende do operador: `'3' + 1` é `'31'`, `'3' - 1` é `2`.
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
@@ -65,3 +69,4 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], o Ja
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript: tipagem estática e IntelliSense
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: x recebe valores de vários tipos (tipagem dinâmica)
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: "tipagem fraca, dinâmica" via '1' == 1
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: conversão implícita no + e no - unário

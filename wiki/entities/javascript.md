@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 27
+source_count: 31
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -85,6 +85,22 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igua
 
 Em [[wiki/sources/javascript-ninja-funcoes]], funções: declaração, invocação, escopo, `return` e parâmetros.
 
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], operadores lógicos `&&`, `||` e `!` ([[wiki/concepts/operadores-logicos-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], operadores unários `+`, `-`, `++` e `--`, e o `+` como concatenação ([[wiki/concepts/operadores-unarios-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], estrutura léxica: case sensitive, comentários, literais, identificadores e palavras reservadas ([[wiki/concepts/estrutura-lexica-javascript]], [[wiki/concepts/identificadores-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `if`, `else` e `else if` ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -114,3 +130,7 @@ Em [[wiki/sources/javascript-ninja-funcoes]], funções: declaração, invocaç�
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: operadores aritméticos
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: igualdade e relacionais
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: funções
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: operadores lógicos
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: operadores unários
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: estrutura léxica
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: instruções condicionais

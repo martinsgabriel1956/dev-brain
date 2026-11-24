@@ -4,7 +4,7 @@ title: "Estruturas condicionais em JavaScript (if/else, switch)"
 aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 4
+source_count: 6
 tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -62,9 +62,19 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 
 Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==`, `===`, `!=`, `!==`, `>`, `<`, `>=` e `<=` aparecem antes do `if`, testados soltos no REPL ([[wiki/concepts/operadores-relacionais-javascript]]).
 
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], `&&`, `||` e `!` combinam as comparações antes de qualquer `if` (que vem em vídeo posterior). Precedência e curto-circuito em [[wiki/concepts/operadores-logicos-javascript]].
+
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` dá "um controle pra gente [...] tomar algumas decisões", e a condição "vai se tornar um valor booleano". Demonstra `if` sozinho, com `&&` e `||`, com condição falsa (o bloco "simplesmente" é ignorado), `else` ("vai servir como senão") e a cadeia `else if` / `else`, que "é como se fosse mais um if": é isso mesmo, `else if` é um `else` com outro `if` dentro. Sempre com `===` e chaves. Ficam de fora ternário, `switch` e early return.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: if dentro do while
 - [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]]: FrontPUSH, JavaScript aula 10: if/else if por tecla
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: comparadores antes do if
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! para combinar condições
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if, else e else if com && e ||
