@@ -3,8 +3,8 @@ type: concept
 title: "Transformer Architecture"
 aliases: ["transformers", "arquitetura transformer"]
 date_created: 2026-09-18
-date_updated: 2026-10-14
-source_count: 4
+date_updated: 2026-11-24
+source_count: 6
 tags: [transformers, llm-fundamentals, self-attention, embeddings, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -62,3 +62,5 @@ Visão introdutória: o Transformer analisa todos os tokens **simultaneamente** 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — deep dive no mecanismo de self-attention especificamente (tokens → embeddings → Q/K → attention score)
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — RNN com Memory Caching como alternativa ao custo quadrático
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — visão didática: processamento simultâneo, atenção, previsão do próximo token, situado entre deep learning e LLM
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: 5º degrau da escada de evolução, adiado para a parte 2
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "o Transformer analisa as relações entre todos os tokens", passo do fluxo do slide

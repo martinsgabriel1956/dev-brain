@@ -3,8 +3,8 @@ type: concept
 title: "Deep Learning"
 aliases: ["aprendizado profundo", "redes profundas"]
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-24
+source_count: 3
 tags: [ia, deep-learning, redes-neurais, fundamentos]
 skill: tech-mentor-ai
 status: draft
@@ -26,6 +26,12 @@ status: draft
 
 Ainda havia dificuldade com **linguagem natural** (contexto longo), resolvida pelo [[wiki/concepts/transformer-architecture]]. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## FrontPUSH: recurso como barreira
+
+[[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]] define "'Deep' = múltiplas camadas neurais" e põe a barreira em "recurso": Big Data, arquiteturas e modelos, e [[wiki/concepts/gpu|GPUs]]. Slide: "Deep Learning consome recurso, agora o hardware consegue fornecer esse recurso". Coincide com os habilitadores acima. Ele não cita backpropagation nem AlexNet.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: camadas e a tríade GPUs, Big Data, arquiteturas
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: recap da barreira de recurso; LLM como "modelos gigantescos de Deep Learning"

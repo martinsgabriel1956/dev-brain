@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-11-10
-source_count: 9
+date_updated: 2026-11-24
+source_count: 10
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -71,6 +71,7 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — possível variante de domínio (segurança) do mesmo tipo de degradação por perda de memória/atenção entre rodadas
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — "mais informação nem sempre é melhor": contexto demais/irrelevante confunde o modelo; justifica o lazy loading das [[wiki/concepts/skills-agente|skills]] (só a descrição no system prompt) como economia de janela
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — o autor cita queda de desempenho em contextos muito longos (número provavelmente corrompido na transcrição) como motivo para controlar chunks e top-K
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "quanto mais tempo você passa no chat [...] mais informação se perde"
 
 ## Key sources (adição 2026-10-07)
 

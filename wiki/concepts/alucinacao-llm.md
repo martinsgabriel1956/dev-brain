@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-10-14
-source_count: 10
+date_updated: 2026-11-24
+source_count: 11
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -70,6 +70,10 @@ Alimentar o LLM com fatos determinísticos do código reduziu alucinações no D
 
 Causa conceitual no nível mais básico: o LLM prevê a sequência de tokens mais provável e não consulta base de fatos, logo não há garantia de correção. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## FrontPUSH: alucinação por falta de contexto
+
+[[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: sem contexto "minimamente correto", "ela vai começar a alucinar, vai começar a inventar"; pedido genérico → resposta genérica. A aula diz que o modelo "confirma em vários lugares" o que é confiável. Sem uma tool de busca, porém, não há verificação: só a frequência do fato nos dados de treino.
+
 ## Key Sources
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício heurístico de sessão (sem threshold técnico) como mitigação prática de alucinação/degradação
@@ -80,6 +84,7 @@ Causa conceitual no nível mais básico: o LLM prevê a sequência de tokens mai
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — análise estática como contexto restrito reduz alucinação
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — RAG apresentado como forma de reduzir respostas genéricas/alucinadas; regras só no prompt, sem validação da saída (ver Open questions da fonte)
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — causa básica: previsão probabilística de tokens, sem consulta a base de fatos
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: contexto mal definido como causa
 
 ## Key sources (adição 2026-10-08)
 

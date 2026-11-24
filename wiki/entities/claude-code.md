@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-11-10
-source_count: 29
+date_updated: 2026-11-24
+source_count: 30
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -153,6 +153,7 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 
 - [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — panorama de comandos, modelos, esforço e permissões
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — lista de empresas, automação de busca, designer conversando com o código
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: citado ao lado de ChatGPT e Gemini como chat em linguagem natural; o "você tem razão" depois de errar código
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — CLI usada na demo do Kanban (Sonnet, effort high, /clear) sem CLAUDE.md/plano
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — menção tangencial e não confirmada a "cowork" rodando na nuvem via Claude Desktop App

@@ -3,8 +3,8 @@ type: concept
 title: "Modelo de Machine Learning"
 aliases: ["modelo treinado", "ml model", "modelo"]
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [ia, machine-learning, modelo, treinamento]
 skill: tech-mentor-ai
 status: draft
@@ -25,3 +25,4 @@ Regressão linear, árvores de decisão, random forest, SVM, [[wiki/concepts/red
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: mesma lista de modelos no slide (regressão linear, árvores de decisão, random forest, SVM, clustering); o clustering é não supervisionado

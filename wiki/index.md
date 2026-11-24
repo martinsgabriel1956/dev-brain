@@ -26,6 +26,8 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-ia-o-que-sao-as-llms]] | Parte 2 da teoria de IA do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 21 min, slides "O que são LLM's?" pt. 1 e 2): LLM = deep learning gigante sobre Transformers, treinado em texto; "prevê o próximo token. Só isso. Mas em escala gigantesca"; LLM como "tradutor" do deep learning ("o árabe"); ENEM com a internet inteira; "o céu está..." azul 74%; fluxo prompt → tokens → janela → Transformer → probabilidades → próximo token; quatro pilares (tokens, contexto, attention, parâmetros); alucinação por falta de contexto, chat longo perde informação, recurso finito (energia, água). Precisões: "harness" usado como arquitetura do modelo, correção não muda pesos ([[wiki/concepts/bajulacao-llm\|bajulação]]), parâmetros ≠ contexto, token ≠ palavra-chave, sem busca não há "confirmar em vários lugares" |
+| [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]] | Aula teórica do módulo de IA do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 16 min, slides "O que é a IA?" pt. 1 a 3): "a IA é probabilidade" (não pensa, não sente, prevê a próxima palavra); hierarquia IA ⊃ ML ⊃ redes neurais ⊃ deep learning ⊃ LLMs; escada regras → ML → redes neurais → deep learning → Transformers → LLMs → harness → agentes; [[wiki/concepts/sistema-especialista\|if/else]] e "milhões de regras", spam no Gmail com ML, [[wiki/concepts/engenharia-de-features\|o humano escolhe as features]], redes ajustam pesos, deep learning esbarra em GPUs, Big Data e arquiteturas. Precisões: regras são determinísticas, spam clássico é Naive Bayes (não "curva de Gauss"), pesos são aprendidos no ML clássico, ordem didática ≠ cronológica, GPU não ganhou em gigahertz |
 | [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]] | Aula 07 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 20 min, iPad e Figma): do levantamento às telas: fluxos do login (sucesso, esqueci a senha, Google), Home como hub (continue de onde parou, troféus, sugestões), entidades na sidebar e conta na top bar, ícone de ADM por perfil, checkout via trilhas; ticar cada requisito; modo escuro "por ser plataforma de vídeo" |
 | [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
 | [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
@@ -1104,6 +1106,18 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de IA: o que são as LLMs? (parte 2) (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/bajulacao-llm]] | "Nossa, é verdade, você tem razão": o modelo cede à correção por viés do RLHF, não por reajustar pesos; concordar não prova que a correção está certa |
+
+### FrontPUSH, módulo de IA: o que você deve saber de IA? (parte 1) (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/engenharia-de-features]] | O humano escolhe quais características o modelo vê (olhos, nariz, contorno); o treino aprende os pesos; o deep learning aprende as próprias features (representation learning) |
 
 ### FrontPUSH, módulo de dashboards aula 07: wireframes e fluxos (2026-11-24)
 
