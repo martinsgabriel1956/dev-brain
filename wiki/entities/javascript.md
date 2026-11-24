@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 24
+source_count: 25
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -73,6 +73,10 @@ Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: 
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], curso [[wiki/entities/javascript-ninja|JavaScript Ninja]], de [[wiki/entities/fernando-daciuk|Fernando Daciuk]]: variáveis com `var` e os tipos de dados no REPL do Node.
 
+## No JavaScript Ninja, aula 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], expressões, os quatro aritméticos, `++`/`--` e `+=`, no REPL do Node.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -99,3 +103,4 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], curso [[wiki/en
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manda no CSS; o que só JS faz
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: JS manipula o SVG inline
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: variáveis e tipos de dados
+- [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: operadores aritméticos

@@ -30,6 +30,8 @@ Segunda parte da primeira aula do curso [[wiki/entities/javascript-ninja|JavaScr
 - **array:** "uma lista de valores" entre colchetes, índice a partir de 0: `numeros[3]` dá `4` ([[wiki/concepts/array]]).
 - **"Não existem arrays":** "eles nada mais são do que objetos". Prova: `pessoa['altura']` funciona como `pessoa.altura`. "A notação de objeto é mais rápida, então procuro usar sempre que possível" ([[wiki/concepts/notacao-de-ponto-e-colchetes]]).
 
+Continua em [[wiki/sources/javascript-ninja-operadores-aritmeticos]] (operadores aritméticos).
+
 ## Key Claims
 
 ### Variáveis

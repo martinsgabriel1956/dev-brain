@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -16,6 +16,11 @@ Instrutor do curso [[wiki/entities/javascript-ninja|JavaScript Ninja]]. Na aula 
 
 Estilo da aula: tudo digitado ao vivo no REPL do [[wiki/entities/nodejs|Node]], com erros de digitação deixados na gravação (`numero` × `numeros`).
 
+## Aula 02
+
+Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], o instrutor não se apresenta; a autoria vem do curso. Mesmo formato: REPL do Node, explicação pela demonstração.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
+- [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: aula 02: operadores aritméticos, ++/-- e +=

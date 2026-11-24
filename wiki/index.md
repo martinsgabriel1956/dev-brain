@@ -26,6 +26,7 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
 | [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]] | Aula 01, parte 2, do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 15 min, REPL do Node, era ES5): variável como "nome simbólico" com `var`; number (inteiro e float), string (aspas simples = duplas), boolean, null e undefined "a mesma coisa"; objeto literal com ponto; array indexado a partir de 0; "arrays são objetos" via `pessoa['altura']`. undefined ≠ variável inexistente (ReferenceError); ponto não é "mais rápido" |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
 | [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]] | Aula 02 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min): o [[wiki/entities/dash-class\|DashClass]] como mix de [[wiki/entities/finclass\|Finclass]], [[wiki/entities/como-se-virar\|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web\|Gustavo Web]], sem copiar fluxos de cliente; "Hotmart mais específica"; escopo, grid de 12 colunas recuado pela sidebar; tour pelos fluxos de usuário, cursos, pagamento, ajuda, login e painel admin |
@@ -1090,6 +1091,14 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, aula 02: operadores aritméticos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/expressao-javascript]] | Expressão produz valor (`x = 0`, `a + b`); instrução executa (`var x = 0`, `if`); onde a diferença aparece |
+| [[wiki/concepts/incremento-e-decremento]] | `x++` devolve o antigo, `++x` o novo; só importa quando o valor é usado; converte string para número |
+| [[wiki/concepts/atribuicao-composta]] | `x op= y` = `x = x op y`; aritméticas, bit a bit e lógicas (`??=`, ES2021); `+=` concatena string |
 
 ### JavaScript Ninja, aula 01, parte 2: variáveis e tipos de dados (2026-11-24)
 

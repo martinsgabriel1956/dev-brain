@@ -3,8 +3,8 @@ type: concept
 title: "Estruturas de repetição em JavaScript (for, while, for...of, forEach)"
 aliases: ["loop", "loops", "for", "while", "do...while", "for...of", "for...in", "forEach", "loop infinito", "off-by-one", "iteração"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [javascript, loops, for, while, iteracao, array, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -57,7 +57,12 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], [[wiki/entiti
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], o `forEach` substitui o `for` com índice: "ele já faz a estrutura de repetição já verificando o tamanho do array". Não aceita `break` nem espera `await`.
 
+## No JavaScript Ninja, aula 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], `soma++` e `++soma` aparecem antes de qualquer loop: pós devolve o valor antigo, pré o novo. No passo do `for` a diferença some, porque o valor não é usado ([[wiki/concepts/incremento-e-decremento]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: for, while, loop infinito ao vivo, i < length
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach no lugar do for
+- [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: ++ pré e pós, base do i++ do for
