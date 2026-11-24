@@ -94,6 +94,7 @@ Continuação de [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], com 
 
 ## Open Questions
 
+- Continuação: [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]] (parte 3: harness "de cabresto", agentes e autonomia).
 - O "gráfico" da limitação: são as scaling laws, retornos decrescentes de pré-treino ou outro? Prometido para depois.
 - Nas próximas aulas, "harness" vai virar o sentido usado na wiki (o entorno do modelo) ou continuar como "arquitetura"?
 - Os percentuais do "céu está" (74/13/7/3) são ilustrativos ou vêm de algum modelo real? Não há fonte.

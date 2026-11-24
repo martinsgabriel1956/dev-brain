@@ -4,7 +4,7 @@ title: "Reasoning Level (Nível de Raciocínio)"
 aliases: ["reasoning level", "nivel de reasoning", "extended thinking", "thinking budget"]
 date_created: 2026-06-02
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [reasoning, llm, custo, qualidade, tokens]
 skill: tech-mentor-ai
 status: stable
@@ -62,3 +62,4 @@ O nível de reasoning não muda o preço do modelo (input/output price per token
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — custo de reformulação de contexto em loops que reiniciam sessão; tensão não resolvida com a regra de "tarefa bem definida não desperdiça reasoning alto"
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "dependendo do modelo ela fica perguntando para ela mesma" antes de responder, atribuído ao "harness"
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: "vai ficar pensando [...] fazendo perguntas para ele mesmo", atribuído de novo ao harness

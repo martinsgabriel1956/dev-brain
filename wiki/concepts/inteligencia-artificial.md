@@ -4,7 +4,7 @@ title: "Inteligência Artificial"
 aliases: ["IA", "AI", "artificial intelligence"]
 date_created: 2026-10-14
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [ia, fundamentos, ia-guarda-chuva]
 skill: tech-mentor-ai
 status: draft
@@ -34,3 +34,4 @@ Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], [[wiki/entities/na
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: definição, hierarquia e escada de oito degraus
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: recap dos oito conceitos; regras deixam de contar como IA (tensão com a parte 1)

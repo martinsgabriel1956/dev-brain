@@ -3,8 +3,8 @@ type: concept
 title: "Tool Call"
 aliases: ["function calling", "tool use", "chamada de ferramenta"]
 date_created: 2026-06-02
-date_updated: 2026-10-08
-source_count: 9
+date_updated: 2026-11-24
+source_count: 10
 tags: [tool-call, harness, agente, llm, function-calling, tool-overload]
 skill: tech-mentor-ai
 status: stable
@@ -76,5 +76,6 @@ Assim como um programa em JavaScript não sabe que horas são e faz uma syscall 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — as tool calls de manipulação de arquivo são, na prática, comandos de shell (`cat`/`echo`/`grep`/`sed`) executados pela harness na máquina
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — demo ao vivo do ciclo completo com uma harness Python mínima: `ls`/`sed` pedidos via `function_call`, executados localmente, resultado reinjetado no contexto até a resposta final (`output_text`); histórico do workaround via tags XML antes do function calling nativo existir em todo provider
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — tool calls consistentes mudaram a forma de fazer RAG: o retrieval virou uma tool ([[wiki/concepts/rag-como-ferramenta-de-busca]])
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: o agente roda, testa e lê outputs no diretório do usuário (tool calls descritas sem o nome)
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — 'chamo a ferramenta?' como [[wiki/concepts/perguntas-tipadas-choice-score-noul]] em vez de LLM + JSON

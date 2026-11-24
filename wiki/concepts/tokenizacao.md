@@ -4,7 +4,7 @@ title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -84,3 +84,4 @@ Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], o token é "a menor unidade 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — o que acontece depois da tokenização: ID de token → embedding vector → contexto via self-attention
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — tokens como ponte texto→número, subpalavras, 1,3–1,7 tokens/palavra em português
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: pilar 1; analogia do mapa mental corrigida
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: tokens "para aglutinar para poder consumir o menor recurso possível" (compressão do BPE, sim; escolha de tokens por pedido, não)

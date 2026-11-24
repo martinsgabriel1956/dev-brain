@@ -4,7 +4,7 @@ title: "LLM (Large Language Model)"
 aliases: ["LLM", "large language model", "modelo de linguagem grande"]
 date_created: 2026-10-14
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [ia, llm, llm-fundamentals, transformers, probabilistico]
 skill: tech-mentor-ai
 status: draft
@@ -39,3 +39,4 @@ Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], [[wiki/entities/na
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: próxima palavra e "não pensa, nem sente"
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: definição, fluxo do prompt à resposta e quatro pilares
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: o "Jarvis do Homem de Ferro"; abreviações e regionalismos (Sul × Nordeste) como o que a LLM precisa entender

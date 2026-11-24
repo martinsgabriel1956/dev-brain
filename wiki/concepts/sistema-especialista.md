@@ -4,7 +4,7 @@ title: "Sistema Especialista"
 aliases: ["expert system", "sistemas especialistas", "IA simbólica baseada em regras"]
 date_created: 2026-10-14
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [ia, ia-simbolica, regras, historia]
 skill: tech-mentor-ai
 status: draft
@@ -30,3 +30,4 @@ Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], a primeira geraç�
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: regras à mão e o limite das "milhões de regras"
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: "se a gente está tendo que mexer, não é inteligência artificial", que contradiz a parte 1 (regras como 1ª geração de IA)

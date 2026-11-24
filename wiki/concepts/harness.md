@@ -4,7 +4,7 @@ title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
 date_updated: 2026-11-24
-source_count: 33
+source_count: 34
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -184,12 +184,17 @@ Fonte curta que define harness como tudo menos o modelo e traz o princípio de [
 
 Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], [[wiki/entities/nasser|Násser]] diz: "sempre que eu falar harness, pensa e lembre-se da arquitetura do modelo", que "fica perguntando para ela mesma" antes de responder. Isso mistura três coisas: a arquitetura (Transformer e pesos), o raciocínio interno ([[wiki/concepts/reasoning-level]]) e o harness no sentido desta página (o entorno do modelo). Só a parte de "enxugar" chats longos é de fato do harness ([[wiki/concepts/context-compaction]]). Na parte 1 da mesma série, "Harness" aparece como degrau próprio depois de LLMs.
 
+## Uso divergente, parte 3: o cabresto e "o que mais diferencia um modelo do outro"
+
+Em [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]], a imagem muda para "esse harness vem de cabresto [...] vai por essa direção, não vai por essa". Ela coincide com esta página (*harness* = arreio). A mesma aula, porém, diz que "o harness é o modelo" e "é a arquitetura, é o modelo". A tese de que "o harness é literalmente o que mais diferencia um modelo do outro" vale em parte para agentes de código (ver Erros Compostos acima), mas não para a qualidade de imagens nem para diferenças de pré-treino e pós-treino. ChatGPT, Codex e Claude Code são produtos, ou seja, modelo + harness.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — divisão harness/modelo no Claude Code; "o harness não faz mágica"
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — o nome Harness Engineering surgiu da prática, não de livro; novas harnesses são melhoria incremental (opinião do autor)
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: "Harness" como 7º degrau da evolução da IA, entre LLMs e agentes/autonomia; sem definição nesta aula
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "harness" usado como arquitetura do modelo (uso divergente)
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: harness como cabresto; "o que mais diferencia um modelo do outro"
 
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — IDEs/CLIs como harness e agentes especializáveis; gates de qualidade como parte forte do harness (script de linter/arquitetura/camadas rodado a cada execução); demo do harness mínimo (só Claude Code + AGENTS.md do Next.js)
