@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-24
+source_count: 12
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -123,7 +123,12 @@ Em [[wiki/sources/jstack-como-funciona-o-nodejs]], o [[wiki/entities/v8|V8]] é 
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — o que se perde ao dispensar o compilador (IA gerando assembly/opcode direto)
 - [[wiki/sources/jstack-como-funciona-o-nodejs]]: V8 chamado de interpretador; na prática, JIT
 
+## Estrutura léxica do JavaScript
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], as regras que o lexer de JavaScript aplica: case sensitive, comentários descartados, literais, identificadores e palavras reservadas ([[wiki/concepts/estrutura-lexica-javascript]]).
+
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — compilador como carregador do peso da portabilidade (um por arquitetura); limite: não gera de forma consistente certas instruções otimizadas
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Sass compilado para CSS (FrontPUSH)
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: regras léxicas de JavaScript (o que o lexer aplica)

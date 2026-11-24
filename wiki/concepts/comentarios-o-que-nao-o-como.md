@@ -3,8 +3,8 @@ type: concept
 title: "Comentários: O Quê, Não o Como"
 aliases: ["comments explain what not how", "comentar propósito", "comentários clean code"]
 date_created: 2026-04-29
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [comentarios, clean-code, refactoring, legibilidade, craftsmanship, coding-agents]
 skill: tech-mentor-leadership
 status: stub
@@ -35,8 +35,13 @@ Se o "como" não é óbvio pela leitura → refatore. Código legível dispensa 
 
 Em [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]], [[wiki/entities/nasser|Násser]] define comentário como "apagar alguma coisa da interpretação" sem perdê-la, ou explicar "esse trecho no código faz isso e isso", e recomenda "demais, principalmente na parte de lógica". As duas coisas batem com esta página: desligar código é papel do controle de versão, e explicar o que o trecho faz é o comentário de "como".
 
+## Sintaxe dos comentários em JavaScript (JavaScript Ninja)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], os dois formatos: `//` até o fim da linha e `/* */` para uma ou várias linhas, que o JavaScript "simplesmente ignora e não interpreta". Usos citados: "dizer o que está sendo feito naquele momento" (o "como" que esta página desaconselha) e "marcar alguns trechos de código". Bloco não aninha ([[wiki/concepts/estrutura-lexica-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/estilo-de-codigo-convencoes]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários como contexto recuperável via grep por agentes de IA
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: comentário como "desligar" código e como explicação; tensão com esta página
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: // e /* */

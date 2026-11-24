@@ -3,8 +3,8 @@ type: concept
 title: "Git Flow"
 aliases: ["gitflow", "git-flow", "modelo de branching de Vincent Driessen", "develop/release/hotfix branches"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [git, branching, processo, versionamento, cargo-cult, tech-mentor-leadership]
 skill: tech-mentor-leadership
 status: stub
@@ -34,3 +34,4 @@ Montano contrapõe um fluxo próximo de trunk-based — **só a `main` como font
 ## Key Sources
 
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — a crítica ao Git Flow como cargo cult e a proposta de um fluxo só-main com rebase para times pequenos
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: contraexemplo, branch por entrega com master espelhando o upstream, sem develop nem release (ver [[wiki/concepts/fork-e-upstream]])

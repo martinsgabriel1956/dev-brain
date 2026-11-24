@@ -3,8 +3,8 @@ type: concept
 title: "Template literals (template strings) em JavaScript"
 aliases: ["template string", "template strings", "crase", "interpolação de string", "concatenação de strings"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-24
+source_count: 5
 tags: [javascript, string, es6, template-literals, concatenacao, interpolacao]
 skill: lang-dynamic
 status: stub
@@ -35,8 +35,18 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], a saída do l
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `'marca: ' + item` e `item + ' ' + carros[index]` seguem com `+`; com template, `` `${item} ${carros[index]}` ``.
 
+## Literais em geral (JavaScript Ninja)
+
+[[wiki/sources/javascript-ninja-estrutura-lexica]] lista os literais da era ES5 (número, string com aspas simples ou duplas, booleano, objeto, array); o template literal, do ES2015, não aparece ([[wiki/concepts/estrutura-lexica-javascript]]).
+
+## Placeholders no desafio do JavaScript Ninja
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], os enunciados marcam com nomes "todo em maiúsculo [...] entre colchetes" onde entra um valor: "Olá, meu nome é [NOME] [SOBRENOME]!". O curso, na era ES5, espera concatenação com `+`; com template literal, `` `Olá, meu nome é ${this.nome} ${this.sobrenome}!` ``.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: concatenação com + e template string
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: concatenação com + no loop
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: concatenação com + no map
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: literais sem template
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: [NOME] [SOBRENOME] nos enunciados, resolvidos por concatenação

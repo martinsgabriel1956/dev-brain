@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-21
+date_updated: 2026-11-24
 ---
 
 
@@ -30,6 +30,17 @@ date_updated: 2026-11-21
 | [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
 | [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
 | [[wiki/sources/frontpush-dashboards-principios-parte-1]] | Aula 04 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 18 min, no iPad): quatro princípios contra o excesso de informação: hierarquia visual (contraste, alto e à esquerda, card maior), fluxos definidos com uma ação por tela e passos numerados (login e recuperar senha), gráficos coerentes (pizza para porcentagem, contestável; linha para meses) e pesquisa com o usuário |
+| [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]] | Semana 3, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 14 min): revisão (propriedade é "variável" dentro do objeto, método é a função); desafio 3 com placeholders `[NOME] [SOBRENOME]`; fluxo de fork com `origin` (`fdaciuk`) e `upstream` (`da2k`), master espelhando o curso, `checkout -b challenge-03`, commit, push e pull request. `fetch` não cria branch local; hoje há *Sync fork* e `main` |
+| [[wiki/sources/javascript-ninja-metodos-de-objeto]] | Semana 3, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): método é a propriedade cujo valor é função; reatribuir `pessoa = {...}` perde tudo, `pessoa.cor = ...` acrescenta; `andar`, `aniversario` (`idade++`, sem retorno) e `nomeCompleto` (só retorno). Métodos usam `pessoa` em vez de `this`; reatribuir troca a referência; `nomeCompleto()` confirma o sobrenome Daciuk |
+| [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]] | Semana 3, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, "terceira aula"): primitivos (number, string, boolean, null, undefined) × objetos, "todos os outros"; objeto como "conjunto de propriedades" com nome e valor; literal com chaves e leitura com ponto (`pessoa`, `carro`); funções são objetos "de primeira classe" e podem ser anônimas numa variável. Faltam `symbol` e `bigint`; primeira classe é mais que atribuir; a anônima ganha `name` |
+| [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]] | Semana 2, vídeo 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): `if` como controle para "tomar decisões"; condição vira booleano; `&&` e `\|\|` no `if`; condição falsa ignora o bloco; `else` "como senão"; `else if` "como se fosse mais um if". Condição não precisa ser booleana; `if` é instrução (ternário é a expressão); chaves evitam o *goto fail* |
+| [[wiki/sources/javascript-ninja-estrutura-lexica]] | Semana 2, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, "nossa segunda aula"): estrutura léxica como regras de escrita; case sensitive (`animal` × `Animal`); `//` e `/* */`; literais; identificadores com letra, `_`, `$` e dígitos, `π` vale mas "não deve"; palavras reservadas pela MDN. Literal ≠ imutável; emoji não é identificador; a lista de reservadas mudou desde o ES5 |
+| [[wiki/sources/javascript-ninja-operadores-unarios]] | Semana 2, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 6 min): `+x` converte para número ou dá `NaN` (que é do tipo number); `-x` converte e inverte o sinal, sem efeito colateral; `+` binário concatena string com número; `++`/`--` gravam na variável. "Sempre concatena" vale só para o `+` (`'3' - 1` é 2); faltam `typeof`, `void`, `delete`, `~` |
+| [[wiki/sources/javascript-ninja-operadores-logicos]] | Semana 2, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min): `&&` só true com os dois lados true, `\|\|` com pelo menos um, `!` inverte; `x === 3 && y === 7`; negar comparação com `!` "não é utilizado"; volta ao `!=` × `!==` com `'3'`. `&&`/`\|\|` devolvem operando, não booleano; curto-circuito e precedência (`!x === 3`) ficam de fora |
+| [[wiki/sources/javascript-ninja-funcoes]] | Aula 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, REPL do Node): função como bloco nomeado invocado com `()`; `soma` × `soma()`; ponto e vírgula "sempre"; reuso alterando o `x` de fora; escopo de função; `return`; parâmetros e `NaN`. Função pode ser anônima; parâmetro ≠ argumento; ASI; efeito colateral |
+| [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] | Aula 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, REPL do Node): `=` atribui, `==`/`!=` comparam e convertem (`'1' == 1`), "tipagem fraca, dinâmica"; `===`/`!==` testam o tipo e são "mais seguros"; relacionais com o mnemônico do jacaré. `!==` não é "mesmo tipo"; relacionais convertem diferente (`'10' < '9'`) |
+| [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
+| [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]] | Aula 01, parte 2, do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 15 min, REPL do Node, era ES5): variável como "nome simbólico" com `var`; number (inteiro e float), string (aspas simples = duplas), boolean, null e undefined "a mesma coisa"; objeto literal com ponto; array indexado a partir de 0; "arrays são objetos" via `pessoa['altura']`. undefined ≠ variável inexistente (ReferenceError); ponto não é "mais rápido" |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
 | [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]] | Aula 02 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min): o [[wiki/entities/dash-class\|DashClass]] como mix de [[wiki/entities/finclass\|Finclass]], [[wiki/entities/como-se-virar\|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web\|Gustavo Web]], sem copiar fluxos de cliente; "Hotmart mais específica"; escopo, grid de 12 colunas recuado pela sidebar; tour pelos fluxos de usuário, cursos, pagamento, ajuda, login e painel admin |
 | [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] | Aula 01 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]], o [[wiki/entities/dash-class\|Dash Class]] ([[wiki/entities/nasser\|Násser]], 10 min): dashboard como painel de gestão do back-office; genérico × plataforma própria; dados para decidir ("me tragam dados", atribuição a Deming duvidosa); cinco tipos (operacional, financeiro, estratégico, tático, plataformas), que misturam eixos; origem na [[wiki/entities/finclass\|Finclass]] |
@@ -1122,6 +1133,51 @@ date_updated: 2026-11-21
 | [[wiki/concepts/escolha-de-grafico]] | Gráfico pela pergunta: linha para tempo, barras para categorias; pizza perde para barras (Cleveland & McGill) |
 | [[wiki/concepts/pesquisa-com-usuario]] | Perguntar o que é mais importante, mostrar o fluxo em reuniões sucessivas, entender o dia a dia |
 
+### JavaScript Ninja, semana 2, vídeo 03: estrutura léxica (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/estrutura-lexica-javascript]] | Regras que o lexer aplica: case sensitive, espaços, `//` e `/* */` (não aninha), tabela de literais (`null` sim, `undefined` não), literal ≠ imutável |
+| [[wiki/concepts/identificadores-javascript]] | Letra, `_` ou `$`, depois dígitos (*ID_Start*/*ID_Continue*: `π` vale, emoji não); reservadas sempre, futuras (`enum`), só no modo estrito, `await`; `obj.class` vale |
+
+### JavaScript Ninja, semana 2, vídeo 02: operadores unários (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-unarios-javascript]] | `+x` = `Number(x)`, `-x`, `!`, `~`, `typeof`, `void`, `delete`, `++`/`--`: quais convertem e quais têm efeito colateral; `a+++b` |
+
+### JavaScript Ninja, semana 2, vídeo 01: operadores lógicos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-logicos-javascript]] | `&&`, `\|\|`, `!`, `??`: devolvem operando (só `!` dá booleano), curto-circuito, precedência (`!x === 3`), De Morgan |
+
+### JavaScript Ninja, aula 04: funções (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/escopo-javascript]] | Global, de função e de bloco; léxico (de dentro vê o de fora); sombreamento; global acidental; ReferenceError |
+
+### JavaScript Ninja, aula 03: operadores de igualdade e relacionais (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-relacionais-javascript]] | `<`, `>`, `<=`, `>=`: strings comparam como texto (`'10' < '9'`), tipos mistos viram número, `null >= 0`, NaN sempre false |
+
+### JavaScript Ninja, aula 02: operadores aritméticos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/expressao-javascript]] | Expressão produz valor (`x = 0`, `a + b`); instrução executa (`var x = 0`, `if`); onde a diferença aparece |
+| [[wiki/concepts/incremento-e-decremento]] | `x++` devolve o antigo, `++x` o novo; só importa quando o valor é usado; converte string para número |
+| [[wiki/concepts/atribuicao-composta]] | `x op= y` = `x = x op y`; aritméticas, bit a bit e lógicas (`??=`, ES2021); `+=` concatena string |
+
+### JavaScript Ninja, aula 01, parte 2: variáveis e tipos de dados (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/notacao-de-ponto-e-colchetes]] | `obj.chave` × `obj['chave']`: ponto para chave fixa, colchetes para dinâmica ou não identificador; mesma velocidade |
+
 ### FrontPUSH, módulo de dashboards aula 03: grids e patterns (2026-11-24)
 
 | Page | Hook |
@@ -1619,6 +1675,7 @@ date_updated: 2026-11-21
 | [[wiki/concepts/promise-javascript]] | Valor que vai chegar: pending, fulfilled, rejected; `then` encadeia, `catch` trata erro; `async/await` é açúcar |
 | [[wiki/concepts/json]] | Texto com sintaxe de objeto/array JS e chaves entre aspas; formato padrão de APIs; `JSON.parse`, `res.json()` |
 | [[wiki/concepts/funcoes-javascript]] | Registrar x executar, parâmetro x argumento, `return`, anônima, arrow function, passagem por referência como callback |
+| [[wiki/concepts/funcoes-de-primeira-classe]] | Função como valor: atribuída, passada, devolvida e guardada em estruturas; em JavaScript porque função é objeto chamável; base de callbacks, closures e métodos |
 | [[wiki/concepts/event-listener-javascript]] | `addEventListener(tipo, fn)`; `event.target`; `change` no select; `selectedIndex` |
 | [[wiki/concepts/var-let-const]] | var (função, hoisting), let (bloco), const (bloco, sem reatribuição mas mutável); não é "tanto faz" |
 
@@ -3084,6 +3141,7 @@ date_updated: 2026-11-21
 | [[wiki/concepts/variaveis-de-ambiente]] | `.env` (arquivo oculto), `export VAR=v` na sessão, `.zshrc`/`.bashrc` para persistir; `$VAR` lê o valor |
 | [[wiki/concepts/pipe-operator]] | `\|` conecta comandos: stdout de um vira stdin do próximo (`cat f \| grep x`); base da composição no shell |
 | [[wiki/concepts/git]] | Guarda-chuva de controle de versão; `git init` cria a pasta oculta `.git` com o estado do repositório |
+| [[wiki/concepts/fork-e-upstream]] | Fork na sua conta + remote `upstream` do original; `fetch` e merge para sincronizar, branch padrão espelhando o upstream, uma branch por entrega, pull request; *Sync fork* e `gh repo sync` |
 
 ### Armazenamento de Dados (Mídias & Hardware)
 
@@ -4242,6 +4300,8 @@ date_updated: 2026-11-21
 
 ## Entities
 
+- [[wiki/entities/fernando-daciuk]] — instrutor do curso JavaScript Ninja ("Fernanda Gentil" na legenda)
+- [[wiki/entities/javascript-ninja]] — curso de JavaScript de Fernando Daciuk, era ES5 (não confundir com o Lapa Ninja)
 - [[wiki/entities/como-se-virar]] — plataforma de ensino gamificada de uma dupla de médicos para calouros de medicina (CSV); origem do DashClass
 - [[wiki/entities/gustavo-web]] — professor de PHP (ex-UpInside, Black Dev); Násser desenhou a plataforma dele
 - [[wiki/entities/dash-class]] — módulo e projeto de dashboards do FrontPUSH: plataforma de ensino com painel administrativo

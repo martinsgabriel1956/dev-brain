@@ -3,8 +3,8 @@ type: concept
 title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-24
+source_count: 9
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o Git volta a ser instalado na aula 02 do módulo de JavaScript, junto do VS Code e do Node.
 
+## No JavaScript Ninja, semana 3, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], o git aparece como ferramenta de entrega: dois remotes (`origin`, o fork; `upstream`, o curso), atualizar a master pelo upstream, `checkout -b` para uma branch por desafio, `add`, `commit -m`, `push origin` e pull request. "Você não vai editar direto na master" ([[wiki/concepts/fork-e-upstream]]).
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
@@ -52,3 +56,4 @@ Em [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]], o Git volta 
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Git for Windows, motivos para versionar (rollback e time)
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: fluxo básico até o push
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, JavaScript aula 01: Git na próxima aula
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: remotes, branch por desafio, commit e push

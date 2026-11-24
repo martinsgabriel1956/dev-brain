@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
-date_updated: 2026-11-21
-source_count: 23
+date_updated: 2026-11-24
+source_count: 34
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -69,6 +69,50 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: como o SVG "possui árvore no DOM", "eu posso manipular ele com JavaScript também" (só inline).
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], curso [[wiki/entities/javascript-ninja|JavaScript Ninja]], de [[wiki/entities/fernando-daciuk|Fernando Daciuk]]: variáveis com `var` e os tipos de dados no REPL do Node.
+
+## No JavaScript Ninja, aula 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], expressões, os quatro aritméticos, `++`/`--` e `+=`, no REPL do Node.
+
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igualdade com e sem tipo, conversão de tipos e os relacionais.
+
+## No JavaScript Ninja, aula 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], funções: declaração, invocação, escopo, `return` e parâmetros.
+
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], operadores lógicos `&&`, `||` e `!` ([[wiki/concepts/operadores-logicos-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], operadores unários `+`, `-`, `++` e `--`, e o `+` como concatenação ([[wiki/concepts/operadores-unarios-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], estrutura léxica: case sensitive, comentários, literais, identificadores e palavras reservadas ([[wiki/concepts/estrutura-lexica-javascript]], [[wiki/concepts/identificadores-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `if`, `else` e `else if` ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], primitivos × objetos, objeto literal e funções como objetos de primeira classe ([[wiki/concepts/objetos-javascript]], [[wiki/concepts/funcoes-de-primeira-classe]]).
+
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], métodos de objeto e a diferença entre reatribuir o objeto e acrescentar propriedade com ponto ([[wiki/concepts/objetos-javascript]]).
+
+## No JavaScript Ninja, semana 3, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], revisão de propriedade × método e o desafio da semana 3; o resto do vídeo é git ([[wiki/concepts/fork-e-upstream]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -94,3 +138,14 @@ Em [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: 
 - [[wiki/sources/frontpush-introducao-motion-design-css-animations-grade-do-curso]]: FrontPUSH, mini curso de CSS Animations, aula 01: bibliotecas JS de animação no mini curso
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: JS manda no CSS; o que só JS faz
 - [[wiki/sources/frontpush-propriedades-svg-introducao-o-que-e-por-que-usar]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 01: JS manipula o SVG inline
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: variáveis e tipos de dados
+- [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: operadores aritméticos
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: igualdade e relacionais
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: funções
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: operadores lógicos
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: operadores unários
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: estrutura léxica
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: instruções condicionais
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: tipos de dados e objetos
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: métodos de objeto
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade × método; desafio 3

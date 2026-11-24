@@ -3,8 +3,8 @@ type: concept
 title: "Truthy e falsy em JavaScript"
 aliases: ["truthy", "falsy", "valores falsos", "ToBoolean", "coerção para booleano", "!!"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-24
+source_count: 3
 tags: [javascript, booleano, coercao, condicionais, tipos]
 skill: lang-dynamic
 status: stub
@@ -37,6 +37,16 @@ Relacionado: [[wiki/concepts/logica-booleana]], [[wiki/concepts/tipos-primitivos
 
 Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]], [[wiki/entities/nasser|Násser]] testa no `if`: string não vazia e número diferente de 0 entram; `''`, `0`, `false`, `undefined` e `NaN` não. "É mais fácil tratar o falso porque ele é mais específico." Faltam `-0`, `0n` e (por um trecho sem legenda) provavelmente `null`; "o único número [falso] é o 0" não é exato.
 
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], os operadores lógicos aparecem "combinando ou invertendo valores booleanos", só com comparações. Com valores quaisquer, `&&` e `||` decidem por truthy/falsy e devolvem o próprio operando (`'' || 'padrão'` é `'padrão'`); só o `!` devolve booleano ([[wiki/concepts/operadores-logicos-javascript]]).
+
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], a condição do `if` "vai se tornar um valor booleano". A aula só usa comparações; a conversão vale para qualquer valor, e é aqui que truthy e falsy decidem se o bloco roda ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: string vazia, 0, undefined e NaN como falsos
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! só com booleanos
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: condição do if vira booleano

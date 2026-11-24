@@ -3,8 +3,8 @@ type: concept
 title: "Renderização condicional (React)"
 aliases: ["conditional rendering", "&& no JSX", "ternário no JSX", "early return"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-24
+source_count: 6
 tags: [react, react-native, jsx]
 skill: tech-mentor-mobile
 status: stub
@@ -38,6 +38,10 @@ Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javas
 
 `{isFiltersVisible && (<View>...</View>)}` para mostrar e esconder os filtros, e `{headerRight}` no header; ternário para ícone e estilo do favorito. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## No JavaScript Ninja, semana 2, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-logicos]], `&&` como "e" que só dá true "quando os dois valores são verdadeiros", sem o curto-circuito nem o retorno do operando que fazem `cond && <Componente />` funcionar (e renderizar `0`). Ver [[wiki/concepts/operadores-logicos-javascript]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: MapView condicionado à posição; early return no detalhe
@@ -45,3 +49,4 @@ Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javas
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: AppLoading até as fontes
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: && como "e" lógico, sem curto-circuito
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros com && e headerRight
+- [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: && sem curto-circuito

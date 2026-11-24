@@ -3,8 +3,8 @@ type: concept
 title: "Unicode"
 aliases: ["unicode", "codepoint", "unicode charset", "universal character set"]
 date_created: 2026-06-10
-date_updated: 2026-08-24
-source_count: 4
+date_updated: 2026-11-24
+source_count: 5
 tags: [unicode, charset, utf-8, strings, cs-fundamentals, internacionalização, surrogate-pair, codepoint-maximo, iso-8859-1]
 skill: cs-fundamentals
 status: stable
@@ -66,9 +66,14 @@ O encoding dominante para Unicode é o [[utf-8]], criado por Ken Thompson e Rob 
 
 [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] usa emoji como exemplo canônico e visual da distinção charset/encoding: um emoji não é uma figura — é um **caractere** cujo padrão de bits (ex.: 32 bits, valor decimal ~4.036.991.106 para "rosto chorando de rir") é padronizado globalmente pelo Unicode Consortium. A **aparência gráfica** específica (o desenho exibido) é decidida individualmente por cada fabricante (Apple, Google, Microsoft, Telegram) — o que explica por que o "mesmo" emoji parece (ou se anima) diferente dependendo da plataforma, mesmo representando exatamente o mesmo codepoint por baixo. Um teclado de emoji é, tecnicamente, um teclado de fontes diferentes e mais coloridas/gráficas.
 
+## Unicode em identificadores JavaScript (JavaScript Ninja)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], "o JavaScript [...] [é escrito] com um conjunto de caracteres Unicode", e identificadores aceitam `π`. A regra exata é a das propriedades *ID_Start*/*ID_Continue*: letras de qualquer alfabeto valem, emoji não ([[wiki/concepts/identificadores-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — validação de codepoint máximo (`U+10FFFF`) e rejeição de surrogate pairs num decoder real
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — framing didático de Unicode como "codificação" de 8–32 bits (imprecisão frente à distinção charset/encoding)
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — emoji como caractere padronizado (não imagem); exemplo visual de divergência de renderização entre iOS/Google/Telegram para o mesmo codepoint
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: π como nome de variável

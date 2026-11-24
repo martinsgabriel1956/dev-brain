@@ -3,8 +3,8 @@ type: concept
 title: "Efeito Colateral"
 aliases: ["side effect", "efeitos colaterais", "funções puras"]
 date_created: 2026-04-25
-date_updated: 2026-11-03
-source_count: 4
+date_updated: 2026-11-24
+source_count: 6
 tags: [efeito-colateral, software-design, clean-code, funcional]
 skill: tech-mentor-backend
 status: stub
@@ -57,6 +57,16 @@ Sistemas úteis precisam de efeitos (persistir dados, enviar notificações, faz
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — [[wiki/concepts/cqs]]: query não pode ter efeito colateral observável; exemplo `visualizarNotificacoes` que também marca como lida, separado em `obterNaoLidas` + `marcarComoLidas`
 
+## No JavaScript Ninja, semana 2, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-unarios]], o critério na escala de um operador: `-x` "não causa efeito colateral. Se eu chamar o valor de x aqui, vai continuar sendo 3"; `++` e `--` "causam o efeito colateral" porque gravam o novo valor na variável ([[wiki/concepts/operadores-unarios-javascript]]).
+
+## No JavaScript Ninja, semana 3, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], `pessoa.aniversario()` não devolve nada e muda `pessoa.idade`; `pessoa.nomeCompleto()` só devolve. O método com efeito altera o objeto compartilhado, visível por qualquer referência a ele.
+
 ## Key sources (adição 2026-11-03)
 
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — testar notificações exige não enviar e-mail de verdade ao cliente; Strategy com dependência injetada como solução
+- [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: -x puro × ++/-- com efeito
+- [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: aniversario com efeito × nomeCompleto puro

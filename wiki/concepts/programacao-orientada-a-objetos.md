@@ -3,8 +3,8 @@ type: concept
 title: "Programação Orientada a Objetos"
 aliases: ["POO", "OOP", "object-oriented programming", "orientação a objetos"]
 date_created: 2026-11-03
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-24
+source_count: 8
 tags: [poo, oop, paradigma, historia-do-software, encapsulamento, polimorfismo, heranca]
 skill: tech-mentor-backend
 status: draft
@@ -57,6 +57,14 @@ Em [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]], a primei
 
 Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `new Promise(...)` é a segunda "classe" do curso: "eu estou instanciando uma classe, porque eu tenho new". Ele insiste que entender objetos é chave para "uma função dentro da outra, com instanciamento de classes".
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o objeto JavaScript é explicado pela OO: "se você já trabalhou com uma linguagem orientada a objetos, você sabe que um objeto, ele tem propriedades e métodos". O exemplo (`pessoa` com `altura` e `peso`) é objeto literal, sem classe.
+
+## No JavaScript Ninja, semana 3, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], JavaScript aparece como linguagem orientada a objetos em que "tudo [...] a gente vai fazer [...] em cima de objetos", comparados aos "da vida real". `[external]` A OO do JavaScript é por protótipo e convive com o estilo funcional; os objetos da aula são literais, sem classe.
+
 ## Key sources
 
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — história do paradigma e tese de que ele mudou de lugar na arquitetura
@@ -65,3 +73,5 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `new Promise(.
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: caneta como objeto, atributos e métodos
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: classe e instância com XMLHttpRequest
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: Promise como classe instanciada
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: objeto com propriedades e métodos, exemplo pessoa
+- [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: "tudo em cima de objetos", objetos da vida real
