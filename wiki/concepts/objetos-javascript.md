@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 14
+source_count: 16
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -85,6 +85,14 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o método entra pela def
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a revisão por analogia: fora do objeto, variável e função; dentro, "ao invés de variável, você tem uma propriedade" e a função "não se chama função, ele se chama método". A analogia tem limite: propriedade não tem escopo nem declaração e só existe pelo objeto. O desafio da semana 3 é criar objetos, propriedades e métodos.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], objeto vazio e array vazio entram no `if`: todo objeto é truthy, inclusive `{}`, `[]` e `new Boolean(false)` `[external]`. Para saber se uma lista está vazia, `lista.length === 0`.
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o desafio 3 volta: `pessoa.sexo` decide o artigo "o"/"a" da frase, agora com ternário. Ao vivo, o objeto `pessoa` ainda não existia no console ("está dizendo que a pessoa não existe") e foi criado com `sexo: 'masculino'`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -101,3 +109,5 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a revisão p
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: conjunto de propriedades; tudo que não é primitivo; função como objeto
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: método como propriedade-função; reatribuir × acrescentar; métodos sem this
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade como variável dentro do objeto, método como função; desafio 3
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: objeto e array vazios são truthy
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `pessoa.sexo` no ternário

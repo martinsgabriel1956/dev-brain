@@ -26,6 +26,9 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]] | Semana 4, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): escopo global ("fora de função") × local ("dentro de uma função"); de dentro lê o global, de fora o local "não está definido"; global como "erro de design da linguagem"; garbage collection elimina o local que não será usado; atribuir sem `var` cria [[wiki/concepts/poluicao-do-escopo-global\|global implícita]] após a invocação; conflito de nomes e memória; parâmetros são locais. Faltam bloco, módulo e modo estrito; o GC mede alcance (closures seguram o local); "não definido" é ReferenceError |
+| [[wiki/sources/javascript-ninja-condicional-ternario]] | Semana 4, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min): o [[wiki/concepts/operador-ternario-javascript\|ternário]] "substitui o if" em uma linha; `condição ? se truthy : se falsy`; `1 === 2 ? true : false`; atribuição direta no desafio 3 (`pessoa.sexo === 'feminino' ? 'a' : 'o'`); `'sim' ? 'porta' : 'janela'`; só "para verificações pequenas"; "as coisas têm que ser na hora certa". Ternário é expressão (a aula diz instrução); `? true : false` é redundante; precedência e aninhamento |
+| [[wiki/sources/javascript-ninja-truthy-e-falsy]] | Semana 4, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], inferido; 10 min, "quarta aula"): truthy é o que, "booleanamente falando", vira true; teste com `if`/`else`; falsy listados: `NaN`, `0`, `-0`, `''` (aspas simples e duplas), `null`, `false`; `'0'`, `'Fernando'`, `{}` e `[]` são truthy; `!!valor` mostra o booleano sem `if`. Faltam `undefined` (ilegível), `0n` e a crase; truthy ≠ `== true` (`'0' == false`); `!!x` = `Boolean(x)` |
 | [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]] | Aula 07 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 20 min, iPad e Figma): do levantamento às telas: fluxos do login (sucesso, esqueci a senha, Google), Home como hub (continue de onde parou, troféus, sugestões), entidades na sidebar e conta na top bar, ícone de ADM por perfil, checkout via trilhas; ticar cada requisito; modo escuro "por ser plataforma de vídeo" |
 | [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
 | [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
@@ -1104,6 +1107,18 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, semana 4, vídeo 03: escopo de variáveis e funções (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/poluicao-do-escopo-global]] | Nomes no global colidem entre scripts e não são coletados; global implícita sem declaração (só fora do modo estrito); remédios: declarar sempre, `'use strict'`, módulos ES, IIFE, `no-undef` |
+
+### JavaScript Ninja, semana 4, vídeo 02: condicional ternário (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operador-ternario-javascript]] | `cond ? a : b`, único operador de três operandos; expressão (cabe em atribuição, `return`, JSX), condição por truthy/falsy; `? true : false` redundante, associa à direita, aninhado é ruim de ler |
 
 ### FrontPUSH, módulo de dashboards aula 07: wireframes e fluxos (2026-11-24)
 

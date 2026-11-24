@@ -4,7 +4,7 @@ title: "Expressão e instrução (JavaScript)"
 aliases: ["expressão", "expression", "instrução", "statement", "expressão vs instrução", "expression vs statement"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [javascript, sintaxe, expressoes, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -36,9 +36,14 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], `-x` e `+x` são expres
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` é instrução: escolhe o que executar, não devolve valor. Para escolher um valor, o ternário (`y = x === 2 ? 2 : 10`) é a versão expressão ([[wiki/concepts/estruturas-condicionais-javascript]]).
 
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário vai "direto" numa atribuição (`sexo = ... ? 'a' : 'o'`). A aula o chama de "instrução", mas é expressão; é por isso que cabe ali, e o `if` não ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: expressão como "frase" avaliada; var x = 0 como exemplo (impreciso)
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: instrução como "sentença"; ponto e vírgula; chamada como expressão
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: -x avalia sem alterar x
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if como instrução
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário é expressão (a aula diz instrução)

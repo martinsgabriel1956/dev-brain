@@ -4,7 +4,7 @@ title: "Operadores unários em JavaScript"
 aliases: ["operador unário", "unary operators", "mais unário", "menos unário", "unary plus", "unary minus", "+x", "-x", "typeof", "void", "delete"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [javascript, operadores, operadores-unarios, coercao, efeito-colateral, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -45,7 +45,12 @@ Mesma conversão, sinal invertido: `-'3'` é `-3`, `-'abc'` é `NaN`. `-0` exist
 
 Em [[wiki/sources/javascript-ninja-operadores-unarios]], o `+` unário "vai tentar converter o valor que está vendo depois dele em número", ou dá `NaN`; o `-` unário faz o mesmo "e ele inverte o sinal". `-x` "não causa efeito colateral", enquanto `++`/`--` "causam o efeito colateral". Ficam de fora `typeof`, `void`, `delete` e `~`; o `!` foi o vídeo anterior.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], `!` "converte para booleano, inverte valores" e `!!` inverte de novo, dando o booleano do valor: `!!2`, `!!'Fernando'`, `!!'0'` são `true`; `!!''` é `false`. `!!x` equivale a `Boolean(x)` `[external]`.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + e - unários, concatenação, ++/-- com efeito colateral
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: ++ em propriedade, de novo chamado de "binário"
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: `!` e dupla negação `!!`

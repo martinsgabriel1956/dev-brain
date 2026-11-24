@@ -4,7 +4,7 @@ title: "Operadores lógicos em JavaScript (&&, ||, !, ??)"
 aliases: ["&&", "||", "!", "??", "AND OR NOT em JavaScript", "curto-circuito", "short-circuit evaluation", "operador E", "operador OU", "operador not", "nullish coalescing"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 5
 tags: [javascript, operadores, operadores-logicos, boolean, curto-circuito, precedencia, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -54,8 +54,18 @@ Relacionado: [[wiki/concepts/estruturas-condicionais-javascript]], [[wiki/concep
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `&&` e `||` entram no `if` porque "retornam também valores booleanos": `if (x === y && x === 3)` e `if (x === 5 || ...)`. Com comparações de cada lado, é verdade; com valores quaisquer, o `if` recebe um operando e o converte ([[wiki/concepts/estruturas-condicionais-javascript]]).
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], o `!` aparece aplicado a valores quaisquer, não só a comparações, e o `!!` como conversão explícita. É a peça que faltava para entender por que `&&` e `||` decidem por truthy/falsy ([[wiki/concepts/truthy-e-falsy]]).
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário é a alternativa explícita ao `cond && valor` e ao `valor || padrao` quando os dois ramos importam; não troca `0` ou `''` por engano ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! com comparações estritas
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: ! entre os unários
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: && e || dentro do if
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: `!` e `!!` com valores quaisquer
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário × && e ||

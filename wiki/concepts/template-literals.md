@@ -4,7 +4,7 @@ title: "Template literals (template strings) em JavaScript"
 aliases: ["template string", "template strings", "crase", "interpolação de string", "concatenação de strings"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 5
+source_count: 6
 tags: [javascript, string, es6, template-literals, concatenacao, interpolacao]
 skill: lang-dynamic
 status: stub
@@ -43,6 +43,10 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], `'marca
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], os enunciados marcam com nomes "todo em maiúsculo [...] entre colchetes" onde entra um valor: "Olá, meu nome é [NOME] [SOBRENOME]!". O curso, na era ES5, espera concatenação com `+`; com template literal, `` `Olá, meu nome é ${this.nome} ${this.sobrenome}!` ``.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a string vazia é falsy "tanto com aspas simples como com aspas duplas". A template literal vazia (`` `` ``), ausente da aula ES5, também é `''` e também é falsy `[external]`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: concatenação com + e template string
@@ -50,3 +54,4 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], os enunciado
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: concatenação com + no map
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: literais sem template
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: [NOME] [SOBRENOME] nos enunciados, resolvidos por concatenação
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: string vazia com crase também é falsy

@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 34
+source_count: 37
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -113,6 +113,18 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], métodos de objeto e a d
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], revisão de propriedade × método e o desafio da semana 3; o resto do vídeo é git ([[wiki/concepts/fork-e-upstream]]).
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], truthy e falsy: os valores que viram `false` na conversão para booleano e o `!!` para ver essa conversão.
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o operador ternário: sintaxe, atribuição direta e uso só em verificações pequenas ([[wiki/concepts/operador-ternario-javascript]]).
+
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], escopo global × local, a global implícita sem `var` e o garbage collection; o global é "um erro de design da linguagem" ([[wiki/concepts/poluicao-do-escopo-global]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -149,3 +161,6 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], revisão de 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: tipos de dados e objetos
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: métodos de objeto
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade × método; desafio 3
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: truthy e falsy
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: operador ternário
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: escopo e global implícita

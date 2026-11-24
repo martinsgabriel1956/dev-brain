@@ -4,7 +4,7 @@ title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 9
+source_count: 10
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -53,6 +53,10 @@ Em [[wiki/sources/javascript-ninja-funcoes]], o escopo de função do `var` apar
 
 Em [[wiki/sources/javascript-ninja-estrutura-lexica]], literais são "valores que não mudam", o que mistura literal com constante: a variável que recebe o literal pode ser reatribuída, e `const` só impede a reatribuição. `let` e `const` também viraram palavras reservadas ([[wiki/concepts/identificadores-javascript]]).
 
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], "sempre utilize a palavra-chave var": sem ela, a atribuição dentro de função cria uma global. `[external]` No modo estrito (padrão em módulos ES) a mesma linha lança `ReferenceError`; `let` e `const` também resolvem, com escopo de bloco ([[wiki/concepts/poluicao-do-escopo-global]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
@@ -64,3 +68,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], literais são "valores qu
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: var x = 0 chamado de expressão (é instrução)
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: var com escopo de função
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: literal ≠ constante; let/const reservadas
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: esquecer o var cria global

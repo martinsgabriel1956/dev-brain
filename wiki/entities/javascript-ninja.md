@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 11
+source_count: 14
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -46,6 +46,14 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o segundo vídeo: métod
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], o terceiro vídeo fecha a aula 3: revisão de métodos e o desafio da semana 3, no repositório `da2k/curso-javascript-ninja`. Cada aluno tem um fork, atualiza a master pelo `upstream`, faz cada desafio numa branch (`challenge-03`) e entrega por pull request ([[wiki/concepts/fork-e-upstream]]). Mostra que o curso é semanal, com email a cada semana, e que os desafios são "praticamente uma prova".
 
+## Semana 4
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], primeiro vídeo da "quarta aula": truthy, falsy e `!!`. A pasta recomeçou em 01 e traz, depois dele, "Condicional Ternário" e "Escopo de variáveis e funções"; o vídeo anuncia o ternário como o próximo.
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o segundo vídeo: o operador ternário ([[wiki/concepts/operador-ternario-javascript]]), com o desafio 3 como exemplo. O seguinte é de escopo de variáveis.
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o terceiro vídeo: escopo global e local, variável sem `var` e garbage collection ([[wiki/concepts/poluicao-do-escopo-global]]). O seguinte é o desafio da semana 4, que não está entre as transcrições.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -59,3 +67,7 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], o terceiro v
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: semana 3, vídeo 01: tipos de dados e objetos; "terceira aula"
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: semana 3, vídeo 02: métodos de objeto
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: semana 3, vídeo 03: revisão de métodos; desafio 3; fluxo de fork
+- [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: semana 3, vídeo 03: métodos de objeto (continuação) e desafio 3
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: semana 4, vídeo 01: truthy e falsy; "quarta aula"
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: semana 4, vídeo 02: condicional ternário
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: semana 4, vídeo 03: escopo de variáveis e funções

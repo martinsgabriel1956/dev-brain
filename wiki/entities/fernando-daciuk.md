@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 11
+source_count: 14
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -56,6 +56,18 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o próprio nome vira dad
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], se apresenta ("Fernando da Silva" na legenda) e mostra a própria conta no GitHub, `fdaciuk` ("F da Silva que" na legenda), e o repositório do curso na organização `da2k`. Pede dúvidas por email ou issue e incentiva mandar o desafio "pela metade mesmo": "o ninja de verdade [...] pergunta".
 
+## Semana 4, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], truthy, falsy e `!!`. Sem autoapresentação; autoria inferida da série e da string de exemplo `'Fernando'` (média-alta).
+
+## Semana 4, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário. Volta a usar o desafio 3 como exemplo e defende a ordem do curso: "as coisas têm que ser na hora certa".
+
+## Semana 4, vídeo 03
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], escopo global e local, variável sem `var` e garbage collection. Chama o escopo global de "erro de design da linguagem".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -69,3 +81,6 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], se apresenta
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: semana 3, vídeo 01: tipos de dados e objetos; se apresenta
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: semana 3, vídeo 02: métodos de objeto; nomeCompleto() devolve o próprio nome
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: semana 3, vídeo 03: desafio 3 e fluxo de git; contas fdaciuk e da2k
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: semana 4, vídeo 01: truthy e falsy
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: semana 4, vídeo 02: condicional ternário
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: semana 4, vídeo 03: escopo de variáveis e funções

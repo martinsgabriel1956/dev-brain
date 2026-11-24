@@ -4,7 +4,7 @@ title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
 date_updated: 2026-11-24
-source_count: 9
+source_count: 10
 tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
@@ -98,6 +98,10 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], `upperName` devo
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], string é "uma sequência de caracteres" entre aspas duplas ou "apóstrofo": "isso não tem diferença alguma" em JavaScript, ao contrário de linguagens que exigem aspas duplas. A crase da [[wiki/concepts/template-literals|template literal]] veio depois (ES2015).
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a string vazia é falsy e qualquer string preenchida é truthy, "ainda que seja com zero": `'0'` não é o número `0` ([[wiki/concepts/truthy-e-falsy]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
@@ -109,3 +113,4 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], string é "uma 
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: toUpperCase em cada item
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: toUpperCase em upperName
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: aspas simples ou duplas, sem diferença
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: '' falsy, '0' truthy
