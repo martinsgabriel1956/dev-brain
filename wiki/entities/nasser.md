@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 164
+source_count: 168
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -366,6 +366,22 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 
 Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], mostra os três grids do DashClass e os sete patterns de dashboard. O slide da top bar traz "Olá, Násser Yousef Ali", o nome completo dele no mock.
 
+## Módulo de dashboards, aula 04
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], desenha no iPad (Procreate, paleta "FrontPUSH 2.0") os quatro princípios de dashboard: hierarquia visual, gráficos coerentes, fluxos definidos e pesquisa com o usuário. Defende pizza para porcentagem, o que a literatura de visualização contesta.
+
+## Módulo de dashboards, aula 05
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], explica no iPad o levantamento de requisitos para designers e desenvolvedores: funcionais × não funcionais, atores em hierarquia, CRUD, atributos que viram campos e uma ação por tela.
+
+## Módulo de dashboards, aula 06
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]], faz no iPad o levantamento de requisitos do DashClass (três atores, três entidades, gamificação) e descreve como conduz reuniões com clientes: perguntas abertas, avaliar viabilidade na hora, voltar com dúvidas.
+
+## Módulo de dashboards, aula 07
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], desenha no iPad os fluxos e a Home do DashClass, recomenda sketchbook ("já fazendo meu merchan") e ticar os requisitos, e explica o modo escuro da plataforma. Corrige na hora "Dark Pattern" para "modo Dark".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -532,3 +548,7 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, módulo de dashboards aula 01: Dash Class, Finclass, tipos de dashboard
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: clientes de plataformas de ensino; overview do DashClass
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grids e patterns
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: princípios no iPad
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: levantamento de requisitos
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: levantamento do DashClass
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos, Home e modo escuro

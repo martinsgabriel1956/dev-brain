@@ -3,8 +3,8 @@ type: concept
 title: "Densidade de Informação"
 aliases: ["espaço vs. meio", "espaço versus meio", "information density", "densidade", "compacto vs. confortável"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 5
+date_updated: 2026-11-24
+source_count: 6
 tags: [ui, ui-design, layout, espacamento, densidade-de-informacao, espaco-em-branco, cards, linhas]
 skill: ux-ui-mentor
 status: stub
@@ -49,6 +49,10 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], texto "totalmente corrid
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "o ser humano [...] entende melhor as coisas quando elas são feitas por tópicos", como nos posts "sete dicas de como fazer isso". Receita: perguntar "qual a ideia desse texto?", elencar os itens (100% gratuito, sem taxa, melhor suporte) "e um link para você detalhar". `[external]` Nielsen (1997, *How Users Read on the Web*): texto escaneável melhorou a usabilidade medida em 47%; conciso, escaneável e objetivo, em 124% (alta, sem fetch).
 
+## Dashboards cheios demais
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]]: "um dos principais exemplos de bad UX [...] é quando você tem muitas informações na sua tela", como nos dashboards de vendas antigos. A resposta é hierarquia visual e [[wiki/concepts/fluxos-bem-definidos|fluxos separados]].
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — espaço vs. meio: Facebook e G1 densos com cards e linhas; site simples com espaços grandes
@@ -56,3 +60,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — texto carregado em tópicos (benefícios do Nubank)
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — parágrafos de 4 a 8 linhas aliviam texto corrido
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — texto longo vira tópicos + link de detalhe
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: excesso de informação como bad UX

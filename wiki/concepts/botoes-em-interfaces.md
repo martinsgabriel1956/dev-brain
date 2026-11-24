@@ -3,8 +3,8 @@ type: concept
 title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
-date_updated: 2026-11-20
-source_count: 19
+date_updated: 2026-11-24
+source_count: 20
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -104,6 +104,10 @@ Em [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `borde
 
 Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], a [[wiki/concepts/microinteracao]] do botão é crescer um pouco e ganhar sombra no hover. `[skill: tech-mentor-frontend]` `transform: scale()` é barato; a sombra fica mais barata animando a `opacity` de um pseudo-elemento que já a tem, em vez de animar `box-shadow`.
 
+## Dois botões por tela
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: "nunca coloque muitos botões [...] Geralmente, a gente coloca dois botões. Um primário [...] preenchido, e outro secundário, só com o contorno". Ações de linha numa tabela são outro nível, contextual.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -125,3 +129,4 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: botão do zero: borda, fundo, padding, radius e hover que cresce
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: botões de call to action no menu como variação do desafio de flexbox
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: hover com scale e sombra
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: primário preenchido + secundário contornado

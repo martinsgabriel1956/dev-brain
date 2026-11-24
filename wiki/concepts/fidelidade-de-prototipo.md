@@ -4,7 +4,7 @@ title: "Fidelidade de protótipo"
 aliases: ["fidelidade", "baixa fidelidade", "média fidelidade", "alta fidelidade", "lo-fi", "hi-fi", "espectro de fidelidade"]
 date_created: 2026-11-15
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [ux, ui, prototipagem, wireframe, fidelidade, processo-de-design]
 skill: ux-ui-mentor
 status: stub
@@ -42,8 +42,13 @@ Násser pulou o wireframe cinza no [[wiki/entities/frontpush]] e foi do esboço 
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], a home do DashClass aparece "em modelos de wireframes, ainda não subi para alta, alta, alta fidelidade", enquanto outros fluxos já estão em UI.
 
+## Rabisco, não desenho final
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: "você não precisa desenhar tudo igualzinho como é que vai ser [...] Isso aqui é só o esqueleto"; os modelos dele "são bem primordiais, são apenas rabiscos".
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel (baixa), wireframe cinza (média), protótipo final com style guide (alta)
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: baixa fidelidade na 2ª reunião, alta na 3ª, para mudar barato
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: telas em fidelidades diferentes no mesmo arquivo
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: esboço como esqueleto

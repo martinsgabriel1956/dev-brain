@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-23
-source_count: 8
+date_updated: 2026-11-24
+source_count: 9
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -50,6 +50,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] aplica a ideia ao portfólio: "muitas dobras, muita coisa" tiram a clareza; o portfólio deve "reduzir a carga cognitiva do usuário" e mostrar só o mais importante ([[wiki/concepts/estrutura-de-portfolio]]).
 
+## Uma ação por tela
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], uma tela com várias ações de pesos parecidos "já confundiu o usuário"; isolar cada fluxo numa ação central dá foco. Ver [[wiki/concepts/fluxos-bem-definidos]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -60,3 +64,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — patterns reduzem a carga cognitiva; não reinventar a roda
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — parágrafo longo vira tópicos para o usuário de fato ler
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: portfólio sem dobras demais
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: várias ações confundem; isolar dá foco

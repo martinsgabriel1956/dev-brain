@@ -4,7 +4,7 @@ title: "Dashboard"
 aliases: ["dashboards", "painel administrativo", "painel de gestão", "painel de informações", "admin dashboard"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 6
 tags: [dashboard, ui-design, ux-design, back-office, tomada-de-decisao, visualizacao-de-dados]
 skill: ux-ui-mentor
 status: stub
@@ -37,8 +37,23 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 
 Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], tudo começa pelo [[wiki/concepts/grid-de-dashboard|grid]] (12 colunas com offset para a sidebar, em 1440 × 900) e pelos [[wiki/concepts/patterns-de-dashboard|patterns]]: login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais. O slide do painel administrativo segue o layout "métricas no topo, gráfico largo + lista lateral, tabela embaixo".
 
+## Princípios (aula 04)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], quatro princípios contra o excesso de informação: [[wiki/concepts/hierarquia-visual]], [[wiki/concepts/escolha-de-grafico|gráficos coerentes]], [[wiki/concepts/fluxos-bem-definidos|fluxos definidos e uma tela para cada]] e [[wiki/concepts/pesquisa-com-usuario]]. A home é o lugar dos resumos, "um template de resumo, não é um fluxo".
+
+## Requisitos (aula 05)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: antes das telas, levantar requisitos funcionais e não funcionais, [[wiki/concepts/atores-do-sistema|atores]], entidades com [[wiki/concepts/crud|CRUD]], atributos e relacionamentos. Os relacionamentos sustentam os filtros, "porque eu preciso muito de filtros quando estou definindo dashboards".
+
+## A Home como hub (aula 07)
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], a Home de um dashboard é "a página do fluxo central": um resumo com "continue de onde parou", gamificação e sugestões, de onde saem os fluxos de perfil, cursos, suporte e administração.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: definição, utilidades, genérico × específico
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: esforço, sidebar, fluxos comuns
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grid e patterns
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: quatro princípios; home como resumo
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: requisitos, entidades e filtros
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: Home como resumo e hub de fluxos

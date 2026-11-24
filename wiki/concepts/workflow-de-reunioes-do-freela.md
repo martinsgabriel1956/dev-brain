@@ -3,8 +3,8 @@ type: concept
 title: "Workflow de reuniões do freela"
 aliases: ["quatro reuniões do freela", "dê o passo a passo", "reunião e apresentação", "workflow de apresentação de freelas"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [freelance, reuniao, briefing, wireframe, entrega, metodologia]
 skill: tech-mentor-leadership
 status: stub
@@ -37,6 +37,11 @@ Mínimo de três (inicial, conteúdo, entrega). Cada uma fecha uma parcela do pa
 - [[wiki/concepts/criar-consciencia-no-cliente]]: a metodologia é apresentada na primeira reunião.
 - [[wiki/concepts/orcamento-de-freela]]: o documento que sai entre a primeira e a segunda.
 
+## Segunda reunião para dúvidas
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: depois de desenhar o levantamento, "vai aparecer algumas dúvidas", e "em uma segunda oportunidade, você pode chegar na pessoa e conseguir tirar suas dúvidas".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: as quatro reuniões, prazos e postura
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: segunda reunião com as dúvidas

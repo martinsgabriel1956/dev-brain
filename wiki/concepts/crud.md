@@ -3,8 +3,8 @@ type: concept
 title: "CRUD"
 aliases: ["Create, Read, Update, Delete", "crud", "operações CRUD"]
 date_created: 2026-11-16
-date_updated: 2026-11-23
-source_count: 3
+date_updated: 2026-11-24
+source_count: 5
 tags: [crud, api, rest, banco-de-dados, backend, metodos-http]
 skill: tech-mentor-backend
 status: stub
@@ -32,8 +32,18 @@ Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: "crud são
 
 Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], o POST é "de criar, de create, que sempre remete ao CRUD"; PUT atualiza e DELETE apaga. O Read é o GET.
 
+## "Manter" uma entidade (FrontPUSH)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], "manter ou gerenciar" uma entidade é ter o CRUD dela, e "o CRUD é meio que uma necessidade universal quando você tem uma entidade". Ressalva: vendas são canceladas, não deletadas (exigência fiscal), e usuários costumam ser desativados; a pergunta é universal, a resposta não.
+
+## Do CRUD às telas
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: "se ele virou uma entidade, eu preciso fazer o famigerado CRUD", e cada letra vira tela: cadastro, listar e pesquisar, atualizar, deletar. "Você já sabe quais são as telas que vão sair daqui."
+
 ## Key sources
 
 - [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: CRUD de usuários como as funções do controller
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: POST como o C do CRUD
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o blog com CRUD como peça de portfólio
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: manter = CRUD
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: CRUD do user vira quatro tipos de tela

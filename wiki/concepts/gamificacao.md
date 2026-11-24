@@ -4,7 +4,7 @@ title: "Gamificação"
 aliases: ["gamification", "gameficação", "gamificação em produto"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 5
 tags: [gamificacao, engajamento, ux-design, motivacao, plataforma-de-ensino]
 skill: ux-ui-mentor
 status: stub
@@ -26,8 +26,18 @@ Antes, no módulo de monetização, o mesmo cliente aparece no exemplo de copy: 
 
 Ver também [[wiki/concepts/design-persuasivo]], para o limite entre engajar e manipular.
 
+## Gamificação pede estrutura de informação
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: "se você está querendo fazer uma estrutura de gamificação, eu preciso de uma estrutura de informação muito grande": notificações e cursos, módulos e aulas "bem hierarquizados", com medalha aos 70% e próxima fase aos 80% após um questionário. "O usuário só sabe que ele quer [...] gamificação, mas como que vai fazer isso? Aí já é papel seu, do designer." Ele a classifica como requisito não funcional; é funcional.
+
+## Card de gamificação na Home
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: um card em segundo plano na Home, "você já conseguiu tais troféus, continue assim, parabéns", ao lado do "continue de onde parou".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: o forte do Como se virar; conquistas e progresso no DashClass
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: "mais um quilômetro" × "faltam 40"
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: "estratégias de gamificação" no orçamento
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: medalhas, fases, notificações
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: card de troféus na Home

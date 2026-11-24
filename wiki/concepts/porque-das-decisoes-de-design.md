@@ -4,7 +4,7 @@ title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 13
+source_count: 14
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -88,6 +88,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] adia a teoria: "eu deixo pra explicar o porquê das decisões quando eu já estiver apresentando as telas pra vocês". O porquê vem colado à tela, não antes dela.
 
+## Peças com porquê
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: escolher um modelo de card entre vários "não é na sorte, né? Tem que ter um porquê", com base em hierarquia, cores e contraste.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: valor como decisão; argumento técnico ou empírico
@@ -103,3 +107,4 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificação tipográfica como base para justificar a fonte
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — ter um porquê na escolha de fonte
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: o porquê explicado na apresentação das telas
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: "não é na sorte"

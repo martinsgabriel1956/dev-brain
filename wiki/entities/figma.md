@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 63
+source_count: 64
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -210,6 +210,10 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 
 Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]]: grid de 12 colunas tipo Left (não Center nem Stretch), largura fixa de coluna, gutter e offset para a sidebar, em frame de 1440 × 900; para inspecionar, ligar a visibilidade do grid e abrir os ajustes.
 
+## Páginas e estilos do DashClass
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: páginas Cover, Inspirations, StyleGuide & Grids, UI DashClass e Aulas; estilos de texto (heads, body), cor (cian, blue, black, white, gradient, gray, auxiliary) e grid (Desktop, iOS, Android, iPad, Dashboard 1 a 3).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolher Figma pela comunidade
@@ -275,3 +279,4 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: arquivo do Dash Class
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: abas do arquivo do DashClass
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: layout grid com offset
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: estrutura do arquivo

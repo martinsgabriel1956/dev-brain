@@ -4,7 +4,7 @@ title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade", "design barato e rápido"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 20
+source_count: 21
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: draft
@@ -97,6 +97,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-f
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] diz que o módulo demorou para "maturar" o arquivo de fluxos e "bons modelos de wireframes" do [[wiki/entities/dash-class|Dash Class]], o primeiro projeto do curso voltado ao painel administrativo e não à landing page. Ver [[wiki/concepts/dashboard]].
 
+## Esqueleto antes do enxerto (DashClass)
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: rabiscar os fluxos num sketchbook, ticar os requisitos e só então passar para wireframe; "como o seu esqueleto já está montado, você só vai enxertando" peças de UI (cards, dropdowns, modais), escolhidas com "um porquê".
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -119,3 +123,4 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: wireframes e conteúdo como etapa que evita "o vai e volta"
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: wireframe como reunião de conteúdo com o cliente
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: wireframes e fluxos de dashboard
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos → wireframe → enxerto

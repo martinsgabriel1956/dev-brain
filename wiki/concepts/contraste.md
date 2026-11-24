@@ -3,8 +3,8 @@ type: concept
 title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 38
+date_updated: 2026-11-24
+source_count: 39
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -154,6 +154,10 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "a maioria das interfaces são três cores", branco, preto ou azul-escuro, "porque são extremos de luz"; com elas, "a chance de dar ok é muito grande". O fundo escuro "nunca é um preto puro", tem "uma saturaçãozinha de azul". Verde "está na meiuca" e é difícil com branco e com preto ([[wiki/concepts/luminosidade-das-cores]]). Para o CTA, contraste é "um conjunto de fatores" (forma de botão, cor, tamanho), e a interface neutra faz o ponto saturado virar "um ímã visual" ([[wiki/concepts/espaco-em-branco]]). Ele chama amarelo com texto branco de "dark pattern"; é só contraste ruim, não design enganoso.
 
+## Contraste como hierarquia em dashboards
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], o contraste é o primeiro princípio de hierarquia ("aquilo que é mais importante [...] você vai colocar [...] com mais contraste"), somado a posição e tamanho. Entre duas linhas sobrepostas de um gráfico, também é preciso "estabelecer contraste entre eles dois".
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -194,3 +198,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: #999, #777, #666
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: contraste de movimento
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — três cores de fundo (extremos de luz); CTA como ímã visual
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: contraste em cards e gráficos

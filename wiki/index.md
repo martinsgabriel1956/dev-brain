@@ -26,6 +26,10 @@ date_updated: 2026-11-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]] | Aula 07 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 20 min, iPad e Figma): do levantamento às telas: fluxos do login (sucesso, esqueci a senha, Google), Home como hub (continue de onde parou, troféus, sugestões), entidades na sidebar e conta na top bar, ícone de ADM por perfil, checkout via trilhas; ticar cada requisito; modo escuro "por ser plataforma de vídeo" |
+| [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
+| [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
+| [[wiki/sources/frontpush-dashboards-principios-parte-1]] | Aula 04 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 18 min, no iPad): quatro princípios contra o excesso de informação: hierarquia visual (contraste, alto e à esquerda, card maior), fluxos definidos com uma ação por tela e passos numerados (login e recuperar senha), gráficos coerentes (pizza para porcentagem, contestável; linha para meses) e pesquisa com o usuário |
 | [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]] | Semana 3, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 14 min): revisão (propriedade é "variável" dentro do objeto, método é a função); desafio 3 com placeholders `[NOME] [SOBRENOME]`; fluxo de fork com `origin` (`fdaciuk`) e `upstream` (`da2k`), master espelhando o curso, `checkout -b challenge-03`, commit, push e pull request. `fetch` não cria branch local; hoje há *Sync fork* e `main` |
 | [[wiki/sources/javascript-ninja-metodos-de-objeto]] | Semana 3, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): método é a propriedade cujo valor é função; reatribuir `pessoa = {...}` perde tudo, `pessoa.cor = ...` acrescenta; `andar`, `aniversario` (`idade++`, sem retorno) e `nomeCompleto` (só retorno). Métodos usam `pessoa` em vez de `this`; reatribuir troca a referência; `nomeCompleto()` confirma o sobrenome Daciuk |
 | [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]] | Semana 3, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, "terceira aula"): primitivos (number, string, boolean, null, undefined) × objetos, "todos os outros"; objeto como "conjunto de propriedades" com nome e valor; literal com chaves e leitura com ponto (`pessoa`, `carro`); funções são objetos "de primeira classe" e podem ser anônimas numa variável. Faltam `symbol` e `bigint`; primeira classe é mais que atribuir; a anônima ganha `name` |
@@ -1100,6 +1104,34 @@ date_updated: 2026-11-24
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de dashboards aula 07: wireframes e fluxos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/rastreabilidade-de-requisitos]] | Ligar cada requisito à tela que o atende; a checklist do Násser; requisito sem tela é furo, tela sem requisito é escopo inventado |
+| [[wiki/concepts/modo-escuro]] | Tema escuro do DashClass; "cansa menos a vista" não é regra; para vídeo, convenção de cinema; não inverter cores |
+
+### FrontPUSH, módulo de dashboards aula 06: levantamento de requisitos do DashClass (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/levantamento-de-requisitos]] | Conversa franca com o dono do negócio, viabilidade na hora, abstrair e anotar, voltar com dúvidas; cada ator multiplica telas |
+
+### FrontPUSH, módulo de dashboards aula 05: princípios, parte 2 (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/atores-do-sistema]] | Quem opera o sistema, em hierarquia; todos são usuários com perfil; ator é papel e pode ser sistema externo |
+| [[wiki/concepts/atributos-como-campos-de-formulario]] | Atributos da entidade viram campos do formulário; fluxos definem atributos; não é 1:1 |
+
+### FrontPUSH, módulo de dashboards aula 04: princípios, parte 1 (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/fluxos-bem-definidos]] | Um objetivo por fluxo, uma ação no centro da tela, passos numerados; tela cheia de ações é resumo, não fluxo |
+| [[wiki/concepts/escolha-de-grafico]] | Gráfico pela pergunta: linha para tempo, barras para categorias; pizza perde para barras (Cleveland & McGill) |
+| [[wiki/concepts/pesquisa-com-usuario]] | Perguntar o que é mais importante, mostrar o fluxo em reuniões sucessivas, entender o dia a dia |
 
 ### JavaScript Ninja, semana 2, vídeo 03: estrutura léxica (2026-11-24)
 
