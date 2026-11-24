@@ -4,7 +4,7 @@ title: "Rbac"
 aliases: []
 date_created: 2026-09-22
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [rbac]
 skill: tech-mentor-security
 status: stub
@@ -27,8 +27,13 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], a hierarquia funcionário → gerente → administrador ou CEO é levantada como [[wiki/concepts/atores-do-sistema|atores do sistema]], e o atributo "perfil" do usuário define o "acesso hierárquico": RBAC em forma de requisito.
 
+## Perfil com valores de menos
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]], o perfil do user é "administrador ou um usuário normal", mas há três atores (aluno, funcionário, administrador) e o administrativo tem "acesso restrito a determinadas telas": o perfil precisa de pelo menos três papéis.
+
 ## Key sources
 
 - [[wiki/sources/kubernetes-security]]
 - [[wiki/sources/rbac-abac-rebac]]
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: perfil de usuário e acesso hierárquico
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: perfil × três atores

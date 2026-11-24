@@ -4,7 +4,7 @@ title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
 date_updated: 2026-11-24
-source_count: 7
+source_count: 8
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -56,6 +56,10 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy é modela
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], a modelagem sai dos requisitos: atores viram usuários, usuários e vendas viram entidades, atributos viram campos de formulário, e as relações (venda → comprador, funcionário) definem banco, formulário e filtros. Ver [[wiki/concepts/atributos-como-campos-de-formulario]].
 
+## O modelo do DashClass
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: user, venda e produtos (cursos). O modelo põe "id do comprador" no produto, o que é um muitos-para-muitos mal resolvido: falta a tabela de itens da venda e a matrícula do aluno no curso. Ver [[wiki/concepts/relacionamento-muitos-para-muitos]].
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -65,3 +69,4 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de 
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — simulador de supermercado como projeto de aprendizado de modelagem de domínio
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: proffys, classes, class_schedule
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: entidades, atributos e relações a partir dos requisitos
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: três entidades e o que falta

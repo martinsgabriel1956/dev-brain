@@ -4,7 +4,7 @@ title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
 date_updated: 2026-11-24
-source_count: 8
+source_count: 9
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -57,6 +57,10 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de 
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], os requisitos saem de perguntar ao cliente "como é o negócio dele, do que se trata, quais são os objetivos", junto com mood board e reuniões; "aí sim você pode partir para os patterns e para os wireframes".
 
+## Conversa franca com o dono do negócio
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: "é uma conversa franca com o dono do negócio, para poder entender o negócio dele"; perguntar como fazem hoje, a experiência e o modelo de negócio, avaliar "dou conta, não dou conta?" e voltar numa segunda reunião com as dúvidas. Ver [[wiki/concepts/levantamento-de-requisitos]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: pré-briefing e workflow de reuniões na aula 9
@@ -67,3 +71,4 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de 
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: briefing como começo de um dashboard
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: o que perguntar ao usuário
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: requisitos antes de patterns e wireframes
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: perguntas da reunião

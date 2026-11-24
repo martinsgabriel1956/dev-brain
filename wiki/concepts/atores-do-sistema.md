@@ -4,7 +4,7 @@ title: "Atores do sistema"
 aliases: ["ator do sistema", "atores", "actors", "papéis de usuário"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [levantamento-de-requisitos, atores, rbac, modelagem, dashboard, casos-de-uso]
 skill: ux-ui-mentor
 status: stub
@@ -25,6 +25,11 @@ Quem opera ou interage com o sistema. Levantar os atores é um dos três produto
 
 Relacionado: [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/crud]], [[wiki/concepts/autenticacao-e-autorizacao]].
 
+## Os atores do DashClass
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: aluno (assiste, interage, dá feedback, compra), funcionário e administrador (acesso "mais administrativo", "restrito a determinadas telas"). Dois fluxos: aluno e administrativo. "Cada ator que tem no sistema aumenta drasticamente a quantidade de telas." O instrutor aparece como atributo de curso, não como ator.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: atores em hierarquia; todos são usuários
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: aluno, funcionário, administrador

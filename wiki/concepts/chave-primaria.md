@@ -3,8 +3,8 @@ type: concept
 title: "Chave primária"
 aliases: ["primary key", "PK", "chave primária", "AUTOINCREMENT", "INTEGER PRIMARY KEY", "id"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-24
+source_count: 5
 tags: [banco-de-dados, sql, modelagem, sqlite]
 skill: tech-mentor-data
 status: stub
@@ -40,9 +40,14 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], as três tabelas d
 
 `increments('id').primary()` nas quatro tabelas; o `insert` devolve o array de ids, e o código usa a posição 0. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
 
+## CPF não é a chave
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]], o CPF é chamado de "também uma chave identificadora". É chave candidata, mas a primária deve ser o id interno: CPF é dado pessoal, pode faltar e não deve se espalhar como chave estrangeira.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: `id INTEGER PRIMARY KEY AUTOINCREMENT` na tabela places; ids não reaproveitados
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: increments().primary() no Knex; pivô sem PK composta
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: id em três tabelas e lastID
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: increments e ids do insert
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: CPF como chave candidata

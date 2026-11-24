@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
 | [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
 | [[wiki/sources/frontpush-dashboards-principios-parte-1]] | Aula 04 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 18 min, no iPad): quatro princípios contra o excesso de informação: hierarquia visual (contraste, alto e à esquerda, card maior), fluxos definidos com uma ação por tela e passos numerados (login e recuperar senha), gráficos coerentes (pizza para porcentagem, contestável; linha para meses) e pesquisa com o usuário |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
@@ -1091,6 +1092,12 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de dashboards aula 06: levantamento de requisitos do DashClass (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/levantamento-de-requisitos]] | Conversa franca com o dono do negócio, viabilidade na hora, abstrair e anotar, voltar com dúvidas; cada ator multiplica telas |
 
 ### FrontPUSH, módulo de dashboards aula 05: princípios, parte 2 (2026-11-24)
 

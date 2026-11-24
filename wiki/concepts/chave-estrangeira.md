@@ -4,7 +4,7 @@ title: "Chave estrangeira"
 aliases: ["foreign key", "FK", "integridade referencial", "references"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [banco-de-dados, sql, integridade, modelagem]
 skill: tech-mentor-data
 status: stub
@@ -32,9 +32,14 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `classes.proffy_id
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: a venda guarda o id do usuário e o id do funcionário, e o "ler" de um dashboard vira "me passa todas as vendas que você tem com o ID desse usuário aqui". Os relacionamentos decidem também "se eu tenho que cadastrar primeiro uma entidade para poder existir outra".
 
+## Venda → user duas vezes
+
+Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: a venda tem id do funcionário e id do comprador, as duas chaves "vem de usuário". "Então, eu tenho um relacionamento entre vendas e usuário."
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: references/inTable na pivô; teste com item 9
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: proffy_id e class_id sem REFERENCES
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: CASCADE sem PRAGMA no SQLite
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: id_usuario e id_funcionario em vendas
+- [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: id_funcionario e id_comprador
