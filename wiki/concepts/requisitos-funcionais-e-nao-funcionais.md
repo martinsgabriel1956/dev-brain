@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-11-15
-source_count: 12
+date_updated: 2026-11-24
+source_count: 13
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -53,6 +53,10 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 
 [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] chama o [[wiki/concepts/briefing]] de "clássico levantamento de requisitos", útil "tanto para o back-end, tanto para o front-end, como para protótipos de UI". As perguntas mudam (marca, diferencial, carro-chefe, objetivo da interface), mas a regra é a mesma desta página: perguntar antes de construir.
 
+## Levantamento de requisitos de um dashboard
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] promete mostrar "o levantamento de requisito" do [[wiki/entities/dash-class|Dash Class]], uma plataforma de ensino em que o cliente queria medir o engajamento dos alunos além do financeiro.
+
 ## Key Sources
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
@@ -65,6 +69,7 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Requisitos arquiteturais como critério de adoção de padrão
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — levantamento de requisitos como proteção contra over-engineering
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — briefing como levantamento de requisitos para UI
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: levantamento de requisitos prometido para o Dash Class
 
 ## Key sources (adição 2026-10-07)
 

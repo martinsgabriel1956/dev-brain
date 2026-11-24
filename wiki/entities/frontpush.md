@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 138
+date_updated: 2026-11-24
+source_count: 139
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -495,6 +495,10 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: o novo m�
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], [[wiki/entities/nasser|Násser]] mostra as três landing pages do FrontPUSH como evolução ("é treino, é sentar e fazer 70 vezes"); o objetivo da atual é captar nome e e-mail, e a setinha que sai do botão veio da landing page "Everyball". Para o novo site, salvou referências "com três pontos": UI, código e motion.
 
+## Módulo de dashboards (Dash Class)
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], o curso ganha o módulo [[wiki/entities/dash-class|Dash Class]], parte da "atualização 3.0": uma plataforma de ensino com painel administrativo, apresentada como passagem do front (landing pages) para o "background" da empresa. Os arquivos ficam no Notion, com senha da aula do módulo "Comece aqui".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -635,3 +639,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: azul, paleta, fonte própria, noise
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — três landing pages; objetivo da LP; setinha do botão
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, módulo de dashboards aula 01: introdução, utilidades e tipos (Dash Class)

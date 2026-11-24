@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 161
+date_updated: 2026-11-24
+source_count: 162
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -354,6 +354,10 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: mídia de
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], junta "os principais itens de UI": pesquisa antes de tudo, patterns de e-commerce, três fontes diárias ([[wiki/entities/lapa-ninja]], [[wiki/entities/dribbble]], [[wiki/entities/behance]]), "modelar, não copiar" no projeto Nubank ([[wiki/concepts/modelar-referencias]]), leitura em Z e em F, contraste no Who Can Use e a 60-30-10. Revela que a setinha do botão do FrontPUSH veio de uma landing page de referência.
 
+## Módulo de dashboards, aula 01
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], apresenta o [[wiki/entities/dash-class|Dash Class]]: diz ter ajudado no player de vídeo da [[wiki/entities/finclass|Finclass]] e, a partir disso, desenhado plataformas de ensino para um professor de PHP ("Gustavo Webb", grafia da legenda) e para uma dupla de médicos. Promete um módulo "bem prático", com o porquê das decisões explicado tela a tela, e cita "Eu só acredito em Deus, no mais me tragam dados".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -517,3 +521,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: mentoria de ID visual: processo de marca, Black Dev
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: como cria imagens e vídeos com IA
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — mentoria de UI: pesquisa, patterns, modelar referências, Z/F, contraste
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, módulo de dashboards aula 01: Dash Class, Finclass, tipos de dashboard

@@ -3,8 +3,8 @@ type: entity
 title: "Material Design"
 aliases: ["Material", "Material Design 2", "Material Design 3", "M2", "M3"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-24
+source_count: 9
 tags: [design-system, google, diretrizes, imagens, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -36,6 +36,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 O header automático do stack segue o Material Design no Android (título à esquerda) e é desligado com `headerShown: false`; o ripple do `RectButton` é o efeito do Material. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
 
+## Gráficos em dashboards (FrontPUSH)
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] promete "fuçar muito sobre material design, sobre as boas práticas da gente apresentar [...] esses dados" nas aulas de gráficos do [[wiki/entities/dash-class|Dash Class]]. Ver [[wiki/concepts/dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — diretrizes de imagem recomendadas no fim da aula
@@ -46,3 +50,4 @@ O header automático do stack segue o Material Design no Android (título à esq
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline do Google citada como referência para montar style guide
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — breakpoints, colunas, grid fluido, regiões de UI
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: App Bar e ripple
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: Material Design como referência para gráficos

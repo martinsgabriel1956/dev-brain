@@ -3,7 +3,7 @@ type: source
 title: "Monetização e Freelancer: modelos de orçamento e de invoice (FrontPUSH)"
 aliases: ["modelo de orçamento FrontPUSH", "modelo de invoice FrontPUSH", "orçamento do Násser", "invoice do Násser"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
+date_updated: 2026-11-24
 source_count: 0
 tags: [freelance, orcamento, invoice, precificacao, escopo, style-guide, gamificacao, curso]
 skill: tech-mentor-leadership
@@ -41,6 +41,10 @@ Dois PDFs de uma página (layout escuro, logo "N", "by Násser Yousef") que acom
 - **Invoice × nota fiscal** `[external]`, alta: no Brasil, a cobrança formal de serviço é a NFS-e, emitida pela prefeitura (pelo MEI, pelo portal nacional desde 2023). A invoice serve para clientes do exterior ou como demonstrativo; a aula 10 cita os dois ("o invoice, a nota fiscal").
 - **Escopo sem limites:** o orçamento lista telas aproximadas ("~4", "~10") e não diz rodadas de revisão nem o que fica fora. É a mesma lacuna de contrato apontada na aula 10.
 - **Tradução e privacidade:** a invoice original está em inglês e foi traduzida em `raw/`; o e-mail de contato do autor foi omitido porque o repositório é público.
+
+## Continuação
+
+O dashboard de plataforma de cursos deste orçamento provavelmente é parente do [[wiki/entities/dash-class|Dash Class]], o projeto do módulo de dashboards apresentado em [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] (inferência, média).
 
 ## Entities
 

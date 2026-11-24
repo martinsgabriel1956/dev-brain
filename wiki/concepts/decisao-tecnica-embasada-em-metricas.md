@@ -3,8 +3,8 @@ type: concept
 title: "Decisão Técnica Embasada em Métricas"
 aliases: ["decisão embasada em números", "justificar adoção com números", "decisão baseada em dados"]
 date_created: 2026-11-03
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [decisao-arquitetural, metricas, prova-de-conceito, over-engineering, comunicacao]
 skill: tech-mentor-backend
 status: stub
@@ -42,7 +42,12 @@ Os exemplos da fonte são ilustrativos, não medições: sair de 5 para 1.000 us
 - [[wiki/concepts/abordagem-evolutiva]] — dados de uso orientando a evolução do produto
 - [[wiki/concepts/porque-das-decisoes-de-design]] — o paralelo em design: cada escolha visual precisa de razão defensável diante do cliente
 
+## Dashboards como apoio à decisão
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], o mesmo princípio aparece no nível do negócio: "para poder tomar alguma decisão a nível empresarial, nós precisamos de dados". Filtros, comparação de períodos e visualização servem para "fazer a minimização de riscos". Ver [[wiki/concepts/dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]]
 - [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: cada linha alterada medida no mesmo teste de carga (2000, 11.000, 13.000) e uma rodada repetida para separar ruído de ganho
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: dashboards como apoio à decisão de negócio

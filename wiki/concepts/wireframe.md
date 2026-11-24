@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade", "design barato e rápido"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 19
+date_updated: 2026-11-24
+source_count: 20
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: draft
@@ -93,6 +93,10 @@ Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-i
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas|aula 10 do módulo Monetização e Freelancer]], o wireframe é a segunda reunião, que "nunca falta": "rabisco é fácil de mudar", mais fácil que alta fidelidade ou código. Evita o erro de desenvolver tudo "sem conferir com o cliente" ([[wiki/concepts/workflow-de-reunioes-do-freela]]).
 
+## Wireframes de dashboard
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] diz que o módulo demorou para "maturar" o arquivo de fluxos e "bons modelos de wireframes" do [[wiki/entities/dash-class|Dash Class]], o primeiro projeto do curso voltado ao painel administrativo e não à landing page. Ver [[wiki/concepts/dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -114,3 +118,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-f
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — hero em roxo, resto branco e cinza
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: wireframes e conteúdo como etapa que evita "o vai e volta"
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: wireframe como reunião de conteúdo com o cliente
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: wireframes e fluxos de dashboard
