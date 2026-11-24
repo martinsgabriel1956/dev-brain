@@ -4,7 +4,7 @@ title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 8
+source_count: 9
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -49,6 +49,10 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], `var x = 0` é dado
 
 Em [[wiki/sources/javascript-ninja-funcoes]], o escopo de função do `var` aparece: `var fernando` dentro de `function qualquer()` não existe fora. Uma função também altera o `var x` de fora (`x = x + 1`), pelo escopo léxico ([[wiki/concepts/escopo-javascript]]).
 
+## No JavaScript Ninja, semana 2, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-lexica]], literais são "valores que não mudam", o que mistura literal com constante: a variável que recebe o literal pode ser reatribuída, e `const` só impede a reatribuição. `let` e `const` também viraram palavras reservadas ([[wiki/concepts/identificadores-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
@@ -59,3 +63,4 @@ Em [[wiki/sources/javascript-ninja-funcoes]], o escopo de função do `var` apar
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: só `var`; variável como "nome simbólico" para um valor
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: var x = 0 chamado de expressão (é instrução)
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: var com escopo de função
+- [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: literal ≠ constante; let/const reservadas

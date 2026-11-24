@@ -28,6 +28,8 @@ Segundo vídeo da segunda leva do [[wiki/entities/javascript-ninja|JavaScript Ni
 - **`++` e `--`** também são unários e, ao contrário de `+`/`-`, "causam o efeito colateral": "ele atribui o novo valor a essa variável" ([[wiki/concepts/incremento-e-decremento]], [[wiki/concepts/efeito-colateral]]).
 - Próximo vídeo: estrutura léxica do JavaScript.
 
+Continua em [[wiki/sources/javascript-ninja-estrutura-lexica]].
+
 ## Key Claims
 
 ### Mais unário
