@@ -27,7 +27,9 @@ Terceiro vídeo da "nossa segunda aula do curso" [[wiki/entities/javascript-ninj
 - **Literais:** "valores que aparecem diretamente no programa": `12`, `1.2`, strings com aspas simples ou duplas, booleanos, objeto (`{}`) e array (`[]`) literais.
 - **Identificadores:** começam com letra, `_` ou `$`; depois aceitam dígitos de 0 a 9 e caracteres Unicode (`var π = 3.14` funciona), "mas você não deve utilizar", pelo bem "dos próximos desenvolvedores" ([[wiki/concepts/identificadores-javascript]]).
 - **Palavras reservadas** (lista na [[wiki/entities/mdn-web-docs|MDN]]) não podem nomear variáveis nem funções; algumas, como `enum`, estão "reservadas pro futuro".
-- Próximo vídeo: o desafio da semana.
+- Próximo vídeo: o desafio da semana (na verdade, `if`; o desafio fica para depois).
+
+Continua em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]].
 
 ## Key Claims
 

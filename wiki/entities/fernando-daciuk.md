@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 7
+source_count: 8
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], se apresenta de novo ("
 
 Em [[wiki/sources/javascript-ninja-estrutura-lexica]], se apresenta ("Fernando da Silva" na legenda) e diz "nossa segunda aula do curso". Usa slides além do terminal e põe links na descrição do vídeo.
 
+## Semana 2, vídeo 04
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], adia o desafio da semana 2 anunciado no vídeo anterior: "nós temos um assunto antes disso". Volta ao REPL, com as demos digitadas ao vivo.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -49,3 +53,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], se apresenta ("Fernando d
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: semana 2, vídeo 01: operadores lógicos
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: semana 2, vídeo 02: operadores unários; se apresenta
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: semana 2, vídeo 03: estrutura léxica; se apresenta
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: semana 2, vídeo 04: if, else e else if

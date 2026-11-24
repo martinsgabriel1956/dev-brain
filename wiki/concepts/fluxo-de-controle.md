@@ -3,8 +3,8 @@ type: concept
 title: "Fluxo de Controle"
 aliases: ["control flow", "estruturas de controle", "if while for"]
 date_created: 2026-05-13
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [fluxo-de-controle, control-flow, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -43,7 +43,12 @@ O `while` captura "repita até chegar no limite". O `if` captura "senha correta?
 - Usa [[estado]] para tomar decisões baseadas em histórico
 - É parte central de [[traducao-logica-para-codigo]]
 
+## Em JavaScript (JavaScript Ninja)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o condicional de JavaScript: `if`, `else` e `else if`, com a cadeia parando na primeira condição verdadeira ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — decisões condicionais e repetições como partes essenciais de algoritmos complexos
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if/else/else if em JavaScript

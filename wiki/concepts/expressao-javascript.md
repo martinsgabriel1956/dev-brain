@@ -4,7 +4,7 @@ title: "Expressão e instrução (JavaScript)"
 aliases: ["expressão", "expression", "instrução", "statement", "expressão vs instrução", "expression vs statement"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [javascript, sintaxe, expressoes, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -32,8 +32,13 @@ Em [[wiki/sources/javascript-ninja-funcoes]], instruções "são como se fossem 
 
 Em [[wiki/sources/javascript-ninja-operadores-unarios]], `-x` e `+x` são expressões que só produzem valor; `x++` produz valor e grava na variável. É a fronteira entre avaliar e ter efeito ([[wiki/concepts/efeito-colateral]]).
 
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` é instrução: escolhe o que executar, não devolve valor. Para escolher um valor, o ternário (`y = x === 2 ? 2 : 10`) é a versão expressão ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: expressão como "frase" avaliada; var x = 0 como exemplo (impreciso)
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: instrução como "sentença"; ponto e vírgula; chamada como expressão
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: -x avalia sem alterar x
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if como instrução

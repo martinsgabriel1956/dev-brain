@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 9
+source_count: 10
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==`
 
 Em [[wiki/sources/javascript-ninja-operadores-logicos]], `x === 3 && y === 7` e `y === '7'` falso "porque eu testei pelo tipo". A segunda metade volta ao `!=` × `!==` com `x = 3` e `'3'`: sem testar o tipo, "isso é bastante problemático"; fique com o estrito. Mesma recomendação desta página. Negar a comparação com `!` "não é utilizado": `x !== 3`, não `!(x === 3)` (e `!x === 3` é outra coisa, por precedência).
 
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], todas as condições do `if` usam `===`, como a aula de igualdade recomendou. Também evita o erro de `if (x = 2)`, que atribui e sempre entra.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
@@ -65,3 +69,4 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], `x === 3 && y === 7` e 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: igualdade anunciada para o próximo vídeo
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: ==, !=, ===, !==; "três igual" por segurança
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: != × !== de novo; === dentro de &&
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: === em todas as condições do if

@@ -4,7 +4,7 @@ title: "Operadores lógicos em JavaScript (&&, ||, !, ??)"
 aliases: ["&&", "||", "!", "??", "AND OR NOT em JavaScript", "curto-circuito", "short-circuit evaluation", "operador E", "operador OU", "operador not", "nullish coalescing"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [javascript, operadores, operadores-logicos, boolean, curto-circuito, precedencia, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -50,7 +50,12 @@ Relacionado: [[wiki/concepts/estruturas-condicionais-javascript]], [[wiki/concep
 
 [[wiki/sources/javascript-ninja-operadores-unarios]], a aula seguinte, não cita o `!`, mas ele é o terceiro unário ao lado de `+x` e `-x`: os três convertem o operando (para booleano ou número) e não alteram a variável ([[wiki/concepts/operadores-unarios-javascript]]).
 
+## No JavaScript Ninja, semana 2, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], `&&` e `||` entram no `if` porque "retornam também valores booleanos": `if (x === y && x === 3)` e `if (x === 5 || ...)`. Com comparações de cada lado, é verdade; com valores quaisquer, o `if` recebe um operando e o converte ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! com comparações estritas
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: ! entre os unários
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: && e || dentro do if

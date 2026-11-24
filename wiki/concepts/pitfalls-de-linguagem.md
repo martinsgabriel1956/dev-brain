@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 8
+source_count: 9
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -87,6 +87,10 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], string com número no `
 
 Em [[wiki/sources/javascript-ninja-estrutura-lexica]], `animal` × `Animal` × `ANIMAL` são nomes diferentes, e o errado dá "não está definido" (`ReferenceError`). A aula anuncia "como separar uma instrução de outra", mas não trata da ASI, que está na seção de ponto e vírgula acima ([[wiki/concepts/estrutura-lexica-javascript]]).
 
+## `if` sem chaves e `if (x = 2)` (JavaScript Ninja, semana 2, vídeo 04)
+
+Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` sempre vem com chaves e `===`. As duas armadilhas que isso evita: sem chaves, só a primeira instrução fica no `if` (o *goto fail* da Apple, 2014); `if (x = 2)` atribui e sempre entra. `[external]` https://www.imperialviolet.org/2014/02/22/applebug.html
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -97,3 +101,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], `animal` × `Animal` × `
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: precedência do ! sobre ===
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena, - converte
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: case sensitive; ASI só anunciada
+- [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: chaves e === no if
