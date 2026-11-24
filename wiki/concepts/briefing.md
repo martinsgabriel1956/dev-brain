@@ -4,7 +4,7 @@ title: "Briefing"
 aliases: ["briefing de design", "briefing com o cliente", "perguntas-chave do projeto"]
 date_created: 2026-11-15
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [ux, ui-design, briefing, levantamento-de-requisitos, cliente, comunicacao]
 skill: ux-ui-mentor
 status: stub
@@ -49,6 +49,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-f
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] anuncia que o DashClass começa por "levantamento de um briefing para poder descobrir quais são as informações que são mais importantes": empresa de nicho quer plataforma específica, "e a gente tira e constrói isso também através de um briefing".
 
+## Perguntar o que é mais importante
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], no levantamento de requisitos de um dashboard: "sempre pergunte ao usuário, qual que é o aspecto mais importante para você?" e mostre o fluxo "em sucessivas reuniões". Ver [[wiki/concepts/pesquisa-com-usuario]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-introducao-tres-pilares-metodologia-prospeccao-monetizacao]]: pré-briefing e workflow de reuniões na aula 9
@@ -57,3 +61,4 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: perguntas antes de cobrar por projeto: o cliente sabe o que quer? prazo? espaço para criatividade?
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: formulário de pré-briefing de marca
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: briefing como começo de um dashboard
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: o que perguntar ao usuário

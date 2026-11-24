@@ -4,7 +4,7 @@ title: "Dash Class"
 aliases: ["DashClass", "Dash Class", "Desk Class", "módulo de dashboards do FrontPUSH"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [projeto, curso, dashboard, plataforma-de-ensino, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -29,8 +29,13 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 
 Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]]: três grids de 12 colunas com offset para a sidebar (o projeto usa o grid 1: coluna 70, gutter 30, offset 240) e sete patterns, todos mostrados em telas de alta fidelidade (login, sidebar, top bar, painel administrativo, vendas, perfil, modais). As telas trazem marcas do [[wiki/entities/como-se-virar|Como se virar]].
 
+## Fluxo de recuperar senha (aula 04)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], o login do DashClass ilustra fluxos bem definidos: "passo 1 de 3, recuperar senha", por e-mail ou telefone, código de verificação, nova senha e redirecionamento, com cancelar e voltar.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: aula 01, introdução
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: origem, escopo, fluxos e painel admin
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grids e patterns
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: recuperar senha em três passos

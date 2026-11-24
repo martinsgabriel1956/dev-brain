@@ -3,8 +3,8 @@ type: concept
 title: "OpenID Connect (OIDC)"
 aliases: ["OIDC", "OpenID Connect", "ID Token", "Entrar com Google", "login social"]
 date_created: 2026-07-27
-date_updated: 2026-08-13
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [oidc, openid-connect, autenticacao, identidade-federada, jwt, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -64,8 +64,13 @@ Esse modelo — identidade emitida por um provedor confiável, verificável crip
 - [[wiki/concepts/ropc-resource-owner-password-credentials]] — antipadrão de não usar OIDC corretamente
 - [[wiki/concepts/pkce]] — mitigação contra interceptação do `authorization_code` em clients públicos
 
+## Login social em interface
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], "logar com o Google, com o GitHub, com o Facebook" aparece como um dos fluxos que saem da tela de login, "dois passos" para o usuário. Por baixo, é OpenID Connect.
+
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — nonce contra replay; escopos e princípio do menor privilégio
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — contexto histórico do OpenID original vs. OIDC; JSON vs. XML; ROPC; fluxo completo
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: login social como fluxo

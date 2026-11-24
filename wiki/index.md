@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-dashboards-principios-parte-1]] | Aula 04 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 18 min, no iPad): quatro princípios contra o excesso de informação: hierarquia visual (contraste, alto e à esquerda, card maior), fluxos definidos com uma ação por tela e passos numerados (login e recuperar senha), gráficos coerentes (pizza para porcentagem, contestável; linha para meses) e pesquisa com o usuário |
 | [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
 | [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]] | Aula 02 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min): o [[wiki/entities/dash-class\|DashClass]] como mix de [[wiki/entities/finclass\|Finclass]], [[wiki/entities/como-se-virar\|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web\|Gustavo Web]], sem copiar fluxos de cliente; "Hotmart mais específica"; escopo, grid de 12 colunas recuado pela sidebar; tour pelos fluxos de usuário, cursos, pagamento, ajuda, login e painel admin |
 | [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] | Aula 01 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]], o [[wiki/entities/dash-class\|Dash Class]] ([[wiki/entities/nasser\|Násser]], 10 min): dashboard como painel de gestão do back-office; genérico × plataforma própria; dados para decidir ("me tragam dados", atribuição a Deming duvidosa); cinco tipos (operacional, financeiro, estratégico, tático, plataformas), que misturam eixos; origem na [[wiki/entities/finclass\|Finclass]] |
@@ -1089,6 +1090,14 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de dashboards aula 04: princípios, parte 1 (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/fluxos-bem-definidos]] | Um objetivo por fluxo, uma ação no centro da tela, passos numerados; tela cheia de ações é resumo, não fluxo |
+| [[wiki/concepts/escolha-de-grafico]] | Gráfico pela pergunta: linha para tempo, barras para categorias; pizza perde para barras (Cleveland & McGill) |
+| [[wiki/concepts/pesquisa-com-usuario]] | Perguntar o que é mais importante, mostrar o fluxo em reuniões sucessivas, entender o dia a dia |
 
 ### FrontPUSH, módulo de dashboards aula 03: grids e patterns (2026-11-24)
 

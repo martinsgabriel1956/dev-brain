@@ -4,7 +4,7 @@ title: "Patterns de dashboard"
 aliases: ["padrões de dashboard", "patterns de web app", "estruturas de dashboard"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [dashboard, padroes-de-interface, login, sidebar, topbar, cards, tabelas, formularios, modal]
 skill: ux-ui-mentor
 status: stub
@@ -28,6 +28,11 @@ A justificativa é a mesma da [[wiki/concepts/lei-de-jakob]]: "se eu ficar mudan
 
 `[skill: ux-ui-mentor]` Para as tabelas, a referência `ux-enterprise-b2b.md` acrescenta chips de filtros ativos, visões salvas, ações em lote com "desfazer", exportação que respeita filtros e estados de vazio e erro.
 
+## Login como ponto de partida de fluxos
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], o pattern de login vira exemplo de fluxo: a tela inicial abre sucesso, senha errada, recuperar senha, criar conta e login social, cada um com subfluxos. Ver [[wiki/concepts/fluxos-bem-definidos]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: os sete patterns do DashClass
+- [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: fluxos que saem do login
