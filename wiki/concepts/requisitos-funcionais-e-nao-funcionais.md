@@ -4,7 +4,7 @@ title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
 date_updated: 2026-11-24
-source_count: 13
+source_count: 14
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -57,6 +57,10 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] promete mostrar "o levantamento de requisito" do [[wiki/entities/dash-class|Dash Class]], uma plataforma de ensino em que o cliente queria medir o engajamento dos alunos além do financeiro.
 
+## Em dashboards (FrontPUSH, aula 05)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: funcional é "uma função que o seu sistema precisa desempenhar" (vendas por região, fluxo de caixa, manter usuários); não funcional, "seguro", "respeite a lei geral de proteção de dados", "rápido", "rode em espelhamento". [[wiki/entities/nasser|Násser]] chama os não funcionais de "arredores [...] por exemplo, perfumaria", o que subestima o peso deles na arquitetura. Do levantamento saem fluxos, [[wiki/concepts/atores-do-sistema|atores]] e banco de dados.
+
 ## Key Sources
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
@@ -70,6 +74,7 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — levantamento de requisitos como proteção contra over-engineering
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — briefing como levantamento de requisitos para UI
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: levantamento de requisitos prometido para o Dash Class
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: funcionais × não funcionais; "perfumaria" contestado
 
 ## Key sources (adição 2026-10-07)
 

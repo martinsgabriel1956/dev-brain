@@ -4,7 +4,7 @@ title: "Dash Class"
 aliases: ["DashClass", "Dash Class", "Desk Class", "módulo de dashboards do FrontPUSH"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [projeto, curso, dashboard, plataforma-de-ensino, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -33,9 +33,14 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], o login do DashClass ilustra fluxos bem definidos: "passo 1 de 3, recuperar senha", por e-mail ou telefone, código de verificação, nova senha e redirecionamento, com cancelar e voltar.
 
+## Requisitos prometidos (aula 05)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] explica o método (requisitos, atores, entidades, CRUD, atributos) e anuncia "um breve levantamento de requisitos" do DashClass nas próximas aulas.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: aula 01, introdução
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: origem, escopo, fluxos e painel admin
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grids e patterns
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: recuperar senha em três passos
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: método de requisitos antes do DashClass

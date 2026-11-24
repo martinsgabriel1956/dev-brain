@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-24
-source_count: 42
+source_count: 43
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -201,6 +201,10 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], a hierarquia é o primeiro princípio de dashboard: o mais importante, definido com o usuário, ganha mais contraste, fica "o mais alto possível e mais à esquerda possível" e vai "num card maior do que os outros". Com "300 coisas na tela", ela precisa ser "bem mais aprimorada" que numa landing page.
 
+## Cinco regras resumidas (aula 05)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], o resumo: "aquilo que está maior, aquilo que está em uma forma diferente, [...] em um contraste maior, [...] no topo, [...] para a esquerda, eu enxergo primeiro."
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -245,3 +249,4 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de 
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — leitura em Z e em F; botão no caminho do Z; padrão do G1
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: navegação como hierarquia
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: hierarquia como primeiro princípio
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: tamanho, forma, contraste, topo, esquerda

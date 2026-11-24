@@ -4,7 +4,7 @@ title: "Fluxos bem definidos (uma ação por fluxo)"
 aliases: ["fluxo bem definido", "uma tela para cada fluxo", "step by step", "passo a passo", "fluxo com objetivo único"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [ux-design, fluxos, foco, wizard, stepper, dashboard, login]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,11 @@ No [[wiki/entities/dash-class|DashClass]]: recuperar senha em "passo 1 de 3", po
 
 Relacionado: [[wiki/concepts/carga-cognitiva]], [[wiki/concepts/patterns-de-dashboard]].
 
+## Nomear o fluxo (aula 05)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: "coloque uma ação em cada tela" e saiba nomear o fluxo de forma específica ("recuperar senha por SMS", "por e-mail", "uma venda"). "Quanto mais específico você for, [...] mais direcionado." O custo: "vai ter muita tela", fantástico para a experiência, "mas vai dar muito trabalho".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: definição, o desenho das bolinhas, o fluxo de recuperar senha
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: nomear fluxos; o custo de muitas telas

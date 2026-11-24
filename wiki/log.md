@@ -16105,3 +16105,15 @@ O usuário confirmou que a aula 04 ([[wiki/sources/frontpush-otimizacao-de-image
 **Tocadas (14 existentes):** hierarquia-visual, contraste, caminho-feliz, poder-da-barra-de-progresso-e-do-check, densidade-de-informacao, carga-cognitiva, openid-connect, feedback-do-sistema, dashboard, patterns-de-dashboard, briefing (concepts); dash-class, material-design, nasser (entities). Também index.md e log.md.
 
 **Notas:** (1) **Contradição com a literatura:** "pizza para porcentagem, faria pouco sentido em barras" vai contra Cleveland & McGill, que a skill usa (barras são lidas com mais precisão). (2) "Alto e à esquerda" vale para leitura LTR. (3) "Uma tela para cada" é por fluxo, não por campo; a skill limita wizard a formulários longos. (4) Login social é OpenID Connect sobre OAuth 2.0. (5) Ingest feito num worktree separado do branch `claude/frontpush-dashboards-aula-01-introducao`, porque outra sessão estava commitando no checkout principal.
+
+## [2026-11-24] ingest | FrontPUSH, módulo de dashboards aula 05: princípios, parte 2
+
+**Fonte:** legenda SRT `transcricoes/FrontPUSH/05: Princípios pt.2.pt_br.srt` (PT-BR, 272 blocos, cerca de 17 min, aula desenhada no iPad), limpa com a skill **text-cleaner** em `raw/frontpush-dashboards-principios-parte-2.md`. Sem tradução; 1 título e 9 subtítulos `##`. Diff palavra a palavra sem pontuação, caixa nem hífens: 2.454 tokens no original e 2.452 na limpa; as únicas trocas são de ASR: "Dash Class"→DashClass (2×), "Nárcio"→Násser. Só de hífen: "e -mail"→e-mail, "Lembre -se"→Lembre-se. Nenhuma inserção entre colchetes. Mantidos literalmente: "relação especial" (provavelmente "espacial"), "rode em espelhamento", "eu já voltei o gerente", "eu venho os registros", "tanto para designers", "os funcionais e não os funcionais". As nove capturas do quadro enviadas pelo usuário entraram na página de source.
+
+**Skill:** ux-ui-mentor (`references/ux-enterprise-b2b.md` §RBAC e permissões na interface). A aula é de fronteira (requisitos e modelagem de dados), mas fica com a skill do módulo, uma por ingest. Sem `[external]` novo.
+
+**Criado:** [[wiki/sources/frontpush-dashboards-principios-parte-2]], [[wiki/concepts/atores-do-sistema]], [[wiki/concepts/atributos-como-campos-de-formulario]].
+
+**Tocadas (13 existentes):** requisitos-funcionais-e-nao-funcionais, crud, modelagem-de-dados, chave-estrangeira, rbac, lgpd, botoes-em-interfaces, fluxos-bem-definidos, hierarquia-visual, briefing, dashboard (concepts); dash-class, nasser (entities). Também index.md e log.md.
+
+**Notas:** (1) "Não funcional é perfumaria" contestado: segurança, desempenho e LGPD costumam ser os requisitos mais caros de mudar. (2) "CRUD universal" vale como pergunta; vendas são canceladas, não deletadas, e a LGPD conflita com a guarda fiscal. (3) **Tensão com a aula 03:** lá se começa pelos grids e patterns; aqui, requisitos primeiro. (4) Ator é papel e pode ser sistema externo. (5) Atributo e campo não são 1:1. (6) Ingest feito de novo num worktree separado do branch `claude/frontpush-dashboards-aula-01-introducao`, porque outra sessão usa o checkout principal.

@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-24
+source_count: 7
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -52,6 +52,10 @@ Um simulador de supermercado é citado como projeto ideal para exercitar modelag
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy é modelado em três tabelas (professor 1:N aula 1:N horário). Os horários viram inteiros para permitir `<=` e `>`, e a matéria vira um número que o servidor traduz com `getSubject`. Ver [[wiki/concepts/normalizacao-de-dados]].
 
+## Do requisito à entidade (FrontPUSH)
+
+Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]], a modelagem sai dos requisitos: atores viram usuários, usuários e vendas viram entidades, atributos viram campos de formulário, e as relações (venda → comprador, funcionário) definem banco, formulário e filtros. Ver [[wiki/concepts/atributos-como-campos-de-formulario]].
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -60,3 +64,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy é modela
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — critério prático de escolha SQL vs. NoSQL baseado em existência de relação entre entidades
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — simulador de supermercado como projeto de aprendizado de modelagem de domínio
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: proffys, classes, class_schedule
+- [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: entidades, atributos e relações a partir dos requisitos
