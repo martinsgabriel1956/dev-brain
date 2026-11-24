@@ -3,8 +3,8 @@ type: concept
 title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
-date_updated: 2026-11-16
-source_count: 10
+date_updated: 2026-11-24
+source_count: 13
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -85,6 +85,18 @@ Em [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]], `typeof fruta
 
 Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o JSON aceita número, string, booleano, objeto e array; a aula esquece o `null`. `[external]` `undefined`, `Symbol` e funções somem no `JSON.stringify`, `NaN`/`Infinity` viram `null`, e `BigInt` lança `TypeError` (`[skill: lang-dynamic]`, `nodejs-patterns-runtime.md`).
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], a lista é number, string, boolean, null, undefined, object e array. Inteiro e decimal são o mesmo number ("float, ou como números reais"); `[external]` todo number é double IEEE 754, por isso `0.1 + 0.2 !== 0.3`. Array não é tipo próprio (`typeof []` dá `"object"`), e faltam `symbol` e `bigint`, posteriores à aula. A mesma `x` recebe valores de vários tipos: o tipo está no valor ([[wiki/concepts/sistema-de-tipos]]).
+
+## No JavaScript Ninja, aula 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `'1'` e `1` são de tipos diferentes ("eu sei que não é um número, porque ele está entre [...] aspas simples"): `==` os iguala, `===` não. `[external]` `NaN` é o único valor diferente de si mesmo (`NaN !== NaN`); para testar, `Number.isNaN`.
+
+## No JavaScript Ninja, aula 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], `soma()` sem argumentos dá `NaN`, "not a number": `undefined + undefined` não é número. `[external]` `typeof NaN` é `"number"`; testa-se com `Number.isNaN`.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
@@ -97,3 +109,6 @@ Em [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]], o JSO
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: "toda variável já é um objeto"
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: typeof de array
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: tipos aceitos pelo JSON
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: sete tipos com array no lugar de symbol e bigint; inteiro e decimal no mesmo number
+- [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: '1' × 1 com == e ===
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: NaN em soma() sem argumentos

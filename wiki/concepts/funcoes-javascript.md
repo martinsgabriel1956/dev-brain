@@ -3,8 +3,8 @@ type: concept
 title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 20
+date_updated: 2026-11-24
+source_count: 21
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -85,6 +85,10 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], as funções `ar
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desestruturação vai para a lista de parâmetros: `function mouseMove({ clientX, clientY })`. Chamada sem argumento, uma função assim lança `TypeError`.
 
+## No JavaScript Ninja, aula 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], função é "um bloco de código JavaScript nomeado e que pode ser invocado usando o operador abre e fecha parênteses". Mostra no REPL: `soma()` executa, `soma` mostra a função sem executar; sem `return`, `undefined`; funções "criam um escopo" ([[wiki/concepts/escopo-javascript]]); `return` devolve valor (`y + cinco()` = 9); `soma(x, y)` sem argumentos dá `NaN`. Chama de "argumentos" os parâmetros da declaração e não mostra função anônima.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -107,3 +111,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a desest
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: funções exportadas
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação no parâmetro
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: function, const + function e const + arrow como três formas de componente
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: declarar, invocar, escopo, return, parâmetros e NaN

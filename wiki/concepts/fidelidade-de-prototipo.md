@@ -3,8 +3,8 @@ type: concept
 title: "Fidelidade de protótipo"
 aliases: ["fidelidade", "baixa fidelidade", "média fidelidade", "alta fidelidade", "lo-fi", "hi-fi", "espectro de fidelidade"]
 date_created: 2026-11-15
-date_updated: 2026-11-23
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [ux, ui, prototipagem, wireframe, fidelidade, processo-de-design]
 skill: ux-ui-mentor
 status: stub
@@ -38,7 +38,12 @@ Násser pulou o wireframe cinza no [[wiki/entities/frontpush]] e foi do esboço 
 - [[wiki/concepts/page-map]] — vem antes de qualquer nível de tela.
 - [[wiki/concepts/style-guide]] — entra só na alta fidelidade.
 
+## Home ainda em wireframe
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], a home do DashClass aparece "em modelos de wireframes, ainda não subi para alta, alta, alta fidelidade", enquanto outros fluxos já estão em UI.
+
 ## Key Sources
 
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — papel (baixa), wireframe cinza (média), protótipo final com style guide (alta)
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: baixa fidelidade na 2ª reunião, alta na 3ª, para mudar barato
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: telas em fidelidades diferentes no mesmo arquivo

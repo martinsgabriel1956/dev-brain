@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-11-17
-source_count: 20
+date_updated: 2026-11-24
+source_count: 21
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -105,6 +105,10 @@ Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], a conti
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `const [marca1, marca2, marca3, marca4] = carros` pega as marcas por posição: "array, colchetes". Também existem pulo (`[a, , c]`), resto (`[a, ...resto]`) e valor padrão ([[wiki/concepts/desestruturacao-javascript]]).
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o array é "uma lista de valores" com índice a partir de 0 (`numeros[3]` dá `4`), e "no JavaScript não existem arrays [...] eles nada mais são do que objetos". `[external]` Arrays são objetos com índices como chaves (`numeros['3']` funciona), mas especiais: `length` automático e `Array.prototype`. Ver [[wiki/concepts/notacao-de-ponto-e-colchetes]].
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -127,3 +131,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `const [
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach e map
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação de array
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: arrays porque o JSON das APIs é "objetos e arrays"
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: lista indexada a partir de 0; "arrays são objetos"

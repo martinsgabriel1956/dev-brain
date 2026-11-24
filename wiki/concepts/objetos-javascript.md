@@ -3,8 +3,8 @@ type: concept
 title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 9
+date_updated: 2026-11-24
+source_count: 10
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -65,6 +65,10 @@ Em [[wiki/sources/frontpush-modules-js-import-export-default]], um objeto `retan
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o objeto do evento `mousemove` ("o tanto de características": `clientX`, `pageX`, `offsetX`, `detail`...) é o exemplo de onde tirar só duas propriedades com desestruturação ([[wiki/concepts/desestruturacao-javascript]]).
 
+## No JavaScript Ninja, aula 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o objeto é "um dos temas mais importantes em JavaScript": literal `{ altura: 1.87, peso: 90 }`, leitura com ponto e escrita pela "própria notação de objeto" (`pessoa.altura = 1.90` muda só aquela propriedade). `pessoa['altura']` também funciona, e é a prova de que arrays "nada mais são do que objetos" ([[wiki/concepts/notacao-de-ponto-e-colchetes]]). Método não aparece.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -76,3 +80,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], o objeto
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: objeto como export default
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: evento como objeto desestruturado
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: objetos como primeiro item do checklist; "praticamente tudo [...] é objeto"
+- [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: literal, ponto para ler e escrever, colchetes com string

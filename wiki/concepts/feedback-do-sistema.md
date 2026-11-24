@@ -3,8 +3,8 @@ type: concept
 title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-20
-source_count: 11
+date_updated: 2026-11-24
+source_count: 12
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -72,6 +72,10 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 
 Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]], erro vermelho, celular que vibra na senha errada e informação que pisca "facilita o usuário perceber o que precisa ser corrigido". Ressalvas: cor não pode ser o único sinal (WCAG 1.4.1, 3.3.1), piscar tem limite de três vezes por segundo (WCAG 2.3.1) e a Vibration API não existe no Safari/iOS. Ver [[wiki/concepts/microinteracao]].
 
+## Modais de feedback no dashboard
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], o feedback do DashClass vem em modais: "Você ainda está aí?" (autoplay), "Oops... Aconteceu um erro!" com "Tentar novamente", "Dúvida enviada com sucesso!" e a confirmação de compra com número do pedido.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -85,3 +89,4 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — hover como variação mais escura ou mais clara da cor do botão
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader como feedback de espera
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: erro em vermelho, vibração e piscar
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: modais de erro, sucesso e confirmação

@@ -3,8 +3,8 @@ type: concept
 title: "Style guide (guia de estilo)"
 aliases: ["guia de estilo", "styleguide", "style-guide", "guia de estilos", "UI kit", "guia visual", "style guide de UI", "guia de estilo de interface", "style guide de interface", "mapa de design"]
 date_created: 2026-11-15
-date_updated: 2026-11-23
-source_count: 12
+date_updated: 2026-11-24
+source_count: 13
 tags: [ui, ui-design, style-guide, design-system, consistencia, cor, tipografia, figma, documentacao, handoff, design-tokens, css, prototipagem]
 skill: ux-ui-mentor
 status: stub
@@ -103,6 +103,10 @@ O style guide descarta o `position` do Figma, mas a aula de CSS do curso ([[wiki
 
 Em [[wiki/sources/frontpush-variaveis-sass]], o style guide do projeto Nubank é a origem das `$variáveis`: "está tudo documentado, as determinadas cores com seus hexadecimais". Um erro no próprio guia: a fonte aparecia como Montserrat, mas é Sora.
 
+## No arquivo do DashClass
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], style guide e grids ficam numa aba própria do arquivo do DashClass, ao lado das inspirações e das telas.
+
 ## Key Sources
 
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — definição, momento no workflow e conteúdo do style guide do Nubank
@@ -117,3 +121,4 @@ Em [[wiki/sources/frontpush-variaveis-sass]], o style guide do projeto Nubank é
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: style guide com ícones e tipografia como entregável da oferta
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: "pente fino" de style guide na 3ª reunião
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: "Styleguide completo para interfaces web" como bloco separado do orçamento
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: aba de style guide e grids

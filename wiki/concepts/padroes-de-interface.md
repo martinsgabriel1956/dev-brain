@@ -3,8 +3,8 @@ type: concept
 title: "Padrões de Interface (UI Patterns)"
 aliases: ["ui patterns", "padrões de ui", "design patterns de interface", "interaction patterns", "padrões de interação"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 16
+date_updated: 2026-11-24
+source_count: 17
 tags: [ui, ux, design, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: draft
@@ -96,6 +96,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], [[wiki/entities/nasser|Násser]] usa Kabum, Magazine Luiza e Netshoes: a UI "coincidentemente nunca mudou", e qualquer redesign viria em "pequenas mudanças ao longo do tempo", porque "qualquer coisa da jornada do usuário que eu modifique nesse tipo de loja vai afetar diretamente a venda". A barra de busca grande no topo, "com um bom contraste", volta como exemplo, agora contra o "iconezinho" do menu. Também mostra um arquivo de wireframes com padrões por tipo de seção ([[wiki/concepts/biblioteca-de-wireframes]]) e conclui: "UI hoje, pessoal, você precisa de pattern". Para criar algo diferente, combine padrões diferentes ([[wiki/concepts/modelar-referencias]]).
 
+## Patterns de dashboard
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] lista sete patterns que estão em "todo e qualquer Dashboard": login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários e modais. Ver [[wiki/concepts/patterns-de-dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: padrão → componente → produtividade; contra cobrar por hora
@@ -114,3 +118,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — patterns como base de fácil aprendizado e memorabilidade; atalhos do Photoshop
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — padrões e heurísticas como base da usabilidade; "não reinventar a roda"
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — Kabum, Magalu e Netshoes; mudar pattern no e-commerce "afeta diretamente a venda"
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: os sete patterns de dashboard

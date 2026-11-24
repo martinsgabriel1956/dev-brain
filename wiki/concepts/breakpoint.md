@@ -3,8 +3,8 @@ type: concept
 title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
-date_updated: 2026-11-20
-source_count: 16
+date_updated: 2026-11-24
+source_count: 17
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -110,6 +110,10 @@ Em [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]
 
 Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]], Násser diz que o keyframe "é literalmente um breakpoint, um ponto" na linha do tempo. É o sentido comum de "ponto de parada", não o breakpoint de layout desta página. Ver [[wiki/concepts/keyframes-css]].
 
+## Dashboard: desktop primeiro
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], o grid de dashboard é desenhado fixo em 1440 × 900 e os breakpoints ficam para depois: "vamos primeiro no Desktop, depois a gente faz a adaptação para o Mobile". Como o layout ocupa 1.410 px, notebooks de 1366 px já pedem o comportamento fluido. Ver [[wiki/concepts/grid-de-dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — definição, media query abaixo de 960 px, quebra na landing page do FrontPUSH
@@ -128,3 +132,4 @@ Em [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: escala xl–xs; 540/960/1140 são containers do Bootstrap 4
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: breakpoint de 960 px
 - [[wiki/sources/frontpush-principios-motion-linha-do-tempo-keyframes-transicao-entre-estados]]: FrontPUSH, mini curso de CSS Animations, aula 03: keyframe chamado de "breakpoint"
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grid fixo, breakpoints prometidos

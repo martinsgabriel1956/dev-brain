@@ -3,8 +3,8 @@ type: concept
 title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
-date_updated: 2026-11-22
-source_count: 12
+date_updated: 2026-11-24
+source_count: 13
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -84,6 +84,10 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos|aula 02 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz que o que agrega ao cliente "nem sempre é um recurso de design, é uma decisão": "isso aqui é mais inteligente por causa disso, disso e disso". Senso crítico com argumento técnico ou empírico é o que deixa cobrar mais.
 
+## Porquê tela a tela (Dash Class)
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], [[wiki/entities/nasser|Násser]] adia a teoria: "eu deixo pra explicar o porquê das decisões quando eu já estiver apresentando as telas pra vocês". O porquê vem colado à tela, não antes dela.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: valor como decisão; argumento técnico ou empírico
@@ -98,3 +102,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — dividir line-height pelo tamanho da fonte para entender a escolha
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificação tipográfica como base para justificar a fonte
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — ter um porquê na escolha de fonte
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: o porquê explicado na apresentação das telas

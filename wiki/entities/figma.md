@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-23
-source_count: 60
+date_updated: 2026-11-24
+source_count: 63
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -198,6 +198,18 @@ Em [[wiki/sources/frontpush-estrutura-svg-viewport-viewbox-formas-basicas-path-d
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] diz que o designer deve escolher o Figma pela comunidade: features, plugins e "muito material [...] de forma gratuita" no Figma Community. "Isso é ferramenta, não é o mais importante."
 
+## Arquivo do Dash Class
+
+Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], o módulo de dashboards vive num arquivo do Figma com fluxos, modelos de wireframe e uma página "de aulas" com os slides. Ver [[wiki/entities/dash-class]].
+
+## Arquivo do DashClass por dentro
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]]: abas de inspirações (prints de cards, gráficos e esquemas), style guide e grids, telas dos fluxos (home ainda em wireframe) e página de aulas.
+
+## Layout grid tipo Left (DashClass)
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]]: grid de 12 colunas tipo Left (não Center nem Stretch), largura fixa de coluna, gutter e offset para a sidebar, em frame de 1440 × 900; para inspecionar, ligar a visibilidade do grid e abrir os ajustes.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolher Figma pela comunidade
@@ -260,3 +272,6 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: layout da próxima versão do portfólio do Násser
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: medir as horas do design para precificar
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: FrontPUSH, Monetização e Freelancer aula 10: protótipo de baixa fidelidade na 2ª reunião; arquivo entregue na 4ª
+- [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: arquivo do Dash Class
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: abas do arquivo do DashClass
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: layout grid com offset

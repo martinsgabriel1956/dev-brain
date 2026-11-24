@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-23
-source_count: 47
+date_updated: 2026-11-24
+source_count: 48
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -114,6 +114,10 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 
 Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o Gemini aparece como alternativa ao ChatGPT para escrever prompts, e o [[wiki/entities/nano-banana-pro]] (Gemini 3 Pro Image) como a ferramenta para alterar fotos existentes, usada no plano gratuito.
 
+## Launcher de apps como pattern
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] usa o ícone de apps do Google (grade de 3 × 3 pontos com Conta, Pesquisa, Maps, YouTube, Gmail, Documentos) como exemplo de pattern de dashboard e web app para alternar entre aplicativos sem lotar a tela.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -141,6 +145,7 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o Gemini 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — tags meta e visibilidade no Google
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google Brasil no Levels.fyi, vesting, vagas por país, contratação por time
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: Gemini e Nano Banana Pro
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: launcher de apps
 
 ## Adição (2026-10-14)
 

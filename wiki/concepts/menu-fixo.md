@@ -3,8 +3,8 @@ type: concept
 title: "Menu fixo (fixed e sticky header)"
 aliases: ["menu fixo no topo", "sticky header", "fixed header", "header fixo", "navbar fixa", "menu grudado"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [ui, ux, css, navegacao, menu, position, sticky, padroes-de-interface]
 skill: tech-mentor-frontend
 status: stub
@@ -32,8 +32,13 @@ Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], o autor 
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]]: menu → itens → links, "sempre um debaixo do outro, um dentro do outro", e uma classe `.active` no link da página atual, "até mesmo em um próprio menu responsivo".
 
+## Do topo para o lado
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], a sidebar do dashboard "é como se fosse o menu das nossas Landing Pages": o menu fica no topo "por um Pattern", e no dashboard a navegação principal vai para a lateral. Ver [[wiki/concepts/sidebar]].
+
 ## Key Sources
 
 - [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: fixed para menus, demonstração do sticky numa `nav`, truque do menu mobile
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]: menu fixo da Apple como padrão de usabilidade
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: estrutura e `.active` do menu no Sass
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: sidebar como o menu do dashboard

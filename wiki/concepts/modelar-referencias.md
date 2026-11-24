@@ -3,8 +3,8 @@ type: concept
 title: "Modelar referências (vs. copiar interfaces)"
 aliases: ["modelagem de referências", "modelar, não copiar", "copiar vs modelar", "repertório de referências", "biblioteca de referências"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [ui-design, referencias, pesquisa, repertorio, processo-de-design]
 skill: ux-ui-mentor
 status: stub
@@ -32,6 +32,11 @@ Juntar pedaços de várias referências e adaptá-los à identidade do projeto, 
 
 `[external]` A lei brasileira (Lei 9.610/98, art. 8º) não protege ideias nem métodos, então uma estrutura de seção é livre; ilustrações, textos, fotos e código não são (média; não é parecer jurídico). Ver Precisões em [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]].
 
+## Modelar sem expor o cliente
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], a modelagem ganha um motivo ético: "pelo profissionalismo, eu não posso literalmente trazer o fluxo" dos clientes. O [[wiki/entities/dash-class|DashClass]] é "um mix dessas plataformas", com "a essência dos pilares". A aba de inspirações do arquivo repete o método: prints de vários lugares para "dar a primeira partida no nosso cérebro".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — "modelar, não copiar"; caso Nubank; site do Jonas Miller
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: mix de três plataformas; aba de inspirações

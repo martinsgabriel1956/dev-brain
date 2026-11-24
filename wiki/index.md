@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-21
+date_updated: 2026-11-24
 ---
 
 
@@ -26,6 +26,13 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-funcoes]] | Aula 04 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13 min, REPL do Node): função como bloco nomeado invocado com `()`; `soma` × `soma()`; ponto e vírgula "sempre"; reuso alterando o `x` de fora; escopo de função; `return`; parâmetros e `NaN`. Função pode ser anônima; parâmetro ≠ argumento; ASI; efeito colateral |
+| [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]] | Aula 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min, REPL do Node): `=` atribui, `==`/`!=` comparam e convertem (`'1' == 1`), "tipagem fraca, dinâmica"; `===`/`!==` testam o tipo e são "mais seguros"; relacionais com o mnemônico do jacaré. `!==` não é "mesmo tipo"; relacionais convertem diferente (`'10' < '9'`) |
+| [[wiki/sources/javascript-ninja-operadores-aritmeticos]] | Aula 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, REPL do Node): expressão como "frase" avaliada; quatro aritméticos (+ - * /); espaços só por legibilidade; ++/-- pré e pós pelo eco do REPL; +=, -=, *=, /=. var x = 0 é instrução, não expressão; faltam % e **; ++ converte string, += concatena |
+| [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]] | Aula 01, parte 2, do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 15 min, REPL do Node, era ES5): variável como "nome simbólico" com `var`; number (inteiro e float), string (aspas simples = duplas), boolean, null e undefined "a mesma coisa"; objeto literal com ponto; array indexado a partir de 0; "arrays são objetos" via `pessoa['altura']`. undefined ≠ variável inexistente (ReferenceError); ponto não é "mais rápido" |
+| [[wiki/sources/frontpush-dashboards-grids-e-patterns]] | Aula 03 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 15 min): três grids de 12 colunas tipo Left com offset para a sidebar (70/30/240, 80/30/120, 66/30/280) em 1440 × 900, container curto para PCs de empresa; sete patterns (login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais); "psicologia das cores" que é cor semântica |
+| [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]] | Aula 02 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min): o [[wiki/entities/dash-class\|DashClass]] como mix de [[wiki/entities/finclass\|Finclass]], [[wiki/entities/como-se-virar\|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web\|Gustavo Web]], sem copiar fluxos de cliente; "Hotmart mais específica"; escopo, grid de 12 colunas recuado pela sidebar; tour pelos fluxos de usuário, cursos, pagamento, ajuda, login e painel admin |
+| [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] | Aula 01 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]], o [[wiki/entities/dash-class\|Dash Class]] ([[wiki/entities/nasser\|Násser]], 10 min): dashboard como painel de gestão do back-office; genérico × plataforma própria; dados para decidir ("me tragam dados", atribuição a Deming duvidosa); cinco tipos (operacional, financeiro, estratégico, tático, plataformas), que misturam eixos; origem na [[wiki/entities/finclass\|Finclass]] |
 | [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] | Mentoria ao vivo do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 54 min) sobre "os principais itens de UI": pesquisa antes de tudo, patterns de e-commerce (Kabum, Magalu, Netshoes), três fontes diárias (Lapa Ninja, Dribbble, Behance), [[wiki/concepts/modelar-referencias\|modelar, não copiar]] no projeto Nubank, arquivo de wireframes, tópicos, botão vs. link, leitura em Z e em F, Who Can Use, três cores de fundo e 60-30-10 |
 | [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]] | Módulo de IA, aula 01, do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 38 min: mídia de um site de produto "estilo Apple" para um joystick, com [[wiki/concepts/animacao-por-sequencia-de-frames-no-scroll\|frames no scroll]]; [[wiki/concepts/pipeline-de-midia-com-ia\|fluxo]] ChatGPT/Gemini escreve os prompts por áudio → [[wiki/entities/midjourney\|Midjourney]] (foto do zero) ou [[wiki/entities/nano-banana-pro\|Nano Banana Pro]] (alterar foto, tirar logos) → [[wiki/entities/kling-ai\|Kling AI]] ([[wiki/concepts/start-frame-e-end-frame\|start/end frame]]) → [[wiki/entities/topaz-video\|Topaz Video]] ([[wiki/concepts/upscaling-com-ia\|upscale]] 2x, 4K60) → 1080p30 no site; "quando você não especifica ele inventa"; custos de cada ferramenta; método antes de IA nova. Precisões: "CleanAI" = Kling, tirar o logo não tira o desenho industrial, SynthID, upscale inventa detalhe, preços com lapsos |
 | [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]] | Módulo Monetização e Freelancer, aula 10 ("boas ofertas, parte 2"), do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]), 23 min: [[wiki/concepts/workflow-de-reunioes-do-freela\|quatro reuniões]] (pré-briefing + metodologia + contrato; wireframes, jornada e conteúdo; alta fidelidade e dev; só entrega) com [[wiki/concepts/pagamento-por-etapas\|pagamento 30/20/30/20]]; "nunca comece sem receber", recusar 30% de entrada é sinal de mau cliente, "pagou 80%" não some; formulário de [[wiki/concepts/briefing\|pré-briefing]] de marca; orçamento em 5-7 dias, cronograma de ~39 dias. Precisões: falta o que vai no contrato (revisões, escopo, direitos), percentuais e prazos somados |
@@ -1086,6 +1093,53 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, aula 04: funções (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/escopo-javascript]] | Global, de função e de bloco; léxico (de dentro vê o de fora); sombreamento; global acidental; ReferenceError |
+
+### JavaScript Ninja, aula 03: operadores de igualdade e relacionais (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operadores-relacionais-javascript]] | `<`, `>`, `<=`, `>=`: strings comparam como texto (`'10' < '9'`), tipos mistos viram número, `null >= 0`, NaN sempre false |
+
+### JavaScript Ninja, aula 02: operadores aritméticos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/expressao-javascript]] | Expressão produz valor (`x = 0`, `a + b`); instrução executa (`var x = 0`, `if`); onde a diferença aparece |
+| [[wiki/concepts/incremento-e-decremento]] | `x++` devolve o antigo, `++x` o novo; só importa quando o valor é usado; converte string para número |
+| [[wiki/concepts/atribuicao-composta]] | `x op= y` = `x = x op y`; aritméticas, bit a bit e lógicas (`??=`, ES2021); `+=` concatena string |
+
+### JavaScript Ninja, aula 01, parte 2: variáveis e tipos de dados (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/notacao-de-ponto-e-colchetes]] | `obj.chave` × `obj['chave']`: ponto para chave fixa, colchetes para dinâmica ou não identificador; mesma velocidade |
+
+### FrontPUSH, módulo de dashboards aula 03: grids e patterns (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/grid-de-dashboard]] | 12 colunas tipo Left com offset para a sidebar; três variações do DashClass; container curto; fixo no Figma, fluido no código |
+| [[wiki/concepts/patterns-de-dashboard]] | Login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais: os sete patterns de todo dashboard |
+| [[wiki/concepts/sidebar]] | Navegação lateral, "o menu das landing pages" no dashboard; recolhida, expandida e sub-sidebar |
+
+### FrontPUSH, módulo de dashboards aula 02: overview do DashClass (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/gamificacao]] | Mecânicas de jogo para engajar; o forte do Como se virar; conquistas e progresso no DashClass; quando falha |
+
+### FrontPUSH, módulo de dashboards aula 01: introdução (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/dashboard]] | Plataforma de gestão com tabelas e gráficos; interface de decisão, não de exibição; genérico × plataforma |
+| [[wiki/concepts/tipos-de-dashboard]] | Operacional, financeiro, estratégico, tático, plataformas: três eixos misturados; a skill acrescenta o analítico |
 
 ### FrontPUSH, mentoria de UI Design (2026-11-23)
 
@@ -4186,6 +4240,12 @@ date_updated: 2026-11-21
 
 ## Entities
 
+- [[wiki/entities/fernando-daciuk]] — instrutor do curso JavaScript Ninja ("Fernanda Gentil" na legenda)
+- [[wiki/entities/javascript-ninja]] — curso de JavaScript de Fernando Daciuk, era ES5 (não confundir com o Lapa Ninja)
+- [[wiki/entities/como-se-virar]] — plataforma de ensino gamificada de uma dupla de médicos para calouros de medicina (CSV); origem do DashClass
+- [[wiki/entities/gustavo-web]] — professor de PHP (ex-UpInside, Black Dev); Násser desenhou a plataforma dele
+- [[wiki/entities/dash-class]] — módulo e projeto de dashboards do FrontPUSH: plataforma de ensino com painel administrativo
+- [[wiki/entities/finclass]] — streaming de educação financeira do Grupo Primo; Násser ajudou no player de vídeo
 - [[wiki/entities/lapa-ninja]] — galeria de landing pages por categoria; uma das três fontes diárias do Násser
 - [[wiki/entities/behance]] — portfólios criativos da Adobe; uma das três fontes diárias do Násser
 - [[wiki/entities/halo-lab]] — estúdio de design (ucraniano, não "americano") a seguir no Dribbble
