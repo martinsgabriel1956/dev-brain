@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 167
+source_count: 168
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -378,6 +378,10 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de 
 
 Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]], faz no iPad o levantamento de requisitos do DashClass (três atores, três entidades, gamificação) e descreve como conduz reuniões com clientes: perguntas abertas, avaliar viabilidade na hora, voltar com dúvidas.
 
+## Módulo de dashboards, aula 07
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], desenha no iPad os fluxos e a Home do DashClass, recomenda sketchbook ("já fazendo meu merchan") e ticar os requisitos, e explica o modo escuro da plataforma. Corrige na hora "Dark Pattern" para "modo Dark".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -547,3 +551,4 @@ Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: princípios no iPad
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: levantamento de requisitos
 - [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: levantamento do DashClass
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos, Home e modo escuro

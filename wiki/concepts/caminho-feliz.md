@@ -4,7 +4,7 @@ title: "Caminho Feliz"
 aliases: ["happy path", "fluxo principal", "golden path"]
 date_created: 2026-05-13
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [caminho-feliz, happy-path, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -38,7 +38,12 @@ O que não está aqui: senha errada, saldo insuficiente, cartão bloqueado, caix
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] chama de "fluxo do sucesso" o caminho em que "o usuário não fez nada de errado" e pede para mapear os outros a partir da mesma tela: senha errada, esqueci a senha, criar conta, login social. Ver [[wiki/concepts/fluxos-bem-definidos]].
 
+## Primeiro fluxo a desenhar
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: "qual que é o primeiro fluxo? É o fluxo do sucesso. É como se nada tivesse dado errado": login, boas-vindas, cadastro, e "quais são as primeiras mensagens que vão aparecer".
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: "fluxo do sucesso" no login
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxo do sucesso primeiro

@@ -26,6 +26,7 @@ date_updated: 2026-11-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]] | Aula 07 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 20 min, iPad e Figma): do levantamento às telas: fluxos do login (sucesso, esqueci a senha, Google), Home como hub (continue de onde parou, troféus, sugestões), entidades na sidebar e conta na top bar, ícone de ADM por perfil, checkout via trilhas; ticar cada requisito; modo escuro "por ser plataforma de vídeo" |
 | [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]] | Aula 06 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 13 min, no iPad): levantamento simplificado do [[wiki/entities/dash-class\|DashClass]]: três atores (aluno, funcionário, admin), três entidades (user, venda, cursos) com CRUD virando telas; gamificação do Como se virar como requisito (mal classificado como não funcional); roteiro da reunião com o cliente. Modelo com furos: muitos-para-muitos, CPF como chave, minimização |
 | [[wiki/sources/frontpush-dashboards-principios-parte-2]] | Aula 05 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 17 min, no iPad): levantamento de requisitos antes de patterns e wireframes: funcionais × não funcionais ("perfumaria", contestado), atores em hierarquia, manter = CRUD, atributos que viram campos, relacionamentos que viram filtros; uma ação por tela, dois botões, fluxos com nome específico |
 | [[wiki/sources/frontpush-dashboards-principios-parte-1]] | Aula 04 do módulo de dashboards do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 18 min, no iPad): quatro princípios contra o excesso de informação: hierarquia visual (contraste, alto e à esquerda, card maior), fluxos definidos com uma ação por tela e passos numerados (login e recuperar senha), gráficos coerentes (pizza para porcentagem, contestável; linha para meses) e pesquisa com o usuário |
@@ -1092,6 +1093,13 @@ date_updated: 2026-11-21
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de dashboards aula 07: wireframes e fluxos (2026-11-24)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/rastreabilidade-de-requisitos]] | Ligar cada requisito à tela que o atende; a checklist do Násser; requisito sem tela é furo, tela sem requisito é escopo inventado |
+| [[wiki/concepts/modo-escuro]] | Tema escuro do DashClass; "cansa menos a vista" não é regra; para vídeo, convenção de cinema; não inverter cores |
 
 ### FrontPUSH, módulo de dashboards aula 06: levantamento de requisitos do DashClass (2026-11-24)
 

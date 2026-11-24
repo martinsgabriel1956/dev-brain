@@ -4,7 +4,7 @@ title: "Modelar referências (vs. copiar interfaces)"
 aliases: ["modelagem de referências", "modelar, não copiar", "copiar vs modelar", "repertório de referências", "biblioteca de referências"]
 date_created: 2026-11-23
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [ui-design, referencias, pesquisa, repertorio, processo-de-design]
 skill: ux-ui-mentor
 status: stub
@@ -36,7 +36,12 @@ Juntar pedaços de várias referências e adaptá-los à identidade do projeto, 
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], a modelagem ganha um motivo ético: "pelo profissionalismo, eu não posso literalmente trazer o fluxo" dos clientes. O [[wiki/entities/dash-class|DashClass]] é "um mix dessas plataformas", com "a essência dos pilares". A aba de inspirações do arquivo repete o método: prints de vários lugares para "dar a primeira partida no nosso cérebro".
 
+## Abstrair olhando modelos
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: "como é que eu vou ter a noção de construir isso? Olhando para modelos": inspirações, wireframes, modelos prontos e o próprio DashClass. A aba de inspirações traz kits como Vuesax Analytics Dashboard e telas de checkout de e-commerce.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — "modelar, não copiar"; caso Nubank; site do Jonas Miller
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: mix de três plataformas; aba de inspirações
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: olhar modelos para abstrair fluxos

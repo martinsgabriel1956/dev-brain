@@ -4,7 +4,7 @@ title: "Dash Class"
 aliases: ["DashClass", "Dash Class", "Desk Class", "módulo de dashboards do FrontPUSH"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [projeto, curso, dashboard, plataforma-de-ensino, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -41,6 +41,10 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de 
 
 Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula 06 do módulo de dashboards]]: três atores (aluno, funcionário, administrador), dois fluxos (aluno e administrativo) e três entidades: user (id, perfil, e-mail, data de aniversário, nome, CPF), venda (forma de pagamento, id do funcionário, id do comprador, parcelamento, NF-e, data, itens) e produtos = cursos (nome, capa, instrutores, módulos, aulas). A gamificação exige notificações e uma hierarquia de cursos, módulos e aulas. O modelo é simplificado de propósito e deixa de fora entidades que as telas pressupõem (módulo, aula, progresso, conquista, matrícula).
 
+## Fluxos e arquivo (aula 07)
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: fluxos de login (sucesso, esqueci a senha, Google), Home como resumo (continue de onde parou, troféus, sugestões), fluxos do perfil, fluxo de pagamento (meus cursos → trilhas → detalhe → checkout) e o tema todo em [[wiki/concepts/modo-escuro]]. No Figma: páginas Cover, Inspirations, StyleGuide & Grids, UI DashClass e Aulas; telas com "etiquetas" de fluxo.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: aula 01, introdução
@@ -49,3 +53,4 @@ Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: recuperar senha em três passos
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: método de requisitos antes do DashClass
 - [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: atores, entidades e gamificação
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos, Home, checkout, modo escuro

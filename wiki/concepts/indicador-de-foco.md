@@ -3,8 +3,8 @@ type: concept
 title: "Indicador de foco (outline, :focus-visible, :focus-within)"
 aliases: ["indicador de foco", "focus indicator", "outline", "outline: none", "focus visible", ":focus-visible", ":focus-within"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [css, acessibilidade, foco, teclado, wcag, formulario, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -31,7 +31,12 @@ O substituto cobre só o `input`. Nos `select`, que também perderam o outline, 
 
 Mesma linha de foco do Mayk, agora em React: `outline: 0` no input e `.input-block:focus-within::after` como substituto. O indicador existe; falta só conferir o contraste. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
 
+## Hover não substitui foco
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], hover em listas e tabelas aparece como "resposta à interação". Em toque não há hover, e no teclado quem responde é o foco: os dois estados precisam existir.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: `outline: 0` nos campos, linha com `:focus-within::after` só no input, select sem substituto
 - [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: :focus-within::after em React
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: hover em listas e tabelas

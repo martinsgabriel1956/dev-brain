@@ -3,8 +3,8 @@ type: entity
 title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 27
+date_updated: 2026-11-24
+source_count: 28
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -88,6 +88,10 @@ Repositório Expo Common Issues e vídeo de emuladores no YouTube como apoio ao 
 
 Desafios pós-evento com Notion de requisitos, layout no Figma e links para conteúdos da Rocketseat por funcionalidade. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## "Trilhas" no DashClass
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] diz ter tirado o nome "trilhas" (sequência de cursos sugerida) da Rocketseat para a tela de cursos do DashClass.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -117,3 +121,4 @@ Desafios pós-evento com Notion de requisitos, layout no Figma e links para cont
 - [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: NLW #2, trilha do Diego, dia 4
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: desafios da versão 2.0
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: Rocketshoes do GoStack Bootcamp como README de exemplo; Jonas Milan, UI designer na Rocketseat
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: nome "trilhas"

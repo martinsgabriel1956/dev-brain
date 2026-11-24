@@ -4,7 +4,7 @@ title: "Material Design"
 aliases: ["Material", "Material Design 2", "Material Design 3", "M2", "M3"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 11
+source_count: 12
 tags: [design-system, google, diretrizes, imagens, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -48,6 +48,10 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], [[wiki/entities/nasser|Násser]] promete "um documento do Material Design em que, de acordo com [...] a escala do número [...] o gráfico muda". Ver [[wiki/concepts/escolha-de-grafico]].
 
+## Estados de interação
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: hovers em listas e tabelas são "detalhezinhos que fazem a diferença", com "o Material Design estabelecendo lá todas as regrinhas".
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — diretrizes de imagem recomendadas no fim da aula
@@ -61,3 +65,4 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: Material Design como referência para gráficos
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: Material Design para outros padrões
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: documento de gráficos prometido
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: regras de hover

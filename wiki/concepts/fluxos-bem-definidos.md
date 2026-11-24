@@ -4,7 +4,7 @@ title: "Fluxos bem definidos (uma ação por fluxo)"
 aliases: ["fluxo bem definido", "uma tela para cada fluxo", "step by step", "passo a passo", "fluxo com objetivo único"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [ux-design, fluxos, foco, wizard, stepper, dashboard, login]
 skill: ux-ui-mentor
 status: stub
@@ -33,7 +33,12 @@ Relacionado: [[wiki/concepts/carga-cognitiva]], [[wiki/concepts/patterns-de-dash
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-2|aula 05 do módulo de dashboards]]: "coloque uma ação em cada tela" e saiba nomear o fluxo de forma específica ("recuperar senha por SMS", "por e-mail", "uma venda"). "Quanto mais específico você for, [...] mais direcionado." O custo: "vai ter muita tela", fantástico para a experiência, "mas vai dar muito trabalho".
 
+## Do login à Home (aula 07)
+
+Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], o método aplicado: "pensa como se você fosse o usuário", começar pela primeira tela (login), nomear o fluxo do sucesso, depois esqueci a senha (e-mail ou SMS) e login com o Google. A Home é "a página do fluxo central", de onde saem os outros, e cada fluxo do perfil "vai ser uma tela".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: definição, o desenho das bolinhas, o fluxo de recuperar senha
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: nomear fluxos; o custo de muitas telas
+- [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos do login e da Home
