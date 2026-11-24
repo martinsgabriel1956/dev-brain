@@ -4,7 +4,7 @@ title: "Estruturas condicionais em JavaScript (if/else, switch)"
 aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 6
+source_count: 8
 tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -32,7 +32,7 @@ A cadeia para na primeira condição verdadeira; o `else` pega o resto. **`if` s
 
 ## Ternário
 
-`cond ? a : b` é uma expressão: cabe numa atribuição, num template literal ou no JSX ([[wiki/concepts/renderizacao-condicional]]).
+`cond ? a : b` é uma expressão: cabe numa atribuição, num template literal ou no JSX ([[wiki/concepts/renderizacao-condicional]]). Página própria: [[wiki/concepts/operador-ternario-javascript]].
 
 ## switch
 
@@ -70,6 +70,14 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], `&&`, `||` e `!` combin
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` dá "um controle pra gente [...] tomar algumas decisões", e a condição "vai se tornar um valor booleano". Demonstra `if` sozinho, com `&&` e `||`, com condição falsa (o bloco "simplesmente" é ignorado), `else` ("vai servir como senão") e a cadeia `else if` / `else`, que "é como se fosse mais um if": é isso mesmo, `else if` é um `else` com outro `if` dentro. Sempre com `===` e chaves. Ficam de fora ternário, `switch` e early return.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], o `if` vira ferramenta de teste: `if (valor) { teste = true } else { teste = false }` mostra se o valor é truthy. Completa o vídeo 04 da semana 2, que só usou comparações ([[wiki/concepts/truthy-e-falsy]]).
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário "substitui o if" quando o `if`/`else` só escolhe um valor: uma linha no lugar de cinco, "para verificações pequenas" ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
@@ -78,3 +86,5 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` dá "um 
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: comparadores antes do if
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! para combinar condições
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if, else e else if com && e ||
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: if/else para descobrir truthy e falsy
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário como if/else de uma linha

@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 10
+source_count: 12
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -58,6 +58,14 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], `x === 3 && y === 7` e 
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], todas as condições do `if` usam `===`, como a aula de igualdade recomendou. Também evita o erro de `if (x = 2)`, que atribui e sempre entra.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], `'0'` é truthy no `if` e no `!!`. `[external]` Mas `'0' == false` e `[] == false` são `true`, porque o `==` converte para número e não usa *ToBoolean*. Truthy não é o mesmo que `== true`.
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], as condições do ternário usam `===` (`1 === 2`, `pessoa.sexo === 'feminino'`). `1 === 2 ? true : false` é redundante: a comparação já devolve booleano ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
@@ -70,3 +78,5 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], todas as condi�
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: ==, !=, ===, !==; "três igual" por segurança
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: != × !== de novo; === dentro de &&
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: === em todas as condições do if
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: truthy × `== true`
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `===` como condição do ternário

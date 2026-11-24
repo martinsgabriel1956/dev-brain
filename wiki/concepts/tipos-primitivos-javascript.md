@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-24
-source_count: 17
+source_count: 18
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -113,6 +113,10 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], `12`, `1.2`, strings e bo
 
 Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], os tipos se dividem em "duas categorias principais": primitivos (number, inteiro ou "float"; string; boolean; e os "valores especiais" `null` e `undefined`) e objetos, que são "todos os outros". A divisão está certa; a lista é de novo a do ES5, sem `symbol` e `bigint`.
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], cada primitivo é classificado como truthy ou falsy: `NaN` ("um tipo de número"), `0`, `-0`, `''`, `null` e `false` são falsy; strings preenchidas, inclusive `'0'`, e números diferentes de zero são truthy ([[wiki/concepts/truthy-e-falsy]]).
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
@@ -132,3 +136,4 @@ Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], os tipos se divid
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: +'3' e NaN do tipo number
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: primitivos como literais
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: primitivos × objetos; cinco primitivos da era ES5
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: primitivos por truthy/falsy

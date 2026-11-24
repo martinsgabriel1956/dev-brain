@@ -3,8 +3,8 @@ type: concept
 title: "Estado Global em Servidor"
 aliases: ["global state", "estado global", "estado global no servidor"]
 date_created: 2026-10-06
-date_updated: 2026-10-06
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [estado-global, stateless, backend, singleton, cache]
 skill: tech-mentor-backend
 status: draft
@@ -27,6 +27,11 @@ Estado mutável acessível por qualquer requisição de um processo servidor: ca
 
 Ver também [[wiki/concepts/estado-compartilhado]] (versão mais geral, sem foco em servidor).
 
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o mesmo problema no navegador da era ES5: globais colidem entre scripts e não são coletadas. No servidor, o global é compartilhado entre requisições ([[wiki/concepts/poluicao-do-escopo-global]]).
+
 ## Key sources
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]]
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: globais no navegador

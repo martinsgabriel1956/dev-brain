@@ -29,6 +29,8 @@ Terceiro e último vídeo da "terceira aula" do [[wiki/entities/javascript-ninja
 - **Dúvidas:** responder o email do curso ou, melhor, abrir uma issue no GitHub; mandar o pull request "pela metade mesmo" e perguntar nele. "O ninja de verdade" pergunta.
 - Fim da aula 3; próxima semana.
 
+Continua em [[wiki/sources/javascript-ninja-truthy-e-falsy]] (semana 4, vídeo 01: truthy e falsy).
+
 ## Key Claims
 
 ### Revisão: propriedade × método

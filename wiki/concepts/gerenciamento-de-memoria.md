@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-11-11
-source_count: 7
+date_updated: 2026-11-24
+source_count: 8
 tags: [cs-fundamentals, lang-systems, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp, baixo-nivel]
 skill: cs-fundamentals
 status: draft
@@ -49,6 +49,10 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], o 
 
 [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] argumenta que a IA "não esquece de liberar memória", tornando o modelo manual viável; a apresentadora contesta (instruções se perdem na janela de contexto). Ver [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]] e [[wiki/concepts/custo-de-abstracao-em-runtime]].
 
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o garbage collection do JavaScript aparece como vantagem do escopo local: quando a variável "não vai ser usada mais", o JavaScript "elimina da memória o espaço que essa variável está ocupando"; a global fica. `[external]` O coletor mede alcance a partir das raízes (global, pilha), não prevê uso lendo o código; o local escapa da coleta se uma closure o capturar ([[wiki/concepts/poluicao-do-escopo-global]]).
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
@@ -58,3 +62,4 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], o 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — IA como autora de código com memória manual: tese e ressalva
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — erros humanos recorrentes (ponteiro solto, use-after-free) e ataques; ver [[wiki/concepts/memory-safety]]
 - [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: o CPU profile do V8 mostra quando o garbage collector rodou; cópia profunda por requisição como fonte de alocação
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: GC como vantagem do escopo local

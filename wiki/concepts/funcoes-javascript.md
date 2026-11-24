@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 24
+source_count: 25
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -101,6 +101,10 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], a função vira método 
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a função criada dentro do objeto "acaba se tornando o método desse objeto"; `pessoa.andar` sem parênteses é só a função, e "eu vou precisar invocar ela para ver o resultado".
 
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a função é o que cria escopo local na era ES5: variáveis declaradas dentro e os parâmetros (`a`, `b`, `c`) "não estão definidos" fora dela ([[wiki/concepts/escopo-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -127,3 +131,4 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a função c
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: função como objeto de primeira classe; função anônima em variável
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: função como método; com efeito × só retorno
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: função dentro do objeto vira método
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: função cria escopo; parâmetros são locais

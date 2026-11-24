@@ -4,7 +4,7 @@ title: "Escopo em JavaScript (global, de função e de bloco)"
 aliases: ["escopo", "scope", "escopo de função", "escopo de bloco", "escopo global", "escopo léxico", "lexical scope", "function scope", "block scope"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [javascript, escopo, funcoes, var, let, const, closure]
 skill: lang-dynamic
 status: stub
@@ -32,6 +32,11 @@ Escopo é um dos motivos para funções: o que é de dentro não vaza nem colide
 
 Em [[wiki/sources/javascript-ninja-funcoes]], `var fernando` dentro de `function qualquer()` não existe fora ("não está definido"), nem depois de invocar a função; já o `x` de fora é lido e alterado de dentro. "As funções criam um escopo: toda variável declarada dentro da função, ela só existe dentro daquela função." Para tirar o valor de lá, `return`. Escopo de bloco não aparece, porque a aula só usa `var`.
 
+## No JavaScript Ninja, semana 4, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a aula volta ao tema com dois escopos, global ("fora de função") e local ("dentro de uma função"), e acrescenta: atribuir sem `var` dentro da função cria uma global, mas só depois da invocação; parâmetros também são locais; e o global "é algo ruim", "um erro de design da linguagem" ([[wiki/concepts/poluicao-do-escopo-global]]). Escopo de bloco e de módulo ainda não aparecem (era ES5).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-funcoes]]: var dentro da função não existe fora; o de fora é acessível de dentro
+- [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global × local, global implícita, parâmetros locais

@@ -4,10 +4,10 @@ title: "Truthy e falsy em JavaScript"
 aliases: ["truthy", "falsy", "valores falsos", "ToBoolean", "coerção para booleano", "!!"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 3
+source_count: 5
 tags: [javascript, booleano, coercao, condicionais, tipos]
 skill: lang-dynamic
-status: stub
+status: draft
 ---
 
 # Truthy e falsy em JavaScript
@@ -45,8 +45,18 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], os operadores lógicos 
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], a condição do `if` "vai se tornar um valor booleano". A aula só usa comparações; a conversão vale para qualquer valor, e é aqui que truthy e falsy decidem se o bloco roda ([[wiki/concepts/estruturas-condicionais-javascript]]).
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a aula inteira é sobre o tema: truthy é o que, "booleanamente falando", é "representado por true"; falsy, o contrário. Lista `NaN`, `0`, `-0`, string vazia (aspas simples e duplas), `null` e `false`; `undefined` não aparece em trecho legível e `0n` é posterior. Mostra `'0'`, `'Fernando'`, `{}` e `[]` como truthy e ensina `!!valor` como forma de ver o booleano sem `if`. Testa só com `if` e `!!`, sem passar pelo `==` (`'0' == false` é `true`).
+
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], a condição do ternário também passa por truthy/falsy: `'sim' ? 'porta' : 'janela'` dá `'porta'`; com `false`, `'janela'` ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: string vazia, 0, undefined e NaN como falsos
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! só com booleanos
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: condição do if vira booleano
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: aula dedicada; seis falsy listados e `!!`
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: truthy/falsy na condição do ternário

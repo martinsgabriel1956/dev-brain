@@ -4,7 +4,7 @@ title: "Renderização condicional (React)"
 aliases: ["conditional rendering", "&& no JSX", "ternário no JSX", "early return"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 6
+source_count: 7
 tags: [react, react-native, jsx]
 skill: tech-mentor-mobile
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javas
 
 Em [[wiki/sources/javascript-ninja-operadores-logicos]], `&&` como "e" que só dá true "quando os dois valores são verdadeiros", sem o curto-circuito nem o retorno do operando que fazem `cond && <Componente />` funcionar (e renderizar `0`). Ver [[wiki/concepts/operadores-logicos-javascript]].
 
+## No JavaScript Ninja, semana 4, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário aparece fora do React, como `if`/`else` de uma linha. É a mesma ferramenta que, no JSX, evita o `0` renderizado por `cond && <A />` ([[wiki/concepts/operador-ternario-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: MapView condicionado à posição; early return no detalhe
@@ -50,3 +54,4 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], `&&` como "e" que só d
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: && como "e" lógico, sem curto-circuito
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros com && e headerRight
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: && sem curto-circuito
+- [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário em JavaScript puro

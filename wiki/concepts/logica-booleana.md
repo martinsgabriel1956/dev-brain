@@ -4,7 +4,7 @@ title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
 date_updated: 2026-11-24
-source_count: 9
+source_count: 10
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -80,6 +80,10 @@ AND, OR, NOT, aspas e parênteses aplicados à busca de vagas no LinkedIn e no G
 
 Em [[wiki/sources/javascript-ninja-operadores-logicos]], AND, OR e NOT em JavaScript: `&&` "só retorna true quando os dois valores são verdadeiros", `||` quando "pelo menos um deles é verdadeiro", `!` "vai inverter um valor". Detalhe do JS que a tabela-verdade esconde: `&&` e `||` devolvem um dos operandos, não necessariamente um booleano ([[wiki/concepts/operadores-logicos-javascript]]).
 
+## No JavaScript Ninja, semana 4, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a ponte entre valores quaisquer e a lógica booleana: o JavaScript converte tudo para `true` ou `false` antes de decidir, e `!!` expõe essa conversão ([[wiki/concepts/truthy-e-falsy]]).
+
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
@@ -87,3 +91,4 @@ Em [[wiki/sources/javascript-ninja-operadores-logicos]], AND, OR e NOT em JavaSc
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: boolean como true ou false
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: comparação sempre devolve true ou false
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! sobre comparações
+- [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: conversão para booleano
