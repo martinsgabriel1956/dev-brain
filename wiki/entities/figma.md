@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 61
+source_count: 62
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -202,6 +202,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], o módulo de dashboards vive num arquivo do Figma com fluxos, modelos de wireframe e uma página "de aulas" com os slides. Ver [[wiki/entities/dash-class]].
 
+## Arquivo do DashClass por dentro
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]]: abas de inspirações (prints de cards, gráficos e esquemas), style guide e grids, telas dos fluxos (home ainda em wireframe) e página de aulas.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: escolher Figma pela comunidade
@@ -265,3 +269,4 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-cobrar-hora-ou-projeto]]: FrontPUSH, Monetização e Freelancer aula 08: medir as horas do design para precificar
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: FrontPUSH, Monetização e Freelancer aula 10: protótipo de baixa fidelidade na 2ª reunião; arquivo entregue na 4ª
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, dashboards aula 01: arquivo do Dash Class
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: abas do arquivo do DashClass

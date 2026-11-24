@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 139
+source_count: 140
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -499,6 +499,10 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], o curso ganha o módulo [[wiki/entities/dash-class|Dash Class]], parte da "atualização 3.0": uma plataforma de ensino com painel administrativo, apresentada como passagem do front (landing pages) para o "background" da empresa. Os arquivos ficam no Notion, com senha da aula do módulo "Comece aqui".
 
+## Módulo de dashboards, aula 02
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], o curso é citado como hospedado na [[wiki/entities/hotmart|Hotmart]] ("a Hotmart que vocês estão me vendo"), e o DashClass é apresentado como uma versão mais específica dessa área de membros.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -640,3 +644,4 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — três landing pages; objetivo da LP; setinha do botão
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, módulo de dashboards aula 01: introdução, utilidades e tipos (Dash Class)
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, módulo de dashboards aula 02: overview do DashClass

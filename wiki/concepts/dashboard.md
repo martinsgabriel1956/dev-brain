@@ -4,7 +4,7 @@ title: "Dashboard"
 aliases: ["dashboards", "painel administrativo", "painel de gestão", "painel de informações", "admin dashboard"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [dashboard, ui-design, ux-design, back-office, tomada-de-decisao, visualizacao-de-dados]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,11 @@ Há dashboards genéricos (caixa, financeiro, usuários, entrada e saída) e há
 - No grid: o [[wiki/entities/material-design|Material Design]] define regiões de UI para dashboards ([[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]).
 - No freela: o orçamento "UI Design Dashboard" de [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]] tem duas jornadas, administrador e aluno.
 
+## Esforço e estrutura (aula 02)
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]]: um dashboard "dá muito trabalho", "mais do que um one page": "é muito dropdown, é muito modal". A sidebar muda o grid (recuado, não centralizado), e fluxos como login "vão ser bem similares em qualquer outro Dashboard".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: definição, utilidades, genérico × específico
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: esforço, sidebar, fluxos comuns

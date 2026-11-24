@@ -92,7 +92,8 @@ Primeira aula (cerca de 10 min) do módulo de dashboards do [[wiki/entities/fron
 - [[wiki/entities/figma]]: arquivo do Dash Class, com a página de aulas.
 - [[wiki/entities/material-design]]: referência prometida para gráficos e apresentação de dados.
 - [[wiki/entities/edwards-deming]]: a quem a frase "me tragam dados" costuma ser atribuída.
-- Sem página própria: Notion (onde fica o link), "Gustavo Webb" e a dupla de médicos (clientes), Siri.
+- [[wiki/entities/gustavo-web]] ("Gustavo Webb" na legenda) e [[wiki/entities/como-se-virar]] (a dupla de médicos): clientes, identificados na aula 02.
+- Sem página própria: Notion (onde fica o link), Siri.
 
 ## Concepts
 
@@ -106,8 +107,8 @@ Primeira aula (cerca de 10 min) do módulo de dashboards do [[wiki/entities/fron
 ## Open Questions
 
 - Qual é "o artigo" da taxonomia de cinco tipos? A lista (operacional, financeiro, estratégico, tático, plataformas próprias) parece de blog de gestão em PT-BR, mas não foi identificada.
-- Quem é "Gustavo Webb", professor de PHP? A grafia vem só da legenda.
-- O orçamento de freela do módulo de monetização é a plataforma da dupla de médicos? "O Enem, só que pra prática" sugere banco de questões ou simulados.
+- ~~Quem é "Gustavo Webb"?~~ Respondida em [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: [[wiki/entities/gustavo-web|Gustavo Web]], ex-UpInside, hoje Black Dev.
+- O orçamento de freela do módulo de monetização é a plataforma da dupla de médicos? A aula 02 nomeia a plataforma, [[wiki/entities/como-se-virar|Como se virar]], com gamificação como forte, o que reforça a hipótese (média-alta).
 - O arquivo de wireframes do Dash Class é o mesmo arquivo "só de wireframe" (com a seção charts and numbers) da [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]?
 
 ## Raw Quotes

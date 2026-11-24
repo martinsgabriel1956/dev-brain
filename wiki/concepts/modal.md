@@ -3,8 +3,8 @@ type: concept
 title: "Modal (janela modal)"
 aliases: ["janela modal", "modal dialog", "dialog", "<dialog>"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [ui, html, css, javascript, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,6 +30,11 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Faltam foco, Esc e semântica, como a fonte detalha nas tensões. Ver [[wiki/concepts/css-position]].
 
+## Modais em dashboard
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], o DashClass usa modais para notificações e perfil (na top bar) e para o resultado do pagamento (sucesso, erro, resumo). "É muito dropdown, é muito modal" é o motivo de dashboard dar mais trabalho que one page.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: modal de busca com div fixa, classe `hide` e JavaScript; sem foco nem Esc
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: modais de notificação, perfil e pagamento

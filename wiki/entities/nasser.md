@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 162
+source_count: 163
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -358,6 +358,10 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 
 Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula de abertura do módulo de dashboards]], apresenta o [[wiki/entities/dash-class|Dash Class]]: diz ter ajudado no player de vídeo da [[wiki/entities/finclass|Finclass]] e, a partir disso, desenhado plataformas de ensino para um professor de PHP ("Gustavo Webb", grafia da legenda) e para uma dupla de médicos. Promete um módulo "bem prático", com o porquê das decisões explicado tela a tela, e cita "Eu só acredito em Deus, no mais me tragam dados".
 
+## Módulo de dashboards, aula 02
+
+Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], lista as plataformas de ensino que fez: player na [[wiki/entities/finclass|Finclass]], fluxos do [[wiki/entities/como-se-virar|Como se virar]] e design da plataforma de [[wiki/entities/gustavo-web|Gustavo Web]]. Diz que não pode trazer os fluxos desses clientes "pelo profissionalismo" e monta o [[wiki/entities/dash-class|DashClass]] como mix.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -522,3 +526,4 @@ Na [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipo
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: como cria imagens e vídeos com IA
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — mentoria de UI: pesquisa, patterns, modelar referências, Z/F, contraste
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: FrontPUSH, módulo de dashboards aula 01: Dash Class, Finclass, tipos de dashboard
+- [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: clientes de plataformas de ensino; overview do DashClass

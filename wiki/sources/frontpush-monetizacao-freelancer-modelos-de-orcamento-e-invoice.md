@@ -44,7 +44,7 @@ Dois PDFs de uma página (layout escuro, logo "N", "by Násser Yousef") que acom
 
 ## Continuação
 
-O dashboard de plataforma de cursos deste orçamento provavelmente é parente do [[wiki/entities/dash-class|Dash Class]], o projeto do módulo de dashboards apresentado em [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] (inferência, média).
+O dashboard de plataforma de cursos deste orçamento provavelmente é parente do [[wiki/entities/dash-class|Dash Class]], o projeto do módulo de dashboards apresentado em [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]] (inferência, média). A [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]] nomeia a plataforma de gamificação da dupla de médicos, o [[wiki/entities/como-se-virar|Como se virar]], e mostra no DashClass quase os mesmos itens de aluno deste orçamento (inferência, média-alta).
 
 ## Entities
 
