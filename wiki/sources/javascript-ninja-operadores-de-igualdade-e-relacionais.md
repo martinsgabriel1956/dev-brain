@@ -29,6 +29,8 @@ Terceiro vídeo da primeira aula do [[wiki/entities/javascript-ninja|JavaScript 
 - Exemplos: `1 > 2` falso, `2 < 3` true, `1000 > 1000` falso, `1000 >= 1000` true, `40 < 40` falso, `40 <= 40` true.
 - Próximo vídeo: funções ([[wiki/concepts/funcoes-javascript]]).
 
+Continua em [[wiki/sources/javascript-ninja-funcoes]].
+
 ## Key Claims
 
 ### Atribuição × igualdade

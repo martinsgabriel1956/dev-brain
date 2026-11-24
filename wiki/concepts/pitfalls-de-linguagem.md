@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -71,9 +71,14 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], dois pontos que a a
 
 Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], `==` converte tipos e a aula manda usar `===`. As armadilhas que ficam de fora são as dos relacionais, que não têm versão estrita: `'10' < '9'` é true (comparação de texto), `null >= 0` é true com `null == 0` false, e tudo com `NaN` dá false ([[wiki/concepts/operadores-relacionais-javascript]]). `[external]`
 
+## Ponto e vírgula (JavaScript Ninja, aula 04)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], o ponto e vírgula vai "sempre" no fim de cada instrução. A ASI torna isso opcional na maioria dos casos; as armadilhas são linha começando com `(`, `[` ou crase (cola na anterior) e `return` seguido de quebra de linha. `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: pré × pós-incremento; espaço e ASI
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: == converte; relacionais sem versão estrita
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: ponto e vírgula "sempre" e a ASI

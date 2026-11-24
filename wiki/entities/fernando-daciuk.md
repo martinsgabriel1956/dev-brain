@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 3
+source_count: 4
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -24,8 +24,13 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], o instrutor não se
 
 Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], ele se apresenta: "Meu nome é Fernando da Silva" na legenda, segunda deformação do mesmo nome. Com o curso e as duas aulas anteriores, a autoria fica com confiança alta.
 
+## Aula 04
+
+Em [[wiki/sources/javascript-ninja-funcoes]], de novo "Fernando da Silva" na legenda. Fecha o "apanhado geral" da primeira aula e anuncia o desafio da semana.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: aula 02: operadores aritméticos, ++/-- e +=
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: aula 03: igualdade e relacionais; se apresenta
+- [[wiki/sources/javascript-ninja-funcoes]]: aula 04: funções

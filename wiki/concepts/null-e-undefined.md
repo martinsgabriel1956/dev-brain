@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 4
+source_count: 5
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,9 +30,14 @@ Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javas
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], `null` é "nenhum valor" e `undefined`, "a ausência de valor", e "na maior parte das vezes a gente vai tratar eles como sendo a mesma coisa". A aula diz que `undefined` "representa quando a variável não existe", mas o erro de digitação ao vivo (`numero[3]`) mostra o contrário: variável inexistente lança `ReferenceError` ("não está definido"); `undefined` é o valor de uma variável declarada sem atribuição. `[external]` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined
 
+## No JavaScript Ninja, aula 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], função sem `return` devolve `undefined` ("o valor é indefinido"), e uma variável que só existe dentro da função, lida de fora, dá "não está definido", que é `ReferenceError`, não `undefined`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: variável sem valor é undefined; null ausente
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: undefined é falsy
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: "a mesma coisa" na maior parte das vezes; undefined ≠ variável inexistente
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: função sem return dá undefined

@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 26
+source_count: 27
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -81,6 +81,10 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], expressões, os qua
 
 Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igualdade com e sem tipo, conversão de tipos e os relacionais.
 
+## No JavaScript Ninja, aula 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-funcoes]], funções: declaração, invocação, escopo, `return` e parâmetros.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -109,3 +113,4 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], igua
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: variáveis e tipos de dados
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: operadores aritméticos
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: igualdade e relacionais
+- [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: funções
