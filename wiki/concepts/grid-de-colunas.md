@@ -3,8 +3,8 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-16
-source_count: 13
+date_updated: 2026-11-24
+source_count: 14
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: draft
@@ -104,6 +104,10 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: o grid de 1416 px precisa "dar uma a
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid de 12 × 96 + 24 (1416 px) vira uma biblioteca de classes "muitíssimo parecida com o Grid System do próprio Bootstrap", com largura em % e container de `max-width` fixo que fica fluido abaixo dele. Ver [[wiki/concepts/grid-system]]. No código, a variável do container está em 1200, não em 1416.
 
+## Em dashboards: 12 colunas com offset
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], as mesmas 12 colunas das landing pages viram grid de dashboard: tipo Left, coluna de 70 ou 80 px, gutter de 30 e um offset de 120 a 280 px para a sidebar, num frame de 1440 × 900. Ver [[wiki/concepts/grid-de-dashboard]].
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
@@ -119,3 +123,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: o grid de 12 × 96 + 24 
 - [[wiki/sources/frontpush-for-while-each-sass]]: classes `.grid-N` geradas por `@for`; 96 + 24
 - [[wiki/sources/frontpush-funcoes-sass]]: função `grid()` em %; valores com e sem gutter
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid de 1416 virando grid system de classes
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: 12 colunas deslocadas pela sidebar

@@ -4,7 +4,7 @@ title: "Como se virar (CSV)"
 aliases: ["CSV", "Como Se Virar"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 1
+source_count: 2
 tags: [projeto, plataforma-de-ensino, medicina, gamificacao, cliente]
 skill: ux-ui-mentor
 status: stub
@@ -16,6 +16,11 @@ Plataforma de ensino de "uma dupla de médicos que atua lá no Nordeste", para e
 
 Provavelmente é o cliente do orçamento "UI Design Dashboard" de [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]] e da [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos|aula 01]] ("uma dupla de médicos") (inferência, média-alta).
 
+## Marcas nas telas do DashClass
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], os slides do DashClass mostram categorias de cursos de saúde (fisioterapia, neurologia, ortopedia) e um modal de compra com e-mail @comosevirar.com.br: as telas vêm deste projeto.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: origem, público e gamificação
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: categorias e domínio nos slides

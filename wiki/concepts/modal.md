@@ -4,7 +4,7 @@ title: "Modal (janela modal)"
 aliases: ["janela modal", "modal dialog", "dialog", "<dialog>"]
 date_created: 2026-11-16
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [ui, html, css, javascript, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -34,7 +34,12 @@ Faltam foco, Esc e semântica, como a fonte detalha nas tensões. Ver [[wiki/con
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]], o DashClass usa modais para notificações e perfil (na top bar) e para o resultado do pagamento (sucesso, erro, resumo). "É muito dropdown, é muito modal" é o motivo de dashboard dar mais trabalho que one page.
 
+## Confirmar, avisar, informar (aula 03)
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], modais são um dos patterns de dashboard: "sempre tem que ter uma caixinha me confirmando" antes de uma ação como excluir, e modais de erro ("tentar novamente"), sucesso e informação, em cores semânticas. Ressalva da skill ux-ui-mentor: modal para ação destrutiva ou crítica; toast ou "desfazer" para o resto. Ver [[wiki/concepts/patterns-de-dashboard]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: modal de busca com div fixa, classe `hide` e JavaScript; sem foco nem Esc
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: modais de notificação, perfil e pagamento
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: modais de confirmação, erro e sucesso

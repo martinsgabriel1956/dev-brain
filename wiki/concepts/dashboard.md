@@ -4,7 +4,7 @@ title: "Dashboard"
 aliases: ["dashboards", "painel administrativo", "painel de gestão", "painel de informações", "admin dashboard"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [dashboard, ui-design, ux-design, back-office, tomada-de-decisao, visualizacao-de-dados]
 skill: ux-ui-mentor
 status: stub
@@ -33,7 +33,12 @@ Há dashboards genéricos (caixa, financeiro, usuários, entrada e saída) e há
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]]: um dashboard "dá muito trabalho", "mais do que um one page": "é muito dropdown, é muito modal". A sidebar muda o grid (recuado, não centralizado), e fluxos como login "vão ser bem similares em qualquer outro Dashboard".
 
+## Grid e patterns (aula 03)
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], tudo começa pelo [[wiki/concepts/grid-de-dashboard|grid]] (12 colunas com offset para a sidebar, em 1440 × 900) e pelos [[wiki/concepts/patterns-de-dashboard|patterns]]: login, sidebar, top bar, cards e gráficos, listas e tabelas, formulários, modais. O slide do painel administrativo segue o layout "métricas no topo, gráfico largo + lista lateral, tabela embaixo".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: definição, utilidades, genérico × específico
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: esforço, sidebar, fluxos comuns
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grid e patterns

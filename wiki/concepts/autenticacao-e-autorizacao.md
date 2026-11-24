@@ -3,8 +3,8 @@ type: concept
 title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-24
+source_count: 8
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -56,12 +56,17 @@ Na explicação de iniciante de [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecole
 
 Em [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]], a API "pode ter autenticação ou não": "você pode ser uma pessoa qualificada para acessar aquelas informações mediante uma chave, mediante uma senha". "Qualificada" é autorização; a chave ou senha é a autenticação.
 
+## Login como pattern de dashboard
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], a tela de login é o primeiro pattern de dashboard: "o acesso às informações é restrito aos funcionários, aos gerentes [...] você tem que ter uma primeira barreira". A tela é a parte visível da autenticação; o que cada perfil vê (aluno × administrativo na sidebar) é autorização.
+
 ## Key Sources
 
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — chave de integração de fator único aceita como credencial completa de login
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — metáfora da portaria e enumeração de contas via mensagem de erro genérica
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — falha de autenticação (login sem rate limit/MFA/resposta genérica) explorada isoladamente, sem depender de falha de autorização
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: login como "primeira barreira"
 
 ## Key sources
 

@@ -4,7 +4,7 @@ title: "Dash Class"
 aliases: ["DashClass", "Dash Class", "Desk Class", "módulo de dashboards do FrontPUSH"]
 date_created: 2026-11-24
 date_updated: 2026-11-24
-source_count: 2
+source_count: 3
 tags: [projeto, curso, dashboard, plataforma-de-ensino, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -25,7 +25,12 @@ Ver [[wiki/concepts/dashboard]].
 
 Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do módulo de dashboards]]: "uma plataforma de ensino para disponibilizar aulas gravadas", "como se fosse a [[wiki/entities/hotmart|Hotmart]]", mix enxuto de três projetos ([[wiki/entities/finclass|Finclass]], [[wiki/entities/como-se-virar|Como se virar]] e a plataforma de [[wiki/entities/gustavo-web|Gustavo Web]]). Escopo do slide: fluxo de pagamentos, login, [[wiki/concepts/gamificacao|gamificação]], fluxo de usuário, painel administrativo, fluxo de aulas; mobile e template HTML/CSS/JS "em breve". O arquivo tem abas de inspirações, style guide e grids, telas e aulas. O slide escreve "DashClass", junto.
 
+## Grids e patterns (aula 03)
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]]: três grids de 12 colunas com offset para a sidebar (o projeto usa o grid 1: coluna 70, gutter 30, offset 240) e sete patterns, todos mostrados em telas de alta fidelidade (login, sidebar, top bar, painel administrativo, vendas, perfil, modais). As telas trazem marcas do [[wiki/entities/como-se-virar|Como se virar]].
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-dashboards-introducao-para-que-serve-utilidades-tipos]]: aula 01, introdução
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: origem, escopo, fluxos e painel admin
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: grids e patterns

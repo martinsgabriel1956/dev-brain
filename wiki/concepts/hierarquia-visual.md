@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-23
-source_count: 40
+date_updated: 2026-11-24
+source_count: 41
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -193,6 +193,10 @@ Em [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]]: "ou a gente lê em Z, ou a gente lê em F". Z é "a maioria das interfaces", "quando você tem pouco conteúdo", e se enxerga primeiro "o que é maior", "o que está na parte de cima", "o que está na esquerda". F é o de "portal de notícia": desce, lê para o lado, desce. Regra prática: "no meio do caminho do Z, eu sempre tenho um botão". No blog, a notícia maior à esquerda (padrão do G1) dá "destaque" e "ênfase". `[external]` O F vem do eyetracking da NN/g (2006, revisto em 2017), que o lê como sintoma de texto pouco escaneável; o Z é heurística de layout com menos base empírica (média-alta).
 
+## Hierarquizar dashboards
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]]: dashboards antigos tinham "muitas informações concentradas em uma tela só". Sidebar, menu que expande e launcher de apps ajudam "a classificar e hierarquizar melhor essas informações". Ver [[wiki/concepts/sidebar]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -235,3 +239,4 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: contraste título × corpo
 - [[wiki/sources/frontpush-como-usar-o-motion-vantagens-boas-praticas-pontos-de-atencao]]: FrontPUSH, mini curso de CSS Animations, aula 02: contraste de movimento como hierarquia
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — leitura em Z e em F; botão no caminho do Z; padrão do G1
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: navegação como hierarquia

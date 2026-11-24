@@ -3,8 +3,8 @@ type: concept
 title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 10
+date_updated: 2026-11-24
+source_count: 11
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -69,6 +69,10 @@ Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: a cor v
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser retoma as convenções com o [[wiki/entities/twitter-bootstrap|Bootstrap]] aberto e completa o mapa com o **verde**: "sucesso, deu certo, cadastrado, entregue". Azul é "simplesmente informativo, então é algum link"; vermelho, erro; amarelo, alerta. Recomenda definir "cores auxiliares" para a passagem de informação.
 
+## Modais de dashboard
+
+Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de dashboards]], as cores dos modais do DashClass: sucesso verde, informação azul, aviso amarelo, erro vermelho, neutro branco. [[wiki/entities/nasser|Násser]] chama isso de "psicologia das cores", mas é cor semântica: convenção de estado. Os modais e os status da tabela de vendas juntam ícone, cor e texto, sem depender só da cor.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -81,3 +85,4 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 - [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo como destaque de marca, não warning
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — de onde vêm os valores crus (HSB, hex, RGB) que os tokens semânticos nomeiam
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde = sucesso; cores auxiliares; Bootstrap como referência
+- [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: verde/azul/amarelo/vermelho/branco nos modais
