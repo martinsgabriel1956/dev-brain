@@ -3,8 +3,8 @@ type: concept
 title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
-date_updated: 2026-11-24
-source_count: 9
+date_updated: 2026-11-25
+source_count: 11
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -91,6 +91,14 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], `animal` × `Animal` × `
 
 Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` sempre vem com chaves e `===`. As duas armadilhas que isso evita: sem chaves, só a primeira instrução fica no `if` (o *goto fail* da Apple, 2014); `if (x = 2)` atribui e sempre entra. `[external]` https://www.imperialviolet.org/2014/02/22/applebug.html
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], "eu preciso sempre colocar o ponto e vírgula no final" de `return function (y) { ... };`. `[external]` Sem o `;` funciona igual, pela ASI (verificado). A armadilha é a quebra de linha logo depois do `return`: a função devolve `undefined` (verificado no Node 22).
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], dois tropeços. Um `;` dentro do objeto literal dá `SyntaxError: Unexpected token ';'` (verificado). E passar a função "sem invocar" é obrigatório: `showFunction(fn())` entrega o retorno e quebra em `TypeError: fn is not a function` (verificado). `[external]`
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -102,3 +110,5 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` sempre v
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena, - converte
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: case sensitive; ASI só anunciada
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: chaves e === no if
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: ponto e vírgula depois de return function; quebra de linha após return
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: ; no objeto literal; fn × fn() como argumento

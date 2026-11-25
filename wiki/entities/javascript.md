@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 46
+source_count: 48
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -141,6 +141,14 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções 
 
 Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], JavaScript é apresentado como linguagem que permite o estilo funcional porque funções são cidadãos de primeira classe, ao contrário de Java (da época anterior ao Java 8).
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], JavaScript permite retornar funções de funções por ter funções de primeira classe e closures ([[wiki/concepts/closure-javascript]], [[wiki/concepts/currying]]).
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], função passada como argumento, o último uso de função de primeira classe ([[wiki/concepts/funcao-de-ordem-superior]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -189,3 +197,5 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], JavaScr
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push e for
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: Function.name
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: funções de primeira classe e estilo funcional
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: retorno de funções, closure e currying
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função como parâmetro

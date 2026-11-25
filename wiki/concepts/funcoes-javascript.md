@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 29
+source_count: 31
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -121,6 +121,14 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a regra no
 
 Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], a "função literal" é a criada "com a palavra-chave function", com nome, parâmetros "opcionais" e instruções entre chaves, como o objeto literal é o criado com `{}`. Uma função que retorna `{ name, lastName }` só entrega o objeto quando executada: `retornaObjeto.name` é o nome da função, `retornaObjeto().name` é `'Fernando'` (verificado). Construtores de função e retorno de funções ficam para depois.
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], a função pode ser criada dentro de outra ("você consegue criar uma função dentro de outra função no JavaScript") e retornada sem executar. `var add2 = adder(2)` guarda a função interna; `add2(3)` dá 5; `adder(5)(8)` faz "duas invocações seguidas". A função retornada é anônima e `add2.name` dá `''` (verificado), contra a regra de nomear de dois vídeos antes. Ver [[wiki/concepts/closure-javascript]] e [[wiki/concepts/currying]].
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], objeto e função como parâmetro: `getCarColor(car)` devolve `'yellow'`, e `showFunction(fn)` devolve `fn()`. A função vai pelo nome, sem parênteses, ou anônima direto na chamada, "tanto faz" o nome. `[external]` Passar `fn()` em vez de `fn` entrega o resultado, não a função (verificado).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -152,3 +160,5 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], a "fun�
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array e objeto como argumento; sem argumento, undefined e TypeError
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: sempre nomear; propriedade name; anônima × nomeada × literal
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: função literal; função que retorna objeto; .name da função × do objeto
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: função dentro de função; retorno de função; duas invocações
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: objeto e função como parâmetro

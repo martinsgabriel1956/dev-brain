@@ -4,7 +4,7 @@ title: "Escopo em JavaScript (global, de função e de bloco)"
 aliases: ["escopo", "scope", "escopo de função", "escopo de bloco", "escopo global", "escopo léxico", "lexical scope", "function scope", "block scope"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 5
+source_count: 6
 tags: [javascript, escopo, funcoes, var, let, const, closure]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,10 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a aula volta
 
 Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], a lista `var a, b = 2, c` dentro de uma função deixa as três variáveis locais: fora dela, `a` "não foi definido". Retoma a aula de escopo e a global implícita ([[wiki/concepts/poluicao-do-escopo-global]]).
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` mostra o escopo léxico funcionando depois do fim da função de fora: a função interna retornada ainda soma o `x` que `adder` recebeu ("o 2 que eu já tinha passado na primeira vez"). `[external]` Cada chamada de `adder` cria um escopo novo, então `add2` e `add10` não se misturam (verificado). A aula não usa o nome [[wiki/concepts/closure-javascript|closure]].
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-funcoes]]: var dentro da função não existe fora; o de fora é acessível de dentro
@@ -47,3 +51,4 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], a lista `var a, 
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: criar o escopo na função e expor o retorno, sem objeto global
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro com nome diferente da variável de fora
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: variáveis da lista com vírgula ficam locais
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: escopo léxico preservado na função retornada (closure)

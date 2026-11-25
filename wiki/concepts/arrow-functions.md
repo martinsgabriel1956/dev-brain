@@ -4,7 +4,7 @@ title: "Arrow functions em JavaScript"
 aliases: ["arrow function", "função de seta", "=>", "fat arrow", "retorno implícito", "this léxico"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 8
+source_count: 9
 tags: [javascript, funcoes, arrow-function, es6, this, react, vue]
 skill: lang-dynamic
 status: stub
@@ -56,6 +56,10 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula l
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso passa a nomear toda função. `[external]` Arrow function não tem sintaxe para nome: o `name` dela vem só da inferência do ES2015 (`const soma = () => {}` dá `'soma'`), e passada direto como callback fica sem nome no stack trace.
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` é escrito com `function` e dois `return`. `[external]` Com arrow, a versão curried cabe numa linha, `const adder = x => y => x + y`, e `adder(5)(8)` dá o mesmo 13 (verificado). É um dos usos em que o retorno implícito mais encurta o código ([[wiki/concepts/currying]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: de function a arrow com retorno implícito
@@ -66,3 +70,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso pa
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: sintaxe para "bater o olho" no React, "pouquíssima verbosidade"
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: componente como arrow function; exemplo de sintaxe que os browsers não entendiam
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: regra de nomear não se aplica a arrow; nome só por inferência
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: adder em uma linha com arrow

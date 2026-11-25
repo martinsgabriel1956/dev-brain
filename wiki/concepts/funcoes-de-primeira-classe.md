@@ -4,7 +4,7 @@ title: "Funções de primeira classe"
 aliases: ["first-class functions", "first-class function", "funções como valores", "função como objeto", "objetos de primeira classe"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 6
+source_count: 8
 tags: [javascript, funcoes, programacao-funcional, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -43,6 +43,14 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a consequ�
 
 Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], o termo vira "cidadãos de primeira classe": funções "têm o mesmo tratamento dos objetos no JavaScript", e "tudo aquilo que você consegue fazer com objetos [...] você também consegue fazer com funções". A aula percorre três usos: criar como literal, atribuir a variável e (para objetos) retornar de uma função; retornar funções fica para o vídeo seguinte. `[external]` `f instanceof Object` dá `true` e `f.prop = 1` funciona (verificado no Node 22).
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o terceiro uso da lista, a função devolvida por outra: `function adder(x) { return function (y) { return x + y; }; }`, com `adder(2)(3)` = 5 e `adder(5)(8)` = 13. A aula diz que "só linguagens que te dão o poder de utilizar funções de primeira classe" fazem isso. `[external]` Precisa também de [[wiki/concepts/closure-javascript|closure]] para a função interna lembrar o `x`; o padrão é [[wiki/concepts/currying|currying]].
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o último dos usos da lista: passar função como argumento, "como um parâmetro normal [que] poderia ser qualquer tipo de valor". Com isso o curso cobre os quatro (atribuir, guardar em estrutura, retornar e passar). Quem recebe função é [[wiki/concepts/funcao-de-ordem-superior|função de ordem superior]].
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: função é objeto; atribuída a variável, anônima
@@ -51,3 +59,5 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], o termo
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: função guardada em array e invocada pelo índice
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função como objeto com a propriedade name
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: cidadãos de primeira classe; paralelo objeto × função
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: função que retorna função (adder)
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função passada como argumento

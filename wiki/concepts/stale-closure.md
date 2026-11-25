@@ -3,8 +3,8 @@ type: concept
 title: "Stale Closure"
 aliases: ["closure congelada", "closure stale React", "variável desatualizada closure"]
 date_created: 2026-04-22
-date_updated: 2026-11-24
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [react, javascript, closure, useEffect, bugs, hooks]
 skill: tech-mentor-frontend
 status: stable
@@ -71,7 +71,12 @@ O bug de stale closure **só existe porque há um effect**. Se o código não de
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a variável local some da memória quando a função termina. `[external]` A exceção é a closure: se uma função interna capturar a variável, ela continua viva enquanto a função viver, o mesmo mecanismo que, em React, segura o valor velho de uma renderização ([[wiki/concepts/escopo-javascript]]).
 
+## Closure em geral
+
+O mecanismo de base, fora do React, está em [[wiki/concepts/closure-javascript]], com o exemplo do `adder` de [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]].
+
 ## Key Sources
 
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: local coletado ao fim da função, salvo closure
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: closure fora do React (adder)

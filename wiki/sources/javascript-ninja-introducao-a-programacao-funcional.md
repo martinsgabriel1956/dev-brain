@@ -97,6 +97,8 @@ Segundo vídeo da semana 8 do [[wiki/entities/javascript-ninja|JavaScript Ninja]
 
 Vídeo anterior do curso na wiki: [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]] (semana 8, vídeo 01).
 
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]] (semana 8, vídeo 03), o de retorno de funções que este anuncia.
+
 ## Open Questions
 
 - **Nome da função do exemplo**: "minha teoria objeto [...] como o próprio nome da função" sugere `retornaObjeto` (média); "uma função peça" e "uma reflexão sobre" ficam ilegíveis. Literais.

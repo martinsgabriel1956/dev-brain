@@ -4,7 +4,7 @@ title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
 date_updated: 2026-11-25
-source_count: 7
+source_count: 9
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -94,6 +94,14 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o fecho an
 
 Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], [[wiki/entities/fernando-daciuk|Fernando Daciuk]] define o paradigma como "uma forma de você programar" em que os programas "são baseados em funções, ou nas características que as funções têm", e o liga às funções de primeira classe do JavaScript. É uma definição mais larga que a desta página: funções de primeira classe são o pré-requisito da linguagem; pureza, imutabilidade e efeitos explícitos são a disciplina do estilo, que JavaScript permite mas não impõe (leitura da wiki). A aula contrasta com Java, "executando linha a linha"; `[external]` Java tem lambdas e streams desde a versão 8 (2014).
 
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], a parte 2 da introdução: funções que retornam funções como "uma das coisas que o poder de uma linguagem funcional nos permite fazer", com o `adder` curried. A aula opõe isso às linguagens em que "você só consegue escrever programação imperativa". `[external]` O recurso necessário é função de primeira classe com [[wiki/concepts/closure-javascript|closure]], que linguagens imperativas como JavaScript, Python e Java 8+ têm; C não. Ver [[wiki/concepts/currying]].
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], fecho da série: passar função por parâmetro é "o poder que a gente tem utilizando o formato de programação funcional", e o tema volta "muito" nas cerca de 30 aulas do curso. `[external]` Com o vídeo anterior, a série mostra os dois lados de [[wiki/concepts/funcao-de-ordem-superior|função de ordem superior]] sem dar o nome.
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].
@@ -102,3 +110,5 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], [[wiki/
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: prévia de programação funcional com função no array
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: anuncia programação funcional para o vídeo seguinte
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: FP como "baseada em funções"; primeira classe como pré-requisito
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: retorno de funções e currying como poder funcional
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função como parâmetro; fecho da série

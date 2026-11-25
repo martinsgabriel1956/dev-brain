@@ -4,7 +4,7 @@ title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
 date_updated: 2026-11-25
-source_count: 9
+source_count: 11
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -64,6 +64,14 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], a regra mecânica antes d
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso passa a exigir nome em toda função atribuída a variável, "de preferência o mesmo nome" da variável, "para ficar mais facilmente encontrada". O motivo é de ferramenta: o debugger mostra o nome da função, não o da variável. `[external]` O nome de uma *function expression* só existe dentro dela (serve para recursão); fora, vale a variável. Repetir o nome evita dois nomes para a mesma coisa.
 
+## Nomes de função (JavaScript Ninja, semana 8, vídeo 03)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], a função interna do `adder` é retornada anônima, dois vídeos depois de o curso adotar "sempre nomear". `[external]` A inferência do ES2015 não cobre o `return`: `add2.name` dá `''` (verificado). É exatamente o caso em que dar nome (`return function addY(y) {...}`) ajuda no stack trace.
+
+## Nomes de função (JavaScript Ninja, semana 8, vídeo 04)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o callback passado direto pode ter nome "ou não, tanto faz", e a aula usa anônima "só para ficar menos coisa escrita". É a terceira exceção à regra de nomear em três vídeos. `[external]` O callback passado direto é o caso em que a falta de nome mais pesa no stack trace.
+
 ## Key Sources
 
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre naming como um dos dois problemas difíceis
@@ -75,3 +83,5 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso pa
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: "árvore de classes" (prefixo do pai) e não misturar português com inglês
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: regras de identificador e nomes só em ASCII
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: nomear funções, de preferência com o nome da variável
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: função retornada sem nome, contra a regra de dois vídeos antes
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: callback anônimo, "tanto faz" o nome
