@@ -3,8 +3,8 @@ type: concept
 title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 16
+date_updated: 2026-11-25
+source_count: 18
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -93,6 +93,14 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], objeto vazio e array vazio 
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], o desafio 3 volta: `pessoa.sexo` decide o artigo "o"/"a" da frase, agora com ternário. Ao vivo, o objeto `pessoa` ainda não existia no console ("está dizendo que a pessoa não existe") e foi criado com `sexo: 'masculino'`.
 
+## No JavaScript Ninja, semana 5, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], a função retorna "direto" um objeto literal (`prop1`, `prop2: 'Fernando'` e um método que retorna `prop3`); lê-se com ponto na chamada ou na variável que guardou o retorno. `[external]` Para o método ler `prop3` do próprio objeto, precisa de `this.prop3`.
+
+## No JavaScript Ninja, semana 5, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], um objeto com `propriedade: 'Fernando'` e `curso` vai como argumento; a função devolve o objeto inteiro ou só `arg.curso`. Chamada sem argumento, dá "não conseguiu ler propriedade curso [de] indefinido" (`TypeError`).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -111,3 +119,5 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o desafio 3 volta: `p
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: propriedade como variável dentro do objeto, método como função; desafio 3
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: objeto e array vazios são truthy
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `pessoa.sexo` no ternário
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retorna objeto literal com propriedades e método
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: objeto como argumento; devolver o objeto ou `arg.curso`

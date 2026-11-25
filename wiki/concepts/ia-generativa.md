@@ -3,8 +3,8 @@ type: concept
 title: "IA Generativa"
 aliases: ["generative AI", "genai", "ia que cria"]
 date_created: 2026-10-14
-date_updated: 2026-11-23
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [ia, ia-generativa, fundamentos]
 skill: tech-mentor-ai
 status: draft
@@ -30,3 +30,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], a generat
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: pipeline de imagem e vídeo
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: IA generativa listada entre os "tipos" de IA, ao lado de ML, deep learning e LLMs

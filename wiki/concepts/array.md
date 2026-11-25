@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-11-24
-source_count: 21
+date_updated: 2026-11-25
+source_count: 23
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -109,6 +109,10 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], `const [
 
 Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o array é "uma lista de valores" com índice a partir de 0 (`numeros[3]` dá `4`), e "no JavaScript não existem arrays [...] eles nada mais são do que objetos". `[external]` Arrays são objetos com índices como chaves (`numeros['3']` funciona), mas especiais: `length` automático e `Array.prototype`. Ver [[wiki/concepts/notacao-de-ponto-e-colchetes]].
 
+## No JavaScript Ninja, semana 5, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], o array é o jeito de uma função devolver mais de um valor: `return [1, 2, 3]` e o índice direto na chamada (`f()[2]` traz 3; índice inexistente, `undefined`).
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -132,3 +136,5 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o array é "uma
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: desestruturação de array
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: arrays porque o JSON das APIs é "objetos e arrays"
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: lista indexada a partir de 0; "arrays são objetos"
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retorna array para devolver vários valores; `f()[0]`
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array como argumento; `arg[1]` dentro da função; literal direto na chamada

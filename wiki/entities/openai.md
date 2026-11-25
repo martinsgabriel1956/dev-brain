@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-11-23
-source_count: 30
+date_updated: 2026-11-24
+source_count: 32
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -114,6 +114,8 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o ChatGPT
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — citada como caso mais simples de prompt caching: cache implícito/automático, sem configuração manual, ao contrário do breakpoint explícito da Anthropic
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — produto interno com ~1M linhas geradas via Codex sob restrição de zero código escrito manualmente
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: ChatGPT como escritor de prompts
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: o ChatGPT de "lá atrás" que errava código e dizia "você tem razão"; Codex citado
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: ChatGPT como chat que entrega "meio que um tutorial"; abreviações dos usuários
 
 ## Vagas no Ashby
 

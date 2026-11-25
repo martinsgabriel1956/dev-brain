@@ -3,8 +3,8 @@ type: concept
 title: "Desestruturação (JavaScript)"
 aliases: ["desestruturação", "destructuring", "destructuring assignment", "desestruturar objeto", "desestruturar array"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 5
+date_updated: 2026-11-25
+source_count: 7
 tags: [javascript, sintaxe, objeto, array, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -53,3 +53,5 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], [[wiki/e
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: rest, spread e chave computada
 - [[wiki/sources/jstack-o-que-sao-modulos]]: desestruturação no require; shorthand no module.exports
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: objeto, parâmetro e array com mousemove
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: retorno de array/objeto, que hoje se lê com desestruturação
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: objeto recebido sem defesa; hoje, padrão `{ curso } = {}`

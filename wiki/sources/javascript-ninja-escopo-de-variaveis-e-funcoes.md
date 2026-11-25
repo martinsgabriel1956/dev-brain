@@ -3,7 +3,7 @@ type: source
 title: "Escopo de variáveis e funções (JavaScript Ninja, semana 4, vídeo 03)"
 aliases: ["JavaScript Ninja escopo", "JS Ninja escopo global e local", "03 - Escopo de variáveis e funções"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
+date_updated: 2026-11-25
 source_count: 0
 tags: [javascript, escopo, escopo-global, escopo-local, var, variavel-global-implicita, garbage-collection, parametros, memoria]
 skill: lang-dynamic
@@ -27,7 +27,7 @@ Terceiro vídeo da "quarta aula" do [[wiki/entities/javascript-ninja|JavaScript 
 - **Sem `var`:** atribuir sem a palavra-chave, mesmo dentro de função, cria a variável "no escopo global", e só a partir do momento em que a função é invocada ([[wiki/concepts/var-let-const]]).
 - **Problemas do global:** "conflito de nomes com outras variáveis" e memória que o JavaScript "não vai poder limpar". Por isso, "sempre utilize a palavra-chave var".
 - **Parâmetros são locais:** `a`, `b`, `c` de uma função "não estão definidos" fora dela ([[wiki/concepts/funcoes-javascript]]).
-- Próximo vídeo: o desafio da semana 4.
+- Próximo vídeo: o desafio da semana 4. A semana 5 abre com [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos|retorno de funções com arrays e objetos]].
 
 ## Key Claims
 

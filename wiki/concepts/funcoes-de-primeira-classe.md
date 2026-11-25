@@ -3,8 +3,8 @@ type: concept
 title: "Funções de primeira classe"
 aliases: ["first-class functions", "first-class function", "funções como valores", "função como objeto", "objetos de primeira classe"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [javascript, funcoes, programacao-funcional, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -35,3 +35,4 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o quarto uso da lista, g
 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: função é objeto; atribuída a variável, anônima
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: função guardada em propriedade = método
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função como valor de propriedade de objeto retornado

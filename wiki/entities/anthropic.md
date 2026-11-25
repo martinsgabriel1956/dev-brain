@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-10-26
-source_count: 38
+date_updated: 2026-11-24
+source_count: 39
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -130,6 +130,10 @@ Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-mont
 
 A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]]; o blog de engenharia é indicado como leitura de repertório: [[wiki/entities/anthropic-engineering-blog]]. Também oferece rotinas na nuvem ([[wiki/concepts/rotinas-agendadas-claude-code]]) e saída estruturada via SDK ([[wiki/concepts/saida-estruturada-llm]]).
 
+## Claude Mythos (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], "o modelo Mythos lá da Anthropic" aparece como "o novo modelo que saiu", exemplo de que as IAs melhoram a cada versão. [external] Claude Mythos Preview, anunciado em abril de 2026 com acesso restrito (confiança média, sem fetch).
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
@@ -167,6 +171,7 @@ A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill-creator como skill oficial de avaliação de skills; Haiku vs. Opus no benchmark
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — documentação, blog de engenharia, rotinas e saída estruturada
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: Mythos como novo modelo
 
 ## Key sources (adição 2026-10-08)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 25
+date_updated: 2026-11-25
+source_count: 27
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -105,6 +105,14 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], a função c
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a função é o que cria escopo local na era ES5: variáveis declaradas dentro e os parâmetros (`a`, `b`, `c`) "não estão definidos" fora dela ([[wiki/concepts/escopo-javascript]]).
 
+## No JavaScript Ninja, semana 5, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], a função passa a retornar mais que primitivos. Um `return` encerra a função ("vai ignorar a segunda linha"); para devolver vários valores, retorna-se um array (`f()[0]`) ou um objeto literal com propriedades e método (`f().prop1`, ou guardado em variável para não reexecutar). `[external]` Cada chamada cria um objeto novo; hoje se lê o retorno com [[wiki/concepts/desestruturacao-javascript|desestruturação]].
+
+## No JavaScript Ninja, semana 5, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], o espelho do vídeo anterior: a função recebe array (`return arg[1]` com `[1, 2, 3]` dá 2) e objeto (`return arg.curso`), passados por variável ou como literal direto na chamada. Sem argumento, o parâmetro é `undefined` e ler `arg.curso` dá erro. `[external]` Objeto e array chegam como referência compartilhada: mutar dentro da função muda o de fora; hoje se usa parâmetro padrão ou `?.` contra o argumento ausente.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -132,3 +140,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a função �
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: função como método; com efeito × só retorno
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: função dentro do objeto vira método
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: função cria escopo; parâmetros são locais
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: return de array e objeto; um return só; sem return, undefined
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array e objeto como argumento; sem argumento, undefined e TypeError

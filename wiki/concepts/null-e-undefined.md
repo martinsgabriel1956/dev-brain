@@ -3,8 +3,8 @@ type: concept
 title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 8
+date_updated: 2026-11-25
+source_count: 10
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -56,3 +56,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a variável 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: valores especiais; null atribuído de propósito
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: null falsy; undefined ilegível
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: "não está definido" é ReferenceError
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: sem return e índice inexistente dão undefined
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro ausente é undefined; `undefined.curso` lança TypeError

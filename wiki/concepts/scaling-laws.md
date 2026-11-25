@@ -3,8 +3,8 @@ type: concept
 title: "Scaling Laws"
 aliases: ["leis de escala", "neural scaling laws", "power law LLM"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 2
+date_updated: 2026-11-24
+source_count: 3
 tags: [llm, scaling, treinamento, foundation-model]
 skill: tech-mentor-ai
 status: stable
@@ -56,3 +56,4 @@ O importante: as curvas são **smooth e previsíveis** — sem cliffs ou thresho
 - [[wiki/sources/chain-of-thought-prompting]] — CoT como exemplo de capacidade que não segue scaling law suave
 - Kaplan et al. (2020) — "Scaling Laws for Neural Language Models" [external]
 - Hoffmann et al. (2022) — "Training Compute-Optimal Large Language Models" (Chinchilla) [external]
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "não adianta você colocar mais parâmetro, mais poder computacional" (retorno decrescente, não nulo); gráfico prometido para depois

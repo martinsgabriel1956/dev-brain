@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-10-14
-source_count: 11
+date_updated: 2026-11-24
+source_count: 13
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -81,6 +81,10 @@ Na demo de [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-me
 
 Definição de entrada: agente = sistema que usa modelo na decisão **e** interage com ferramentas/informação externa e age; o modelo é um componente, não o produto; geralmente não é um modelo novo, e sim aplicação sobre modelos existentes. O autor recomenda cautela com processos críticos e segurança até a tecnologia passar pelo teste do tempo. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## FrontPUSH: do tutorial à execução (2026-11-24)
+
+[[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]] separa chat e agente pela execução. O chat devolve "meio que um tutorial" e diz "vá lá e faz agora"; o agente (Codex, [[wiki/entities/claude-code|Claude Code]]) "entra no seu sistema operacional", pede permissão, roda os testes, lê os outputs e repete com "um mini contexto". Para o autor, é "a cereja do bolo" da escada de oito degraus e o que torna a IA "tão disruptiva". A descrição bate com o laço de [[wiki/concepts/tool-call|tool calls]] com [[wiki/concepts/human-in-the-loop|aprovação humana]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -92,6 +96,8 @@ Definição de entrada: agente = sistema que usa modelo na decisão **e** intera
 - [[wiki/sources/rag-introducao-pipeline-completo]] — distinção explícita entre RAG e agente de IA: chamar um modelo com contexto injetado é uma consulta de API, não um agente
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — agente montado a partir da versão ativa do prompt
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — o 'microagente' da fonte é um fluxo RAG fixo, sem laço de decisão: ver [[wiki/concepts/microagente]] (tensão com a distinção RAG vs. agente)
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: agentes/autonomia como "a grande virada de chave" do mercado, último degrau da escada
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: chat entrega tutorial, agente executa no seu PC
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — LLM para raciocínio, [[wiki/entities/jev]] para decisões rápidas do laço: [[wiki/concepts/jev-para-ramificar-llm-para-ler]]
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — definição introdutória (modelo como componente) e postura cautelosa

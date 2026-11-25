@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-24
-source_count: 168
+source_count: 171
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -382,6 +382,12 @@ Na [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass|aula
 
 Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], desenha no iPad os fluxos e a Home do DashClass, recomenda sketchbook ("já fazendo meu merchan") e ticar os requisitos, e explica o modo escuro da plataforma. Corrige na hora "Dark Pattern" para "modo Dark".
 
+Na [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia|aula teórica do módulo de IA]], abre a escada "regras → ML → redes neurais → deep learning" com slides e afirma que "a IA é probabilidade". Avisa que as primeiras aulas "serão um pouco mais teóricas" e que o que passa "é simplesmente um guia". Usa o golpe por e-mail "principalmente no Brasil" como exemplo.
+
+Na [[wiki/sources/frontpush-ia-o-que-sao-as-llms|parte 2 da teoria de IA]], explica o LLM como "tradutor" que "cospe texto", com os quatro pilares (tokens, contexto, attention, parâmetros), e pede que se entenda "harness" como "a arquitetura do modelo", sentido diferente do que a wiki usa. Cita o Mythos da Anthropic e promete falar de mercado depois.
+
+Na [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia|parte 3 da teoria de IA]], fecha a escada: o harness como "cabresto" e "o que mais diferencia um modelo do outro", e os agentes como "a cereja do bolo". Conta um debug em que o Claude Code ou o Codex entrou na pasta dele, pediu permissões e rodou os testes. Usa o Jarvis do Homem de Ferro e a Skynet como imagens.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -552,3 +558,6 @@ Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de
 - [[wiki/sources/frontpush-dashboards-principios-parte-2]]: FrontPUSH, dashboards aula 05: levantamento de requisitos
 - [[wiki/sources/frontpush-dashboards-levantamento-de-requisitos-dashclass]]: FrontPUSH, dashboards aula 06: levantamento do DashClass
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: fluxos, Home e modo escuro
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: hierarquia e evolução da IA
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: o que são LLMs
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: harness e agentes

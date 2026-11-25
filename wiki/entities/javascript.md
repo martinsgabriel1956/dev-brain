@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 37
+date_updated: 2026-11-25
+source_count: 39
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -164,3 +164,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], escopo globa
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: truthy e falsy
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: operador ternário
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: escopo e global implícita
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retornando array e objeto
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array e objeto como argumento de função

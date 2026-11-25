@@ -3,8 +3,8 @@ type: concept
 title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
-date_updated: 2026-11-24
-source_count: 12
+date_updated: 2026-11-25
+source_count: 13
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -106,6 +106,10 @@ O toggle de favorito usa `push` e `splice` no array lido do storage; como é uma
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], as duas operações que a imutabilidade separa aparecem juntas: reatribuir a variável (`pessoa = {...}`, objeto novo) e mutar o objeto (`pessoa.cor = ...`, `pessoa.idade++`). A aula usa a mutação como forma normal de acrescentar dados.
 
+## No JavaScript Ninja, semana 5, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], array e objeto passam por parâmetro. `[external]` A aula não diz, mas a função recebe a mesma referência: `arg.push(4)` ou `arg.curso = 'x'` alteram o valor de quem chamou, e só `arg = {}` fica local. Por isso funções puras copiam antes de mudar (`[...arg]`, `{ ...arg }`).
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].
@@ -117,3 +121,4 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], as duas operações que 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: objeto mutável por padrão
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map devolve array novo
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: reatribuir × mutar objeto
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: objeto passado à função é a mesma referência (precisão `[external]`)
