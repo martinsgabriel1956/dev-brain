@@ -3,8 +3,8 @@ type: concept
 title: "Equity Como Diferencial de Compensação"
 aliases: ["equity compensation", "rsu", "stock options", "equity tech"]
 date_created: 2026-04-29
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [equity, compensacao, rsu, stock-options, big-tech, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -35,11 +35,16 @@ A maioria dos sites de salário não captura equity porque a maioria dos emprego
 - [[tier-de-empresas-tech]] — empresas Tier 3 são as que oferecem equity líquido
 - [[wiki/concepts/holding-patrimonial]] — planejamento patrimonial que pode incorporar RSU como fonte de renda
 
+## Colegas que hoje ganham 5X
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], o autor ilustra a cauda longa com colegas que "entraram ganhando X, hoje estão ganhando 5X mais ações da empresa" porque as ações valorizaram; o artigo ([[wiki/sources/trimodal-compensacao-tech]]) atribui os outliers a equity que valorizou 5-10x ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — estratégia prática de venda de RSU no momento do vesting
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — curva de vesting 38/32/20/10 do Google no Levels.fyi
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — cauda longa explicada por ações que valorizaram
 
 ## Atualização 2026-10-14
 

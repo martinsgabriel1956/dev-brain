@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-24
-source_count: 49
+date_updated: 2026-11-25
+source_count: 50
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -122,6 +122,10 @@ Na [[wiki/sources/frontpush-dashboards-grids-e-patterns|aula 03 do módulo de da
 
 Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]]: "quando você entra na estrutura do Google, em qualquer aplicativo [...] eu quero mexer na minha conta, é no canto superior direito", usado como pattern para o perfil na top bar do DashClass.
 
+## L6 no Brasil (Levels.fyi)
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], um L6 do Google no Brasil aparece com total compensation de R$ 1,1 milhão por ano (≈ R$ 50 mil de salário CLT, R$ 400 mil em ações, bônus), exemplo da cauda longa do [[wiki/concepts/modelo-trimodal-compensacao|modelo trimodal]]. Dado de tela, data desconhecida.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -185,6 +189,7 @@ Em [[wiki/sources/frontpush-propriedade-animation-parte-2-curvas-cubic-bezier-ed
 - [[wiki/sources/frontpush-introducao-otimizacao-web-minificacao-css-js]]: FrontPUSH, otimização aula 01: experiência do usuário e ranking
 - [[wiki/sources/frontpush-otimizacao-de-imagens-mobile-desktop-classes-mixin]]: FrontPUSH, otimização aula 04: aviso de tamanho de imagem
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: notas do PageSpeed e rastreamento
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — TC de um L6 no Brasil segundo o Levels.fyi
 
 ## Google como empregador: faixa salarial e vagas no Brasil
 

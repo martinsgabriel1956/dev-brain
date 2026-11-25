@@ -59,3 +59,5 @@ Legenda SRT em português, limpa com **text-cleaner** sem tradução. Autoria in
 A aula de requisitos prometida aqui foi ingerida depois: [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]].
 
 A aula do board de candidaturas também foi ingerida: [[wiki/sources/acompanhando-as-applications-galego]].
+
+A aula de faixas salariais "invisíveis" também foi ingerida: [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]].

@@ -3,8 +3,8 @@ type: entity
 title: "Y Combinator"
 aliases: ["yc"]
 date_created: 2026-10-07
-date_updated: 2026-11-16
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [contratacao, carreira, busca-de-vagas]
 skill: tech-mentor-leadership
 status: stub
@@ -13,6 +13,10 @@ status: stub
 # Y Combinator
 
 Aceleradora de startups; a página de companies serve de fonte para montar a lista de 30–50 empresas-alvo ([[wiki/concepts/cacar-a-empresa-nao-a-vaga]]). Fonte: [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]. Ver [[wiki/concepts/applicant-tracking-system]] e [[wiki/concepts/busca-de-vagas-direto-no-ats]].
+
+## Sinal de tier salarial
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], empresa acelerada pela YC "tende a ser tier 2", e financiamento por VC aparece como sinal de empresa que pode pagar a cauda longa ([[wiki/concepts/modelo-trimodal-compensacao]]).
 
 ## Key Sources
 
@@ -27,3 +31,4 @@ O [[wiki/entities/hacker-news]] da YC publica todo mês o post "Who is Hiring?" 
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — YC/VC como sinal de Tier 2 ou acima

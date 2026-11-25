@@ -3,8 +3,8 @@ type: entity
 title: "Uber"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [empresa, custo-ia, token-economics, caso-real]
 skill: tech-mentor-ai
 status: stub
@@ -20,6 +20,10 @@ O caso ilustra o [[wiki/concepts/paradoxo-de-jevons]] em escala corporativa: mes
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] cita novamente o caso Uber, desta vez como exemplo central de recomendação prática: a empresa teria estourado o orçamento anual de IA no primeiro trimestre de 2026 provavelmente por não ter ferramentas para monitorar o limite de consumo por dev — ver [[wiki/concepts/finops-para-ia]]. A mesma fonte cita orçamentos de engenharia de 2026 estourando também na Microsoft e na Meta, sem detalhar números.
 
+## Origem do modelo trimodal
+
+O modelo de [[wiki/entities/gergely-orosz]] nasceu da distância entre os benchmarks públicos e o que a Uber oferecia em Amsterdã, onde fica a sede europeia ([[wiki/sources/trimodal-compensacao-tech]]; comentado em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]]).
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
@@ -29,6 +33,7 @@ O caso ilustra o [[wiki/concepts/paradoxo-de-jevons]] em escala corporativa: mes
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — DOMA: microsserviços orientados a domínio para reduzir o caos de 50+ microsserviços por equipe (relato do áudio, não verificado).
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — Uber em Amsterdã como ponto de partida do modelo trimodal
 
 ## Uber como Big Tech adjacente
 

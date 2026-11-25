@@ -4,7 +4,7 @@ title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
 date_updated: 2026-11-25
-source_count: 26
+source_count: 27
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -99,6 +99,10 @@ Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]] diz que hoje é CT
 
 Em [[wiki/sources/acompanhando-as-applications-galego]] diz que já aplicou em volume, sem ler requisitos, e que "já funcionou"; para um núcleo de 20 a 30 empresas recomenda aplicação customizada, 2 ou 3 contatos por empresa e follow-up, num board do Notion ([[wiki/concepts/acompanhamento-de-candidaturas]]). Autoria inferida pela pasta; o nome não é dito.
 
+## Módulo "Mapeando Vagas": aula bônus sobre salários invisíveis
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] comenta o artigo trimodal de [[wiki/entities/gergely-orosz]] e o traduz para o Brasil (agência local × Banrisul × Nubank/Brex). Diz que o modelo é "uma verdade quase que auto-evidente" e que vale no Brasil "tranquilamente". É a aula de faixas salariais "invisíveis" anunciada na introdução do módulo ([[wiki/concepts/modelo-trimodal-compensacao]]). Autoria inferida; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -124,3 +128,4 @@ Em [[wiki/sources/acompanhando-as-applications-galego]] diz que já aplicou em v
 - [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — tabela de requisitos (categoria, prioridade, contagem, proficiência); autoria inferida
 - [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo é opcional; começou em 2024 com LeetCode; post na íntegra (autoria inferida)
 - [[wiki/sources/acompanhando-as-applications-galego]] — board de candidaturas, aplicação em volume × seletiva (autoria inferida)
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — leitura comentada do modelo trimodal, com exemplos brasileiros (autoria inferida)
