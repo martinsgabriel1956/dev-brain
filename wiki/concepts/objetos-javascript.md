@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 18
+source_count: 20
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -101,6 +101,14 @@ Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], a 
 
 Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], um objeto com `propriedade: 'Fernando'` e `curso` vai como argumento; a função devolve o objeto inteiro ou só `arg.curso`. Chamada sem argumento, dá "não conseguiu ler propriedade curso [de] indefinido" (`TypeError`).
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], o fecho anuncia que arrays "são objetos disfarçados"; `typeof []` é `'object'`, mas o array tem `length` automático e `Array.prototype` ([[wiki/concepts/array]]).
+
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o array entra como objeto embutido: "como objetos, eles também têm propriedades e métodos", como os que o curso já criava à mão. O objeto `{ bola: 'azul' }` guardado no array é lido com `array[3].bola` ([[wiki/concepts/array]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -121,3 +129,5 @@ Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `pessoa.sexo` no ternário
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retorna objeto literal com propriedades e método
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: objeto como argumento; devolver o objeto ou `arg.curso`
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: arrays como "objetos disfarçados"
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array como objeto embutido; objeto dentro de array

@@ -3,8 +3,8 @@ type: concept
 title: "Debugging"
 aliases: ["depuração", "encontrar bugs"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 9
+date_updated: 2026-11-25
+source_count: 10
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stub
@@ -59,7 +59,12 @@ Em [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javas
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: console.log nas duas pontas; erro simulado; Network
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: lendo erros de SQL e de rota
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], [[wiki/entities/fernando-daciuk|Fernando Daciuk]] erra ao vivo (o loop mostra ímpares em vez de pares) e mantém o erro na gravação: "é isso que vai acontecer no seu dia a dia [...] você vai errar e você vai precisar analisar e entender aquilo que está sendo feito". O diagnóstico é ler o código e a saída, sem ferramenta: o incremento vinha antes do teste.
+
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — debug diagnostica mas **não prova** a correção; evidenciar o erro antes e repetir o mesmo teste depois ([[wiki/concepts/evidenciar-o-problema]], [[wiki/concepts/provar-que-corrigiu]])
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: console.log em cada bifurcação
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: erro mantido ao vivo; analisar a saída para achar o incremento fora de ordem

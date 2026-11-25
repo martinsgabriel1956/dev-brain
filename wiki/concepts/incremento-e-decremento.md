@@ -4,7 +4,7 @@ title: "Incremento e decremento (++ e --)"
 aliases: ["++", "--", "incremento", "decremento", "pós-incremento", "pré-incremento", "pós-decremento", "pré-decremento", "i++", "++i", "postfix increment", "prefix increment"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 5
+source_count: 7
 tags: [javascript, operadores, incremento, decremento, expressoes]
 skill: lang-dynamic
 status: stub
@@ -51,6 +51,14 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], `return x += 1, 
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], `console.log(counter--)` imprime e "daí atribui menos um"; com o `--` na condição, `while (counter--)` testa o valor antigo, então o corpo imprime de 9 a 0 e o contador termina em -1.
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], o `num++` antes do teste de par fez o console mostrar os ímpares; a explicação ("peguei o número já se somando") bate com `if (num++ % 2 === 0) console.log(num)`, que testa o valor antigo e imprime o novo (inferência, média). A correção foi incrementar "depois que eu fizesse o meu cálculo".
+
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], a posição do `--` decide o índice lido: `array[qtd--]` com `qtd = 5` lê o 5, que não existe, e `array[--qtd]` lê o 4. A aula chega à versão certa por tentativa, sem explicar o pré × pós.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: pós e pré-incremento e decremento pelo eco do REPL
@@ -58,3 +66,5 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], `console.log(
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: ++ em propriedade de objeto
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: return x += 1, x equivale a return ++x
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: counter-- no corpo e na condição do while
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: ++ antes do teste troca pares por ímpares
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array[qtd--] × array[--qtd]

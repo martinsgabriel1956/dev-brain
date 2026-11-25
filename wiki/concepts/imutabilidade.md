@@ -4,7 +4,7 @@ title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
 date_updated: 2026-11-25
-source_count: 13
+source_count: 14
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -110,6 +110,10 @@ Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], as duas operações que 
 
 Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], array e objeto passam por parâmetro. `[external]` A aula não diz, mas a função recebe a mesma referência: `arg.push(4)` ou `arg.curso = 'x'` alteram o valor de quem chamou, e só `arg = {}` fica local. Por isso funções puras copiam antes de mudar (`[...arg]`, `{ ...arg }`).
 
+## No JavaScript Ninja, semana 7, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `push` é apresentado como a forma "inteligente" de adicionar, em vez de reescrever o array. `[external]` Ele muta o array no lugar; reescrever cria um array novo, e é essa a forma que o React exige (`[...lista, novo]`) ([[wiki/concepts/metodos-de-array-javascript]]).
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].
@@ -122,3 +126,4 @@ Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: map devolve array novo
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: reatribuir × mutar objeto
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: objeto passado à função é a mesma referência (precisão `[external]`)
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push muta; reescrever cria outro array

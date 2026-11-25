@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 18
+source_count: 21
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -60,6 +60,14 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], primeiro vídeo 
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o segundo vídeo: o `while`, primeira estrutura de repetição. Fecha com "o desafio da semana de 6 está lançado", o que confirma a numeração da semana; o desafio não está entre as transcrições.
 
+## Semana 7
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], primeiro vídeo depois da "resolução do desafio da semana 6" (esse vídeo não está na wiki): o operador `%` e os pares de 0 a 20 com `while`, com um erro mantido ao vivo. A pasta recomeçou em 01; o vídeo anuncia arrays como o próximo.
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o segundo vídeo: arrays como objetos embutidos, a propriedade `length` e o percurso de trás para frente com `while`. O seguinte é de métodos de array.
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro vídeo: o método `push` (adiciona no fim e devolve o `length`) e o loop `for`.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -81,3 +89,6 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o segundo ví
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: semana 5, vídeo 02: parâmetros de funções como arrays e objetos
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: semana 6, vídeo 01: operador vírgula e estrutura condicional switch
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: semana 6, vídeo 02: estrutura de repetição while; desafio 6
+- [[wiki/sources/javascript-ninja-operador-modulo]]: semana 7, vídeo 01: operador módulo; anuncia arrays
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length; anuncia métodos
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for

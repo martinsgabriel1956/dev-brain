@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-25
-source_count: 23
+source_count: 26
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -113,6 +113,18 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o array é "uma
 
 Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], o array é o jeito de uma função devolver mais de um valor: `return [1, 2, 3]` e o índice direto na chamada (`f()[2]` traz 3; índice inexistente, `undefined`).
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], o vídeo anuncia arrays para o seguinte: "na verdade não existem arrays de verdade [...] são objetos disfarçados". `[external]` `typeof []` dá `'object'`; `Array.isArray` distingue ([[wiki/concepts/objetos-javascript]]).
+
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o array é "um tipo de objeto JavaScript" embutido, com propriedades e métodos próprios, e `length` dá "a quantidade de itens". O exemplo mistura string, `null`, `true`, objeto e função, e é percorrido de trás para frente com `qtd = array.length` e `array[--qtd]`. `[external]` `length` é o maior índice mais 1, não uma contagem: num array com buracos os dois diferem, e atribuir a `length` corta o array.
+
+## No JavaScript Ninja, semana 7, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o array cresce com `push` em vez de ser reescrito, e guarda tipos misturados: objeto `{ carro: 'BMW' }`, outro array ("a chave 5"), `null` e uma função `soma`, chamada pelo índice (`array[7](1, 2)` dá 3). `[external]` `arr[arr.length] = x` também acrescenta no fim.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -138,3 +150,6 @@ Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], o 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: lista indexada a partir de 0; "arrays são objetos"
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retorna array para devolver vários valores; `f()[0]`
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array como argumento; `arg[1]` dentro da função; literal direto na chamada
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: anuncia arrays como "objetos disfarçados"
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: length, array heterogêneo, percurso com while
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push; array com objeto, array e função

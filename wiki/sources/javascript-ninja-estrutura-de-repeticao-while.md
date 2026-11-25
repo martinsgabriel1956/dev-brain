@@ -95,6 +95,8 @@ Segundo e último vídeo da semana 6 do [[wiki/entities/javascript-ninja|JavaScr
 - [[wiki/concepts/estruturas-condicionais-javascript]]
 - [[wiki/concepts/fork-e-upstream]]
 
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-operador-modulo]] (semana 7, vídeo 01), que retoma o `while` para imprimir os pares com `%`.
+
 ## Open Questions
 
 - **Nome da variável**: "cautela" e variantes; provavelmente `counter` (média), talvez `count`. Mantido literal no raw.

@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 10
+source_count: 11
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], "o null é um valor falso".
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a variável local lida de fora "não está definida". É `ReferenceError: x is not defined`, não o valor `undefined`, que só aparece em nome declarado sem valor.
 
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], ler um índice que não existe (`array[5]` num array de 5, ou `array[-1]`) dá `undefined`, sem erro: "ele tentou imprimir o quinto [...] que o quinto não existe". `null` aparece como item do array. `[external]` `null.bola` lança `TypeError`; `?.` evita.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
@@ -58,3 +62,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a variável 
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: "não está definido" é ReferenceError
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: sem return e índice inexistente dão undefined
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro ausente é undefined; `undefined.curso` lança TypeError
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: índice inexistente dá undefined; null como item
