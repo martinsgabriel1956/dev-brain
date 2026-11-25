@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-11-16
-source_count: 23
+date_updated: 2026-11-25
+source_count: 24
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -87,6 +87,10 @@ Aula e PDF do workshop pago de carreira ([[wiki/sources/onde-encontrar-vagas-wor
 
 Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]), pesquisa salário no [[wiki/entities/levels-fyi]] e no [[wiki/entities/glassdoor]], filtra vagas na página de carreiras do Google e resume o [[wiki/concepts/processo-de-entrevista-big-tech]]. Relato pessoal: aplicou para ~10 vagas na Amazon, 9 rejeitaram o currículo e 1 time o chamou, mas ele não passou da segunda etapa ([[wiki/concepts/contratacao-por-time-em-big-tech]]). Autoria inferida pela pasta das transcrições e pelo módulo; o nome não é dito.
 
+## Módulo "Mapeando Vagas": mapear requisitos de múltiplas vagas
+
+Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] mostra um template no Notion ("eu uso o Notion pra tudo") para contar os requisitos de 10 a 15 vagas ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]). A demo usa vagas de [[wiki/entities/nubank]], Brex e [[wiki/entities/itau]]; diz ter "viés" pró-fintech ("eu acho que fintech vale muito a pena"), coerente com o relato da empresa de pagamentos. Autoria inferida pela pasta das transcrições; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -109,3 +113,4 @@ Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]),
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — onde procurar vaga primeiro (job boards e outsourcing)
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] — três canais, Total Compensation, outsourcing PJ (autoria inferida)
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]] — PDF com links e manual de busca booleana (autoria inferida)
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — tabela de requisitos (categoria, prioridade, contagem, proficiência); autoria inferida
