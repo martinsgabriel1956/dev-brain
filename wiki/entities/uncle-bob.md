@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-11-05
-source_count: 17
+date_updated: 2026-11-25
+source_count: 18
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -84,6 +84,10 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 
 Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], [[wiki/entities/fabio-akita]] conta ter dito a Martin, na RailsConf 2010, sua teoria sobre o que motivou Ken Schwaber a criar a certificação de Scrum. A página da entrevista confirma a conversa sobre certificações e Ágil e a história do manifesto ([external](https://www.akitaonrails.com/2010/06/16/railsconf-2010-video-entrevista-robert-martin/)), mas a teoria só estaria no vídeo, não assistido.
 
+## Classes um pouco maiores (Ousterhout, cap. 5)
+
+No cap. 5 de *A Philosophy of Software Design*, Ousterhout diz que o ocultamento de informação "muitas vezes pode ser melhorado tornando uma classe um pouco maior", e usa como exemplo a fusão de duas classes rasas de um servidor HTTP ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], 5.5). É a primeira aparição, no livro, do desacordo com a regra de classes e funções pequenas que ele explicita no cap. 9.
+
 ## Key Sources
 
 
@@ -104,3 +108,4 @@ Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], [[wiki/entities/fa
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — menção contextual: seu livro *Código Limpo* (*Clean Code*) usado como objeto físico na analogia da busca (procurar a página 310)
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — signatário do manifesto de 2001; citação parafraseada "não existe metodologia ágil, existe ser ágil"
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — entrevista de 2010 sobre certificações e Ágil; teoria sobre Schwaber não conferida
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — "tornar uma classe um pouco maior" contra a regra de classes pequenas

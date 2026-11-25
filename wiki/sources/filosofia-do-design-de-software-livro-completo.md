@@ -28,7 +28,7 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 **Confidence:** alta — capítulo inteiro dedicado ao tema, com dados qualitativos (opinião do autor, não medição controlada, o que ele mesmo admite).
 
 **Claim:** O ocultamento de informação (information hiding, de Parnas 1972) é a técnica central para produzir módulos profundos: cada módulo deve encapsular uma decisão de design que não aparece em sua interface; o oposto — vazamento de informação (information leakage) — ocorre quando a mesma decisão de design se reflete em múltiplos módulos, criando uma dependência entre eles mesmo que nenhum dos dois exponha a informação publicamente ("back-door leakage").
-**Evidence:** Cap. 5. Exemplo do servidor HTTP de um curso de design: dividir "ler a requisição" e "parsear a requisição" em duas classes obriga as duas a entenderem o formato HTTP (o Content-Length precisa ser parseado para saber onde a requisição termina), duplicando conhecimento — a correção foi fundir as duas classes. Introduz também **decomposição temporal** como causa comum de vazamento: estruturar módulos pela ordem de execução ("primeiro lemos, depois parseamos") em vez de pelo conhecimento necessário.
+**Evidence:** Cap. 5. Exemplo do servidor HTTP de um curso de design: dividir "ler a requisição" e "parsear a requisição" em duas classes obriga as duas a entenderem o formato HTTP (o Content-Length precisa ser parseado para saber onde a requisição termina), duplicando conhecimento — a correção foi fundir as duas classes. Introduz também **decomposição temporal** como causa comum de vazamento: estruturar módulos pela ordem de execução ("primeiro lemos, depois parseamos") em vez de pelo conhecimento necessário. O texto do capítulo ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]) mostra que o livro só recomenda a fusão ("teria sido melhor"); não diz que a equipe a fez.
 **Confidence:** alta — capítulo fundacional, com múltiplos sub-exemplos (parâmetros HTTP, valores default em respostas HTTP).
 
 **Claim:** Módulos de propósito ligeiramente geral ("somewhat general-purpose") são mais profundos que módulos especializados — mesmo quando o único uso real é especializado, a versão geral tende a ter interface mais simples, menos código de implementação, e melhor ocultamento de informação.
@@ -124,6 +124,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - Cap. 2: [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]], com o texto completo da frase "dependencies and obscurity" citada abaixo
 - Cap. 3: [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], com tática vs. estratégica, tornado tático e o caso Facebook
 - Cap. 4: [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]], com interface formal e informal, falsa abstração, Figura 4.1, Unix I/O, [[wiki/concepts/classite]] e o caso comum simples
+- Cap. 5: [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], com vazamento pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]], `getParams` e valores padrão
 
 ## Open Questions
 

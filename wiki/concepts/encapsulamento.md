@@ -3,8 +3,8 @@ type: concept
 title: "Encapsulamento"
 aliases: ["encapsulamento", "encapsulation", "information hiding"]
 date_created: 2026-08-10
-date_updated: 2026-11-17
-source_count: 6
+date_updated: 2026-11-25
+source_count: 7
 tags: [encapsulamento, separation-of-concerns, arquitetura, modularidade, backend, oop, invariante]
 skill: tech-mentor-backend
 status: draft
@@ -39,6 +39,10 @@ Duas distinções que a fonte deixa explícitas:
 
 Uma classe que expõe só setters de atribuição, sem comportamento, é um [[wiki/concepts/modelo-de-dominio-anemico]] — o anti-padrão que o encapsulamento de verdade evita. Em sistemas com muitos desenvolvedores, essa proteção é **estrutural** (não dá para esquecer de validar), e por isso previne bugs difíceis de rastrear. Conecta diretamente com [[wiki/concepts/objeto-vs-estrutura-de-dados]]: a versão `public` era uma estrutura de dados disfarçada de objeto; a versão encapsulada é um objeto de verdade (comportamento + dados privados).
 
+## Ousterhout: `private` não é ocultar informação
+
+A nota da 5.1 de [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] separa o mecanismo do objetivo: `private` impede o acesso direto, mas getters e setters públicos deixam a natureza e o uso da variável "tão expostos quanto se elas fossem públicas". Isso discorda da analogia do início desta página, em que getters e setters definem a interface da classe. Converge com a seção acima por outro caminho: lá o setter não protege a invariante, aqui o getter não esconde a decisão de design. Caso do livro: `getParams()` devolvendo o `Map` interno de `HTTPRequest`. O princípio de Ousterhout tem página própria: [[wiki/concepts/ocultamento-de-informacao]]. A N.T. da 5.2 lembra que no Brasil "encapsulamento" muitas vezes nomeia o mesmo princípio, por isso o alias "information hiding" desta página.
+
 ## Key sources
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — encapsulamento como isolamento de módulos via contratos
@@ -47,3 +51,4 @@ Uma classe que expõe só setters de atribuição, sem comportamento, é um [[wi
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `Produto` com setters aceita `setPreco(-30)`; ver [[wiki/concepts/classe-como-conceito-de-dominio]]
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — encapsulamento como um dos mecanismos com que a [[wiki/concepts/programacao-orientada-a-objetos|POO]] controlava o acoplamento
 - [[wiki/sources/frontpush-spa-componentes-estrutura-app-js-componentizacao]]: FrontPUSH, React aula 05: componente encapsulado; o CSS importado no React é global por padrão
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: `private` ≠ ocultamento; getters e setters expõem a variável como se fosse pública

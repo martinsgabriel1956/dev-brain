@@ -173,7 +173,7 @@ Tradução do usuário do capítulo 4 de *A Philosophy of Software Design*, de [
 - A "fórmula na página 6" da 4.7 é mesmo a $C = \sum_p c_p t_p$ do cap. 2? Conferir a paginação do original.
 - O livro não mede profundidade. Existe métrica que aproxime "funcionalidade / complexidade de interface", por exemplo linhas de implementação por método público? Qualquer métrica dessas mediria o tamanho da implementação, não a funcionalidade, que é o que o autor quer dizer.
 - A falsa abstração (4.3) é o mesmo fenômeno que a wiki chama de [[wiki/concepts/abstraction-illusion]]? Pela definição desta, parece outra coisa (padrão acessível mas inadequado), então não foram ligadas como sinônimos.
-- O cap. 5 (ocultamento de informação) é o próximo da tradução. A wiki já o tem pelo livro completo e por [[wiki/concepts/ocultamento-de-informacao]].
+- ~~O cap. 5 (ocultamento de informação) é o próximo da tradução.~~ Respondida: [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]. A 5.7 retoma o *buffer* do Java I/O desta 4.7 como exemplo negativo de valor padrão.
 
 ## Raw Quotes
 
