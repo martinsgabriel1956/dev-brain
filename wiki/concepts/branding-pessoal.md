@@ -3,8 +3,8 @@ type: concept
 title: "Branding pessoal"
 aliases: ["marca pessoal", "personal branding", "personal brand"]
 date_created: 2026-11-22
-date_updated: 2026-11-23
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [carreira, freelance, branding, posicionamento, expertise]
 skill: tech-mentor-leadership
 status: stub
@@ -24,9 +24,14 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autocon
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], o site próprio entra como opcional que agrega: "necessário, necessário não é, mas é bom", porque "reflita o máximo a sua personalidade". Pesa mais para design e para freela. A seção sobre serve para "dar uma humanizada": "pessoas contratam pessoas".
 
+## Contraponto: conteúdo é opcional para quem é contratado
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/augusto-galego]] diz que é "redondamente mentira" que é preciso criar conteúdo para ter sucesso: ele fez carreira sênior internacional sem publicar nada antes de 2024. Não contradiz a FrontPUSH de frente, porque o freelancer precisa ser achado por clientes; quem busca emprego pode ser achado por currículo e LinkedIn ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: influência vem de vender uma expertise
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: definição e o exemplo das animações
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: site próprio e humanização
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-descobrir-o-nicho-ideal]]: "as pessoas querem uma marca para poder melhor representar elas" como demanda
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — criação de conteúdo como escolha, não requisito

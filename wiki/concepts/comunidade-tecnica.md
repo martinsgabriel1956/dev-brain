@@ -3,8 +3,8 @@ type: concept
 title: "Comunidade Técnica"
 aliases: ["comunidade de tecnologia", "meetup", "comunidade open source", "ciclo de retribuição"]
 date_created: 2026-07-30
-date_updated: 2026-11-22
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [comunidade, mentoria, retribuicao, meetup, networking, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -44,9 +44,14 @@ O mecanismo de indicação de vaga (o "mercado invisível") descrito em [[wiki/c
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] escolhe React e Figma pelo tamanho da comunidade: "a chance de alguém encontrar um bug e corrigir é maior", há mais conteúdo gratuito (Figma Community) e, no caso do React, mais vagas.
 
+## Conteúdo como porta para comunidades
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], publicar na íntegra no Reddit e em comunidades do Discord e pedir feedback "é assim que se interage, é assim que se cria a network". No caso de um colega que posta sobre um projeto open source, o conteúdo levou a comunidades, palestras e convites de empresas ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: comunidade grande: bugs corrigidos, conteúdo, vagas
 - [[wiki/sources/papinho-tech-solo-comunidade]]
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — comunidade recomendada como ponto de entrada para quem busca a primeira vaga júnior
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — comunidades por afinidade técnica (linguagem/ferramenta) como motor de networking e o dever de retribuir
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — distribuir conteúdo em comunidades e pedir feedback

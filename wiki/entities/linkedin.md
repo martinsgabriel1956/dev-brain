@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-11-23
-source_count: 11
+date_updated: 2026-11-25
+source_count: 12
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de 
 
 [[wiki/entities/augusto-galego]] chama o LinkedIn de "varejão, que tem tudo", mas lembra que as Big Techs nem sempre publicam lá e que os posts promovidos atrapalham ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]). Duas técnicas: [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] na barra principal com filtros nativos ([[wiki/sources/onde-procurar-vagas-guia-definitivo]]) e busca por **posts** das últimas 24 h para achar o recrutador que publicou a vaga.
 
+## Post na íntegra, link nos comentários
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/augusto-galego]] recomenda publicar o artigo inteiro no LinkedIn em vez de só o link do Medium/Dev.to. Como há limite de caracteres e "postar links em redes sociais vai diminuir um pouco o seu alcance", ele põe os primeiros parágrafos no post e o link nos comentários. É prática pessoal, sem dado; o algoritmo não documenta a regra ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — atraso, volume, fantasmas; uso em paralelo
@@ -54,3 +58,4 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link de contato no portfólio; "para mais, visite o LinkedIn" no CV
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — distribuição de conteúdo: post na íntegra, link nos comentários

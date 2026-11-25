@@ -4,7 +4,7 @@ title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
 date_updated: 2026-11-25
-source_count: 24
+source_count: 25
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -91,6 +91,10 @@ Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]),
 
 Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] mostra um template no Notion ("eu uso o Notion pra tudo") para contar os requisitos de 10 a 15 vagas ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]). A demo usa vagas de [[wiki/entities/nubank]], Brex e [[wiki/entities/itau]]; diz ter "viés" pró-fintech ("eu acho que fintech vale muito a pena"), coerente com o relato da empresa de pagamentos. Autoria inferida pela pasta das transcrições; o nome não é dito.
 
+## Aula sobre networking com criação de conteúdo
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]] diz que hoje é CTO e criador de conteúdo, e que só começou a publicar em 2024, já sênior, morando na Europa e com passagem por empresas dos EUA e da Austrália; antes, "você não vai encontrar quase nada que eu fiz na internet". O primeiro tema foi LeetCode. Defende que conteúdo é opcional e que o ganho inicial é network e visibilidade ([[wiki/concepts/criacao-de-conteudo-tecnico]]). Autoria inferida pela pasta e pelo relato; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -114,3 +118,4 @@ Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] mostra um templa
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] — três canais, Total Compensation, outsourcing PJ (autoria inferida)
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]] — PDF com links e manual de busca booleana (autoria inferida)
 - [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — tabela de requisitos (categoria, prioridade, contagem, proficiência); autoria inferida
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo é opcional; começou em 2024 com LeetCode; post na íntegra (autoria inferida)
