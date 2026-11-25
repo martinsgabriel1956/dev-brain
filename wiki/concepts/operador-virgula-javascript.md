@@ -4,7 +4,7 @@ title: "Operador vírgula em JavaScript"
 aliases: ["operador vírgula", "comma operator", "operador de sequência", "sequence expression", "vírgula no JavaScript"]
 date_created: 2026-11-25
 date_updated: 2026-11-25
-source_count: 1
+source_count: 2
 tags: [javascript, operadores, operador-virgula, expressoes]
 skill: lang-dynamic
 status: stub
@@ -39,6 +39,11 @@ Para ter o operador nesses lugares é preciso parênteses: `f((a, b))` passa um 
 
 Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], a vírgula "junta várias expressões em uma única expressão", avaliada "da esquerda para direita". Os exemplos são `var a, b = 2, c` (que é a vírgula da declaração, não o operador), `return x += 1, x` ("a mesma coisa que [...] pré-incremento") e uma função cujas variáveis declaradas na lista ficam locais. O curso adota um `var` por variável, para facilitar mover e remover linhas.
 
+## No JavaScript Ninja, semana 7, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o cabeçalho do `for` inicializa duas variáveis (`var num = 2, arroz = 3`), vírgula de declaração. Incrementar as duas no cabeçalho (`num++, arroz++`) seria o operador vírgula; a aula sugere incrementar `arroz` no corpo ou "aqui em cima".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: vírgula na declaração e no retorno; um var por variável
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: duas variáveis no cabeçalho do for

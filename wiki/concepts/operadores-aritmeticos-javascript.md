@@ -3,8 +3,8 @@ type: concept
 title: "Operadores aritméticos em JavaScript"
 aliases: ["operadores aritméticos", "operador de resto", "módulo %", "operadores JavaScript", "coerção com +"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 6
+date_updated: 2026-11-25
+source_count: 7
 tags: [javascript, operadores, aritmetica, coercao, number]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], são "quatro tipos 
 
 Em [[wiki/sources/javascript-ninja-operadores-unarios]], o `+` e o `-` com um operando só: `+'3'` converte para número, `-x` inverte o sinal ([[wiki/concepts/operadores-unarios-javascript]]). O `+` binário "serve também para concatenar": com string e número, "ele não soma, ele concatena". Isso vale só para o `+`; `'3' - 1` dá `2`.
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], o `%` finalmente aparece: "retorna [...] o resto da divisão entre dois operandos", com analogias de bolas e carros (`5 % 2` é 1, porque "não posso cortar um carro no meio") e o teste de par (`n % 2 === 0`). Chama de "operador de módulo" e diz que devolve "o valor inteiro"; vale só para inteiros não negativos: `-13 % 2` dá `-1` e `5.5 % 2` dá `1.5`. Para ímpar, `n % 2 !== 0` é o teste seguro.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: as cinco operações aritméticas
@@ -52,3 +56,4 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], o `+` e o `-` com um op
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: quatro operadores, ++/-- e +=; espaços para legibilidade
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: continuação com igualdade e relacionais
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena string com número; + e - unários
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: % como resto da divisão; par e ímpar

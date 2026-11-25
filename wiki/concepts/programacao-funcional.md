@@ -3,8 +3,8 @@ type: concept
 title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
-date_updated: 2026-11-24
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -82,8 +82,13 @@ O [[nubank]] escolheu [[clojure]] (Lisp funcional sobre JVM) como linguagem prin
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 
+## No JavaScript Ninja, semana 7, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], a primeira menção no curso: guardar uma função num array e chamá-la depois é "algumas coisas de programação funcional no JavaScript"; passar função por parâmetro fica "mais para frente" ([[wiki/concepts/funcoes-de-primeira-classe]]).
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — FP como paradigma paralelo à POO e influência posterior sobre Java e TypeScript
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: funções de primeira classe, só a atribuição (ver [[wiki/concepts/funcoes-de-primeira-classe]])
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: prévia de programação funcional com função no array

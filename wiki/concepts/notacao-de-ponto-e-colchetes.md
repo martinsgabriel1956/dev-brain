@@ -3,8 +3,8 @@ type: concept
 title: "Notação de ponto e de colchetes (JavaScript)"
 aliases: ["dot notation", "bracket notation", "notação de ponto", "notação de colchetes", "property accessors", "acesso a propriedade"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [javascript, objetos, propriedades, array, sintaxe]
 skill: lang-dynamic
 status: stub
@@ -39,8 +39,13 @@ Em [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]], só o ponto: `obj
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], o ponto também escreve: `pessoa.cor = 'caucasiano'` cria a propriedade sem perder as outras, e `pessoa.andar = function () {...}` cria um método. "Novas atribuições, sempre [...] o nome do objeto, ponto, o nome da propriedade, é igual, o valor." `[external]` Se a propriedade já existe, o ponto sobrescreve.
 
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], as duas notações juntas: `array[qtd]` pega o item e `.bola` a propriedade do objeto que está nele (`array[3].bola` dá `'azul'`).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: `pessoa.altura` × `pessoa['altura']`; arrays como objetos
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: leitura com ponto em pessoa e carro
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: ponto para criar propriedade e método
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array[qtd].bola

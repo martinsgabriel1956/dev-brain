@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 18
+source_count: 21
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -96,3 +96,6 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, co
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: semana 5, vídeo 02: parâmetros de funções como arrays e objetos
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: semana 6, vídeo 01: operador vírgula e estrutura condicional switch
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: semana 6, vídeo 02: estrutura de repetição while; desafio 6
+- [[wiki/sources/javascript-ninja-operador-modulo]]: semana 7, vídeo 01: operador módulo; pares de 0 a 20; erro ao vivo
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for

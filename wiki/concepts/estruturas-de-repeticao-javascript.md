@@ -4,7 +4,7 @@ title: "Estruturas de repetição em JavaScript (for, while, for...of, forEach)"
 aliases: ["loop", "loops", "for", "while", "do...while", "for...of", "for...in", "forEach", "loop infinito", "off-by-one", "iteração"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 4
+source_count: 7
 tags: [javascript, loops, for, while, iteracao, array, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -65,9 +65,24 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], `soma++` e `++soma`
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a primeira estrutura de repetição do curso: "enquanto esse valor for verdadeiro, ele vai executar", e depois de cada volta "ele vai voltar lá para cima". Contador de 0 a 9 com `counter < 10` e `counter++`, contador descendente com `console.log(counter--)` e depois com o `--` na condição (`while (counter--)` imprime de 9 a 0). Alerta para o `while (true)`: "você vai travar o seu navegador". Ficam de fora `do...while`, `for`, `break` e `continue`.
 
+## No JavaScript Ninja, semana 7, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-modulo]], um `while` imprime os pares de 0 a 20: a condição vira `<= 20` depois de um off-by-one, e o filtro é `if (num % 2 === 0)`. Incrementar antes do teste fez sair os ímpares; o incremento vai para depois do `if`. Com `n += 2` no passo, o `%` nem seria preciso ([[wiki/concepts/operadores-aritmeticos-javascript]]).
+
+## No JavaScript Ninja, semana 7, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o `while` percorre um array de trás para frente usando `length`. `while (qtd > 0) console.log(array[qtd--])` lê o índice 5 (`undefined`) e pula o 0; a versão certa é `array[--qtd]`. Revisa também o off-by-one de `< 10` × `<= 10`. A forma crescente com `i < arr.length` não aparece.
+
+## No JavaScript Ninja, semana 7, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `for` aparece como o `while` com "uma sintaxe um pouco diferente": inicialização, condição e expressão final no cabeçalho, "as três condições de uma só vez". A aula as chama de "parâmetros"; são expressões, todas opcionais. Mostra também duas variáveis na inicialização (`var num = 2, arroz = 3`). Ainda não combina `for` com `length`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: for, while, loop infinito ao vivo, i < length
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach no lugar do for
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: ++ pré e pós, base do i++ do for
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: while, contadores crescente e descendente, loop infinito
+- [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: while com % para imprimir os pares; erro do incremento antes do teste
+- [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: percorrer array com while e length; off-by-one
+- [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: for com inicialização, condição e expressão final; duas variáveis
