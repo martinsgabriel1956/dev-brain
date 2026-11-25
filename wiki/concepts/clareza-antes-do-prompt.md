@@ -3,8 +3,8 @@ type: concept
 title: "Clareza Antes do Prompt"
 aliases: ["problema de clareza", "ia não dá poder"]
 date_created: 2026-10-08
-date_updated: 2026-10-08
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [prompt, ia, clareza, contexto]
 skill: tech-mentor-ai
 status: draft
@@ -25,3 +25,4 @@ Mesma lógica de pedir ao time: se cada hora se pede algo diferente, ninguém en
 ## Key sources
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — origem desta página
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "você não soube definir minimamente o contexto"; parâmetro faltando vira suposição e alucinação

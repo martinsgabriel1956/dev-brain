@@ -3,8 +3,8 @@ type: concept
 title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
-date_updated: 2026-10-08
-source_count: 13
+date_updated: 2026-11-25
+source_count: 14
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -85,6 +85,7 @@ No [[wiki/entities/california-dmv]] a IA varreu o código numa fração do tempo
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — copiar código da IA é aceitável se se entende o que foi gerado e a regra de negócio
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — IA acelera descoberta; especialistas validam
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "o resultado da inteligência artificial é o reflexo daquilo que você sabe"
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — IA reduz o peso da execução; vence quem fecha o gap entre regra de negócio e execução
 

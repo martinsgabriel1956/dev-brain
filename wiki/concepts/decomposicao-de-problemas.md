@@ -3,8 +3,8 @@ type: concept
 title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar em partes menores"]
 date_created: 2026-05-13
-date_updated: 2026-10-09
-source_count: 5
+date_updated: 2026-11-25
+source_count: 6
 tags: [decomposicao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -62,6 +62,10 @@ Fora do design de sistemas, a mesma técnica se aplica a diagnosticar um problem
 
 [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] generaliza a mesma técnica ainda mais, chamando-a de "operacionalizar" um [[wiki/concepts/problema-de-escopo-aberto|problema de escopo aberto]] — não um sistema técnico, mas metas amplas como "conseguir um emprego" ou "correr 10km", quebradas em ações fechadas e crescentes até virarem algo que já dá pra começar hoje.
 
+## FrontPUSH: código como peças de Lego
+
+Em [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]], a decomposição vira regra de uso de IA: "o melhor jeito é pensar no código como peças de lego. Se eu pedir pra montar, a IA se perde." Em vez de "faz aí" uma landing page inteira, vale ir "mais passo a passo, mais seccionado e explicando cada parte", com chats curtos por tarefa.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos; caixa eletrônico como exemplo
@@ -69,3 +73,4 @@ Fora do design de sistemas, a mesma técnica se aplica a diagnosticar um problem
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — aplicação da decomposição ao debugging de produção via árvore de perguntas (onde/quando/para quem)
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — "operacionalizar" um problema de escopo aberto de carreira/vida, generalizando a técnica além do contexto técnico
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — algoritmo como receita de passos sequenciais não ambíguos
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: código como peças de Lego para a IA

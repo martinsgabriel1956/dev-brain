@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-11-24
-source_count: 11
+date_updated: 2026-11-25
+source_count: 12
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -85,6 +85,7 @@ Causa conceitual no nível mais básico: o LLM prevê a sequência de tokens mai
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — RAG apresentado como forma de reduzir respostas genéricas/alucinadas; regras só no prompt, sem validação da saída (ver Open questions da fonte)
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — causa básica: previsão probabilística de tokens, sem consulta a base de fatos
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: contexto mal definido como causa
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: sem o parâmetro específico, "ela vai tentar supor, você deve estar utilizando isso, mas você também pode estar utilizando aquilo"
 
 ## Key sources (adição 2026-10-08)
 

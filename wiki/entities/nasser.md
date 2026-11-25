@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-24
-source_count: 171
+date_updated: 2026-11-25
+source_count: 172
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -388,6 +388,8 @@ Na [[wiki/sources/frontpush-ia-o-que-sao-as-llms|parte 2 da teoria de IA]], expl
 
 Na [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia|parte 3 da teoria de IA]], fecha a escada: o harness como "cabresto" e "o que mais diferencia um modelo do outro", e os agentes como "a cereja do bolo". Conta um debug em que o Claude Code ou o Codex entrou na pasta dele, pediu permissões e rodou os testes. Usa o Jarvis do Homem de Ferro e a Skynet como imagens.
 
+Na [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta|parte 4 da teoria de IA]], diz que não copia prompts ("o resultado da inteligência artificial é o reflexo daquilo que você sabe"). Prefere "pequenos contextos", o código "como peças de Lego" e chats curtos. Compara o resumo do contexto a uma foto RAW virando JPEG, avisando: "eu não sou um fotógrafo profissional". Promete mostrar o "meu workflow" nas próximas aulas.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -561,3 +563,4 @@ Na [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia|parte 3 da teor
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: hierarquia e evolução da IA
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: o que são LLMs
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: harness e agentes
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: como dar comandos na IA

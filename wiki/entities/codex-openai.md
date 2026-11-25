@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-11-24
-source_count: 12
+date_updated: 2026-11-25
+source_count: 13
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -74,6 +74,7 @@ Citado como ferramenta com harness embutido; contraste com [[wiki/entities/deeps
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: "o Codex veio forte"; agente local que roda testes e lê outputs no diretório
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: contraexemplo da landing page "faz aí para mim" no Codex; Codex listado como melhor para programar
 
 ## Key sources (adição 2026-10-07)
 

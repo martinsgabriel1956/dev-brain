@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-11-24
-source_count: 12
+date_updated: 2026-11-25
+source_count: 13
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -89,6 +89,7 @@ Janela de 128k tokens não equivale a 128k palavras: a razão tokens/palavra var
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — argumento para top-K enxuto: desempenho cai com contexto muito grande e chunks irrelevantes poluem a resposta ([[wiki/concepts/top-k-retrieval]])
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — 128k tokens ≠ 128k palavras; razão varia por idioma
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: pilar 2; confusão contexto × parâmetros
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "contexto também é limitado e vai ser sempre resumido"; "arquitetura de software estoura parâmetros e contexto" (confusão parâmetro × contexto, de novo)
 
 ## Key sources (adição 2026-10-07)
 

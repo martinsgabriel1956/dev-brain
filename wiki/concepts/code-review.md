@@ -4,7 +4,7 @@ title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
 date_updated: 2026-11-25
-source_count: 26
+source_count: 27
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -171,6 +171,7 @@ O cap. 2.1 de Ousterhout dá a razão de fundo para revisar código: "a complexi
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — migrations são código versionado: scripts novos passam por PR em vez de edição direta do banco ([[wiki/concepts/imutabilidade-de-migration]])
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada da 1.1: revisar código para aprender design, não só para garantir qualidade
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — a complexidade é julgada por quem lê, não por quem escreve
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "antes [...] tinha três PR, hoje tem 40, como é que vai ficar o code review disso?"
 
 ## Key sources (adição 2026-10-26)
 

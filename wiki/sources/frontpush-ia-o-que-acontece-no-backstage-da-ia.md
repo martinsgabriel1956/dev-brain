@@ -75,6 +75,7 @@ Terceira aula teórica do módulo de IA do [[wiki/entities/frontpush|FrontPUSH]]
 
 ## Open Questions
 
+- Continuação: [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]] (parte 4: contexto, Lego, RAW → JPEG; a "nova barreira" ainda não apareceu).
 - Qual é a "nova barreira" que a próxima aula promete? Custo, contexto, energia (já citados) ou confiabilidade dos agentes?
 - O "tamanho do bolo para aquilo que você pagou" vai virar uma aula de preços, planos e limites por token?
 - O curso vai separar modelo e harness quando comparar ChatGPT, Codex e Claude Code?

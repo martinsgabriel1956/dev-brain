@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-11-24
-source_count: 10
+date_updated: 2026-11-25
+source_count: 11
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -63,6 +63,10 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 
 [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] aplica o mesmo mecanismo de `/clear` + nova sessão já documentado acima, mas com um gatilho diferente do threshold técnico (~400k tokens): o autor reinicia a conversa ao perceber subjetivamente uma resposta "não tão boa", sem monitorar contagem de tokens. Ver [[wiki/concepts/alucinacao-llm]] para o mesmo caso do ângulo de mitigação de alucinação.
 
+## FrontPUSH: "velocidade mentirosa" e recomeçar do zero
+
+Em [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]], um programador amigo do autor foi somando contexto até o Claude Code ou o Codex "escrever um monte de negócio que não tinha nada a ver". Ele "ganhou velocidade [...] de uma maneira mentirosa" e preferiu recomeçar do zero a limpar o código. A regra prática da aula: "pequenos contextos", "a menor quantidade de prompt possível" e outro chat quando a IA deixa de ser "um funil".
+
 ## Key Sources
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício de sessão disparado por percepção qualitativa de degradação, não por contagem de tokens
@@ -72,6 +76,7 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — "mais informação nem sempre é melhor": contexto demais/irrelevante confunde o modelo; justifica o lazy loading das [[wiki/concepts/skills-agente|skills]] (só a descrição no system prompt) como economia de janela
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — o autor cita queda de desempenho em contextos muito longos (número provavelmente corrompido na transcrição) como motivo para controlar chunks e top-K
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "quanto mais tempo você passa no chat [...] mais informação se perde"
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: chat longo, "velocidade mentirosa" e recomeçar do zero
 
 ## Key sources (adição 2026-10-07)
 

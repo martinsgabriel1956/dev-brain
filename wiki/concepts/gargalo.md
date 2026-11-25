@@ -3,8 +3,8 @@ type: concept
 title: "Gargalo"
 aliases: ["bottleneck", "gargalo de sistema", "ponto de contenção"]
 date_created: 2026-06-26
-date_updated: 2026-11-03
-source_count: 6
+date_updated: 2026-11-25
+source_count: 7
 tags: [system-design, performance, escalabilidade, debugging, monitoramento]
 skill: tech-mentor-system-design
 status: draft
@@ -80,6 +80,7 @@ Mensagem central da fonte: a pergunta não é "o que é um load balancer", e sim
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — num simulador interativo, aumentar tráfego expõe o SQL database em vermelho (bottleneck flag, disponibilidade caindo a 55%); a sequência de correção segue exatamente a regra de ouro desta página — cache primeiro, réplicas depois — e mostra o gargalo se deslocando do banco para o app server assim que o banco deixa de ser o elo mais fraco
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — exemplo de [[wiki/concepts/back-pressure]] em que o consumidor parece lento, mas o gargalo real está no banco de dados; escalar o consumidor sem identificar isso não resolve nada
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — gargalo atual + custo da decisão como pergunta central; quatro problemas observados mapeados a blocos
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: com IA, o gargalo desloca para o code review (de 3 para 40 PRs)
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — mesmo sintoma (lentidão) com quatro causas possíveis (consulta, síncrono, acoplamento, componente sobrecarregado); diagnóstico com tracing/APM, métricas e `EXPLAIN` antes de reestruturar ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).
 - [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — memória e disco como limite dos programas; GPU esconde essa latência

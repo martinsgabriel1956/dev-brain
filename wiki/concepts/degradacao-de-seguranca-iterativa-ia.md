@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Segurança em Geração Iterativa com IA"
 aliases: ["security degradation iterative ai code generation", "degradação de segurança iterativa", "refinamento piora segurança"]
 date_created: 2026-08-06
-date_updated: 2026-08-06
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [seguranca, ai-assisted-engineering, sast, code-review, vulnerabilidade, refinamento-iterativo]
 skill: tech-mentor-ai
 status: draft
@@ -46,3 +46,4 @@ A fonte propõe tratar security review como **checkpoint entre rodadas de itera�
 ## Key Sources
 
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]]
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: sem noção de contexto, "muito provavelmente [...] você vai ter falha de segurança"

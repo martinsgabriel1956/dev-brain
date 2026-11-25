@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-11-23
-source_count: 19
+date_updated: 2026-11-25
+source_count: 20
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -139,6 +139,7 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], as regras
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — versionamento como ecossistema (não só string), reprodutibilidade, semver de prompt e rollback
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — montagem de [[wiki/concepts/prompt-aumentado-rag]]: entrada + contexto recuperado + regras/políticas
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: prompts para Midjourney, Nano Banana Pro e Kling AI
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: contra prompts copiados ([[wiki/concepts/copiador-de-prompt]]); contexto técnico, específico e curto; um prompt só por tarefa
 
 ## Key sources (adição 2026-10-08)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Contexto"
 aliases: ["context compaction", "compact", "context compression", "sumarização de contexto"]
 date_created: 2026-05-31
-date_updated: 2026-11-24
-source_count: 6
+date_updated: 2026-11-25
+source_count: 7
 tags: [claude-code, context-window, compactacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -96,6 +96,10 @@ Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo 
 
 [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] acrescenta "Summarize from here" no menu de `Esc Esc`, que comprime só um trecho e mantém o começo intacto, e `/btw` para perguntas laterais fora do histórico. O gatilho do auto compact é configurável com `/autocompact` ou `CLAUDE_CODE_AUTO_COMPACT_WINDOW` ([documentação](https://code.claude.com/docs/en/model-config.md) `[external]`), então o limite de cerca de 200k citado nesta wiki não é fixo. O autor prefere abrir nova sessão a compactar.
 
+## FrontPUSH: a foto RAW que vira JPEG
+
+[[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]] compara o resumo do contexto a converter uma foto 6K RAW (70 MB) em JPEG de alta qualidade (15 MB): "a cada prompt, resume e perde informação. Que nem comprimir uma foto." Como analogia de compressão com perda, funciona. A frequência é que está errada: a compactação acontece perto do limite da janela, não a cada prompt.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — Summarize from here; auto compact configurável; preferência por nova sessão
@@ -103,6 +107,7 @@ Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo 
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — `/clear` para contexto não relacionado, `/context` para inspeção, escopo de diretório mínimo
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — compactação + tool-offloading + skills
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "sempre vai tentar resumir e quando você resume, você perde informação"; o "mapa mental" como metáfora da compactação, que é feita pelo harness perto do limite, não a cada prompt
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: analogia RAW → JPEG
 
 ## Key sources (adição 2026-10-07)
 

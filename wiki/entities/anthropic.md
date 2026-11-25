@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-11-24
-source_count: 39
+date_updated: 2026-11-25
+source_count: 40
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -172,6 +172,7 @@ Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], "o modelo Mythos lá da Anth
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill-creator como skill oficial de avaliação de skills; Haiku vs. Opus no benchmark
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — documentação, blog de engenharia, rotinas e saída estruturada
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: Mythos como novo modelo
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "dona da Claude Code", um dos "dois principais times" para programar; "empresa não é ONG"
 
 ## Key sources (adição 2026-10-08)
 

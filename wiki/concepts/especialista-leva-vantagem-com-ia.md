@@ -3,8 +3,8 @@ type: concept
 title: "Especialista Leva Vantagem com IA"
 aliases: ["especialista vence com ia", "a ia ampliou a distância"]
 date_created: 2026-10-08
-date_updated: 2026-11-22
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [ia, senioridade, especialista, carreira]
 skill: tech-mentor-ai
 status: draft
@@ -31,6 +31,7 @@ Sem falar de IA, a [[wiki/sources/frontpush-monetizacao-freelancer-profissional-
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: especialistas da medicina; clínico geral encaminha
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — origem desta página
+- [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: só "quem é programador de fato" sabe dar o contexto técnico; "separar os homens dos meninos"; por isso a IA não toma o emprego de todo mundo (opinião)
 
 ## Contraponto: "Empresas Querem Generalistas"
 
