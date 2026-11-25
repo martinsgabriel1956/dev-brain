@@ -3,8 +3,8 @@ type: concept
 title: "Big Tech"
 aliases: ["big techs", "FANG", "FAANG", "MAANG"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-25
+source_count: 3
 tags: [carreira, big-tech, mercado, compensacao]
 skill: tech-mentor-leadership
 status: stub
@@ -30,6 +30,16 @@ Empresa de tecnologia de grande porte, com salários e escritórios globais e pr
 - [[wiki/concepts/modelo-trimodal-compensacao]]
 - [[wiki/concepts/vaga-internacional-sem-mistica]]
 
+## Rede formada por conteúdo de LeetCode
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], o conteúdo de LeetCode de [[wiki/entities/augusto-galego]] o conectou a muita gente aplicando para FANG, "em empresas que têm entrevistas de LeetCode", e que depois foi trabalhar em Netflix e Spotify ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
+## Tier 3 do modelo trimodal
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], Big Tech é o núcleo do Tier 3 ("óbvio"), ao lado de hedge funds ("incomum" no Brasil) e de scale-ups VC-funded; crescer para cargos importantes nelas é o caminho para a ponta da cauda longa ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo de LeetCode como ponte para gente de FANG
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — Big Tech como Tier 3; caminho para a cauda longa

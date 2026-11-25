@@ -3,8 +3,8 @@ type: concept
 title: "Total Compensation"
 aliases: ["TC", "total comp", "remuneração total"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [carreira, compensacao, equity, vesting, big-tech]
 skill: tech-mentor-leadership
 status: stub
@@ -22,6 +22,11 @@ Remuneração anual somada: **salário base + bônus + ações (RSU) + benefíci
 
 [[wiki/concepts/equity-como-diferencial]], [[wiki/concepts/modelo-trimodal-compensacao]].
 
+## Exemplo brasileiro: L6 do Google
+
+[[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] mostra no [[wiki/entities/levels-fyi]] um L6 do [[wiki/entities/google]] no Brasil com TC de R$ 1,1 milhão: cerca de R$ 50 mil de salário mensal CLT, R$ 400 mil em ações por ano liberadas ao longo de vários anos e um bônus anual "em forma de PLR". O autor nota que sites que olham só o salário base derrubam a média ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — L6 do Google no Brasil decomposto em salário, ações e bônus

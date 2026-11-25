@@ -3,8 +3,8 @@ type: entity
 title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
-date_updated: 2026-11-24
-source_count: 20
+date_updated: 2026-11-25
+source_count: 21
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -77,6 +77,10 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], o Node serve de
 
 Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], o eco do REPL é o que mostra a diferença entre `soma++` (ecoa o valor antigo) e `++soma` (ecoa o novo) ([[wiki/concepts/incremento-e-decremento]]).
 
+## Exemplo hipotético em aula de carreira
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], o Node é o projeto open source "imaginado" para anonimizar o caso de um colega que contribui e posta sobre um projeto famoso: "se você contribui com o Node, as empresas que trabalham com o Node vão querer te contratar" ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -99,3 +103,4 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], o eco do REPL é o 
 - [[wiki/sources/frontpush-json-parse-stringify-comunicacao-front-back]]: FrontPUSH, JavaScript aula 11: Node como exemplo de back-end
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: Node como REPL para testar a linguagem
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: eco do REPL mostra pré × pós-incremento
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — Node como exemplo de projeto open source que gera oportunidades

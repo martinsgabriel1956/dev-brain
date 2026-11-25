@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-23
-source_count: 33
+date_updated: 2026-11-25
+source_count: 35
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -137,6 +137,14 @@ Na [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradien
 
 Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste|mentoria de UI Design]], o projeto Nubank do curso mostra o processo de referências: cada seção (cards deitados no fundo, CTA com os selos das lojas, menu enxuto, fotos de pessoas, três cards com ícone) veio de um shot, e o cartão girando juntou um exemplo de perspectiva em CSS com a ideia do cartão ([[wiki/concepts/modelar-referencias]]). Ilustrações de pessoas de várias etnias comunicam o banco "para todos"; a estrutura "ilustração de um lado, descrição do outro, link" é a mesma da landing page "Everyball".
 
+## Vaga de dev como exemplo de requisitos
+
+Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]], a vaga de dev do Nubank é a primeira da demo de [[wiki/concepts/mapeamento-de-requisitos-de-vagas]]: microsserviços "mostly in Clojure", interoperabilidade com Java, Kafka, CI/CD com AWS, "Dynamo Database", Prometheus, Kubernetes, sistemas distribuídos, Agile e Infrastructure as Code. O "Dynamo Database" pode ser DynamoDB ou o [[wiki/concepts/datomic]] mal lido; ver as Open Questions da fonte.
+
+## Topo do mercado regional no Brasil
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], o Nubank (com a Brex) é o exemplo de "topo do mercado regional" no Brasil: sênior a R$ 30 mil ou mais, contra ~R$ 6 mil numa empresa local. Classificação e números do autor, sem fonte ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 
@@ -173,3 +181,5 @@ Na [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-
 - [[wiki/sources/frontpush-mentoria-identidade-visual-marca-minimalista-gradiente-paleta-tipografia]]: botão totalmente arredondado como proximidade
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: projeto institucional como peça de portfólio
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — cada seção do projeto Nubank tem uma referência de origem
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — requisitos de uma vaga de dev (Clojure, Java, Kafka, AWS, Prometheus, Kubernetes)
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — Nubank como Tier 3 brasileiro (estimativa do autor)

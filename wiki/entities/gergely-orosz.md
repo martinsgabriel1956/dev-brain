@@ -3,8 +3,8 @@ type: entity
 title: "Gergely Orosz"
 aliases: ["Pragmatic Engineer"]
 date_created: 2026-07-30
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-11-25
+source_count: 5
 tags: [gergely-orosz, pragmatic-engineer, ia-corporativa]
 skill: tech-mentor-ai
 status: stub
@@ -28,8 +28,14 @@ Survey do Pragmatic Engineer com mais de 90 desenvolvedores (2026): **juniores e
 
 Citado em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]]: postou observando o conceito de revisão de código desaparecendo — relata um engenheiro sênior extremamente competente que, após o lançamento do Fable, concluiu que não faz mais sentido revisar todo o código de IA e parou (exceto partes essenciais do produto). Fecha com a pergunta em aberto: *"ainda não sei o que substituirá a revisão de código, pois algo precisa surgir no lugar dela."* [[wiki/entities/lucas-montano]] discorda do "ainda não surgiu", argumentando que os [[wiki/concepts/quality-gate|quality gates]] já são esse substituto. Citação reportada de segunda mão, sem URL/data na fonte.
 
+## Modelo trimodal de compensação
+
+Autor de *The Trimodal Nature of Tech Compensation* (2021, revisitado em 2024 e com uma parte 3 em 2025 sobre EUA, Reino Unido e Índia), escrito depois de sair do cargo de engineering manager na [[wiki/entities/uber]] em Amsterdã, intrigado com a distância entre os benchmarks públicos e as ofertas reais ([[wiki/sources/trimodal-compensacao-tech]]). Criou o TechPays para coletar dados anônimos na Europa. O artigo foi comentado em português por [[wiki/entities/augusto-galego]] em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — citação direta ("It's not about Slack but about a Claude AI hooked up to all internal company systems that just works. This is the breakthrough.")
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — post sobre o code review "desaparecendo" e a pergunta em aberto do que o substitui
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — survey (>90 devs, 2026) sobre ganho desigual de IA entre júnior e sênior em legado
+- [[wiki/sources/trimodal-compensacao-tech]] — o artigo do modelo trimodal (2024)
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — leitura comentada em português, com exemplos brasileiros

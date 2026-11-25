@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-11-23
-source_count: 16
+date_updated: 2026-11-25
+source_count: 17
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -90,6 +90,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vag
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] mostra o formato: o portfólio como envelope (capa, trabalhos, sobre, contato), o CV "preto no branco" sem barras de porcentagem e o README como portfólio mínimo. Ver [[wiki/concepts/estrutura-de-portfolio]], [[wiki/concepts/estrutura-de-curriculo]] e [[wiki/concepts/estrutura-de-readme]].
 
+## Projeto escolhido pela lacuna
+
+Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]], o projeto pessoal responde a uma lacuna medida: se 8 de 10 vagas pedem Java, 6 AWS e 4 Kafka e o currículo não mostra isso, "de repente é hora de fazer um projeto utilizando essas três técnicas" ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
+
 ## Key Sources
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: README como prova do júnior
 - [[wiki/sources/frontpush-monetizacao-freelancer-profissional-t-shaped-autoconhecimento-vantagens]]: erro do título com cinco especialidades
@@ -108,3 +112,4 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: README como vitrine
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: o envelope, o CV e o README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: "o cliente está bem mais interessado no que você tem feito do que você diz que vai fazer"
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — projeto pessoal escolhido pela contagem de requisitos

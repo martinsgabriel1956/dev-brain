@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-10-07
-source_count: 11
+date_updated: 2026-11-25
+source_count: 12
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -114,6 +114,10 @@ Tecnicamente não é fila tradicional, e sim **log distribuído** (registro orde
 
 Kafka retém histórico (stream) enquanto RabbitMQ remove o que foi lido (tarefa). Ver [[wiki/concepts/rabbitmq-vs-kafka]]. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
 
+## Frequência em vagas de fintech
+
+Na demo de [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]], Kafka aparece nas vagas do [[wiki/entities/nubank]] e do [[wiki/entities/itau]], com prioridade alta. É também o exemplo de tecnologia que dá para levar à empresa atual, "supondo que seja a ferramenta adequada pra corrigir o problema", para ter experiência validada no currículo ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
+
 ## Key Sources
 
 
@@ -132,3 +136,4 @@ Kafka retém histórico (stream) enquanto RabbitMQ remove o que foi lido (tarefa
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — um tópico por prioridade ([[wiki/concepts/filas-separadas-por-prioridade]]) para impedir que marketing atrase mensagens críticas.
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — Kafka como requisito recorrente em vagas de fintech
