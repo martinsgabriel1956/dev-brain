@@ -3,8 +3,8 @@ type: concept
 title: "Estruturas condicionais em JavaScript (if/else, switch)"
 aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 8
+date_updated: 2026-11-25
+source_count: 10
 tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -78,6 +78,14 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], o `if` vira ferramenta de t
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário "substitui o if" quando o `if`/`else` só escolhe um valor: uma linha no lugar de cinco, "para verificações pequenas" ([[wiki/concepts/operador-ternario-javascript]]).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], o `switch` é "uma outra forma da gente fazer uma estrutura condicional": `case` por valor, comparado com `===` ("testa o valor e o tipo"), `break` para sair e `default` quando nada casa. A demo do `break` esquecido mostra o fall-through: com 2, imprime o `case 2` e também o `default`, "olha só que perigo". Para o instrutor, é a cadeia `if` / `else if` / `else` com `===` escrita "de uma forma um pouco mais legível". A aula diz que, sem `break`, ele "continua avaliando" os outros valores; na verdade executa os corpos seguintes sem testar os `case` ([[wiki/concepts/igualdade-javascript]]).
+
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while` é apresentado pela diferença com o `if`: a mesma condição convertida em booleano, mas "enquanto esse valor for verdadeiro" ele repete ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
@@ -88,3 +96,5 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário "substitu
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if, else e else if com && e ||
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: if/else para descobrir truthy e falsy
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário como if/else de uma linha
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: switch, case, break, default e o fall-through do break esquecido
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: while como if que repete

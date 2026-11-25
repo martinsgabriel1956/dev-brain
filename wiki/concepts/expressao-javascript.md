@@ -3,8 +3,8 @@ type: concept
 title: "Expressão e instrução (JavaScript)"
 aliases: ["expressão", "expression", "instrução", "statement", "expressão vs instrução", "expression vs statement"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 5
+date_updated: 2026-11-25
+source_count: 7
 tags: [javascript, sintaxe, expressoes, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,14 @@ Em [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]], o `if` é instr
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário vai "direto" numa atribuição (`sexo = ... ? 'a' : 'o'`). A aula o chama de "instrução", mas é expressão; é por isso que cabe ali, e o `if` não ([[wiki/concepts/operador-ternario-javascript]]).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], o operador vírgula "junta várias expressões em uma única expressão" ([[wiki/concepts/operador-virgula-javascript]]). O primeiro exemplo, `var a, b = 2, c`, não é uma expressão: é uma instrução `var` com uma lista de declarações, e a vírgula ali é separador. O segundo, `return x += 1, x`, é expressão de sequência de verdade.
+
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o REPL mostra um valor no fim do `while`, "o último retorno". Não é retorno: é o valor de conclusão da instrução, o da última expressão executada no corpo (`counter++` devolvendo 9).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: expressão como "frase" avaliada; var x = 0 como exemplo (impreciso)
@@ -47,3 +55,5 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário vai "dire
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: -x avalia sem alterar x
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: if como instrução
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário é expressão (a aula diz instrução)
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: operador vírgula junta expressões; a vírgula do var é instrução, não expressão
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: valor de conclusão do while no REPL

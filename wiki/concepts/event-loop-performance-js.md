@@ -3,8 +3,8 @@ type: concept
 title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
-date_updated: 2026-11-19
-source_count: 9
+date_updated: 2026-11-25
+source_count: 10
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -98,6 +98,10 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], o `resolve` "l
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: animação CSS de `transform`/`opacity` roda no compositor; animação em JS ([[wiki/entities/gsap|GSAP]], `requestAnimationFrame`) disputa a thread principal com o resto e trava quando uma tarefa longa ocupa o event loop, o que também pesa no INP ([[wiki/concepts/taxa-de-quadros-60fps]]).
 
+## Loop infinito no navegador (JavaScript Ninja, semana 6, vídeo 02)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], `while (true)` "nunca vai ser falso": "nunca faça isso [...] porque você vai travar o seu navegador. Você vai ter que reiniciar." Trava a aba porque o loop ocupa a única thread do JavaScript da página; o navegador oferece encerrar o script, sem reiniciar.
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
@@ -109,3 +113,4 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: "no fundo da aplicação" (é o ambiente, não outra thread JS)
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: then como microtask (a bandeirinha)
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: animação JS disputa a thread principal
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: while (true) trava o navegador

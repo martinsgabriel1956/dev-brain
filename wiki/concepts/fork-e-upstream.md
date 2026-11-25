@@ -3,8 +3,8 @@ type: concept
 title: "Fork e upstream (fluxo de contribuição por fork)"
 aliases: ["fork", "upstream", "remote upstream", "syncing a fork", "sincronizar fork", "fork workflow", "forkar"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [git, github, fork, upstream, pull-request, branch, colaboracao]
 skill: lang-dynamic
 status: stub
@@ -31,6 +31,11 @@ git push origin minha-mudanca # e abre o pull request no GitHub
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]], é o fluxo de entrega dos desafios semanais: `origin` é `fdaciuk/curso-javascript-ninja` (o fork do aluno) e `upstream`, `da2k/curso-javascript-ninja` (o do curso). A master "sempre atualizada com o repositório principal" e com os desafios em branco; cada desafio numa branch (`challenge-03`), enviada com push e pull request. Recomenda a linha de comando porque o software do GitHub da época "não suporta mais de um remote" (afirmação não verificada). Ainda usa `master`; repositórios novos no GitHub usam `main` desde 2020.
 
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o desafio da semana 6 segue "o mesmo" fluxo: atualizar a master, fazer o merge, criar a branch do desafio (a legenda diz "tablets gera em 06"; deve ser `challenge-06`), fazer o desafio e abrir pull request no repositório principal. Dúvidas "melhor até" por issue no GitHub, para a resposta servir a outros alunos.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-metodos-de-objeto-continuacao]]: JavaScript Ninja, semana 3, vídeo 03: origin × upstream, branch por desafio, pull request
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: mesmo fluxo para o desafio 06
