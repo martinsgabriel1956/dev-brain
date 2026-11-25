@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-09-08
-source_count: 5
+date_updated: 2026-11-25
+source_count: 6
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -74,3 +74,4 @@ O antídoto discutido não é eliminar as opções de baixo nível, mas empilhar
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — generalidade moderada (Cap. 6), Unix I/O e classitis do Java I/O (Cap. 4)
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — primeiro estudo controlado medindo o debate com Uncle Bob, e a distinção entre profundidade e grepability
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — motivo estrutural da rasura do `java.io` (sem retorno múltiplo, otimização em vez de usabilidade); camadas simples sobre complexidade escondida no cliente HTTP do Go e em `file_get_contents` do PHP
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1: "as classes devem ser profundas" como exemplo de princípio quase filosófico

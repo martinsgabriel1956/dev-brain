@@ -3,8 +3,8 @@ type: concept
 title: "Define Errors Out of Existence"
 aliases: ["definir erros para fora da existência", "eliminar erros por design", "redesenhar semântica para evitar exceção"]
 date_created: 2026-09-08
-date_updated: 2026-09-08
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [error-handling, api-design, design, ousterhout, usabilidade]
 skill: tech-mentor-backend
 status: draft
@@ -42,7 +42,12 @@ Pedir um substring de uma string de 10 caracteres do índice 5 ao 11 (fora do in
 - [[wiki/concepts/error-handling-estruturado]] — conceito complementar, não concorrente: trata de como estruturar erros que *precisam* existir (classes de erro + HTTP codes); "define errors out of existence" trata de eliminar a necessidade da exceção antes de chegar nesse ponto.
 - [[wiki/concepts/modulo-profundo]] — uma interface que lança exceções desnecessárias é, por definição, mais rasa: expõe mais casos que quem consome precisa conhecer e tratar.
 
+## Nomes em português
+
+A tradução revisada do cap. 1 ([[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]) chama o princípio de "elimine os erros desde a concepção". Com as outras duas versões, são três nomes na wiki (ver [[wiki/concepts/definir-erros-para-fora-da-existencia]], página gêmea e candidata a fusão). O sentido certo é redefinir a operação para que o erro não exista, como o `substring` que aceita índices fora do limite, e não só pensar nos erros cedo.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 10, exemplos completos de `unset` do Tcl, deleção de arquivo Unix vs. Windows, substring do Java, e o estudo Yuan et al. (USENIX OSDI 2014)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — escolhido por Otávio Santana como o trecho mais importante do livro; reforça o enquadramento de API como interface de usuário
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — cap. 1 cita o princípio como "elimine os erros desde a concepção" (tradução revisada)

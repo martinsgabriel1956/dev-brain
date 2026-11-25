@@ -3,7 +3,7 @@ type: source
 title: "A Philosophy of Software Design — Livro Completo"
 aliases: ["philosophy of software design completo", "ousterhout livro completo", "a philosophy of software design full book"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
+date_updated: 2026-11-25
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/a-philosophy-of-software-design.md
 source_url: ""
 author: "John Ousterhout"
@@ -95,8 +95,13 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 **Evidence:** Cap. 21, capítulo de fechamento antes da conclusão. Reusa o exemplo da interface Java de I/O (Cap. 4): forçar todo desenvolvedor a saber sobre buffering (quase sempre desejado) é tratar algo sem importância como importante. Conecta explicitamente com escrita técnica e com "bom gosto" como capacidade central de um bom designer de software.
 **Confidence:** alta.
 
+## Segunda tradução do capítulo 1
+
+O capítulo 1 e a seção 1.1 também existem como tradução do usuário, comparada com a de julho em [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]. A comparação mostra que "define errors out of existence" já tem três versões em português na wiki.
+
 ## Entities & Concepts Touched
 
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]
 - [[wiki/entities/john-ousterhout]]
 - [[wiki/concepts/modulo-profundo]]
 - [[wiki/concepts/ocultamento-de-informacao]]

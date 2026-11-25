@@ -4,7 +4,7 @@ title: "Modelo Cascata vs. Desenvolvimento Incremental"
 aliases: ["waterfall", "waterfall model", "agile design", "design incremental"]
 date_created: 2026-07-10
 date_updated: 2026-11-25
-source_count: 3
+source_count: 4
 tags: [waterfall, agile, design, processo, ousterhout, complexidade]
 skill: tech-mentor-backend
 status: draft
@@ -40,8 +40,13 @@ Consequência: **design de software nunca termina**. É um processo contínuo ao
 
 [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] reduz o incremental a [[wiki/concepts/ciclo-basico-da-agilidade]] e diz que tudo o que for maior que isso é venda. Isso é o oposto do agile por feature criticado acima: Thomas fala de um ciclo fractal, que vale também para decisões de design pequenas.
 
+## Nuances de tradução do argumento central
+
+As duas traduções do cap. 1 divergem em dois pontos deste argumento ([[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]). (1) A versão revisada diz corretamente que não é possível visualizar o design de um sistema grande "bem o suficiente para entender todas as suas implicações". A versão de julho deixa o "o suficiente" qualificar o tamanho do sistema. (2) Sobre as fases depois do design congelado, a revisada diz "estruturar e implementar" e a de julho diz "detalhar e implementar". "Detalhar" fica mais perto do original (*flesh out*, `[external, não verificado]`): no cascata, depois dessa fase, não sobra decisão de design, e é isso que gera os remendos e a "explosão de complexidade".
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — qualificação do agile/TDD como risco de deslizar para o tático (Cap. 19)
 - [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — o incremental reduzido a quatro passos e uma prática
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1; corrige a frase truncada sobre visualizar o design de um sistema grande

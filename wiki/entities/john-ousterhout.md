@@ -3,8 +3,8 @@ type: entity
 title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
-date_updated: 2026-09-08
-source_count: 5
+date_updated: 2026-11-25
+source_count: 6
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -40,6 +40,10 @@ Citado em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-
 
 [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] é a primeira fonte no wiki que discute o livro *de segunda mão* — dois engenheiros experientes ([[wiki/entities/otavio-santana]] e [[wiki/entities/mauricio-linhares]]) comentando os conceitos a partir de experiência própria, não citando o texto diretamente. Traz vocabulário do Cap. 2 (change amplification, cognitive load, unknown unknowns) ainda não nomeado nas duas ingestões anteriores do livro — ver [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — e exemplos adicionais de má/boa API (Java I/O, cliente HTTP do Go, `file_get_contents` do PHP) complementares aos já registrados em [[wiki/concepts/modulo-profundo]].
 
+## Catálogo aberto por convite do autor
+
+Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]), Ousterhout pede ao leitor que lhe envie bons exemplos de código e os sinais de alerta que descobrir ("eu adoraria ouvir sobre eles"). Ele trata o próprio catálogo de [[wiki/concepts/red-flags-de-design]] como incompleto e aberto a contribuições, de acordo com o tom de "peça de opinião" que ele mesmo dá ao livro.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -47,3 +51,4 @@ Citado em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — debate histórico com Uncle Bob e primeiro estudo controlado medindo função pequena vs. módulo profundo
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — discussão de segunda mão do livro por dois praticantes, com vocabulário do Cap. 2 e exemplos adicionais de API
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — segunda tradução do cap. 1 e da 1.1, com os apartes do autor em primeira pessoa

@@ -3,7 +3,7 @@ type: source
 title: "A Filosofia do Design de Software — Introdução (Cap. 1)"
 aliases: ["a philosophy of software design intro", "ousterhout capítulo 1", "philosophy of software design chapter 1"]
 date_created: 2026-07-10
-date_updated: 2026-07-29
+date_updated: 2026-11-25
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/filosofia-do-design-de-software-introducao.md
 source_url: ""
 author: "John Ousterhout"
@@ -49,8 +49,13 @@ Texto de primeira mão (não mais citação de segunda mão via palestra) do cap
 **Evidence:** O autor sinaliza que várias seções do livro terão o título "Levando longe demais" (Taking it too far), dedicadas a reconhecer quando uma boa prática está sendo exagerada.
 **Confidence:** alta — princípio geral que se aplica a quase todos os conceitos derivados deste livro já no wiki (ex: [[wiki/concepts/modulo-profundo]] pode ser levado longe demais criando módulos grandes demais e acoplados).
 
+## Tradução revisada (2026-11-25)
+
+O usuário fez uma segunda tradução deste capítulo, com notas do tradutor: [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]. O conteúdo é o mesmo, mas aquela versão é mais fiel ao original. Mantém o subtítulo "(É Tudo Sobre Complexidade)", a primeira pessoa e os dois apartes do autor, e não tem os subtítulos "Design de software é um processo contínuo" e "Sobre este livro", que não parecem existir no livro. Ela também corrige uma frase truncada do `raw/` desta página ("um sistema de software grande o suficiente para entender"). Por outro lado, troca "detalhar" por "estruturar" ao descrever as fases do cascata depois do design. Os claims desta página continuam válidos.
+
 ## Entities & Concepts Touched
 
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]
 - [[wiki/entities/john-ousterhout]]
 - [[wiki/concepts/modulo-profundo]]
 - [[wiki/concepts/accidental-complexity]]
