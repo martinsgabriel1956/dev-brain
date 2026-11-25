@@ -3,7 +3,7 @@ type: source
 title: "Filosofia do Design de Software — bate-papo Eduardo Matos, Otávio Santana e Maurício Linhares"
 aliases: ["podcast filosofia do design", "otavio santana mauricio linhares philosophy of software design"]
 date_created: 2026-09-08
-date_updated: 2026-09-08
+date_updated: 2026-11-25
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md
 source_url: ""
 author: "Eduardo Matos (host), Otávio Santana e Maurício Linhares (convidados)"
@@ -69,6 +69,7 @@ Podcast em português onde Eduardo Matos entrevista [[wiki/entities/otavio-santa
 
 - [[wiki/concepts/modulo-profundo]] — exemplo adicional do `java.io` como módulo raso, com detalhe de motivo estrutural (ausência de retorno múltiplo no Java).
 - [[wiki/concepts/red-flags-de-design]] — reforço do red flag Shallow Module via novo exemplo.
+- [[wiki/concepts/classite]] — o `java.io` como classitis; o texto do livro está em [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]].
 - [[wiki/concepts/ocultamento-de-informacao]] — change amplification como sintoma-irmão de information leakage (mesmo capítulo 2 do livro).
 - [[wiki/concepts/tech-debt-como-ferramenta]] — hábito prático de linkar ticket ao código tático no momento da entrega.
 - [[wiki/concepts/comentarios-como-ferramenta-de-design]] — reforço do Cap. 15 com exemplos de projetos open source que comentam extensivamente.

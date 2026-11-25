@@ -123,6 +123,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - Cap. 1: [[wiki/sources/filosofia-do-design-de-software-introducao]] e [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]
 - Cap. 2: [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]], com o texto completo da frase "dependencies and obscurity" citada abaixo
 - Cap. 3: [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], com tática vs. estratégica, tornado tático e o caso Facebook
+- Cap. 4: [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]], com interface formal e informal, falsa abstração, Figura 4.1, Unix I/O, [[wiki/concepts/classite]] e o caso comum simples
 
 ## Open Questions
 

@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-11-16
-source_count: 11
+date_updated: 2026-11-25
+source_count: 12
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -82,6 +82,15 @@ Ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] e [[wiki/concept
 
 Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a abstração no sentido de modelagem: "muita coisa precisou ser abstraída do mundo real para o mundo computacional", e a caneta vira um conjunto de características e funções. É o outro lado desta página: escolher o que o modelo mostra, além de esconder o como.
 
+## Falsa abstração (Ousterhout, cap. 4)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.3) define abstração como "uma visão simplificada de uma entidade, que omite detalhes sem importância", e cada módulo oferece a sua na forma da interface. A palavra que decide é "sem importância". Uma abstração erra de dois jeitos:
+
+1. **Inclui detalhe que não importa.** Fica mais complicada que o necessário e aumenta a carga cognitiva de quem usa.
+2. **Omite detalhe que importa.** Gera obscuridade. É uma **falsa abstração**: "pode parecer simples, mas na realidade não é".
+
+O exemplo é o sistema de arquivos. A escolha dos blocos no disco pode ficar escondida. A regra de descarregamento (*flushing*) do cache para o disco não pode, porque um banco de dados precisa saber quando o dado está gravado para sobreviver a uma falha. A definição de "esconder o que não precisa ser visto", no topo desta página, é a mesma; o capítulo acrescenta que esconder demais também é erro.
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
@@ -98,3 +107,4 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a abstr
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — abstração sobre o hardware como definição de alto nível; troca controle por portabilidade ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: abstrair o mundo real em objetos
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.3: os dois erros de uma abstração, a falsa abstração e o *flushing* do sistema de arquivos
