@@ -3,8 +3,8 @@ type: concept
 title: "Unix"
 aliases: ["UNIX"]
 date_created: 2026-07-20
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-11-25
+source_count: 6
 tags: [sistema-operacional, unix, servidor, cs-fundamentals, comunidade, open-source]
 skill: cs-fundamentals
 status: stub
@@ -34,6 +34,12 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], foi nos a
 
 Os primeiros Unix rodavam em computadores enormes ligados a teletypes com várias sessões ([[wiki/concepts/tty-teletypewriter]]); o modelo sobrevive hoje como [[wiki/concepts/pty-pseudoterminal|PTY]] ([[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]).
 
+## E/S do Unix como interface profunda (Ousterhout)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.4 e 4.7) usa a E/S de arquivos do Unix como o exemplo de [[wiki/concepts/modulo-profundo]]. São cinco chamadas de sistema (`open`, `read`, `write`, `lseek`, `close`) com assinaturas simples sobre uma implementação de centenas de milhares de linhas, que cuida de representação em disco, diretórios, permissões, interrupções, escalonamento, cache e vários dispositivos. A implementação mudou radicalmente ao longo dos anos e as cinco chamadas não. O acesso sequencial é o padrão e o aleatório fica no `lseek`, que quem lê em sequência nem precisa conhecer: o caso comum é o mais simples.
+
+A seção acima cita a filosofia Unix de "pequenas funções reutilizáveis e combináveis". Não contradiz o livro, mas "pequeno" muda de sentido: para Ousterhout, o que é pequeno é a interface, e a funcionalidade atrás dela é enorme.
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — origem TTY e sobrevivência como PTY
@@ -41,3 +47,4 @@ Os primeiros Unix rodavam em computadores enormes ligados a teletypes com vária
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — origem do Unix como subproduto do jogo *Space Travel* de Ken Thompson; `grep` como exemplo de ferramenta privada que virou pública; senso de comunidade da área
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — o `grep` criado por Thompson em uso cotidiano; conjunto de comandos Unix que devs e harnesses de IA rodam
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — chamada de sistema como API padronizada entre programa e kernel (anos 70) e sua influência de design sobre REST+JSON; POSIX como padronização de portabilidade (anos 80)
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — as cinco chamadas de E/S como exemplo canônico de interface profunda (4.4) e de caso comum simples (4.7)

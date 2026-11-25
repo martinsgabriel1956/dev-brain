@@ -4,7 +4,7 @@ title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
 date_updated: 2026-11-25
-source_count: 5
+source_count: 6
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -74,6 +74,10 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 
 [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] traduz *red flags* como "sinais de alerta". Uma nota do tradutor os define como "antipadrões ou cheiros no código (*code smells*)". Isso vai além do livro: pela seção "Linhagem paralela" acima, os dois catálogos só se sobrepõem em parte, e vários red flags (Pass-Through Method, Conjoined Methods, Comment Repeats Code) não têm smell equivalente em Fowler. A mesma tradução preserva o aparte de Ousterhout pedindo novos sinais aos leitores, de modo que o catálogo é aberto por intenção do autor.
 
+## O quadro de Módulo Raso no texto do cap. 4
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] traz o quadro do sinal de alerta em primeira mão (4.5): módulo raso é aquele "cuja interface é complicada em relação à funcionalidade que ele fornece", e o benefício de não aprender como ele funciona por dentro é anulado pelo custo de aprender a interface. Fecha com "módulos pequenos tendem a ser rasos". O exemplo que o livro põe junto do quadro é o método `addNullValueForAttribute`, de uma linha só. O I/O do Java, que a seção acima atribui a este red flag a partir do podcast, aparece no livro na 4.7 como [[wiki/concepts/classite]] e como falha em tornar o caso comum simples. As duas leituras são compatíveis, porque a classite produz classes rasas.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
@@ -81,3 +85,4 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo paralelo de 9 code smells (linhagem Fowler), com sobreposição parcial (Repetition ≈ DRY, Information Leakage ≈ feature envy) mas cobrindo sinais distintos (god object, data clumps, primitive obsession)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — exemplo real recorrente de Shallow Module (API de I/O do Java), citado pelo comitê executivo do Java como erro de design reconhecido
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada da 1.1; a N.T. iguala red flags a code smells (discutido acima)
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — quadro de Módulo Raso (4.5) e seu exemplo original, `addNullValueForAttribute`

@@ -4,7 +4,7 @@ title: "Causas de Complexidade (Ousterhout): Dependências e Obscuridade"
 aliases: ["dependências e obscuridade", "dependencies and obscurity", "obscuridade", "obscurity", "causas da complexidade"]
 date_created: 2026-11-25
 date_updated: 2026-11-25
-source_count: 2
+source_count: 3
 tags: [complexidade, design, ousterhout, dependencias, obscuridade, acoplamento]
 skill: tech-mentor-backend
 status: draft
@@ -38,7 +38,12 @@ Não confundir com [[wiki/concepts/seguranca-por-obscuridade]]: lá a obscuridad
 - [[wiki/concepts/dependencia-externa-oculta]] e a seção "Dependência Escondida" de [[wiki/concepts/acoplamento]]: casos em que dependência e obscuridade coincidem.
 - [[wiki/concepts/complexidade-acidental]]: as duas causas são estruturais, ou seja, acidentais no vocabulário de Brooks, e não inerentes ao domínio (inferência desta wiki).
 
+## Dependência e obscuridade no nível do módulo (cap. 4)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] leva as duas causas para o design modular. Sobre **dependências**, o objetivo passa a ser minimizá-las, porque eliminá-las é impossível: módulos chamam uns aos outros (4.1). Os exemplos são os argumentos de um método e uma dependência de ordem, em que um método só funciona se outro foi chamado antes. Sobre **obscuridade**, a 4.3 dá o mecanismo no nível da interface: uma abstração que omite um detalhe importante é uma falsa abstração, e quem olha só para ela não tem a informação para usá-la ([[wiki/concepts/abstracao]]).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]: definição das duas causas, exemplos e o mapeamento causa → sintoma (2.3)
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: "Complexity is caused by two things: dependencies and obscurity", retomado ao longo do livro
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — dependências minimizadas, não eliminadas (4.1); falsa abstração como forma de obscuridade (4.3)

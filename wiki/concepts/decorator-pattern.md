@@ -3,8 +3,8 @@ type: concept
 title: "Decorator Pattern"
 aliases: ["padrão decorator", "design pattern decorator"]
 date_created: 2026-05-01
-date_updated: 2026-09-08
-source_count: 7
+date_updated: 2026-11-25
+source_count: 8
 tags: [design-patterns, structural, decorator, oop]
 skill: tech-mentor-backend
 status: stub
@@ -52,6 +52,10 @@ Essa fonte traz dois ângulos que reforçam a definição:
 
 [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] destaca a API de I/O do Java (`FileInputStream` → `BufferedInputStream` → `ObjectInputStream`) como o exemplo mais citado do padrão Decorator em livros e cursos — e, simultaneamente, um dos exemplos mais citados de má API na comunidade Java, referenciado até hoje pelo comitê executivo da linguagem como erro reconhecido de design. As duas coisas não são contraditórias: o padrão em si está corretamente aplicado (cada classe adiciona comportamento por wrapping, implementando a mesma interface), mas o problema é a ausência de um caminho simples de alto nível para o caso comum (ler um arquivo inteiro) — só resolvido no Java 9. Ver [[wiki/concepts/modulo-profundo]] e [[wiki/concepts/red-flags-de-design]] (red flag Shallow Module) para o detalhamento do motivo estrutural.
 
+## O mesmo `java.io` no texto do cap. 4
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.7) traz o caso em primeira mão. Ousterhout não fala em Decorator: trata a cadeia `FileInputStream` → `BufferedInputStream` → `ObjectInputStream` como exemplo de [[wiki/concepts/classite]]. A crítica central é o buffer ser opcional: quem esquece de criar o `BufferedInputStream` fica com I/O lento. A composição em si pode continuar, desde que o caso comum (com buffer) seja o padrão e o jeito de desligá-lo fique separado na interface. Isso dá um limite prático ao padrão: empilhar decoradores é bom para variações, ruim quando quase todo mundo precisa da mesma pilha.
+
 ## Key Sources
 
 - [[wiki/sources/decorator-xunitpatterns]]
@@ -61,3 +65,4 @@ Essa fonte traz dois ângulos que reforçam a definição:
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia dos filtros de foto do Instagram; exemplo de encadeamento de canais de notificação (e-mail → Slack → SMS); nota sobre decorators do TypeScript/Angular/NestJS
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — pipeline `ImageProcessor` (básico → marca d'água → resize); composição recursiva, vínculo com Open/Closed e contraste com Chain of Responsibility
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — citação breve como pattern-exemplo de OCP (adicionar funcionalidade à instância de um objeto sem alterar a classe original), sem exemplo de código nesta fonte
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — `java.io` como classite e a regra de tornar o caso comum simples (4.7)

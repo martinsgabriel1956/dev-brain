@@ -4,7 +4,7 @@ title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 7
+source_count: 8
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -71,6 +71,17 @@ O antídoto discutido não é eliminar as opções de baixo nível, mas empilhar
 
 Antes de falar em módulos, o cap. 2 já recusa linhas de código como medida de complexidade: "às vezes, uma abordagem que exige mais linhas de código é, na verdade, mais simples, porque reduz a carga cognitiva". A fórmula do mesmo capítulo ($C = \sum_p c_p t_p$) explica por que a profundidade compensa: o que fica escondido atrás de uma interface simples quase não consome o tempo de quem só usa o módulo ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]).
 
+## Cap. 4 em primeira mão (2026-11-25)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] traz o texto do capítulo que dá nome ao conceito. Quatro pontos que a página não tinha:
+
+- **Custo e benefício.** A Figura 4.1 desenha cada módulo como um retângulo: a área é a funcionalidade e a borda superior é a interface. A interface é o **custo** (menos é melhor) e a funcionalidade é o **benefício** (mais é melhor). "Interfaces são boas, mas interfaces em maior quantidade ou mais extensas não são necessariamente melhores!"
+- **Módulo é qualquer unidade com interface e implementação**, inclusive um método. A regra vale para funções, não só para classes e serviços.
+- **A interface inclui a parte informal**: comportamento e restrições de uso que só cabem em comentário, e que costumam ser a maior parte ([[wiki/concepts/interface-formal-e-informal]]). Uma assinatura curta com regras de uso escondidas não faz um módulo profundo.
+- **Exemplos rasos do próprio livro**: a classe de [[wiki/concepts/lista-encadeada]] e o método `addNullValueForAttribute`, cujo corpo é `data.put(attribute, null)`. "Módulos pequenos tendem a ser rasos." O excesso de classes pequenas tem página própria: [[wiki/concepts/classite]].
+
+A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa alguns recursos de uma interface, a complexidade efetiva dela é a desses recursos. Por isso o `lseek` não pesa para quem lê arquivos em sequência, e o buffer opcional do Java pesa para todo mundo.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -80,3 +91,4 @@ Antes de falar em módulos, o cap. 2 já recusa linhas de código como medida de
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — motivo estrutural da rasura do `java.io` (sem retorno múltiplo, otimização em vez de usabilidade); camadas simples sobre complexidade escondida no cliente HTTP do Go e em `file_get_contents` do PHP
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1: "as classes devem ser profundas" como exemplo de princípio quase filosófico
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — LOC não mede complexidade; fórmula explica o ganho da profundidade
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — texto do cap. 4: Figura 4.1 como custo-benefício, módulo inclui método, parte informal da interface, lista encadeada e `addNullValueForAttribute` como rasos, caso comum simples

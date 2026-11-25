@@ -4,7 +4,7 @@ title: "Ocultamento de Informação (Information Hiding)"
 aliases: ["information hiding", "information leakage", "vazamento de informação", "decomposição temporal", "temporal decomposition"]
 date_created: 2026-07-29
 date_updated: 2026-11-25
-source_count: 3
+source_count: 4
 tags: [arquitetura, complexidade, design, ousterhout, information-hiding, parnas]
 skill: tech-mentor-backend
 status: draft
@@ -48,8 +48,13 @@ Regra prática: a ordem de execução quase sempre importa e vai aparecer em alg
 
 A seção acima segue o podcast, que descreve a amplificação de mudanças como mudança que "se espalha para dependências desconhecidas". No texto do livro ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]), a amplificação pura tem dependências conhecidas: a mesma cor escrita em cada página, e todos sabem onde mexer. Quando ninguém sabe que a dependência existe, o livro chama de **incógnita desconhecida**. O vazamento de informação pode causar as duas coisas: amplificação, se o vazamento é visível, e incógnita desconhecida, se não é (o *back-door leakage*).
 
+## O terreno preparado pelo cap. 4
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] não usa o termo, mas monta a base do cap. 5. A interface diz **o que** o módulo faz, não **como**; quem usa o módulo não deveria precisar entender a implementação; e uma mudança que não altera a interface não afeta nenhum outro módulo (4.1). O cap. 5 responde à pergunta seguinte: o que deve ficar atrás da interface.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 5, exemplos de servidor HTTP (leitura+parsing, parâmetros, defaults em respostas)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — change amplification descrito como o sintoma prático vivido por quem sofre com informação vazada/duplicada entre módulos
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — corrige a leitura do podcast: amplificação ≠ dependência oculta
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.1: interface diz o quê, não o como; mudança que não toca a interface não afeta ninguém

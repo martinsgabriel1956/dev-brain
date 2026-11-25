@@ -125,7 +125,7 @@ Tradução do usuário do capítulo 3 de *A Philosophy of Software Design*, de [
 - O original diz mesmo "*initial gains from strategic programming*" no último parágrafo da 3.3? Se disser, é errata do livro. Conferir no epub ou na errata do autor.
 - O livro não diz como defender os 10–20% para uma gestão que mede entrega de funcionalidades. A wiki tem respostas parciais em [[wiki/concepts/refatoracao]] (embutir sem pedir permissão) e em [[wiki/concepts/tech-debt-como-ferramenta]] (expor o custo em horas).
 - A 3.4 trata contratação como consequência do design. Existe evidência, além da anedota de Google e VMware, de que a qualidade da base afeta o recrutamento?
-- O cap. 4 (módulos profundos) é o próximo da tradução. A wiki já o tem pelo livro completo e por [[wiki/concepts/modulo-profundo]].
+- O cap. 4 (módulos profundos) é o próximo da tradução. A wiki já o tem pelo livro completo e por [[wiki/concepts/modulo-profundo]]. Respondida: ingerido em [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]].
 
 ## Raw Quotes
 
