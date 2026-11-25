@@ -4,7 +4,7 @@ title: "Classite (Classitis)"
 aliases: ["classitis", "classite", "excesso de classes", "classes pequenas demais"]
 date_created: 2026-11-25
 date_updated: 2026-11-25
-source_count: 3
+source_count: 4
 tags: [design, ousterhout, modulo-profundo, classes, java, orientacao-a-objetos]
 skill: tech-mentor-backend
 status: stub
@@ -41,8 +41,13 @@ Na seção 4.7, a biblioteca do Java é "um dos exemplos mais visíveis". Para l
 - [[wiki/concepts/decorator-pattern]]: o `java.io` é o exemplo didático do padrão e o exemplo de classite.
 - [[wiki/concepts/interface-formal-e-informal]]: cada classe nova soma interface formal e informal para aprender.
 
+## O caso concreto do cap. 5
+
+O "erro mais comum" dos alunos no servidor HTTP foi dividir o código em muitas classes rasas: uma para ler a requisição, outra para analisá-la. A divisão seguia a ordem de execução ([[wiki/concepts/decomposicao-temporal]]) e duplicou o conhecimento do formato. O livro diz que a classe fundida seria mais profunda e que o ocultamento muitas vezes melhora com uma classe um pouco maior ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], 5.5).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: definição (4.6) e o caso do I/O do Java (4.7), em primeira mão
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: primeira menção na wiki, no resumo do cap. 4
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]]: por que o `java.io` ficou assim (otimização antes de usabilidade, sem retorno múltiplo)
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: leitura e análise de HTTP em duas classes rasas (5.5)

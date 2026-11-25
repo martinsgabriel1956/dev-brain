@@ -4,7 +4,7 @@ title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 9
+source_count: 10
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -56,6 +56,10 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 
 [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] traz o texto do cap. 4. Ousterhout define módulo como qualquer unidade com interface e implementação, inclusive um método, e divide a interface em parte formal e informal ([[wiki/concepts/interface-formal-e-informal]]). Chama de falsa abstração a que omite um detalhe importante ([[wiki/concepts/abstracao]]), mede [[wiki/concepts/modulo-profundo|profundidade]] como custo (interface) contra benefício (funcionalidade) e cunha "classitis" para o excesso de classes pequenas ([[wiki/concepts/classite]]). Os exemplos são a E/S do Unix e o coletor de lixo (profundos), a lista encadeada e um método de uma linha (rasos) e o I/O do Java (classite).
 
+## Capítulo 5 em primeira mão (2026-11-25)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] traz o texto do cap. 5: [[wiki/concepts/ocultamento-de-informacao]] a partir do artigo de [[wiki/entities/david-parnas]] (1972), vazamento pela interface e pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]] e os exemplos do servidor HTTP dos alunos. Corrige dois registros da wiki: decomposição temporal é "uma causa comum" de vazamento, não "a mais comum", e o livro recomenda fundir as classes de leitura e análise, sem dizer que a equipe fundiu.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -67,3 +71,4 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — texto do cap. 2: definição, fórmula, sintomas, causas e complexidade incremental
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3, tática vs. estratégica, tornado tático, 10–20%, Facebook vs. Google/VMware
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: texto do cap. 4, interface formal e informal, falsa abstração, profundidade como custo-benefício, classite
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: texto do cap. 5, ocultamento e vazamento, decomposição temporal, exemplos HTTP, valores padrão

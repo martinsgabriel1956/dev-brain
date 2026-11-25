@@ -4,7 +4,7 @@ title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 8
+source_count: 9
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -82,6 +82,10 @@ Antes de falar em módulos, o cap. 2 já recusa linhas de código como medida de
 
 A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa alguns recursos de uma interface, a complexidade efetiva dela é a desses recursos. Por isso o `lseek` não pesa para quem lê arquivos em sequência, e o buffer opcional do Java pesa para todo mundo.
 
+## Cap. 5: ocultar é como se aprofunda (2026-11-25)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] liga as duas ideias: um módulo que esconde muito oferece mais funcionalidade com interface menor, e um que esconde pouco é raso de qualquer jeito, por ter pouca funcionalidade ou interface complexa (5.10). Dois casos novos de raso: duas classes para ler e analisar uma requisição HTTP, fundidas numa classe "mais profunda do que as originais" (5.5); e `getParams()` devolvendo o `Map` interno, trocado por `getParameter(name)` (5.6). Regra que sai da 5.5: o ocultamento muitas vezes melhora com uma classe **um pouco maior**, que junta todo o código de uma capacidade ou sobe o nível da interface (um método para o processamento inteiro em vez de um por etapa). Ver [[wiki/concepts/ocultamento-de-informacao]] e [[wiki/concepts/decomposicao-temporal]].
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -92,3 +96,4 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1: "as classes devem ser profundas" como exemplo de princípio quase filosófico
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — LOC não mede complexidade; fórmula explica o ganho da profundidade
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — texto do cap. 4: Figura 4.1 como custo-benefício, módulo inclui método, parte informal da interface, lista encadeada e `addNullValueForAttribute` como rasos, caso comum simples
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultar como técnica de profundidade; classes um pouco maiores; HTTP leitura+análise e `getParams` como rasos

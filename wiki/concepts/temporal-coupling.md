@@ -3,8 +3,8 @@ type: concept
 title: "Temporal Coupling"
 aliases: ["temporal coupling", "acoplamento temporal", "ordem implícita de chamadas"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [temporal-coupling, api-design, acoplamento, ordem-implícita, design-patterns]
 skill: tech-mentor-system-design
 status: stable
@@ -93,7 +93,12 @@ Solução: retry com backoff exponencial no startup + health check que falha enq
 
 Caso didático de [[wiki/entities/bernardo-lobato]]: sistema bloqueado aguardando um serviço externo de autenticação/autorização (JWT); se ele cair ou ficar lento, a solução inteira fica inviável — a [[wiki/concepts/comunicacao-assincrona]] é apresentada como resposta (acoplamento mais fraco).
 
+## Decomposição temporal pode gerar temporal coupling
+
+[[wiki/concepts/decomposicao-temporal]], de Ousterhout, tem nome parecido mas é outra coisa: estruturar os módulos pela ordem de execução. No exemplo HTTP do cap. 5, a divisão entre a classe que lê a requisição e a que a analisa obrigava o chamador a "invocar dois métodos em classes diferentes, em uma ordem específica" ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], 5.5). É temporal coupling na interface. A correção do livro, uma classe com um método só, elimina as duas coisas.
+
 ## Key Sources
 
 - [[wiki/sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — exemplo de autenticação síncrona e resposta via comunicação assíncrona
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — decomposição temporal no servidor HTTP gerando ordem obrigatória de chamadas

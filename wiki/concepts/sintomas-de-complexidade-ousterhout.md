@@ -4,7 +4,7 @@ title: "Sintomas de Complexidade (Ousterhout)"
 aliases: ["change amplification", "amplificação de mudanças", "cognitive load burden", "unknown unknowns", "incógnitas desconhecidas", "sintomas de complexidade de software", "sistema óbvio"]
 date_created: 2026-09-08
 date_updated: 2026-11-25
-source_count: 3
+source_count: 4
 tags: [complexidade, design, ousterhout, arquitetura, deteccao]
 skill: tech-mentor-backend
 status: draft
@@ -51,8 +51,13 @@ Um dos objetivos mais importantes do design é que o sistema seja óbvio: o dese
 
 [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.2) diz que uma interface claramente especificada "indica exatamente o que os desenvolvedores precisam saber" e com isso ajuda a eliminar as incógnitas desconhecidas. A condição é incluir a parte informal, como as restrições de uso ([[wiki/concepts/interface-formal-e-informal]]). Na 4.3, os dois erros de uma abstração batem com os sintomas: detalhe sem importância na interface aumenta a carga cognitiva; detalhe importante fora dela produz incógnitas desconhecidas.
 
+## Os dois ganhos do ocultamento (cap. 5)
+
+A 5.1 dá os dois benefícios do [[wiki/concepts/ocultamento-de-informacao]] em termos de sintomas: interface mais simples, menos carga cognitiva; nenhuma dependência fora do módulo, então uma mudança de design afeta só ele, sem amplificação de mudanças ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]). O vazamento pela porta dos fundos é a fonte típica de incógnita desconhecida: ninguém sabe que as duas classes dependem do mesmo formato.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]: texto do cap. 2.2, com a Figura 2.1, a comparação entre os sintomas e o objetivo de sistema óbvio
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]]: amplificação de mudanças e incógnitas desconhecidas como os primeiros sinais práticos de complexidade, com exemplos de onboarding
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — interface claramente especificada contra incógnitas desconhecidas (4.2)
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: ocultamento reduz carga cognitiva e amplificação; vazamento oculto gera incógnita desconhecida

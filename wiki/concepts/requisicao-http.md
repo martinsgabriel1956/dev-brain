@@ -3,8 +3,8 @@ type: concept
 title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
-date_updated: 2026-11-21
-source_count: 11
+date_updated: 2026-11-25
+source_count: 12
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -75,3 +75,11 @@ Em [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: o inli
 - [[wiki/sources/frontpush-javascript-assincrono-sincrono-vs-assincrono]]: FrontPUSH, JavaScript aula 12: requisição como exemplo de assíncrono
 - [[wiki/sources/frontpush-api-e-protocolo-http-metodos-get-post-put-delete]]: FrontPUSH, JavaScript aula 13: requisição como "informações de padronização"
 - [[wiki/sources/frontpush-como-usar-svg-img-background-object-inline]]: FrontPUSH, mini curso de CSS Animations, propriedades SVG aula 02: inline sem requisição, mas sem cache
+
+## Anatomia em *A Philosophy of Software Design* (cap. 5)
+
+A Figura 5.1 de [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] mostra um POST com linha inicial (método, URL, parâmetros, versão do protocolo), cabeçalhos terminados por uma linha em branco e corpo opcional. Ousterhout a usa para mostrar por que ler e analisar a requisição não se separam: o `Content-Length` precisa ser analisado para saber onde a requisição termina. Os parâmetros podem vir da linha inicial ou do corpo, em *URL encoding* ("+" para espaço, "%21" para "!").
+
+## Key sources (adição 2026-11-25)
+
+- [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: Figura 5.1, anatomia do POST e o `Content-Length` como motivo para ler e analisar juntos
