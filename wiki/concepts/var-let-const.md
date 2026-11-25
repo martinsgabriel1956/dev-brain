@@ -3,8 +3,8 @@ type: concept
 title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 10
+date_updated: 2026-11-25
+source_count: 11
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -57,6 +57,10 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], literais são "valores qu
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], "sempre utilize a palavra-chave var": sem ela, a atribuição dentro de função cria uma global. `[external]` No modo estrito (padrão em módulos ES) a mesma linha lança `ReferenceError`; `let` e `const` também resolvem, com escopo de bloco ([[wiki/concepts/poluicao-do-escopo-global]]).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], `var a, b = 2, c` declara três variáveis "utilizando uma vez só a palavra-chave", e as três ficam locais à função. O curso adota um `var` por variável: cada linha se move e se remove sozinha, enquanto a lista pede "uma olhada melhorada". É a regra `one-var` do ESLint e a recomendação do guia da Airbnb `[external]`; Crockford defendia o contrário, um `var` só no topo. A aula chama essa vírgula de operador vírgula, mas é o separador da declaração ([[wiki/concepts/operador-virgula-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
@@ -69,3 +73,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], "sempre util
 - [[wiki/sources/javascript-ninja-funcoes]]: JavaScript Ninja, aula 04: var com escopo de função
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: literal ≠ constante; let/const reservadas
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: esquecer o var cria global
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: um var com lista de variáveis × um var por variável

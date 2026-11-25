@@ -26,6 +26,8 @@ date_updated: 2026-11-25
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]] | Semana 6, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9,5 min): primeira [[wiki/concepts/estruturas-de-repeticao-javascript\|estrutura de repetição]]; `while (cond)` converte em booleano e repete "enquanto esse valor for verdadeiro"; contador de 0 a 9; `while (true)` trava o navegador; 0 na condição não entra (`0 == false`); contador descendente com `counter--` no corpo (10 a 1) e na condição (9 a 0); desafio 6 com o mesmo fluxo de fork. O "último retorno" é o valor de conclusão; `> 0` é mais seguro que truthy; `counter--` testa o valor antigo e termina em -1; faltam `do...while`, `break`, `continue` |
+| [[wiki/sources/javascript-ninja-operador-virgula-e-switch]] | Semana 6, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 13,5 min): [[wiki/concepts/operador-virgula-javascript\|operador vírgula]] "junta várias expressões", da esquerda para a direita; `var a, b = 2, c` com um só `var` (e as três ficam locais); `return x += 1, x` = `return ++x`; o curso prefere um `var` por variável. `switch` com `case` por `===`, `break` e `default`; o `break` esquecido cai no `default`; é o `if`/`else if` "mais legível". A vírgula do `var` não é o operador; com `;` só `b` e `c` viram globais; fall-through executa sem testar os `case` |
 | [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]] | Semana 5, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 8 min): espelho do vídeo 01, a função recebe array e objeto; sem argumento devolve "definitivo" (`undefined`); `arg[1]` com `[1, 2, 3]` dá 2; literal direto na chamada (`[1, 5, 7, 8]`); objeto com `propriedade` e `curso`, devolvido inteiro ou `arg.curso`; sem argumento, "não conseguiu ler propriedade curso [de] indefinido". Faltam a referência compartilhada (mutar dentro muda fora), o nome `TypeError` e as defesas atuais (padrão, `?.`) |
 | [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]] | Semana 5, vídeo 01 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 9 min, "quinta aula"): objetos e funções como "as duas partes mais importantes"; revisão do retorno de primitivos; um `return` só, o segundo é ignorado; para devolver vários valores, `return [1, 2, 3]` e `f()[0]`; ou um objeto literal com `prop1`, `prop2` e método, lido com ponto ou guardado em variável; escopo na função em vez de objeto global. Hoje se lê o retorno com desestruturação; cada chamada cria objeto novo; germe do module pattern; método precisa de `this` |
 | [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]] | Semana 4, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): escopo global ("fora de função") × local ("dentro de uma função"); de dentro lê o global, de fora o local "não está definido"; global como "erro de design da linguagem"; garbage collection elimina o local que não será usado; atribuir sem `var` cria [[wiki/concepts/poluicao-do-escopo-global\|global implícita]] após a invocação; conflito de nomes e memória; parâmetros são locais. Faltam bloco, módulo e modo estrito; o GC mede alcance (closures seguram o local); "não definido" é ReferenceError |
@@ -1116,6 +1118,12 @@ date_updated: 2026-11-25
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### JavaScript Ninja, semana 6, vídeo 01: operador vírgula e switch (2026-11-25)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/operador-virgula-javascript]] | `a, b` avalia as duas e vale `b`; menor precedência; a vírgula de `var`, argumentos e literais não é o operador; uso legítimo no `for`; `no-sequences` |
 
 ### JavaScript Ninja, semana 4, vídeo 03: escopo de variáveis e funções (2026-11-24)
 

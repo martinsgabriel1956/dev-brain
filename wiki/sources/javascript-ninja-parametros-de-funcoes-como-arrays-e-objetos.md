@@ -27,7 +27,7 @@ Segundo vídeo da semana 5 do [[wiki/entities/javascript-ninja|JavaScript Ninja]
 - **Literal direto na chamada:** `f([1, 5, 7, 8])`, ou um array misto (`'Fernando'`, 1, um terceiro valor, 34), sem variável intermediária.
 - **Objeto como argumento:** um objeto com `propriedade: 'Fernando'` e `curso`; a função pode devolver o objeto inteiro ou uma propriedade (`arg.curso`) ([[wiki/concepts/objetos-javascript]]).
 - **Sem argumento, erro:** chamar a função que lê `arg.curso` sem parâmetro dá erro, "não conseguiu ler propriedade curso [de] indefinido".
-- Próximo vídeo: desafio da semana 5.
+- Próximo vídeo: desafio da semana 5 (fora da pasta); a leva seguinte abre com [[wiki/sources/javascript-ninja-operador-virgula-e-switch|operador vírgula e switch]].
 
 ## Key Claims
 

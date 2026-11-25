@@ -4,7 +4,7 @@ title: "Escopo em JavaScript (global, de função e de bloco)"
 aliases: ["escopo", "scope", "escopo de função", "escopo de bloco", "escopo global", "escopo léxico", "lexical scope", "function scope", "block scope"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 4
+source_count: 5
 tags: [javascript, escopo, funcoes, var, let, const, closure]
 skill: lang-dynamic
 status: stub
@@ -36,9 +36,14 @@ Em [[wiki/sources/javascript-ninja-funcoes]], `var fernando` dentro de `function
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a aula volta ao tema com dois escopos, global ("fora de função") e local ("dentro de uma função"), e acrescenta: atribuir sem `var` dentro da função cria uma global, mas só depois da invocação; parâmetros também são locais; e o global "é algo ruim", "um erro de design da linguagem" ([[wiki/concepts/poluicao-do-escopo-global]]). Escopo de bloco e de módulo ainda não aparecem (era ES5).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], a lista `var a, b = 2, c` dentro de uma função deixa as três variáveis locais: fora dela, `a` "não foi definido". Retoma a aula de escopo e a global implícita ([[wiki/concepts/poluicao-do-escopo-global]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-funcoes]]: var dentro da função não existe fora; o de fora é acessível de dentro
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global × local, global implícita, parâmetros locais
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: criar o escopo na função e expor o retorno, sem objeto global
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro com nome diferente da variável de fora
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: variáveis da lista com vírgula ficam locais

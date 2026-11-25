@@ -3,8 +3,8 @@ type: concept
 title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-24
-source_count: 12
+date_updated: 2026-11-25
+source_count: 14
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -66,6 +66,14 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], `'0'` é truthy no `if` e n
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], as condições do ternário usam `===` (`1 === 2`, `pessoa.sexo === 'feminino'`). `1 === 2 ? true : false` é redundante: a comparação já devolve booleano ([[wiki/concepts/operador-ternario-javascript]]).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], o `switch` compara com o "igual, igual, igual": "testa o valor e o tipo". Por isso `switch (x)` com `x = '1'` não entra no `case 1` ([[wiki/concepts/estruturas-condicionais-javascript]]).
+
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o 0 "não é igual a false" com `===`, "mas se eu não testar o tipo, ele é igual a falso" (`0 == false`), para justificar que o `while (0)` não entra ([[wiki/concepts/truthy-e-falsy]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
@@ -80,3 +88,5 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], as condições do ter
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: === em todas as condições do if
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: truthy × `== true`
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `===` como condição do ternário
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: switch compara com ===
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: 0 == false, 0 !== false

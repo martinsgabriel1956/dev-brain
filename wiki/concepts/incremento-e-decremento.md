@@ -3,8 +3,8 @@ type: concept
 title: "Incremento e decremento (++ e --)"
 aliases: ["++", "--", "incremento", "decremento", "pós-incremento", "pré-incremento", "pós-decremento", "pré-decremento", "i++", "++i", "postfix increment", "prefix increment"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 3
+date_updated: 2026-11-25
+source_count: 5
 tags: [javascript, operadores, incremento, decremento, expressoes]
 skill: lang-dynamic
 status: stub
@@ -43,8 +43,18 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], `++` e `--` entram como
 
 Em [[wiki/sources/javascript-ninja-metodos-de-objeto]], `pessoa.idade++` dentro do método `aniversario`: o `++` "vai incrementar o valor e vai automaticamente atribuir", e funciona sobre propriedade como sobre variável. A legenda o chama de "operador binário"; é unário.
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], `return x += 1, x` é "a mesma coisa que usar o operador de pré-incremento": soma, depois devolve o último valor da sequência, como `return ++x` ([[wiki/concepts/operador-virgula-javascript]]).
+
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], `console.log(counter--)` imprime e "daí atribui menos um"; com o `--` na condição, `while (counter--)` testa o valor antigo, então o corpo imprime de 9 a 0 e o contador termina em -1.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: pós e pré-incremento e decremento pelo eco do REPL
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: ++/-- como unários com efeito colateral
 - [[wiki/sources/javascript-ninja-metodos-de-objeto]]: JavaScript Ninja, semana 3, vídeo 02: ++ em propriedade de objeto
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: return x += 1, x equivale a return ++x
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: counter-- no corpo e na condição do while

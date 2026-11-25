@@ -4,7 +4,7 @@ title: "Poluição do escopo global (JavaScript)"
 aliases: ["poluição do escopo global", "global namespace pollution", "variável global implícita", "implicit global", "global leak", "globais acidentais"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 2
+source_count: 3
 tags: [javascript, escopo, escopo-global, var, modo-estrito, memoria, boas-praticas]
 skill: lang-dynamic
 status: stub
@@ -40,7 +40,12 @@ Crockford põe as globais no topo das "partes horríveis" do JavaScript (*JavaSc
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o escopo global "é algo ruim" e "um erro de design da linguagem". Mostra a global implícita (atribuir sem `var` dentro da função cria a variável no global depois da invocação) e cita dois custos: "conflito de nomes" e memória que o JavaScript "não vai poder limpar". Remédio da aula: "sempre utilize a palavra-chave var". O modo estrito, a IIFE e os módulos não aparecem.
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], trocar as vírgulas de `var a = 1, b = 2, c = 3` por ponto e vírgula "cria a, b, c como variáveis globais, porque eu não estou utilizando a palavra-chave pra eles". Na verdade só `b` e `c` viram globais implícitas (o `a` continua com `var`), e só fora do modo estrito. A versão mais traiçoeira da mesma armadilha é `var a = b = c = 3`.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global como erro de design; variável sem var; conflito de nomes e memória
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: retornar objeto da função em vez de criá-lo no global (germe do module pattern)
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: ponto e vírgula no lugar da vírgula vira global implícita

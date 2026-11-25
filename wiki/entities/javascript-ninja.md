@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 16
+source_count: 18
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -54,6 +54,12 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o segundo vídeo: o o
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o terceiro vídeo: escopo global e local, variável sem `var` e garbage collection ([[wiki/concepts/poluicao-do-escopo-global]]). O seguinte é o desafio da semana 4, que não está entre as transcrições.
 
+## Semana 6
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], primeiro vídeo depois da revisão do desafio (a legenda diz "cinquentinha", provavelmente o desafio 5): operador vírgula e `switch`. A pasta recomeçou em 01 e traz, depois dele, "Estrutura de repetição While", que o vídeo anuncia.
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o segundo vídeo: o `while`, primeira estrutura de repetição. Fecha com "o desafio da semana de 6 está lançado", o que confirma a numeração da semana; o desafio não está entre as transcrições.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -73,3 +79,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o terceiro v
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: semana 4, vídeo 03: escopo de variáveis e funções
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: semana 5, vídeo 01: retorno de funções com arrays e objetos; "quinta aula"
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: semana 5, vídeo 02: parâmetros de funções como arrays e objetos
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: semana 6, vídeo 01: operador vírgula e estrutura condicional switch
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: semana 6, vídeo 02: estrutura de repetição while; desafio 6

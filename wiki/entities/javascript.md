@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 39
+source_count: 41
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -125,6 +125,14 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o operador ternário:
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], escopo global × local, a global implícita sem `var` e o garbage collection; o global é "um erro de design da linguagem" ([[wiki/concepts/poluicao-do-escopo-global]]).
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], operador vírgula e `switch` ([[wiki/concepts/operador-virgula-javascript]], [[wiki/concepts/estruturas-condicionais-javascript]]).
+
+## No JavaScript Ninja, semana 6, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a estrutura de repetição `while` ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -166,3 +174,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], escopo globa
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: escopo e global implícita
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função retornando array e objeto
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array e objeto como argumento de função
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: operador vírgula e switch
+- [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: while

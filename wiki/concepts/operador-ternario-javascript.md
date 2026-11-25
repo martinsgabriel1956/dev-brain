@@ -3,8 +3,8 @@ type: concept
 title: "Operador ternário (condicional) em JavaScript"
 aliases: ["ternário", "operador condicional", "condicional ternário", "conditional operator", "?:", "ternary"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [javascript, operador-ternario, condicionais, expressoes]
 skill: lang-dynamic
 status: stub
@@ -38,6 +38,11 @@ A condição passa por *ToBoolean*, como no `if`: `'sim' ? 'porta' : 'janela'` d
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário "substitui o if": uma linha no lugar de cinco, com atribuição direta (`sexo = ... ? 'a' : 'o'`, do desafio 3) e condição por truthy/falsy (`'sim' ? 'porta' : 'janela'`). Só "para verificações pequenas": condições grandes ficam "ruim de ler". A aula chama o ternário de "instrução", mas é expressão; e usa `1 === 2 ? true : false`, que é redundante.
 
+## No JavaScript Ninja, semana 6, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], o ternário aparece na revisão das estruturas condicionais, ao lado de `if` / `else if`, antes do `switch`. O exemplo da aula ficou truncado na legenda.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: sintaxe, atribuição direta e uso só em verificações pequenas
+- [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: ternário na revisão antes do switch
