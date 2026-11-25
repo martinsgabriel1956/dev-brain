@@ -3,7 +3,7 @@ type: source
 title: "Introdução ao módulo Mapeando Vagas (curso de carreira, autoria inferida: Augusto Galego)"
 aliases: ["mapeando vagas", "módulo mapeando vagas", "introdução mapeando vagas"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
+date_updated: 2026-11-25
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/introducao-mapeando-vagas.md
 source_url: ""
 author: "Augusto Galego (autoria inferida: pasta de transcrições 'galego'; o nome não é dito)"
@@ -55,3 +55,9 @@ Aula de abertura (~2:44) de um módulo de curso de carreira. Só apresenta o rot
 ## Notas de ingest
 
 Legenda SRT em português, limpa com **text-cleaner** sem tradução. Autoria inferida pela pasta `transcricoes/galego/` e pelo catálogo de cursos de carreira já atribuído a Galego (roadmap de emprego, vagas na gringa); o nome não aparece na fala. Parece ser a primeira aula de um módulo; as demais não foram ingeridas.
+
+A aula de requisitos prometida aqui foi ingerida depois: [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]].
+
+A aula do board de candidaturas também foi ingerida: [[wiki/sources/acompanhando-as-applications-galego]].
+
+A aula de faixas salariais "invisíveis" também foi ingerida: [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]].

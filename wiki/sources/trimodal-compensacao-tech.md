@@ -3,7 +3,7 @@ type: source
 title: "A Natureza Trimodal da Compensação em Tech — Revisitada"
 aliases: ["trimodal compensacao", "tier 1 2 3 empresas", "salario big tech"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
+date_updated: 2026-11-25
 source_count: 0
 tags: [compensacao, salario, carreira, tier, big-tech, equity, mercado, levels]
 skill: tech-mentor-leadership
@@ -109,3 +109,5 @@ O mercado de tech não tem uma distribuição salarial uniforme — tem três di
 - Como o modelo trimodal se comporta com o crescimento de trabalho remoto — empresas Tier 3 contratando globalmente nivelam os salários de Tier 1 locais?
 - Equity de startup (Tier 2) vs. RSU de Big Tech (Tier 3) — como comparar risco/retorno?
 - O modelo vale para áreas além de engenharia (produto, design, data)?
+
+Leitura comentada em português, com exemplos brasileiros: [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]].

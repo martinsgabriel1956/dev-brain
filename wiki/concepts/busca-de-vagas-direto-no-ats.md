@@ -3,8 +3,8 @@ type: concept
 title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever","busca booleana"]
 date_created: 2026-10-07
-date_updated: 2026-11-16
-source_count: 7
+date_updated: 2026-11-25
+source_count: 8
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -26,6 +26,10 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 ## Três categorias de vaga (Mapeando Vagas)
 
 [[wiki/sources/introducao-mapeando-vagas]] divide a busca em buscadores (LinkedIn e outros), outsourcing e Big Techs, e manda buscar as Big Techs direto no site delas porque muitas não postam no LinkedIn. Converge com esta página: a vaga nasce no site/ATS da empresa.
+
+## Depois de aplicar: contato e follow-up
+
+[[wiki/sources/acompanhando-as-applications-galego]] completa a sequência: aplicar, conectar com recruiter e engineering manager, e, sem resposta em cerca de duas semanas, mandar follow-up perguntando pela aplicação ([[wiki/concepts/acompanhamento-de-candidaturas]]).
 
 ## Key Sources
 
@@ -55,6 +59,7 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — página de carreiras: filtro por país, várias vagas
+- [[wiki/sources/acompanhando-as-applications-galego]] — contato e follow-up depois da aplicação
 
 ## Página de carreiras da Big Tech (2026-11-16)
 

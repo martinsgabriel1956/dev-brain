@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-10-01
-source_count: 7
+date_updated: 2026-11-25
+source_count: 8
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -48,6 +48,10 @@ O modelo de cobrança torna o **tamanho do payload** um fator direto de custo, d
 
 Cenário concreto onde DynamoDB supera Postgres: base de dados grande (muito storage) mas com baixa frequência de leitura/escrita. No Postgres, manter o índice de uma tabela grande em memória (shared buffer) para boa performance exigiria uma máquina com muita RAM subutilizada — no Dynamo, o custo de storage é baixo, e como o volume de transações é baixo, o custo de transação (onde o Dynamo realmente cobra) também fica baixo. Ver [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
 
+## Em vagas de fintech
+
+"Dynamo Database" aparece nas vagas do [[wiki/entities/nubank]] e do [[wiki/entities/itau]] lidas em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]], com prioridade média na demo. No Nubank pode ser leitura errada de [[wiki/concepts/datomic]]; não verificado.
+
 ## Key Sources
 
 - [[wiki/sources/dynamodb]] — DynamoDB: NoSQL serverless AWS com escala ilimitada. Single-Table Design: todos os tipos de entidade em uma tabela, acesso por PK+SK patterns. GSI (Global Secondary Index) permite queries por outras...
@@ -57,3 +61,4 @@ Cenário concreto onde DynamoDB supera Postgres: base de dados grande (muito sto
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — escolha de NoSQL sobre SQL justificada por dois fatores concretos aplicados a um encurtador de URL: dados naturalmente chave-valor (short-code → URL longa) e requisito não-funcional de baixa latência
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — modelo de cobrança WCU/RCU por KB de payload, e cenário de storage alto + transação baixa onde DynamoDB compensa mais que Postgres
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — consistência configurável por operação como exemplo de CAP por comportamento (citado a partir da skill, não do vídeo)
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — Dynamo Database em vagas de Nubank e Itaú

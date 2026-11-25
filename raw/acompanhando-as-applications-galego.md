@@ -1,0 +1,21 @@
+# Acompanhando as applications
+
+## Duas maneiras de aplicar
+
+Quando você estiver, de fato, aplicando para os empregos, aplicando para as empresas que você quer entrar, existem meio que assim, amplamente falando, duas maneiras de aplicar. Uma é que você vai aplicar para 100, 200, 500, 1000 empresas aleatoriamente, meio que sem ler os requerimentos e torcer para te chamarem para entrevistas. Isso pode funcionar, eu já fiz isso no passado, isso já funcionou para mim.
+
+Mas tem outra maneira que pode ser mais interessante aqui. Principalmente se você tem ali um núcleozinho de 20, 30 empresas que você escolheu meio que a dedo, que você realmente quer entrar e vai... fazer uma aplicação séria, customizada, né, bem desenhada pra aquela empresa. E se é isso que você vai fazer, é muito interessante a gente trackear, né, a gente manter um contato mais próximo aqui de como essas aplicações estão progredindo, pra gente não perder, não esquecer de fazer algo, não deixar algo na mesa que podia ser interessante, né. De repente fazer follow-ups com as empresas e tal.
+
+## O board de applications
+
+O que a gente vai ter aqui, né? Eu peguei um template já pronto no Notion, tá? Eu não criei isso daqui, eu só adicionei uns campos a mais, mas enfim, tá pronto. Aí você vai, se você quiser ter exatamente igual, você vai ter que baixar por ontem e adicionar os campos de LinkedIn, e-mail e entrevistas, que foram os campos que eu adicionei, mas você não precisa usar um Notion, você pode fazer isso no Trello, em qualquer lugar que tenha um Kanban, vai funcionar. Cara, no arquivo TXT, no papel, funciona, manter isso daqui. Enfim, o Notion é legal que você pode ter o seu currículo ou alguns currículos diferentes, né? Pode ter também action items aqui embaixo, enfim.
+
+X da questão é que quando você vai aplicar pra uma empresa, né, é se sua application for bem séria, entrar em contato com diferentes pessoas na empresa para demonstrar o interesse real. Por exemplo, mandar e-mail para a Recruiter. Tentar falar com, talvez, Engineering Manager, dependendo do tamanho da empresa, CTO. Tentar ter esse contato de verdade, criar as conexões do LinkedIn e falar com as pessoas, porque isso demonstra um interesse real de verdade na aplicação, né?
+
+Então, vamos supor aqui, eu estou aplicando para o Stripe. Eu tenho a etapa LinkedIn, que eu vou fazer a application no LinkedIn. De repente, mandar mensagens... LinkedIn, criar conexões do LinkedIn com recrutadores, engineering managers e etc. Tem a etapa do e-mail, que eu posso de repente mandar um e-mail pra alguém, ou não também, depende do quanto de contato você fez no LinkedIn, né? O ideal é você mandar entrar em contato com pelo menos duas pessoas na empresa, tá? Acho que é bastante positivo talvez três pessoas ali, criar essas conexões. Depois, né, o Stripe vai aqui pro Applied, que você já preencheu sua aplicação, já mandou o seu currículo, já contatou as pessoas na empresa, aí é esperar, se você vai ser chamado para as entrevistas, se você vai ser rejeitado.
+
+## Sem resposta: follow-up e feedback
+
+E a gente poderia ter também aqui uma outra coluna de tipo nenhuma resposta ou solicitar feedback ou algo desse tipo, né? Se eu apliquei pra Stripe duas semanas atrás e eu não tive resposta nenhuma, provavelmente é um não, provavelmente foi rejeitado, mas sei lá, pode ser que a pessoa responsável pela sua application tenha sido demitida, então eu posso, de repente, mandar outra mensagem de follow-up, perguntando como é que tá a aplicação e tal, pra ver se não houve um erro de repente, né? Porque, pô, se eu não ouvi resposta, o não eu já tenho. Eu vou perder essa oportunidade. Se a oportunidade ainda existe lá, pelo menos pressionar um pouco, não pressionar, né, mas enfim. Pedir pra empresa ver como é que tá a application pra de repente dar um feedback, se foi negativo, o que que faltou ali, o que que os outros candidatos tinham que você não tem, é interessante.
+
+A gente ter esse cuidado maior com as empresas que a gente quer entrar de fato. E é isso, esse boardzinho aqui, ou qualquer board, qualquer Trello, qualquer kanban, qualquer coisa, só pra gente não perder a informação de quais empresas a gente já aplicou, de quais empresas a gente quer aplicar, de quais empresas vai mandar currículo de fato e tal.

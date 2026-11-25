@@ -3,8 +3,8 @@ type: concept
 title: "Modelo Trimodal de Compensação"
 aliases: ["trimodal compensation", "tres tiers salario tech", "trimodal nature"]
 date_created: 2026-04-29
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [compensacao, salario, carreira, mercado, tier, trimodal]
 skill: tech-mentor-leadership
 status: stable
@@ -44,12 +44,25 @@ O modelo trimodal explica a variação por *tier de empresa*, mas [[wiki/sources
 
 Na abertura do módulo Mapeando Vagas ([[wiki/sources/introducao-mapeando-vagas]]), a média salarial de um júnior em São Paulo aparece como "infinitamente mais baixa" que o que o [[wiki/entities/google]] paga a um júnior na mesma cidade, e as empresas que concorrem com Big Techs têm faixas "totalmente invisíveis" que não aparecem nas médias. É a tese do Tier 3 em versão brasileira, sem números.
 
+## Versão brasileira, com números (aula bônus de Galego)
+
+[[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] lê o artigo ([[wiki/sources/trimodal-compensacao-tech]]) e traduz os tiers para o Brasil, com números estimados pelo autor, sem fonte:
+
+| Tier | Exemplo brasileiro | Sênior (mensal) |
+|---|---|---|
+| 1, mercado local | "agência de marketing do seu Zé" | ~R$ 6 mil |
+| 2, topo do mercado local | Banrisul (o autor duvida do exemplo) | ~R$ 12 mil |
+| 3, topo do mercado regional | [[wiki/entities/nubank]], Brex | R$ 30 mil ou mais (Brex "acima de 50 mil") |
+
+A média de sênior no Brasil (~R$ 10 mil, segundo ele) não mostra a cauda. Exemplo extremo: L6 do Google no Brasil com TC de R$ 1,1 milhão no [[wiki/entities/levels-fyi]]. **Divergência:** o autor fala em 5x entre o topo e o Tier 1 e diz que Orosz "foi conservador"; o artigo fala em 2-4x.
+
 ## Key Sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/introducao-mapeando-vagas]] — júnior em SP: média do mercado vs. Google; faixas "invisíveis" dos concorrentes de Big Tech
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google x Amazon no Brasil
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — versão brasileira com números estimados (R$ 6 mil × 12 mil × 30 mil+); diz 5x contra os 2-4x do artigo
 
 ## Exemplo em reais: Google x Amazon no Brasil (2026-11-16)
 

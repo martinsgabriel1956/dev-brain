@@ -3,8 +3,8 @@ type: entity
 title: "LeetCode"
 aliases: ["leit code", "leetcode.com"]
 date_created: 2026-08-04
-date_updated: 2026-11-16
-source_count: 8
+date_updated: 2026-11-25
+source_count: 9
 tags: [entrevista-tecnica, coding-interview, plataforma, algoritmos]
 skill: cs-fundamentals
 status: stub
@@ -20,6 +20,10 @@ A diferença entre praticar no LeetCode sozinho e ser entrevistado ao vivo é ce
 
 Convenção observada em [[wiki/sources/binary-search-em-5-minutos]]: para problemas de busca, o padrão é retornar `-1` quando o elemento buscado não é encontrado no array.
 
+## Primeiro tema de conteúdo de Augusto Galego
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/augusto-galego]] conta que começou a criar conteúdo em 2024 sobre LeetCode, enquanto fazia muitas entrevistas, para cristalizar o estudo. O conteúdo o conectou a pessoas aplicando para FANG, algumas depois em Netflix e Spotify ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — defesa de que LeetCode continua relevante mesmo com IA gerando código, via heurística dos "três níveis de profundidade" (ver [[wiki/concepts/hashmap]])
@@ -30,6 +34,7 @@ Convenção observada em [[wiki/sources/binary-search-em-5-minutos]]: para probl
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — método iterativo de estudo na plataforma: filtrar por tema, ordenar por acceptance rate/dificuldade, ler *Solutions* após timebox; convenção de retornar soma de nós em BST via DFS
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — roteiro de início: array → two pointer → sliding window; ~10 problemas por padrão antes de mudar
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — LeetCode na entrevista on-site de Big Tech
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo de LeetCode como aprendizado e networking
 
 ## LeetCode na on-site de Big Tech
 

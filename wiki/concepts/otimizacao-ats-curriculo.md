@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de Currículo para ATS"
 aliases: ["ATS", "applicant tracking system", "robô que lê currículo", "keyword matching currículo"]
 date_created: 2026-07-15
-date_updated: 2026-11-23
-source_count: 6
+date_updated: 2026-11-25
+source_count: 8
 tags: [carreira, contratação, ats, currículo]
 skill: tech-mentor-leadership
 status: draft
@@ -55,6 +55,14 @@ Passar no ATS é só a primeira barreira — é sobre o currículo (a "promessa"
 
 Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]], [[wiki/entities/nasser|Násser]] pede CV "preto no branco", sem cores, gráficos nem "eu sei 80% de tal tecnologia". O motivo dele é a imaturidade que isso revela, não o ATS, mas o resultado serve aos dois. Ver [[wiki/concepts/estrutura-de-curriculo]].
 
+## O que destacar
+
+A contagem de [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] diz o que "deixar mais em evidência no seu currículo": os itens que mais aparecem nas vagas-alvo ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
+
+## Currículos por empresa no board
+
+Em [[wiki/sources/acompanhando-as-applications-galego]], a aplicação seletiva é "customizada, bem desenhada pra aquela empresa", e o board no Notion guarda "alguns currículos diferentes" ao lado de cada candidatura ([[wiki/concepts/acompanhamento-de-candidaturas]]).
+
 ## Key sources
 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]]
@@ -63,3 +71,5 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — PDF pesquisável como pré-requisito mecânico, e o padrão de habilidade listada (Java) sem nenhuma evidência de uso no corpo do currículo
 - [[wiki/sources/introducao-mapeando-vagas]] — mapear requisitos das vagas
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: CV preto no branco
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — contagem de requisitos define o que destacar
+- [[wiki/sources/acompanhando-as-applications-galego]] — currículo customizado por empresa, guardado no board

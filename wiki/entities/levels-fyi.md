@@ -3,8 +3,8 @@ type: entity
 title: "levels.fyi"
 aliases: [levels fyi, levelsfyi, levels.fyi, Levels, Levels.fyi]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [compensacao, carreira, salario, big-tech, ferramenta]
 skill: tech-mentor-leadership
 status: stub
@@ -20,7 +20,12 @@ Site de faixas salariais por empresa, nível e país, com salário, ações e b�
 
 `[skill: tech-mentor-leadership]` A skill também o recomenda como referência de salários por nível em empresas tech globais.
 
+## Cauda longa no Brasil
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], o Levels.fyi é a fonte que "até traz um pouco dessa informação" do Tier 3: L6 do Google no Brasil com TC de R$ 1,1 milhão, longe de qualquer média ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — exemplo do L6 do Google no Brasil

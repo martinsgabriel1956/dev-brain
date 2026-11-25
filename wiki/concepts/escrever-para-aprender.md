@@ -3,8 +3,8 @@ type: concept
 title: "Escrever para Aprender"
 aliases: ["write a blog", "blog como aprendizado", "writing to teach"]
 date_created: 2026-04-22
-date_updated: 2026-10-30
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [carreira, habitos, aprendizado, escrita, comunicação]
 skill: tech-mentor-leadership
 status: stable
@@ -46,6 +46,10 @@ Começou escrevendo sem audiência por 6 meses. Descobriu que `robots.txt` bloqu
 
 [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] usa *Writes and Write-Nots* de [[wiki/entities/paul-graham]] `[external]` paulgraham.com/writes.html: escrever com clareza exige pensar com clareza, e PG prevê que em algumas décadas poucos saberão escrever porque a IA tornaria a escrita obsoleta, como o arado. O autor conclui que, por ficar rara, a escrita vai valer mais, e a coloca, ao lado da leitura, como a principal [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefa de academia]] para não delegar à IA.
 
+## Escrever sobre o problema do trabalho
+
+[[wiki/sources/networking-com-criacao-de-conteudo-galego]] sugere transformar um desafio real (ex.: ter que aprender Elasticsearch numa empresa, os problemas e a decisão tomada) em artigo ou vídeo: "documentar o seu aprendizado". Publicar ainda atrai quem teve o mesmo problema ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/9-habitos-programador-junior]]
@@ -53,3 +57,4 @@ Começou escrevendo sem audiência por 6 meses. Descobriu que `robots.txt` bloqu
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — escrever é pensar; Writes and Write-Nots; escrita como habilidade que fica rara e valoriza com a IA
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — desafio do trabalho vira artigo; o público é quem teve o mesmo problema

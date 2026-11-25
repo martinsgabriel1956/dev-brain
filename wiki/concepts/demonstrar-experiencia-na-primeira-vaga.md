@@ -3,8 +3,8 @@ type: concept
 title: "Demonstrar experiência na primeira vaga"
 aliases: ["experiência sem experiência", "como demonstrar experiência", "narrativa de projetos", "README como portfólio"]
 date_created: 2026-11-22
-date_updated: 2026-11-23
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [carreira, primeira-vaga, junior, portfolio, readme, entrevista, storytelling]
 skill: tech-mentor-leadership
 status: stub
@@ -34,7 +34,12 @@ Quem nunca trabalhou não tem experiência de emprego para mostrar, mas tem a de
 
 A [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|aula 05 do módulo Monetização e Freelancer]] fecha o assunto: "a sua experiência meio que já está catalogada aqui no README". Os exemplos (Rocketshoes, MeetApp) estão em [[wiki/concepts/estrutura-de-readme]]; a vitrine maior, em [[wiki/concepts/estrutura-de-portfolio]].
 
+## Quando a stack pedida não está no currículo
+
+[[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] dá duas saídas: um projeto pessoal com a stack "pra eu pelo menos poder linkar", ou usá-la na empresa atual, se for a ferramenta certa, para poder dizer "eu trabalhei com Kafka nessa empresa" e explicar na entrevista ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: "trazer algo do mundo das ideias para a realidade"; narrativa e README
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: README como catálogo da experiência
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — projeto pessoal ou adoção na empresa atual para cobrir uma lacuna

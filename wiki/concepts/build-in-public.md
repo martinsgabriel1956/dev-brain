@@ -3,8 +3,8 @@ type: concept
 title: "Build in Public"
 aliases: ["construir em público", "codar em live", "live coding como conteúdo"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [build-in-public, live-coding, criacao-de-conteudo, comunidade-tecnica, transparencia]
 skill: tech-mentor-leadership
 status: stub
@@ -22,6 +22,11 @@ Em [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]], 
 
 Converge com o mecanismo já documentado em [[wiki/concepts/mentoria-tecnica]] (seção "Ensinar em Público como Extensão da Mentoria") — a diferença é que build in public expõe o **processo de construção** (código real, erros reais, decisões em tempo real) em vez de uma explicação já digerida e estruturada como uma palestra ou post. O autor reforça essa distinção explicitamente: "não é um negócio que eu tô criando fora das telas e vindo aqui mostrar pronto — eu tô vindo aqui e vou codar com vocês, apanhando, aprendendo, enquanto tô codando."
 
+## Ver também
+
+Versão em texto e vídeo do mesmo impulso: [[wiki/concepts/criacao-de-conteudo-tecnico]], com os dois motivos de [[wiki/entities/augusto-galego]] (aprender e interagir com a comunidade) em [[wiki/sources/networking-com-criacao-de-conteudo-galego]].
+
 ## Key Sources
 
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — sistema de mentoria em Go construído inteiramente em live streams, como prática de exposição e de aprendizado deliberado da linguagem
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — motivos para criar conteúdo (aprendizado e comunidade)

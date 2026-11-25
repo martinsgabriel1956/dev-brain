@@ -3,8 +3,8 @@ type: entity
 title: "Clojure"
 aliases: ["clj", "clojurescript", "cljs"]
 date_created: 2026-05-31
-date_updated: 2026-09-23
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [clojure, lisp, jvm, programacao-funcional, imutabilidade]
 skill: tech-mentor-backend
 status: draft
@@ -37,8 +37,13 @@ Dialeto Lisp funcional rodando na JVM, criado por [[rich-hickey]] em 2007. [[wik
 
 A JVM oferece bibliotecas para criptografia, networking, serialização, logging e muito mais — tudo battle-tested e maduro.
 
+## Requisito raro em vagas
+
+Na contagem de [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]], Clojure aparece só na vaga do [[wiki/entities/nubank]] ("nenhuma outra empresa vai pedir"), mas entra com prioridade alta para quem mira o Nubank; Java, pela interoperabilidade, conta nas duas vagas de fintech da demo.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — reforço da tese de imutabilidade (dados que não mudam eliminam classes inteiras de bugs em sistemas concorrentes), sem detalhe técnico novo sobre a linguagem em si
 - [[wiki/sources/design-by-contract-video]] — Clojure citada como linguagem com suporte nativo a pré/pós-condições (exemplo `deposito`)
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — Clojure como requisito exclusivo do Nubank numa amostra de vagas

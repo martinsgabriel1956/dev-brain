@@ -3,8 +3,8 @@ type: concept
 title: "Caçar a empresa, não a vaga"
 aliases: ["target company list","lista de empresas-alvo"]
 date_created: 2026-10-07
-date_updated: 2026-11-16
-source_count: 6
+date_updated: 2026-11-25
+source_count: 8
 tags: [carreira, busca-de-vagas, estrategia, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -23,6 +23,14 @@ Inversão de método proposta em [[wiki/sources/novos-cargos-ia-e-hunting-de-vag
 ## Big Techs: ir ao site, não ao buscador
 
 [[wiki/sources/introducao-mapeando-vagas]] aplica a ideia às Big Techs: como muitas não postam no LinkedIn, "você vai aprender a encontrar direto no site dos Big Techs as vagas". As vagas encontradas alimentam o [[wiki/concepts/mapeamento-de-requisitos-de-vagas]] e o [[wiki/concepts/acompanhamento-de-candidaturas]].
+
+## Depois da lista: contar o que as empresas pedem
+
+[[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] é o passo seguinte: com a lista de empresas-alvo, abrir as vagas delas e contar os requisitos ("olhar direto nas empresas que a gente quer aplicar"), em vez de perguntar o que estudar ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
+
+## Núcleo seletivo e board
+
+[[wiki/sources/acompanhando-as-applications-galego]] chama a lista de empresas-alvo de "núcleozinho de 20, 30 empresas" escolhidas a dedo, com aplicação "séria, customizada", e opõe isso a aplicar para 100 a 1000 empresas sem ler requisitos. O núcleo é o que vai para o board ([[wiki/concepts/acompanhamento-de-candidaturas]]).
 
 ## Key Sources
 
@@ -44,3 +52,5 @@ O primeiro dos [[wiki/concepts/tres-canais-de-vaga-internacional]] de [[wiki/sou
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — requisitos das empresas-alvo como ponto de partida
+- [[wiki/sources/acompanhando-as-applications-galego]] — núcleo de 20 a 30 empresas com aplicação customizada

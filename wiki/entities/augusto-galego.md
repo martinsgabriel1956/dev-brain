@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-11-16
-source_count: 23
+date_updated: 2026-11-25
+source_count: 27
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -87,6 +87,22 @@ Aula e PDF do workshop pago de carreira ([[wiki/sources/onde-encontrar-vagas-wor
 
 Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]), pesquisa salário no [[wiki/entities/levels-fyi]] e no [[wiki/entities/glassdoor]], filtra vagas na página de carreiras do Google e resume o [[wiki/concepts/processo-de-entrevista-big-tech]]. Relato pessoal: aplicou para ~10 vagas na Amazon, 9 rejeitaram o currículo e 1 time o chamou, mas ele não passou da segunda etapa ([[wiki/concepts/contratacao-por-time-em-big-tech]]). Autoria inferida pela pasta das transcrições e pelo módulo; o nome não é dito.
 
+## Módulo "Mapeando Vagas": mapear requisitos de múltiplas vagas
+
+Em [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] mostra um template no Notion ("eu uso o Notion pra tudo") para contar os requisitos de 10 a 15 vagas ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]). A demo usa vagas de [[wiki/entities/nubank]], Brex e [[wiki/entities/itau]]; diz ter "viés" pró-fintech ("eu acho que fintech vale muito a pena"), coerente com o relato da empresa de pagamentos. Autoria inferida pela pasta das transcrições; o nome não é dito.
+
+## Aula sobre networking com criação de conteúdo
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]] diz que hoje é CTO e criador de conteúdo, e que só começou a publicar em 2024, já sênior, morando na Europa e com passagem por empresas dos EUA e da Austrália; antes, "você não vai encontrar quase nada que eu fiz na internet". O primeiro tema foi LeetCode. Defende que conteúdo é opcional e que o ganho inicial é network e visibilidade ([[wiki/concepts/criacao-de-conteudo-tecnico]]). Autoria inferida pela pasta e pelo relato; o nome não é dito.
+
+## Módulo "Mapeando Vagas": acompanhando as applications
+
+Em [[wiki/sources/acompanhando-as-applications-galego]] diz que já aplicou em volume, sem ler requisitos, e que "já funcionou"; para um núcleo de 20 a 30 empresas recomenda aplicação customizada, 2 ou 3 contatos por empresa e follow-up, num board do Notion ([[wiki/concepts/acompanhamento-de-candidaturas]]). Autoria inferida pela pasta; o nome não é dito.
+
+## Módulo "Mapeando Vagas": aula bônus sobre salários invisíveis
+
+Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] comenta o artigo trimodal de [[wiki/entities/gergely-orosz]] e o traduz para o Brasil (agência local × Banrisul × Nubank/Brex). Diz que o modelo é "uma verdade quase que auto-evidente" e que vale no Brasil "tranquilamente". É a aula de faixas salariais "invisíveis" anunciada na introdução do módulo ([[wiki/concepts/modelo-trimodal-compensacao]]). Autoria inferida; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -109,3 +125,7 @@ Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]),
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — onde procurar vaga primeiro (job boards e outsourcing)
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] — três canais, Total Compensation, outsourcing PJ (autoria inferida)
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]] — PDF com links e manual de busca booleana (autoria inferida)
+- [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — tabela de requisitos (categoria, prioridade, contagem, proficiência); autoria inferida
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo é opcional; começou em 2024 com LeetCode; post na íntegra (autoria inferida)
+- [[wiki/sources/acompanhando-as-applications-galego]] — board de candidaturas, aplicação em volume × seletiva (autoria inferida)
+- [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — leitura comentada do modelo trimodal, com exemplos brasileiros (autoria inferida)

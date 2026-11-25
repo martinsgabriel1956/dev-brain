@@ -3,8 +3,8 @@ type: concept
 title: "Aprender Ensinando"
 aliases: ["learn by teaching", "feynman technique", "ensinar para aprender", "técnica feynman aplicada a código"]
 date_created: 2026-04-29
-date_updated: 2026-06-20
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [aprendizado, mentoria, pair-programming, gaps, onboarding, metacognição]
 skill: tech-mentor-leadership
 status: stable
@@ -35,6 +35,11 @@ O pair programming cria o contexto natural para esse exercício: você observa, 
 
 Ensinar é uma das impressões mais densas — obriga síntese ativa em vez de reconhecimento passivo.
 
+## Conteúdo público como ensino
+
+Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], criar conteúdo é "uma forma de cristalizar aquilo que eu tava aprendendo" ("dizem que ao ensinar você aprende muito mais"); o autor começou assim, com LeetCode, durante uma fase de entrevistas ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-novas-codebases]]
+- [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — criar conteúdo para cristalizar o aprendizado

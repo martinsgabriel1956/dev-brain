@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-24
+date_updated: 2026-11-25
 ---
 
 
@@ -278,6 +278,10 @@ date_updated: 2026-11-24
 | [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] | Ana: sistema de notificação reprova seniores por hábito — [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API primeiro]], ignorar custo, sem entidades; resposta: [[wiki/concepts/filas-separadas-por-prioridade|3 tópicos por prioridade]], [[wiki/concepts/channel-router-custo-fallback|channel router]], [[wiki/concepts/confirmacao-de-entrega-nao-confiavel|reconciliação]] |
 | [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]]: sete erros de devs brasileiros ao aplicar para a gringa — [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito|inglês técnico suficiente]], [[wiki/concepts/storytelling-em-entrevista|storytelling]], LeetCode/System Design (building blocks antes de praticar), [[wiki/concepts/explicar-o-porque-das-decisoes|explicar o porquê]], [[wiki/concepts/pensar-em-voz-alta-na-entrevista|pensar em voz alta]] e [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista|pesquisar a empresa]] (15 min); tese: [[wiki/concepts/vaga-internacional-sem-mistica|sem mística]], processo parecido com o do Brasil |
 | [[wiki/sources/introducao-mapeando-vagas]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido): abertura do módulo Mapeando Vagas — buscadores, outsourcing e Big Techs; requisitos, board de candidaturas e faixas salariais |
+| [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido, módulo Mapeando Vagas): [[wiki/concepts/mapeamento-de-requisitos-de-vagas|tabela de requisitos]] com categoria, prioridade, contagem e proficiência; vagas de [[wiki/entities/nubank]], Brex e [[wiki/entities/itau]]; 10 a 15 vagas viram currículo, estudo e projeto |
+| [[wiki/sources/networking-com-criacao-de-conteudo-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido): [[wiki/concepts/criacao-de-conteudo-tecnico|criar conteúdo]] não é pré-requisito; motivos são aprender e interagir; ganho inicial é [[wiki/concepts/networking-de-carreira|network]] e visibilidade; post na íntegra, link nos comentários |
+| [[wiki/sources/acompanhando-as-applications-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido, módulo Mapeando Vagas): aplicar em volume × núcleo de 20 a 30 empresas; [[wiki/concepts/acompanhamento-de-candidaturas|board]] com LinkedIn, e-mail, Applied, entrevistas; 2 ou 3 contatos por empresa; follow-up após duas semanas |
+| [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido, aula bônus): lê o [[wiki/concepts/modelo-trimodal-compensacao|modelo trimodal]] de [[wiki/entities/gergely-orosz]] e o traduz para o Brasil (agência local ~R$ 6 mil × Banrisul ~R$ 12 mil × Nubank/Brex R$ 30 mil+); L6 do Google com TC de R$ 1,1 mi; diz 5x contra os 2-4x do artigo |
 | [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (módulo Mapeando Vagas): [[wiki/concepts/criterios-para-escolher-pais-de-vaga|país por salário, língua e facilidade]]; EUA primeiro para remoto do Brasil; [[wiki/concepts/remoto-com-restricao-de-residencia|"Remote" ≠ global]]; Irlanda/Londres com [[wiki/concepts/visa-sponsorship|visa sponsor]]; Portugal e Bálticos como [[wiki/concepts/porta-de-entrada-na-uniao-europeia|porta de entrada na UE]]; [[wiki/concepts/arbitragem-geografica-de-salario|arbitragem geográfica]] |
 | [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] | [[wiki/entities/felipe-fagundes|Felipe Fagundes]]: agente SRE de 8.339 para 2.426 tokens (~−71%) com [[wiki/concepts/write-select-compress-isolate|Write, Select, Compress, Isolate]]; [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar|medir antes]] e reduzir a [[wiki/concepts/superficie-probabilistica-do-agente|superfície probabilística]] |
 | [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: estresse como [[wiki/concepts/risco-ocupacional-do-dev|risco ocupacional]] (criar software é fácil, manter cai nos devs) e três mantras — [[wiki/concepts/foco-no-que-esta-ao-seu-alcance|foco no que está ao seu alcance]] (+ [[wiki/concepts/reclamar-menos-e-fazer-mais|reclamar menos]]), [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel|melhor possível no tempo que tem]] (+ [[wiki/concepts/priorizacao-pelo-negocio|priorização pelo negócio]]) e [[wiki/concepts/complexidade-e-organizacao|complexidade e organização]] ([[wiki/concepts/poder-da-barra-de-progresso-e-do-check|barra de progresso e check]]) |
@@ -2277,8 +2281,8 @@ date_updated: 2026-11-24
 |---|---|
 | [[wiki/concepts/applicant-tracking-system]] | ATS: onde a vaga nasce antes de chegar ao LinkedIn; Ashby, Greenhouse, Lever |
 | [[wiki/concepts/busca-de-vagas-direto-no-ats]] | Buscar vagas com `site:` e APIs JSON públicas dos ATS, com agente diário |
-| [[wiki/concepts/mapeamento-de-requisitos-de-vagas]] | Ler os requisitos das vagas para achar lacunas do currículo |
-| [[wiki/concepts/acompanhamento-de-candidaturas]] | Board com o estado de cada candidatura: vaga, aplicação, recrutador, entrevistas |
+| [[wiki/concepts/mapeamento-de-requisitos-de-vagas]] | Ler os requisitos das vagas para achar lacunas do currículo; método da tabela de contagem (Galego) |
+| [[wiki/concepts/acompanhamento-de-candidaturas]] | Board com o estado de cada candidatura: vaga, aplicação, recrutador, entrevistas; volume × seletiva, 2 ou 3 contatos por empresa, follow-up |
 | [[wiki/concepts/cacar-a-empresa-nao-a-vaga]] | Lista de 30–50 empresas-alvo, 3–4 currículos, varredura semanal |
 | [[wiki/concepts/sinais-de-vaga-real-vs-fantasma]] | LATAM/worldwide, faixa salarial e data recente vs. vaga sem movimento |
 | [[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]] | Aliases de FDE, AI, Agent e Design Engineer nas vagas |
@@ -2725,6 +2729,7 @@ date_updated: 2026-11-24
 | [[wiki/concepts/seis-passos-mock-interview]] | Roteiro de dez etapas para transformar prática solo de LeetCode em simulação fiel de entrevista real — cronômetro, sem ler o enunciado, Big-O antes de codar |
 | [[wiki/concepts/entrevista-system-design]] | Whiteboard interview: requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o high-level design |
 | [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
+| [[wiki/concepts/criacao-de-conteudo-tecnico]] | Criar conteúdo técnico para aprender, interagir e ser encontrado; opcional; distribuição na íntegra por plataforma |
 | [[wiki/concepts/comunidade-tecnica]] | Ciclo de recebimento e retribuição em meetups/eventos — quem foi ajudado deve retribuir, sob risco de o ciclo se fechar quando alguém "vira celebridade" e some dos eventos pequenos |
 | [[wiki/concepts/ead-educacao-a-distancia]] | Acesso espetacular à educação, mas o resultado depende quase inteiramente da autodisciplina — instituição sem cobrança transfere 100% do peso para o aluno |
 | [[wiki/concepts/profissional-t-shaped]] | Formação em T: profundidade numa área (vertical) + amplitude nas complementares (horizontal) — a estrutura por trás do nexialista e do arquiteto de soluções |
