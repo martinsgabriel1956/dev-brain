@@ -3,8 +3,8 @@ type: concept
 title: "Programação Procedural"
 aliases: ["programação procedural", "procedural programming", "programação estruturada", "structured programming"]
 date_created: 2026-11-03
-date_updated: 2026-11-03
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [paradigma, programacao-procedural, programacao-estruturada, goto, historia-do-software]
 skill: tech-mentor-backend
 status: stub
@@ -22,6 +22,11 @@ A fonte trata a programação estruturada como subconjunto da procedural: uma di
 
 Procedural também tem mecanismos de modularização. A [[wiki/concepts/programacao-orientada-a-objetos|POO]] não inventou a modularidade; para a fonte, seu mérito foi estruturar responsabilidades e relações de forma mais direta como abstração.
 
+## No JavaScript Ninja, semana 8, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], Java aparece como exemplo do estilo em que "você vai passando as instruções [...] e eles vão executando linha a linha", em oposição à programação funcional, "um pouco mais dinâmica". `[external]` O eixo é imperativo × declarativo: JavaScript também executa linha a linha, e Java ganhou lambdas no Java 8 (2014).
+
 ## Key sources
 
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — procedural e estruturada como antecedentes da POO
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: Java como estilo de instruções linha a linha, contra o funcional

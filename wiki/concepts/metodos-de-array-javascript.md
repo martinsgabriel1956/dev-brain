@@ -4,7 +4,7 @@ title: "Métodos de array em JavaScript (forEach, map, filter, reduce...)"
 aliases: ["forEach", "map", "filter", "reduce", "find", "some", "every", "métodos de array", "array methods", "pop", "push"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 5
+source_count: 6
 tags: [javascript, array, foreach, map, filter, reduce, callback, imutabilidade]
 skill: lang-dynamic
 status: stub
@@ -58,6 +58,10 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o fecho anuncia 
 
 Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o primeiro método do curso é o `push`: "push significa empurrar", adiciona no fim e "já retorna o length do array" (de 6 para 7). Entra qualquer valor: objeto, `null`, outro array, função. A aula não diz que ele muda o array no lugar nem que aceita vários argumentos; um array empurrado vira um item só (para espalhar, `push(...outro)` ou `concat`).
 
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o curso mostra função como parâmetro com uma `showFunction` própria, antes dos métodos de array que usam isso. `[external]` `map`, `filter`, `forEach` e `reduce` são funções de ordem superior: `[1, 2, 3].map(function dobro(x) { return x * 2 })` dá `[2, 4, 6]` (verificado) ([[wiki/concepts/funcao-de-ordem-superior]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach, map e a diferença entre os dois
@@ -65,3 +69,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o primeiro m
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: filter, map, "index" e forEach para exibir JSON; "index" não existe (indexOf/findIndex ou 2º parâmetro do map)
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: anuncia os métodos de array
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push adiciona no fim e devolve o length
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função como parâmetro antes de map/filter

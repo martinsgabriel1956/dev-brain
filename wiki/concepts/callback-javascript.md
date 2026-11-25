@@ -3,8 +3,8 @@ type: concept
 title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-25
+source_count: 17
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -66,6 +66,18 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `resolve` e `r
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], "o event passa aqui automático, porque é uma função de callback": por isso dá para desestruturá-lo direto no parâmetro do handler.
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a regra de nomear funções para facilitar o debug. `[external]` É no callback que ela mais pesa hoje: a anônima passada direto (`arr.map(function () {...})`) não tem de onde herdar nome e aparece sem nome no stack trace; `function cb() {...}` aparece como `at cb` (verificado no Node 22).
+
+## No JavaScript Ninja, semana 8, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o fecho anuncia o vídeo seguinte: "como a gente consegue passar objetos por parâmetros, [a] gente também consegue fazer com funções". `[external]` Juntos, os dois vídeos dão `[1, 2, 3].map(adder(10))`: a função curried pré-configurada vira callback ([[wiki/concepts/currying]]).
+
+## No JavaScript Ninja, semana 8, vídeo 04 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], `function showFunction(fn) { return fn(); }` recebe a função "como um parâmetro normal" e a invoca. Dois formatos: criar a função antes e passá-la pelo nome, "sem invocar", ou passar "direto aqui no parâmetro" uma anônima. A aula não usa a palavra callback. `[external]` `showFunction(fn())` passa o resultado e estoura com `TypeError: fn is not a function` (verificado no Node 22). Ver [[wiki/concepts/funcao-de-ordem-superior]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
@@ -82,3 +94,6 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], "o event
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: onreadystatechange como callback
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: resolve/reject como callbacks prontos
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: o event chega no callback
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: callbacks anônimos saem sem nome no stack trace
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: anuncia função como parâmetro
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: showFunction(fn); passar pelo nome ou anônima direto

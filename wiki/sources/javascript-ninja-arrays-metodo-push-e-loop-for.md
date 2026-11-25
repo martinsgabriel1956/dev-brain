@@ -93,6 +93,8 @@ Terceiro vídeo da semana 7 do [[wiki/entities/javascript-ninja|JavaScript Ninja
 
 Vídeo anterior do curso na wiki: [[wiki/sources/javascript-ninja-arrays-propriedade-length]].
 
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]] (semana 8, vídeo 01); a revisão do desafio da semana 7 fica entre os dois e não está na wiki.
+
 ## Open Questions
 
 - **O quarto item do array**: "Agostinho da Silva"; como "da Silva" é o ASR de "Daciuk", deve ser a string `'Daciuk'` do vídeo anterior (média). Literal no raw.

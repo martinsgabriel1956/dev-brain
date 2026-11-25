@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 21
+source_count: 25
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -76,6 +76,22 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], operador vírgul
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, com contadores crescente e descendente e o alerta contra o `while (true)`. Lança o desafio da semana 6 e prefere dúvidas por issue no GitHub.
 
+## Semana 8, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], institui a regra de sempre nomear funções atribuídas a variáveis, pelo debug, e mostra a propriedade `name` no console.
+
+## Semana 8, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], apresenta programação funcional como requisito "para você se tornar um ninja de verdade", define funções como cidadãos de primeira classe e passa do console para um arquivo `.js` para mostrar função que retorna objeto.
+
+## Semana 8, vídeo 03
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], mostra função que retorna função com `adder`/`add2` e as duas invocações seguidas `adder(5)(8)`, sem usar os termos closure e currying.
+
+## Semana 8, vídeo 04
+
+Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], passa objeto e função como parâmetro (`showFunction`), erra um `;` dentro do objeto ao vivo e diz que o curso terá "umas 30 aulas".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -99,3 +115,7 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, co
 - [[wiki/sources/javascript-ninja-operador-modulo]]: semana 7, vídeo 01: operador módulo; pares de 0 a 20; erro ao vivo
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: semana 8, vídeo 01: a importância de nomear funções; propriedade name
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: semana 8, vídeo 02: introdução à programação funcional; função que retorna objeto
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: semana 8, vídeo 03: funções que retornam funções; adder
+- [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: semana 8, vídeo 04: objeto e função como parâmetro

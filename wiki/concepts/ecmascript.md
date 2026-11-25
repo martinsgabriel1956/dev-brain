@@ -3,8 +3,8 @@ type: concept
 title: "ECMAScript (ES6, ES2015 e as edições anuais)"
 aliases: ["ES", "ES6", "ES2015", "ES6+", "ECMA-262", "TC39"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 7
+date_updated: 2026-11-25
+source_count: 8
 tags: [ecmascript, javascript, es6, es2015, tc39, especificacao]
 skill: lang-dynamic
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]], a arrow fu
 
 Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], o *method shorthand* (`area() {}`) é apresentado como notação que "já vem com o JavaScript 6": correto, é do ES2015. Os métodos de `String` e `Number` também são da especificação, não do navegador.
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a aula mostra `func.name` vazio para `var func = function () {}`. `[external]` O ES2015 mudou isso: a especificação passou a inferir o nome de funções anônimas a partir da variável, propriedade ou parâmetro padrão que as recebe, e no Node 22 o resultado é `'func'` (verificado). Exemplo de como uma edição muda o que uma aula antiga mostra.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: ES vem de ECMAScript; versões por ano
@@ -55,3 +59,4 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], o *meth
 - [[wiki/sources/frontpush-intro-modulo-reactjs]]: FrontPUSH, React aula 01: o módulo "JavaScript ES6+" como pré-requisito do React
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: JS "ganhou muita força" depois das atualizações do ECMAScript
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: novas sintaxes do ECMAScript que o browser "demora para poder entender"
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: inferência de Function.name no ES2015 desatualiza a demonstração

@@ -3,7 +3,7 @@ type: source
 title: "Tipos de dados e objetos (JavaScript Ninja, semana 3, vídeo 01)"
 aliases: ["JavaScript Ninja tipos e objetos", "JS Ninja primitivos e objetos", "01 - Tipos de dados e objetos"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
+date_updated: 2026-11-25
 source_count: 0
 tags: [javascript, tipos-primitivos, objetos, null, undefined, funcoes, funcao-anonima, primeira-classe]
 skill: lang-dynamic
@@ -95,6 +95,8 @@ Continua em [[wiki/sources/javascript-ninja-metodos-de-objeto]] (semana 3, víde
 - [[wiki/concepts/funcoes-javascript]]
 - [[wiki/concepts/funcoes-de-primeira-classe]]
 - [[wiki/concepts/programacao-orientada-a-objetos]]
+
+Retomada em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]] (semana 8, vídeo 01): a função anônima em variável passa a ser nomeada, e a aula mostra `name` vazio, o que a inferência do ES2015 citada acima já desmente.
 
 ## Open Questions
 

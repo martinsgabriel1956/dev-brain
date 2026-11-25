@@ -85,6 +85,8 @@ Segundo vídeo da semana 5 do [[wiki/entities/javascript-ninja|JavaScript Ninja]
 - [[wiki/concepts/escopo-javascript]]
 - [[wiki/concepts/imutabilidade]]
 
+Retomada em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]] (semana 8, vídeo 04): o objeto como parâmetro volta como ponte para a função como parâmetro.
+
 ## Open Questions
 
 - **"O retorno vai ser definitivo"**: provavelmente "undefined" (média-alta); literal.

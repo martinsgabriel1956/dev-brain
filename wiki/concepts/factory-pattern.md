@@ -3,8 +3,8 @@ type: concept
 title: "Factory Pattern"
 aliases: ["factory", "factory method", "simple factory"]
 date_created: 2026-05-05
-date_updated: 2026-09-08
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [design-patterns, creational, factory, gof]
 skill: tech-mentor-backend
 status: stable
@@ -59,9 +59,14 @@ const user = UserFactory.create("admin", "1", "John");
 
 [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] usa Factory num papel diferente do catálogo acima: não para esconder qual subclasse é instanciada em runtime, mas para materializar a [[wiki/concepts/composition-root|composition root]] de Clean Architecture. Um `LoginFactory` conhece todas as implementações concretas de um componente de tela (validadores, cliente HTTP, implementação de autenticação) e monta o componente já injetado com elas — cumprindo, no frontend, o mesmo papel da quinta camada "Principal & Configuração" do livro de Robert Martin (ver [[wiki/concepts/clean-architecture]]).
 
+## Factory function em JavaScript
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], uma função que monta e devolve `{ name: 'Fernando', lastName: 'Daciuk' }`, direto ou via `var`. `[external]` É a forma mínima de factory em JavaScript: sem classe nem `new`, cada chamada devolve um objeto novo (verificado no Node 22). A aula não usa o nome do padrão.
+
 ## Key Sources
 
 - [[wiki/sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Factory como segundo estágio de desacoplamento (isolamento com chamada estática explícita), intermediário entre código "ameba" e Observer
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do pedido numa pizzaria; exemplo de sistema de pagamentos (Pix/cartão/boleto) e `document.createElement` como factory nativa do browser
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — Factory como mecanismo concreto de composition root (`LoginFactory`) numa tela Vue.js
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: função que retorna objeto literal, uma factory function sem o nome
