@@ -3,8 +3,8 @@ type: concept
 title: "Arrow functions em JavaScript"
 aliases: ["arrow function", "função de seta", "=>", "fat arrow", "retorno implícito", "this léxico"]
 date_created: 2026-11-16
-date_updated: 2026-11-17
-source_count: 7
+date_updated: 2026-11-25
+source_count: 8
 tags: [javascript, funcoes, arrow-function, es6, this, react, vue]
 skill: lang-dynamic
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/frontpush-dom-parte-3-eventos-addeventlistener-target-keydown]
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula lembra das arrow functions para dizer que a desestruturação vale "não só para variáveis, mas também para funções". O exemplo concreto é tirar funções de objetos ou arrays, como `const [count, setCount] = useState(0)` ([[wiki/concepts/desestruturacao-javascript]]).
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso passa a nomear toda função. `[external]` Arrow function não tem sintaxe para nome: o `name` dela vem só da inferência do ES2015 (`const soma = () => {}` dá `'soma'`), e passada direto como callback fica sem nome no stack trace.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: de function a arrow com retorno implícito
@@ -61,3 +65,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], a aula l
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: arrow function citada no fecho
 - [[wiki/sources/frontpush-o-que-preciso-saber-de-javascript-antes-do-react]]: FrontPUSH, React aula 02: sintaxe para "bater o olho" no React, "pouquíssima verbosidade"
 - [[wiki/sources/frontpush-jsx-webpack-babel-react-createelement-create-react-app]]: FrontPUSH, React aula 06: componente como arrow function; exemplo de sintaxe que os browsers não entendiam
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: regra de nomear não se aplica a arrow; nome só por inferência

@@ -4,7 +4,7 @@ title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 27
+source_count: 28
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -113,6 +113,10 @@ Em [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]], a 
 
 Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]], o espelho do vídeo anterior: a função recebe array (`return arg[1]` com `[1, 2, 3]` dá 2) e objeto (`return arg.curso`), passados por variável ou como literal direto na chamada. Sem argumento, o parâmetro é `undefined` e ler `arg.curso` dá erro. `[external]` Objeto e array chegam como referência compartilhada: mutar dentro da função muda o de fora; hoje se usa parâmetro padrão ou `?.` contra o argumento ausente.
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a regra nova do curso: "a partir de agora a gente vai procurar sempre dar nome às nossas funções", também quando atribuídas a variável (`var funcShow = function funcShow() {}`), porque o debugger do Node e do navegador usa o nome. `func()` invoca; `func.name` lê a propriedade sem invocar. A aula mostra o `name` vazio para a anônima em variável, o que deixou de valer no ES2015 (inferência pelo nome da variável); vazio continua em callback e IIFE. `function () {}` solto dá `SyntaxError` porque declaração exige nome. Chama a declaração de "função literal" e adia a diferença entre os tipos.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -142,3 +146,4 @@ Em [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: função cria escopo; parâmetros são locais
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: return de array e objeto; um return só; sem return, undefined
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: array e objeto como argumento; sem argumento, undefined e TypeError
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: sempre nomear; propriedade name; anônima × nomeada × literal

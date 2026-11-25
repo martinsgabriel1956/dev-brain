@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 21
+source_count: 22
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -76,6 +76,10 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], operador vírgul
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, com contadores crescente e descendente e o alerta contra o `while (true)`. Lança o desafio da semana 6 e prefere dúvidas por issue no GitHub.
 
+## Semana 8, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], institui a regra de sempre nomear funções atribuídas a variáveis, pelo debug, e mostra a propriedade `name` no console.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -99,3 +103,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, co
 - [[wiki/sources/javascript-ninja-operador-modulo]]: semana 7, vídeo 01: operador módulo; pares de 0 a 20; erro ao vivo
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: semana 8, vídeo 01: a importância de nomear funções; propriedade name

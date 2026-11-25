@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 21
+source_count: 22
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -68,6 +68,10 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o segundo vídeo
 
 Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro vídeo: o método `push` (adiciona no fim e devolve o `length`) e o loop `for`.
 
+## Semana 8
+
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: vídeo 01, depois da revisão do desafio da semana 7 (que não está na wiki). Abre "partes um pouco mais avançadas" de funções: sempre nomear, propriedade `name`, anônima × nomeada × "literal". Anuncia programação funcional.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -92,3 +96,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-operador-modulo]]: semana 7, vídeo 01: operador módulo; anuncia arrays
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length; anuncia métodos
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: semana 8, vídeo 01: a importância de nomear funções; anuncia programação funcional

@@ -3,8 +3,8 @@ type: concept
 title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-25
+source_count: 15
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -66,6 +66,10 @@ Em [[wiki/sources/frontpush-promises-resolve-reject-then-catch]], `resolve` e `r
 
 Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], "o event passa aqui automático, porque é uma função de callback": por isso dá para desestruturá-lo direto no parâmetro do handler.
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a regra de nomear funções para facilitar o debug. `[external]` É no callback que ela mais pesa hoje: a anônima passada direto (`arr.map(function () {...})`) não tem de onde herdar nome e aparece sem nome no stack trace; `function cb() {...}` aparece como `at cb` (verificado no Node 22).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
@@ -82,3 +86,4 @@ Em [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]], "o event
 - [[wiki/sources/frontpush-ajax-xmlhttprequest-open-send-readystate]]: FrontPUSH, JavaScript aula 14: onreadystatechange como callback
 - [[wiki/sources/frontpush-promises-resolve-reject-then-catch]]: FrontPUSH, JavaScript aula 15: resolve/reject como callbacks prontos
 - [[wiki/sources/frontpush-desestruturacao-objetos-arrays-mousemove]]: FrontPUSH, JavaScript aula 18: o event chega no callback
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: callbacks anônimos saem sem nome no stack trace

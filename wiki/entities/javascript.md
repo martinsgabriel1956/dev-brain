@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 44
+source_count: 45
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -133,6 +133,10 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], operador vírgul
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a estrutura de repetição `while` ([[wiki/concepts/estruturas-de-repeticao-javascript]]).
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções como objetos com a propriedade `name`, e a regra de nomeá-las para o debug. A demonstração do `name` vazio é anterior ao ES2015.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -179,3 +183,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a estrutura d
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: operador %
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array.length
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push e for
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: Function.name

@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-25
-source_count: 21
+source_count: 22
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -81,6 +81,10 @@ Em [[wiki/sources/javascript-ninja-operadores-aritmeticos]], o eco do REPL é o 
 
 Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], o Node é o projeto open source "imaginado" para anonimizar o caso de um colega que contribui e posta sobre um projeto famoso: "se você contribui com o Node, as empresas que trabalham com o Node vão querer te contratar" ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
 
+## No JavaScript Ninja, semana 8, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o console do Node é onde a aula testa `func()` e `func.name`, e o debugger do Node é citado, ao lado do navegador, como quem "vai utilizar o nome da função". `[external]` No Node 22, a anônima em variável já mostra o nome inferido.
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -104,3 +108,4 @@ Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], o Node é o proje
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: Node como REPL para testar a linguagem
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: JavaScript Ninja, aula 02: eco do REPL mostra pré × pós-incremento
 - [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — Node como exemplo de projeto open source que gera oportunidades
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: console e debugger usam o nome da função

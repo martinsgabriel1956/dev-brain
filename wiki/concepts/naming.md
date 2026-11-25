@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-11-24
-source_count: 8
+date_updated: 2026-11-25
+source_count: 9
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -60,6 +60,10 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 
 Em [[wiki/sources/javascript-ninja-estrutura-lexica]], a regra mecânica antes do estilo: nomes começam com letra, `_` ou `$` e depois aceitam dígitos; `var π = 3.14` funciona, "mas você não deve utilizar", porque o próximo desenvolvedor pode não ter como "ditar" aquele código. Letras, dígitos, `_` e `$` deixam "o código mundialmente fácil [de] digitar" ([[wiki/concepts/identificadores-javascript]]).
 
+## Nomes de função (JavaScript Ninja, semana 8)
+
+Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o curso passa a exigir nome em toda função atribuída a variável, "de preferência o mesmo nome" da variável, "para ficar mais facilmente encontrada". O motivo é de ferramenta: o debugger mostra o nome da função, não o da variável. `[external]` O nome de uma *function expression* só existe dentro dela (serve para recursão); fora, vale a variável. Repetir o nome evita dois nomes para a mesma coisa.
+
 ## Key Sources
 
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre naming como um dos dois problemas difíceis
@@ -70,3 +74,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], a regra mecânica antes d
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `double d` vs `valorDescontoPedido`: em método longo, a variável alterada várias vezes longe da declaração pesa na leitura
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: "árvore de classes" (prefixo do pai) e não misturar português com inglês
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: regras de identificador e nomes só em ASCII
+- [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: nomear funções, de preferência com o nome da variável
