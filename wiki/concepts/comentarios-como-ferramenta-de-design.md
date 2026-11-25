@@ -3,8 +3,8 @@ type: concept
 title: "Comentários Como Ferramenta de Design"
 aliases: ["write the comments first", "escrever comentários primeiro", "comments as design tool", "interface comment", "implementation comment"]
 date_created: 2026-07-29
-date_updated: 2026-09-08
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [comentarios, documentacao, design, ousterhout, clean-code, abstracao]
 skill: tech-mentor-backend
 status: draft
@@ -63,8 +63,13 @@ Processo descrito pelo autor: comentário de interface da classe → assinaturas
 
 [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] escolhe o Cap. 15 como o trecho mais valioso do livro, reforçando a discordância com Clean Code por um caminho empírico: projetos amplamente reconhecidos como referência de qualidade — API pública do Google, o kernel Linux, a JVM, o Spring — usam comentários extensivamente, contrariando a "utopia" de que código suficientemente bem escrito dispensaria documentação. O argumento não é uma citação do livro, mas converge diretamente com a posição de Ousterhout já registrada acima.
 
+## Documentação extensa como sinal de alerta (cap. 2)
+
+No cap. 2.3, Ousterhout diz que "a necessidade de documentação extensa costuma ser um alerta vermelho de que o design não está muito adequado", e que a melhor forma de reduzir a obscuridade é simplificar o design ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). Isso não contradiz a defesa dos comentários feita nesta página: o design reduz o quanto há para explicar, e o comentário registra o que o código não consegue expressar. O que acende o alerta é ter de documentar muito para compensar uma estrutura ruim (conciliação desta wiki).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Caps. 12, 13 e 15 (as quatro desculpas, interface vs. implementação, escrever comentários primeiro, discordância com Clean Code)
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — exemplo pontual de comentário substituível por naming melhor de constante (convergente com Clean Code, não com a defesa geral de Ousterhout)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — Cap. 15 escolhido como o trecho mais importante do livro; projetos open source de referência (Google, Linux, JVM, Spring) como contra-exemplo prático da "utopia do código autodocumentado"
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — documentação extensa como sinal de design inadequado

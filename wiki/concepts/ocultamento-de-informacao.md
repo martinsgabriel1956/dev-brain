@@ -3,8 +3,8 @@ type: concept
 title: "Ocultamento de Informação (Information Hiding)"
 aliases: ["information hiding", "information leakage", "vazamento de informação", "decomposição temporal", "temporal decomposition"]
 date_created: 2026-07-29
-date_updated: 2026-09-08
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [arquitetura, complexidade, design, ousterhout, information-hiding, parnas]
 skill: tech-mentor-backend
 status: draft
@@ -44,7 +44,12 @@ Regra prática: a ordem de execução quase sempre importa e vai aparecer em alg
 - [[wiki/concepts/arquitetura-de-software]] — decisão de onde uma informação deveria "morar" é, em essência, uma decisão de arquitetura.
 - [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — change amplification é o sintoma prático (Cap. 2) do qual information leakage é frequentemente a causa estrutural (Cap. 5).
 
+## Nuance do texto do cap. 2
+
+A seção acima segue o podcast, que descreve a amplificação de mudanças como mudança que "se espalha para dependências desconhecidas". No texto do livro ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]), a amplificação pura tem dependências conhecidas: a mesma cor escrita em cada página, e todos sabem onde mexer. Quando ninguém sabe que a dependência existe, o livro chama de **incógnita desconhecida**. O vazamento de informação pode causar as duas coisas: amplificação, se o vazamento é visível, e incógnita desconhecida, se não é (o *back-door leakage*).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 5, exemplos de servidor HTTP (leitura+parsing, parâmetros, defaults em respostas)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — change amplification descrito como o sintoma prático vivido por quem sofre com informação vazada/duplicada entre módulos
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — corrige a leitura do podcast: amplificação ≠ dependência oculta

@@ -4,7 +4,7 @@ title: "Redução de Complexidade como Trabalho do Engenheiro"
 aliases: ["reduzir complexidade", "simplificar", "complexidade é o inimigo"]
 date_created: 2026-09-29
 date_updated: 2026-11-25
-source_count: 2
+source_count: 3
 tags: [complexidade, engenharia-de-software, simplicidade, design]
 skill: tech-mentor-testing
 status: stub
@@ -29,7 +29,12 @@ Duas vias descritas pela fonte:
 
 O cap. 1 de *A Philosophy of Software Design* ([[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]) divide o combate à complexidade em duas abordagens. A primeira é **eliminá-la**, deixando o código mais simples e óbvio, por exemplo removendo casos especiais ou usando identificadores de forma consistente. A segunda é **encapsulá-la** com design modular, para que ninguém precise ver toda a complexidade do sistema de uma vez (ver [[wiki/concepts/modulo-profundo]]). Ele também diz que a complexidade sempre cresce. Designs simples não a zeram: eles deixam o sistema crescer mais antes de ela ficar avassaladora. Isso dá mais base à tese desta página, que até aqui tinha uma fonte só.
 
+## Por que encapsular funciona: $C = \sum_p c_p t_p$
+
+O cap. 2 dá a base para a segunda abordagem: a complexidade total é a de cada parte pesada pelo tempo que os desenvolvedores passam nela. Uma parte complicada que quase nunca é tocada pesa pouco, e "isolar a complexidade em um lugar onde ela nunca será vista é quase tão bom quanto eliminá-la" ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). O mesmo capítulo explica por que a complexidade sempre cresce: ela é [[wiki/concepts/complexidade-incremental|incremental]] e só se segura com "tolerância zero".
+
 ## Key Sources
 
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]]
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — as duas abordagens gerais de Ousterhout: eliminar e encapsular
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — fórmula da complexidade ponderada pelo tempo; isolar ≈ eliminar

@@ -3,8 +3,8 @@ type: concept
 title: "Zonas de Desconhecimento"
 aliases: ["unknown unknowns com IA", "falso positivo da IA"]
 date_created: 2026-10-08
-date_updated: 2026-10-08
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [ia, prompt, conhecimento, falso-positivo]
 skill: tech-mentor-ai
 status: draft
@@ -23,6 +23,11 @@ Mitigar os dois é o que melhora o prompt. Ao desenhar uma arquitetura, quem sab
 
 **Confiança:** média.
 
+## Origem do termo em design de software
+
+"Não saber que está errado" é o que [[wiki/entities/john-ousterhout]] chama de *unknown unknowns* (incógnitas desconhecidas), o pior dos três [[wiki/concepts/sintomas-de-complexidade-ousterhout|sintomas de complexidade]]: há algo que você precisa saber, mas não tem como descobrir o quê, nem se existe algum problema ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). Lá o remédio é tornar o sistema óbvio; aqui, reduzir o que se ignora antes de delegar à IA.
+
 ## Key sources
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — origem desta página
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — unknown unknowns no sentido de Ousterhout

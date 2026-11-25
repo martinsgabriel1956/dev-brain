@@ -82,6 +82,10 @@ Segunda tradução do capítulo 1 de *A Philosophy of Software Design*, feita pe
 - [[wiki/concepts/modulo-profundo]]
 - [[wiki/concepts/reducao-de-complexidade]]
 
+## Próximo capítulo
+
+A tradução continua em [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]. O cap. 2 cumpre o primeiro objetivo anunciado aqui: descrever a natureza da complexidade e como reconhecê-la.
+
 ## Open Questions
 
 - Sem o original em inglês no repositório, quatro pontos ficaram com confiança média: *flesh out*, *overdoing a good thing*, a ausência de subtítulos no livro e a palavra exata do subtítulo. O epub citado no ingest de 2026-07-29 estava em `/home/nemomartins/...`, um caminho que não existe nesta máquina.

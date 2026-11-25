@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["accidental complexity", "essential complexity"]
 date_created: 2026-05-31
-date_updated: 2026-09-29
-source_count: 6
+date_updated: 2026-11-25
+source_count: 7
 tags: [complexidade-acidental, programacao-funcional, out-of-the-tar-pit, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -63,6 +63,10 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 
 [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] descreve o trabalho do engenheiro como reduzir complexidade ([[wiki/concepts/reducao-de-complexidade]]); não usa o termo "acidental", a ligação é inferência desta wiki.
 
+## Sexta fonte: o cap. 2 em primeira mão
+
+O texto do cap. 2 ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]) acrescenta à definição de Ousterhout dois recortes que a distinção de Brooks não tem. A complexidade é **relativa à tarefa** ("o que um desenvolvedor vivencia em um determinado momento ao tentar alcançar um objetivo específico") e é **pesada pelo tempo gasto em cada parte** ($C = \sum_p c_p t_p$). Também separa complexidade de tamanho: um sistema grande e sofisticado pode ser simples, e um pequeno pode ser complexo. Ousterhout não usa os termos "acidental" e "essencial"; a equivalência é desta wiki.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
@@ -71,3 +75,4 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — por que "aprenda o framework" foi vendido como suficiente até o sistema escalar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — definição de Ousterhout (estrutura, não implementação) e módulos rasos como fonte de complexidade
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — reduzir complexidade; termo acidental não usado
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — complexidade relativa à tarefa e ponderada pelo tempo

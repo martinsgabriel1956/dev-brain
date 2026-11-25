@@ -4,7 +4,7 @@ title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 6
+source_count: 7
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -67,6 +67,10 @@ A exceção notável do mesmo estudo (-35% tokens num caso) não veio de profund
 
 O antídoto discutido não é eliminar as opções de baixo nível, mas empilhar camadas: oferecer uma interface simples de alto nível para o caso comum, com acesso de baixo nível disponível só para quem precisa. Exemplos citados na mesma fonte, complementares ao Unix I/O já registrado acima: o cliente HTTP padrão do Go (implementa três versões do protocolo HTTP e o handshake TLS por baixo, mas expõe request/response simples) e a função `file_get_contents` do PHP (aceita tanto caminho de arquivo local quanto URL, sem exigir do usuário nenhum conhecimento sobre a diferença).
 
+## Mais linhas pode ser mais simples (cap. 2)
+
+Antes de falar em módulos, o cap. 2 já recusa linhas de código como medida de complexidade: "às vezes, uma abordagem que exige mais linhas de código é, na verdade, mais simples, porque reduz a carga cognitiva". A fórmula do mesmo capítulo ($C = \sum_p c_p t_p$) explica por que a profundidade compensa: o que fica escondido atrás de uma interface simples quase não consome o tempo de quem só usa o módulo ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]).
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -75,3 +79,4 @@ O antídoto discutido não é eliminar as opções de baixo nível, mas empilhar
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — primeiro estudo controlado medindo o debate com Uncle Bob, e a distinção entre profundidade e grepability
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — motivo estrutural da rasura do `java.io` (sem retorno múltiplo, otimização em vez de usabilidade); camadas simples sobre complexidade escondida no cliente HTTP do Go e em `file_get_contents` do PHP
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1: "as classes devem ser profundas" como exemplo de princípio quase filosófico
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — LOC não mede complexidade; fórmula explica o ganho da profundidade

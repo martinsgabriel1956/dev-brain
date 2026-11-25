@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-24
-source_count: 9
+date_updated: 2026-11-25
+source_count: 10
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -54,6 +54,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de dashboards]], uma tela com várias ações de pesos parecidos "já confundiu o usuário"; isolar cada fluxo numa ação central dá foco. Ver [[wiki/concepts/fluxos-bem-definidos]].
 
+## Em código (Ousterhout)
+
+Em design de software, [[wiki/entities/john-ousterhout]] define carga cognitiva como quanto o desenvolvedor precisa saber para concluir uma tarefa, e a trata como um dos três [[wiki/concepts/sintomas-de-complexidade-ousterhout|sintomas de complexidade]]. Exemplo: uma função em C que aloca memória e deixa a liberação para quem chama; esquecer gera *memory leak*. Fontes típicas: APIs com muitos métodos, variáveis globais, inconsistências e dependências entre módulos. Ele avisa que linhas de código não medem a carga: "às vezes, uma abordagem que exige mais linhas de código é, na verdade, mais simples" ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). É o mesmo princípio das seções de UX acima, aplicado a quem lê código em vez de quem usa a interface.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -65,3 +69,4 @@ Na [[wiki/sources/frontpush-dashboards-principios-parte-1|aula 04 do módulo de 
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — parágrafo longo vira tópicos para o usuário de fato ler
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: portfólio sem dobras demais
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: várias ações confundem; isolar dá foco
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — carga cognitiva como sintoma de complexidade de código (Ousterhout, cap. 2.2)

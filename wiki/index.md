@@ -26,6 +26,7 @@ date_updated: 2026-11-25
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] | Tradução do usuário do cap. 2 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): complexidade relativa à tarefa e ponderada pelo tempo ($C = \sum_p c_p t_p$); três [[wiki/concepts/sintomas-de-complexidade-ousterhout\|sintomas]] com o banner da Figura 2.1; [[wiki/concepts/causas-de-complexidade-ousterhout\|dependências e obscuridade]]; [[wiki/concepts/complexidade-incremental\|complexidade incremental]] e tolerância zero. Corrige a leitura do podcast: amplificação de mudanças não exige dependência oculta |
 | [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] | Post de [[wiki/entities/dave-thomas]] (2014), fonte primária do argumento do adjetivo: "Agile" virou substantivo e marca vendida por consultores; os valores seguem válidos; agilidade cabe num [[wiki/concepts/ciclo-basico-da-agilidade\|ciclo de quatro passos]] e no desempate pela opção mais fácil de mudar; trocar "agile" por "agility" |
 | [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]] | Semana 7, vídeo 03 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 10 min): [[wiki/concepts/metodos-de-array-javascript\|push]] adiciona no fim ("push significa empurrar") e devolve o novo `length`; entra objeto, `null`, array e até uma função `soma` chamada pelo índice (prévia de [[wiki/concepts/funcoes-de-primeira-classe\|função como valor]]); o [[wiki/concepts/estruturas-de-repeticao-javascript\|for]] junta inicialização, condição e expressão final no cabeçalho, com duas variáveis na inicialização. `push` muta e aceita vários itens; array empurrado aninha; `soma()` dá `NaN`; as três partes do for são expressões opcionais |
 | [[wiki/sources/javascript-ninja-arrays-propriedade-length]] | Semana 7, vídeo 02 do [[wiki/entities/javascript-ninja\|JavaScript Ninja]] ([[wiki/entities/fernando-daciuk\|Fernando Daciuk]], 11 min): [[wiki/concepts/array\|array]] como objeto embutido com propriedades e métodos; `length` dá "a quantidade de itens"; array com string, `null`, `true`, objeto e função; percurso de trás para frente com `while` e `qtd = array.length`, de `array[qtd--]` (lê o 5, `undefined`, e pula o 0) até `array[--qtd]` (4 a 0); `array[3].bola` dá "azul"; anuncia métodos. `length` é maior índice + 1, não contagem; `array[-1]` é `undefined` (use `at(-1)`); `null.bola` lança TypeError |
@@ -1123,6 +1124,13 @@ date_updated: 2026-11-25
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### A Filosofia do Design de Software, cap. 2: a natureza da complexidade (2026-11-25)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/causas-de-complexidade-ousterhout]] | As duas causas de Ousterhout: dependências (código que não se entende nem muda isolado; reduzir e tornar óbvias) e obscuridade (informação importante que não é óbvia; combater primeiro com design) |
+| [[wiki/concepts/complexidade-incremental]] | A complexidade se acumula em milhares de pequenas concessões; cada uma parece inofensiva e nenhuma correção isolada resolve, daí a "tolerância zero" |
 
 ### JavaScript Ninja, semana 6, vídeo 01: operador vírgula e switch (2026-11-25)
 

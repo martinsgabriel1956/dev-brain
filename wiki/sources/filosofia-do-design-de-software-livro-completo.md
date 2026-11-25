@@ -118,6 +118,11 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - [[wiki/concepts/code-review]]
 - [[wiki/concepts/complexidade-acidental]]
 
+## Capítulos com página própria
+
+- Cap. 1: [[wiki/sources/filosofia-do-design-de-software-introducao]] e [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]
+- Cap. 2: [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]], com o texto completo da frase "dependencies and obscurity" citada abaixo
+
 ## Open Questions
 
 - O capítulo introdutório já ingerido ([[wiki/sources/filosofia-do-design-de-software-introducao]]) marcava como lacuna em aberto o conceito de "define errors out of existence" e o restante do livro — ambos agora cobertos aqui; essa fonte substitui a lacuna daquela página (atualizada com backlink).

@@ -4,7 +4,7 @@ title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
 date_updated: 2026-11-25
-source_count: 25
+source_count: 26
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -139,6 +139,10 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 
 A nota do tradutor em [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] define code review como prática "para garantir qualidade". O texto de Ousterhout na mesma seção usa a revisão com outro objetivo: treinar quem revisa, porque é mais fácil ver problemas de design no código dos outros, e expô-lo a "novas abordagens de design e técnicas de programação". Os dois objetivos se complementam. O segundo é o que torna a revisão uma [[wiki/concepts/pratica-deliberada]].
 
+## Complexidade é julgada por quem lê
+
+O cap. 2.1 de Ousterhout dá a razão de fundo para revisar código: "a complexidade é mais evidente para quem lê do que para quem escreve". Se o autor acha o código simples e os outros não, ele é complexo, e vale investigar com os colegas de onde vem a diferença ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). Isso dá ao revisor a palavra final sobre legibilidade, coisa que a seção "treino de design" acima só sugeria.
+
 ## Key Sources
 
 
@@ -166,6 +170,7 @@ A nota do tradutor em [[wiki/sources/filosofia-do-design-de-software-cap-01-trad
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — revisão humana de código gerado por IA como controle; gradiente de auditabilidade C > assembly > opcode
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — migrations são código versionado: scripts novos passam por PR em vez de edição direta do banco ([[wiki/concepts/imutabilidade-de-migration]])
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada da 1.1: revisar código para aprender design, não só para garantir qualidade
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — a complexidade é julgada por quem lê, não por quem escreve
 
 ## Key sources (adição 2026-10-26)
 
