@@ -3,8 +3,8 @@ type: concept
 title: "Ágil Como Mecanismo de Exposição de Problemas"
 aliases: ["ágil expõe problemas", "ágil como gestão de risco", "ágil não salva equipe ruim"]
 date_created: 2026-11-05
-date_updated: 2026-11-05
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [agile, engineering-management, gestao-de-riscos, feedback, cultura]
 skill: tech-mentor-leadership
 status: stub
@@ -38,6 +38,11 @@ Akita usa o open source como caso em que a exposição não pode ser evitada: se
 - [[wiki/concepts/net-negative-producing-programmer]]: o tipo de problema que a exposição revela.
 - [[wiki/concepts/expor-problemas-construtivamente]]: a mesma ideia no plano da carreira individual, de outra fonte.
 
+## Origem do Debate
+
+O post que dispara a fonte deste conceito é [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]]. Thomas não fala em exposição de problemas, mas o passo "ajustar com o que aprendeu" de [[wiki/concepts/ciclo-basico-da-agilidade]] depende de o problema aparecer.
+
 ## Key Sources
 
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]]: fonte primária do conceito.
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — post de Dave Thomas que Akita usa como ponto de partida

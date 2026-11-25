@@ -3,8 +3,8 @@ type: concept
 title: "Manifesto Ágil Como Adjetivo, Não Substantivo"
 aliases: ["ágil é adjetivo", "não existe metodologia ágil", "ágil não é um nome"]
 date_created: 2026-09-18
-date_updated: 2026-11-05
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [agile, manifesto-agil, engineering-management, historia]
 skill: tech-mentor-leadership
 status: stub
@@ -42,6 +42,10 @@ Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], de 2014, [[wiki/en
 
 O post de [[wiki/entities/dave-thomas]] de 04/03/2014 confirma que o argumento do adjetivo já estava ali, antes da palestra de 2015 ([external](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)).
 
+## Fonte Primária Lida (2026-11-25)
+
+O post de 2014 agora está ingerido: [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]]. Ele confirma o argumento gramatical e o mecanismo de marketing descritos acima. Uma nuance: Thomas não diz "você é ágil, ou não é". Ele recusa "programador ágil" e propõe "programador que programa com agilidade", trocando o adjetivo pelo substantivo da ação. A frase de Akita pode vir da palestra GOTO 2015, ainda não assistida. A alternativa positiva do post está em [[wiki/concepts/ciclo-basico-da-agilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
@@ -54,3 +58,4 @@ A crítica "sprint/cards/planning poker deixam de existir" mira o ágil como pro
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — rituais ágeis como carga burocrática
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — fonte primária do argumento (post de 04/03/2014)

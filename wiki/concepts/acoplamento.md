@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-10-08
-source_count: 18
+date_updated: 2026-11-25
+source_count: 19
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -110,6 +110,10 @@ Em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-loba
 
 Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas acoplam disponibilidade. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
 
+## Dependência segundo Ousterhout: reduzir e tornar óbvia
+
+[[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] define dependência como código que não pode ser compreendido e modificado isoladamente, e a põe ao lado da obscuridade como uma das duas causas da complexidade ([[wiki/concepts/causas-de-complexidade-ousterhout]]). Ponto que esta página ainda não tinha: dependência não pode ser zerada, só **reduzida e tornada óbvia**. Na Figura 2.1, a variável central `bannerBg` troca uma dependência entre todas as páginas, difícil de gerenciar, por outra que se acha com busca e que o compilador verifica. É um critério de qualidade para o acoplamento que sobra, além do critério de quantidade.
+
 ## Key sources
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
@@ -126,6 +130,7 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — modelos duplicados por contexto reduzem acoplamento entre times
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — acoplamento forte na síncrona vs. fraco na assíncrona (exemplo de autenticação)
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — autoacoplamento via domínio centralizado compartilhado e acoplamento entre slices; ver [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]] e [[wiki/concepts/acoplamento-entre-slices]]
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — dependência como causa de complexidade; reduzir e tornar óbvia
 
 ## Key sources (adição 2026-10-05)
 

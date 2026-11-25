@@ -3,8 +3,8 @@ type: concept
 title: "Folga de Capacidade (Slack)"
 aliases: ["slack", "folga de fluxo", "nunca alocar 100%", "regra dos 20%", "capacity buffer"]
 date_created: 2026-08-10
-date_updated: 2026-08-10
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [engineering-management, planejamento, tech-debt, capacidade, fluxo]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,11 @@ Prática de **nunca alocar 100% da capacidade da equipe** a trabalho planejado, 
 - Conecta com a [[wiki/concepts/planning-fallacy]]: como a subestimação é sistemática, planejar a 100% garante estouro; a folga é o reconhecimento estrutural desse erro.
 - Distinta de [[wiki/concepts/feature-freeze]] (parada pontual concentrada) — slack é folga *contínua* embutida em toda sprint.
 
+## Paralelo com Ousterhout
+
+A régua de 10 a 20% de [[wiki/entities/john-ousterhout]] chega a uma proporção parecida por outro caminho ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]). A folga é capacidade reservada no time para o imprevisto. Ousterhout embute o investimento em design dentro de cada tarefa. As duas coisas se somam, não se substituem (leitura da wiki).
+
 ## Key Sources
 
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — a "regra dos 20%" como principal contramedida organizacional contra code rot
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: régua de 10–20% de investimento em design, embutida em cada tarefa

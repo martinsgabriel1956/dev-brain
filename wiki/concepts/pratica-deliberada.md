@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-11-16
-source_count: 17
+date_updated: 2026-11-25
+source_count: 18
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -125,3 +125,4 @@ Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/ent
 - [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: "sempre troca para coluna e vai vendo o que vai acontecendo"
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: flex-basis: "eu aconselho fortemente a vocês treinarem"
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: layout-desafio "fica para exercício, para vocês treinarem"
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — rótulo se compra num curso curto; experiência só se conquista

@@ -3,8 +3,8 @@ type: concept
 title: "Granularidade de Mudança"
 aliases: ["mudança pequena vs mudança grande", "small batches", "barreira de implementação"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [arquitetura, carreira, mudanca-organizacional, coesao, granularidade]
 skill: tech-mentor-leadership
 status: draft
@@ -42,6 +42,11 @@ Separar em partes pequenas não é suficiente por si só — cada parte ainda pr
 - [[wiki/concepts/cargo-cult-tecnologico]] — mudança pequena ou grande, o erro persiste se não houver valor real de contexto por trás
 - [[wiki/concepts/arquitetura-de-software]] — granularidade como princípio arquitetural aplicado além do código
 
+## Passo Pequeno Como Regra de Processo
+
+Em [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]], o passo pequeno é o segundo dos quatro passos de [[wiki/concepts/ciclo-basico-da-agilidade]], e o desempate entre opções equivalentes é escolher a que facilita mudanças futuras.
+
 ## Key Sources
 
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]]
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — passo pequeno e facilidade de mudança como núcleo da agilidade

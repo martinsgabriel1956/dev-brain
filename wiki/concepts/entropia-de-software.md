@@ -3,8 +3,8 @@ type: concept
 title: "Entropia de Software"
 aliases: ["software entropy", "software decay", "degradação de código"]
 date_created: 2026-07-27
-date_updated: 2026-10-30
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [refactoring, tech-debt, craftsmanship, design-de-software, code-rot, big-ball-of-mud]
 skill: tech-mentor-backend
 status: draft
@@ -32,11 +32,16 @@ Essa é a mesma dinâmica descrita, com outro vocabulário, em [[wiki/concepts/g
 
 [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] separa o rastro estrutural da entropia (GO TO, variáveis sobrando, complexidade ciclomática) da sua causa histórica: décadas de regras de negócio implementadas por equipes diferentes, cada uma "localmente justificável" e nunca reorganizada como um todo. O paper Spec2COBOLRot mostrou `[external]` que fabricar o rastro não reproduz a causa. Ver [[wiki/concepts/entropia-historica-vs-complexidade-estrutural]].
 
+## Contraste: complexidade incremental (Ousterhout)
+
+Ousterhout descreve o mesmo acúmulo sem a metáfora física: a complexidade vem de centenas ou milhares de pequenas dependências e obscuridades, cada uma aceita porque "não é nada demais" ([[wiki/concepts/complexidade-incremental]], [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). A entropia sugere uma degradação natural; Ousterhout fala em soma de escolhas, e a resposta dele é "tolerância zero" na hora de cada mudança. As duas leituras levam à manutenção contínua.
+
 ## Key Sources
 
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — enumera as quatro forças da degradação (requisitos sobre arquitetura estática, perda de contexto entre equipes, hotfix sob pressão, casos não previstos) e propõe contramedidas majoritariamente organizacionais contra o code rot
 - [[wiki/sources/codigo-espaguete-wikipedia]] — entropia como uma das três forças que geram a Big Ball of Mud
+- [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — complexidade incremental como leitura alternativa da entropia
 
 ## Key sources (adição 2026-10-30)
 

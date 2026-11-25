@@ -3,7 +3,7 @@ type: source
 title: "[Off-Topic] Agile: a Verdade por trás do Método"
 aliases: ["agile a verdade por trás do método", "ágil exige boa equipe", "ágil como mecanismo de exposição"]
 date_created: 2026-11-05
-date_updated: 2026-11-05
+date_updated: 2026-11-25
 source_count: 0
 source_file: "/home/gabriel-martins/Documentos/dev-brain/raw/agile-a-verdade-por-tras-do-metodo-akita.md"
 source_url: "https://www.akitaonrails.com/2014/09/28/off-topic-agile-a-verdade-por-tras-do-metodo/"
@@ -79,3 +79,4 @@ Partindo da declaração de [[wiki/entities/dave-thomas]] de que "Ágil" morreu,
 - Este post pode ou não ser o "Ágil está morto" (2014) mencionado em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]]. Nenhum post com esse título aparece na tag `agile`. O mais próximo em nome é "Lean está morto, longa vida à eficiência" (27/03/2014), não lido.
 - Não há dados sobre o resultado de trocar pessoas versus desenvolvê-las, nem sobre a taxa de morte de projetos open source.
 - O link sobre Linus Torvalds trata de uma desenvolvedora do kernel pedindo que ele parasse de usar linguagem abusiva. O caso serve mal de prova de meritocracia, e só o título da URL foi visto; a página não foi lida.
+- **Atualização 2026-11-25:** o post de Dave Thomas que dispara este texto agora é fonte da wiki: [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]].

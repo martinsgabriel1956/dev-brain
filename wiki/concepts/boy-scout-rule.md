@@ -3,8 +3,8 @@ type: concept
 title: "Boy Scout Rule"
 aliases: ["regra do escoteiro", "leave the campground cleaner", "deixe o código mais limpo do que encontrou"]
 date_created: 2026-07-09
-date_updated: 2026-09-15
-source_count: 5
+date_updated: 2026-11-25
+source_count: 6
 tags: [craftsmanship, tech-debt, refactoring, clean-code, principios]
 skill: tech-mentor-leadership
 status: stable
@@ -49,6 +49,10 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 
 [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] não cita a Boy Scout Rule nominalmente, mas o mesmo espírito aparece na conclusão da fonte: a diferença entre dívida técnica aceitável e negligência não é "ter tomado o atalho" — é **registrar** o atalho e ter disciplina de voltar para pagá-lo, o mesmo princípio de pagamento contínuo que sustenta esta regra. Ver [[wiki/concepts/fatores-nao-tecnicos-qualidade-de-codigo]].
 
+## Investimento reativo (Ousterhout)
+
+A 3.2 de *A Philosophy of Software Design* descreve a mesma disciplina sem usar o nome: quem programa de forma estratégica faz "pequenas melhorias contínuas no design do sistema" e, ao descobrir um problema de design, não o ignora nem aplica só um remendo ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]). A diferença de escopo: a regra fala de qualquer limpeza no trecho tocado; Ousterhout fala de corrigir erros de **design**, o que pode ir além do trecho.
+
 ## Key Sources
 
 - [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — mesmo princípio de disciplina de pagamento contínuo, sem citar a regra nominalmente
@@ -56,3 +60,4 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — distingue Boy Scout Rule (micro-limpeza acoplada a qualquer mudança) de [[wiki/concepts/refatoracao|refatoração oportunista]] (reestruturação maior, mas ainda aproveitando trabalho que já seria feito)
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — caso Knight Capital como custo extremo de não seguir a regra; Red-Green-Refactor como o ciclo TDD onde a etapa de refactor já é a própria Boy Scout Rule
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — defende enforçar a regra no code review ("nenhum PR deixa o código pior") com hotfix como única exceção; prazo apertado não é justificativa para gambiarra
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.2, investimento reativo como a mesma disciplina sem o nome

@@ -3,8 +3,8 @@ type: concept
 title: "Código Espaguete"
 aliases: ["code espaguete", "codigo espaguete", "spaghetti code", "codigo sopa"]
 date_created: 2026-08-10
-date_updated: 2026-11-03
-source_count: 3
+date_updated: 2026-11-25
+source_count: 4
 tags: [code-espaguete, acoplamento, legado, arquitetura, backend, anti-patterns, fluxo-de-controle]
 skill: tech-mentor-backend
 status: draft
@@ -29,8 +29,13 @@ O código espaguete é um [[wiki/concepts/anti-pattern|anti-padrão]] com parent
 
 Ver [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]].
 
+## O argumento de custo (Ousterhout)
+
+A 3.4 de *A Philosophy of Software Design* usa o código espaguete contra a ideia de que startups podem ser táticas agora e arrumar a casa depois: "uma vez que a base de código vira um 'código espaguete', é quase impossível consertar", e o custo alto dura toda a vida do produto ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
+
 ## Key sources
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
 - [[wiki/sources/codigo-espaguete-wikipedia]] — definição formal (fluxo de controle convoluto), etimologia via Hamming, família de anti-padrões e ponte para Big Ball of Mud
 - [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — contexto histórico: a crítica ao `goto` dentro da [[wiki/concepts/programacao-procedural|programação estruturada]]
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.4, código espaguete como estado quase irreversível

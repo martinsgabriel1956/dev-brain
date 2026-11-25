@@ -3,8 +3,8 @@ type: concept
 title: "Projetar Duas Vezes (Design It Twice)"
 aliases: ["design it twice", "design duas vezes"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [design, ousterhout, processo, decisao-tecnica]
 skill: tech-mentor-backend
 status: draft
@@ -31,9 +31,14 @@ O princípio se aplica em múltiplos níveis: ao escolher a **interface** de um 
 ## Relação com outros conceitos
 
 - [[wiki/concepts/decidir-o-que-importa]] — comparar alternativas explicitamente é uma das formas citadas no livro para descobrir o que realmente importa em uma decisão (ex.: ao escolher nome de variável, listar várias opções antes de escolher a mais informativa).
-- [[wiki/concepts/tech-debt-como-ferramenta]] — projetar duas vezes é um dos investimentos proativos da programação estratégica (Cap. 3): gastar um pouco mais de tempo agora para produzir um design melhor.
+- [[wiki/concepts/programacao-tatica-vs-estrategica]] e [[wiki/concepts/tech-debt-como-ferramenta]] — projetar duas vezes é um dos investimentos proativos da programação estratégica (Cap. 3): gastar um pouco mais de tempo agora para produzir um design melhor.
 - [[wiki/concepts/modulo-profundo]] — o exercício de comparar alternativas é o mecanismo prático mais citado no livro para chegar a interfaces mais profundas.
+
+## Primeira menção: cap. 3
+
+A 3.2 já pede o exercício antes do cap. 11, como exemplo de investimento proativo: "em vez de implementar a primeira ideia que vier à mente, tente algumas alternativas de design e escolha a mais limpa" ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
 
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 11 completo
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.2, alternativas de design como investimento proativo

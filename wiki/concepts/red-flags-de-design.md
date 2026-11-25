@@ -3,8 +3,8 @@ type: concept
 title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
-date_updated: 2026-09-08
-source_count: 4
+date_updated: 2026-11-25
+source_count: 5
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -70,9 +70,14 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 - [[wiki/concepts/naming]] — Vague Name e Hard to Pick Name.
 - [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — red flags detectam as causas estruturais que produzem os três sintomas (change amplification, cognitive load, unknown unknowns).
 
+## "Sinais de alerta" na tradução revisada
+
+[[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] traduz *red flags* como "sinais de alerta". Uma nota do tradutor os define como "antipadrões ou cheiros no código (*code smells*)". Isso vai além do livro: pela seção "Linhagem paralela" acima, os dois catálogos só se sobrepõem em parte, e vários red flags (Pass-Through Method, Conjoined Methods, Comment Repeats Code) não têm smell equivalente em Fowler. A mesma tradução preserva o aparte de Ousterhout pedindo novos sinais aos leitores, de modo que o catálogo é aberto por intenção do autor.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — catálogo completo dos 14 red flags nomeados no livro (apêndice "Summary of Red Flags")
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo paralelo de 9 code smells (linhagem Fowler), com sobreposição parcial (Repetition ≈ DRY, Information Leakage ≈ feature envy) mas cobrindo sinais distintos (god object, data clumps, primitive obsession)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — exemplo real recorrente de Shallow Module (API de I/O do Java), citado pelo comitê executivo do Java como erro de design reconhecido
+- [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada da 1.1; a N.T. iguala red flags a code smells (discutido acima)
