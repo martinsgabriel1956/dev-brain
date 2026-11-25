@@ -4,7 +4,7 @@ title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 7
+source_count: 8
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -48,6 +48,10 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 
 [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] traz o texto do cap. 2, que até então a wiki só conhecia pelo podcast e por uma citação do livro completo. Ali Ousterhout define complexidade como algo relativo à tarefa ("o que um desenvolvedor vivencia em um determinado momento"), pesa cada parte pelo tempo gasto nela ($C = \sum_p c_p t_p$), nomeia os três [[wiki/concepts/sintomas-de-complexidade-ousterhout|sintomas]] e as duas [[wiki/concepts/causas-de-complexidade-ousterhout|causas]], e defende "tolerância zero" porque a [[wiki/concepts/complexidade-incremental|complexidade é incremental]]. O texto também corrige a leitura do podcast: amplificação de mudanças não exige dependência oculta.
 
+## Capítulo 3 em primeira mão (2026-11-25)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]] traz o texto do cap. 3: [[wiki/concepts/programacao-tatica-vs-estrategica]], o [[wiki/concepts/tornado-tatico]], a régua de 10 a 20% e o payback de 6 a 18 meses, que ele marca como opinião sem dados. Corrige um registro antigo da wiki: ele não cunha "dívida técnica", só usa o termo.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -57,3 +61,4 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — discussão de segunda mão do livro por dois praticantes, com vocabulário do Cap. 2 e exemplos adicionais de API
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — segunda tradução do cap. 1 e da 1.1, com os apartes do autor em primeira pessoa
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — texto do cap. 2: definição, fórmula, sintomas, causas e complexidade incremental
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3, tática vs. estratégica, tornado tático, 10–20%, Facebook vs. Google/VMware

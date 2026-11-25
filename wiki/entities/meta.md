@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-23
-source_count: 16
+date_updated: 2026-11-25
+source_count: 17
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -48,6 +48,10 @@ Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalm
 
 Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]], as tags repetidas "pelo Facebook" são o Open Graph, protocolo criado pelo Facebook em 2010 ([[wiki/concepts/open-graph]]).
 
+## "Move fast and break things" como cultura tática
+
+A 3.4 de *A Philosophy of Software Design* usa o Facebook como exemplo de startup tática: o lema "Mova-se rápido e quebre as coisas" e commits em produção na primeira semana deram autonomia aos engenheiros, mas deixaram a base instável, difícil de entender e com poucos testes e comentários. A empresa trocou o lema por "Mova-se rápido com uma infraestrutura sólida". [[wiki/entities/john-ousterhout]] ressalva que o código deles provavelmente não é pior que a média das startups, só mais visível ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-conceitos-gerais-react-interface-dinamica-spa-virtual-dom-jsx]]: React aula 03 do FrontPUSH: Facebook como criador do React
@@ -64,6 +68,7 @@ Em [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — preto e branco do Facebook tingidos de azul
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de codebase excelente
 - [[wiki/sources/frontpush-google-pagespeed-core-web-vitals-acessibilidade-meta-tags]]: FrontPUSH, otimização aula 05: Open Graph do Facebook
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: Facebook como exemplo de cultura tática ("move fast and break things")
 
 ## Facebook como origem do React
 

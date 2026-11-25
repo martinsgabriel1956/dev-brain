@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-11-03
-source_count: 12
+date_updated: 2026-11-25
+source_count: 13
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -83,6 +83,10 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] coloca o MVP dentro da [[wiki/concepts/abordagem-evolutiva]]: o feedback do público-alvo é o dado que substitui a imaginação na escolha do próximo passo. Cita, sem caso nomeado, o produto que levou um ano para sair e não atendia o público.
 
+## Contraponto: startups táticas (Ousterhout)
+
+A 3.4 de *A Philosophy of Software Design* contesta a ideia de lançar rápido sacrificando o design: o retorno do bom design vem cedo, então a programação tática talvez nem acelere o primeiro produto, e uma base espaguete é quase impossível de consertar depois ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]). A tensão com esta página é parcial: o MVP corta **escopo**, e a programação tática corta **cuidado**. Um MVP feito de forma estratégica é possível ([[wiki/concepts/programacao-tatica-vs-estrategica]]; conciliação da wiki).
+
 ## Key Sources
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
@@ -97,3 +101,4 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — MVP integrado como ferramenta de descoberta de escopo em serviços de IA para cliente externo
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — definir custo/tempo primeiro e encaixar escopo depois; nunca comprometer-se com planejamento de longo prazo adiantado
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — feedback do MVP como dado para decidir o caminho
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: contraponto, a tática talvez nem acelere o primeiro lançamento

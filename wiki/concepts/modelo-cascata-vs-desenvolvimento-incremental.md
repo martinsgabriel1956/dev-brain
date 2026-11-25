@@ -4,7 +4,7 @@ title: "Modelo Cascata vs. Desenvolvimento Incremental"
 aliases: ["waterfall", "waterfall model", "agile design", "design incremental"]
 date_created: 2026-07-10
 date_updated: 2026-11-25
-source_count: 4
+source_count: 5
 tags: [waterfall, agile, design, processo, ousterhout, complexidade]
 skill: tech-mentor-backend
 status: draft
@@ -44,9 +44,14 @@ Consequência: **design de software nunca termina**. É um processo contínuo ao
 
 As duas traduções do cap. 1 divergem em dois pontos deste argumento ([[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]). (1) A versão revisada diz corretamente que não é possível visualizar o design de um sistema grande "bem o suficiente para entender todas as suas implicações". A versão de julho deixa o "o suficiente" qualificar o tamanho do sistema. (2) Sobre as fases depois do design congelado, a revisada diz "estruturar e implementar" e a de julho diz "detalhar e implementar". "Detalhar" fica mais perto do original (*flesh out*, `[external, não verificado]`): no cascata, depois dessa fase, não sobra decisão de design, e é isso que gera os remendos e a "explosão de complexidade".
 
+## Cap. 3: o investimento também é incremental
+
+Na 3.3, o argumento contra o cascata volta como regra de investimento: um investimento inicial gigante, como tentar projetar o sistema inteiro, "é o método cascata, e sabemos que ele não funciona". O bom design surge aos poucos, então o certo é fazer muitos pequenos investimentos contínuos, na faixa de 10 a 20% do tempo ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — qualificação do agile/TDD como risco de deslizar para o tático (Cap. 19)
 - [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — o incremental reduzido a quatro passos e uma prática
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada do cap. 1; corrige a frase truncada sobre visualizar o design de um sistema grande
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.3, cascata como investimento inicial gigante que não funciona

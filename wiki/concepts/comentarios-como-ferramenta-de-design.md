@@ -4,7 +4,7 @@ title: "Comentários Como Ferramenta de Design"
 aliases: ["write the comments first", "escrever comentários primeiro", "comments as design tool", "interface comment", "implementation comment"]
 date_created: 2026-07-29
 date_updated: 2026-11-25
-source_count: 4
+source_count: 5
 tags: [comentarios, documentacao, design, ousterhout, clean-code, abstracao]
 skill: tech-mentor-backend
 status: draft
@@ -67,9 +67,14 @@ Processo descrito pelo autor: comentário de interface da classe → assinaturas
 
 No cap. 2.3, Ousterhout diz que "a necessidade de documentação extensa costuma ser um alerta vermelho de que o design não está muito adequado", e que a melhor forma de reduzir a obscuridade é simplificar o design ([[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]). Isso não contradiz a defesa dos comentários feita nesta página: o design reduz o quanto há para explicar, e o comentário registra o que o código não consegue expressar. O que acende o alerta é ter de documentar muito para compensar uma estrutura ruim (conciliação desta wiki).
 
+## Documentação como investimento (cap. 3)
+
+A 3.2 lista "escrever uma boa documentação" entre os investimentos proativos da programação estratégica, ao lado de testar alternativas de design ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]). Os caps. 12 a 16 desenvolvem a ideia.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Caps. 12, 13 e 15 (as quatro desculpas, interface vs. implementação, escrever comentários primeiro, discordância com Clean Code)
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — exemplo pontual de comentário substituível por naming melhor de constante (convergente com Clean Code, não com a defesa geral de Ousterhout)
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — Cap. 15 escolhido como o trecho mais importante do livro; projetos open source de referência (Google, Linux, JVM, Spring) como contra-exemplo prático da "utopia do código autodocumentado"
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — documentação extensa como sinal de design inadequado
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.2, documentação como investimento proativo

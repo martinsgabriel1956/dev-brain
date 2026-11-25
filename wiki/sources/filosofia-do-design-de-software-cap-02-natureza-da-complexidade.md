@@ -120,7 +120,7 @@ Tradução do usuário do capítulo 2 de *A Philosophy of Software Design*, de [
 
 - A fórmula $C = \sum_p c_p t_p$ não tem como medir $c_p$. Dá para aproximá-la com *hotspots* (complexidade × frequência de mudança no git), como em [[wiki/concepts/tech-debt-como-ferramenta]] (seção "Medindo Dívida")? A analogia é da wiki, não do livro.
 - A wiki tem [[wiki/concepts/carga-cognitiva]] (UX e memória de trabalho) e [[wiki/concepts/cognitive-load]] (stub de times e plataforma). Com o sentido de Ousterhout são três usos do termo. Fundir ou desambiguar no próximo lint.
-- O cap. 3 ("tolerância zero", programação tática vs. estratégica) é o próximo da tradução; a wiki já o tem pelo livro completo.
+- O cap. 3 ("tolerância zero", programação tática vs. estratégica) foi traduzido em seguida: [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]].
 
 ## Raw Quotes
 

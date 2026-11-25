@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-11-16
-source_count: 17
+date_updated: 2026-11-25
+source_count: 18
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -93,6 +93,8 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - **Evitar duplicação de documentação** — se não há um lugar óbvio único para uma decisão cross-module, o autor recomenda um arquivo central `designNotes` com referências curtas a partir de cada ponto do código afetado (exemplo real: o tratamento de "zombie servers" no sistema RAMCloud).
 - **Revisar o diff antes de commitar** — checagem manual de que cada mudança de código tem a documentação correspondente atualizada.
 
+A raiz disso está no cap. 3 (3.2), que chama de **investimento reativo** o hábito de, ao descobrir um problema de design, consertá-lo em vez de ignorar ou remendar ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
+
 ## Extract Interface: uma refatoração estrutural de tipos, não de comportamento
 
 [[wiki/sources/extract-interface-xunitpatterns]] cataloga uma refatoração de Fowler mais restrita que as discutidas acima: **Extract Interface** — quando vários clientes usam apenas um subconjunto da interface de uma classe, ou duas classes compartilham parte do seu contrato, extrai-se esse subconjunto para uma interface própria. Diferente das refatorações de design/legibilidade tratadas nas seções anteriores, esta é puramente uma mudança de **vocabulário de tipos**: nada no comportamento observável muda. Ganhou relevância prática além do código de produção como pré-requisito técnico para instalar [[wiki/concepts/test-doubles|Test Doubles]] via [[wiki/concepts/dependency-injection|Dependency Injection]] em linguagens estaticamente tipadas — ver [[wiki/concepts/extract-interface]].
@@ -147,6 +149,7 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o `server.js` enco
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: header.css e forms.css compartilhados
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: src/public e funções nomeadas
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: utils/format, pages.js
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: 3.2, investimento reativo: consertar o problema de design em vez de remendar
 
 ## Key sources (adição 2026-10-07)
 

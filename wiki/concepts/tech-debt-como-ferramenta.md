@@ -4,7 +4,7 @@ title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
 date_updated: 2026-11-25
-source_count: 19
+source_count: 20
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -112,7 +112,7 @@ O autor nomeia o extremo da tática como **"tactical tornado"**: o programador q
 
 **Estimativa de payback (opinião do autor, sem dado controlado):** a curva tática entrega mais rápido nos primeiros meses, mas cruza a curva estratégica em algum ponto entre **6 e 18 meses** — depois disso, a base tática é permanentemente mais lenta. O próprio autor marca essa cifra como opinião pessoal, não medição.
 
-Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**, com a ressalva de que, ao contrário de dívida financeira, a dívida técnica raramente é paga por completo — "you'll keep paying and paying forever" se a decisão foi tática pura (equivalente ao quadrante Imprudente de Fowler), não uma troca consciente.
+Ver também: o mesmo capítulo **usa** o termo "technical debt" (o texto diz que ele "é frequentemente usado"; Ousterhout não o cunha) para nomear o efeito da programação tática, com a ressalva de que, ao contrário de dívida financeira, a maior parte da dívida técnica nunca é quitada: "you'll keep paying and paying forever". O livro não restringe isso ao quadrante Imprudente de Fowler nem separa a dívida deliberada; a restrição que constava aqui era leitura da wiki e foi retirada ao ler o cap. 3 em primeira mão ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]). A distinção agora tem página própria: [[wiki/concepts/programacao-tatica-vs-estrategica]], com o extremo em [[wiki/concepts/tornado-tatico]].
 
 ## Test Debt — Caso Nomeado, Ancorado Especificamente em Ausência de Testes
 
@@ -161,3 +161,4 @@ O cap. 2.4 dá o argumento que o cap. 3 usa: a complexidade se acumula em pequen
 - [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — cunha "test debt": caso nomeado do mesmo mecanismo, ancorado especificamente em ausência de testes automatizados
 - [[wiki/sources/test-debt-xunitpatterns]] — verbete de glossário isolando a definição formal de "test debt" e a origem do vocabulário de "dívida" (lista Industrial XP)
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — complexidade incremental e tolerância zero (cap. 2.4)
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3; corrige que Ousterhout não cunha "dívida técnica" e que o "para sempre" não se limita à dívida imprudente

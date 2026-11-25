@@ -24,7 +24,7 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 ## Key Claims
 
 **Claim:** Programar taticamente (foco em "fazer funcionar" o mais rápido possível) parece racional no curto prazo mas é a causa raiz do acúmulo de complexidade; o antídoto é a programação estratégica — investir 10–20% do tempo total de desenvolvimento em design, o que se paga sozinho dentro de 6–18 meses.
-**Evidence:** Cap. 3. Ousterhout introduz o "tactical tornado" — o programador que entrega rápido mas deixa rastro de destruição que outros precisam limpar — e usa Facebook ("Move fast and break things", depois trocado para "Move fast with solid infrastructure") como exemplo real de empresa que sofreu com cultura tática, contra Google e VMware como exemplos de cultura estratégica bem-sucedida. O termo "technical debt" é usado explicitamente aqui, com a ressalva de que, ao contrário de dívida financeira, dívida técnica raramente é paga por completo.
+**Evidence:** Cap. 3. Ousterhout introduz o "tactical tornado" — o programador que entrega rápido mas deixa rastro de destruição que outros precisam limpar — e usa Facebook ("Move fast and break things", depois trocado para "Move fast with solid infrastructure") como exemplo real de empresa que sofreu com cultura tática, contra Google e VMware como exemplos de cultura estratégica bem-sucedida. O termo "technical debt" é usado explicitamente aqui, com a ressalva de que, ao contrário de dívida financeira, dívida técnica raramente é paga por completo. O texto completo do capítulo está em [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]; ele confirma que Ousterhout usa o termo, mas não o cunha.
 **Confidence:** alta — capítulo inteiro dedicado ao tema, com dados qualitativos (opinião do autor, não medição controlada, o que ele mesmo admite).
 
 **Claim:** O ocultamento de informação (information hiding, de Parnas 1972) é a técnica central para produzir módulos profundos: cada módulo deve encapsular uma decisão de design que não aparece em sua interface; o oposto — vazamento de informação (information leakage) — ocorre quando a mesma decisão de design se reflete em múltiplos módulos, criando uma dependência entre eles mesmo que nenhum dos dois exponha a informação publicamente ("back-door leakage").
@@ -122,6 +122,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 
 - Cap. 1: [[wiki/sources/filosofia-do-design-de-software-introducao]] e [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]]
 - Cap. 2: [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]], com o texto completo da frase "dependencies and obscurity" citada abaixo
+- Cap. 3: [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], com tática vs. estratégica, tornado tático e o caso Facebook
 
 ## Open Questions
 

@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-25
-source_count: 50
+source_count: 51
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -126,6 +126,10 @@ Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de
 
 Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], um L6 do Google no Brasil aparece com total compensation de R$ 1,1 milhão por ano (≈ R$ 50 mil de salário CLT, R$ 400 mil em ações, bônus), exemplo da cauda longa do [[wiki/concepts/modelo-trimodal-compensacao|modelo trimodal]]. Dado de tela, data desconhecida.
 
+## Cultura estratégica (Ousterhout)
+
+A 3.4 de *A Philosophy of Software Design* cita Google e VMware como empresas que cresceram na mesma época do Facebook com cultura estratégica, com ênfase em código de qualidade e bom design, e que por isso tinham poucas concorrentes na disputa por talento ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -155,6 +159,7 @@ Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], um L6 do Googl
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: Gemini e Nano Banana Pro
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: launcher de apps
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: conta no canto superior direito
+- [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: Google e VMware como exemplos de cultura estratégica
 
 ## Adição (2026-10-14)
 
