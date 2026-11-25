@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 22
+source_count: 23
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -80,6 +80,10 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while`, co
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], institui a regra de sempre nomear funções atribuídas a variáveis, pelo debug, e mostra a propriedade `name` no console.
 
+## Semana 8, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], apresenta programação funcional como requisito "para você se tornar um ninja de verdade", define funções como cidadãos de primeira classe e passa do console para um arquivo `.js` para mostrar função que retorna objeto.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -104,3 +108,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], institui a
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: semana 8, vídeo 01: a importância de nomear funções; propriedade name
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: semana 8, vídeo 02: introdução à programação funcional; função que retorna objeto

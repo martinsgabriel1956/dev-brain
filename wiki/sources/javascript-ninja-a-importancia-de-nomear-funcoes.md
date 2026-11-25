@@ -106,6 +106,8 @@ Primeiro vídeo depois da revisão do desafio da semana 7 do [[wiki/entities/jav
 
 Vídeo anterior do curso na wiki: [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]] (semana 7, vídeo 03). A revisão do desafio da semana 7, citada na abertura, não está na wiki.
 
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]] (semana 8, vídeo 02), o de programação funcional que este anuncia.
+
 ## Open Questions
 
 - **"Uma função chamada de fala"**: o nome dado no primeiro exemplo (talvez `func`); baixa. Literal.

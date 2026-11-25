@@ -4,7 +4,7 @@ title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
 date_updated: 2026-11-25
-source_count: 6
+source_count: 7
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -90,6 +90,10 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], a primeira m
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o fecho anuncia o próximo vídeo: "a gente fala um pouquinho sobre a programação funcional em JavaScript". A aula prepara o terreno lembrando que função é objeto e mantendo as anônimas para "alguns casos específicos".
 
+## No JavaScript Ninja, semana 8, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], [[wiki/entities/fernando-daciuk|Fernando Daciuk]] define o paradigma como "uma forma de você programar" em que os programas "são baseados em funções, ou nas características que as funções têm", e o liga às funções de primeira classe do JavaScript. É uma definição mais larga que a desta página: funções de primeira classe são o pré-requisito da linguagem; pureza, imutabilidade e efeitos explícitos são a disciplina do estilo, que JavaScript permite mas não impõe (leitura da wiki). A aula contrasta com Java, "executando linha a linha"; `[external]` Java tem lambdas e streams desde a versão 8 (2014).
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].
@@ -97,3 +101,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], o fecho an
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: funções de primeira classe, só a atribuição (ver [[wiki/concepts/funcoes-de-primeira-classe]])
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: prévia de programação funcional com função no array
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: anuncia programação funcional para o vídeo seguinte
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: FP como "baseada em funções"; primeira classe como pré-requisito

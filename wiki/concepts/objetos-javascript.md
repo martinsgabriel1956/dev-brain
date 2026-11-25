@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 21
+source_count: 22
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -113,6 +113,10 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o array entra co
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções "são um tipo de objeto [...] elas podem ter propriedades e elas podem ter métodos também", com alguns "embutidos" (built-in). O exemplo é `name`, que a aula chama de método mas é propriedade somente leitura (`writable: false`, verificado).
 
+## No JavaScript Ninja, semana 8, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], o objeto literal é a base do paralelo com funções: "você usa simplesmente as chaves", e "o formato final do objeto, exatamente como ele é apresentado [...] na linguagem em si, é objeto literal". Uma função pode devolver o objeto direto ou guardá-lo numa `var` antes: "o resultado é o mesmo". `[external]` Cada chamada cria um objeto novo (`f() === f()` dá `false`). Construtores de objeto ficam "mais para frente".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -136,3 +140,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções 
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: arrays como "objetos disfarçados"
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array como objeto embutido; objeto dentro de array
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função como objeto; name embutido
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: objeto literal; função que retorna objeto

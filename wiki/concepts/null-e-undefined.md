@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 12
+source_count: 13
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], ler um índice q
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a função atribuída a variável sem `return` devolve `undefined` quando invocada, "porque eu não tenho nenhum retorno para essa expressão aqui".
 
+## No JavaScript Ninja, semana 8, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], a função sem `return` "é executável e não retorna nada" (devolve `undefined`). `[external]` Ler no objeto-função uma propriedade que só existe no objeto retornado também dá `undefined`: `retornaObjeto.lastName` (verificado).
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
@@ -68,3 +72,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a função
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro ausente é undefined; `undefined.curso` lança TypeError
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: índice inexistente dá undefined; null como item
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função sem return devolve undefined
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: sem return, undefined; propriedade lida na função em vez do retorno

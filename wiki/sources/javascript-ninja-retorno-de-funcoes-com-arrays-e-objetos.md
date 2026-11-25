@@ -86,6 +86,8 @@ Primeiro vídeo da "quinta aula" do [[wiki/entities/javascript-ninja|JavaScript 
 - [[wiki/concepts/desestruturacao-javascript]]
 - [[wiki/concepts/poluicao-do-escopo-global]]
 
+Retomada em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]] (semana 8, vídeo 02): a função que retorna objeto volta como exemplo de função de primeira classe, agora num arquivo `.js`.
+
 ## Open Questions
 
 - **"Funções de Estado"** na abertura: pode ser "funções de novo" (média-baixa); literal.

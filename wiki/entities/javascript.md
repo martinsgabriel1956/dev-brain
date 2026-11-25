@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 45
+source_count: 46
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -137,6 +137,10 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a estrutura d
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções como objetos com a propriedade `name`, e a regra de nomeá-las para o debug. A demonstração do `name` vazio é anterior ao ES2015.
 
+## No JavaScript Ninja, semana 8, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], JavaScript é apresentado como linguagem que permite o estilo funcional porque funções são cidadãos de primeira classe, ao contrário de Java (da época anterior ao Java 8).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -184,3 +188,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], funções 
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array.length
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push e for
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: Function.name
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: funções de primeira classe e estilo funcional

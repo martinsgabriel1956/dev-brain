@@ -4,7 +4,7 @@ title: "Funções de primeira classe"
 aliases: ["first-class functions", "first-class function", "funções como valores", "função como objeto", "objetos de primeira classe"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 5
+source_count: 6
 tags: [javascript, funcoes, programacao-funcional, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -39,6 +39,10 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], uma função
 
 Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a consequência de função ser objeto: ela tem propriedades e métodos "embutidos", e `name` guarda o nome da própria função, independente da variável que a recebe (`var funcShow = function funcShow() {}`). `[external]` Ser valor é o que torna a anônima possível; a inferência do ES2015 dá nome a ela quando há uma variável ou propriedade de onde tirar.
 
+## No JavaScript Ninja, semana 8, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], o termo vira "cidadãos de primeira classe": funções "têm o mesmo tratamento dos objetos no JavaScript", e "tudo aquilo que você consegue fazer com objetos [...] você também consegue fazer com funções". A aula percorre três usos: criar como literal, atribuir a variável e (para objetos) retornar de uma função; retornar funções fica para o vídeo seguinte. `[external]` `f instanceof Object` dá `true` e `f.prop = 1` funciona (verificado no Node 22).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: função é objeto; atribuída a variável, anônima
@@ -46,3 +50,4 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], a consequ�
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: função como valor de propriedade de objeto retornado
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: função guardada em array e invocada pelo índice
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função como objeto com a propriedade name
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: cidadãos de primeira classe; paralelo objeto × função

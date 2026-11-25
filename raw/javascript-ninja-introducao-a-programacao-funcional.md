@@ -1,0 +1,45 @@
+# JavaScript Ninja: introdução à programação funcional
+
+Olá. Voltamos com um curso de JavaScript Ninja, e eu sou Fernando Daciuk. Agora [a] gente vai falar um pouquinho sobre programação funcional em JavaScript.
+
+## O que é programação funcional
+
+Hoje em dia você, você provavelmente já ouviu falar sobre programação funcional. Que é a programação funcional? Como é que funciona? Então, a programação funcional, na verdade, nada mais é do que uma forma de você programar, e até o formato que você escreveu seus programas, eles são baseados em funções, ou nas características que as funções têm. E para você usar o estilo de programação funcional numa linguagem, a linguagem precisa disponibilizar algumas coisas para você, que o JavaScript tem, estado é uma delas, e é uma das coisas que eu já vi escrito que disponibiliza para você: que as funções, na verdade, no JavaScript, eles são objetos de primeira classe.
+
+Que são objetos de primeira classe? Na verdade, eles podem ser conhecidos também como cidadãos de primeira classe. Que isso quer dizer, que funções são cidadãos de primeira classe? Eles são especiais e são melhores que alguém? Como alguém? Que significa isso? Que acontece? Cidadãos de primeira classe significa objetos de primeira classe. Significa que o JavaScript, que as funções, na verdade, elas têm o mesmo tratamento dos objetos no JavaScript. Então, por exemplo, tudo aquilo que você consegue fazer com objetos no JavaScript, se você também consegue fazer com funções. Então, basicamente, essa ideia de objetos de primeira classe, de funções, e de cidadãos de primeira classe, está: tudo aquilo que você consegue fazer com objetos em JavaScript, digamos que é a parte mais importante do JavaScript, você também consegue fazer com funções. E isso permite a gente trabalhar de forma funcional dentro dos navios, que vai ver agora.
+
+Alguns padrões que, para você se tornar um ninja de verdade, você precisa conhecer, esse tipo de formato de programação funcional, que isso vai modificar bastante a forma de você pensar, a forma de você pensar em lógica, a forma de você aprender. Muitas linguagens de programação hoje não te dão essa liberdade de programar nesse formato funcional. Algumas linguagens de programação, como Java, por exemplo, ele tem uma, ele tem uma pegada um pouco mais sim está, onde você vai passando as instruções, dos comandos, e eles vão executando linha [a] linha, e a programação funcional alinha uma programação um pouco mais dinâmica. Então a gente vai, vai ver um pouco mais como funciona trabalhar com a programação funcional dentro do JavaScript. Então, sim, só pra gente ter uma ideia mais ou menos do que, do que é a programação funcional.
+
+## Objetos literais e funções literais
+
+Então, assim como você, você sabe o que você consegue fazer com objetos e o que você consegue fazer com funções. Na prática, como funciona tudo isso? Então, assim, da mesma forma que você consegue usar objetos literais, como você cria, por exemplo, uma variável cai, e aí você passa para ela um objeto com propriedades ali, bem, onde você passa um valor, você passa um nome, você passa um valor, você tem ali um objeto literal, você também pode criar funções literais. Assim, tinha gente que eram funções literais.
+
+A gente nunca falou sobre construtores de objetos e construtores de funções, tinha de ir mais para frente sobre isso. Mas legal você saber que existem esses dois formatos. Os construtores [a] gente vai ver mais para frente. Mas, por enquanto, você sabe que para você criar o objeto literal, você usa simplesmente as chaves, e você já começa a rodar dentro do objeto, ou seja, isso é um objeto literal. E o formato final do objeto, exatamente como ele é apresentado para a gente na linguagem em si, é objeto literal.
+
+Então, da mesma forma que você pode criar funções literais... Então, na maioria dos nossos exercícios, desde que a gente começou a falar sobre a função, a gente criou várias funções, e funções no formato literal, que [é] essa função aqui que você cria com a palavra-chave function. Você dá um nome para ela, por exemplo, você passa parâmetros, que são opcionais, e você pode passar ou não. Aí você abre as chaves e você coloca a sua instrução dentro da função. Quando você executar a função, ele vai, ele vai avaliar aquela instrução e vai executar aquela instrução para a gente. Então, isso é uma função literal em JavaScript. Então, da mesma forma que você cria objetos literais, você também pode criar funções e interagir com os clientes.
+
+Isso eu não vou, não vou terminar, porque você já viu, você já conhece. A gente já conhece objetos, que já trabalhou, tem trabalhado uns exercícios para cá bastante com objetos e com funções literais. Então, provavelmente, você já sabe como criar um objeto, uma função literal. Então, vamos seguir em frente.
+
+## Atribuindo funções a variáveis
+
+Aqui não é outra coisa: a gente também já viu que, como você atribui objetos a variáveis, que, então, por exemplo, eu posso criar uma variável obj e atribuir, como eu fiz com ela, por exemplo, no último exemplo. Da mesma forma, você pode atribuir também funções. Então, é aquilo que você acabou de falar: você atribui funções [a] variáveis. Ela pode ser uma função anônima, ou ela pode ser uma função nomeada, que ainda acabei esquecendo de colocar os parênteses, dos parênteses aqui.
+
+Mas, da mesma forma que você, você cria um objeto, um objeto literal, você tem aqui o retorno de objeto. Quando você cria, quando é que você pode atribuir a uma variável, você também pode atribuir funções a uma variável, que é o fundo, que é executável e não retorna nada, porque eu não vou no torneio. Mas ele tem propriedades de Dilma de uma função. Então você pode atribuir funções a uma variável, tanto funções normais como funções anônimas, ou seja, uma função anônima, que ela não tem nome, e ele não retorna a propriedade name, ok? Da mesma forma que você faz isso, então, com um objeto, você também consegue fazer isso com funções.
+
+## Retornando objetos de funções
+
+Uma outra coisa que você não viu ainda: da mesma forma que você retorna ao objeto tem uma função, na verdade, o objeto tinha. Então você cria, por exemplo, uma função peça e você retorna um objeto, um objeto indireto, com uma propriedade name com o teu nome, lastName com o sobrenome. E quando você invocar essa função, você vai retornar esse objeto. Ou então você pode, numa segunda abordagem bem parecida, atribuir o objeto a uma variável, por exemplo, retornar esse objeto.
+
+Então, por exemplo, se você tem lá, você pode criar uma função chamada, por exemplo, onde você vai retornar um objeto, que pode retornar diretamente ao objeto, e você vai colocar lá: Fernando, porque o lastName... Faltou aqui. Eu senti errado, eu coloquei uma máscara simples aqui, por isso que ele deu errado.
+
+## No editor
+
+Eu vou cuidar de Vitor Belfort. Eu sou o melhor. Eu vou criar um arquivo aqui, fica mais fácil manipular. A mídia JS. Então vou criar uma reflexão sobre... vou retornar um objeto aqui: name, Fernando; name... Daciuk. Então, fazendo isso, eu tenho a minha, a minha função. Eu posso executar essa função. Eu posso chamar essa função, por exemplo, onde e quando é executar ela, não é única, precisa passar um cursor do mouse pelo mundo. Não vai mostrar o retorno dessa função. Ela só quando eu retorno à função em que ele mostra para mim. Então ele retornou um objeto, certo?
+
+Da mesma forma, da mesma forma, após eu simplesmente criar aqui um objeto no lugar do titânio, eu posso criar um var e atribuir se esse objeto a essa minha variável individual, retorne aqui. Então o resultado vai ser o mesmo. O resultado é o mesmo, porque, basicamente, o que eu fiz, basicamente o que eu fiz: eu criei uma função, criei o objeto e fui, retornei, retornei assim. Então eu posso retornar diretamente um objeto à parte, a partir de uma função.
+
+Eu posso pegar uma função e retornar como objeto a partir dela, e eu posso executar esse objeto. Eu posso chamar as propriedades, de propriedade name, propriedade name, porque ele vai retornar para mim esse, esse cara, certo? Por exemplo, se eu chamar o ponto name, ele vai retornar nele. Se eu der um console.log, retornado o que foi executado. Ponto name, diga que eu preciso executar a função, que eu preciso executar a função aqui. Tenho minha teoria objeto, porque, como o próprio nome da função, já se tornou objeto, da função retorna ao objeto.
+
+Então, se eu, se eu não executar ela, eu não vou conseguir pegar o objeto de dentro, o objeto retornado. Vou ter as propriedades e métodos do objeto JavaScript. Eu não vou ter esse objeto interno. A partir do momento em que ele executa ela, aí eu tenho acesso a esse objeto aqui. Então, quando eu, quando eu rodo aqui o meu amigo js, então ele vai retornar para mim. Nem eu, nem eu estou mandando retornar aqui no console.log o name e o lastName, ok?
+
+Então, basicamente, é que a gente faz com objetos. Só que você também pode retornar funções, e assim retorna de funções a gente vai ver no próximo vídeo. Até lá.

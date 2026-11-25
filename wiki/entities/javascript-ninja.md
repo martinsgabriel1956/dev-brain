@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-25
-source_count: 22
+source_count: 23
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -71,6 +71,7 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 ## Semana 8
 
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: vídeo 01, depois da revisão do desafio da semana 7 (que não está na wiki). Abre "partes um pouco mais avançadas" de funções: sempre nomear, propriedade `name`, anônima × nomeada × "literal". Anuncia programação funcional.
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: vídeo 02, introdução à programação funcional: funções como cidadãos de primeira classe, objeto literal × função literal, função que retorna objeto. Anuncia retorno de funções.
 
 ## Key sources
 
@@ -97,3 +98,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: semana 7, vídeo 02: arrays e a propriedade length; anuncia métodos
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: semana 7, vídeo 03: método push e loop for
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: semana 8, vídeo 01: a importância de nomear funções; anuncia programação funcional
+- [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: semana 8, vídeo 02: introdução à programação funcional; anuncia retorno de funções
