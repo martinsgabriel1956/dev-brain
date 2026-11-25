@@ -3,8 +3,8 @@ type: concept
 title: "Loop de Feedback Rápido"
 aliases: ["10.000 feedbacks", "fast feedback loop", "iteração rápida"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [carreira, feedback, aprendizado, mentalidade, iteracao]
 skill: tech-mentor-leadership
 status: draft
@@ -49,6 +49,11 @@ A fonte propõe substituir "10.000 horas de prática" por **"10.000 feedbacks"**
 - [[wiki/concepts/feedback-continuo-diario]] — versão aplicada ao ambiente de trabalho, com técnica de entrega de feedback
 - [[wiki/concepts/extreme-ownership]] — ownership como complemento citado na mesma fonte: sem se importar com o resultado, o loop de feedback não é sustentado
 
+## Versão Mínima em Processo de Software
+
+[[wiki/concepts/ciclo-basico-da-agilidade]] ([[wiki/entities/dave-thomas]]) põe o ajuste a partir do aprendido no centro do desenvolvimento: ver onde está, passo pequeno, ajustar, repetir. É este loop aplicado ao código e à entrega, segundo [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]].
+
 ## Key Sources
 
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]]
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — o loop como núcleo da agilidade

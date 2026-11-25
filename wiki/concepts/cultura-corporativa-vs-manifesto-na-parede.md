@@ -3,8 +3,8 @@ type: concept
 title: "Cultura Corporativa vs. Manifesto na Parede"
 aliases: ["cultura como marketing", "manifesto de cultura", "cultura evolui com o tempo"]
 date_created: 2026-08-26
-date_updated: 2026-09-18
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [cultura, liderança, marketing-de-talento, contratação]
 skill: tech-mentor-leadership
 status: stub
@@ -43,7 +43,12 @@ A referência de cultura de engenharia da skill formaliza o mesmo argumento em t
 - [[wiki/concepts/body-shop-terceirizacao]] — modelo de contratação onde cultura de equipe tende a inexistir
 - [[wiki/concepts/manifesto-agil-como-adjetivo]] — mesmo padrão de "manifesto interpretado livremente", aplicado ao Manifesto Ágil
 
+## Palavra que Vira Marca
+
+Em [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]], um dos signatários descreve o mesmo desgaste aplicado ao próprio manifesto: a palavra "agile" virou marca, como "eco" e "natural", e deixou de guiar a prática.
+
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — mesmo argumento aplicado ao Manifesto Ágil (2001)
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — o termo "agile" virando marca, segundo um signatário

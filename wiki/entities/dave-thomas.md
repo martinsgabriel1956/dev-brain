@@ -3,8 +3,8 @@ type: entity
 title: "Dave Thomas (Pragmatic Programmer)"
 aliases: ["dave thomas", "pragmatic dave"]
 date_created: 2026-09-18
-date_updated: 2026-11-05
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [autor, agile, manifesto-agil, pragmatic-programmer]
 skill: tech-mentor-leadership
 status: stub
@@ -30,7 +30,12 @@ O post "Agile is Dead (Long Live Agility)", de 04/03/2014, foi lido nesta ingest
 
 Esse post é o gatilho de [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]]. Thomas mira a palavra e o mercado em volta dela, não os valores, que diz continuar defendendo.
 
+## Post de 2014 Ingerido (2026-11-25)
+
+O post virou fonte própria: [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]]. Além do que está acima, registra que Thomas evitou eventos e consultoria ágil depois de Snowbird (só foi à Agile India 2014), e que ele mesmo se arrepende do título *Agile Web Development with Rails*. O ciclo de quatro passos ganhou página: [[wiki/concepts/ciclo-basico-da-agilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — relato de segunda mão da palestra GOTO 2015 e do blog post de 2014
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — post de Akita (2014) que parte da declaração de Thomas; o post original de Thomas foi lido nesta ingestão como conferência
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — fonte primária: o post de 2014 "Agile is Dead (Long Live Agility)"

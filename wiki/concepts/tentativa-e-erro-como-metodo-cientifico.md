@@ -3,8 +3,8 @@ type: concept
 title: "Tentativa e Erro Como Método Científico"
 aliases: ["tentativa e erro sistemática", "PDCA=DMAIC=Scrum=metodo cientifico", "melhoria continua como ciclo universal"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [metodo-cientifico, melhoria-continua, agile, engineering-management, epistemologia]
 skill: tech-mentor-leadership
 status: stub
@@ -52,6 +52,11 @@ A fonte usa como contraponto cômico o ciclo vicioso "não escrevemos teste porq
 - [[wiki/concepts/scrum-master]] — já documenta que Scrum nasceu nos anos 80, antes do Manifesto Ágil; esta página conecta a estrutura do Sprint diretamente ao PDCA/Kaizen que o antecede historicamente
 - [[wiki/concepts/goodharts-law]] — risco de o ciclo de melhoria contínua degenerar em otimizar o número (a métrica do "Check"/"Measure") em vez do problema real
 
+## Versão de Quatro Passos
+
+[[wiki/concepts/ciclo-basico-da-agilidade]] ([[wiki/entities/dave-thomas]], [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]]) é a mesma estrutura cíclica, sem nome de método: ver onde está, passo pequeno, ajustar, repetir.
+
 ## Key Sources
 
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — fonte primária e única desta ingestão
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — o ciclo como definição mínima de agilidade

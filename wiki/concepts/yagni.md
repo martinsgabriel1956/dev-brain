@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-11-03
-source_count: 13
+date_updated: 2026-11-25
+source_count: 14
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -82,6 +82,10 @@ Aplicação a dados: [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] usa o princípio como reação ao pensamento "talvez essa feature faça sentido": só precisa se for requisito bem levantado, documentado e com certeza de agregar valor. Os custos citados são recurso, tempo e retrabalho quando a feature é usada de outro jeito. O critério é mais operacional que o da seção "Quando Aplicar", voltado a abstrações. Ver [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]].
 
+## Desempate Pela Facilidade de Mudança
+
+[[wiki/concepts/ciclo-basico-da-agilidade]] traz uma prática de [[wiki/entities/dave-thomas]]: entre opções de valor parecido, escolher a que facilita mudanças futuras. Como só vale no empate, não manda construir flexibilidade antecipada, e convive com YAGNI (leitura da wiki).
+
 ## Key Sources
 
 
@@ -98,3 +102,4 @@ Aplicação a dados: [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — ordem de prioridade explícita YAGNI → SOLID → DRY; escalar sem necessidade real como sinal de mau engenheiro
 - [[wiki/sources/c3-martin-fowler]] — linha do tempo do projeto ([[wiki/entities/c3-project|C3]]) onde a Extreme Programming, metodologia que originou o YAGNI, foi consolidada em 1996
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — requisito documentado como critério; custo de feature por suposição
+- [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — desempate pela facilidade de mudança, compatível com YAGNI
