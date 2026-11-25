@@ -4,7 +4,7 @@ title: "Mapeamento de requisitos de vagas"
 aliases: ["mapear requisitos", "gap analysis de currículo", "lacunas do currículo"]
 date_created: 2026-11-16
 date_updated: 2026-11-25
-source_count: 3
+source_count: 4
 tags: [carreira, busca-de-vagas, curriculo, plano-de-estudo]
 skill: tech-mentor-leadership
 status: draft
@@ -44,8 +44,13 @@ Limites: a contagem não separa requisito obrigatório de "bônus" (o Kotlin da 
 
 A [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga|aula 04 do módulo Monetização e Freelancer]] lista a base de um currículo de front júnior: HTML e CSS, JavaScript e lógica, um framework (React, Vue ou Angular), noções de banco de dados e soft skills; e as duas vertentes que a vaga cobra, "front do front" e "back do front".
 
+## Ver também: o board de candidaturas
+
+A aula irmã [[wiki/sources/acompanhando-as-applications-galego]] usa o mesmo tipo de template no Notion para acompanhar cada aplicação do núcleo de 20 a 30 empresas ([[wiki/concepts/acompanhamento-de-candidaturas]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-conseguir-a-primeira-vaga]]: base do currículo de front júnior
 - [[wiki/sources/introducao-mapeando-vagas]]
 - [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]]: método da tabela (categoria, prioridade, contagem, proficiência, notas) com vagas de Nubank, Brex e Itaú
+- [[wiki/sources/acompanhando-as-applications-galego]] — aula irmã sobre o board de candidaturas

@@ -16333,3 +16333,15 @@ O usuário confirmou que a aula 04 ([[wiki/sources/frontpush-otimizacao-de-image
 **Tocadas (13 existentes):** networking-de-carreira, aprender-ensinando, escrever-para-aprender, branding-pessoal, build-in-public, comunidade-tecnica, contribuir-open-source, big-tech (concepts); augusto-galego, linkedin, twitter, leetcode, nodejs (entities). Também index.md e log.md.
 
 **Notas:** (1) Autoria inferida pela pasta "galego" e pelo relato (CTO, começou a criar conteúdo em 2024 com LeetCode, sênior na Europa, já trabalhou para empresas dos EUA e da Austrália, como na entidade); o nome não é dito. "A gente já falou sobre isso" sugere aula de curso. (2) A wiki não tinha página para criação de conteúdo como ferramenta de carreira; criada como stub. (3) **Tensão** com [[wiki/concepts/branding-pessoal]] (FrontPUSH trata marca como parte do trabalho de freelancer); registrada na source e nas duas páginas como diferença de contexto, não contradição. (4) "Link no post reduz alcance" é prática do autor, sem dado; marcado com confiança média-baixa. (5) Netflix citada só de passagem: linkada na source, sem edição da entidade.
+
+## [2026-11-25] ingest | Acompanhando as applications (Galego, módulo Mapeando Vagas)
+
+**Fonte:** legenda SRT `transcricoes/galego/Acompanhando as Applications.pt.srt` (PT-BR, 92 blocos, cerca de 3:17), limpa com a skill **text-cleaner** em `raw/acompanhando-as-applications-galego.md`. Sem tradução; 1 título e 3 subtítulos `##`. Diff palavra a palavra sem pontuação nem caixa: 725 tokens no original e 725 na limpa; só substituições. Trocas de ASR: "emitida"→demitida (alta), "trelo"→Trello (alta). Nenhuma inserção entre colchetes. Mantidos literalmente: "baixar por ontem" (provavelmente "baixar o template"), "é se sua application for bem séria", "O ideal é você mandar entrar em contato", "mandar e-mail para a Recruiter".
+
+**Skill:** tech-mentor-leadership (já carregada nesta sessão; `⚠️` sem arquivo de referência específico para rastreio de candidaturas; nota `[external]` sobre política de feedback de rejeição, sem fetch).
+
+**Criado:** [[wiki/sources/acompanhando-as-applications-galego]].
+
+**Tocadas (9 existentes):** acompanhamento-de-candidaturas (stub → draft, tabela volume × seletiva, etapas do board, follow-up), cacar-a-empresa-nao-a-vaga, networking-de-carreira, busca-de-vagas-direto-no-ats, mapeamento-de-requisitos-de-vagas, otimizacao-ats-curriculo (concepts); augusto-galego, linkedin, stripe (entities); a source [[wiki/sources/introducao-mapeando-vagas]] (link para a aula prometida). Também index.md e log.md.
+
+**Notas:** (1) Autoria inferida pela pasta "galego" e por ser a aula do board anunciada na introdução do módulo; o nome não é dito. (2) Aula curta: menos de 10 páginas tocadas porque o conteúdo é estreito. (3) Tensão leve: o autor diz que aplicar em volume "já funcionou" e [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] recomenda aplicar amplamente, enquanto a aula e [[wiki/concepts/cacar-a-empresa-nao-a-vaga]] privilegiam o núcleo seletivo; registrado como open question na source. (4) "Duas semanas" e "duas ou três pessoas" são heurísticas sem base.

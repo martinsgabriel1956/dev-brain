@@ -57,3 +57,5 @@ Aula de abertura (~2:44) de um módulo de curso de carreira. Só apresenta o rot
 Legenda SRT em português, limpa com **text-cleaner** sem tradução. Autoria inferida pela pasta `transcricoes/galego/` e pelo catálogo de cursos de carreira já atribuído a Galego (roadmap de emprego, vagas na gringa); o nome não aparece na fala. Parece ser a primeira aula de um módulo; as demais não foram ingeridas.
 
 A aula de requisitos prometida aqui foi ingerida depois: [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]].
+
+A aula do board de candidaturas também foi ingerida: [[wiki/sources/acompanhando-as-applications-galego]].

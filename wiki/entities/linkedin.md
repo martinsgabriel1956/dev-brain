@@ -4,7 +4,7 @@ title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
 date_updated: 2026-11-25
-source_count: 12
+source_count: 13
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de 
 
 Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/augusto-galego]] recomenda publicar o artigo inteiro no LinkedIn em vez de só o link do Medium/Dev.to. Como há limite de caracteres e "postar links em redes sociais vai diminuir um pouco o seu alcance", ele põe os primeiros parágrafos no post e o link nos comentários. É prática pessoal, sem dado; o algoritmo não documenta a regra ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
 
+## Etapa do board de candidaturas
+
+No board de [[wiki/sources/acompanhando-as-applications-galego]], "LinkedIn" é a primeira coluna: aplicar pela plataforma e criar conexões com recruiters e engineering managers da empresa ([[wiki/concepts/acompanhamento-de-candidaturas]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — atraso, volume, fantasmas; uso em paralelo
@@ -59,3 +63,4 @@ Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/a
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: FrontPUSH, Monetização e Freelancer aula 05: link de contato no portfólio; "para mais, visite o LinkedIn" no CV
 - [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — distribuição de conteúdo: post na íntegra, link nos comentários
+- [[wiki/sources/acompanhando-as-applications-galego]] — LinkedIn como etapa de aplicação e contato

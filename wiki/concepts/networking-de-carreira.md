@@ -4,7 +4,7 @@ title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
 date_updated: 2026-11-25
-source_count: 12
+source_count: 13
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -50,6 +50,10 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/augusto-galego]] diz que o primeiro público de um conteúdo técnico é gente com o mesmo problema e a mesma stack, o que vira um network "muito natural". O conteúdo de LeetCode o conectou a candidatos de FANG e, antes de qualquer receita, a donos de empresa que contratavam e a diretores de engenharia. Ressalva dele: criar conteúdo não é necessário para a carreira ([[wiki/concepts/criacao-de-conteudo-tecnico]]).
 
+## Contatar duas ou três pessoas por empresa
+
+Em [[wiki/sources/acompanhando-as-applications-galego]], numa aplicação séria o candidato contata recruiter, engineering manager e, em empresa menor, o CTO, pelo LinkedIn ou por e-mail, "pelo menos duas pessoas na empresa", talvez três, porque "isso demonstra um interesse real" ([[wiki/concepts/acompanhamento-de-candidaturas]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — recruiter + mensagem após achar vaga no ATS
@@ -71,6 +75,7 @@ Em [[wiki/sources/networking-com-criacao-de-conteudo-galego]], [[wiki/entities/a
 - [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — referral acelera mas não garante em Big Tech
 - [[wiki/sources/networking-com-criacao-de-conteudo-galego]] — conteúdo técnico como fonte de network, mesmo sem audiência
+- [[wiki/sources/acompanhando-as-applications-galego]] — 2 ou 3 contatos por empresa para mostrar interesse real
 
 ## Referral em Big Tech (2026-11-16)
 

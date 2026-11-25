@@ -4,7 +4,7 @@ title: "Otimização de Currículo para ATS"
 aliases: ["ATS", "applicant tracking system", "robô que lê currículo", "keyword matching currículo"]
 date_created: 2026-07-15
 date_updated: 2026-11-25
-source_count: 7
+source_count: 8
 tags: [carreira, contratação, ats, currículo]
 skill: tech-mentor-leadership
 status: draft
@@ -59,6 +59,10 @@ Na [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio|a
 
 A contagem de [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] diz o que "deixar mais em evidência no seu currículo": os itens que mais aparecem nas vagas-alvo ([[wiki/concepts/mapeamento-de-requisitos-de-vagas]]).
 
+## Currículos por empresa no board
+
+Em [[wiki/sources/acompanhando-as-applications-galego]], a aplicação seletiva é "customizada, bem desenhada pra aquela empresa", e o board no Notion guarda "alguns currículos diferentes" ao lado de cada candidatura ([[wiki/concepts/acompanhamento-de-candidaturas]]).
+
 ## Key sources
 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]]
@@ -68,3 +72,4 @@ A contagem de [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] diz o
 - [[wiki/sources/introducao-mapeando-vagas]] — mapear requisitos das vagas
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-construir-um-portfolio]]: CV preto no branco
 - [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — contagem de requisitos define o que destacar
+- [[wiki/sources/acompanhando-as-applications-galego]] — currículo customizado por empresa, guardado no board
