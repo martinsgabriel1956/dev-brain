@@ -3,8 +3,8 @@ type: concept
 title: "Poluição do escopo global (JavaScript)"
 aliases: ["poluição do escopo global", "global namespace pollution", "variável global implícita", "implicit global", "global leak", "globais acidentais"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [javascript, escopo, escopo-global, var, modo-estrito, memoria, boas-praticas]
 skill: lang-dynamic
 status: stub
@@ -43,3 +43,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o escopo glo
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global como erro de design; variável sem var; conflito de nomes e memória
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: retornar objeto da função em vez de criá-lo no global (germe do module pattern)

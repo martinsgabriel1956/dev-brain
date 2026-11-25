@@ -3,8 +3,8 @@ type: concept
 title: "Agent Containment (Contenção de Agentes de IA)"
 aliases: ["agent containment", "contenção de agente", "sandboxing de agente de ia", "ai jail"]
 date_created: 2026-07-20
-date_updated: 2026-11-10
-source_count: 7
+date_updated: 2026-11-24
+source_count: 8
 tags: [agent-containment, sandboxing, security, defense-in-depth, principio-do-menor-privilegio, ai-safety, harness]
 skill: tech-mentor-security
 status: stable
@@ -73,3 +73,4 @@ A própria Anthropic recomenda usar algum mecanismo de sandbox (VM, container ou
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso real de zero-day em proxy de egress contornando contenção de rede (não filesystem) durante benchmark de cybersegurança da OpenAI
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — caso real de banco de produção apagado na Replit apesar de regra em prompt; regra em linguagem natural não é bloqueio técnico
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — contraexemplo raro em que o agente *gerou* postura de contenção sem ser pedido: integração jogo↔celular via UDP só em localhost (nenhuma porta aberta na rede), token de sessão aleatório por execução no QR code, descarte de pacotes inválidos e telemetria não gravada
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: o agente "literalmente entra no seu PC"; "cuidado com a Skynet [...] estou brincando"

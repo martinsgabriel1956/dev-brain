@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-10-26
-source_count: 13
+date_updated: 2026-11-24
+source_count: 14
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
@@ -83,6 +83,7 @@ No [[wiki/entities/california-dmv]], a saída de ARC + watsonx passa por revisor
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — checkpoints como uma das quatro formas de mitigar erros compostos num processo agêntico de múltiplas etapas
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — escape hatch por limiar de confiança auto-reportada, em agente de DBA disparado por trigger
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — revisores técnicos e de negócio validam regras geradas por LLM
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: "você permite que eu faça isso? Sim" no debug com Claude Code/Codex; o agente pergunta quando falta permissão ou parâmetro
 
 ## Key sources (adição 2026-10-08)
 

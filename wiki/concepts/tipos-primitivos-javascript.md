@@ -3,8 +3,8 @@ type: concept
 title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
-date_updated: 2026-11-24
-source_count: 18
+date_updated: 2026-11-25
+source_count: 19
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -137,3 +137,4 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], cada primitivo é classific
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: primitivos como literais
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: primitivos × objetos; cinco primitivos da era ES5
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: primitivos por truthy/falsy
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: primitivos como os retornos usados até ali; faltam symbol e bigint

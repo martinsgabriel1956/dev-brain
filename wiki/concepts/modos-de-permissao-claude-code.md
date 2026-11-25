@@ -3,8 +3,8 @@ type: concept
 title: "Modos de Permissão do Claude Code"
 aliases: ["permission modes", "acceptEdits", "dontAsk", "bypassPermissions", "auto mode claude code"]
 date_created: 2026-11-10
-date_updated: 2026-11-10
-source_count: 1
+date_updated: 2026-11-24
+source_count: 2
 tags: [claude-code, harness, permissoes, agentes-ia, seguranca]
 skill: tech-mentor-ai
 status: draft
@@ -44,3 +44,4 @@ Nenhum modo elimina [[wiki/concepts/prompt-injection]]: conteúdo hostil em arqu
 ## Key Sources
 
 - [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]]
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: pedidos de permissão a cada ação no debug guiado pelo autor

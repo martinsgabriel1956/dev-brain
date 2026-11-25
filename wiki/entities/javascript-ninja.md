@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 14
+date_updated: 2026-11-25
+source_count: 16
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -71,3 +71,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o terceiro v
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: semana 4, vídeo 01: truthy e falsy; "quarta aula"
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: semana 4, vídeo 02: condicional ternário
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: semana 4, vídeo 03: escopo de variáveis e funções
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: semana 5, vídeo 01: retorno de funções com arrays e objetos; "quinta aula"
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: semana 5, vídeo 02: parâmetros de funções como arrays e objetos

@@ -3,8 +3,8 @@ type: concept
 title: "GPU"
 aliases: ["unidade de processamento gráfico", "graphics processing unit", "processador massivamente paralelo", "programação massivamente paralela"]
 date_created: 2026-11-03
-date_updated: 2026-11-19
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [cs-fundamentals, hardware, gpu, paralelismo, throughput, latencia, simt]
 skill: cs-fundamentals
 status: draft
@@ -52,8 +52,13 @@ Em [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]], a GPU é quem 
 
 Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]], a GPU aparece como gargalo do celular ("uma GPU um pouquinho mais lenta") e na composição de camadas. Cada camada promovida (`will-change`, `transform` animado) ocupa memória de GPU; camadas demais derrubam quadros.
 
+## GPU como habilitador do deep learning (FrontPUSH, módulo de IA)
+
+Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], a GPU entra como um dos três recursos que destravaram o [[wiki/concepts/deep-learning]], ao lado de Big Data e de arquiteturas. A fala diz que hoje "está tudo na faixa dos gigahertz". O clock de GPU, porém, fica em torno de 1 a 2 GHz; o salto veio do paralelismo e da largura de banda de memória (ver "Latência e throughput").
+
 ## Key sources
 
 - [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]]
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: a GPU renderiza o WebGL; fans ligando como sinal de custo
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: GPU lenta e memória de camadas
+- [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: GPU como recurso do deep learning; paralelismo, não gigahertz

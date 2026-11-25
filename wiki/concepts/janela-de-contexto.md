@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-11-10
-source_count: 11
+date_updated: 2026-11-24
+source_count: 12
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -72,6 +72,10 @@ Janela de 128k tokens não equivale a 128k palavras: a razão tokens/palavra var
 
 [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] recomenda ficar em no máximo 30% de uma janela de 200.000 tokens e abrir contexto novo a cada fase. Na demonstração, os planos terminam em 31%, 34% e 37%, e a conversa de quebra em 44%. É heurística sem medição, mais conservadora que os ~40% de [[wiki/concepts/dumb-zone]].
 
+## FrontPUSH: contexto ≠ parâmetros
+
+[[wiki/sources/frontpush-ia-o-que-sao-as-llms]] define contexto como "toda a informação que a IA consegue 'enxergar' naquele momento" (pilar 2) e explica a perda em chats longos: o contexto "vai aumentando" e é "enxugado". A fala diz que um contexto grande "estoura a quantidade de parâmetros". O limite, porém, é a janela, medida em tokens; os parâmetros são os pesos fixos do modelo, e o próprio slide separa os dois pilares.
+
 ## Key Sources
 
 - [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — meta de 30% e percentuais observados na demonstração
@@ -84,6 +88,7 @@ Janela de 128k tokens não equivale a 128k palavras: a razão tokens/palavra var
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — outputs de subagentes acumulados na janela do principal escalam com o número de subagentes, não com o volume de trabalho; benchmark mostrando janela final de 26% (3 subagentes) vs. 74% (sem subagentes)
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — argumento para top-K enxuto: desempenho cai com contexto muito grande e chunks irrelevantes poluem a resposta ([[wiki/concepts/top-k-retrieval]])
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — 128k tokens ≠ 128k palavras; razão varia por idioma
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: pilar 2; confusão contexto × parâmetros
 
 ## Key sources (adição 2026-10-07)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
-date_updated: 2026-10-14
-source_count: 5
+date_updated: 2026-11-24
+source_count: 7
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -72,6 +72,10 @@ O ID de um token (posição no vocabulário) não carrega significado — só o 
 
 Visão introdutória: o modelo nunca vê palavras, só IDs numéricos sem significado próprio; subpalavras permitem representar milhões de palavras reutilizando tokens; português ≈ 1,3–1,7 tokens/palavra (aproximação); cobrança e janela são medidas em tokens. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## FrontPUSH: token não é palavra-chave
+
+Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], o token é "a menor unidade de informação que o modelo consegue processar", o que está certo. A fala, porém, compara a tokenização a extrair "palavras-chave" e montar um "mapa mental". Tokens são pedaços de subpalavra, incluindo conjunções e pontuação; o "mapa mental" descreve a [[wiki/concepts/context-compaction|compactação de contexto]], não a tokenização.
+
 ## Key Sources
 
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
@@ -79,3 +83,5 @@ Visão introdutória: o modelo nunca vê palavras, só IDs numéricos sem signif
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o vs. Claude Opus 5
 - [[wiki/sources/self-attention-mecanismo-transformers]] — o que acontece depois da tokenização: ID de token → embedding vector → contexto via self-attention
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — tokens como ponte texto→número, subpalavras, 1,3–1,7 tokens/palavra em português
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: pilar 1; analogia do mapa mental corrigida
+- [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: tokens "para aglutinar para poder consumir o menor recurso possível" (compressão do BPE, sim; escolha de tokens por pedido, não)

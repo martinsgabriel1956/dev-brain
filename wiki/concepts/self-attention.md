@@ -3,8 +3,8 @@ type: concept
 title: "Self-Attention"
 aliases: ["mecanismo de atenção", "attention mechanism", "scaled dot-product attention"]
 date_created: 2026-09-18
-date_updated: 2026-10-14
-source_count: 3
+date_updated: 2026-11-24
+source_count: 4
 tags: [self-attention, transformers, llm-fundamentals, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -73,3 +73,4 @@ Explicação intuitiva: a atenção responde "quais partes da frase importam par
 - [[wiki/sources/self-attention-mecanismo-transformers]] — explicação didática completa do mecanismo (tokens → embeddings → Q/K → attention score → output), com a ressalva de que a fonte não cobre V nem detalha o cálculo matemático exato
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — Memory Caching como alternativa à atenção total
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — intuição de atenção com exemplos de desambiguação (banco, animal/rua)
+- [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: pilar 3, "o mecanismo que determina quais partes do contexto são mais importantes"; "mais ou menos é a rede neural, colocando um peso matemático"

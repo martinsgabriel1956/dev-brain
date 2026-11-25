@@ -3,8 +3,8 @@ type: concept
 title: "Escopo em JavaScript (global, de função e de bloco)"
 aliases: ["escopo", "scope", "escopo de função", "escopo de bloco", "escopo global", "escopo léxico", "lexical scope", "function scope", "block scope"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 2
+date_updated: 2026-11-25
+source_count: 4
 tags: [javascript, escopo, funcoes, var, let, const, closure]
 skill: lang-dynamic
 status: stub
@@ -40,3 +40,5 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], a aula volta
 
 - [[wiki/sources/javascript-ninja-funcoes]]: var dentro da função não existe fora; o de fora é acessível de dentro
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global × local, global implícita, parâmetros locais
+- [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: criar o escopo na função e expor o retorno, sem objeto global
+- [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro com nome diferente da variável de fora
