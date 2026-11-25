@@ -4,7 +4,7 @@ title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
 date_updated: 2026-11-25
-source_count: 8
+source_count: 9
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -52,6 +52,10 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 
 [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]] traz o texto do cap. 3: [[wiki/concepts/programacao-tatica-vs-estrategica]], o [[wiki/concepts/tornado-tatico]], a régua de 10 a 20% e o payback de 6 a 18 meses, que ele marca como opinião sem dados. Corrige um registro antigo da wiki: ele não cunha "dívida técnica", só usa o termo.
 
+## Capítulo 4 em primeira mão (2026-11-25)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] traz o texto do cap. 4. Ousterhout define módulo como qualquer unidade com interface e implementação, inclusive um método, e divide a interface em parte formal e informal ([[wiki/concepts/interface-formal-e-informal]]). Chama de falsa abstração a que omite um detalhe importante ([[wiki/concepts/abstracao]]), mede [[wiki/concepts/modulo-profundo|profundidade]] como custo (interface) contra benefício (funcionalidade) e cunha "classitis" para o excesso de classes pequenas ([[wiki/concepts/classite]]). Os exemplos são a E/S do Unix e o coletor de lixo (profundos), a lista encadeada e um método de uma linha (rasos) e o I/O do Java (classite).
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -62,3 +66,4 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — segunda tradução do cap. 1 e da 1.1, com os apartes do autor em primeira pessoa
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — texto do cap. 2: definição, fórmula, sintomas, causas e complexidade incremental
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3, tática vs. estratégica, tornado tático, 10–20%, Facebook vs. Google/VMware
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: texto do cap. 4, interface formal e informal, falsa abstração, profundidade como custo-benefício, classite

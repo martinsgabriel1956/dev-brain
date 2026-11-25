@@ -3,8 +3,8 @@ type: concept
 title: "Comprimento de Função"
 aliases: ["function length", "tamanho de função", "função curta"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-11-25
+source_count: 2
 tags: [clean-code, funcoes, complexidade, aninhamento, linux-kernel]
 skill: tech-mentor-leadership
 status: stub
@@ -32,6 +32,11 @@ Um `switch/case` longo com muitos casos diretos e simples pode ser extenso — p
 - [[indentacao-como-aviso]] — aninhamento como proxy de complexidade
 - [[comentarios-o-que-nao-o-como]] — funções complexas geram necessidade de comentários de "como"
 
+## Contra a regra de N linhas (Ousterhout)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.6) ataca o conselho "qualquer método com mais de N linhas deve ser dividido" (N pode ser 10). Para [[wiki/entities/john-ousterhout]], a regra gera muitos métodos rasos e aumenta a complexidade do sistema; o critério certo é a profundidade, não o tamanho ([[wiki/concepts/modulo-profundo]], [[wiki/concepts/classite]]). Esta página também recusa o limite fixo, mas por outro critério (aninhamento). As duas convergem em "função simples pode ser longa".
+
 ## Key Sources
 
 - [[wiki/sources/estilo-de-codigo-convencoes]]
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — crítica à regra de N linhas por método (4.6)

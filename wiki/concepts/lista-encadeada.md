@@ -3,8 +3,8 @@ type: concept
 title: "Lista Encadeada"
 aliases: ["linked list", "lista ligada", "linked-list"]
 date_created: 2026-06-26
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-11-25
+source_count: 3
 tags: [cs-fundamentals, estruturas-de-dados, lista-encadeada, ponteiros]
 skill: cs-fundamentals
 status: draft
@@ -63,7 +63,12 @@ Além disso, usa mais memória por elemento (valor + ponteiro).
 - [[arvore]] — árvores são extensões de listas onde cada nó tem múltiplos "próximos"
 - [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] — o custo O(1) de inserção/remoção com ponteiro depende do modelo de memória: em C/C++ o nó é alocado manualmente na heap (`new`/`malloc`), em Go e C# o GC decide e libera
 
+## Lista encadeada como classe rasa (Ousterhout)
+
+Do ponto de vista de design, [[wiki/entities/john-ousterhout]] usa a lista encadeada como exemplo de **classe rasa** ([[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]], 4.5). Inserir ou excluir leva poucas linhas, então a classe esconde pouco: a complexidade da interface é quase igual à da implementação. Ele não diz que a estrutura é ruim. Classes assim "às vezes são inevitáveis e ainda podem ser úteis", só não ajudam muito contra a complexidade. É outro ângulo do mesmo objeto que esta página analisa pela complexidade das operações. Ver [[wiki/concepts/modulo-profundo]].
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/ponteiros-cpp-go-csharp]] — ponteiro de nó como o mecanismo concreto por trás do O(1) de redirecionamento
+- [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — a classe de lista encadeada como exemplo de módulo raso (4.5)
