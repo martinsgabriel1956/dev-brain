@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-26
-source_count: 27
+source_count: 28
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -78,7 +78,8 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 ## Semana 9
 
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: vídeo 01, depois da "correção" do desafio 8 (que não está na wiki). A semana 9 é inferida pela sequência. Escopo de funções: função dentro de função, a interna invisível fora e lendo as variáveis da externa, e `function` depois do `return`. Anuncia hoisting.
-- [[wiki/sources/javascript-ninja-hoisting]]: vídeo 02, hoisting: a declaração sobe inteira, a `var` sobe como `undefined`; dica de declarar no topo e retornar na última linha. Não anuncia o vídeo seguinte.
+- [[wiki/sources/javascript-ninja-hoisting]]: vídeo 02, hoisting: a declaração sobe inteira, a `var` sobe como `undefined`; dica de declarar no topo e retornar na última linha. O vídeo seguinte é o da IIFE.
+- [[wiki/sources/javascript-ninja-iife]]: vídeo 03, IIFE: declaração × expressão, parênteses, escopo local. A partir daqui os desafios vêm dentro de uma IIFE. Não anuncia o vídeo seguinte.
 
 ## Key sources
 
@@ -110,3 +111,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: semana 8, vídeo 04: objeto e função como parâmetro; curso com umas 30 aulas
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: semana 9, vídeo 01: escopo de funções; anuncia hoisting
 - [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting
+- [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE; desafios passam a vir dentro de IIFE

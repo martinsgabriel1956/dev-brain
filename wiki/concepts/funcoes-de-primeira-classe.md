@@ -3,8 +3,8 @@ type: concept
 title: "Funções de primeira classe"
 aliases: ["first-class functions", "first-class function", "funções como valores", "função como objeto", "objetos de primeira classe"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 8
+date_updated: 2026-11-26
+source_count: 9
 tags: [javascript, funcoes, programacao-funcional, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -51,6 +51,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o terceiro u
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o último dos usos da lista: passar função como argumento, "como um parâmetro normal [que] poderia ser qualquer tipo de valor". Com isso o curso cobre os quatro (atribuir, guardar em estrutura, retornar e passar). Quem recebe função é [[wiki/concepts/funcao-de-ordem-superior|função de ordem superior]].
 
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], a anônima atribuída a `sum2` se invoca pelo nome da variável, porque funções são "objetos de primeira classe"; o mesmo vale para a anônima como valor de propriedade de objeto ([[wiki/concepts/iife]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-tipos-de-dados-e-objetos]]: JavaScript Ninja, semana 3, vídeo 01: função é objeto; atribuída a variável, anônima
@@ -61,3 +65,4 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o último do
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: cidadãos de primeira classe; paralelo objeto × função
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: função que retorna função (adder)
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função passada como argumento
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: anônima invocada pela variável ou pela propriedade

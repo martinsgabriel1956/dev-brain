@@ -4,7 +4,7 @@ title: "Closure (JavaScript)"
 aliases: ["closure", "closures", "clausura", "fechamento", "função que lembra o escopo"]
 date_created: 2026-11-25
 date_updated: 2026-11-26
-source_count: 2
+source_count: 3
 tags: [javascript, funcoes, closure, escopo, programacao-funcional]
 skill: lang-dynamic
 status: stub
@@ -40,7 +40,12 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` ac
 
 Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], `sum` lê `number1` e `number2` de `myFunction`, e a aula diz que ela "está fazendo o papel de uma coisa [...] que a gente vai ver mais para frente", "uma função que ela consegue acessar parâmetros externos a ela". A legenda engole o nome; provavelmente closure (média). A aula também diz que `sum` "só existe enquanto myFunction existia", o que só vale porque o exemplo devolve `sum()`, não `sum`; o `adder` da semana 8 já mostrava a função interna sobrevivendo à externa.
 
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], a IIFE isola variáveis num escopo local. `[external]` Quando ela devolve funções que usam essas variáveis, elas são closures: é o *module pattern* da era ES5 citado acima ([[wiki/concepts/iife]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: adder/add2, o 2 lembrado pela função interna
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função interna lê as variáveis da externa; nome adiado
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE, a base do module pattern

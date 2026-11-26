@@ -3,8 +3,8 @@ type: concept
 title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 23
+date_updated: 2026-11-26
+source_count: 24
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -121,6 +121,10 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], o objet
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o objeto `car` com `color: 'yellow'` vai como argumento para uma função que devolve `car.color`. Erro ao vivo: "coloquei um ponto e vírgula dentro do objeto [...] dentro do objeto não pode ter". `[external]` `{ color: 'yellow'; }` dá `SyntaxError: Unexpected token ';'` (verificado): propriedades se separam por vírgula.
 
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], uma propriedade cujo valor é uma função anônima é uma das formas de invocar uma função sem nome (`objeto.prop()` dá 3). `[external]` Desde o ES2015, essa função recebe `name` igual ao da propriedade (verificado).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -146,3 +150,4 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o objeto `ca
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função como objeto; name embutido
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: objeto literal; função que retorna objeto
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: objeto como argumento; ; dentro do literal é SyntaxError
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: função anônima como propriedade, invocada pelo objeto

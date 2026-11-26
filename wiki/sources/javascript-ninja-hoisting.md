@@ -106,7 +106,7 @@ Segundo vídeo da semana 9 do [[wiki/entities/javascript-ninja|JavaScript Ninja]
 - **"Onde DJs"**: talvez `node index.js`; literal.
 - **"Ele declarou como diferente"** e **"como definidas"**: talvez "como undefined"; literais.
 - **"Sobre Tim"** no fecho: talvez "sobre hoisting"; literal.
-- O vídeo seguinte não é anunciado.
+- O vídeo seguinte não é anunciado. Na wiki, é [[wiki/sources/javascript-ninja-iife]] (semana 9, vídeo 03).
 
 ## Raw quotes
 
