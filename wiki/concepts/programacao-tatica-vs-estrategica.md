@@ -3,8 +3,8 @@ type: concept
 title: "Programação Tática vs. Estratégica"
 aliases: ["programação tática", "programação estratégica", "tactical programming", "strategic programming", "tactical vs strategic programming", "mentalidade de investimento"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 2
+date_updated: 2026-11-26
+source_count: 3
 tags: [design, ousterhout, tech-debt, programacao-tatica, programacao-estrategica, cultura-de-engenharia]
 skill: tech-mentor-backend
 status: draft
@@ -49,7 +49,12 @@ Exige **mentalidade de investimento**, em doses pequenas e contínuas (não um p
 - [[wiki/concepts/folga-de-capacidade-slack]]: a folga de ~20% chega a uma proporção parecida por outro caminho (capacidade reservada no time, não investimento embutido em cada tarefa).
 - [[wiki/concepts/mvp]] e [[wiki/concepts/lean-startup]]: tensão. O MVP corta escopo; a tática corta cuidado. Um MVP estratégico é possível (leitura da wiki).
 
+## Uso geral como investimento (cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] compara a abordagem de uso geral com a mentalidade de investimento do cap. 3: um pouco mais de tempo agora para economizar depois (6.1). O autor acrescenta que, no caso da classe de texto, a versão geral nem custa mais: dá menos trabalho e tem menos código. Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3, primeira mão
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: resumo do cap. 3 e as retomadas nos caps. 16 e 19
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.1: uso geral comparado à mentalidade de investimento

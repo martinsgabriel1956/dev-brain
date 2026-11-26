@@ -3,8 +3,8 @@ type: entity
 title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
-date_updated: 2026-11-25
-source_count: 10
+date_updated: 2026-11-26
+source_count: 11
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -60,6 +60,10 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 
 [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] traz o texto do cap. 5: [[wiki/concepts/ocultamento-de-informacao]] a partir do artigo de [[wiki/entities/david-parnas]] (1972), vazamento pela interface e pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]] e os exemplos do servidor HTTP dos alunos. Corrige dois registros da wiki: decomposição temporal é "uma causa comum" de vazamento, não "a mais comum", e o livro recomenda fundir as classes de leitura e análise, sem dizer que a equipe fundiu.
 
+## Capítulo 6 em primeira mão (2026-11-26)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] traz o texto do cap. 6. Ousterhout conta que começou preferindo o uso específico e mudou de ideia revisando projetos de alunos; hoje acha que a superespecialização "talvez seja a maior causa isolada de complexidade". Propõe módulos um tanto de uso geral ([[wiki/concepts/modulo-de-proposito-geral]]), com a classe de texto do editor e a classe `History` de desfazer como exemplos, e [[wiki/concepts/eliminar-casos-especiais]] com a seleção vazia. Corrige um registro da wiki: a classe geral precisa de `findNext` para busca e substituição, não serve "sem alteração".
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -72,3 +76,4 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: texto do cap. 3, tática vs. estratégica, tornado tático, 10–20%, Facebook vs. Google/VMware
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: texto do cap. 4, interface formal e informal, falsa abstração, profundidade como custo-benefício, classite
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: texto do cap. 5, ocultamento e vazamento, decomposição temporal, exemplos HTTP, valores padrão
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: texto do cap. 6, um tanto de uso geral, editor, `History`, casos especiais

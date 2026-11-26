@@ -3,8 +3,8 @@ type: concept
 title: "Interface Segregation Principle (ISP)"
 aliases: ["ISP", "interface segregation", "segregação de interface"]
 date_created: 2026-08-06
-date_updated: 2026-09-08
-source_count: 3
+date_updated: 2026-11-26
+source_count: 4
 tags: [solid, oop, architecture]
 skill: tech-mentor-backend
 status: stub
@@ -34,8 +34,13 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "clientes não 
 
 [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] dá um exemplo de ISP aplicado a um cliente HTTP: é comum criar uma única interface `HttpClient` com `get`, `post`, `put`, `delete`, já que é tudo que um cliente HTTP pode fazer. Mas se `RemoteAuthentication` só precisa de `post`, essa interface gorda obriga (1) qualquer implementação concreta a implementar os quatro métodos mesmo quando só um é usado, e (2) qualquer implementação de teste (fake/stub) a fazer o mesmo, mesmo quando o teste só precisa validar o `post`. A correção é segregar por operação — `HttpPostClient` só com `post` — e cada caso de uso depende só do subconjunto que de fato usa. Citado na fonte como exemplo a ser aprofundado quando o cliente Axios for implementado em código, mais adiante no mesmo curso.
 
+## Nuance: poucos métodos gerais (Ousterhout, cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] recomenda o caminho que parece inverso: trocar vários métodos específicos (`backspace`, `delete`, `deleteSelection`) por poucos gerais (`insert`, `delete` de intervalo). Leitura da wiki: não é o mesmo eixo. O ISP trata de clientes forçados a depender de métodos que não usam; o cap. 6 trata de métodos amarrados a um único uso. A classe de texto especializada viola os dois, porque a UI depende de uma coleção de métodos rasos. Nenhuma fonte da wiki compara os dois princípios. Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — `HttpClient` (get/post/put/delete) segregado em `HttpPostClient`, evitando implementações/mocks de métodos não usados
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — poucos métodos gerais em vez de muitos específicos; eixo diferente do ISP

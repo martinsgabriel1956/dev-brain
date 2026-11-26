@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-25
-source_count: 11
+date_updated: 2026-11-26
+source_count: 12
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -62,6 +62,10 @@ Em design de software, [[wiki/entities/john-ousterhout]] define carga cognitiva 
 
 O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface mais simples, que "diminui a carga cognitiva dos desenvolvedores" que usam o módulo: quem usa uma árvore B não pensa no *fanout* nem no balanceamento. O red flag da superexposição é o oposto: a API de um recurso comum obriga a aprender recursos raros ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]).
 
+## Muitos métodos rasos contra poucos gerais (Ousterhout, cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] mostra a carga cognitiva de uma API especializada: a classe de texto do editor ganhou um método por operação da UI, muitos chamados num lugar só, e quem trabalhava na UI tinha de aprender todos. A versão geral tem poucos métodos simples, reaproveitados para vários fins (6.2 e 6.4). Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -75,3 +79,4 @@ O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface m
 - [[wiki/sources/frontpush-dashboards-principios-parte-1]]: FrontPUSH, dashboards aula 04: várias ações confundem; isolar dá foco
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — carga cognitiva como sintoma de complexidade de código (Ousterhout, cap. 2.2)
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultamento reduz a carga cognitiva; superexposição a aumenta (cap. 5)
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — muitos métodos especializados aumentam a carga; poucos gerais a reduzem (cap. 6)

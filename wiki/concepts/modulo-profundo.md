@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-11-25
-source_count: 9
+date_updated: 2026-11-26
+source_count: 10
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -49,7 +49,7 @@ Existe uma skill de refatoração citada na fonte ("improve codebase architectur
 
 ## Generalidade moderada torna módulos mais profundos
 
-[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 6) mostra que módulos de propósito **ligeiramente** geral ("somewhat general-purpose" — funcionalidade reflete a necessidade atual, mas a interface não) tendem a ser mais profundos que módulos especializados, mesmo quando o único uso real é especializado. Exemplo canônico: uma classe de texto de editor com métodos `backspace(cursor)` e `deleteSelection(selection)` (espelhando a UI) vaza conhecimento da interface entre UI e classe de texto; a versão com apenas `insert(position, text)` e `delete(start, end)` elimina o vazamento, tem menos código no total, e ainda serve sem alteração para um caso de uso totalmente diferente (busca-e-substituição em arquivo). A regra prática: empurrar especialização para cima (código de UI) ou para baixo (device drivers), nunca deixá-la contaminar o módulo genérico central. Ver também [[wiki/concepts/ocultamento-de-informacao]] — generalidade e ocultamento de informação se reforçam mutuamente.
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 6) mostra que módulos de propósito **ligeiramente** geral ("somewhat general-purpose" — funcionalidade reflete a necessidade atual, mas a interface não) tendem a ser mais profundos que módulos especializados, mesmo quando o único uso real é especializado. Exemplo canônico: uma classe de texto de editor com métodos `backspace(cursor)` e `deleteSelection(selection)` (espelhando a UI) vaza conhecimento da interface entre UI e classe de texto; a versão com apenas `insert(position, text)` e `delete(start, end)` elimina o vazamento, tem menos código no total, e serve para um caso de uso totalmente diferente (busca e substituição em arquivo) com um método a mais, `findNext` (correção do cap. 6 em primeira mão: o livro não diz "sem alteração"). A regra prática: empurrar especialização para cima (código de UI) ou para baixo (device drivers), nunca deixá-la contaminar o módulo genérico central. Ver também [[wiki/concepts/ocultamento-de-informacao]] — generalidade e ocultamento de informação se reforçam mutuamente.
 
 ## Deep module como exemplo de interface deep vs. shallow no mundo real
 
@@ -86,6 +86,10 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 
 [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] liga as duas ideias: um módulo que esconde muito oferece mais funcionalidade com interface menor, e um que esconde pouco é raso de qualquer jeito, por ter pouca funcionalidade ou interface complexa (5.10). Dois casos novos de raso: duas classes para ler e analisar uma requisição HTTP, fundidas numa classe "mais profunda do que as originais" (5.5); e `getParams()` devolvendo o `Map` interno, trocado por `getParameter(name)` (5.6). Regra que sai da 5.5: o ocultamento muitas vezes melhora com uma classe **um pouco maior**, que junta todo o código de uma capacidade ou sobe o nível da interface (um método para o processamento inteiro em vez de um por etapa). Ver [[wiki/concepts/ocultamento-de-informacao]] e [[wiki/concepts/decomposicao-temporal]].
 
+## Cap. 6: generalidade como caminho para a profundidade (2026-11-26)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] traz o texto do cap. 6. A seção "Generalidade moderada torna módulos mais profundos", acima, vinha do resumo do livro completo e estava quase toda certa. Um ponto muda: a classe geral não serve "sem alteração" para busca e substituição. Falta um método `findNext(Position, String)`, que um editor com busca provavelmente já teria (6.3). O capítulo acrescenta três coisas: as três perguntas para achar o equilíbrio (6.5), a classe `History` como segundo exemplo (6.7) e a seleção vazia como o mesmo princípio dentro do método ([[wiki/concepts/eliminar-casos-especiais]]). A heurística ganhou página própria: [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -97,3 +101,4 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — LOC não mede complexidade; fórmula explica o ganho da profundidade
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — texto do cap. 4: Figura 4.1 como custo-benefício, módulo inclui método, parte informal da interface, lista encadeada e `addNullValueForAttribute` como rasos, caso comum simples
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultar como técnica de profundidade; classes um pouco maiores; HTTP leitura+análise e `getParams` como rasos
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — texto do cap. 6: API geral mais profunda e com menos código; corrige "sem alteração" (falta `findNext`)

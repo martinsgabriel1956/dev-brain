@@ -3,7 +3,7 @@ type: source
 title: "A Philosophy of Software Design — Livro Completo"
 aliases: ["philosophy of software design completo", "ousterhout livro completo", "a philosophy of software design full book"]
 date_created: 2026-07-29
-date_updated: 2026-11-25
+date_updated: 2026-11-26
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/a-philosophy-of-software-design.md
 source_url: ""
 author: "John Ousterhout"
@@ -32,7 +32,7 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 **Confidence:** alta — capítulo fundacional, com múltiplos sub-exemplos (parâmetros HTTP, valores default em respostas HTTP).
 
 **Claim:** Módulos de propósito ligeiramente geral ("somewhat general-purpose") são mais profundos que módulos especializados — mesmo quando o único uso real é especializado, a versão geral tende a ter interface mais simples, menos código de implementação, e melhor ocultamento de informação.
-**Evidence:** Cap. 6. Exemplo do editor de texto: uma classe de texto com métodos `backspace(cursor)` e `deleteSelection(selection)` (especializados, espelhando a UI) resultou em vazamento de informação entre UI e classe de texto; a versão generalizada, com apenas `insert(position, text)` e `delete(start, end)`, eliminou o vazamento e ainda serviu, sem alteração, para um caso de uso totalmente diferente (find-and-replace em arquivo). Regra prática: empurrar especialização para cima (UI) ou para baixo (device drivers), nunca deixá-la contaminar o núcleo genérico.
+**Evidence:** Cap. 6. Exemplo do editor de texto: uma classe de texto com métodos `backspace(cursor)` e `deleteSelection(selection)` (especializados, espelhando a UI) resultou em vazamento de informação entre UI e classe de texto; a versão generalizada, com apenas `insert(position, text)` e `delete(start, end)`, eliminou o vazamento e ainda serviu, sem alteração, para um caso de uso totalmente diferente (find-and-replace em arquivo). *Nuance do texto do cap. 6 ([[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]): para busca e substituição falta um método `findNext`, que o editor provavelmente já teria; "sem alteração" é exagero do resumo.* Regra prática: empurrar especialização para cima (UI) ou para baixo (device drivers), nunca deixá-la contaminar o núcleo genérico.
 **Confidence:** alta — o autor descreve explicitamente que mudou de opinião sobre esse ponto ao longo de várias edições do curso.
 
 **Claim:** Camadas adjacentes com abstrações parecidas são um red flag — manifestam-se como métodos pass-through (que só repassam argumentos para outro método de assinatura quase idêntica), decorators superusados, ou variáveis pass-through (que atravessam vários métodos que não as usam, só para chegar a um método de baixo nível que precisa delas).
@@ -125,6 +125,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - Cap. 3: [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], com tática vs. estratégica, tornado tático e o caso Facebook
 - Cap. 4: [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]], com interface formal e informal, falsa abstração, Figura 4.1, Unix I/O, [[wiki/concepts/classite]] e o caso comum simples
 - Cap. 5: [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], com vazamento pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]], `getParams` e valores padrão
+- Cap. 6: [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]], com [[wiki/concepts/modulo-de-proposito-geral]], a classe de texto do editor, as três perguntas, a classe `History` e [[wiki/concepts/eliminar-casos-especiais]]
 
 ## Open Questions
 

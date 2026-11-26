@@ -3,8 +3,8 @@ type: concept
 title: "Command Pattern"
 aliases: ["command", "padrão comando"]
 date_created: 2026-05-05
-date_updated: 2026-09-21
-source_count: 6
+date_updated: 2026-11-26
+source_count: 7
 tags: [design-patterns, behavioral, command, gof, undo-redo, xunit, testes]
 skill: tech-mentor-backend
 status: stub
@@ -55,6 +55,10 @@ Ambos parametrizam um objeto com uma ação, mas com propósitos diferentes:
 
 [[wiki/sources/testcase-object-xunitpatterns]] (xUnitPatterns.com, Meszaros) descreve o [[wiki/concepts/testcase-object|Testcase Object]] como uma aplicação direta e nomeada do Command Pattern: cada [[wiki/concepts/test-method|Test Method]] a executar é encapsulado como um objeto Command, com um método `run` padrão que o [[wiki/concepts/test-runner|Test Runner]] chama sem precisar conhecer a interface específica de cada teste. Isso não é sobre undo/redo (a motivação mais comum do padrão) — a motivação aqui é permitir que testes sejam mantidos em coleções ([[wiki/concepts/test-suite-object|Test Suite Object]]), inspecionados, contados e invocados uniformemente, exatamente a capacidade que um **Graphical Test Runner** (ex.: JUnit no Eclipse) precisa para deixar o usuário navegar numa árvore de testes.
 
+## Desfazer no editor: `History` e `History.Action` (Ousterhout, cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] desenha o desfazer/refazer de um editor com uma interface `History.Action` (`undo()`, `redo()`) e uma classe `History` que guarda a lista e percorre as ações. É o Command aplicado a undo/redo, embora o livro não nomeie o padrão (leitura da wiki). O que o livro acrescenta: *fences* (barreiras) que agrupam ações para um único pedido do usuário, e uma divisão em três partes independentes. `History` é o mecanismo geral; as ações (`UndoableInsert`, `UndoableSelection`) ficam nos módulos que as entendem; a política de agrupamento fica na UI. Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-strategy]] — mencionado nas relações com Strategy
@@ -63,3 +67,4 @@ Ambos parametrizam um objeto com uma ação, mas com propósitos diferentes:
 - [[wiki/sources/testcase-object-xunitpatterns]] — aplicação do Command Pattern ao Testcase Object da família xUnit: cada teste é um Command com método `run` padrão
 - [[wiki/sources/command-xunitpatterns]] — fonte primária isolada da definição formal do GOF, em inglês, citada por Meszaros no verbete de External Patterns
 - [[wiki/sources/pluggable-behavior-xunitpatterns]] — Pluggable Block (Kent Beck, SBPP), padrão vizinho conceitualmente próximo do Command
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — `History`/`History.Action` com barreiras: Command para undo/redo separado em mecanismo, ações e política

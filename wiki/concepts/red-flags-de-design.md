@@ -3,8 +3,8 @@ type: concept
 title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
-date_updated: 2026-11-25
-source_count: 7
+date_updated: 2026-11-26
+source_count: 8
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -82,6 +82,10 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 
 [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] traz os quadros de **Vazamento de Informação**, **Decomposição Temporal** e **Superexposição** ([[wiki/concepts/decomposicao-temporal]], [[wiki/concepts/ocultamento-de-informacao]]). O texto chama o vazamento de "um dos principais sinais de alerta" e diz que a melhor habilidade de um designer é ter alta sensibilidade a ele. Duas notas da tradução: os dois primeiros quadros saem como "Sinal de Alerta" e o terceiro como "Bandeira Vermelha", embora o original use *Red Flag* nos três; e cada quadro aparece uma seção depois do tema (vazamento na 5.3, decomposição temporal na 5.4), provável efeito do layout do livro.
 
+## Cap. 6: "sinal de alerta" sem quadro (2026-11-26)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] chama de "sinal de alerta" um método projetado para um uso particular, como `backspace` (6.5), e trata a mistura de código geral e específico no desfazer (6.7). O capítulo não tem quadro de *red flag*. A mistura ganha quadro no cap. 9 (*Special-General Mixture*, na tabela acima). Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
@@ -91,3 +95,4 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — tradução revisada da 1.1; a N.T. iguala red flags a code smells (discutido acima)
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — quadro de Módulo Raso (4.5) e seu exemplo original, `addNullValueForAttribute`
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — texto dos quadros Vazamento de Informação, Decomposição Temporal e Superexposição
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — método de uso único como sinal de alerta; origem da *Special-General Mixture*
