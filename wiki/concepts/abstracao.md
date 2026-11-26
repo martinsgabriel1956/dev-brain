@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-11-25
-source_count: 12
+date_updated: 2026-11-26
+source_count: 13
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -91,6 +91,10 @@ Em [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]], a abstr
 
 O exemplo é o sistema de arquivos. A escolha dos blocos no disco pode ficar escondida. A regra de descarregamento (*flushing*) do cache para o disco não pode, porque um banco de dados precisa saber quando o dado está gravado para sobreviver a uma falha. A definição de "esconder o que não precisa ser visto", no topo desta página, é a mesma; o capítulo acrescenta que esconder demais também é erro.
 
+## O `backspace` como falsa abstração (Ousterhout, cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] dá um exemplo da falsa abstração do cap. 4. Um método `backspace(cursor)` numa classe de texto supostamente esconde quais caracteres apaga, mas quem programa a UI precisa saber disso e vai ler o código do método para confirmar. Com a API geral, o chamador escreve `text.delete(text.changePosition(cursor, -1), cursor)` e o comportamento fica à vista (6.4). Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
@@ -108,3 +112,4 @@ O exemplo é o sistema de arquivos. A escolha dos blocos no disco pode ficar esc
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — abstração sobre o hardware como definição de alto nível; troca controle por portabilidade ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: abstrair o mundo real em objetos
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.3: os dois erros de uma abstração, a falsa abstração e o *flushing* do sistema de arquivos
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.4: o método `backspace` como falsa abstração

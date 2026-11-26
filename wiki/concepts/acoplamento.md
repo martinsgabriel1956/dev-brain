@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-11-25
-source_count: 20
+date_updated: 2026-11-26
+source_count: 21
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -118,6 +118,10 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 
 [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] descreve um acoplamento que nenhuma ferramenta de dependência detecta: duas classes que conhecem o mesmo formato de arquivo, uma lendo e outra escrevendo, sem que uma importe a outra. Mudar o formato exige mudar as duas. O livro chama de vazamento "pela porta dos fundos" e o acha pior que o vazamento pela interface, porque não é óbvio. As saídas são fundir as classes ou extrair o formato para uma classe nova de interface simples. Ver [[wiki/concepts/ocultamento-de-informacao]].
 
+## API especializada amarra as camadas (Ousterhout, cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: quando a classe de texto ganha um método por recurso da UI, toda operação nova da UI exige mudar a classe de texto, e quem trabalha numa acaba trabalhando na outra. O autor diz que um dos objetivos do design de classes é permitir que cada uma seja desenvolvida de forma independente, e a abordagem especializada "amarrou" as duas (6.2). No desfazer, a mesma mistura gerou *callbacks* da classe de texto para a UI (6.7).
+
 ## Key sources
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
@@ -146,3 +150,4 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — acoplamento legítimo (regra de negócio) restrito ao status vs. acoplamento a detalhes internos. Ver [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]].
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — acoplamento é sempre custo; comando é acoplamento direto, evento inverte a dependência ([[wiki/concepts/evento-vs-comando]])
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — vazamento pela porta dos fundos como acoplamento sem dependência explícita
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — API especializada amarra UI e classe de texto; *callbacks* do desfazer

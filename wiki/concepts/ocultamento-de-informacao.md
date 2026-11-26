@@ -3,8 +3,8 @@ type: concept
 title: "Ocultamento de Informação (Information Hiding)"
 aliases: ["information hiding", "ocultação de informação", "information leakage", "vazamento de informação", "back-door leakage", "vazamento pela porta dos fundos"]
 date_created: 2026-07-29
-date_updated: 2026-11-25
-source_count: 4
+date_updated: 2026-11-26
+source_count: 5
 tags: [arquitetura, complexidade, design, ousterhout, information-hiding, parnas]
 skill: tech-mentor-backend
 status: stable
@@ -74,6 +74,10 @@ A seção acima segue o podcast, que descreve a amplificação de mudanças como
 
 [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] não usa o termo, mas monta a base do cap. 5. A interface diz **o que** o módulo faz, não **como**; quem usa o módulo não deveria precisar entender a implementação; e uma mudança que não altera a interface não afeta nenhum outro módulo (4.1). O cap. 5 responde à pergunta seguinte: o que deve ficar atrás da interface.
 
+## A generalidade leva a melhor ocultamento (cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] liga o cap. 5 ao cap. 6. A classe de texto especializada, com `backspace` e `deleteSelection`, deixou conceitos da UI dentro da classe de texto: é vazamento, e cada operação nova da UI pedia um método novo lá. A versão geral ([[wiki/concepts/modulo-de-proposito-geral]]) deixa esses detalhes só na UI (6.4). A mesma seção dá o contrapeso: o `backspace` fingia esconder quais caracteres apaga, mas a UI precisa saber disso. "Determinar quem precisa saber o quê, e quando" decide o que esconder; esconder o que o chamador precisa "apenas cria obscuridade". É a 5.9 (não esconder o necessário) vista por outro exemplo.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 5, exemplos de servidor HTTP (leitura+parsing, parâmetros, defaults em respostas)
@@ -81,3 +85,4 @@ A seção acima segue o podcast, que descreve a amplificação de mudanças como
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — corrige a leitura do podcast: amplificação ≠ dependência oculta
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — texto do cap. 5 em primeira mão: corrige "a causa mais comum" para "uma causa comum" e "a correção foi fundir" para "teria sido melhor fundir"; acrescenta como corrigir, ocultação parcial, getParams, valores padrão, dentro da classe e o limite
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.1: interface diz o quê, não o como; mudança que não toca a interface não afeta ninguém
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.4: generalidade melhora o ocultamento; esconder o que a UI precisa é falsa abstração

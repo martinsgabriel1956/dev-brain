@@ -3,8 +3,8 @@ type: concept
 title: "Causas de Complexidade (Ousterhout): Dependências e Obscuridade"
 aliases: ["dependências e obscuridade", "dependencies and obscurity", "obscuridade", "obscurity", "causas da complexidade"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 4
+date_updated: 2026-11-26
+source_count: 5
 tags: [complexidade, design, ousterhout, dependencias, obscuridade, acoplamento]
 skill: tech-mentor-backend
 status: draft
@@ -46,9 +46,14 @@ Não confundir com [[wiki/concepts/seguranca-por-obscuridade]]: lá a obscuridad
 
 No cap. 5, duas classes que conhecem o mesmo formato de arquivo dependem uma da outra sem que isso apareça em nenhuma interface. É dependência somada a obscuridade, e o livro diz que esse vazamento "é mais pernicioso" que o da interface "porque não é óbvio" ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], 5.2). O [[wiki/concepts/ocultamento-de-informacao]] ataca a dependência; a interface simples ataca a obscuridade.
 
+## Esconder o necessário também é obscuridade (cap. 6)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: quando um detalhe importa para o chamador, como os caracteres que o backspace apaga, escondê-lo atrás de uma interface "apenas cria obscuridade" (6.4). A API especializada também cria dependência: cada operação da UI pede um método novo na classe de texto (6.2).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]]: definição das duas causas, exemplos e o mapeamento causa → sintoma (2.3)
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: "Complexity is caused by two things: dependencies and obscurity", retomado ao longo do livro
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — dependências minimizadas, não eliminadas (4.1); falsa abstração como forma de obscuridade (4.3)
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: vazamento pela porta dos fundos como dependência não óbvia (5.2)
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — esconder o necessário gera obscuridade; API especializada gera dependência

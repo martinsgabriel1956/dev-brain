@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-11-25
-source_count: 14
+date_updated: 2026-11-26
+source_count: 15
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -86,6 +86,10 @@ Aplicação a dados: [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]
 
 [[wiki/concepts/ciclo-basico-da-agilidade]] traz uma prática de [[wiki/entities/dave-thomas]]: entre opções de valor parecido, escolher a que facilita mudanças futuras. Como só vale no empate, não manda construir flexibilidade antecipada, e convive com YAGNI (leitura da wiki).
 
+## Tensão com Ousterhout: interface um tanto geral desde o início
+
+[[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] descreve o argumento do YAGNI sem usar o nome: construir só o que se sabe que precisa, especializar para o uso atual e refatorar quando surgir outro (6.1). [[wiki/entities/john-ousterhout]] diz que pensava assim e mudou de ideia revisando projetos de alunos. A regra dele separa duas coisas. A **funcionalidade** segue as necessidades de hoje, o que é YAGNI. A **interface** já nasce um tanto geral, mesmo com um único uso, porque sai mais simples e com menos código, e é melhor "mesmo que você não reutilize a classe". Isso se choca com a regra "extrair só depois do segundo caso de uso" da seção "Quando Aplicar" se ela for lida como regra sobre o formato da interface. Se for lida como regra sobre funcionalidade especulativa, as duas convivem. Ver [[wiki/concepts/modulo-de-proposito-geral]].
+
 ## Key Sources
 
 
@@ -103,3 +107,4 @@ Aplicação a dados: [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]
 - [[wiki/sources/c3-martin-fowler]] — linha do tempo do projeto ([[wiki/entities/c3-project|C3]]) onde a Extreme Programming, metodologia que originou o YAGNI, foi consolidada em 1996
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — requisito documentado como critério; custo de feature por suposição
 - [[wiki/sources/agile-is-dead-long-live-agility-dave-thomas]] — desempate pela facilidade de mudança, compatível com YAGNI
+- [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — Ousterhout: funcionalidade de hoje, interface um tanto geral desde o primeiro uso
