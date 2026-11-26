@@ -3,7 +3,7 @@ type: source
 title: "Programação funcional, parte 2: funções que retornam funções (JavaScript Ninja, semana 8, vídeo 03)"
 aliases: ["JavaScript Ninja programação funcional parte 2", "JS Ninja adder", "03 - Functional Programming - parte 2", "JavaScript Ninja retorno de funções"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
+date_updated: 2026-11-26
 source_count: 0
 tags: [javascript, programacao-funcional, funcoes-de-primeira-classe, retorno-de-funcao, closure, currying, aplicacao-parcial, ponto-e-virgula, asi]
 skill: lang-dynamic
@@ -124,3 +124,5 @@ Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-programacao-funcional-p
 - "Você consegue criar uma função dentro de outra função no JavaScript."
 - "Eu vou somar 3 com o 2 que eu já tinha passado na primeira vez."
 - "Posso fazer duas invocações seguidas com JavaScript."
+
+Retomado em [[wiki/sources/javascript-ninja-escopo-de-funcoes]] (semana 9, vídeo 01): a função dentro de função volta como tema de escopo; ali a aula diz que a interna "só existe enquanto" a externa existe, o que o `adder` deste vídeo já contraria.

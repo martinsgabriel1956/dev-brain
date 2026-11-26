@@ -3,8 +3,8 @@ type: concept
 title: "Closure (JavaScript)"
 aliases: ["closure", "closures", "clausura", "fechamento", "função que lembra o escopo"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 1
+date_updated: 2026-11-26
+source_count: 2
 tags: [javascript, funcoes, closure, escopo, programacao-funcional]
 skill: lang-dynamic
 status: stub
@@ -36,6 +36,11 @@ Depende de [[wiki/concepts/funcoes-de-primeira-classe|funções de primeira clas
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` acima aparece como exemplo de função que retorna função: "eu vou somar 3 com o 2 que eu já tinha passado na primeira vez". A aula mostra o efeito sem usar a palavra closure.
 
+## No JavaScript Ninja, semana 9, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], `sum` lê `number1` e `number2` de `myFunction`, e a aula diz que ela "está fazendo o papel de uma coisa [...] que a gente vai ver mais para frente", "uma função que ela consegue acessar parâmetros externos a ela". A legenda engole o nome; provavelmente closure (média). A aula também diz que `sum` "só existe enquanto myFunction existia", o que só vale porque o exemplo devolve `sum()`, não `sum`; o `adder` da semana 8 já mostrava a função interna sobrevivendo à externa.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: adder/add2, o 2 lembrado pela função interna
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função interna lê as variáveis da externa; nome adiado

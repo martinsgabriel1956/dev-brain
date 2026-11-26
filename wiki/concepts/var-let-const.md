@@ -3,8 +3,8 @@ type: concept
 title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 12
+date_updated: 2026-11-26
+source_count: 13
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -65,6 +65,10 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], `var a, b = 2, c
 
 Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `for` usa `var num = 0` no cabeçalho, como todo o curso. `[external]` Com `var`, `num` continua existindo depois do loop; com `let`, fica preso ao loop e cada volta tem o seu.
 
+## No JavaScript Ninja, semana 9, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], `var number1`/`number2` declaradas dentro de `myFunction` valem para a função inteira, inclusive dentro da `sum` aninhada. `[external]` Com as variáveis escritas depois do `return`, só o nome sobe e `sum()` dá `NaN`; com `let`/`const`, a leitura antes da linha lança `ReferenceError` (zona morta temporal). Verificado no Node 22 ([[wiki/concepts/hoisting-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
@@ -79,3 +83,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `for` usa 
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: esquecer o var cria global
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: um var com lista de variáveis × um var por variável
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: var no cabeçalho do for
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: var vale para a função inteira; hoisting só do nome

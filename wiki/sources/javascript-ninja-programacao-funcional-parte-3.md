@@ -3,7 +3,7 @@ type: source
 title: "Programação funcional, parte 3: funções como parâmetro (JavaScript Ninja, semana 8, vídeo 04)"
 aliases: ["JavaScript Ninja programação funcional parte 3", "JS Ninja showFunction", "04 - Functional Programming - parte 3", "JavaScript Ninja função como parâmetro"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
+date_updated: 2026-11-26
 source_count: 0
 tags: [javascript, programacao-funcional, funcoes-de-primeira-classe, callback, funcao-de-ordem-superior, objeto-como-parametro, funcao-anonima, ponto-e-virgula]
 skill: lang-dynamic
@@ -109,3 +109,5 @@ Vídeo anterior do curso na wiki: [[wiki/sources/javascript-ninja-programacao-fu
 - "Dentro do objeto não pode ter, não pode ter um ponto e vírgula."
 - "Eu recebo ela aqui como um parâmetro normal. Poderia ser qualquer tipo de valor."
 - "Eu posso nomear ela, como não, tanto faz."
+
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-escopo-de-funcoes]] (semana 9, vídeo 01), depois da correção do desafio 8: escopo de funções e hoisting.

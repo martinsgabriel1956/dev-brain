@@ -3,8 +3,8 @@ type: concept
 title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
-date_updated: 2026-11-25
-source_count: 9
+date_updated: 2026-11-26
+source_count: 10
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -102,6 +102,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], a parte 2 da
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], fecho da série: passar função por parâmetro é "o poder que a gente tem utilizando o formato de programação funcional", e o tema volta "muito" nas cerca de 30 aulas do curso. `[external]` Com o vídeo anterior, a série mostra os dois lados de [[wiki/concepts/funcao-de-ordem-superior|função de ordem superior]] sem dar o nome.
 
+## No JavaScript Ninja, semana 9, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], o curso promete "bastante coisa funcional" nas próximas aulas e desafios, depois da dificuldade com o desafio 8, e segue com escopo de funções.
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].
@@ -112,3 +116,4 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], fecho da sé
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: FP como "baseada em funções"; primeira classe como pré-requisito
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: retorno de funções e currying como poder funcional
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função como parâmetro; fecho da série
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: mais programação funcional prometida para as próximas aulas
