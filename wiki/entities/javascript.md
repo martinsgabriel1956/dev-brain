@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-26
-source_count: 49
+source_count: 50
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -153,6 +153,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], função pas
 
 Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], funções aninhadas e escopo de função, e o primeiro contato do curso com hoisting ([[wiki/concepts/hoisting-javascript]]).
 
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], hoisting de declarações de função e de `var` ([[wiki/concepts/hoisting-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -204,3 +208,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], funções aninhadas e es
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: retorno de funções, closure e currying
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: função como parâmetro
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: escopo de funções e hoisting
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: hoisting

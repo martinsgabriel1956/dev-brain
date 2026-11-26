@@ -1,13 +1,13 @@
 ---
 type: concept
 title: "Hoisting (JavaScript)"
-aliases: ["hoisting", "içamento", "elevação", "içar declarações", "temporal dead zone", "zona morta temporal", "TDZ"]
+aliases: ["hoisting", "içamento", "elevação", "içar declarações", "temporal dead zone", "zona morta temporal", "TDZ", "function declaration", "function expression", "função literal"]
 date_created: 2026-11-26
 date_updated: 2026-11-26
-source_count: 1
+source_count: 2
 tags: [javascript, escopo, funcoes, var, let, const, hoisting]
 skill: lang-dynamic
-status: stub
+status: draft
 ---
 
 # Hoisting (JavaScript)
@@ -29,6 +29,11 @@ Hoisting é por escopo: a `function` declarada dentro de outra sobe só até o t
 
 Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], `return sum()` vem antes de `function sum() {}` e funciona, contra a expectativa de `undefined` da própria aula ("tudo que acontece depois do return o JavaScript simplesmente ignora"). "Que magia é essa?" A aula dá o nome, hoisting, e deixa a explicação para o vídeo seguinte. Verificado no Node 22: com as variáveis também depois do `return`, o resultado vira `NaN`, porque só o nome delas sobe.
 
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], a explicação: tradutores chamam de "içamento ou elevação, algo que você está movendo para cima". A "função literal" (a declaração) sobe inteira e vale "para todo o escopo da função"; a função atribuída a `var` sobe "como um undefined" e dá "is not a function" quando chamada antes da atribuição (`TypeError`, verificado). Com variáveis, `console.log` antes de `var x = 10` mostra `undefined`, e uma variável nunca declarada dá "não foi definida" (`ReferenceError`). A dica da aula: variáveis no início da função, depois as funções, `return` na última linha. `[external]` É o conselho da era `var` (Crockford, JSLint); com `let`/`const` se declara perto do uso, e a zona morta temporal pega a leitura antecipada.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função declarada depois do return funciona; nome anunciado
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: declaração × expressão; var sobe como undefined; declarar no topo

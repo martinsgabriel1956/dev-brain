@@ -105,3 +105,5 @@ Primeiro vídeo depois da "correção" do desafio 8 do [[wiki/entities/javascrip
 - "o escopo dela é aquela função onde ela está dentro"
 - "ele simplesmente verifica que essa função aqui existe, mas ele não executa"
 - "Que magia é essa?"
+
+Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-hoisting]] (semana 9, vídeo 02), que explica o hoisting anunciado aqui.

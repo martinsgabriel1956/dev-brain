@@ -4,7 +4,7 @@ title: "Arrow functions em JavaScript"
 aliases: ["arrow function", "função de seta", "=>", "fat arrow", "retorno implícito", "this léxico"]
 date_created: 2026-11-16
 date_updated: 2026-11-26
-source_count: 10
+source_count: 11
 tags: [javascript, funcoes, arrow-function, es6, this, react, vue]
 skill: lang-dynamic
 status: stub
@@ -64,6 +64,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` é
 
 Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], a declaração `function sum() {}` depois do `return` funciona. `[external]` A mesma função como `const sum = () => 3` lança `ReferenceError: Cannot access 'sum' before initialization` (verificado no Node 22), a linha "Hoisting" da tabela acima ([[wiki/concepts/hoisting-javascript]]).
 
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], a função atribuída a `var` depois do `return` dá `TypeError: sum is not a function`. `[external]` Uma arrow em `const` no mesmo lugar dá `ReferenceError` de zona morta temporal: qualquer função guardada em variável segue o hoisting da variável ([[wiki/concepts/hoisting-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-functions-e-arrow-functions-javascript]]: FrontPUSH, JavaScript aula 04: de function a arrow com retorno implícito
@@ -76,3 +80,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], a declaração `function
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: regra de nomear não se aplica a arrow; nome só por inferência
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: adder em uma linha com arrow
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: declaração içada; arrow em const não
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: função em variável não é içada com o corpo

@@ -4,7 +4,7 @@ title: "null e undefined no JavaScript"
 aliases: ["null", "undefined", "Cannot read property of null", "Cannot read properties of null", "TypeError null"]
 date_created: 2026-11-16
 date_updated: 2026-11-26
-source_count: 14
+source_count: 15
 tags: [javascript, tipos, null, undefined, erros, dom, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -62,6 +62,10 @@ Em [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]], a funç
 
 Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], a aula espera `undefined` de `return sum()` com `sum` declarada depois, e a função roda. `[external]` Onde o `undefined` aparece de fato é nas variáveis: `var` depois do `return` existe com valor `undefined`, e `undefined + undefined` dá `NaN` (verificado). O erro de chamar `sum()` fora da função é `ReferenceError`, não `undefined`.
 
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], a `var` lida antes da declaração vale `undefined` ("ele não disse que a variável não existia"), e uma nunca declarada dá "não foi definida". É a diferença `undefined` × `ReferenceError` desta página, mostrada no `console.log`. A função sem `return` imprime `undefined`, o "valor em branco" da aula.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: o erro "style de null" com o script antes do elemento
@@ -78,3 +82,4 @@ Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], a aula espera `undefined
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: função sem return devolve undefined
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: sem return, undefined; propriedade lida na função em vez do retorno
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: undefined esperado × função içada; var içada com undefined
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: var içada vale undefined; nunca declarada dá ReferenceError
