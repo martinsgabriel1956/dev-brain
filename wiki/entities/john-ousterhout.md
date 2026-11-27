@@ -4,7 +4,7 @@ title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
 date_updated: 2026-11-27
-source_count: 12
+source_count: 13
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -68,6 +68,10 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 
 [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] traz o texto do cap. 7: [[wiki/concepts/camada-diferente-abstracao-diferente]], [[wiki/concepts/metodo-de-repasse]] (`TextDocument` com 13 de 15 métodos de repasse), decorators rasos, interface por caracteres sobre armazenamento por linhas e [[wiki/concepts/objeto-de-contexto]] contra variáveis de passagem. Confere com o resumo do livro completo. O autor admite o limite da própria solução: "Infelizmente, não encontrei uma solução melhor do que contextos."
 
+## Capítulo 8 em primeira mão (2026-11-27)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] traz o texto do cap. 8: [[wiki/concepts/puxar-complexidade-para-baixo]] (interface simples acima de implementação simples), a classe de texto por caracteres, [[wiki/concepts/parametro-de-configuracao]] como desculpa fácil, o intervalo de retentativa medido e os três critérios da 8.3, com o `backspace` como vazamento. Confere com o resumo do livro completo.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -82,3 +86,4 @@ Na seção 1.1 (na versão completa em [[wiki/sources/filosofia-do-design-de-sof
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: texto do cap. 5, ocultamento e vazamento, decomposição temporal, exemplos HTTP, valores padrão
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: texto do cap. 6, um tanto de uso geral, editor, `History`, casos especiais
 - [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — texto do cap. 7, camadas com abstrações diferentes, repasse, decorators, contexto
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — texto do cap. 8, puxar a complexidade para baixo, parâmetros de configuração, limites

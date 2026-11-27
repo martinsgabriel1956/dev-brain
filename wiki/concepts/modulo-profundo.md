@@ -4,7 +4,7 @@ title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
 date_updated: 2026-11-27
-source_count: 11
+source_count: 12
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -94,6 +94,10 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 
 [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] aplica a profundidade a camadas: [[wiki/concepts/metodo-de-repasse|métodos de repasse]] e decorators deixam a classe rasa porque aumentam a interface sem aumentar a função. Dentro da classe, a interface deve diferir da implementação (7.4): a classe de texto guarda linhas, mas a API `getLine`/`putLine` ficou rasa e jogou para a UI o trabalho de dividir e juntar linhas. Com `insert`/`delete` sobre posições arbitrárias, "a diferença representa uma funcionalidade valiosa fornecida pela classe". Ver [[wiki/concepts/camada-diferente-abstracao-diferente]].
 
+## Cap. 8: interface simples vale mais que implementação simples (2026-11-27)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] dá outro caminho para a profundidade: absorver a complexidade inevitável dentro do módulo em vez de passá-la aos usuários ([[wiki/concepts/puxar-complexidade-para-baixo]]). "É mais importante para um módulo ter uma interface simples do que uma implementação simples." A classe de texto por caracteres volta como exemplo: a implementação fica mais complexa, o sistema fica mais simples. Cada [[wiki/concepts/parametro-de-configuracao]] exportado é o movimento contrário, interface maior para a mesma função.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -107,3 +111,4 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultar como técnica de profundidade; classes um pouco maiores; HTTP leitura+análise e `getParams` como rasos
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — texto do cap. 6: API geral mais profunda e com menos código; corrige "sem alteração" (falta `findNext`)
 - [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — 7.4: interface igual à implementação indica classe rasa; repasse e decorators como rasos
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — texto do cap. 8: interface simples acima de implementação simples; complexidade absorvida pelo módulo

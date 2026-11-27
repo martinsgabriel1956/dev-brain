@@ -4,7 +4,7 @@ title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
 date_updated: 2026-11-27
-source_count: 13
+source_count: 14
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -70,6 +70,10 @@ O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface m
 
 [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.2): várias implementações da mesma interface, como drivers de disco, reduzem a carga cognitiva, porque quem trabalhou com uma não precisa aprender outra interface. Duplicar assinatura só é problema entre camadas que se chamam e não agregam função ([[wiki/concepts/metodo-de-repasse]]).
 
+## Quem paga a complexidade (cap. 8)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] conta a carga cognitiva por usuário: cada exceção ou [[wiki/concepts/parametro-de-configuracao]] empurrado para cima é mais uma coisa que cada chamador e cada administrador aprende. Absorvida no módulo, é aprendida uma vez por quem o desenvolve. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -85,3 +89,4 @@ O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface m
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultamento reduz a carga cognitiva; superexposição a aumenta (cap. 5)
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — muitos métodos especializados aumentam a carga; poucos gerais a reduzem (cap. 6)
 - [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — várias implementações da mesma interface reduzem a carga (7.2)
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — cap. 8: complexidade empurrada para cima multiplica a carga por usuário

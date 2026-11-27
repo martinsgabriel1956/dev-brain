@@ -3,8 +3,8 @@ type: concept
 title: "Interface Formal e Informal (Ousterhout)"
 aliases: ["interface formal", "interface informal", "formal and informal interface", "interface vs implementação", "interface e implementação"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [design, ousterhout, interface, modulo-profundo, documentacao, contrato]
 skill: tech-mentor-backend
 status: stub
@@ -46,6 +46,11 @@ A regra que decide o que entra: "se um desenvolvedor precisa saber de uma inform
 - [[wiki/concepts/contrato-de-api]]: o mesmo par formal/informal aparece em APIs (schema vs. semântica).
 - [[wiki/concepts/classite]]: cada classe nova soma interface para aprender.
 
+## Parâmetros de configuração como interface (cap. 8)
+
+Cada [[wiki/concepts/parametro-de-configuracao]] é parte da interface: o usuário precisa saber que existe, o que controla e que valor escolher. [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] trata isso como complexidade empurrada para cima e pede padrões razoáveis para o caso comum.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: definição de interface e implementação (4.1), parte formal e informal (4.2), nota de rodapé sobre especificação formal
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — cap. 8: parâmetros de configuração aumentam a interface
