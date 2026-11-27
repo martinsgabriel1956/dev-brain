@@ -3,8 +3,8 @@ type: concept
 title: "Hoisting (JavaScript)"
 aliases: ["hoisting", "içamento", "elevação", "içar declarações", "temporal dead zone", "zona morta temporal", "TDZ", "function declaration", "function expression", "função literal"]
 date_created: 2026-11-26
-date_updated: 2026-11-26
-source_count: 3
+date_updated: 2026-11-27
+source_count: 4
 tags: [javascript, escopo, funcoes, var, let, const, hoisting]
 skill: lang-dynamic
 status: draft
@@ -37,8 +37,13 @@ Em [[wiki/sources/javascript-ninja-hoisting]], a explicação: tradutores chamam
 
 Em [[wiki/sources/javascript-ninja-iife]], a mesma distinção entre declaração e expressão decide outra coisa: só a expressão pode ser invocada no lugar ([[wiki/concepts/iife|IIFE]]). A IIFE não é içada, porque não declara nome no escopo de fora.
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], o [[wiki/concepts/typeof-javascript|typeof]] aparece sem a zona morta temporal. Verificado: `typeof naoDeclarada` dá `'undefined'`, mas `typeof y` antes de `let y` dá `ReferenceError: Cannot access 'y' before initialization`.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função declarada depois do return funciona; nome anunciado
 - [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: declaração × expressão; var sobe como undefined; declarar no topo
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE é expressão; não cria nome no escopo
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof na zona morta temporal dá ReferenceError

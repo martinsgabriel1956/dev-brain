@@ -3,8 +3,8 @@ type: concept
 title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
-date_updated: 2026-11-16
-source_count: 14
+date_updated: 2026-11-27
+source_count: 15
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -79,6 +79,10 @@ O front só converte `cost` com `Number`; `week_day` vai como string, o WhatsApp
 
 Os filtros são texto livre: "segunda-feira" não casa com o `week_day` numérico, e a busca "não aconteceu"; o Picker sugerido e validação resolveriam. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], `subtract` só calcula se `typeof num1 === 'number' && typeof num2 === 'number'`; senão devolve `undefined` ou uma mensagem. É validação de tipo dentro da função ([[wiki/concepts/typeof-javascript|typeof]]). Furo verificado: `NaN` passa, porque `typeof NaN` é `'number'`; `Number.isFinite` fecha `[external]`.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -95,3 +99,4 @@ Os filtros são texto livre: "segunda-feira" não casa com o `week_day` numéric
 - [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: sem validação no cadastro de aula
 - [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: cadastro e WhatsApp sem validação
 - [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros em texto livre
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: guarda com typeof em subtract; NaN passa
