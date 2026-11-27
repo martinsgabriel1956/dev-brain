@@ -3,7 +3,7 @@ type: source
 title: "IIFE (JavaScript Ninja, semana 9, vídeo 03)"
 aliases: ["JavaScript Ninja IIFE", "JS Ninja função autoexecutável", "03 - IIFE - Immediately-Invoked Function Expression"]
 date_created: 2026-11-26
-date_updated: 2026-11-26
+date_updated: 2026-11-27
 source_count: 0
 tags: [javascript, iife, funcoes, function-expression, escopo, escopo-global, named-function-expression]
 skill: lang-dynamic
@@ -112,7 +112,7 @@ Terceiro vídeo da semana 9 do [[wiki/entities/javascript-ninja|JavaScript Ninja
 - **"Pode abrir mais falar"**: talvez "abrir uma issue"; literal.
 - **"Lembra kit de conversão de escopo global, uma vez que ele puxa algo ruim"**: provavelmente "lembra que a gente conversou de escopo global, que ele é algo ruim" ([[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]).
 - **"Comentário do mundo do exercício"**: talvez "o enunciado do exercício"; literal.
-- O vídeo não anuncia o próximo assunto.
+- O vídeo não anuncia o próximo assunto. Na wiki, o seguinte é [[wiki/sources/javascript-ninja-wrapper-objects]] (semana 10, vídeo 01).
 
 ## Raw quotes
 

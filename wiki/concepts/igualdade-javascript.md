@@ -3,8 +3,8 @@ type: concept
 title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 14
+date_updated: 2026-11-27
+source_count: 16
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -74,6 +74,14 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], o `switch` compa
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o 0 "não é igual a false" com `===`, "mas se eu não testar o tipo, ele é igual a falso" (`0 == false`), para justificar que o `while (0)` não entra ([[wiki/concepts/truthy-e-falsy]]).
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], `new String('Daciuk')` é objeto. Verificado: `=== 'Daciuk'` dá `false` e `== 'Daciuk'` dá `true`, porque `==` converte o wrapper para primitivo via `valueOf` ([[wiki/concepts/wrapper-objects-javascript]]). A aula não faz a comparação.
+
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], "para testar explicitamente pelo valor null [...] o operador de igualdade estrito": `num1 === null`. É o teste que o [[wiki/concepts/typeof-javascript|typeof]] não consegue fazer.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
@@ -90,3 +98,5 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o 0 "não é 
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: `===` como condição do ternário
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: switch compara com ===
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: 0 == false, 0 !== false
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: wrapper == primitivo, mas !==
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: === null no lugar de typeof

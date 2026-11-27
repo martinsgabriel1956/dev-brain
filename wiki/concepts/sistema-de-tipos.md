@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
-date_updated: 2026-11-24
-source_count: 7
+date_updated: 2026-11-27
+source_count: 8
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -61,6 +61,10 @@ Em [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]], o Ja
 
 Em [[wiki/sources/javascript-ninja-operadores-unarios]], a tipagem fraca aparece no `+`: string com número "o JavaScript sempre vai entender que eu quero fazer uma concatenação", e `+x`/`-x` convertem para número. A conversão implícita depende do operador: `'3' + 1` é `'31'`, `'3' - 1` é `2`.
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], a conversão automática (`String(52) + 2` concatenar) é atribuída à "tipagem dinâmica". Pela taxonomia desta página, conversão implícita é o eixo da tipagem *fraca*; dinâmica é checar o tipo em tempo de execução. A aula 03 do mesmo curso já dizia "tipagem fraca, dinâmica".
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
@@ -70,3 +74,4 @@ Em [[wiki/sources/javascript-ninja-operadores-unarios]], a tipagem fraca aparece
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: x recebe valores de vários tipos (tipagem dinâmica)
 - [[wiki/sources/javascript-ninja-operadores-de-igualdade-e-relacionais]]: JavaScript Ninja, aula 03: "tipagem fraca, dinâmica" via '1' == 1
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: conversão implícita no + e no - unário
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: conversão atribuída à tipagem dinâmica (é a fraca)
