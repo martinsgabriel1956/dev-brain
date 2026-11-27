@@ -3,8 +3,8 @@ type: concept
 title: "Exceção vs. Erro"
 aliases: ["erro vs exceção", "exception vs error", "erro de domínio", "exceção de sistema"]
 date_created: 2026-06-01
-date_updated: 2026-09-23
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [fundamentos, backend, resiliencia, dominio, excecao, nodejs]
 skill: tech-mentor-backend
 status: draft
@@ -72,7 +72,12 @@ A última linha mostra que o mesmo tipo de evento pode ser erro ou exceção dep
 - [[asynclocalstorage]] — permite responder o cliente correto quando exceção ocorre
 - [[robustez-de-sistemas]] — sistemas robustos distinguem os dois e tratam cada um adequadamente
 
+## Lançar para cima tem custo (Ousterhout)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] lembra que lançar uma exceção por não saber tratar a condição passa o problema para todos os chamadores. Não contradiz a distinção desta página: o capítulo fala de condições que o módulo poderia resolver sozinho, não de falhas de ambiente. Ver [[wiki/concepts/puxar-complexidade-para-baixo]] e [[wiki/concepts/definir-erros-para-fora-da-existencia]].
+
 ## Key sources
 
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — distinção central da estratégia; exemplos concretos de cada categoria
 - [[wiki/sources/design-by-contract-video]] — violação de pré-condição tratada como exceção/asserção ("remédio" do contrato)
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — cap. 8: exceção lançada por comodidade como complexidade empurrada para cima

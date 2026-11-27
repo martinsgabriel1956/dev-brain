@@ -4,7 +4,7 @@ title: "Módulo de Propósito Geral (Um Tanto de Uso Geral)"
 aliases: ["somewhat general-purpose", "um tanto de uso geral", "general-purpose module", "módulo de uso geral", "generalidade moderada", "empurrar especialização para cima", "push specialization up", "push specialization down"]
 date_created: 2026-11-26
 date_updated: 2026-11-27
-source_count: 3
+source_count: 4
 tags: [design, ousterhout, general-purpose, especializacao, api-design, modulo-profundo]
 skill: tech-mentor-backend
 status: draft
@@ -61,8 +61,13 @@ A separação vale dentro de cada mecanismo. A classe de texto é geral para tex
 
 [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.2) volta aos drivers de disco: várias implementações da mesma interface, na mesma camada, são duplicação aceitável e reduzem a carga cognitiva. A 7.4 também retoma a classe de texto: a API por caracteres sobre armazenamento por linhas. Ver [[wiki/concepts/camada-diferente-abstracao-diferente]].
 
+## Especialização sobe, complexidade desce (cap. 8)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] manda puxar a complexidade **para baixo**, o que parece contradizer "empurrar a especialização para cima". Não contradiz: o que desce é a complexidade ligada à função do módulo (dividir e juntar linhas na classe de texto); o que é da UI sobe. Os critérios da 8.3 fazem a separação, e o `backspace` volta como contraexemplo: na classe de texto, vira vazamento de informação. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: texto do cap. 6 em primeira mão: definição, editor, três perguntas, para cima e para baixo, `History`
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: resumo do cap. 6 e o cap. 11, que compara interfaces por linha, caractere e intervalo
 - [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — drivers e classe de texto retomados (7.2 e 7.4)
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — 8.3: o `backspace` como contraexemplo de puxar para baixo; especialização sobe, complexidade desce

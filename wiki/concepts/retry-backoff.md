@@ -3,8 +3,8 @@ type: concept
 title: "Retry com Backoff Exponencial e Jitter"
 aliases: ["retry backoff", "exponential backoff", "jitter retry", "retry pattern"]
 date_created: 2026-04-22
-date_updated: 2026-11-03
-source_count: 6
+date_updated: 2026-11-27
+source_count: 7
 tags: [resiliencia, retry, backoff, jitter, thundering-herd, network, idempotencia]
 skill: tech-mentor-system-design
 status: stable
@@ -135,6 +135,10 @@ Rate limit altera o comportamento do cliente: ao receber [[wiki/concepts/http-42
 
 **Lacuna perigosa:** a fonte aplica retry a provedores de pagamento sem citar o pré-requisito de idempotência desta página nem separar erro transitório de permanente. `[skill: tech-mentor-backend]` Em `references/resilience-tail-latency.md`, a skill usa *full jitter*, `rand(0, min(cap, base * 2^n))`, e acrescenta o *retry budget*.
 
+## Intervalo calculado em vez de configurado (Ousterhout, cap. 8)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] (8.2) usa o intervalo de retentativa como exemplo de [[wiki/concepts/parametro-de-configuracao]] evitável: o protocolo mede o tempo de resposta das requisições bem-sucedidas e usa um múltiplo disso, que ainda se ajusta quando a rede muda. É o RTO do TCP, calculado a partir do RTT suavizado e da variação [external: RFC 6298, https://www.rfc-editor.org/rfc/rfc6298]. **Tensão com a tabela "Parâmetros Práticos" acima:** os atrasos fixos (100 ms, 500 ms) são o tipo de valor que o capítulo sugere calcular. Servem como padrão inicial, não como valor definitivo. `[skill: tech-mentor-backend]` `references/resilience-tail-latency.md` faz o mesmo no atraso do *hedge* (percentil medido continuamente) e nos limites de concorrência adaptativos.
+
 ## Key Sources
 
 - [[wiki/sources/retry-backoff]]
@@ -143,3 +147,4 @@ Rate limit altera o comportamento do cliente: ao receber [[wiki/concepts/http-42
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — cliente que recebe 429 precisa de backoff
 - [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — clientes que paralelizam sincronização e recebem 429 precisam ajustar o processo; também no [[wiki/concepts/client-rate-limit]]
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — progressão do `while true` ao backoff com jitter, aplicada a provedores de pagamento e de IA; não menciona idempotência
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — 8.2: intervalo de retentativa medido em vez de configurado; tensão com os atrasos fixos da tabela

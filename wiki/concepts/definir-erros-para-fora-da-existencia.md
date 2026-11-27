@@ -3,8 +3,8 @@ type: concept
 title: "Definir Erros Para Fora da Existência"
 aliases: ["define errors out of existence", "mascarar exceções", "exception masking", "agregação de exceções", "exception aggregation"]
 date_created: 2026-07-29
-date_updated: 2026-11-26
-source_count: 3
+date_updated: 2026-11-27
+source_count: 4
 tags: [complexidade, design, ousterhout, exceptions, error-handling]
 skill: tech-mentor-backend
 status: draft
@@ -50,8 +50,13 @@ Na wiki, o princípio já aparece com três nomes: "definir erros para fora da e
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] fecha a 6.8 anunciando o cap. 10: as exceções "criam muito mais casos especiais". A técnica do cap. 6, [[wiki/concepts/eliminar-casos-especiais]], desenha o caso normal para cobrir o contorno (seleção vazia); definir erros para fora da existência é a mesma ideia aplicada a erros.
 
+## O antecedente no cap. 8
+
+A introdução do cap. 8 ([[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]]) já aponta a exceção como forma de empurrar complexidade para cima: "a coisa mais fácil a fazer é lançar uma exceção e deixar que o chamador resolva", e todos os chamadores passam a tratá-la. O cap. 10 é a resposta detalhada. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 10 completo (definir para fora da existência, mascarar, agregar, travar)
 - [[wiki/sources/filosofia-do-design-de-software-cap-01-traducao-revisada]] — cap. 1 cita o princípio como "elimine os erros desde a concepção" (tradução revisada)
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.8 anuncia o cap. 10: exceções como fonte de casos especiais
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — introdução do cap. 8: lançar exceção como empurrar complexidade para cima

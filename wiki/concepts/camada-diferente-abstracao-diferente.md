@@ -4,7 +4,7 @@ title: "Camada Diferente, Abstração Diferente"
 aliases: ["different layer, different abstraction", "camadas diferentes, abstrações diferentes", "abstrações semelhantes em camadas adjacentes"]
 date_created: 2026-11-27
 date_updated: 2026-11-27
-source_count: 2
+source_count: 3
 tags: [design, ousterhout, camadas, abstracao, modulo-profundo, pass-through]
 skill: tech-mentor-backend
 status: draft
@@ -45,7 +45,12 @@ O cap. 7.6 liga a regra ao custo-benefício geral: todo elemento de design (clas
 - [[wiki/concepts/modulo-de-proposito-geral]]: os drivers de disco aparecem nos dois capítulos, como especialização empurrada para baixo (cap. 6) e como implementações múltiplas aceitáveis (cap. 7).
 - [[wiki/concepts/red-flags-de-design]]: o catálogo do livro só tem *Pass-Through Method* para este capítulo.
 
+## A mesma classe de texto no cap. 8
+
+A 7.4 diz que a API por linhas é rasa porque repete a implementação. A 8.1 ([[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]]) olha o mesmo caso por quem paga: com a API por linhas, a UI divide e junta linhas; com a API por caracteres, a classe absorve esse trabalho. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].
+
 ## Key sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]]: texto do cap. 7, com exemplos, Figuras 7.1 e 7.2 e conclusão
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: resumo do cap. 7 (camadas adjacentes semelhantes como red flag)
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — 8.1: a classe de texto por caracteres como complexidade puxada para baixo

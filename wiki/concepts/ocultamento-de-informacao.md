@@ -3,8 +3,8 @@ type: concept
 title: "Ocultamento de Informação (Information Hiding)"
 aliases: ["information hiding", "ocultação de informação", "information leakage", "vazamento de informação", "back-door leakage", "vazamento pela porta dos fundos"]
 date_created: 2026-07-29
-date_updated: 2026-11-26
-source_count: 5
+date_updated: 2026-11-27
+source_count: 6
 tags: [arquitetura, complexidade, design, ousterhout, information-hiding, parnas]
 skill: tech-mentor-backend
 status: stable
@@ -78,6 +78,10 @@ A seção acima segue o podcast, que descreve a amplificação de mudanças como
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] liga o cap. 5 ao cap. 6. A classe de texto especializada, com `backspace` e `deleteSelection`, deixou conceitos da UI dentro da classe de texto: é vazamento, e cada operação nova da UI pedia um método novo lá. A versão geral ([[wiki/concepts/modulo-de-proposito-geral]]) deixa esses detalhes só na UI (6.4). A mesma seção dá o contrapeso: o `backspace` fingia esconder quais caracteres apaga, mas a UI precisa saber disso. "Determinar quem precisa saber o quê, e quando" decide o que esconder; esconder o que o chamador precisa "apenas cria obscuridade". É a 5.9 (não esconder o necessário) vista por outro exemplo.
 
+## Puxar para baixo demais vira vazamento (cap. 8)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] (8.3) mostra que absorver complexidade no módulo errado é vazamento: o método `backspace` na classe de texto põe conhecimento da UI numa classe que não tem nada a ver com ele, sem simplificar muito o código de cima. Puxar para baixo só vale quando a complexidade é da função da classe ([[wiki/concepts/puxar-complexidade-para-baixo]]).
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 5, exemplos de servidor HTTP (leitura+parsing, parâmetros, defaults em respostas)
@@ -86,3 +90,4 @@ A seção acima segue o podcast, que descreve a amplificação de mudanças como
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — texto do cap. 5 em primeira mão: corrige "a causa mais comum" para "uma causa comum" e "a correção foi fundir" para "teria sido melhor fundir"; acrescenta como corrigir, ocultação parcial, getParams, valores padrão, dentro da classe e o limite
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.1: interface diz o quê, não o como; mudança que não toca a interface não afeta ninguém
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.4: generalidade melhora o ocultamento; esconder o que a UI precisa é falsa abstração
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — 8.3: `backspace` na classe de texto como vazamento causado por puxar complexidade para baixo demais

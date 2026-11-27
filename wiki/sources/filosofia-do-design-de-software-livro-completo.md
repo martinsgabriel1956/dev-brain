@@ -40,7 +40,7 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 **Confidence:** alta.
 
 **Claim:** Quando uma complexidade é inevitável, é melhor "puxá-la para baixo" (para dentro do módulo, sofrendo o desenvolvedor do módulo) do que empurrá-la para cima (para o usuário do módulo, via exceção ou parâmetro de configuração) — a maioria dos módulos tem mais usuários que desenvolvedores.
-**Evidence:** Cap. 8. Parâmetros de configuração são tratados como sintoma do problema oposto: uma desculpa fácil para não resolver algo internamente. Exemplo: em vez de expor um parâmetro de "intervalo de retry" de protocolo de rede, o protocolo pode medir o tempo de resposta de requisições bem-sucedidas e computar um valor razoável sozinho.
+**Evidence:** Cap. 8. Parâmetros de configuração são tratados como sintoma do problema oposto: uma desculpa fácil para não resolver algo internamente. Exemplo: em vez de expor um parâmetro de "intervalo de retry" de protocolo de rede, o protocolo pode medir o tempo de resposta de requisições bem-sucedidas e computar um valor razoável sozinho. *O texto do cap. 8 ([[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]]) confere e acrescenta: o argumento a favor dos parâmetros (o usuário conhece o domínio), a pergunta antes de exportar um, padrões razoáveis e os três critérios da 8.3 para não ir longe demais, com o `backspace` na classe de texto como vazamento de informação. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].*
 **Confidence:** alta.
 
 **Claim:** A decisão de juntar ou separar dois pedaços de código deve ser guiada por complexidade total do sistema, não por regras mecânicas de tamanho ("todo método > 20 linhas deve ser quebrado"); Ousterhout discorda explicitamente de Robert Martin (*Clean Code*) nesse ponto.
@@ -127,6 +127,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - Cap. 5: [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], com vazamento pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]], `getParams` e valores padrão
 - Cap. 6: [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]], com [[wiki/concepts/modulo-de-proposito-geral]], a classe de texto do editor, as três perguntas, a classe `History` e [[wiki/concepts/eliminar-casos-especiais]]
 - Cap. 7: [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]], com [[wiki/concepts/camada-diferente-abstracao-diferente]], [[wiki/concepts/metodo-de-repasse]], decorators, interface vs. implementação e [[wiki/concepts/objeto-de-contexto]]
+- Cap. 8: [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]], com [[wiki/concepts/puxar-complexidade-para-baixo]], a classe de texto por caracteres, [[wiki/concepts/parametro-de-configuracao]] e os limites da 8.3
 
 ## Open Questions
 

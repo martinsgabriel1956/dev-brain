@@ -3,8 +3,8 @@ type: concept
 title: "Sensible Defaults / Paved Road"
 aliases: ["sensible defaults", "paved road", "estrada pavimentada", "padroes sensatos", "golden path"]
 date_created: 2026-08-12
-date_updated: 2026-11-25
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [platform-engineering, sensible-defaults, paved-road, golden-path, autonomia, netflix]
 skill: tech-mentor-infra
 status: draft
@@ -42,7 +42,12 @@ Princípio (formalizado depois como **golden path** em IDPs `[skill: tech-mentor
 
 [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] (5.7) aplica a ideia a uma classe: a biblioteca HTTP deve preencher sozinha a versão da resposta e o cabeçalho `Date`. Valores padrão tornam o caso comum o mais simples possível e são ocultação parcial: o usuário normal nem sabe que o item existe, e o raro que precisa troca por um método específico. "As melhores funcionalidades são aquelas que você obtém sem sequer saber que existem." O red flag do lado oposto é a superexposição ([[wiki/concepts/red-flags-de-design]]). A analogia com a paved road é da wiki: lá o default é uma escolha de ferramenta, aqui um valor de parâmetro.
 
+## Padrão razoável para parâmetros de configuração (cap. 8)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] (8.2) volta ao valor padrão: quando um [[wiki/concepts/parametro-de-configuracao]] é inevitável, ele deve ter um padrão razoável, para que o usuário só precise mexer "em condições excepcionais". Antes disso vem a pergunta se o parâmetro precisa existir: se o módulo calcula um valor melhor que o usuário, não exporte. Ver [[wiki/concepts/puxar-complexidade-para-baixo]].
+
 ## Key sources
 
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — Evan Bottcher, *What I Talk About When I Talk About Platforms* (2018)
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — valores padrão em APIs como ocultação parcial (5.7)
+- [[wiki/sources/filosofia-do-design-de-software-cap-08-puxe-a-complexidade-para-baixo]] — 8.2: padrões razoáveis para parâmetros de configuração que não puderam ser eliminados
