@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 25
+source_count: 26
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -129,6 +129,10 @@ Em [[wiki/sources/javascript-ninja-iife]], uma propriedade cujo valor é uma fun
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], o critério de objeto é "se esse cara, ele tem propriedades e métodos". Construtores são "objetos, ou funções [...] que criam novos objetos", com `new`; `new String('Daciuk')` é objeto, com `valueOf()` para o primitivo. Detalhe em [[wiki/concepts/wrapper-objects-javascript]].
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], "qualquer outro objeto que não seja uma função" dá `'object'` no [[wiki/concepts/typeof-javascript|typeof]], inclusive array e `null`; por isso, "não testar o objeto usando o typeof". Para objeto não nulo: `x !== null && typeof x === 'object'` `[external]`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -156,3 +160,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], o critério de objeto é "
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: objeto como argumento; ; dentro do literal é SyntaxError
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: função anônima como propriedade, invocada pelo objeto
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: objeto = propriedades e métodos; construtores com new
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof de objeto, array e null é object

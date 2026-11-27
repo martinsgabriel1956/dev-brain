@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-27
-source_count: 29
+source_count: 30
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -108,6 +108,10 @@ Em [[wiki/sources/javascript-ninja-iife]], apresenta a IIFE e anuncia que todos 
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], apresenta os wrapper objects ("um envoltório") e os construtores sem `new` como conversores. Atribui a conversão automática à "tipagem dinâmica".
 
+## Semana 10, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-typeof]], apresenta o [[wiki/concepts/typeof-javascript|typeof]], a regra de usá-lo só com primitivos e a guarda de tipo em `subtract`. Prevê que o ES6 corrigiria `typeof null`, o que não aconteceu.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -139,3 +143,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], apresenta os wrapper objec
 - [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting; declarar no topo
 - [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: semana 10, vídeo 01: wrapper objects
+- [[wiki/sources/javascript-ninja-typeof]]: semana 10, vídeo 02: typeof

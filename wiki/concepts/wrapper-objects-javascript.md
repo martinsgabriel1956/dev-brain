@@ -4,7 +4,7 @@ title: "Wrapper Objects em JavaScript (autoboxing)"
 aliases: ["wrapper objects", "wrapper object", "objeto envoltório", "objetos wrapper", "autoboxing javascript", "new String", "new Number", "new Boolean", "primitive wrapper"]
 date_created: 2026-11-27
 date_updated: 2026-11-27
-source_count: 1
+source_count: 2
 tags: [javascript, wrapper-objects, autoboxing, tipos-primitivos, construtores, conversao-de-tipos]
 skill: lang-dynamic
 status: stub
@@ -51,6 +51,10 @@ null.length            // TypeError: null e undefined não têm wrapper
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], a aula inteira é sobre o tema. O critério de objeto é ter "propriedades e métodos"; o paradoxo é `name.length` num primitivo; a resposta é o "objeto wrapper [...] um envoltório", criado para o acesso e descartado. Os construtores sem `new` "servem mais como conversores do que construtores". A aula cita três wrappers (os da era ES5); `Symbol` e `BigInt` ficaram de fora.
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], verificado: `typeof new String('a')` dá `'object'`, enquanto `typeof 'a'` dá `'string'`. É mais um motivo para não criar wrappers com `new`: a guarda `typeof x === 'string'` recusa o wrapper.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/tipos-primitivos-javascript]]: quais valores são primitivos.
@@ -61,3 +65,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], a aula inteira é sobre o 
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: wrapper como envoltório; new × sem new; valueOf
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof de wrapper é object

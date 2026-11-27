@@ -4,7 +4,7 @@ title: "Operadores aritméticos em JavaScript"
 aliases: ["operadores aritméticos", "operador de resto", "módulo %", "operadores JavaScript", "coerção com +"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 8
+source_count: 9
 tags: [javascript, operadores, aritmetica, coercao, number]
 skill: lang-dynamic
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/javascript-ninja-operador-modulo]], o `%` finalmente aparece: 
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], `String(52) + 2` concatena (`'522'`), porque o `+` com string "converte os dois valores"; com `Number('52') + 2`, soma (54). Os construtores sem `new` servem de conversores explícitos antes da conta ([[wiki/concepts/wrapper-objects-javascript]]).
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], `sum('JS', 2)` concatena e `sum({}, [])` dá a string `'[object Object]'` (a aula diz que "retorna [...] um objeto"; verificado que é texto). O `-` "não tem essa sobrecarga": `subtract({}, [])` dá `NaN`. A saída da aula é validar com [[wiki/concepts/typeof-javascript|typeof]] antes da conta.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-variaveis-tipos-de-dados-operadores-javascript]]: FrontPUSH, JavaScript aula 02: as cinco operações aritméticas
@@ -62,3 +66,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], `String(52) + 2` concatena
 - [[wiki/sources/javascript-ninja-operadores-unarios]]: JavaScript Ninja, semana 2, vídeo 02: + concatena string com número; + e - unários
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: % como resto da divisão; par e ímpar
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: String(52) + 2 concatena; Number soma
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: + sobrecarregado × - numérico; {} + [] vira string

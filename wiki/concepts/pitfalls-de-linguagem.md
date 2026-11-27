@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-27
-source_count: 12
+source_count: 13
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -103,6 +103,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], dois tropeç
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], `new String`, `new Number` e `new Boolean` aparecem como algo que "não é o que você vai utilizar muito". As razões concretas: `typeof` dá `'object'`, `===` com o primitivo falha e `new Boolean(false)` é truthy (verificados). ESLint tem `no-new-wrappers` `[external]` ([[wiki/concepts/wrapper-objects-javascript]]).
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]]: `typeof null === 'object'`, `typeof [] === 'object'`, `typeof NaN === 'number'` (por isso uma guarda de tipo deixa `NaN` passar) e `{} + []` dando `'[object Object]'`. Todos verificados ([[wiki/concepts/typeof-javascript]]).
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -117,3 +121,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], `new String`, `new Number`
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: ponto e vírgula depois de return function; quebra de linha após return
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: ; no objeto literal; fn × fn() como argumento
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: new String/Number/Boolean como armadilha
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof null, typeof [], typeof NaN, {} + []

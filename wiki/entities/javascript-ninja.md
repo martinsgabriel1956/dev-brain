@@ -4,7 +4,7 @@ title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
 date_updated: 2026-11-27
-source_count: 29
+source_count: 30
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -84,6 +84,7 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 ## Semana 10
 
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: vídeo 01, depois da revisão do desafio da semana 9 (a semana 10 é inferida). Wrapper objects: primitivo sem propriedades, o envoltório temporário que explica `length`, `new String`/`valueOf` e os construtores sem `new` como conversores. O tema cai no desafio. Não anuncia o vídeo seguinte.
+- [[wiki/sources/javascript-ninja-typeof]]: vídeo 02, typeof: confiável para primitivos, `object` para objeto, array e `null`; guarda de tipo em `subtract`. Promete as conversões de objetos e outros testes de tipo para as próximas aulas.
 
 ## Key sources
 
@@ -117,3 +118,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting
 - [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE; desafios passam a vir dentro de IIFE
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: semana 10, vídeo 01: wrapper objects; construtores como conversores
+- [[wiki/sources/javascript-ninja-typeof]]: semana 10, vídeo 02: typeof; validação de argumentos

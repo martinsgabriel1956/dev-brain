@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-11-25
-source_count: 26
+date_updated: 2026-11-27
+source_count: 27
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -125,6 +125,10 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o array é "um t
 
 Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o array cresce com `push` em vez de ser reescrito, e guarda tipos misturados: objeto `{ carro: 'BMW' }`, outro array ("a chave 5"), `null` e uma função `soma`, chamada pelo índice (`array[7](1, 2)` dá 3). `[external]` `arr[arr.length] = x` também acrescenta no fim.
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], `typeof []` dá `'object'`; para saber "se é realmente um array, você precisa fazer outros tipos de teste". O teste é `Array.isArray(x)` `[external]`, verificado. Somar array com objeto (`{} + []`) dá a string `'[object Object]'`.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -153,3 +157,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o array cres
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: anuncia arrays como "objetos disfarçados"
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: length, array heterogêneo, percurso com while
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push; array com objeto, array e função
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof de array é object; Array.isArray

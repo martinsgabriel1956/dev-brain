@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 52
+source_count: 53
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -165,6 +165,10 @@ Em [[wiki/sources/javascript-ninja-iife]], a IIFE, padrão da era ES5 para isola
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], wrapper objects e conversão com `String()`, `Number()` e `Boolean()` ([[wiki/concepts/wrapper-objects-javascript]]).
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], o [[wiki/concepts/typeof-javascript|typeof]] e o bug histórico de `typeof null`.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -219,3 +223,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], wrapper objects e convers�
 - [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: hoisting
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: wrapper objects
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof

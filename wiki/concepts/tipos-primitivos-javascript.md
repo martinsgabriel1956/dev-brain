@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-27
-source_count: 20
+source_count: 21
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -121,6 +121,10 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], cada primitivo é classific
 
 Em [[wiki/sources/javascript-ninja-wrapper-objects]], primitivos "não são objetos" porque não têm propriedades nem métodos; o `length` de uma string vem de um [[wiki/concepts/wrapper-objects-javascript|wrapper]] temporário. A lista da aula (número, string, booleano, "valor indefinido") omite `null`, `symbol` e `bigint`.
 
+## No JavaScript Ninja, semana 10, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-typeof]], o [[wiki/concepts/typeof-javascript|typeof]] é apresentado como a forma de testar o tipo de um valor: confiável para "número, string e Boolean", falho para objetos (array e `null` dão `'object'`). A aula mostra seis dos oito resultados; faltam `symbol` e `bigint`.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
@@ -143,3 +147,4 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], primitivos "não são obje
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: primitivos por truthy/falsy
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: primitivos como os retornos usados até ali; faltam symbol e bigint
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: primitivo sem propriedades; wrapper explica o length
+- [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof confiável só para primitivos

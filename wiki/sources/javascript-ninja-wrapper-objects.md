@@ -118,7 +118,7 @@ Primeiro vídeo depois da revisão do desafio da semana 9 do [[wiki/entities/jav
 - **"%52"** e **"para esse fim"**: provavelmente `'52'` entre aspas e "para string" (média).
 - **"Pra matar"**, depois de usar `Number`: talvez o resultado 54 (baixa).
 - **"Luis Peru"**, **"F para o array"**, **"os jovens"**, **"o vai tu"**: ilegíveis; literais.
-- O vídeo não anuncia o próximo; o arquivo seguinte na pasta de transcrições é `02 - typeof`.
+- O vídeo não anuncia o próximo. Na wiki, o seguinte é [[wiki/sources/javascript-ninja-typeof]] (semana 10, vídeo 02).
 
 ## Raw quotes
 
