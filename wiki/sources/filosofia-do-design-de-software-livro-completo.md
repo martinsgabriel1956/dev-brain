@@ -3,7 +3,7 @@ type: source
 title: "A Philosophy of Software Design — Livro Completo"
 aliases: ["philosophy of software design completo", "ousterhout livro completo", "a philosophy of software design full book"]
 date_created: 2026-07-29
-date_updated: 2026-11-26
+date_updated: 2026-11-27
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/a-philosophy-of-software-design.md
 source_url: ""
 author: "John Ousterhout"
@@ -36,7 +36,7 @@ Ingestão do livro inteiro (22 capítulos), lido diretamente do epub original (n
 **Confidence:** alta — o autor descreve explicitamente que mudou de opinião sobre esse ponto ao longo de várias edições do curso.
 
 **Claim:** Camadas adjacentes com abstrações parecidas são um red flag — manifestam-se como métodos pass-through (que só repassam argumentos para outro método de assinatura quase idêntica), decorators superusados, ou variáveis pass-through (que atravessam vários métodos que não as usam, só para chegar a um método de baixo nível que precisa delas).
-**Evidence:** Cap. 7. Exemplo de uma classe `TextDocument` com 13 de 15 métodos públicos sendo puro pass-through para `TextArea` — sinal de divisão de responsabilidade confusa entre as duas classes. Para variáveis pass-through (ex.: certificado de segurança atravessando `main → m1 → m2 → m3`), a solução preferida do autor é um **objeto de contexto** único por instância do sistema, guardado como campo de instância nos objetos principais — mesmo reconhecendo que contextos têm as desvantagens de variáveis globais (dependências não óbvias) se usados sem disciplina.
+**Evidence:** Cap. 7. Exemplo de uma classe `TextDocument` com 13 de 15 métodos públicos sendo puro pass-through para `TextArea` — sinal de divisão de responsabilidade confusa entre as duas classes. Para variáveis pass-through (ex.: certificado de segurança atravessando `main → m1 → m2 → m3`), a solução preferida do autor é um **objeto de contexto** único por instância do sistema, guardado como campo de instância nos objetos principais — mesmo reconhecendo que contextos têm as desvantagens de variáveis globais (dependências não óbvias) se usados sem disciplina. *O texto do cap. 7 ([[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]]) confere e acrescenta: a regra vale também entre interface e implementação (7.4), dispatcher e várias implementações da mesma interface são duplicação aceitável (7.2), há quatro alternativas ao decorator (7.3) e a defesa do contexto é manter suas variáveis imutáveis (7.5).*
 **Confidence:** alta.
 
 **Claim:** Quando uma complexidade é inevitável, é melhor "puxá-la para baixo" (para dentro do módulo, sofrendo o desenvolvedor do módulo) do que empurrá-la para cima (para o usuário do módulo, via exceção ou parâmetro de configuração) — a maioria dos módulos tem mais usuários que desenvolvedores.
@@ -126,6 +126,7 @@ O capítulo 1 e a seção 1.1 também existem como tradução do usuário, compa
 - Cap. 4: [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]], com interface formal e informal, falsa abstração, Figura 4.1, Unix I/O, [[wiki/concepts/classite]] e o caso comum simples
 - Cap. 5: [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], com vazamento pela porta dos fundos, [[wiki/concepts/decomposicao-temporal]], `getParams` e valores padrão
 - Cap. 6: [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]], com [[wiki/concepts/modulo-de-proposito-geral]], a classe de texto do editor, as três perguntas, a classe `History` e [[wiki/concepts/eliminar-casos-especiais]]
+- Cap. 7: [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]], com [[wiki/concepts/camada-diferente-abstracao-diferente]], [[wiki/concepts/metodo-de-repasse]], decorators, interface vs. implementação e [[wiki/concepts/objeto-de-contexto]]
 
 ## Open Questions
 

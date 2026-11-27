@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-11-26
-source_count: 10
+date_updated: 2026-11-27
+source_count: 11
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -90,6 +90,10 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] traz o texto do cap. 6. A seção "Generalidade moderada torna módulos mais profundos", acima, vinha do resumo do livro completo e estava quase toda certa. Um ponto muda: a classe geral não serve "sem alteração" para busca e substituição. Falta um método `findNext(Position, String)`, que um editor com busca provavelmente já teria (6.3). O capítulo acrescenta três coisas: as três perguntas para achar o equilíbrio (6.5), a classe `History` como segundo exemplo (6.7) e a seleção vazia como o mesmo princípio dentro do método ([[wiki/concepts/eliminar-casos-especiais]]). A heurística ganhou página própria: [[wiki/concepts/modulo-de-proposito-geral]].
 
+## Cap. 7: interface diferente da implementação (2026-11-27)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] aplica a profundidade a camadas: [[wiki/concepts/metodo-de-repasse|métodos de repasse]] e decorators deixam a classe rasa porque aumentam a interface sem aumentar a função. Dentro da classe, a interface deve diferir da implementação (7.4): a classe de texto guarda linhas, mas a API `getLine`/`putLine` ficou rasa e jogou para a UI o trabalho de dividir e juntar linhas. Com `insert`/`delete` sobre posições arbitrárias, "a diferença representa uma funcionalidade valiosa fornecida pela classe". Ver [[wiki/concepts/camada-diferente-abstracao-diferente]].
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
@@ -102,3 +106,4 @@ A regra que sai da 4.7 é **tornar o caso comum simples**: se a maioria só usa 
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — texto do cap. 4: Figura 4.1 como custo-benefício, módulo inclui método, parte informal da interface, lista encadeada e `addNullValueForAttribute` como rasos, caso comum simples
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultar como técnica de profundidade; classes um pouco maiores; HTTP leitura+análise e `getParams` como rasos
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — texto do cap. 6: API geral mais profunda e com menos código; corrige "sem alteração" (falta `findNext`)
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — 7.4: interface igual à implementação indica classe rasa; repasse e decorators como rasos

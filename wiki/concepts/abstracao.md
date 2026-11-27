@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-11-26
-source_count: 13
+date_updated: 2026-11-27
+source_count: 14
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -95,6 +95,10 @@ O exemplo é o sistema de arquivos. A escolha dos blocos no disco pode ficar esc
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] dá um exemplo da falsa abstração do cap. 4. Um método `backspace(cursor)` numa classe de texto supostamente esconde quais caracteres apaga, mas quem programa a UI precisa saber disso e vai ler o código do método para confirmar. Com a API geral, o chamador escreve `text.delete(text.changePosition(cursor, -1), cursor)` e o comportamento fica à vista (6.4). Ver [[wiki/concepts/modulo-de-proposito-geral]].
 
+## Cada camada, uma abstração (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]]: em um sistema bem projetado, a abstração muda a cada camada (arquivo → cache de blocos → drivers; fluxo de bytes TCP → pacotes de melhor esforço). Se duas camadas vizinhas oferecem a mesma abstração, uma delas provavelmente não esconde nada. Ver [[wiki/concepts/camada-diferente-abstracao-diferente]].
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
@@ -113,3 +117,4 @@ O exemplo é o sistema de arquivos. A escolha dos blocos no disco pode ficar esc
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: abstrair o mundo real em objetos
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — 4.3: os dois erros de uma abstração, a falsa abstração e o *flushing* do sistema de arquivos
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — 6.4: o método `backspace` como falsa abstração
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — abstração deve mudar a cada camada (introdução do cap. 7)

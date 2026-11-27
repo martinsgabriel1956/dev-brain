@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-11-03
-source_count: 10
+date_updated: 2026-11-27
+source_count: 11
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -42,6 +42,10 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 
 [[wiki/sources/substitutable-dependency-xunitpatterns]] fecha, com fonte primária dedicada, o termo que nomeia a propriedade que DI provê: **substitutable dependency** (dependência substituível) — a capacidade de trocar o [[wiki/concepts/test-doubles|DOC]] real por um Test Double. DI é um dos três mecanismos formais catalogados por Meszaros para obter essa propriedade, ao lado de Dependency Lookup e do terceiro mecanismo revelado por essa fonte, [[wiki/concepts/test-specific-subclass|Test-Specific Subclass]] (sobrescrever, numa subclasse só de teste, o ponto do SUT onde a dependência real seria criada/obtida).
 
+## Contexto passado pelo construtor (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.5): o [[wiki/concepts/objeto-de-contexto]] só aparece como argumento explícito nos construtores; cada objeto guarda a referência e a repassa aos objetos que cria. É injeção pelo construtor de um único objeto com todo o estado global. O livro não usa o termo DI (leitura da wiki).
+
 ## Key Sources
 
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — DI citada como técnica que afrouxa mas não remove o acoplamento do segundo estágio; base de testes unitários e de integração
@@ -63,3 +67,4 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 ## Key sources (adição 2026-11-03)
 
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — injetar dependência na classe de estratégia facilita testar e trocar o provedor de e-mail
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — contexto injetado pelo construtor, sem o nome DI (7.5)

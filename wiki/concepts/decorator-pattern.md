@@ -3,8 +3,8 @@ type: concept
 title: "Decorator Pattern"
 aliases: ["padrão decorator", "design pattern decorator"]
 date_created: 2026-05-01
-date_updated: 2026-11-25
-source_count: 8
+date_updated: 2026-11-27
+source_count: 9
 tags: [design-patterns, structural, decorator, oop]
 skill: tech-mentor-backend
 status: stub
@@ -56,6 +56,12 @@ Essa fonte traz dois ângulos que reforçam a definição:
 
 [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] (4.7) traz o caso em primeira mão. Ousterhout não fala em Decorator: trata a cadeia `FileInputStream` → `BufferedInputStream` → `ObjectInputStream` como exemplo de [[wiki/concepts/classite]]. A crítica central é o buffer ser opcional: quem esquece de criar o `BufferedInputStream` fica com I/O lento. A composição em si pode continuar, desde que o caso comum (com buffer) seja o padrão e o jeito de desligá-lo fique separado na interface. Isso dá um limite prático ao padrão: empilhar decoradores é bom para variações, ruim quando quase todo mundo precisa da mesma pilha.
 
+## O custo do Decorator (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.3) nomeia o padrão, o que o cap. 4 não fazia. O decorator encoraja duplicar a API entre camadas e tende a ser raso: muito *boilerplate* e muitos [[wiki/concepts/metodo-de-repasse|métodos de repasse]] para pouca função nova. Usado para cada recurso pequeno, gera [[wiki/concepts/classite]]. Antes de criar um, o livro pede quatro checagens: pôr a função na própria classe (o buffer é parte natural de I/O, e `InputStream` e `BufferedInputStream` "deveriam ter sido combinadas"), juntá-la ao caso de uso, juntá-la a um decorator existente ou fazer uma classe independente que não embrulhe a base (barras de rolagem fora da `Window`). O wrapper só se justifica, raramente, para traduzir uma interface externa imutável ([[wiki/concepts/adapter-pattern]]).
+
+Tensão com a skill: a referência `design-patterns.md` descreve o Decorator como "alternativa a herança" para adicionar comportamento sem alterar a classe, sem custo [skill: tech-mentor-backend]. Ousterhout aceita o objetivo (separar extensão específica do núcleo geral) e contesta o meio quando a extensão é usada por quase todos.
+
 ## Key Sources
 
 - [[wiki/sources/decorator-xunitpatterns]]
@@ -66,3 +72,4 @@ Essa fonte traz dois ângulos que reforçam a definição:
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — pipeline `ImageProcessor` (básico → marca d'água → resize); composição recursiva, vínculo com Open/Closed e contraste com Chain of Responsibility
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — citação breve como pattern-exemplo de OCP (adicionar funcionalidade à instância de um objeto sem alterar a classe original), sem exemplo de código nesta fonte
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — `java.io` como classite e a regra de tornar o caso comum simples (4.7)
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — 7.3: decorators rasos, quatro alternativas, `java.io` deveria ser uma classe só

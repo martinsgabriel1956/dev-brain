@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-11-03
-source_count: 13
+date_updated: 2026-11-27
+source_count: 14
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -89,6 +89,10 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 
 [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] usa um app que espera `charge(amount)` diante de um PayPal que expõe `pay(amount, currency)`. O `PayPalAdapter` implementa `charge` e chama `pay` passando USD. Trocar de provedor passa a mexer só no adaptador. A moeda fixa é simplificação didática: um adaptador real precisa recebê-la, ou perde informação na tradução (inferência). Junto com a escolha de provedor, vira [[wiki/concepts/strategy-com-adapter]].
 
+## Wrapper que traduz interfaces (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.3) aceita o wrapper num caso: uma classe externa cuja interface não pode mudar precisa obedecer a outra interface na aplicação. É o Adapter, embora o livro não use o nome (leitura da wiki). O autor considera o caso raro e diz que "geralmente há uma alternativa melhor". Não é método de repasse porque a tradução é a função que o wrapper agrega ([[wiki/concepts/metodo-de-repasse]]).
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -107,3 +111,4 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — adapter do provedor de pagamento como "carinha do meio" que desacopla.
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — `charge` traduzido para `PayPal.pay`; SDK só no último momento possível; uso conjunto com Strategy
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — wrapper que traduz interface externa imutável como caso legítimo e raro (7.3)

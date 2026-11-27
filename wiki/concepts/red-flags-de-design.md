@@ -3,8 +3,8 @@ type: concept
 title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
-date_updated: 2026-11-26
-source_count: 8
+date_updated: 2026-11-27
+source_count: 9
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -86,6 +86,10 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] chama de "sinal de alerta" um método projetado para um uso particular, como `backspace` (6.5), e trata a mistura de código geral e específico no desfazer (6.7). O capítulo não tem quadro de *red flag*. A mistura ganha quadro no cap. 9 (*Special-General Mixture*, na tabela acima). Ver [[wiki/concepts/modulo-de-proposito-geral]].
 
+## Cap. 7: o quadro do Método de Repasse (2026-11-27)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] traz o quadro: método que não faz nada além de passar os argumentos para outro, geralmente com a mesma API, sinal de divisão de responsabilidade pouco clara. Ver [[wiki/concepts/metodo-de-repasse]]. A introdução do capítulo também chama de *red flag* camadas adjacentes com abstrações semelhantes ([[wiki/concepts/camada-diferente-abstracao-diferente]]), mas sem quadro próprio; decorators em excesso e variáveis de passagem são tratados como formas do mesmo problema, também sem quadro.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
@@ -96,3 +100,4 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] — quadro de Módulo Raso (4.5) e seu exemplo original, `addNullValueForAttribute`
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — texto dos quadros Vazamento de Informação, Decomposição Temporal e Superexposição
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — método de uso único como sinal de alerta; origem da *Special-General Mixture*
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — quadro Método de Repasse (7.1); camadas semelhantes como sinal sem quadro

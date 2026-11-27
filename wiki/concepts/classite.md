@@ -3,8 +3,8 @@ type: concept
 title: "Classite (Classitis)"
 aliases: ["classitis", "classite", "excesso de classes", "classes pequenas demais"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 4
+date_updated: 2026-11-27
+source_count: 5
 tags: [design, ousterhout, modulo-profundo, classes, java, orientacao-a-objetos]
 skill: tech-mentor-backend
 status: stub
@@ -45,9 +45,14 @@ Na seção 4.7, a biblioteca do Java é "um dos exemplos mais visíveis". Para l
 
 O "erro mais comum" dos alunos no servidor HTTP foi dividir o código em muitas classes rasas: uma para ler a requisição, outra para analisá-la. A divisão seguia a ordem de execução ([[wiki/concepts/decomposicao-temporal]]) e duplicou o conhecimento do formato. O livro diz que a classe fundida seria mais profunda e que o ocultamento muitas vezes melhora com uma classe um pouco maior ([[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]], 5.5).
 
+## Decorators em excesso (cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.3) liga a classite ao [[wiki/concepts/decorator-pattern]]: é fácil criar uma classe decorator para cada recurso novo pequeno, o que dá a "explosão de classes rasas" do I/O do Java. Uma das saídas é juntar a função nova a um decorator existente, ficando com uma classe mais profunda em vez de várias rasas.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]]: definição (4.6) e o caso do I/O do Java (4.7), em primeira mão
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: primeira menção na wiki, no resumo do cap. 4
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]]: por que o `java.io` ficou assim (otimização antes de usabilidade, sem retorno múltiplo)
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]]: leitura e análise de HTTP em duas classes rasas (5.5)
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — decorator para cada recurso pequeno como origem da classite (7.3)
