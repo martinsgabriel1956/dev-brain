@@ -117,7 +117,7 @@ Segundo vídeo da semana 10 do [[wiki/entities/javascript-ninja|JavaScript Ninja
 - **"Um bilhetinho rei"**: talvez "um objeto e um array" (média). **"Mas tinha"**: talvez "uma string".
 - **"Ele vai me retornar para os dois"**: provavelmente `NaN` (média). **"Ele disse que o não faria"**: o erro ao chamar a função com o nome antigo (`sum` is not defined?), baixa.
 - **"Está construindo e Boolean"**: talvez "string, number e Boolean" (média).
-- O vídeo não anuncia o próximo assunto; é o último arquivo da pasta de transcrições.
+- O vídeo não anuncia o próximo assunto. Na wiki, o seguinte é [[wiki/sources/javascript-ninja-lacos-loops]] (semana 11, vídeo 01).
 
 ## Raw quotes
 

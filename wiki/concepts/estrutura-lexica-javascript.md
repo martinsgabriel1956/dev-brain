@@ -3,8 +3,8 @@ type: concept
 title: "Estrutura léxica do JavaScript"
 aliases: ["gramática léxica", "lexical grammar", "estrutura léxica", "case sensitive", "literais JavaScript", "literal", "comentários em JavaScript"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [javascript, estrutura-lexica, case-sensitive, comentarios, literais, tokens, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -54,6 +54,11 @@ Em [[wiki/sources/javascript-ninja-estrutura-lexica]], estrutura léxica é "um 
 
 Relacionado: [[wiki/concepts/tipos-primitivos-javascript]], [[wiki/concepts/expressao-javascript]].
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o ponto e vírgula depois do `while (...)` de um `do...while` é apresentado como obrigatório. Desde o ES2015 a inserção automática o cobre, mesmo na mesma linha (verificado); fica como estilo.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-estrutura-lexica]]: JavaScript Ninja, semana 2, vídeo 03: case sensitive, comentários, literais, identificadores, reservadas
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: ; depois do do...while e a inserção automática

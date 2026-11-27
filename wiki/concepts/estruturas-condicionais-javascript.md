@@ -3,8 +3,8 @@ type: concept
 title: "Estruturas condicionais em JavaScript (if/else, switch)"
 aliases: ["if else", "else if", "switch case", "estrutura encadeada", "operadores lógicos", "&&", "||", "early return"]
 date_created: 2026-11-16
-date_updated: 2026-11-26
-source_count: 11
+date_updated: 2026-11-27
+source_count: 12
 tags: [javascript, condicionais, if-else, switch, operadores-logicos, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -90,6 +90,10 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], o `while` é 
 
 Em [[wiki/sources/javascript-ninja-hoisting]], a regra "retorne sempre na última linha da função" vem com uma exceção: "um return dentro do if". `[external]` É o early return acima; a regra vale para o `return` final, não para os antecipados.
 
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], o early return volta como "salto": `if (num === 10) return true` pula "todo o restante da função". A versão com variável de retorno, `if`/`else` e `return` no fim "vai funcionar exatamente do mesmo jeito", mas "se você não utilizar o else, melhor ainda": "uma variável a menos" e "muito mais visibilidade da função". No `switch`, a demo do `break` esquecido repete o fall-through (10, 2 e `default`), agora descrito certo: "qualquer outro valor aqui embaixo, ele vai imprimir".
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: if/else if/else, && e ||, switch case
@@ -103,3 +107,4 @@ Em [[wiki/sources/javascript-ninja-hoisting]], a regra "retorne sempre na últim
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: switch, case, break, default e o fall-through do break esquecido
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: while como if que repete
 - [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: return na última linha, exceto dentro do if
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: early return sem else; break e fall-through no switch

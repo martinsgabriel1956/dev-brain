@@ -3,7 +3,7 @@ type: source
 title: "Estrutura de repetição while (JavaScript Ninja, semana 6, vídeo 02)"
 aliases: ["JavaScript Ninja while", "JS Ninja loop while", "02 - Estrutura de repetição While"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
+date_updated: 2026-11-27
 source_count: 0
 tags: [javascript, while, loops, estruturas-de-repeticao, loop-infinito, truthy-falsy, decremento, desafio]
 skill: lang-dynamic
@@ -74,7 +74,7 @@ Segundo e último vídeo da semana 6 do [[wiki/entities/javascript-ninja|JavaScr
 2. **Por que trava.** O loop infinito trava a aba porque o JavaScript da página roda numa thread só: enquanto o loop gira, nada mais executa (nem render, nem cliques, nem timers). O navegador oferece encerrar o script; não é preciso reiniciar o navegador inteiro ([[wiki/concepts/event-loop-performance-js]]). `while (true)` com `break` é um padrão legítimo; o problema é não haver saída.
 3. **`while (counter)` × `while (counter > 0)`.** `[external]` Com inteiros a partir de 10 os dois dão o mesmo resultado. Se o contador começar negativo ou pular o zero (passo 0,3, por exemplo), `!== 0` e a forma truthy nunca falham e o loop fica infinito; `> 0` é a condição defensiva ([[wiki/concepts/truthy-e-falsy]]).
 4. **`while (counter--)` testa o valor antigo.** O pós-decremento devolve o valor antes de subtrair: a condição vê 10 e o corpo imprime 9, até a condição ver 0 com o corpo já tendo impresso 0. No fim, `counter` vale -1, não 0. A aula acerta a saída (9 a 0), mas não explica por que começa em 9 ([[wiki/concepts/incremento-e-decremento]]).
-5. **O que ficou de fora.** `do...while` (o corpo roda ao menos uma vez), `for`, `break` e `continue`. O `break` apareceu no vídeo anterior, mas só no `switch` ([[wiki/concepts/estruturas-condicionais-javascript]]).
+5. **O que ficou de fora.** `do...while` (o corpo roda ao menos uma vez), `for`, `break` e `continue`. O `break` apareceu no vídeo anterior, mas só no `switch` ([[wiki/concepts/estruturas-condicionais-javascript]]). O `do...while` chega em [[wiki/sources/javascript-ninja-lacos-loops]] (semana 11, vídeo 01).
 6. **Branch do desafio.** A legenda diz "cria tablets gera em 06"; pelo fluxo da semana 3 (`challenge-03`), deve ser a branch `challenge-06` (inferência, média-alta). O curso ainda usa `master`; repositórios novos no GitHub usam `main` desde 2020 ([[wiki/concepts/fork-e-upstream]]).
 7. **Legenda.** Trocas principais: "coisas jovens de biquíni Gilson"→o curso JavaScript Ninja, eu sou o; "da Silva"→Daciuk; "áudio" (4×)→while; "Lupi"/"grupo"→loop; "tu"→true; "eu tu"→while true; "Wi-Fi"→if; "suíte"→switch; "massa"→master; "por reconhece"→pull request; "amigo"→e-mail; "mais no vídeo"→issue no GitHub; "javali"→já vale. O nome da variável ("caldo", "cautela", "cautelar", "Caltech", "cauda", "conter", "falta"; provavelmente `counter`) ficou literal. Lista completa no [[wiki/log]].
 

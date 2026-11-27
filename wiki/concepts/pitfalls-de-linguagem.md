@@ -4,7 +4,7 @@ title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
 date_updated: 2026-11-27
-source_count: 13
+source_count: 15
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -107,6 +107,14 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], `new String`, `new Number`
 
 Em [[wiki/sources/javascript-ninja-typeof]]: `typeof null === 'object'`, `typeof [] === 'object'`, `typeof NaN === 'number'` (por isso uma guarda de tipo deixa `NaN` passar) e `{} + []` dando `'[object Object]'`. Todos verificados ([[wiki/concepts/typeof-javascript]]).
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o [[wiki/concepts/for-in-javascript|for...in]] aparece sem o aviso principal: ele percorre também as chaves herdadas e, em array, devolve índices como string. `in` também vê o protótipo (`'toString' in car` é `true`). Tudo verificado.
+
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], dois furos fora da aula (verificados): `continue` antes do incremento num `while` é loop infinito, e `break` dentro de `forEach` é `SyntaxError`. Ver [[wiki/concepts/break-e-continue-javascript|break e continue]].
+
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
@@ -122,3 +130,5 @@ Em [[wiki/sources/javascript-ninja-typeof]]: `typeof null === 'object'`, `typeof
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: ; no objeto literal; fn × fn() como argumento
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: new String/Number/Boolean como armadilha
 - [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof null, typeof [], typeof NaN, {} + []
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: for...in com herdadas e em array; in vê o protótipo
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: continue no while, break no forEach

@@ -3,7 +3,7 @@ type: source
 title: "Arrays: o método push() e o loop for (JavaScript Ninja, semana 7, vídeo 03)"
 aliases: ["JavaScript Ninja push", "JS Ninja loop for", "03 - Arrays - método push() e Loop for", "push e for JavaScript Ninja"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
+date_updated: 2026-11-27
 source_count: 0
 tags: [javascript, array, push, for, loops, funcoes-de-primeira-classe, operador-virgula, off-by-one]
 skill: lang-dynamic
@@ -103,6 +103,8 @@ Vídeo seguinte na wiki: [[wiki/sources/javascript-ninja-a-importancia-de-nomear
 - **"Rounds" / "arroz"**: o nome da segunda variável do `for`; "arroz" aparece 4 vezes e foi mantido (média de que seja outro nome).
 - **"Lá no ar [...] fora do Rio" / "dentro do eu e mais mais"**: deve ser "lá no while [...] fora do while" e "dentro do while" (média); literais.
 - **"Do pai"**: provavelmente "do while" (média); literal.
+
+- O `for` é revisado em [[wiki/sources/javascript-ninja-lacos-loops]] (semana 11, vídeo 01), ao lado do `do...while` e do `for...in`.
 
 ## Raw quotes
 

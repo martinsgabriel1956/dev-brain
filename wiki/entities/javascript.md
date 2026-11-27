@@ -4,7 +4,7 @@ title: "JavaScript"
 aliases: ["JS", "Javascript"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 53
+source_count: 55
 tags: [linguagem, javascript, ecmascript, frontend, backend, web]
 skill: lang-dynamic
 status: stub
@@ -169,6 +169,14 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], wrapper objects e convers�
 
 Em [[wiki/sources/javascript-ninja-typeof]], o [[wiki/concepts/typeof-javascript|typeof]] e o bug histórico de `typeof null`.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], `do...while`, `for` e [[wiki/concepts/for-in-javascript|for...in]], com o operador `in`.
+
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], [[wiki/concepts/break-e-continue-javascript|break e continue]] e o `return` como saltos.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-introducao-javascript-es6-ecmascript]]: FrontPUSH, módulo de JavaScript, aula 01: o que é JS e o que é ES6+
@@ -224,3 +232,5 @@ Em [[wiki/sources/javascript-ninja-typeof]], o [[wiki/concepts/typeof-javascript
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: wrapper objects
 - [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: laços
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: saltos

@@ -3,8 +3,8 @@ type: concept
 title: "Incremento e decremento (++ e --)"
 aliases: ["++", "--", "incremento", "decremento", "pós-incremento", "pré-incremento", "pós-decremento", "pré-decremento", "i++", "++i", "postfix increment", "prefix increment"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 7
+date_updated: 2026-11-27
+source_count: 9
 tags: [javascript, operadores, incremento, decremento, expressoes]
 skill: lang-dynamic
 status: stub
@@ -59,6 +59,14 @@ Em [[wiki/sources/javascript-ninja-operador-modulo]], o `num++` antes do teste d
 
 Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], a posição do `--` decide o índice lido: `array[qtd--]` com `qtd = 5` lê o 5, que não existe, e `array[--qtd]` lê o 4. A aula chega à versão certa por tentativa, sem explicar o pré × pós.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o `counter++` no fim do corpo é o que faz o `while` e o `do...while` pararem; no `do...while` começando em 10, o incremento leva a 11 depois da única volta.
+
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], o `i++` da expressão final do `for` roda mesmo depois de um `continue`, por isso a demo avança. Num `while` com `j++` no fim do corpo, o mesmo `continue` pularia o incremento e o laço não acabaria (verificado).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: pós e pré-incremento e decremento pelo eco do REPL
@@ -68,3 +76,5 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], a posição do `
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: counter-- no corpo e na condição do while
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: ++ antes do teste troca pares por ímpares
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: array[qtd--] × array[--qtd]
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: counter++ no while e no do...while
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: continue e o incremento do for × while
