@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-27
-source_count: 174
+source_count: 175
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -394,6 +394,8 @@ Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1|aula 5 do módulo de IA]] 
 
 Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2|aula 6 do módulo de IA]] (julho de 2026), sustenta a parte 1 com prints de manchetes. Defende "não acreditem em CEO de inteligência artificial", aposta no Brasil pelas terras raras e se diz "da década de 90", menos exposto à "idiotização". Admite que tende "a me prender" num workflow e promete a prática na próxima aula.
 
+Na [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia|aula 7 do módulo de IA]], primeira prática, mostra o fluxo de mídia dos sites do robô e do Spider-Man. Diz que "não tem mais esse negócio de prompt" e que conversa com o GPT por voz, usando a licença do Nubank. Mostra a foto dele piorando a cada edição no mesmo chat e admite: "eu considero que eu tenho pouquíssimo conhecimento em inteligência artificial".
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -570,3 +572,4 @@ Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2|aula 6 do módulo de IA]] 
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: como dar comandos na IA
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o futuro da IA, parte 1
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: o futuro da IA, parte 2
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: workflow de mídia

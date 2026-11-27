@@ -3,8 +3,8 @@ type: entity
 title: "Topaz Video"
 aliases: ["Topaz Video AI", "TopazVideo", "Topaz Labs"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [video, upscaling, interpolacao-de-frames, ferramenta, desktop]
 skill: tech-mentor-ai
 status: stub
@@ -21,3 +21,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], é a últ
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: upscale do vídeo do joystick
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: escolha de modelo, nitidez, reconstrução de detalhes e interpolação 24 → 60 fps

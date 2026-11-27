@@ -108,6 +108,7 @@ Conclusão: "tudo vai ficar mais caro", até o próximo iPhone, "por conta da me
 
 ## Open Questions
 
+- Continuação: [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]] (aula 7: a primeira prática, workflow de mídia; ele usa o GPT pela licença do Nubank).
 - A aposta no Brasil leva em conta que ter reserva não é ter refino? Hoje o refino está quase todo na China.
 - O workflow da próxima aula vai usar o Codex (mais barato) ou o Claude Code (melhor, segundo ele)?
 - Os números de água por pergunta vão ser atualizados com os dados mais recentes dos provedores?

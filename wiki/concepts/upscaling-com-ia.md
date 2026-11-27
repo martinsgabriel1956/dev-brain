@@ -3,8 +3,8 @@ type: concept
 title: "Upscaling com IA (super-resolução)"
 aliases: ["upscale", "super resolução", "AI upscaling", "aprimoramento de vídeo", "video enhancement"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [ia-generativa, video, imagem, upscaling, super-resolucao, interpolacao-de-frames]
 skill: tech-mentor-ai
 status: stub
@@ -31,3 +31,4 @@ Aumentar a resolução de imagem ou vídeo com um modelo que **reconstrói** det
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: Topaz Video de 1080p para 4K 60, com interpolação de 24 para 60 fps

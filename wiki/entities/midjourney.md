@@ -3,8 +3,8 @@ type: entity
 title: "Midjourney"
 aliases: ["Mid Journey", "MJ"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [ia-generativa, geracao-de-imagem, geracao-de-video, ferramenta]
 skill: tech-mentor-ai
 status: stub
@@ -22,3 +22,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], é a ferr
 
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]: exemplo de IA generativa de imagem
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: foto do zero, parâmetros, plano Basic
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "péssimo" para editar, "onde faz as imagens mais bonitas"; do Discord ("barra e imagine") à interface web; vídeo "minimamente bom"

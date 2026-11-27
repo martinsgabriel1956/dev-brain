@@ -4,7 +4,7 @@ title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
 date_updated: 2026-11-27
-source_count: 35
+source_count: 36
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -123,6 +123,7 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o ChatGPT
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "dona do ChatGPT, do Codex", o outro dos "dois principais times" para programar
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: time verde; erro de modelo de negócio (opinião)
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: Altman e a "IA superará a inteligência humana até 2030" como promessa de CEO para desconfiar
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "GPT imagem" que "melhorou bastante"; o ChatGPT como escritor de prompts
 
 ## Vagas no Ashby
 

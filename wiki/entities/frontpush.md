@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-27
-source_count: 146
+source_count: 147
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -651,3 +651,4 @@ Na [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass|aula 02 do 
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: como dar comandos na IA da forma correta (contexto, Lego, RAW → JPEG)
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o futuro da IA, parte 1 (empresas, narrativas, custo × energia)
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: o futuro da IA, parte 2 (CEOs, energia, terras raras, Brasil); última aula teórica
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: meu workflow de IA (mídia), primeira aula prática

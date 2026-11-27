@@ -3,8 +3,8 @@ type: concept
 title: "Modelar referências (vs. copiar interfaces)"
 aliases: ["modelagem de referências", "modelar, não copiar", "copiar vs modelar", "repertório de referências", "biblioteca de referências"]
 date_created: 2026-11-23
-date_updated: 2026-11-24
-source_count: 3
+date_updated: 2026-11-27
+source_count: 4
 tags: [ui-design, referencias, pesquisa, repertorio, processo-de-design]
 skill: ux-ui-mentor
 status: stub
@@ -45,3 +45,4 @@ Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — "modelar, não copiar"; caso Nubank; site do Jonas Miller
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: mix de três plataformas; aba de inspirações
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: olhar modelos para abstrair fluxos
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: Dribbble, Landingfolio e Pinterest como passo zero também na geração de imagem com IA

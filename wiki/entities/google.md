@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-27
-source_count: 53
+source_count: 54
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -166,6 +166,7 @@ Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: "poderia ter saído na 
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: Google e VMware como exemplos de cultura estratégica
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "deu uma moscada"; API de melhor custo-benefício
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: Ruth Porat (Alphabet): "EUA precisam de mais energia para IA"
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: Gemini "criar imagem" com Nano Banana Pro; "essa estrelinha" identifica imagem do Gemini
 
 ## Adição (2026-10-14)
 

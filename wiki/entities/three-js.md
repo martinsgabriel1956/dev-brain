@@ -3,8 +3,8 @@ type: entity
 title: "Three.js"
 aliases: ["three.js", "threejs", "three", "3DS (erro de ASR)"]
 date_created: 2026-11-19
-date_updated: 2026-11-20
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [3d, webgl, webgpu, javascript, biblioteca, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -26,3 +26,4 @@ Em [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]
 
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: Three.js como alternativa de código ao Spline
 - [[wiki/sources/frontpush-bibliotecas-js-vs-css-puro-otimizacao-vs-facilidade]]: FrontPUSH, mini curso de CSS Animations, aula 04: 3D como exceção ao CSS puro
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: sobreposição de duas imagens (pessoa e armadura) no hover, no estilo do site de Lando Norris

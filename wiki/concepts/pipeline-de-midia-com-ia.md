@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de mídia com IA (referência → prompt → foto → vídeo → upscale)"
 aliases: ["fluxo de mídia com IA", "workflow de imagem e vídeo com IA", "produção de mídia com IA generativa"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [ia-generativa, geracao-de-imagem, geracao-de-video, workflow, prompt-engineering, upscaling]
 skill: tech-mentor-ai
 status: stub
@@ -36,6 +36,11 @@ Fluxo em etapas para produzir fotos e vídeos de produto com [[wiki/concepts/ia-
 - A etapa 5, a otimização para web, é onde mora o custo de performance ([[wiki/concepts/core-web-vitals]], [[wiki/concepts/otimizacao-de-imagens]]), e a aula a deixa para depois.
 - Direitos de uso e proveniência (logos, desenho do produto, SynthID e C2PA) atravessam o fluxo inteiro, e não só a etapa 2b. Ver as ressalvas da source.
 
+## Versão atualizada (FrontPUSH, aula 7, meados de 2026)
+
+Em [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]], o mesmo fluxo aparece com o ranking revisto. O Gemini com [[wiki/entities/nano-banana-pro]] passa a ser "o melhor" para as primeiras imagens. O "GPT imagem" "melhorou bastante" e às vezes entende melhor as modificações. O [[wiki/entities/midjourney]] fica com o visual "cinematográfico" e é "péssimo" para editar. O [[wiki/entities/kling-ai]] gera takes de até 5 s emendados para não alucinar, e o [[wiki/entities/topaz-video]] faz 1080p → 4K e 24 → 60 fps. O passo zero (referências do Pinterest e do Dribbble num [[wiki/concepts/mood-board]]) ganha peso, e a regra nova é recomeçar em outro chat quando a imagem degringola ([[wiki/concepts/deriva-em-edicao-iterativa-de-imagem]]).
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: ranking atualizado e regra de recomeçar o chat

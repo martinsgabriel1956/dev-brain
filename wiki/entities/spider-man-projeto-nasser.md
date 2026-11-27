@@ -3,8 +3,8 @@ type: entity
 title: "Spider-Man (projeto do Násser)"
 aliases: ["Spider-Man", "projeto Spider-Man"]
 date_created: 2026-11-13
-date_updated: 2026-11-21
-source_count: 8
+date_updated: 2026-11-27
+source_count: 9
 tags: [projeto, ui-design, style-guide]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transf
 
 Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: "da mesmíssima forma, eu fiz para o Spider-Man", em `/Spider-Man` no domínio do autor, pasta criada no cPanel.
 
+## Mídia feita com IA (FrontPUSH, aula 7)
+
+Em [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]], o projeto aparece como um dos sites com mídia gerada por IA: conceitos e fotos de referência do personagem, imagens no Gemini e no GPT e transições no Kling. O nome foi omitido no pedido "para poder tentar fugir dos direitos autorais", porque os geradores já recusavam o Homem-Aranha.
+
 ## Key Sources
 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]]
@@ -54,3 +58,4 @@ Em [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-domin
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: projeto feito com Sass
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: loader com GSAP
 - [[wiki/sources/frontpush-hostgator-parte-3-upload-public-html-filezilla-dominios-adicionais-autossl]]: FrontPUSH, hospedagem aula 06: hospedado em /Spider-Man
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: imagens e vídeos com IA; filtro de direitos autorais

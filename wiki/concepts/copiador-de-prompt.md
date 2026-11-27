@@ -3,8 +3,8 @@ type: concept
 title: "Copiador de Prompt"
 aliases: ["copiar prompt", "qual foi o prompt que você usou", "dependência de prompt pronto", "prompt pronto"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [prompt-engineering, contexto, aprendizado, ia]
 skill: tech-mentor-ai
 status: stub
@@ -27,3 +27,4 @@ Perguntar a quem escreveu "como é que você descreveu, o que é importante fala
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "eu não copio o prompt"; o resultado reflete o que você sabe
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "hoje em dia não tem mais esse negócio de prompt"; "um prompt só resolve a sua vida [...] isso não existe"

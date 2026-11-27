@@ -3,8 +3,8 @@ type: concept
 title: "Meta-Prompting"
 aliases: ["meta prompting", "prompt template", "placeholder prompting"]
 date_created: 2026-06-02
-date_updated: 2026-11-23
-source_count: 4
+date_updated: 2026-11-27
+source_count: 5
 tags: [prompt-engineering, meta-prompting, template, xml-markdown]
 skill: tech-mentor-ai
 status: draft
@@ -65,3 +65,4 @@ Um segundo sentido de meta-prompting, o da referência `[skill: tech-mentor-ai]`
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — o *Skill Creator*: uma [[wiki/concepts/skills-agente|skill]] que cria skills (lê seu próprio `SKILL.md` e roda scripts para gerar novas), exemplo direto de meta-prompting aplicado a harness
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: ChatGPT escreve os prompts das IAs de imagem e vídeo
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "eu posso conversar com o chatbot para poder lhe fazer o prompt para mim"; descrever uma imagem de referência "em JSON" para reproduzi-la

@@ -3,8 +3,8 @@ type: entity
 title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
-date_updated: 2026-11-24
-source_count: 64
+date_updated: 2026-11-27
+source_count: 65
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -280,3 +280,4 @@ Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de
 - [[wiki/sources/frontpush-dashboards-overview-do-projeto-dashclass]]: FrontPUSH, dashboards aula 02: abas do arquivo do DashClass
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: layout grid com offset
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: estrutura do arquivo
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: onde o autor guarda as versões das imagens do site do robô

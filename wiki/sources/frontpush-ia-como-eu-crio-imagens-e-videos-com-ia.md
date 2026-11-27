@@ -112,6 +112,7 @@ Primeira aula do módulo de IA do [[wiki/entities/frontpush|FrontPUSH]], publica
 
 ## Open Questions
 
+- Versão atualizada do fluxo em [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]] (aula 7, meados de 2026): Nano Banana passa a ser o melhor para as primeiras imagens, GPT imagem para modificações.
 - Como a sequência de frames entra no site (canvas? `<img>` trocado? quantos frames, que formato, que peso)? Fica para o evento e para as aulas de código.
 - Quais otimizações levam o 4K60 até o 1080p30 do site (codec, bitrate, WebM/AV1, pôster)?
 - O que é "exispro" / "Waxes Pro", o caminho do site no portfólio? A legenda não deixa claro.

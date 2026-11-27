@@ -3,8 +3,8 @@ type: entity
 title: "Kling AI"
 aliases: ["Kling", "Kling AI (Kuaishou)", "CleanAI"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [ia-generativa, geracao-de-video, image-to-video, ferramenta]
 skill: tech-mentor-ai
 status: stub
@@ -19,3 +19,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]] (a legenda
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: vídeos do joystick, start/end frame
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "o rei dos vídeos"; takes de 5 s emendados; "vídeo 2.6" sem áudio; créditos sob demanda

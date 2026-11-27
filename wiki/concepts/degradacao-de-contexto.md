@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-11-25
-source_count: 11
+date_updated: 2026-11-27
+source_count: 12
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -77,6 +77,7 @@ Em [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]], um pr
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — o autor cita queda de desempenho em contextos muito longos (número provavelmente corrompido na transcrição) como motivo para controlar chunks e top-K
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "quanto mais tempo você passa no chat [...] mais informação se perde"
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: chat longo, "velocidade mentirosa" e recomeçar do zero
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "abre outro prompt e faz de novo"; em código, "atuar como um sênior [...] de forma mais picada"
 
 ## Key sources (adição 2026-10-07)
 

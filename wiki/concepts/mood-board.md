@@ -3,8 +3,8 @@ type: concept
 title: "Mood Board"
 aliases: ["moodboard", "painel de referências", "painel semântico", "referências visuais"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 6
+date_updated: 2026-11-27
+source_count: 7
 tags: [ui, ui-design, design, pesquisa, referencias, criatividade]
 skill: ux-ui-mentor
 status: stub
@@ -46,3 +46,4 @@ Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-ty
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — pesquisar referências antes de escolher fonte
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-criar-boas-ofertas]]: pesquisa visual e mood board como etapa explicada ao cliente na oferta
 - [[wiki/sources/frontpush-monetizacao-freelancer-workflow-de-apresentacao-de-freelas]]: mood boards alimentados pelo pré-briefing
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "o trabalho começa antes, é como se fosse um mood board"; referências anexadas ao chatbot antes de qualquer pedido

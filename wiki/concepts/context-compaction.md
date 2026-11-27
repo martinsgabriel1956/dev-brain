@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Contexto"
 aliases: ["context compaction", "compact", "context compression", "sumarização de contexto"]
 date_created: 2026-05-31
-date_updated: 2026-11-25
-source_count: 7
+date_updated: 2026-11-27
+source_count: 8
 tags: [claude-code, context-window, compactacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -108,6 +108,7 @@ Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo 
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — compactação + tool-offloading + skills
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "sempre vai tentar resumir e quando você resume, você perde informação"; o "mapa mental" como metáfora da compactação, que é feita pelo harness perto do limite, não a cada prompt
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: analogia RAW → JPEG
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: a piora da imagem no mesmo chat lida como compactação (mais precisamente, [[wiki/concepts/deriva-em-edicao-iterativa-de-imagem]])
 
 ## Key sources (adição 2026-10-07)
 

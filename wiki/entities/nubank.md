@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-25
-source_count: 35
+date_updated: 2026-11-27
+source_count: 36
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -183,3 +183,4 @@ Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], o Nubank (com 
 - [[wiki/sources/frontpush-mentoria-ui-design-referencias-patterns-leitura-z-f-contraste]] — cada seção do projeto Nubank tem uma referência de origem
 - [[wiki/sources/mapear-requisitos-de-multiplas-vagas-galego]] — requisitos de uma vaga de dev (Clojure, Java, Kafka, AWS, Prometheus, Kubernetes)
 - [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]] — Nubank como Tier 3 brasileiro (estimativa do autor)
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: "o Nubank deu uma licença para mim [...] GPT Pro" (benefício citado pelo autor, não verificado)

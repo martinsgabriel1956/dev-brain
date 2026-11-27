@@ -3,8 +3,8 @@ type: concept
 title: "Start frame e end frame (vídeo por quadros-chave)"
 aliases: ["first frame last frame", "primeiro e último quadro", "keyframe-conditioned video", "image-to-video com quadro final"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [ia-generativa, geracao-de-video, image-to-video, keyframes, prompt-engineering]
 skill: tech-mentor-ai
 status: stub
@@ -29,3 +29,4 @@ Cada quadro fixado restringe o espaço de saídas. Com início e fim definidos, 
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]
+- [[wiki/sources/frontpush-ia-meu-workflow-de-ia-midia]]: FrontPUSH, módulo de IA, aula 7: transição entre duas imagens no Kling ("monte a armadura como se fosse o Homem de Ferro"; a Ferrari)
