@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-11-25
-source_count: 33
+date_updated: 2026-11-27
+source_count: 34
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -89,6 +89,10 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 
 Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o ChatGPT gratuito, usado por áudio no app, escreve os prompts para as IAs de imagem e vídeo ([[wiki/concepts/meta-prompting]]). "Não tem limite de áudio, ou se tiver, ele é muito grande", segundo o autor.
 
+## Time verde: pioneira sem modelo de negócio (FrontPUSH, aula 5)
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: a OpenAI "deu o ponto de partida" e tem "a maior quantidade de usuários", mas o "principal erro [...] na minha opinião" foi "não acertar muito na metodologia de negócio" e no B2B. Para o autor, o único salto foi o GPT-4, e o GPT-5 trouxe ganhos "marginais ou até pioras" (opinião; recepção mista no lançamento, ago. 2025). Cita o Sora como tentativa em vídeo.
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
@@ -117,6 +121,7 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o ChatGPT
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: o ChatGPT de "lá atrás" que errava código e dizia "você tem razão"; Codex citado
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: ChatGPT como chat que entrega "meio que um tutorial"; abreviações dos usuários
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "dona do ChatGPT, do Codex", o outro dos "dois principais times" para programar
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: time verde; erro de modelo de negócio (opinião)
 
 ## Vagas no Ashby
 

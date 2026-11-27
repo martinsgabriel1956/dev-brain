@@ -3,8 +3,8 @@ type: concept
 title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
-date_updated: 2026-11-25
-source_count: 7
+date_updated: 2026-11-27
+source_count: 8
 tags: [mercado-de-ia, precificacao, competicao, llm, open-source, ancoragem]
 skill: tech-mentor-ai
 status: stub
@@ -48,6 +48,10 @@ Uma empresa frontier não precisa cortar preço para responder à corrida — po
 
 A mesma fonte cita (via reportagem da Axios, sem URL fornecida) que formuladores de política de IA dos EUA revisaram a estimativa de atraso da China de ~2 anos para 6-12 meses, com o DeepSeek estimado em ~8 meses de atraso em abril de 2026 — ligado ao argumento mais amplo de [[wiki/concepts/export-controls-chips-ia|vantagem energética/mineral chinesa]] como fator que tende a encolher essa janela ainda mais. **Confiança:** baixa-média — números específicos citados de segunda mão, sem link para a fonte primária.
 
+## FrontPUSH: "aproveite, tudo vai ficar mais caro" (2026-11-27)
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] lê o subsídio desta página como fase 1 de um ciclo. Anthropic e OpenAI, sem IPO, operam "em prejuízo" para "formar uma base de clientes" e depois vão encarecer, "o que já aconteceu com a Netflix" ([[wiki/concepts/enshittification]]). O autor não pesa a força contrária registrada aqui, os modelos abertos baratos. Também diz que o Google, por ter "outros N braços" de receita, oferece a API de melhor custo-benefício.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
@@ -57,3 +61,4 @@ A mesma fonte cita (via reportagem da Axios, sem URL fornecida) que formuladores
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — tese de que a corrida chinesa trava o "grande rollback" regulatório; janela de atraso da China encolhendo (2 anos → 6-12 meses)
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — em open weight o preço é distribuído por provedor; preço deve ser o último critério
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "empresa não é ONG"; contexto "cada vez vai ficar mais caro" (contestável: o preço por token para capacidade fixa cai)
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: subsídio → base de clientes → aumento (previsão)

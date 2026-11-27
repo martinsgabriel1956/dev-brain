@@ -3,8 +3,8 @@ type: entity
 title: "Netflix"
 aliases: ["Netflix"]
 date_created: 2026-08-12
-date_updated: 2026-11-24
-source_count: 6
+date_updated: 2026-11-27
+source_count: 7
 tags: [netflix, platform-engineering, paved-road, devops, resiliencia, streaming]
 skill: tech-mentor-infra
 status: stub
@@ -22,6 +22,10 @@ Empresa de streaming frequentemente citada como referência em engenharia de pla
 
 Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de dashboards]], o card "continue de onde parou" da Home do DashClass segue o padrão das plataformas de streaming: reconhecer em vez de lembrar onde parou.
 
+## Modelo de encarecimento (FrontPUSH, aula 5)
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] usa a Netflix como modelo do que vai acontecer com a IA: assinatura mais cara, planos baratos "com propaganda", limite de dispositivos e de qualidade ("só em 1080p, não pode 4K") ([[wiki/concepts/enshittification]]). Plano com anúncios (2022) e fim do compartilhamento gratuito (2023) conferem.
+
 ## Key sources
 
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — Evan Bottcher, *What I Talk About When I Talk About Platforms* (2018)
@@ -30,6 +34,7 @@ Na [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos|aula 07 do módulo de
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — card cortado na fileira de filmes como eixo de movimento (UI)
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; exemplo de página de carreiras
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: padrão de continuar assistindo
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: modelo de encarecimento da assinatura
 
 ## Netflix na FANG e página de vagas
 

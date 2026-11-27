@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-25
-source_count: 172
+date_updated: 2026-11-27
+source_count: 173
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -390,6 +390,8 @@ Na [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia|parte 3 da teor
 
 Na [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta|parte 4 da teoria de IA]], diz que não copia prompts ("o resultado da inteligência artificial é o reflexo daquilo que você sabe"). Prefere "pequenos contextos", o código "como peças de Lego" e chats curtos. Compara o resumo do contexto a uma foto RAW virando JPEG, avisando: "eu não sou um fotógrafo profissional". Promete mostrar o "meu workflow" nas próximas aulas.
 
+Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1|aula 5 do módulo de IA]] (gravada em julho de 2026), analisa o mercado: "time verde e time laranja", a Anthropic à frente no B2B, a previsão de que a IA vai "virar Netflix" e "não falta dinheiro, falta recurso". Conta que usa mais o Codex, pelo preço, embora ache o Claude Code melhor. Reclama da internet de casa depois da troca de Oi para Nio.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -564,3 +566,4 @@ Na [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta|parte 4 
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: o que são LLMs
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: harness e agentes
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: como dar comandos na IA
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o futuro da IA, parte 1

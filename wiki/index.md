@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-25
+date_updated: 2026-11-27
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-25
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] | Aula 5 do módulo de IA do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 25 min, gravada em julho de 2026, slide "O futuro da IA pt.1"): "time verde e time laranja" (OpenAI × Anthropic), Anthropic à frente no B2B, OpenAI sem modelo de negócio, Google "deu uma moscada" mas tem a API mais barata; sem IPO, operam em prejuízo para formar base e depois encarecer, como a Netflix ([[wiki/concepts/enshittification\|enshittification]]); curva de parâmetros "começou a deitar"; "não falta dinheiro, falta recurso" (RAM, GPUs, energia, água, terras raras); IA "não vai morrer mais". Precisões: terras raras ≠ silício/cobre/ouro, gargalo é fábrica/HBM/energia, platô é do pré-treino, preço por token cai, tensão com "a bolha vai estourar" |
 | [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] | Tradução do usuário do cap. 2 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): complexidade relativa à tarefa e ponderada pelo tempo ($C = \sum_p c_p t_p$); três [[wiki/concepts/sintomas-de-complexidade-ousterhout\|sintomas]] com o banner da Figura 2.1; [[wiki/concepts/causas-de-complexidade-ousterhout\|dependências e obscuridade]]; [[wiki/concepts/complexidade-incremental\|complexidade incremental]] e tolerância zero. Corrige a leitura do podcast: amplificação de mudanças não exige dependência oculta |
 | [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]] | Tradução do usuário do cap. 3 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): [[wiki/concepts/programacao-tatica-vs-estrategica\|programação tática vs. estratégica]], o [[wiki/concepts/tornado-tatico\|tornado tático]], régua de 10–20% e payback de 6–18 meses (opinião sem dados), Facebook vs. Google/VMware. Corrige a wiki: Ousterhout usa "dívida técnica", não a cunha |
 | [[wiki/sources/filosofia-do-design-de-software-cap-04-modulos-devem-ser-profundos]] | Tradução do usuário do cap. 4 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): interface e implementação, [[wiki/concepts/interface-formal-e-informal\|parte formal e informal]], falsa abstração, [[wiki/concepts/modulo-profundo\|profundidade]] como custo-benefício (Figura 4.1), E/S do Unix e coletor de lixo vs. lista encadeada, [[wiki/concepts/classite\|classite]] no I/O do Java, caso comum simples |
@@ -1142,6 +1143,12 @@ date_updated: 2026-11-25
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de IA: o futuro da IA, parte 1 (2026-11-27)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/enshittification]] | Subsidiar para formar base, prender pelo custo de troca e depois encarecer e piorar (Doctorow); a previsão "IA vai virar Netflix" |
 
 ### JavaScript Ninja, semana 11, vídeos 01 e 02: laços e saltos (2026-11-27)
 

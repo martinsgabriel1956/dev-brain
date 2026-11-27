@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-11-25
-source_count: 40
+date_updated: 2026-11-27
+source_count: 41
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -134,6 +134,10 @@ A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources
 
 Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], "o modelo Mythos lá da Anthropic" aparece como "o novo modelo que saiu", exemplo de que as IAs melhoram a cada versão. [external] Claude Mythos Preview, anunciado em abril de 2026 com acesso restrito (confiança média, sem fetch).
 
+## Time laranja: B2B desde o início (FrontPUSH, aula 5)
+
+Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] (julho de 2026), a Anthropic é "o time laranja". Ela teria acertado o B2B "desde o início", com o [[wiki/entities/claude-code|Claude Code]] como carro-chefe, e estaria "um pouco na frente da OpenAI" porque "as empresas têm uma preferência maior em contratar o Claude Code". [external] Menlo Ventures estimou a fatia da Anthropic no uso empresarial via API em ~32% contra ~25% da OpenAI em meados de 2025 (média-alta, sem fetch). Sem IPO na data da gravação; previsão de encarecimento ([[wiki/concepts/enshittification]]).
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
@@ -173,6 +177,7 @@ Em [[wiki/sources/frontpush-ia-o-que-sao-as-llms]], "o modelo Mythos lá da Anth
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — documentação, blog de engenharia, rotinas e saída estruturada
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: Mythos como novo modelo
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "dona da Claude Code", um dos "dois principais times" para programar; "empresa não é ONG"
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: time laranja, B2B, previsão de encarecimento
 
 ## Key sources (adição 2026-10-08)
 

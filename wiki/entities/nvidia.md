@@ -3,8 +3,8 @@ type: entity
 title: "NVIDIA"
 aliases: ["Nvidia"]
 date_created: 2026-07-21
-date_updated: 2026-11-16
-source_count: 4
+date_updated: 2026-11-27
+source_count: 5
 tags: [nvidia, gpu, hardware, organização, palantir]
 skill: tech-mentor-ai
 status: stub
@@ -28,6 +28,7 @@ Fabricante de GPUs, hardware dominante para treinamento e inferência de LLMs em
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — deal com a Palantir; Nvidia como a única parte "correta" na economia de IA
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — TPUs do Google como complemento
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Big Tech adjacente à FANG
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: GPUs que "nunca mais baixaram de preço"; "a própria Nvidia cortou o chip" (não identificado)
 
 ## NVIDIA como empregadora
 

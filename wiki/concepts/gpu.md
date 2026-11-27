@@ -3,8 +3,8 @@ type: concept
 title: "GPU"
 aliases: ["unidade de processamento gráfico", "graphics processing unit", "processador massivamente paralelo", "programação massivamente paralela"]
 date_created: 2026-11-03
-date_updated: 2026-11-24
-source_count: 4
+date_updated: 2026-11-27
+source_count: 5
 tags: [cs-fundamentals, hardware, gpu, paralelismo, throughput, latencia, simt]
 skill: cs-fundamentals
 status: draft
@@ -62,3 +62,4 @@ Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], a GPU entra como u
 - [[wiki/sources/axlepush-por-que-usar-o-spline-webgl-threejs]]: AxlePUSH: a GPU renderiza o WebGL; fans ligando como sinal de custo
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: GPU lenta e memória de camadas
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: GPU como recurso do deep learning; paralelismo, não gigahertz
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "a crise das placas de vídeo, que nunca mais baixou de preço"; GPUs como o recurso físico que limita a IA

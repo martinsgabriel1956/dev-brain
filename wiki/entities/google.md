@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-25
-source_count: 51
+date_updated: 2026-11-27
+source_count: 52
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -130,6 +130,10 @@ Em [[wiki/sources/aula-bonus-artigo-salarios-invisiveis-galego]], um L6 do Googl
 
 A 3.4 de *A Philosophy of Software Design* cita Google e VMware como empresas que cresceram na mesma época do Facebook com cultura estratégica, com ênfase em código de qualidade e bom design, e que por isso tinham poucas concorrentes na disputa por talento ([[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]], [[wiki/concepts/programacao-tatica-vs-estrategica]]).
 
+## A "moscada" e a API barata (FrontPUSH, aula 5)
+
+Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: "poderia ter saído na frente da OpenAI, o Google deu uma moscada". Com "outros N braços" de receita, perder dinheiro com IA "não faz muitíssima diferença", e por isso é "a que oferece melhor custo-benefício com relação a sua API", boa para startup e SaaS. A "moscada" faz sentido com a origem do Transformer no Google (ver acima).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -160,6 +164,7 @@ A 3.4 de *A Philosophy of Software Design* cita Google e VMware como empresas qu
 - [[wiki/sources/frontpush-dashboards-grids-e-patterns]]: FrontPUSH, dashboards aula 03: launcher de apps
 - [[wiki/sources/frontpush-dashboards-wireframes-e-fluxos]]: FrontPUSH, dashboards aula 07: conta no canto superior direito
 - [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]]: Google e VMware como exemplos de cultura estratégica
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "deu uma moscada"; API de melhor custo-benefício
 
 ## Adição (2026-10-14)
 

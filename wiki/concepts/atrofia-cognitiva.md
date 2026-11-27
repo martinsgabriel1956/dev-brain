@@ -3,8 +3,8 @@ type: concept
 title: "Atrofia Cognitiva"
 aliases: ["atrofiação cognitiva", "cognitive atrophy", "cognitive offloading", "atrofia cognitiva", "skill decay por ia"]
 date_created: 2026-08-10
-date_updated: 2026-10-30
-source_count: 5
+date_updated: 2026-11-27
+source_count: 6
 tags: [atrofia-cognitiva, aprendizado, ia-e-programacao, dependencia-ia, pensamento-critico, risco]
 skill: tech-mentor-leadership
 status: draft
@@ -64,6 +64,7 @@ A mesma fonte cita, de segunda mão (artigo não lido diretamente nesta ingestã
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distinção reversível (base existe) vs. irreversível (nunca houve base); memorizar sintaxe já era irrelevante antes da IA.
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — analogia muscular, exemplo dos números de telefone, e citação de segunda mão de estudo da Anthropic sobre formação de habilidade
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — caixa-preta de LLM/token como risco de empregabilidade no cargo Forward Deployed Engineer, não só de aprendizado
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "idiotização das pessoas" listada no slide como problema futuro da IA (detalhe prometido para a parte 2)
 
 ## Key sources (adição 2026-10-30)
 

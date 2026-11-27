@@ -3,8 +3,8 @@ type: entity
 title: "Nano Banana Pro"
 aliases: ["Gemini 3 Pro Image", "Nano Banana"]
 date_created: 2026-11-23
-date_updated: 2026-11-23
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [ia-generativa, geracao-de-imagem, edicao-de-imagem, gemini, google, ferramenta]
 skill: tech-mentor-ai
 status: stub
@@ -19,3 +19,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], é a esco
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: edição a partir de referência, remoção de logos
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o modelo de imagem mais famoso do Google; "para algumas aplicações é melhor"

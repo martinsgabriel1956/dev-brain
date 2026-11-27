@@ -3,8 +3,8 @@ type: concept
 title: "Apego a Ferramentas"
 aliases: ["lealdade a ferramentas", "tool loyalty", "martelo e chave de fenda"]
 date_created: 2026-07-03
-date_updated: 2026-11-23
-source_count: 5
+date_updated: 2026-11-27
+source_count: 6
 tags: [carreira, mentalidade, ferramentas, estagnacao-tecnica]
 skill: tech-mentor-leadership
 status: draft
@@ -61,3 +61,4 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], o risco �
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: Násser: SCSS para não esquecer o CSS puro
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: método estável em vez de IA nova
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "não sou o Jedi [...] todo dia lança uma inteligência artificial nova [...] pode ter outra ferramenta melhor"

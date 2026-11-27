@@ -3,8 +3,8 @@ type: concept
 title: "Vendor Lock-in em Memória Organizacional de IA"
 aliases: ["lock-in de ia", "ai vendor lock-in", "lock-in de memória de agente"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [vendor-lock-in, claude-tag, agent-memory, estrategia-de-plataforma]
 skill: tech-mentor-ai
 status: draft
@@ -36,3 +36,4 @@ A tese subjacente é que a *camada de agente organizacional* (orquestração, me
 ## Key Sources
 
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — origem do argumento de lock-in nesta wiki
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o cliente que adotou um workflow só troca de fornecedor de IA quando ele "decepciona muito" (analogia da operadora de internet)

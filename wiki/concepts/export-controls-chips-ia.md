@@ -3,8 +3,8 @@ type: concept
 title: "Sanções de Exportação de Chips de IA"
 aliases: ["export controls", "sanções de chips", "restrição de exportação NVIDIA"]
 date_created: 2026-07-21
-date_updated: 2026-08-25
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [hardware, nvidia, geopolitica, china, gpu, mercado-de-ia]
 skill: tech-mentor-ai
 status: draft
@@ -31,3 +31,4 @@ O argumento levantado em [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] �
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — vantagem energética/mineral chinesa; guardrail como pretexto regulatório para bloqueio futuro de modelos chineses
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "não falta dinheiro, falta recurso"; terras raras e China citadas como gargalo (precisão: o gargalo é fábrica, encapsulamento, HBM e energia)

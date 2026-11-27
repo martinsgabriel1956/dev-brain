@@ -3,8 +3,8 @@ type: concept
 title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
-date_updated: 2026-11-23
-source_count: 7
+date_updated: 2026-11-27
+source_count: 8
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -88,6 +88,10 @@ Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita c
 
 [[wiki/entities/nasser|Násser]], em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: com as "empresas trilionárias" injetando bilhões, "vai surgir uma inteligência artificial nova todo dia [...] mas eu penso que essa bolha está prestes a estourar". Ao mesmo tempo, chama a IA de "mudança de paradigma muito grande" e promete "uma visão mais realista [...] e não tão marqueteira". Previsão sem dado, que contrasta com a seção "Não é Bolha no Sentido Clássico" acima. Na prática, a resposta dele ao hype é parar de trocar de ferramenta e fixar um método ([[wiki/concepts/apego-a-ferramentas]]).
 
+## FrontPUSH: "não vai morrer mais", mas "a onda vai passar"
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: a IA "não vai morrer mais", é "uma quebra de paradigma que nem a internet", mas "quando passar um pouco essa onda" de investimento, os preços sobem. Na aula de mídia, o mesmo autor dizia que "essa bolha está prestes a estourar". As duas falas cabem juntas como bolha financeira com tecnologia que fica, como na internet depois de 2000.
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — governança e segurança como temas centrais internamente nas empresas, mas ausentes do mainstream por não gerarem hype/engajamento
@@ -97,3 +101,4 @@ Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita c
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — hype de IA como pressão institucional: CEO/acionistas/clientes → "estratégia de IA" antes do problema (isomorfismo mimético)
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — antídoto conceitual: entender a evolução dos termos; cautela com agentes
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: "bolha prestes a estourar", método contra o hype
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: paradigma permanente, onda de investimento passageira

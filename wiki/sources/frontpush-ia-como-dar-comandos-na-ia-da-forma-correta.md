@@ -93,6 +93,7 @@ Quarta aula teórica, "uma das últimas", do módulo de IA do [[wiki/entities/fr
 
 ## Open Questions
 
+- Continuação: [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] (aula 5: mercado, IPO, Netflix, platô de parâmetros; "tudo vai ficar mais caro" reaparece no slide).
 - Como fica o "workflow" prometido: um chat por peça de Lego? CLAUDE.md ou AGENTS.md para o "contexto da empresa"?
 - A aula de mercado vai sustentar "cada vez vai ficar mais caro" contra a queda do preço por token?
 - "Mega brain" é o nome de um agente ou de uma configuração no Codex?

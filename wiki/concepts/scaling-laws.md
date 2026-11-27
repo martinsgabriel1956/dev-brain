@@ -3,8 +3,8 @@ type: concept
 title: "Scaling Laws"
 aliases: ["leis de escala", "neural scaling laws", "power law LLM"]
 date_created: 2026-05-17
-date_updated: 2026-11-24
-source_count: 3
+date_updated: 2026-11-27
+source_count: 4
 tags: [llm, scaling, treinamento, foundation-model]
 skill: tech-mentor-ai
 status: stable
@@ -50,6 +50,10 @@ O importante: as curvas são **smooth e previsíveis** — sem cliffs ou thresho
 - [[in-context-learning]] — capacidade que melhora com escala de forma desproporcionalmente rápida
 - [[wiki/concepts/fine-tuning]] — alternativa quando compute de pré-treino não está disponível
 
+## FrontPUSH: "a curva começou a deitar"
+
+Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] (gravado em julho de 2026): "quanto mais você aumenta os parâmetros [...] maior é o resultado", mas "essa curva começou a deitar", e as empresas "já chegaram mais ou menos em um platô com relação à quantidade de parâmetros". Slide: "Curva de energia x parâmetros: já chegou no limite". A corrida agora seria "a melhora dos modelos". Precisão: lei de potência é retorno decrescente, não teto. O platô reconhecido é o do pré-treino, e o ganho migrou para pós-treino e computação na inferência.
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
@@ -57,3 +61,4 @@ O importante: as curvas são **smooth e previsíveis** — sem cliffs ou thresho
 - Kaplan et al. (2020) — "Scaling Laws for Neural Language Models" [external]
 - Hoffmann et al. (2022) — "Training Compute-Optimal Large Language Models" (Chinchilla) [external]
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "não adianta você colocar mais parâmetro, mais poder computacional" (retorno decrescente, não nulo); gráfico prometido para depois
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: platô de parâmetros e migração para "a melhora dos modelos"
