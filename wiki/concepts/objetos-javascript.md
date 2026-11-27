@@ -3,8 +3,8 @@ type: concept
 title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
-date_updated: 2026-11-26
-source_count: 24
+date_updated: 2026-11-27
+source_count: 25
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -125,6 +125,10 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], o objeto `ca
 
 Em [[wiki/sources/javascript-ninja-iife]], uma propriedade cujo valor é uma função anônima é uma das formas de invocar uma função sem nome (`objeto.prop()` dá 3). `[external]` Desde o ES2015, essa função recebe `name` igual ao da propriedade (verificado).
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], o critério de objeto é "se esse cara, ele tem propriedades e métodos". Construtores são "objetos, ou funções [...] que criam novos objetos", com `new`; `new String('Daciuk')` é objeto, com `valueOf()` para o primitivo. Detalhe em [[wiki/concepts/wrapper-objects-javascript]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -151,3 +155,4 @@ Em [[wiki/sources/javascript-ninja-iife]], uma propriedade cujo valor é uma fun
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: objeto literal; função que retorna objeto
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: objeto como argumento; ; dentro do literal é SyntaxError
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: função anônima como propriedade, invocada pelo objeto
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: objeto = propriedades e métodos; construtores com new

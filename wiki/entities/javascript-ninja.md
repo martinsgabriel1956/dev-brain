@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
-date_updated: 2026-11-26
-source_count: 28
+date_updated: 2026-11-27
+source_count: 29
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -81,6 +81,10 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-hoisting]]: vídeo 02, hoisting: a declaração sobe inteira, a `var` sobe como `undefined`; dica de declarar no topo e retornar na última linha. O vídeo seguinte é o da IIFE.
 - [[wiki/sources/javascript-ninja-iife]]: vídeo 03, IIFE: declaração × expressão, parênteses, escopo local. A partir daqui os desafios vêm dentro de uma IIFE. Não anuncia o vídeo seguinte.
 
+## Semana 10
+
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: vídeo 01, depois da revisão do desafio da semana 9 (a semana 10 é inferida). Wrapper objects: primitivo sem propriedades, o envoltório temporário que explica `length`, `new String`/`valueOf` e os construtores sem `new` como conversores. O tema cai no desafio. Não anuncia o vídeo seguinte.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -112,3 +116,4 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: semana 9, vídeo 01: escopo de funções; anuncia hoisting
 - [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting
 - [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE; desafios passam a vir dentro de IIFE
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: semana 10, vídeo 01: wrapper objects; construtores como conversores

@@ -3,8 +3,8 @@ type: concept
 title: "Operadores lógicos em JavaScript (&&, ||, !, ??)"
 aliases: ["&&", "||", "!", "??", "AND OR NOT em JavaScript", "curto-circuito", "short-circuit evaluation", "operador E", "operador OU", "operador not", "nullish coalescing"]
 date_created: 2026-11-24
-date_updated: 2026-11-24
-source_count: 5
+date_updated: 2026-11-27
+source_count: 6
 tags: [javascript, operadores, operadores-logicos, boolean, curto-circuito, precedencia, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -62,6 +62,10 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], o `!` aparece aplicado a va
 
 Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário é a alternativa explícita ao `cond && valor` e ao `valor || padrao` quando os dois ramos importam; não troca `0` ou `''` por engano ([[wiki/concepts/operador-ternario-javascript]]).
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], `!!valor` aparece como equivalente de `Boolean(valor)`: "o equivalente booleano daquele valor".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-logicos]]: JavaScript Ninja, semana 2, vídeo 01: &&, || e ! com comparações estritas
@@ -69,3 +73,4 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], o ternário é a alte
 - [[wiki/sources/javascript-ninja-instrucoes-condicionais-if]]: JavaScript Ninja, semana 2, vídeo 04: && e || dentro do if
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: `!` e `!!` com valores quaisquer
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: ternário × && e ||
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: !! como Boolean()

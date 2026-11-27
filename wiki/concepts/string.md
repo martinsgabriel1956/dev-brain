@@ -3,8 +3,8 @@ type: concept
 title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
-date_updated: 2026-11-24
-source_count: 10
+date_updated: 2026-11-27
+source_count: 11
 tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
@@ -102,6 +102,10 @@ Em [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]], string é "uma 
 
 Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a string vazia é falsy e qualquer string preenchida é truthy, "ainda que seja com zero": `'0'` não é o número `0` ([[wiki/concepts/truthy-e-falsy]]).
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], `name.length` em `'Daciuk'` dá 6 por meio do wrapper `String`, "um envoltório" descartado depois do uso ([[wiki/concepts/wrapper-objects-javascript]]). `String(10)` converte número em string; `String(52) + 2` concatena e dá `'522'`.
+
 ## Key Sources
 
 - [[wiki/sources/como-strings-realmente-funcionam]]
@@ -114,3 +118,4 @@ Em [[wiki/sources/javascript-ninja-truthy-e-falsy]], a string vazia é falsy e q
 - [[wiki/sources/frontpush-modules-js-import-export-default]]: FrontPUSH, JavaScript aula 17: toUpperCase em upperName
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: JavaScript Ninja, aula 01: aspas simples ou duplas, sem diferença
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: '' falsy, '0' truthy
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: length via wrapper String; String() como conversor

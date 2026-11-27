@@ -3,8 +3,8 @@ type: concept
 title: "Truthy e falsy em JavaScript"
 aliases: ["truthy", "falsy", "valores falsos", "ToBoolean", "coerção para booleano", "!!"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 6
+date_updated: 2026-11-27
+source_count: 7
 tags: [javascript, booleano, coercao, condicionais, tipos]
 skill: lang-dynamic
 status: draft
@@ -57,6 +57,10 @@ Em [[wiki/sources/javascript-ninja-condicional-ternario]], a condição do tern�
 
 Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a condição do `while` passa pela mesma conversão: "ele converte esse valor aqui em um valor booleano". Com 0, o loop "simplesmente não vai entrar"; a aula lembra que `0 == false` e `0 !== false`. No contador descendente, `while (counter)` para no zero por ele ser falsy, mas só se o contador passar exatamente pelo zero; `counter > 0` é mais seguro.
 
+## No JavaScript Ninja, semana 10, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], `Boolean(0)` dá falso e `Boolean({})` dá verdadeiro, "porque o objeto vazio representa true", o mesmo que `!!`. Armadilha que a aula não mostra: `new Boolean(false)` é objeto, logo truthy (verificado; [[wiki/concepts/wrapper-objects-javascript]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: string vazia, 0, undefined e NaN como falsos
@@ -65,3 +69,4 @@ Em [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]], a condição 
 - [[wiki/sources/javascript-ninja-truthy-e-falsy]]: JavaScript Ninja, semana 4, vídeo 01: aula dedicada; seis falsy listados e `!!`
 - [[wiki/sources/javascript-ninja-condicional-ternario]]: JavaScript Ninja, semana 4, vídeo 02: truthy/falsy na condição do ternário
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: 0 na condição do while; while (counter) para no zero
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: Boolean() = !!; new Boolean(false) é truthy

@@ -3,8 +3,8 @@ type: entity
 title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
-date_updated: 2026-11-26
-source_count: 28
+date_updated: 2026-11-27
+source_count: 29
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -104,6 +104,10 @@ Em [[wiki/sources/javascript-ninja-hoisting]], explica o hoisting ("içamento ou
 
 Em [[wiki/sources/javascript-ninja-iife]], apresenta a IIFE e anuncia que todos os desafios passam a vir dentro de uma, "escopo local para tudo".
 
+## Semana 10, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-wrapper-objects]], apresenta os wrapper objects ("um envoltório") e os construtores sem `new` como conversores. Atribui a conversão automática à "tipagem dinâmica".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -134,3 +138,4 @@ Em [[wiki/sources/javascript-ninja-iife]], apresenta a IIFE e anuncia que todos 
 - [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: semana 9, vídeo 01: escopo de funções; anuncia hoisting
 - [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting; declarar no topo
 - [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE
+- [[wiki/sources/javascript-ninja-wrapper-objects]]: semana 10, vídeo 01: wrapper objects
