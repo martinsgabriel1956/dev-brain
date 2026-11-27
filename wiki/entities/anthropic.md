@@ -4,7 +4,7 @@ title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
 date_updated: 2026-11-27
-source_count: 41
+source_count: 42
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -178,6 +178,7 @@ Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] (julho de 2026), a Anthr
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: Mythos como novo modelo
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "dona da Claude Code", um dos "dois principais times" para programar; "empresa não é ONG"
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: time laranja, B2B, previsão de encarecimento
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: Amodei em Davos 2025 ("dobrar a expectativa de vida") como exemplo de promessa de CEO para desconfiar
 
 ## Key sources (adição 2026-10-08)
 

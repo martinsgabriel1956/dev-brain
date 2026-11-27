@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-27
-source_count: 173
+source_count: 174
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -392,6 +392,8 @@ Na [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta|parte 4 
 
 Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1|aula 5 do módulo de IA]] (gravada em julho de 2026), analisa o mercado: "time verde e time laranja", a Anthropic à frente no B2B, a previsão de que a IA vai "virar Netflix" e "não falta dinheiro, falta recurso". Conta que usa mais o Codex, pelo preço, embora ache o Claude Code melhor. Reclama da internet de casa depois da troca de Oi para Nio.
 
+Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2|aula 6 do módulo de IA]] (julho de 2026), sustenta a parte 1 com prints de manchetes. Defende "não acreditem em CEO de inteligência artificial", aposta no Brasil pelas terras raras e se diz "da década de 90", menos exposto à "idiotização". Admite que tende "a me prender" num workflow e promete a prática na próxima aula.
+
 ## Key Sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-modelos-de-orcamento-e-invoice]]: FrontPUSH, Monetização e Freelancer modelos de orçamento e invoice: modelos de orçamento e de invoice
@@ -567,3 +569,4 @@ Na [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1|aula 5 do módulo de IA]] 
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: harness e agentes
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: como dar comandos na IA
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: o futuro da IA, parte 1
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: o futuro da IA, parte 2

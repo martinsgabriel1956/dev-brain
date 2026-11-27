@@ -4,7 +4,7 @@ title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
 date_updated: 2026-11-27
-source_count: 8
+source_count: 9
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -102,3 +102,4 @@ Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita c
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — antídoto conceitual: entender a evolução dos termos; cautela com agentes
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: "bolha prestes a estourar", método contra o hype
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: paradigma permanente, onda de investimento passageira
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: "não acreditem em CEO de inteligência artificial [...] observe o mercado"; Altman e Amodei e as promessas para 2030

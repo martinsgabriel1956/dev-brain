@@ -4,7 +4,7 @@ title: "Scaling Laws"
 aliases: ["leis de escala", "neural scaling laws", "power law LLM"]
 date_created: 2026-05-17
 date_updated: 2026-11-27
-source_count: 4
+source_count: 5
 tags: [llm, scaling, treinamento, foundation-model]
 skill: tech-mentor-ai
 status: stable
@@ -62,3 +62,4 @@ Em [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] (gravado em julho de 202
 - Hoffmann et al. (2022) — "Training Compute-Optimal Large Language Models" (Chinchilla) [external]
 - [[wiki/sources/frontpush-ia-o-que-sao-as-llms]]: FrontPUSH, módulo de IA, parte 2: "não adianta você colocar mais parâmetro, mais poder computacional" (retorno decrescente, não nulo); gráfico prometido para depois
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: platô de parâmetros e migração para "a melhora dos modelos"
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: "embarreiradas pela quantidade de parâmetros", a corrida segue em escala computacional eficiente e em modelos melhores

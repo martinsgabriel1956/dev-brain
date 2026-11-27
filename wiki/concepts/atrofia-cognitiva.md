@@ -4,7 +4,7 @@ title: "Atrofia Cognitiva"
 aliases: ["atrofiação cognitiva", "cognitive atrophy", "cognitive offloading", "atrofia cognitiva", "skill decay por ia"]
 date_created: 2026-08-10
 date_updated: 2026-11-27
-source_count: 6
+source_count: 7
 tags: [atrofia-cognitiva, aprendizado, ia-e-programacao, dependencia-ia, pensamento-critico, risco]
 skill: tech-mentor-leadership
 status: draft
@@ -58,6 +58,10 @@ A mesma fonte cita, de segunda mão (artigo não lido diretamente nesta ingestã
 
 [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] dá um critério prático para evitar a atrofia: separar [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefas de academia]] (o esforço é o objetivo) de trabalho (o resultado é o objetivo) e só delegar o segundo. Cita dois estudos `[external]`: o da [[wiki/entities/microsoft]] (Lee et al., CHI 2025), em que usuários de IA generativa **relatam** menos esforço cognitivo e menos confiança no próprio trabalho intelectual, e Bastani et al. (PNAS 2025), em que estudantes de matemática com GPT sem guardrails foram melhor na prática e pior na prova sem IA. Antídotos propostos: ler livros que passaram pelo [[wiki/concepts/efeito-lindy]] e escrever.
 
+## FrontPUSH: "idiotização das pessoas" (2026-11-27)
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: "quem não sabe utilizar da inteligência artificial, ela tende a não querer pensar mais". O autor, nascido nos anos 90, sentiria menos o efeito; o risco é de quem "já vai crescer" com IA ("você não precisa fazer mais uma conta"). Mesmo assim, "não acredito que a inteligência artificial venha para piorar": é ferramenta. Ele cita "artigos científicos" sem nomear. Os mais conhecidos são preprints e amostras pequenas, e não sustentam um efeito geracional.
+
 ## Key Sources
 
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — define a atrofia cognitiva como consequência de fugir da dificuldade delegando à IA.
@@ -65,6 +69,7 @@ A mesma fonte cita, de segunda mão (artigo não lido diretamente nesta ingestã
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — analogia muscular, exemplo dos números de telefone, e citação de segunda mão de estudo da Anthropic sobre formação de habilidade
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — caixa-preta de LLM/token como risco de empregabilidade no cargo Forward Deployed Engineer, não só de aprendizado
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "idiotização das pessoas" listada no slide como problema futuro da IA (detalhe prometido para a parte 2)
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: "idiotização" e quem cresce com IA
 
 ## Key sources (adição 2026-10-30)
 

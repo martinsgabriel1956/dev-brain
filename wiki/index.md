@@ -26,6 +26,7 @@ date_updated: 2026-11-27
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]] | Aula 6 do módulo de IA do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 21 min, julho de 2026, cinco slides de manchetes): "não dá pra acreditar em CEO de empresa, observe o mercado" (Altman e Amodei para 2030); NVIDIA virou empresa de IA e cortou o chip da série 5000; data centers dos EUA em 176–183 TWh, déficit de 6 GW na PJM, contas de luz e água ([[wiki/concepts/energia-e-agua-de-data-centers\|energia e água]]); cobre +50% até 2040, prata recorde, China restringe [[wiki/concepts/terras-raras-e-minerais-criticos\|terras raras]] e prata; Brasil como alvo (2ª reserva, 12% da água doce); "idiotização"; "tudo vai ficar mais caro", até o iPhone. Precisões: "12%" é fatia da eletricidade, PIB do Brasil ~US$ 2,2 tri, 5080 ≈ 49% da 5090, PJM é a maior dos EUA, água por pergunta é estimativa de 2023 |
 | [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]] | Aula 5 do módulo de IA do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], 25 min, gravada em julho de 2026, slide "O futuro da IA pt.1"): "time verde e time laranja" (OpenAI × Anthropic), Anthropic à frente no B2B, OpenAI sem modelo de negócio, Google "deu uma moscada" mas tem a API mais barata; sem IPO, operam em prejuízo para formar base e depois encarecer, como a Netflix ([[wiki/concepts/enshittification\|enshittification]]); curva de parâmetros "começou a deitar"; "não falta dinheiro, falta recurso" (RAM, GPUs, energia, água, terras raras); IA "não vai morrer mais". Precisões: terras raras ≠ silício/cobre/ouro, gargalo é fábrica/HBM/energia, platô é do pré-treino, preço por token cai, tensão com "a bolha vai estourar" |
 | [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] | Tradução do usuário do cap. 2 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): complexidade relativa à tarefa e ponderada pelo tempo ($C = \sum_p c_p t_p$); três [[wiki/concepts/sintomas-de-complexidade-ousterhout\|sintomas]] com o banner da Figura 2.1; [[wiki/concepts/causas-de-complexidade-ousterhout\|dependências e obscuridade]]; [[wiki/concepts/complexidade-incremental\|complexidade incremental]] e tolerância zero. Corrige a leitura do podcast: amplificação de mudanças não exige dependência oculta |
 | [[wiki/sources/filosofia-do-design-de-software-cap-03-codigo-funcional-nao-e-suficiente]] | Tradução do usuário do cap. 3 de *A Philosophy of Software Design* ([[wiki/entities/john-ousterhout\|Ousterhout]]): [[wiki/concepts/programacao-tatica-vs-estrategica\|programação tática vs. estratégica]], o [[wiki/concepts/tornado-tatico\|tornado tático]], régua de 10–20% e payback de 6–18 meses (opinião sem dados), Facebook vs. Google/VMware. Corrige a wiki: Ousterhout usa "dívida técnica", não a cunha |
@@ -1143,6 +1144,13 @@ date_updated: 2026-11-27
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### FrontPUSH, módulo de IA: o futuro da IA, parte 2 (2026-11-27)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/energia-e-agua-de-data-centers]] | O custo físico da IA: ~4,4% da eletricidade dos EUA em data centers (2023), até 12% em 2028; 6 GW de déficit na PJM; água para resfriar |
+| [[wiki/concepts/terras-raras-e-minerais-criticos]] | 17 elementos para ímãs e eletrônica ≠ cobre, prata e silício; China refina ~90% e retalia os controles de chips; Brasil tem a 2ª reserva |
 
 ### FrontPUSH, módulo de IA: o futuro da IA, parte 1 (2026-11-27)
 

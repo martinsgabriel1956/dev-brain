@@ -94,12 +94,14 @@ Problemas futuros no slide: "idiotização das pessoas" ([[wiki/concepts/atrofia
 ## Concepts
 
 - [[wiki/concepts/enshittification]] (novo), [[wiki/concepts/corrida-preco-qualidade-llm]], [[wiki/concepts/lock-in-vendor-ia]]
+- [[wiki/concepts/energia-e-agua-de-data-centers]], [[wiki/concepts/terras-raras-e-minerais-criticos]]
 - [[wiki/concepts/scaling-laws]], [[wiki/concepts/gpu]], [[wiki/concepts/memoria-ram]], [[wiki/concepts/export-controls-chips-ia]]
 - [[wiki/concepts/hype-de-ia]], [[wiki/concepts/atrofia-cognitiva]], [[wiki/concepts/apego-a-ferramentas]]
 - [[wiki/concepts/harness]], [[wiki/concepts/decomposicao-de-problemas]]
 
 ## Open Questions
 
+- Continuação: [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]] (aula 6: os dados prometidos, o "corte do chip" explicado como a RTX série 5000, terras raras como arma geopolítica).
 - A parte 2 vai trazer os dados prometidos (curva de energia, consumo de água)? E a "idiotização das pessoas"?
 - O que significa "a Nvidia cortou o chip"? Corte de oferta de GPUs de consumo, versão reduzida para a China ou outra coisa?
 - Até a data do ingest (nov. 2026), alguma das duas fez IPO? A wiki não registra.

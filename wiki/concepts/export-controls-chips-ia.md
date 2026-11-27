@@ -4,7 +4,7 @@ title: "Sanções de Exportação de Chips de IA"
 aliases: ["export controls", "sanções de chips", "restrição de exportação NVIDIA"]
 date_created: 2026-07-21
 date_updated: 2026-11-27
-source_count: 3
+source_count: 4
 tags: [hardware, nvidia, geopolitica, china, gpu, mercado-de-ia]
 skill: tech-mentor-ai
 status: draft
@@ -27,8 +27,13 @@ O argumento levantado em [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] �
 - A fonte não detalha quais chips especificamente estão sob sanção nem a data/mecanismo legal exato da restrição — tratado de forma genérica na fala original. Vale ingestão futura de fonte primária sobre a política de export controls dos EUA para IA.
 - Os números de vantagem energética/mineral da China citados em [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] não têm fonte primária — candidato a verificação cruzada futura.
 
+## FrontPUSH: a retaliação com terras raras
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]] descreve a contrapartida chinesa: os EUA restringem o acesso à tecnologia do "Vale do Silício", e a China, "maior detentora de terras raras", restringe a exportação, primeiro de terras raras e depois de prata. "Uma tenta travar a outra." O Brasil, 2ª maior reserva, aparece "na mira" ([[wiki/concepts/terras-raras-e-minerais-criticos]]).
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — vantagem energética/mineral chinesa; guardrail como pretexto regulatório para bloqueio futuro de modelos chineses
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "não falta dinheiro, falta recurso"; terras raras e China citadas como gargalo (precisão: o gargalo é fábrica, encapsulamento, HBM e energia)
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: terras raras e prata como resposta chinesa

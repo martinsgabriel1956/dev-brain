@@ -4,7 +4,7 @@ title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
 date_updated: 2026-11-27
-source_count: 8
+source_count: 9
 tags: [mercado-de-ia, precificacao, competicao, llm, open-source, ancoragem]
 skill: tech-mentor-ai
 status: stub
@@ -62,3 +62,4 @@ A mesma fonte cita (via reportagem da Axios, sem URL fornecida) que formuladores
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — em open weight o preço é distribuído por provedor; preço deve ser o último critério
 - [[wiki/sources/frontpush-ia-como-dar-comandos-na-ia-da-forma-correta]]: FrontPUSH, módulo de IA, parte 4: "empresa não é ONG"; contexto "cada vez vai ficar mais caro" (contestável: o preço por token para capacidade fixa cai)
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: subsídio → base de clientes → aumento (previsão)
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: manchetes de energia, minerais e RAM como base para "tudo vai ficar mais caro"

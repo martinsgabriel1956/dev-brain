@@ -4,7 +4,7 @@ title: "GPU"
 aliases: ["unidade de processamento gráfico", "graphics processing unit", "processador massivamente paralelo", "programação massivamente paralela"]
 date_created: 2026-11-03
 date_updated: 2026-11-27
-source_count: 5
+source_count: 6
 tags: [cs-fundamentals, hardware, gpu, paralelismo, throughput, latencia, simt]
 skill: cs-fundamentals
 status: draft
@@ -63,3 +63,4 @@ Em [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]], a GPU entra como u
 - [[wiki/sources/frontpush-otimizacao-de-animacoes-pipeline-renderizacao-transform-opacity-compositor]]: FrontPUSH, otimização aula 07: GPU lenta e memória de camadas
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: GPU como recurso do deep learning; paralelismo, não gigahertz
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "a crise das placas de vídeo, que nunca mais baixou de preço"; GPUs como o recurso físico que limita a IA
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: o "corte do chip" da série 5000 da NVIDIA (RTX 5080 com ~49% dos núcleos da 5090, contra ~83% na geração 3000)

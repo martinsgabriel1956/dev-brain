@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-11-03
-source_count: 10
+date_updated: 2026-11-27
+source_count: 11
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -75,6 +75,10 @@ A tríade avalia o hype do ponto de vista de quem decide; [[wiki/concepts/isomor
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] resume o risco no indivíduo: trazer algo porque está no hype e empolgou faz da empresa um laboratório ([[wiki/concepts/empresa-como-laboratorio-de-testes]]). Exige conhecimento razoável, e idealmente profundo, antes de adotar. Isso converge com o projeto pessoal como zerador de risco descrito acima.
 
+## FrontPUSH: não acredite em CEO, observe o mercado
+
+[[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]] propõe uma heurística: diante de promessas de CEO (Altman: IA superando a inteligência humana até 2030; Amodei: expectativa de vida dobrada), "desconfie". Essas empresas "ainda estão se comportando como se fossem startups" e precisam de "hype" para captar. Olhe o comportamento, a aceitação e a retração do mercado e pergunte "com quem trabalha de fato". A ressalva é que a própria aula usa manchetes de portal como prova sem o mesmo filtro.
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — custo real de apostar em hype que não vinga (reinvenção forçada, desistência da área); ressalva sobre IA como hype atual ainda em curso
@@ -87,3 +91,4 @@ A tríade avalia o hype do ponto de vista de quem decide; [[wiki/concepts/isomor
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — paradoxo da escolha e hype em EDA; viés do arquiteto como última opção; ver [[wiki/concepts/primeira-adocao-de-tecnologia-com-conforto]]
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — Kubernetes como opção "de cara" questionada por requisitos, equipe, adoção e custo
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — hype e empolgação como causa de over-engineering
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: heurística "observe o mercado"

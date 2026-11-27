@@ -4,7 +4,7 @@ title: "Enshittification (Degradação de Plataforma)"
 aliases: ["enshittification", "degradação de plataforma", "vai virar Netflix", "subsidiar e depois encarecer"]
 date_created: 2026-11-27
 date_updated: 2026-11-27
-source_count: 1
+source_count: 2
 tags: [modelo-de-negocio, plataforma, assinatura, lock-in, subsidio, mercado-de-ia]
 skill: tech-mentor-ai
 status: stub
@@ -26,3 +26,4 @@ Ciclo em que uma plataforma primeiro é boa e barata para atrair usuários, muit
 ## Key Sources
 
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "o que já aconteceu com a Netflix" vai acontecer com Anthropic e OpenAI
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: "aproveite [...] o custo mais barato" para "acelerar e aprender ao máximo"

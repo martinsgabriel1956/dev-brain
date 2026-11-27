@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-11-24
-source_count: 13
+date_updated: 2026-11-27
+source_count: 14
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -98,6 +98,7 @@ Definição de entrada: agente = sistema que usa modelo na decisão **e** intera
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — o 'microagente' da fonte é um fluxo RAG fixo, sem laço de decisão: ver [[wiki/concepts/microagente]] (tensão com a distinção RAG vs. agente)
 - [[wiki/sources/frontpush-ia-o-que-voce-deve-saber-de-ia]]: FrontPUSH, módulo de IA, parte 1: agentes/autonomia como "a grande virada de chave" do mercado, último degrau da escada
 - [[wiki/sources/frontpush-ia-o-que-acontece-no-backstage-da-ia]]: FrontPUSH, módulo de IA, parte 3: chat entrega tutorial, agente executa no seu PC
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: "no final de 2025 [...] a maior escalada"; agentes como "autônoma assistida, você vai dando permissões"
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — LLM para raciocínio, [[wiki/entities/jev]] para decisões rápidas do laço: [[wiki/concepts/jev-para-ramificar-llm-para-ler]]
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — definição introdutória (modelo como componente) e postura cautelosa

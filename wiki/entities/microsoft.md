@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-11-21
-source_count: 14
+date_updated: 2026-11-27
+source_count: 15
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -55,6 +55,7 @@ A documentação do Azure publica um fluxograma de escolha de compute, usado em 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora da [[wiki/concepts/windows-api|WinAPI]] nos anos 80, marco de popularização de API fora de ambientes corporativos gigantes
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de ambiente tranquilo
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: manchete "Microsoft traz tecnologia antiga a data centers de IA em SP, com maior consumo de água"
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — IE, IIS, ASP, ActiveX, Silverlight e a acusação de monopólio na [[wiki/concepts/guerra-dos-navegadores]]

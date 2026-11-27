@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-23
-source_count: 10
+date_updated: 2026-11-27
+source_count: 11
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -61,6 +61,7 @@ Em [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]], "um websi
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — SF Pro Display 600, 80/28 px
 - [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; bem falada como empregadora
 - [[wiki/sources/frontpush-ia-como-eu-crio-imagens-e-videos-com-ia]]: FrontPUSH, módulo de IA aula 01: estilo Apple de página de produto
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: o próximo iPhone (set. 2026) mais caro "por conta da memória RAM", segundo "vazamento" citado pelo autor (não verificado)
 
 ## Apple como empregadora (rumor)
 

@@ -4,7 +4,7 @@ title: "Memória RAM"
 aliases: ["RAM", "random access memory", "memória de trabalho", "memória volátil"]
 date_created: 2026-08-26
 date_updated: 2026-11-27
-source_count: 3
+source_count: 4
 tags: [hardware, memoria, cs-fundamentals, ram, volatil]
 skill: cs-fundamentals
 status: stub
@@ -38,3 +38,4 @@ O padrão dominante em PCs, notebooks e servidores desde os anos 2000 é o **DDR
 - [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]]
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — RAM cara de escalar como base do [[wiki/concepts/proof-of-space]]
 - [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-1]]: FrontPUSH, módulo de IA, aula 5: "quem não viu a crise da memória RAM" causada pela demanda de IA
+- [[wiki/sources/frontpush-ia-o-futuro-da-ia-parte-2]]: FrontPUSH, módulo de IA, aula 6: RAM disputada por data centers de IA encarece computadores e, segundo o autor, o próximo iPhone
