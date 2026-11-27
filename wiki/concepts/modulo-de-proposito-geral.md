@@ -3,8 +3,8 @@ type: concept
 title: "Módulo de Propósito Geral (Um Tanto de Uso Geral)"
 aliases: ["somewhat general-purpose", "um tanto de uso geral", "general-purpose module", "módulo de uso geral", "generalidade moderada", "empurrar especialização para cima", "push specialization up", "push specialization down"]
 date_created: 2026-11-26
-date_updated: 2026-11-26
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [design, ousterhout, general-purpose, especializacao, api-design, modulo-profundo]
 skill: tech-mentor-backend
 status: draft
@@ -57,7 +57,12 @@ A separação vale dentro de cada mecanismo. A classe de texto é geral para tex
 - [[wiki/concepts/carga-cognitiva]]: poucos métodos gerais, reaproveitáveis, em vez de muitos métodos rasos para aprender.
 - [[wiki/concepts/red-flags-de-design]]: a mistura de código geral e específico é o quadro *Special-General Mixture* (cap. 9).
 
+## Drivers de novo no cap. 7
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.2) volta aos drivers de disco: várias implementações da mesma interface, na mesma camada, são duplicação aceitável e reduzem a carga cognitiva. A 7.4 também retoma a classe de texto: a API por caracteres sobre armazenamento por linhas. Ver [[wiki/concepts/camada-diferente-abstracao-diferente]].
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: texto do cap. 6 em primeira mão: definição, editor, três perguntas, para cima e para baixo, `History`
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]: resumo do cap. 6 e o cap. 11, que compara interfaces por linha, caractere e intervalo
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — drivers e classe de texto retomados (7.2 e 7.4)

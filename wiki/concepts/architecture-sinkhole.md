@@ -3,8 +3,8 @@ type: concept
 title: "Architecture Sinkhole"
 aliases: ["architecture sinkhole anti-pattern", "antipadrão sinkhole", "camadas pass-through"]
 date_created: 2026-10-01
-date_updated: 2026-10-01
-source_count: 1
+date_updated: 2026-11-27
+source_count: 2
 tags: [antipadrao, arquitetura-em-camadas, camadas-fechadas, vertical-slice]
 skill: tech-mentor-backend
 status: stub
@@ -22,6 +22,11 @@ Antipadrão do [[wiki/concepts/arquitetura-em-3-camadas|padrão em camadas]]: o 
 - [external, não verificado nesta ingestão] O termo é atribuído a Mark Richards (*Software Architecture Patterns*, O'Reilly), com a heurística 80/20 de requests pass-through; a página da O'Reilly retornou 403 e não foi confirmada. Tratar a atribuição como memória do modelo, não como fato citado.
 - Alívio clássico das camadas fechadas: abrir camadas — mas isso troca o problema por mais acoplamento; a alternativa do vídeo é mudar o eixo de corte (por funcionalidade).
 
+## O mesmo sintoma em Ousterhout (cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] descreve, no nível de classes, o que o sinkhole descreve no nível de camadas: [[wiki/concepts/metodo-de-repasse|métodos de repasse]] e [[wiki/concepts/camada-diferente-abstracao-diferente|camadas adjacentes com a mesma abstração]]. O livro não usa o termo *sinkhole*; a ligação é da wiki. As saídas do livro (expor a camada de baixo, redistribuir a função, juntar as classes) correspondem a abrir camadas ou mudar o corte.
+
 ## Key sources
 
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — nomeia o antipadrão como problema que o Vertical Slice resolve
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — método de repasse como a versão em classes do sinkhole (leitura da wiki)

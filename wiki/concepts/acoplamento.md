@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-11-26
-source_count: 21
+date_updated: 2026-11-27
+source_count: 22
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -122,6 +122,10 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]]: quando a classe de texto ganha um método por recurso da UI, toda operação nova da UI exige mudar a classe de texto, e quem trabalha numa acaba trabalhando na outra. O autor diz que um dos objetivos do design de classes é permitir que cada uma seja desenvolvida de forma independente, e a abordagem especializada "amarrou" as duas (6.2). No desfazer, a mesma mistura gerou *callbacks* da classe de texto para a UI (6.7).
 
+## Repasse cria dependência sem função (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]]: um [[wiki/concepts/metodo-de-repasse]] amarra duas classes pela assinatura (se `TextArea.insertString` muda, `TextDocument.insertString` muda junto) sem acrescentar nada. A variável de passagem faz o mesmo com cada método intermediário da cadeia, que passa a conhecer um dado que não usa ([[wiki/concepts/objeto-de-contexto]]).
+
 ## Key sources
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
@@ -151,3 +155,4 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — acoplamento é sempre custo; comando é acoplamento direto, evento inverte a dependência ([[wiki/concepts/evento-vs-comando]])
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — vazamento pela porta dos fundos como acoplamento sem dependência explícita
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — API especializada amarra UI e classe de texto; *callbacks* do desfazer
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — repasse e variável de passagem como dependência sem ganho

@@ -3,8 +3,8 @@ type: concept
 title: "Estado Global em Servidor"
 aliases: ["global state", "estado global", "estado global no servidor"]
 date_created: 2026-10-06
-date_updated: 2026-11-24
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [estado-global, stateless, backend, singleton, cache]
 skill: tech-mentor-backend
 status: draft
@@ -31,7 +31,12 @@ Ver também [[wiki/concepts/estado-compartilhado]] (versão mais geral, sem foco
 
 Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o mesmo problema no navegador da era ES5: globais colidem entre scripts e não são coletadas. No servidor, o global é compartilhado entre requisições ([[wiki/concepts/poluicao-do-escopo-global]]).
 
+## Globais impedem duas instâncias (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.5) dá mais uma consequência: com variáveis globais, não dá para ter duas instâncias independentes do sistema no mesmo processo, porque os acessos conflitam. Parece não importar em produção, mas importa em testes. A saída do livro é o [[wiki/concepts/objeto-de-contexto]], um por instância.
+
 ## Key sources
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]]
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: globais no navegador
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — globais impedem várias instâncias no mesmo processo (7.5)

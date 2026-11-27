@@ -3,8 +3,8 @@ type: concept
 title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-11-26
-source_count: 12
+date_updated: 2026-11-27
+source_count: 13
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub
@@ -66,6 +66,10 @@ O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface m
 
 [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] mostra a carga cognitiva de uma API especializada: a classe de texto do editor ganhou um método por operação da UI, muitos chamados num lugar só, e quem trabalhava na UI tinha de aprender todos. A versão geral tem poucos métodos simples, reaproveitados para vários fins (6.2 e 6.4). Ver [[wiki/concepts/modulo-de-proposito-geral]].
 
+## Mesma interface, menos carga (Ousterhout, cap. 7)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.2): várias implementações da mesma interface, como drivers de disco, reduzem a carga cognitiva, porque quem trabalhou com uma não precisa aprender outra interface. Duplicar assinatura só é problema entre camadas que se chamam e não agregam função ([[wiki/concepts/metodo-de-repasse]]).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-monetizacao-freelancer-como-ganhar-dinheiro-erros-e-principais-pontos]]: reduzir carga cognitiva liga a patterns e a componentes reaproveitáveis
@@ -80,3 +84,4 @@ O primeiro ganho do [[wiki/concepts/ocultamento-de-informacao]] é a interface m
 - [[wiki/sources/filosofia-do-design-de-software-cap-02-natureza-da-complexidade]] — carga cognitiva como sintoma de complexidade de código (Ousterhout, cap. 2.2)
 - [[wiki/sources/filosofia-do-design-de-software-cap-05-ocultacao-de-informacao-e-vazamento]] — ocultamento reduz a carga cognitiva; superexposição a aumenta (cap. 5)
 - [[wiki/sources/filosofia-do-design-de-software-cap-06-modulos-de-proposito-geral-sao-mais-profundos]] — muitos métodos especializados aumentam a carga; poucos gerais a reduzem (cap. 6)
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — várias implementações da mesma interface reduzem a carga (7.2)

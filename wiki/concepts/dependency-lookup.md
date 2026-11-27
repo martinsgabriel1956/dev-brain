@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Lookup"
 aliases: ["service locator", "busca de dependência"]
 date_created: 2026-09-11
-date_updated: 2026-09-11
-source_count: 2
+date_updated: 2026-11-27
+source_count: 3
 tags: [testes, test-doubles, dependency-injection, acoplamento, testabilidade]
 skill: tech-mentor-testing
 status: stub
@@ -18,7 +18,12 @@ Um dos mecanismos catalogados por [[wiki/entities/gerard-meszaros]] para tornar 
 
 Ainda não há fonte primária dedicada ao mecanismo em si (como funciona o registro/service locator, exemplos de código). Ambas as fontes que citam o termo até agora o fazem só por contraste com Dependency Injection, nunca como objeto central. Candidata a expansão se uma fonte dedicada ao termo for ingerida.
 
+## Objeto de contexto como registro (paralelo da wiki)
+
+[[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] (7.5) descreve um [[wiki/concepts/objeto-de-contexto]] que guarda subsistemas compartilhados e é consultado por quem precisa deles. Funciona como um registro de dependências injetado pelo construtor. O livro não faz a comparação; é leitura da wiki.
+
 ## Key Sources
 
 - [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — Dependency Lookup como um dos dois mecanismos de instalação de Test Double conhecidos até então, preferido para customer tests
 - [[wiki/sources/substitutable-dependency-xunitpatterns]] — verbete de glossário que nomeia Dependency Lookup como um dos três mecanismos formais para tornar uma dependência substituível, ao lado de [[wiki/concepts/dependency-injection|Dependency Injection]] e [[wiki/concepts/test-specific-subclass|Test-Specific Subclass]]
+- [[wiki/sources/filosofia-do-design-de-software-cap-07-camada-diferente-abstracao-diferente]] — objeto de contexto com subsistemas como forma de registro (leitura da wiki)
