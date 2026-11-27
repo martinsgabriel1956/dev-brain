@@ -3,8 +3,8 @@ type: concept
 title: "Expressão e instrução (JavaScript)"
 aliases: ["expressão", "expression", "instrução", "statement", "expressão vs instrução", "expression vs statement"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 9
+date_updated: 2026-11-26
+source_count: 10
 tags: [javascript, sintaxe, expressoes, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -56,6 +56,10 @@ Em [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]], `function 
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], "eu não estou criando uma função literal aqui [...] porque eu estou usando o return". `[external]` A função depois do `return` é uma *function expression*, operando da instrução `return`. E `adder(5)(8)` funciona porque `adder(5)` é uma expressão que vale uma função, invocada em seguida.
 
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], a distinção decide se uma função pode ser invocada na hora: a declaração ("função literal") seguida de `()` dá "um erro sintático"; envolvida em parênteses, "agora é uma expressão [...] de função", "como se eu criasse um valor", e `(function () {})()` executa ([[wiki/concepts/iife]]).
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-operadores-aritmeticos]]: expressão como "frase" avaliada; var x = 0 como exemplo (impreciso)
@@ -67,3 +71,4 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], "eu não est
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: valor de conclusão do while no REPL
 - [[wiki/sources/javascript-ninja-a-importancia-de-nomear-funcoes]]: JavaScript Ninja, semana 8, vídeo 01: function sem nome como instrução dá SyntaxError; como expressão, não
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: function expression no return; chamada encadeada
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: parênteses transformam a declaração de função em expressão (IIFE)

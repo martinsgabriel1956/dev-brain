@@ -3,8 +3,8 @@ type: entity
 title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 25
+date_updated: 2026-11-26
+source_count: 28
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -92,6 +92,18 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], mostra funç
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], passa objeto e função como parâmetro (`showFunction`), erra um `;` dentro do objeto ao vivo e diz que o curso terá "umas 30 aulas".
 
+## Semana 9, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], mostra função dentro de função (`myFunction`/`sum`), o `ReferenceError` de chamar a interna fora e uma `function` declarada depois do `return` que funciona, adiando o nome hoisting para o próximo vídeo.
+
+## Semana 9, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-hoisting]], explica o hoisting ("içamento ou elevação"), separa "função literal" de função em `var`, erra uma vírgula no `console.log` ao vivo e recomenda declarar variáveis no início da função.
+
+## Semana 9, vídeo 03
+
+Em [[wiki/sources/javascript-ninja-iife]], apresenta a IIFE e anuncia que todos os desafios passam a vir dentro de uma, "escopo local para tudo".
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -119,3 +131,6 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], passa objeto
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: semana 8, vídeo 02: introdução à programação funcional; função que retorna objeto
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: semana 8, vídeo 03: funções que retornam funções; adder
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: semana 8, vídeo 04: objeto e função como parâmetro
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: semana 9, vídeo 01: escopo de funções; anuncia hoisting
+- [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting; declarar no topo
+- [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE

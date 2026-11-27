@@ -3,8 +3,8 @@ type: concept
 title: "Poluição do escopo global (JavaScript)"
 aliases: ["poluição do escopo global", "global namespace pollution", "variável global implícita", "implicit global", "global leak", "globais acidentais"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 3
+date_updated: 2026-11-26
+source_count: 5
 tags: [javascript, escopo, escopo-global, var, modo-estrito, memoria, boas-praticas]
 skill: lang-dynamic
 status: stub
@@ -44,8 +44,18 @@ Em [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]], o escopo glo
 
 Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], trocar as vírgulas de `var a = 1, b = 2, c = 3` por ponto e vírgula "cria a, b, c como variáveis globais, porque eu não estou utilizando a palavra-chave pra eles". Na verdade só `b` e `c` viram globais implícitas (o `a` continua com `var`), e só fora do modo estrito. A versão mais traiçoeira da mesma armadilha é `var a = b = c = 3`.
 
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], `myFunction` declarada no topo do arquivo está "no escopo global" e acessível "de qualquer lugar do meu código". `[external]` No arquivo executado pelo Node (CommonJS) ela fica no escopo do módulo: `typeof globalThis.myFunction` dá `'undefined'` (verificado). Num `<script>` do navegador, vira `window.myFunction`.
+
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], a IIFE é a resposta do curso ao global: "você fecha um escopo local". O exemplo: com "30 arquivos JavaScript", uma variável global mudada em um muda em todos. "Quanto menor for o teu escopo, melhor para você." Daí em diante, todos os desafios vêm dentro de uma IIFE ([[wiki/concepts/iife]]). `[external]` O compartilhamento vale para `<script>` clássicos; módulos ES e arquivos do Node têm escopo próprio.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-escopo-de-variaveis-e-funcoes]]: JavaScript Ninja, semana 4, vídeo 03: global como erro de design; variável sem var; conflito de nomes e memória
 - [[wiki/sources/javascript-ninja-retorno-de-funcoes-com-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 01: retornar objeto da função em vez de criá-lo no global (germe do module pattern)
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: ponto e vírgula no lugar da vírgula vira global implícita
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: função no topo do arquivo; global no navegador, módulo no Node
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE contra o global; 30 arquivos no mesmo escopo

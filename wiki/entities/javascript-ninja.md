@@ -3,8 +3,8 @@ type: entity
 title: "JavaScript Ninja (curso)"
 aliases: ["Curso JavaScript Ninja", "JS Ninja", "Javascript Ninja"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 25
+date_updated: 2026-11-26
+source_count: 28
 tags: [curso, javascript, educacao, fundamentos]
 skill: lang-dynamic
 status: stub
@@ -75,6 +75,12 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: vídeo 03, programação funcional parte 2: função que retorna função (`adder`), `add2(3)`, `adder(5)(8)`. Anuncia função como parâmetro.
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: vídeo 04, programação funcional parte 3: objeto e função como parâmetro (`showFunction`). Diz que esta é a oitava aula de "umas 30". Anuncia o desafio da semana (não está na wiki).
 
+## Semana 9
+
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: vídeo 01, depois da "correção" do desafio 8 (que não está na wiki). A semana 9 é inferida pela sequência. Escopo de funções: função dentro de função, a interna invisível fora e lendo as variáveis da externa, e `function` depois do `return`. Anuncia hoisting.
+- [[wiki/sources/javascript-ninja-hoisting]]: vídeo 02, hoisting: a declaração sobe inteira, a `var` sobe como `undefined`; dica de declarar no topo e retornar na última linha. O vídeo seguinte é o da IIFE.
+- [[wiki/sources/javascript-ninja-iife]]: vídeo 03, IIFE: declaração × expressão, parênteses, escopo local. A partir daqui os desafios vêm dentro de uma IIFE. Não anuncia o vídeo seguinte.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis e tipos de dados
@@ -103,3 +109,6 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o terceiro v
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: semana 8, vídeo 02: introdução à programação funcional; anuncia retorno de funções
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: semana 8, vídeo 03: funções que retornam funções; anuncia função como parâmetro
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: semana 8, vídeo 04: objeto e função como parâmetro; curso com umas 30 aulas
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: semana 9, vídeo 01: escopo de funções; anuncia hoisting
+- [[wiki/sources/javascript-ninja-hoisting]]: semana 9, vídeo 02: hoisting
+- [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE; desafios passam a vir dentro de IIFE

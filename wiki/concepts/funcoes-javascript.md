@@ -3,8 +3,8 @@ type: concept
 title: "Funções em JavaScript"
 aliases: ["função", "function", "arrow function", "função anônima", "callback", "argumento", "parâmetro", "return"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 31
+date_updated: 2026-11-26
+source_count: 34
 tags: [javascript, funcoes, arrow-function, callback, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -129,6 +129,18 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], a função p
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], objeto e função como parâmetro: `getCarColor(car)` devolve `'yellow'`, e `showFunction(fn)` devolve `fn()`. A função vai pelo nome, sem parênteses, ou anônima direto na chamada, "tanto faz" o nome. `[external]` Passar `fn()` em vez de `fn` entrega o resultado, não a função (verificado).
 
+## No JavaScript Ninja, semana 9, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], "uma função dentro de outra função é permitido": `myFunction` declara `sum` e retorna `sum()` (3). A interna não é acessível fora e só roda quando invocada ("verifica que essa função aqui existe, mas ele não executa"). Escrita depois do `return`, ainda funciona: é o hoisting da declaração de função ([[wiki/concepts/hoisting-javascript]]), que não vale para função em `var` ou `const` (verificado).
+
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], a "função literal" (declaração) fica disponível no escopo inteiro, mesmo escrita depois do `return`; atribuída a `var`, a chamada antecipada dá "is not a function" ([[wiki/concepts/hoisting-javascript]]). `[external]` Os nomes técnicos são *function declaration* e *function expression*. A função sem `return` devolve o que a aula chama de "valor em branco", `undefined`.
+
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], as formas de invocar: pelo nome (declaração), pelo nome da variável (anônima atribuída), pela propriedade de objeto, ou na hora, como [[wiki/concepts/iife|IIFE]]. O nome próprio de uma função atribuída a variável (`var sum3 = function nome() {}`) só existe dentro dela. `[external]` É a *named function expression*; o erro de fora é `ReferenceError` (verificado).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: registrar x executar, argumento, anônima, arrow, referência
@@ -162,3 +174,6 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]], objeto e fun
 - [[wiki/sources/javascript-ninja-introducao-a-programacao-funcional]]: JavaScript Ninja, semana 8, vídeo 02: função literal; função que retorna objeto; .name da função × do objeto
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: função dentro de função; retorno de função; duas invocações
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-3]]: JavaScript Ninja, semana 8, vídeo 04: objeto e função como parâmetro
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função dentro de função; escopo da interna; declaração depois do return
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: declaração içada inteira × expressão em var
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: invocar por nome, variável, propriedade ou IIFE; named function expression

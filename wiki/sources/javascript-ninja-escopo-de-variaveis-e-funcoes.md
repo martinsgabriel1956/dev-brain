@@ -3,7 +3,7 @@ type: source
 title: "Escopo de variáveis e funções (JavaScript Ninja, semana 4, vídeo 03)"
 aliases: ["JavaScript Ninja escopo", "JS Ninja escopo global e local", "03 - Escopo de variáveis e funções"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
+date_updated: 2026-11-26
 source_count: 0
 tags: [javascript, escopo, escopo-global, escopo-local, var, variavel-global-implicita, garbage-collection, parametros, memoria]
 skill: lang-dynamic
@@ -109,3 +109,5 @@ Terceiro vídeo da "quarta aula" do [[wiki/entities/javascript-ninja|JavaScript 
 - "isso, basicamente, é um erro de design da linguagem"
 - "a gente não guarda lixo da memória, se a gente não vai precisar usar futuramente"
 - "se você esquecer de usar o var [...] você cria um escopo global, e isso causa um problema bastante grande"
+
+Continuação na wiki: [[wiki/sources/javascript-ninja-escopo-de-funcoes]] (semana 9, vídeo 01) leva o escopo para funções dentro de funções e apresenta o hoisting.

@@ -3,8 +3,8 @@ type: concept
 title: "Escopo em JavaScript (global, de função e de bloco)"
 aliases: ["escopo", "scope", "escopo de função", "escopo de bloco", "escopo global", "escopo léxico", "lexical scope", "function scope", "block scope"]
 date_created: 2026-11-24
-date_updated: 2026-11-25
-source_count: 6
+date_updated: 2026-11-26
+source_count: 9
 tags: [javascript, escopo, funcoes, var, let, const, closure]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,18 @@ Em [[wiki/sources/javascript-ninja-operador-virgula-e-switch]], a lista `var a, 
 
 Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` mostra o escopo léxico funcionando depois do fim da função de fora: a função interna retornada ainda soma o `x` que `adder` recebeu ("o 2 que eu já tinha passado na primeira vez"). `[external]` Cada chamada de `adder` cria um escopo novo, então `add2` e `add10` não se misturam (verificado). A aula não usa o nome [[wiki/concepts/closure-javascript|closure]].
 
+## No JavaScript Ninja, semana 9, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-escopo-de-funcoes]], a função passa a ser dona de outra função: `sum`, declarada dentro de `myFunction`, não existe fora ("o escopo dela é aquela função onde ela está dentro"; fora, `ReferenceError`), mas lê `number1` e `number2` da função de fora, que valem "para toda essa função". A posição da declaração no corpo não muda o resultado, porque a `function` sobe para o topo do escopo ([[wiki/concepts/hoisting-javascript]]).
+
+## No JavaScript Ninja, semana 9, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-hoisting]], a recapitulação: `myFunction`, "fora de qualquer função", está no escopo global, e `sum`, dentro dela, no local. Variáveis "existem dentro do escopo onde elas estão, mas elas só estão disponíveis a partir do momento onde elas foram declaradas" ([[wiki/concepts/hoisting-javascript]]). `[external]` Num arquivo executado pelo Node (CommonJS), o topo é escopo de módulo, não global (verificado).
+
+## No JavaScript Ninja, semana 9, vídeo 03 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-iife]], a IIFE cria um escopo de função só para isolar o código ([[wiki/concepts/iife]]). O nome próprio de uma função atribuída a variável existe "dentro desse escopo", não fora.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-funcoes]]: var dentro da função não existe fora; o de fora é acessível de dentro
@@ -52,3 +64,6 @@ Em [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]], o `adder` mo
 - [[wiki/sources/javascript-ninja-parametros-de-funcoes-como-arrays-e-objetos]]: JavaScript Ninja, semana 5, vídeo 02: parâmetro com nome diferente da variável de fora
 - [[wiki/sources/javascript-ninja-operador-virgula-e-switch]]: JavaScript Ninja, semana 6, vídeo 01: variáveis da lista com vírgula ficam locais
 - [[wiki/sources/javascript-ninja-programacao-funcional-parte-2]]: JavaScript Ninja, semana 8, vídeo 03: escopo léxico preservado na função retornada (closure)
+- [[wiki/sources/javascript-ninja-escopo-de-funcoes]]: JavaScript Ninja, semana 9, vídeo 01: função aninhada só existe dentro da externa e lê o escopo dela
+- [[wiki/sources/javascript-ninja-hoisting]]: JavaScript Ninja, semana 9, vídeo 02: global × local na recapitulação; existir × estar disponível
+- [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: IIFE como escopo local; nome da função só dentro dela
