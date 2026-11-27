@@ -4,7 +4,7 @@ title: "Truthy e falsy em JavaScript"
 aliases: ["truthy", "falsy", "valores falsos", "ToBoolean", "coerção para booleano", "!!"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 8
+source_count: 9
 tags: [javascript, booleano, coercao, condicionais, tipos]
 skill: lang-dynamic
 status: draft
@@ -65,6 +65,10 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], `Boolean(0)` dá falso e `
 
 Em [[wiki/sources/javascript-ninja-typeof]], `!valor` aparece como teste de "valor não entrado": "ele testa todos os tipos de valores falsos". O efeito colateral, que a aula não comenta, é barrar `0`, argumento válido de uma subtração (verificado). Para "faltou o valor", `x == null` é mais preciso.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], a condição do `while` e do `do...while` é avaliada como booleano; a diferença entre os dois é só quando ela é avaliada (antes ou depois da primeira volta).
+
 ## Key sources
 
 - [[wiki/sources/frontpush-estruturas-condicionais-booleanos-comparadores-javascript]]: FrontPUSH, JavaScript aula 03: string vazia, 0, undefined e NaN como falsos
@@ -75,3 +79,4 @@ Em [[wiki/sources/javascript-ninja-typeof]], `!valor` aparece como teste de "val
 - [[wiki/sources/javascript-ninja-estrutura-de-repeticao-while]]: JavaScript Ninja, semana 6, vídeo 02: 0 na condição do while; while (counter) para no zero
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: Boolean() = !!; new Boolean(false) é truthy
 - [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: !valor como teste de ausência; barra o 0
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: condição do while avaliada antes, do do...while depois

@@ -3,7 +3,7 @@ type: source
 title: "Operador vírgula e estrutura condicional switch (JavaScript Ninja, semana 6, vídeo 01)"
 aliases: ["JavaScript Ninja operador vírgula", "JS Ninja switch", "01 - Operador virgula e estrutura condicional switch"]
 date_created: 2026-11-25
-date_updated: 2026-11-25
+date_updated: 2026-11-27
 source_count: 0
 tags: [javascript, operador-virgula, switch, break, fall-through, var, escopo, condicionais]
 skill: lang-dynamic
@@ -111,6 +111,8 @@ Primeiro vídeo de uma nova leva do [[wiki/entities/javascript-ninja|JavaScript 
 - **"Operador turístico"**: provavelmente "idêntico" ou "estritamente igual" (baixa); literal.
 - **"Fecha o switch com uma interrogação"**: deve ser "com a chave" (média); literal.
 - **"A estrutura de quando saltava"**: não identificado (talvez "a estrutura de controle", baixa).
+
+- O `break` volta em [[wiki/sources/javascript-ninja-saltos]] (semana 11, vídeo 02), no `switch` e no `for`, com o fall-through descrito certo.
 
 ## Raw quotes
 

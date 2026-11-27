@@ -3,8 +3,8 @@ type: concept
 title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-27
+source_count: 8
 tags: [kiss, over-engineering, principios, qualidade, design-patterns, testes]
 skill: tech-mentor-backend
 status: stable
@@ -104,6 +104,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 O slide da aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], do curso de UI Design de [[wiki/entities/nasser|Násser]], fecha com "Projete interfaces com o princípio KISS — Keep It Simple Stupid", ao lado de "conheça o projeto, faça perguntas". A fala não chega a comentar o item. Na mesma aula, a pergunta de [[wiki/concepts/atributos-de-bom-design|fácil aprendizado]] ("sua interface tem mais recursos do que deveria?") é o KISS visto pelo usuário. Ver também [[wiki/concepts/simplicidade-visual]].
 
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], o argumento a favor do early return é o de KISS: sem o `else` e sem a variável de retorno, "uma variável a menos" e "você sabe o que está acontecendo aqui". A aula também diz "mais ligeiro", mas o ganho é de leitura, não de desempenho.
+
 ## Key Sources
 
 - [[wiki/sources/overengineering-carol-ate-quinta]]
@@ -113,3 +117,4 @@ O slide da aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — analogia do martelo; primeira defesa contra over-engineering
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — KISS aplicado à interface como recomendação de acessibilidade
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — princípio KISS no slide de atributos de um bom design (UI)
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: early return sem else, "uma variável a menos"

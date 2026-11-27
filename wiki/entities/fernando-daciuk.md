@@ -4,7 +4,7 @@ title: "Fernando Daciuk"
 aliases: ["Daciuk", "da2k"]
 date_created: 2026-11-24
 date_updated: 2026-11-27
-source_count: 30
+source_count: 32
 tags: [pessoa, instrutor, javascript, educacao]
 skill: lang-dynamic
 status: stub
@@ -112,6 +112,14 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], apresenta os wrapper objec
 
 Em [[wiki/sources/javascript-ninja-typeof]], apresenta o [[wiki/concepts/typeof-javascript|typeof]], a regra de usá-lo só com primitivos e a guarda de tipo em `subtract`. Prevê que o ES6 corrigiria `typeof null`, o que não aconteceu.
 
+## Semana 11, vídeo 01
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], depois da revisão do desafio da semana 10, mostra `do...while`, revisa o `for` e apresenta o [[wiki/concepts/for-in-javascript|for...in]] e o operador `in`. Diz que o `;` do `do...while` é obrigatório (é estilo) e que o `for...in` é mais lento que o `for` (sem medição).
+
+## Semana 11, vídeo 02
+
+Em [[wiki/sources/javascript-ninja-saltos]], abre com a piada dos "sapatos de salto alto" e mostra `return`, `break` e `continue` como saltos. Defende o early return sem `else`.
+
 ## Key sources
 
 - [[wiki/sources/javascript-ninja-variaveis-e-tipos-de-dados]]: aula 01, parte 2: variáveis com `var` e os tipos de dados
@@ -144,3 +152,5 @@ Em [[wiki/sources/javascript-ninja-typeof]], apresenta o [[wiki/concepts/typeof-
 - [[wiki/sources/javascript-ninja-iife]]: semana 9, vídeo 03: IIFE
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: semana 10, vídeo 01: wrapper objects
 - [[wiki/sources/javascript-ninja-typeof]]: semana 10, vídeo 02: typeof
+- [[wiki/sources/javascript-ninja-lacos-loops]]: semana 11, vídeo 01: laços
+- [[wiki/sources/javascript-ninja-saltos]]: semana 11, vídeo 02: saltos

@@ -3,8 +3,8 @@ type: concept
 title: "Estruturas de repetição em JavaScript (for, while, for...of, forEach)"
 aliases: ["loop", "loops", "for", "while", "do...while", "for...of", "for...in", "forEach", "loop infinito", "off-by-one", "iteração"]
 date_created: 2026-11-16
-date_updated: 2026-11-25
-source_count: 7
+date_updated: 2026-11-27
+source_count: 9
 tags: [javascript, loops, for, while, iteracao, array, controle-de-fluxo]
 skill: lang-dynamic
 status: stub
@@ -77,6 +77,14 @@ Em [[wiki/sources/javascript-ninja-arrays-propriedade-length]], o `while` percor
 
 Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `for` aparece como o `while` com "uma sintaxe um pouco diferente": inicialização, condição e expressão final no cabeçalho, "as três condições de uma só vez". A aula as chama de "parâmetros"; são expressões, todas opcionais. Mostra também duas variáveis na inicialização (`var num = 2, arroz = 3`). Ainda não combina `for` com `length`.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o `do...while` entra no curso pelo contraste com o `while`: este "primeiro vai verificar o valor antes de entrar no laço"; aquele "passa sempre uma vez e depois" verifica. Com o contador em 10, o `while (counter < 10)` não imprime nada e o `do...while` imprime 10. A aula diz que o `do...while` "vem seguido de ponto e vírgula"; é estilo, a inserção automática cobre a falta (verificado). Revisa o `for` (contador, verificação, incremento) e apresenta o [[wiki/concepts/for-in-javascript|for...in]] para percorrer as chaves de um objeto, "mais lento do que o for normal". Anuncia os "saltos" para o próximo vídeo.
+
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], os saltos dentro do laço: `if (i === 5) break` para o `for` em 4 e cai na instrução seguinte; `if (i === 5) continue` pula só o 5. Com `i % 2 === 0` e `continue`, só os ímpares. O `break` serve para "não precisa testar todos" num array grande. A aula não avisa que, no `while`, um `continue` antes do incremento trava o laço (verificado). Detalhe em [[wiki/concepts/break-e-continue-javascript|break e continue]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript]]: FrontPUSH, JavaScript aula 06: for, while, loop infinito ao vivo, i < length
@@ -86,3 +94,5 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o `for` apar
 - [[wiki/sources/javascript-ninja-operador-modulo]]: JavaScript Ninja, semana 7, vídeo 01: while com % para imprimir os pares; erro do incremento antes do teste
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: percorrer array com while e length; off-by-one
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: for com inicialização, condição e expressão final; duas variáveis
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: do...while × while, revisão do for, for...in em objeto
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: break e continue no for; ímpares com continue

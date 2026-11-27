@@ -4,7 +4,7 @@ title: "Objetos em JavaScript (literal, this e protótipo)"
 aliases: ["objeto", "object literal", "objeto literal", "this", "protótipo", "prototype chain", "cadeia de protótipos", "method shorthand", "autoboxing"]
 date_created: 2026-11-16
 date_updated: 2026-11-27
-source_count: 26
+source_count: 27
 tags: [javascript, objetos, this, prototipo, metodos, es6]
 skill: lang-dynamic
 status: stub
@@ -133,6 +133,10 @@ Em [[wiki/sources/javascript-ninja-wrapper-objects]], o critério de objeto é "
 
 Em [[wiki/sources/javascript-ninja-typeof]], "qualquer outro objeto que não seja uma função" dá `'object'` no [[wiki/concepts/typeof-javascript|typeof]], inclusive array e `null`; por isso, "não testar o objeto usando o typeof". Para objeto não nulo: `x !== null && typeof x === 'object'` `[external]`.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o [[wiki/concepts/for-in-javascript|for...in]] percorre as propriedades de um carro (`brand`, `model`, `year`) e o operador `in` testa se uma existe (`2 in car` é falso). Os dois enxergam o protótipo: `'toString' in car` é `true` (verificado), o que a aula não comenta.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-objetos-javascript-atributos-metodos-this]]: FrontPUSH, JavaScript aula 05: literal, ponto, this, method shorthand, mutação, "filho de outro objeto"
@@ -161,3 +165,4 @@ Em [[wiki/sources/javascript-ninja-typeof]], "qualquer outro objeto que não sej
 - [[wiki/sources/javascript-ninja-iife]]: JavaScript Ninja, semana 9, vídeo 03: função anônima como propriedade, invocada pelo objeto
 - [[wiki/sources/javascript-ninja-wrapper-objects]]: JavaScript Ninja, semana 10, vídeo 01: objeto = propriedades e métodos; construtores com new
 - [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof de objeto, array e null é object
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: for...in nas propriedades; operador in

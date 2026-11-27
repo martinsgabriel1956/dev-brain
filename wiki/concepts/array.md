@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-27
-source_count: 27
+source_count: 29
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -129,6 +129,14 @@ Em [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]], o array cres
 
 Em [[wiki/sources/javascript-ninja-typeof]], `typeof []` dá `'object'`; para saber "se é realmente um array, você precisa fazer outros tipos de teste". O teste é `Array.isArray(x)` `[external]`, verificado. Somar array com objeto (`{} + []`) dá a string `'[object Object]'`.
 
+## No JavaScript Ninja, semana 11, vídeo 01 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-lacos-loops]], o acesso `car[prop]` é chamado de "formato de array". O [[wiki/concepts/for-in-javascript|for...in]] aparece só com objeto; em array ele daria índices como string e chaves de `Array.prototype` (verificado).
+
+## No JavaScript Ninja, semana 11, vídeo 02 (Fernando Daciuk)
+
+Em [[wiki/sources/javascript-ninja-saltos]], `for (var i = 0; i < array.length; i++)` num array de dez itens, com `break` para sair cedo ("você não precisa testar todos") e `continue` para pular um índice. A demo imprime `i`, não `array[i]`. Num `forEach`, `break` é `SyntaxError` e `return` só pula a volta (verificado); para parar cedo, `some` ou `find`.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -158,3 +166,5 @@ Em [[wiki/sources/javascript-ninja-typeof]], `typeof []` dá `'object'`; para sa
 - [[wiki/sources/javascript-ninja-arrays-propriedade-length]]: JavaScript Ninja, semana 7, vídeo 02: length, array heterogêneo, percurso com while
 - [[wiki/sources/javascript-ninja-arrays-metodo-push-e-loop-for]]: JavaScript Ninja, semana 7, vídeo 03: push; array com objeto, array e função
 - [[wiki/sources/javascript-ninja-typeof]]: JavaScript Ninja, semana 10, vídeo 02: typeof de array é object; Array.isArray
+- [[wiki/sources/javascript-ninja-lacos-loops]]: JavaScript Ninja, semana 11, vídeo 01: "formato de array" para car[prop]; for...in não serve para array
+- [[wiki/sources/javascript-ninja-saltos]]: JavaScript Ninja, semana 11, vídeo 02: for com length e break; sem break no forEach
